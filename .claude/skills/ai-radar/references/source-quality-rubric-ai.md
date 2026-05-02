@@ -127,6 +127,33 @@ AI moves fast. Recency haircut is more aggressive than general research:
 
 ---
 
+## BD-actionability modifier (final ordering pass)
+
+After tier and recency are applied, items are sorted for the deliverable using a final modifier: **BD-actionability**. This is not a tier change — it's a sort order applied to items already passing the tier bar. The point is to surface items the reader can act on first.
+
+**BD-actionability levels:**
+
+- **High actionability** — the item describes a tool, framework, integration, or capability the BD audience can pilot, adopt, or integrate into a workflow within 1-3 months. Examples: a new MCP server for Google Sheets; a Linear AI feature; a Zapier integration; a Claude skill on GitHub with adoption signal; a new agent framework with documented examples.
+- **Medium actionability** — the item provides context that affects deployment decisions but isn't directly pilotable. Examples: API pricing changes; new model release that may shift cost baseline; research with practical implications for AI-in-production.
+- **Low actionability** — the item is informational. Examples: corporate funding news; vendor strategy without product impact; policy ruling that doesn't affect current deployments; basic research without near-term practical use.
+
+**Sort order in the deliverable**:
+1. High-actionability T1-T2 verified items → top
+2. High-actionability T3 secondary items → upper-middle (flagged appropriately)
+3. Medium-actionability T1-T2 → middle
+4. Medium-actionability T3 → lower-middle
+5. Low-actionability anything → bottom (only published if newsworthy enough to warrant tracking)
+
+**Mapping to categories** (in practice):
+- `workflow-automation`, `productivity-tools`, `agent-framework`, `dev-tools`, `mcp-ecosystem` → typically high-actionability if shipping an actual feature/tool
+- `model-release`, `ai-for-business` → typically medium-actionability
+- `research-papers` → typically medium if practical, low if pure research
+- `policy-regulation` → typically low unless directly affects what tools can be deployed
+
+**This is a soft prior, not a hard rule.** A landmark policy ruling can lead the deliverable. A speculative agent framework launch with no documentation is low-actionability despite the category. Apply judgment.
+
+---
+
 ## Specific AI-domain conflict patterns
 
 These are common failure modes in AI news; recognize them.

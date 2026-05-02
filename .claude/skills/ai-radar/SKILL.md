@@ -42,7 +42,7 @@ What this means in practice:
 
 Confirm with the user (or use defaults if invoked automatically):
 - **Timeframe**: last 72h / last 7d / last 30d / custom date range
-- **Categories**: pick from `model-release`, `agent-framework`, `dev-tools`, `mcp-ecosystem`, `ai-for-business`, `research-papers`, `policy-regulation`, or `all`
+- **Categories**: pick from `model-release`, `agent-framework`, `dev-tools`, `mcp-ecosystem`, `workflow-automation`, `productivity-tools`, `ai-for-business`, `research-papers`, `policy-regulation`, or `all`
 - **Depth**: `quick-scan` (top 5 items, ~15 min) / `standard` (top 15, ~45 min) / `deep` (25+, ~2h)
 - **Audience**: `internal-bd` (workflow automation framing) / `public-digest` (neutral newsroom tone) / `both`
 
@@ -72,13 +72,19 @@ In priority order:
 4. **X / public social via search** — `web_search "site:x.com [topic]"` or `"site:threads.net [topic]"` to capture posts visible in search index. If a tweet is the original source (founder announcement before official blog), record the tweet URL as primary at T2; influencer commentary is T4. **Engagement proxy**: when the same X/Threads post appears in multiple aggregator/news search results, treat that diffusion as a signal of practitioner-community attention — flag in cross-references with note "diffusion: cited by N outlets". True engagement metrics (likes, retweets, reply count) require Twitter API access not available in this environment; diffusion is the practical proxy.
 5. **Community signals** (HN, Reddit) — use as discovery aid only, never as primary citation
 
-**Category priority (BD-relevance shift)**: Within these search priorities, give relatively more attention to items that touch automation/productivity workflows:
-- agent-framework, dev-tools, mcp-ecosystem → high priority (direct workflow-automation leverage)
-- ai-for-business, model-release with API/pricing changes → high priority (affects deployment decisions)
-- research-papers with practical implications → medium priority
-- policy-regulation, funding, vendor-corporate news → lower priority unless directly affects workflow availability
+**Category priority (BD-relevance)**: items in different categories have different default weight in the run. Top-tier (highest priority for surfacing):
 
-This is a soft prior, not a hard filter. A landmark policy ruling can still lead. But absent strong signal, weight toward items where the reader can act.
+1. **`workflow-automation`** — tools that automate cross-app or cross-department processes (Zapier-style, n8n, Make, etc., plus AI-native automation platforms). Direct BD leverage for the radar's audience.
+2. **`productivity-tools`** — AI-powered tools for individual or team productivity (Notion AI, Linear, Granola, etc.). High direct applicability.
+3. **`agent-framework`** — frameworks and platforms for building agentic AI (LangChain, LlamaIndex, AutoGen, CrewAI, Browser-use, OpenHands, Manus). Enables custom automation builds.
+4. **`dev-tools`** — AI-coding tools (Cursor, Claude Code, Copilot, Cody). Enables faster pilot app builds.
+5. **`mcp-ecosystem`** — MCP spec, servers, integrations. Foundation for connecting AI to existing workflows.
+6. **`ai-for-business`** — enterprise AI deployments, partnerships, vendor strategy that affects deployment decisions.
+7. **`model-release`** — frontier or open model releases. Relevant when API/pricing/availability changes affect deployment.
+8. **`research-papers`** — research with practical implications. Medium priority; surface only if the finding affects a current pilot or production decision.
+9. **`policy-regulation`** — government rulings, compliance requirements. Lower priority unless directly affects what tools can be deployed.
+
+This is a soft prior, not a hard filter. A landmark policy ruling can still lead. But absent strong signal, weight toward items where the BD audience can act.
 
 Search rules from `research-rigor` apply:
 - Specific keywords beat generic phrases

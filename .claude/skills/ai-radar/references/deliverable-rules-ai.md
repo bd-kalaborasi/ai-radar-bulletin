@@ -35,18 +35,28 @@ If the period had no consequential developments, say so honestly: "Quiet week �
 
 ### 3. Items
 
-Each item follows the schema in `templates/item-record.md`. Render in priority order (highest impact first).
+Each item follows the schema in `templates/item-record.md`. Render using the **BD-actionability ordering rule** from `source-quality-rubric-ai.md`:
 
-For **internal-BD audience**, every item ends with:
-- **Pain-point this addresses** (if any) — concrete pain in your operations
+1. High-actionability T1-T2 verified items → top
+2. High-actionability T3 secondary → upper-middle (flagged)
+3. Medium-actionability T1-T2 → middle
+4. Medium-actionability T3 → lower-middle
+5. Low-actionability anything → bottom
+
+In practice: items in `workflow-automation`, `productivity-tools`, `agent-framework`, `dev-tools`, `mcp-ecosystem` typically lead. `model-release` and `ai-for-business` items follow if they affect deployment decisions. `research-papers` and `policy-regulation` typically tail unless landmark.
+
+**Both audiences**: every item ends with **"Why it matters for automation/productivity"** — a 1-2 sentence framing that connects the item to a concrete BD/automation/productivity angle. If no actionable angle exists, state explicitly: "Informational only — no immediate workflow leverage."
+
+**For `internal-BD` audience**, every item additionally appends a BD framing block:
+- **Pain-point** (if any) — concrete pain in your operations
 - **Before vs after** — what changes if leveraged
-- **Efficiency estimate** — formula required, not bare number. If can't quantify, state "needs baseline measurement of X"
+- **Efficiency estimate** — show formula only when item is **clearly applicable** with available baseline data. Format: `transactions × time × frequency = X hr/month`. **Skip this field entirely** if the angle is speculative or no baseline exists. Do NOT fabricate "needs baseline measurement of X" as filler — silence is acceptable when the estimate would be a guess.
 - **Risk & dependency** — what could go wrong, what we'd need
-- **Pilot fit (yes/no)** — whether this is a candidate for a workflow proposal
+- **Pilot fit** — yes/no/maybe + 1-line reason
 
-For **public-digest audience**, every item ends with:
-- **What this means for users** (1-2 sentences, no marketing language)
-- **Caveats** if any (vendor-claimed but unverified, demo-only, waitlisted, etc.)
+**For `public-digest` audience**, BD framing block is omitted. Only the universal "Why it matters" line ships.
+
+The point: efficiency estimates that survive scrutiny are valuable. Estimates that paper over speculation with formulas erode trust. Default to honesty.
 
 ### 4. Conflicts surfaced
 
@@ -125,28 +135,37 @@ Before finalizing the deliverable, verify each:
 - [ ] Every item has T1-T5 grade
 - [ ] Every item has verification status (verified / secondary / rumor)
 - [ ] Vendor benchmark claims explicitly labeled
-- [ ] Conflict of interest flagged where applicable
+- [ ] Conflict of interest flagged where applicable (otherwise skip — don't print "none observed" boilerplate)
 
 **Numbers**
 - [ ] No bare numbers without source or calculation
-- [ ] All efficiency estimates show formula
+- [ ] Efficiency estimates show formula AND only appear where item is clearly applicable; speculative estimates are skipped, not faked
 - [ ] All "X% improvement" claims have benchmark context (which benchmark, which baseline)
 
 **Quotes**
-- [ ] No quote >15 words
+- [ ] No quote >14 words
 - [ ] No source quoted more than once
 - [ ] Default is paraphrase
 
 **Honesty**
-- [ ] Limitations section present and substantive
-- [ ] Dropped items section present
+- [ ] Limitations section present and substantive (named gaps, not boilerplate)
+- [ ] Dropped section present (even if empty)
 - [ ] Conflicts not hidden
 - [ ] No "industry shift" framing without ≥3 T1-T2 sources
 - [ ] Hype language stripped
 
+**Dedup**
+- [ ] Same announcement reported by multiple outlets = ONE item with cross-references, not N items
+- [ ] Same vendor's related announcements grouped where natural; separated where genuinely independent
+
+**Ordering**
+- [ ] Top items are high-actionability T1-T2 (workflow-automation, productivity-tools, agent-framework, dev-tools, mcp-ecosystem when shipping concrete features)
+- [ ] Low-actionability items (pure policy, distant research, corporate news without product impact) at bottom
+- [ ] BD-actionability ordering matches the rule in `source-quality-rubric-ai.md`
+
 **Tone match**
-- [ ] If audience=internal-BD: pain-point/before-after/efficiency/risk framework applied to each item
-- [ ] If audience=public-digest: neutral tone, no marketing language
+- [ ] If audience=internal-BD: BD framing block per item where applicable; efficiency estimate skipped when speculative
+- [ ] If audience=public-digest: neutral tone, no marketing language, no BD framing block
 - [ ] If audience=both: both versions present, item pool consistent
 
 **Run hygiene**

@@ -24,6 +24,8 @@ const posts = defineCollection({
         'agent-framework',
         'dev-tools',
         'mcp-ecosystem',
+        'workflow-automation',
+        'productivity-tools',
         'ai-for-business',
         'research-papers',
         'policy-regulation',
