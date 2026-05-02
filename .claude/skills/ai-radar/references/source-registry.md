@@ -230,32 +230,95 @@ Use these to **find** items, but trace to primary before citing.
 
 ---
 
-## X / social (best-effort via web_search)
+## Social via search (X + Threads — best-effort indexed posts)
 
-X timeline access is login-walled. Public posts can sometimes be retrieved via `web_search` when search engines have indexed them. Use for **discovery** and for **direct quotes from primary actors** (founders, researchers announcing their own work).
+X and Threads timeline access is login-walled. Public posts can sometimes be retrieved via `web_search` when search engines have indexed them. Use for **discovery**, for **direct quotes from primary actors** (founders, researchers announcing their own work), and as **engagement proxy** when same post diffuses across multiple aggregators.
 
-### High-value handles to monitor (via search query, not direct fetch)
+**This category is mandatory per run** (Stage 3 priority #3). Always run dedicated search passes — do not skip even when no lateral discovery surfaces an X handle.
 
-Search pattern: `"@{handle}" {topic} site:x.com OR site:twitter.com` filtered by recent date.
+### Search patterns
 
-| Handle | Why |
+For specific handles:
+- `web_search "@handle [topic]" site:x.com` (or `site:twitter.com` legacy)
+- `web_search "@handle [topic]" site:threads.net`
+
+For topic discovery without specific handle:
+- `web_search "[topic]" site:x.com [date qualifier like 'this week']`
+- `web_search "[topic]" site:threads.net`
+
+For viral/trending content:
+- `web_search "[topic] viral OR trending site:x.com"`
+- Cross-reference with HN search to validate engagement
+
+### High-value handles — official accounts
+
+| Handle | Org | Use for |
+|---|---|---|
+| @AnthropicAI | Anthropic | Official announcements, often before blog post |
+| @OpenAI | OpenAI | Official announcements |
+| @GoogleDeepMind | Google DeepMind | Official |
+| @GoogleAI | Google | Product AI announcements |
+| @MetaAI | Meta | Llama, FAIR research |
+| @MistralAI | Mistral | Model releases |
+| @xai | xAI | Grok |
+| @cohere | Cohere | Command models |
+| @huggingface | Hugging Face | Open-source ecosystem |
+| @LangChainAI | LangChain | Framework updates |
+| @llama_index | LlamaIndex | Framework updates |
+| @manus_ai | Manus | Agent product launches |
+
+### High-value handles — leadership voices
+
+| Handle | Why | Caveat |
+|---|---|---|
+| @sama | OpenAI CEO | Frequent product hints; often vague |
+| @darioamodei | Anthropic CEO | Less frequent, high signal |
+| @demishassabis | DeepMind CEO | Research-leaning |
+| @ylecun | Meta AI Chief Scientist | Opinion-heavy on AGI/ML |
+| @adcock_brett | Robotics + AI | Verify claims |
+| @gdb | Greg Brockman, OpenAI | Product updates |
+
+### High-value handles — practitioner / independent
+
+| Handle | Why | Caveat |
+|---|---|---|
+| @karpathy | Andrej Karpathy | High-signal AI commentary, hands-on |
+| @swyx | Latent Space | Practitioner perspective; investor — note potential conflicts |
+| @simonw | Simon Willison | Hands-on tool testing — excellent for "did this actually work" |
+| @rauchg | Vercel founder | Product/dev tools angle |
+| @pirroh | Designer + AI builder | Product launches |
+| @soumithchintala | PyTorch core | Open-source signal |
+| @_philschmid | Philipp Schmid (HF) | Open-source releases |
+| @AndrewCurran_ | AI news curator | Verify before citing — useful for discovery |
+| @rohanpaul_ai | Research roundups | Always verify — discovery only |
+| @alexalbert__ | Anthropic product | Prompt patterns, product hints |
+| @cremieuxrecueil | Research commentary | Verify |
+| @tszzl | Roon, OpenAI | Cultural commentary, occasionally product |
+| @sangerized | AI dev tools | Product tracking |
+
+### Threads handles to monitor
+
+Threads is sparser than X for AI content, but a few high-value voices have moved:
+
+| Handle (Threads) | Why |
 |---|---|
-| @AnthropicAI | Official |
-| @OpenAI | Official |
-| @GoogleDeepMind | Official |
-| @sama | OpenAI CEO — frequent product hints |
-| @darioamodei | Anthropic CEO |
-| @demishassabis | DeepMind CEO |
-| @ylecun | Meta AI Chief Scientist |
-| @karpathy | Independent — high-signal commentary |
-| @swyx | Latent Space — practitioner |
-| @simonw | Hands-on tool testing |
-| @alexalbert__ | Anthropic — product/prompt updates |
-| @soumithchintala | PyTorch / Meta |
-| @rohanpaul_ai | Research roundups (verify) |
-| @_philschmid | Hugging Face / open-source |
+| @sama | Cross-posts from X |
+| @karpathy | Occasional Threads-only |
+| @pirroh | Active on Threads |
 
-**Caveat**: tweets are often vague, deleted, or context-collapsed. If a tweet is the only source for a strong claim, mark `secondary` or `rumor`. Founder tweets about their own product are T2; influencer commentary is T4.
+For Threads, search-engine indexing is less reliable than X. Treat Threads-only finds as discovery; trace upstream to X or vendor blog before citing.
+
+### Topic-based search patterns
+
+Run these per category to capture content from outside the known handle list:
+
+- workflow-automation: `"AI agent" OR "autonomous agent" site:x.com [recent]`
+- productivity-ai: `"Notion AI" OR "Linear AI" OR "AI assistant" site:x.com [recent]`
+- agent-framework: `"LangChain" OR "AutoGen" OR "CrewAI" site:x.com [recent]`
+- mcp-ecosystem: `"MCP server" OR "Model Context Protocol" site:x.com [recent]`
+- model-release: `"GPT-5" OR "Claude" OR "Gemini" release site:x.com [recent]`
+
+**Caveat**: tweets are often vague, deleted, or context-collapsed. If a tweet is the only source for a strong claim, mark `secondary` or `rumor`. Founder tweets about their own product are T2 for "person said this", T3 for "company committed". Influencer commentary without primary backing is T4. Anonymous "leak" account tweets are T5 — do not cite.
 
 ---
 

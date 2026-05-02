@@ -68,9 +68,9 @@ For each source planned, note expected yield (high/medium/low) so the user can s
 In priority order:
 1. **Vendor primary** (blog/news/changelog/release notes pages) — `web_fetch` directly
 2. **GitHub releases** — fetch `https://github.com/{org}/{repo}/releases` or RSS
-3. **Newsletter/media** with original reporting — fetch full article, not summary
-4. **X / public social via search** — `web_search "site:x.com [topic]"` or `"site:threads.net [topic]"` to capture posts visible in search index. If a tweet is the original source (founder announcement before official blog), record the tweet URL as primary at T2; influencer commentary is T4. **Engagement proxy**: when the same X/Threads post appears in multiple aggregator/news search results, treat that diffusion as a signal of practitioner-community attention — flag in cross-references with note "diffusion: cited by N outlets". True engagement metrics (likes, retweets, reply count) require Twitter API access not available in this environment; diffusion is the practical proxy.
-5. **Community signals** (HN, Reddit) — use as discovery aid only, never as primary citation
+3. **X / Threads via search — MANDATORY per run** — search engines index public posts from X and Threads. Always run dedicated search passes for AI-relevant content from key voices and topics, even when not lateral-discovered. Pattern: `web_search "site:x.com [handle or topic]"` and `web_search "site:threads.net [topic]"`. See `references/source-registry.md` "Social via search" section for high-value handle list. **Tiering**: if a tweet is the original source for a claim (founder announcement before official blog), record the tweet URL as primary at T2; founder direct statement = T2 for "person said this", T3 for "company committed". Influencer commentary without primary backing = T4. **Engagement proxy**: when the same X/Threads post appears in multiple aggregator/news search results, treat diffusion as practitioner-attention signal — note in cross-references as "diffusion: cited by N outlets". True engagement metrics (likes/retweets/replies) require Twitter API access not available here; diffusion is the working proxy.
+4. **Newsletter/media** with original reporting — fetch full article, not summary
+5. **Community signals** (HN, Reddit) — use as discovery aid only, never as primary citation. **Engagement proxy via HN**: when an X/Threads post is cross-posted to Hacker News and accumulates substantive comment thread (>30 comments, expert-leaning discussion), that comment depth is a reliable signal of AI practitioner attention. Use this to validate diffusion-flagged X posts.
 
 **Category priority (BD-relevance)**: items in different categories have different default weight in the run. Top-tier (highest priority for surfacing):
 
@@ -111,6 +111,7 @@ For every run, allocate at least 30% of search budget to **exploratory searches*
    - Hacker News front page filtered for AI keywords
    - Product Hunt AI category for the period
    - **MCP server aggregators** — PulseMCP, Glama AI, mcp.so (track new MCP servers shipping for automation/integration)
+   - **Weekly AI Twitter roundups in newsletters** — Latent Space (latent.space), Last Week in AI (lastweekin.ai), Ben's Bites (bensbites.beehiiv.com), Import AI (importai.substack.com) — these regularly curate which X posts the AI practitioner community has been discussing. Search for `[newsletter name] twitter weekly` or scan recent issues. Use as engagement-signal proxy when a tweet appears across multiple newsletters in the same window.
 
 3. **GitHub stars-based discovery (automation/productivity focus)**: search GitHub explicitly for active repos with adoption signal in BD-relevant topics. Use search patterns like:
    - `topic:claude-skill stars:>50 pushed:>{date}` — Claude skills with traction
