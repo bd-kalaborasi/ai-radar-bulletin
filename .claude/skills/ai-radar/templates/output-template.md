@@ -1,48 +1,47 @@
 # Output Template — AI Radar Deliverable
 
-This template is used when writing the final deliverable. Fill the placeholders. Keep section order. Empty sections are explicitly stated, not omitted.
+This template is used when writing the final deliverable. Fill placeholders. Keep section order. Empty sections are stated explicitly, not omitted.
 
----
+## Hard rules for the publishable layout
 
-## Template structure (use as-is)
+- **No "Item N:" prefix** in titles — declarative title only
+- **Metadata in 2-line compact header**, not inline within prose
+- **Suppress default fields** (`Conflict of interest: none observed`, `Recency-adjusted weight: 1.0`) — only surface when non-default
+- **Active voice, lead with action** — see `templates/item-record.md` for full copywriting principles
+- **2-4 sentence body per item** — no padding, no marketing register
+- **Every item ends with "Why it matters for automation/productivity"** in BD framing
+- **Dedupe before publishing** — same announcement reported by multiple outlets = 1 item with cross-references, not N items
+
+## Template structure
 
 ```markdown
-# AI Radar — [YYYY-MM-DD to YYYY-MM-DD]
+# AI Radar — DD Mon YYYY
 
-**Run parameters**:
-- Timeframe: [e.g., last 7 days]
-- Categories: [list, or "all"]
-- Depth: [quick-scan / standard / deep]
-- Audience: [internal-bd / public-digest / both]
-- Run timestamp: [YYYY-MM-DD HH:MM TZ]
-- Items reviewed: [N harvested before filter]
-- Items in deliverable: [N after filter]
+[Optional one-line subhead summarizing the day's signal: e.g. "Microsoft, IBM, xAI ship; Pentagon excludes Anthropic; China courts protect AI-displaced workers."]
+
+**Run:** [Timeframe] · [N items reviewed] → [N published] · [N verified · N secondary · N rumor] · [exploration_pct% exploration]
 
 ---
 
-## Executive Summary
+## TL;DR
 
-[3-5 bullets, each ≤2 sentences, each citing the detailed item below.]
+[3-5 bullets, each ≤2 sentences. Lead with the most BD-relevant item. Each cites the item title below.]
 
-- [Bullet 1] (see Item N)
-- [Bullet 2] (see Item N)
-- [Bullet 3] (see Item N)
+- **[Subject]** — [what shipped, in one phrase]. ([→ link to detailed item below])
+- **[Subject]** — [...]
+- **[Subject]** — [...]
 
-If quiet period: "Quiet period — no major releases or research breakthroughs. Notable noise but low signal in [categories]. Detail items below cover what was substantive."
+If quiet period: "Quiet period — only [N] verified items met the bar this window. Detail items below cover what was substantive."
 
 ---
 
 ## Items
 
-[Items in priority order, each following `templates/item-record.md` schema]
+[Items in priority order. Per `templates/item-record.md` schema. Top items: highest automation/productivity relevance × verification confidence.]
 
-### Item 1: [title]
+[Item 1 — see item-record.md schema]
 
-[full item record]
-
-### Item 2: [title]
-
-[full item record]
+[Item 2 — see item-record.md schema]
 
 ...
 
@@ -50,41 +49,41 @@ If quiet period: "Quiet period — no major releases or research breakthroughs. 
 
 ## Conflicts surfaced
 
-[Topics where sources disagreed and reconciliation was applied. Use format from `references/conflict-reconciliation-ai.md`. If no conflicts: "No source conflicts requiring reconciliation this period."]
+[Only when sources disagreed and reconciliation was applied. Format from `references/conflict-reconciliation-ai.md`.]
+
+If no conflicts this run: skip this section entirely. (Don't print "No conflicts" — silence is fine.)
 
 ---
 
-## Dropped items (transparency)
+## Dropped
 
-Items that surfaced during harvest but were dropped, with reason. This section exists so the user knows the radar didn't quietly miss things.
+Items considered but not published, with reason. Helps the reader see what wasn't quietly missed.
 
-| Title considered | Source | Reason for drop |
+| Title considered | Source | Reason |
 |---|---|---|
-| [title] | [URL] | [Verification failed / Tier too low / Off-scope / Duplicate] |
+| [title] | [URL] | [Outside window / Verification failed / Tier too low / Duplicate of item N / Off-scope] |
 
-If nothing dropped: "No items dropped this period."
+If nothing dropped: "No items dropped this run."
 
 ---
 
 ## Limitations
 
-[Always present. Name explicitly:]
+[Always present. Surface the gaps that affect what the reader can trust this week.]
 
-- **Sources unreachable**: [list with HTTP status or reason, e.g., "Manus blog returned 404 — possibly site restructure"]
-- **Login-walled coverage gap**: This run did not access X timelines, IG, LinkedIn, or Discord. Items from these sources may have been missed if not also visible via public search.
-- **Categories with thin coverage**: [if any, e.g., "policy-regulation: only 1 item this period; this is below baseline — may indicate quiet period or coverage gap"]
-- **Items requiring upgrade**: [items with `secondary` or `rumor` status, with what would upgrade them]
-- **Time period bias**: [e.g., "this run covered 5 weekdays — weekend items not yet captured"]
-- **Geographic bias**: [e.g., "sources are US/EU heavy. SEA-region AI ecosystem (e.g., Indonesian model dev, regional deployments) underrepresented."]
-- **Period-specific bias**: [e.g., "This was a major US conference week — vendor announcements over-represented relative to research publications."]
+- **Sources unreachable**: [list with reason — "anthropic.com 403 from sandbox", "Manus blog 404", etc.]
+- **Login-walled coverage**: This run did not access X timelines, IG, LinkedIn private, or Discord directly. Public X posts visible via search engines were captured. Items behind logged-in walls may have been missed.
+- **Categories with thin coverage**: [if any — "no MCP releases this window", "policy-regulation: 1 item, below baseline"]
+- **Items requiring upgrade**: [items with `secondary` or `rumor` status, with what would upgrade them — "ICLR/NeurIPS acceptance", "vendor primary publishing"]
+- **Time period bias**: [e.g., "covers Tue-Thu — weekend not yet captured", "expanded from 24h to 72h to recover from sparse strict window"]
+- **Geographic bias**: [e.g., "US/EU heavy; SEA-region underrepresented; one explicit search yielded no in-window items"]
+- **Vendor benchmark caveats**: [e.g., "Granite 4.1, FlashKDA speedups vendor-measured, no independent replication this run"]
 
-If any limitation feels weak — that's the signal it should stay in.
+If a limitation feels weak — that's the signal to keep it in.
 
 ---
 
 ## Search log (compact)
-
-Searches run this session, with yield:
 
 ```
 Q: "[query 1]" → [N results, M high-relevance]
@@ -92,62 +91,61 @@ Q: "[query 2]" → [N results, M high-relevance]
 ...
 ```
 
-Total searches: [N]
+Total searches: [N], of which [M] exploratory or adversarial ([X]%).
 
 ---
 
 ## Suggested next runs
 
-[Topics that warrant deeper coverage. Omit section if none.]
+[Optional. Topics that warrant deeper coverage.]
 
-- [Topic 1] — current evidence is T3 only; would benefit from independent benchmark search
-- [Topic 2] — vendor announced but availability unclear; revisit in [N days]
+- [Topic] — [why follow up]
+- [Topic] — [why follow up]
 ```
-
----
 
 ## Format variations
 
-### If audience = internal-BD only
+### audience = public-digest only
 
-- Skip the "Public-digest framing" subsection in each item
-- Tone: Indonesian-English mix, direct, BD-focused
-- Executive summary frames consequences in workflow-automation terms
-
-### If audience = public-digest only
-
-- Skip the "Internal-BD framing" subsection in each item
+- Skip BD framing block per item (BD framing only appears in the internal-bd version)
 - Tone: neutral newsroom English
-- Executive summary frames consequences for general AI-using audience
+- TL;DR phrased for general AI-using readership
 
-### If audience = both
+### audience = internal-bd only
 
-- Each item carries both framings
-- The header documents both
-- The deliverable can later be filtered into two separate publishable outputs from the same item pool (saves duplicate research)
+- Each item appends BD framing block (pain-point, before-after, efficiency formula, risk, pilot fit)
+- Tone: Indonesian-English mix permitted, direct, BD-focused
+- TL;DR phrased in workflow-automation terms ("3 items this week could reduce X workflow time by Y hr/month")
 
----
+### audience = both
+
+- Generate both versions from the same verified item pool
+- BD version is committed to private repo; public-digest to public repo
+- Don't duplicate research effort — gather once, reframe twice
 
 ## Length expectations by depth
 
-| Depth | Word count target | Item count |
+| Depth | Target words | Item count |
 |---|---|---|
-| quick-scan | 800-1,500 | 5 items |
-| standard | 2,000-4,000 | 10-15 items |
-| deep | 5,000-10,000 | 20+ items |
+| quick-scan | 800-1,500 | 5 |
+| standard | 2,000-4,000 | 10-15 |
+| deep | 5,000-10,000 | 20+ |
 
-Don't pad. If a depth-level natural length is shorter, deliver shorter. The skill values signal density.
+Don't pad. If the natural length is shorter, deliver shorter. The skill values signal density.
 
----
+## Final delivery checklist
 
-## Final delivery rules
+Before submitting:
 
-Before sending:
 1. Run the self-check from `references/deliverable-rules-ai.md`
-2. Verify every item has primary URL + date + tier + verification
-3. Verify limitations section is substantive
-4. Verify dropped items section is present
-5. Verify no quote >15 words and no source quoted twice
-6. Verify no hype language survived
+2. Every item has primary URL + date + tier + verification
+3. Every item has "Why it matters for automation/productivity" line
+4. Limitations section is substantive (named gaps, not boilerplate)
+5. Dropped section is present (even if empty)
+6. No quote >14 words, no source quoted twice
+7. No hype language survived
+8. Dedupe applied — no two items report the same announcement
+9. Items sorted by automation/productivity relevance × verification (top item should be the most actionable for BD/workflow use case)
+10. Compact metadata block — not inline run-on prose
 
 If any check fails, fix before delivering.

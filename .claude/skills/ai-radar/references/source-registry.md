@@ -82,14 +82,44 @@ Highly reliable for "what shipped". Fetch `https://github.com/{org}/{repo}/relea
 **Use for**: confirming feature shipped, version numbers, breaking changes, deprecations
 **Caveat**: a release tag does not mean the feature is production-ready or widely available
 
-### GitHub trending (discovery only)
+### GitHub trending & topic search (discovery only)
 
-| URL | Use for |
+| URL / Pattern | Use for |
 |---|---|
-| https://github.com/trending?since=daily&language= | Discovery of fast-rising repos |
+| https://github.com/trending?since=daily | Discovery of fast-rising repos |
 | https://github.com/trending?since=weekly | Less noisy than daily |
+| `topic:claude-skill stars:>50 pushed:>{date}` (GitHub search) | Active Claude skills with adoption signal |
+| `topic:mcp-server stars:>100 pushed:>{date}` | MCP servers gaining traction |
+| `topic:ai-agent stars:>50 created:>{date}` | New agent tooling with stars |
+| `topic:llm-tools OR topic:ai-automation stars:>100 pushed:>{date}` | Adjacent automation toolchain |
+| `topic:claude-code OR topic:cursor stars:>50 pushed:>{date}` | AI-coding ecosystem |
+| `topic:agentic-ai stars:>50 pushed:>{date}` | Agentic patterns and frameworks |
 
-**Caveat**: trending is gameable; treat as discovery aid, not as evidence of actual adoption
+**Search via**: GitHub search UI, or `web_search "site:github.com topic:X stars:>N"` for indexed results.
+
+**Filter rules to avoid false positives:**
+- `pushed:<60d` floor — repos starred but not maintained ≠ adoption
+- Exclude tutorial repos (heuristic: README emphasizes "learn how to" without working code)
+- Exclude archived projects
+- Stars without recent commits = bookmarking, not adoption signal
+
+**Caveat**: trending and stars are gameable; treat as discovery aid, not as evidence of production adoption. Always trace upstream to verify the project actually delivers.
+
+### MCP ecosystem aggregators (discovery + tracking)
+
+The MCP ecosystem moves fast and many servers don't have their own blog. Aggregators surface what's shipping.
+
+| Source | URL | Tier | Use for | Caveat |
+|---|---|---|---|---|
+| PulseMCP | https://www.pulsemcp.com/ | T3 | Curated MCP server directory with metadata | Aggregator — trace upstream to vendor or repo before citing as primary |
+| Glama AI MCP directory | https://glama.ai/mcp/servers | T3 | Browseable MCP servers, search by category | Same — discovery only |
+| mcp.so | https://mcp.so/ | T3 | Community-driven MCP server index | Tier varies by entry; verify per-item |
+| Awesome MCP servers (GitHub) | https://github.com/punkpeye/awesome-mcp-servers | T3 | Curated list with descriptions | Trace upstream |
+| modelcontextprotocol/servers | https://github.com/modelcontextprotocol/servers | T2 | Official reference + community servers | Tier T2 for official entries, T3 for community-contributed |
+
+**Use for**: identifying MCP servers shipping for automation/integration use cases (filesystem, databases, SaaS, dev tools). Particularly relevant when looking for tooling that bridges Claude/agents to existing workflows — a high-leverage area for the BD audience.
+
+**Caveat**: MCP server quality varies enormously. A server with 500 stars and a polished README may still have stale tool definitions or broken schemas. Verify by reading the actual server code or testing in a sandbox before recommending in BD framing.
 
 ---
 

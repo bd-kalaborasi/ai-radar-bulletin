@@ -41,12 +41,21 @@ What this means in practice:
 ### Stage 1 — Scope the run
 
 Confirm with the user (or use defaults if invoked automatically):
-- **Timeframe**: last 24h / last 7d / last 30d / custom date range
+- **Timeframe**: last 72h / last 7d / last 30d / custom date range
 - **Categories**: pick from `model-release`, `agent-framework`, `dev-tools`, `mcp-ecosystem`, `ai-for-business`, `research-papers`, `policy-regulation`, or `all`
 - **Depth**: `quick-scan` (top 5 items, ~15 min) / `standard` (top 15, ~45 min) / `deep` (25+, ~2h)
 - **Audience**: `internal-bd` (workflow automation framing) / `public-digest` (neutral newsroom tone) / `both`
 
-If invoked automatically without parameters, default to: `last 7d`, `all categories`, `standard depth`, `both audiences`.
+If invoked automatically without parameters, default to: `last 72h`, `all categories`, `standard depth`, `both audiences`.
+
+**Why 72h not 24h**: AI vendor announcements often happen mid-week and don't surface in search indexes for 24-48h. Strict 24h windows produce sparse output and miss substantive items. 72h is the practical sweet spot for daily runs — recent enough to feel current, long enough to catch lagged indexing.
+
+**Window expansion (mandatory rule)**: If after standard searches in the strict window you have ≤5 verified items, expand the window:
+- Daily run with 72h base → expand to 5 days
+- Weekly run with 7d base → expand to 10 days
+- Document the expansion in Limitations: "Strict window yielded N items; expanded to X days to recover signal density."
+
+The point is signal density, not arbitrary recency. A high-quality item from 4 days ago beats a thin item from yesterday. **Items dated outside the expanded window are still dropped** — the goal is reach, not staleness.
 
 ### Stage 2 — Plan source coverage
 
@@ -60,8 +69,16 @@ In priority order:
 1. **Vendor primary** (blog/news/changelog/release notes pages) — `web_fetch` directly
 2. **GitHub releases** — fetch `https://github.com/{org}/{repo}/releases` or RSS
 3. **Newsletter/media** with original reporting — fetch full article, not summary
-4. **Community signals** (HN, Reddit) — use as discovery aid only, never as primary citation
-5. **X / social** (public posts) — only via `web_search` returning indexed posts; if a tweet is the original source (e.g., a founder announcement), record the tweet URL as primary
+4. **X / public social via search** — `web_search "site:x.com [topic]"` or `"site:threads.net [topic]"` to capture posts visible in search index. If a tweet is the original source (founder announcement before official blog), record the tweet URL as primary at T2; influencer commentary is T4. **Engagement proxy**: when the same X/Threads post appears in multiple aggregator/news search results, treat that diffusion as a signal of practitioner-community attention — flag in cross-references with note "diffusion: cited by N outlets". True engagement metrics (likes, retweets, reply count) require Twitter API access not available in this environment; diffusion is the practical proxy.
+5. **Community signals** (HN, Reddit) — use as discovery aid only, never as primary citation
+
+**Category priority (BD-relevance shift)**: Within these search priorities, give relatively more attention to items that touch automation/productivity workflows:
+- agent-framework, dev-tools, mcp-ecosystem → high priority (direct workflow-automation leverage)
+- ai-for-business, model-release with API/pricing changes → high priority (affects deployment decisions)
+- research-papers with practical implications → medium priority
+- policy-regulation, funding, vendor-corporate news → lower priority unless directly affects workflow availability
+
+This is a soft prior, not a hard filter. A landmark policy ruling can still lead. But absent strong signal, weight toward items where the reader can act.
 
 Search rules from `research-rigor` apply:
 - Specific keywords beat generic phrases
@@ -87,12 +104,24 @@ For every run, allocate at least 30% of search budget to **exploratory searches*
    - Hugging Face Daily Papers — `https://huggingface.co/papers`
    - Hacker News front page filtered for AI keywords
    - Product Hunt AI category for the period
+   - **MCP server aggregators** — PulseMCP, Glama AI, mcp.so (track new MCP servers shipping for automation/integration)
 
-3. **Lateral discovery from any item already found**: when an item mentions a person, company, or tool not in the registry, run a search on that name. New names lead to new sources.
+3. **GitHub stars-based discovery (automation/productivity focus)**: search GitHub explicitly for active repos with adoption signal in BD-relevant topics. Use search patterns like:
+   - `topic:claude-skill stars:>50 pushed:>{date}` — Claude skills with traction
+   - `topic:mcp-server stars:>100 pushed:>{date}` — MCP servers with adoption
+   - `topic:ai-agent stars:>50 created:>{date}` — new agent tooling
+   - `topic:llm-tools OR topic:ai-automation stars:>100 pushed:>{date}` — adjacent automation tools
+   - `topic:claude-code OR topic:cursor stars:>50 pushed:>{date}` — dev tool ecosystem
 
-4. **Cross-language discovery**: at least once per run, search in Indonesian / SEA-region terms for AI news (`"AI Indonesia"`, `"startup AI Asia Tenggara"`, `"model AI lokal"`) — registry is US/EU-heavy and SEA coverage gap is documented in Limitations.
+   Adapt the date threshold to the run's timeframe. Filter false positives: starred-but-stale repos (`pushed:<60d` is the floor for "active"), tutorial repos, archived projects. **Stars without recent commits = not adoption, just bookmarking.**
 
-5. **Adversarial discovery**: actively search for criticism, replication failures, or contradicting evidence on items already harvested. "X benchmark debunked", "Y vendor controversy", "Z model limitations" — counter-evidence is as important as the original claim.
+4. **Lateral discovery from any item already found**: when an item mentions a person, company, or tool not in the registry, run a search on that name. New names lead to new sources.
+
+5. **Cross-language discovery**: at least once per run, search in Indonesian / SEA-region terms for AI news (`"AI Indonesia"`, `"startup AI Asia Tenggara"`, `"model AI lokal"`) — registry is US/EU-heavy and SEA coverage gap is documented in Limitations.
+
+6. **Adversarial discovery**: actively search for criticism, replication failures, or contradicting evidence on items already harvested. "X benchmark debunked", "Y vendor controversy", "Z model limitations" — counter-evidence is as important as the original claim.
+
+7. **Diffusion-signal discovery (social engagement proxy)**: when a tweet, blog post, or announcement appears repeatedly across different aggregators / newsletters / search results within the window, that **multi-source citation pattern** is a signal of community attention worth investigating. This is not engagement measurement (no Twitter API), but a practical proxy: high diffusion = high practitioner attention = worth a closer look. Trace upstream to verify the source still passes the rubric — diffusion does not equal quality.
 
 When exploration surfaces a previously-unknown source that proves reliable across multiple runs, propose adding it to the registry (per the checklist at the end of `source-registry.md`). Registry is updated quarterly based on exploration findings — it grows, it does not stay static.
 
@@ -115,6 +144,24 @@ For each item worth including, record:
 
 Apply the 15-word quote limit and one-quote-per-source rule from copyright policy. Default to paraphrasing.
 
+#### Stage 5.5 — De-duplicate before formatting (mandatory)
+
+A single announcement reported by multiple outlets is **one item, not many**. Before moving to Stage 7, apply dedup:
+
+1. **Same announcement, multiple outlets** → 1 item with primary source as URL, additional outlets in cross-references. Example: Pentagon AI deal → 1 item citing DefenseScoop primary, with CNN/UPI/Breaking Defense as cross-refs. Not 4 items.
+2. **Same product, related announcements same day** → group into 1 item if all in one vendor blog (e.g., model + pricing + benchmark together). Separate if independent (e.g., model release + safety policy update).
+3. **Same story, different framings** → keep the version with strongest sourcing. Two outlets reporting same fact differently → prefer primary-source-confirmed version.
+4. **Same vendor, multiple unrelated launches in window** → separate items, each with its own provenance.
+
+Dedup decision rule (in order):
+- Title + date proximity (within 48h) + same primary entity → likely duplicate, merge
+- Different titles, same factual claim, same date range → check if same announcement reported differently → merge
+- When in doubt, separate items but cross-reference each other
+
+The "Items reviewed" count in run parameters includes pre-dedup candidates. The "Items published" count is post-dedup. Surface this in run summary so the reader sees harvest breadth.
+
+**Why this matters specifically for AI radar**: AI announcements get heavy coverage from many outlets simultaneously. Without dedup, a single Microsoft Agent 365 GA could occupy 5-7 slots in the bulletin and crowd out other substantive items. Dedup preserves signal density.
+
 ### Stage 6 — Reconcile conflicts
 
 When two sources disagree about the same fact (e.g., model release date, benchmark score, pricing), apply weighted synthesis from `references/conflict-reconciliation-ai.md`:
@@ -129,13 +176,24 @@ If evenly split among same-tier sources, state explicitly: "evidence is genuinel
 ### Stage 7 — Write deliverable
 
 Use the template in `templates/output-template.md`. The template enforces:
-- Every item has source URL + date + tier + verification status
+- Compact metadata header per item (not run-on inline prose)
+- No "Item N:" prefix in titles — declarative title only
+- Active voice, lead with action
+- 2-4 sentence body per item, no padding
+- Suppress default fields (Conflict of interest: none observed; Recency-adjusted weight: 1.0) — only surface non-default values
+- Every item has "Why it matters for automation/productivity" framing
 - Every quantitative claim has a calculation or source
-- A "Dropped items" section showing what was skipped and why
+- A "Dropped" section showing what was skipped and why
 - A "Limitations" section naming gaps in coverage and confidence
 - Two output formats (internal-BD and public-digest) generated from the same verified item pool
 
 Self-check using the checklist at the end of `references/deliverable-rules-ai.md` before delivering.
+
+**Copywriting principles** are documented in `templates/item-record.md`. Read them before writing the first item — they are not optional. Common failure modes:
+- Listing every metadata field inline as prose (creates wall-of-text)
+- Using "Item 1:", "Item 2:" academic-paper prefix (signal of unfinished editing)
+- Hype language slip ("revolutionary", "game-changing", "breakthrough") — even in summaries
+- "What this means for users" generic phrasing — should be specific to automation/productivity
 
 ## Anti-patterns specific to AI news
 
