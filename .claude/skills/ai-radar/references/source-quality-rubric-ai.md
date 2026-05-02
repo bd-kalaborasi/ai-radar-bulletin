@@ -145,7 +145,7 @@ After tier and recency are applied, items are sorted for the deliverable using a
 5. Low-actionability anything → bottom (only published if newsworthy enough to warrant tracking)
 
 **Mapping to categories** (in practice):
-- `workflow-automation`, `productivity-tools`, `agent-framework`, `dev-tools`, `mcp-ecosystem` → typically high-actionability if shipping an actual feature/tool
+- `workflow-automation`, `productivity-ai`, `agent-framework`, `dev-tools`, `mcp-ecosystem` → typically high-actionability if shipping an actual feature/tool
 - `model-release`, `ai-for-business` → typically medium-actionability
 - `research-papers` → typically medium if practical, low if pure research
 - `policy-regulation` → typically low unless directly affects what tools can be deployed

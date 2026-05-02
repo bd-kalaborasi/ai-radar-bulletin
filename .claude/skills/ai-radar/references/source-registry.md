@@ -57,37 +57,41 @@ These are the original announcements. Treated as **T2 for descriptive claims abo
 | GitHub Copilot blog | https://github.blog/category/ai-and-ml/ | web_fetch | Copilot, GitHub AI | |
 | Cody (Sourcegraph) | https://sourcegraph.com/blog | web_fetch | Cody updates | |
 
-### Workflow automation vendors (high BD priority)
+### Workflow automation — agentic execution products (high BD priority)
 
-Tools that automate cross-app or cross-department workflows. Top-tier category for the radar's BD audience.
+This category covers **AI that autonomously executes multi-step work**, not workflow-builder SaaS. Most primary sources for this category are already covered under foundation model labs and agent vendors above (Anthropic announces Computer Use; OpenAI announces Operator; Manus announces Cloud Computer / My Computer). The discovery pattern is:
+
+1. Watch foundation model lab blogs for agentic releases (Anthropic, OpenAI, Google DeepMind, Meta, xAI, Manus) — these typically ship the highest-impact agentic products.
+2. Watch agent/tooling vendor blogs (already in registry) for new end-user agent products vs developer frameworks — read past the marketing to confirm whether the announcement is a consumer product (this category) or an SDK (`agent-framework`).
+3. Search GitHub topics like `topic:autonomous-agent`, `topic:browser-agent`, `topic:computer-use` filtered by stars + recent push for new entrants.
+4. Track community signals (HN, r/AI_Agents, X) for "I tried [product] autonomously do X" type reports — these surface real-world capability claims worth investigating.
+
+**Examples of items that belong here:**
+- Manus Cloud Computer launch
+- Claude Computer Use general availability
+- ChatGPT Operator / Agent Mode releases
+- Gemini agent capabilities
+- New autonomous browser agents shipping for general use
+- Bot/agent products that complete work end-to-end (booking, research, code, email management) without per-step human approval
+
+**Examples that DO NOT belong here (skip or other category):**
+- Zapier, n8n, Make.com, Workato, Tray.io, Activepieces, Pipedream, Bardeen — these are workflow-builder SaaS. AI is at most one node in a human-designed flow. Skip from the radar unless they ship a genuinely autonomous capability (rare).
+- Notion AI Q&A, Linear suggestions, GitHub Copilot inline — these are `productivity-ai` (assistive, not autonomous).
+- LangChain, AutoGen, CrewAI — these are `agent-framework` (developer infrastructure, not end-user product).
+
+**Caveat for this category**: vendor announcements often blur the line between "demo of agentic capability" and "shipping agentic product". Check: is it generally available, behind a waitlist, in private beta, or just a research demo? Mark caveats accordingly.
+
+### Productivity AI vendors (high BD priority)
+
+AI features that **assist** human work without autonomously executing it. The human stays in the loop — AI suggests, summarizes, drafts, transcribes, surfaces information. Distinct from `workflow-automation` which is autonomous multi-step execution.
 
 | Source | URL | Fetch | Use for | Caveat |
 |---|---|---|---|---|
-| Zapier blog | https://zapier.com/blog | web_fetch / RSS | Zapier AI features, new integrations, workflow patterns | Marketing-heavy on AI angle; trace claims to product docs |
-| n8n blog | https://blog.n8n.io/ | web_fetch / RSS | n8n AI nodes, workflow templates, self-hosted automation | Open-source angle; reliable for technical claims |
-| Make.com blog | https://www.make.com/en/blog | web_fetch | Make AI scenarios, integrations | |
-| Activepieces blog | https://www.activepieces.com/blog | web_fetch | Open-source automation platform | Newer vendor; verify adoption claims |
-| Pipedream blog | https://pipedream.com/blog | web_fetch | Code-first automation with AI helpers | Developer-focused |
-| Workato blog | https://www.workato.com/the-connector | web_fetch | Enterprise iPaaS with AI capabilities | Enterprise sales bias; verify capability claims |
-| Tray.io blog | https://tray.io/blog | web_fetch | Enterprise automation platform | Same caveat as Workato |
-| Bardeen blog | https://www.bardeen.ai/blog | web_fetch | Browser-native automation, AI agents | New vendor; claims need verification |
-| Cassidy AI blog | https://www.cassidyai.com/blog | web_fetch | Workflow AI for SMB | Small vendor, low signal frequency |
-
-**Use for**: tracking new integrations, AI-powered automation features, no-code workflow patterns relevant for BD pilot app design.
-
-**Caveat**: workflow-automation vendors compete on integration count and AI-native claims. Treat "we now have AI features" announcements with skepticism — verify whether AI is core to the workflow or a wrapper.
-
-### Productivity tool vendors (high BD priority)
-
-AI-powered tools for individual or team productivity. Where AI surfaces in tools people already use daily.
-
-| Source | URL | Fetch | Use for | Caveat |
-|---|---|---|---|---|
-| Notion blog | https://www.notion.com/blog | web_fetch | Notion AI features, templates | Marketing-heavy |
-| Linear changelog | https://linear.app/changelog | web_fetch | Linear AI features, integrations | High signal — concrete shipping changelog |
+| Notion blog | https://www.notion.com/blog | web_fetch | Notion AI features (Q&A, summaries, draft assist) | Marketing-heavy |
+| Linear changelog | https://linear.app/changelog | web_fetch | Linear AI suggestions, integrations | High signal — concrete shipping changelog |
 | Coda blog | https://coda.io/blog | web_fetch | Coda AI features, packs | |
 | Granola blog | https://www.granola.ai/blog | web_fetch | Meeting AI, transcript automation | New vendor |
-| Mem.ai blog | https://mem.ai/blog | web_fetch | AI-native notes / personal knowledge mgmt | |
+| Mem.ai blog | https://mem.ai/blog | web_fetch | AI-native notes, knowledge mgmt | |
 | Reflect blog | https://reflect.app/blog | web_fetch | AI-native journaling / notes | |
 | Glean blog | https://www.glean.com/blog | web_fetch | Enterprise search with AI | Enterprise sales bias |
 | Mintlify blog | https://mintlify.com/blog | web_fetch | AI documentation tools | |
@@ -95,9 +99,13 @@ AI-powered tools for individual or team productivity. Where AI surfaces in tools
 | Otter blog | https://otter.ai/blog | web_fetch | Meeting AI, transcription | |
 | Fireflies blog | https://fireflies.ai/blog | web_fetch | Meeting AI assistant | |
 
-**Use for**: tracking how AI is being embedded into productivity tools. Signal for what individual or team workflows can be improved with off-the-shelf AI features.
+**Use for**: tracking how AI is being embedded into productivity tools as assistive features. Signal for what individual or team workflows can benefit from off-the-shelf AI assistance.
 
-**Caveat**: many productivity-tool blogs are marketing-heavy and reuse the word "AI" loosely. Look for: actual feature spec, pricing, availability date. Dismiss generic "we're using AI" announcements without specifics.
+**What belongs here**: features where AI suggests, drafts, summarizes, transcribes, retrieves — and the human decides what to do next. Examples: ChatGPT/Claude regular chat (non-agentic), Notion AI Q&A, GitHub Copilot inline suggestions, Granola transcription, Linear AI suggestions.
+
+**What does NOT belong here**: agentic/autonomous AI products (Manus Computer, Claude Computer Use, ChatGPT Operator, etc.) → those go in `workflow-automation`. Distinguish by whether the AI executes multi-step actions on its own or merely assists a human-driven flow.
+
+**Caveat**: many productivity-tool blogs are marketing-heavy and reuse the word "AI" loosely. Look for actual feature spec, pricing, availability date. Dismiss generic "we're using AI" announcements without specifics.
 
 ---
 

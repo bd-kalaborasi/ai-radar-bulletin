@@ -42,7 +42,7 @@ What this means in practice:
 
 Confirm with the user (or use defaults if invoked automatically):
 - **Timeframe**: last 72h / last 7d / last 30d / custom date range
-- **Categories**: pick from `model-release`, `agent-framework`, `dev-tools`, `mcp-ecosystem`, `workflow-automation`, `productivity-tools`, `ai-for-business`, `research-papers`, `policy-regulation`, or `all`
+- **Categories**: pick from `model-release`, `agent-framework`, `dev-tools`, `mcp-ecosystem`, `workflow-automation`, `productivity-ai`, `ai-for-business`, `research-papers`, `policy-regulation`, or `all`
 - **Depth**: `quick-scan` (top 5 items, ~15 min) / `standard` (top 15, ~45 min) / `deep` (25+, ~2h)
 - **Audience**: `internal-bd` (workflow automation framing) / `public-digest` (neutral newsroom tone) / `both`
 
@@ -74,9 +74,9 @@ In priority order:
 
 **Category priority (BD-relevance)**: items in different categories have different default weight in the run. Top-tier (highest priority for surfacing):
 
-1. **`workflow-automation`** — tools that automate cross-app or cross-department processes (Zapier-style, n8n, Make, etc., plus AI-native automation platforms). Direct BD leverage for the radar's audience.
-2. **`productivity-tools`** — AI-powered tools for individual or team productivity (Notion AI, Linear, Granola, etc.). High direct applicability.
-3. **`agent-framework`** — frameworks and platforms for building agentic AI (LangChain, LlamaIndex, AutoGen, CrewAI, Browser-use, OpenHands, Manus). Enables custom automation builds.
+1. **`workflow-automation`** — AI products that **autonomously execute** multi-step workflows or tasks. The AI makes decisions and takes actions without a human in every step. End-user experience: "the AI did the work for me." Examples: Manus Computer / Manus Cloud Computer, Claude Computer Use, ChatGPT Operator, ChatGPT Agent Mode, Gemini Agent / autonomous browsing, AI agents that complete jobs end-to-end. **Not in this category**: Zapier, n8n, Make.com, Workato — those are workflow-builder SaaS where humans design the flow; AI is at most one node. Those tools are skipped from the radar unless they ship a genuinely agentic feature.
+2. **`productivity-ai`** — AI features that **assist** human work without autonomously executing it. The human stays in the loop — AI suggests, summarizes, drafts, transcribes, or surfaces information. Examples: ChatGPT/Claude regular chat (non-agentic mode), Notion AI Q&A, Linear AI suggestions, Granola meeting transcription, Mem.ai notes, Glean enterprise search, GitHub Copilot inline suggestions. Distinct from `workflow-automation` because the human still drives each step.
+3. **`agent-framework`** — frameworks and platforms for **developers** to build agentic AI systems. Not end-user products. Examples: LangChain, LlamaIndex, AutoGen, CrewAI, Browser-use, OpenHands, Anthropic Agent SDK, Manus SDK if released. Distinct from `workflow-automation` (which is end-user products) and `productivity-ai` (also end-user).
 4. **`dev-tools`** — AI-coding tools (Cursor, Claude Code, Copilot, Cody). Enables faster pilot app builds.
 5. **`mcp-ecosystem`** — MCP spec, servers, integrations. Foundation for connecting AI to existing workflows.
 6. **`ai-for-business`** — enterprise AI deployments, partnerships, vendor strategy that affects deployment decisions.

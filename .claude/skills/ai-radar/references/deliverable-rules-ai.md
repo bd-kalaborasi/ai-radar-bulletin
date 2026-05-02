@@ -43,7 +43,7 @@ Each item follows the schema in `templates/item-record.md`. Render using the **B
 4. Medium-actionability T3 → lower-middle
 5. Low-actionability anything → bottom
 
-In practice: items in `workflow-automation`, `productivity-tools`, `agent-framework`, `dev-tools`, `mcp-ecosystem` typically lead. `model-release` and `ai-for-business` items follow if they affect deployment decisions. `research-papers` and `policy-regulation` typically tail unless landmark.
+In practice: items in `workflow-automation`, `productivity-ai`, `agent-framework`, `dev-tools`, `mcp-ecosystem` typically lead. `model-release` and `ai-for-business` items follow if they affect deployment decisions. `research-papers` and `policy-regulation` typically tail unless landmark.
 
 **Both audiences**: every item ends with **"Why it matters for automation/productivity"** — a 1-2 sentence framing that connects the item to a concrete BD/automation/productivity angle. If no actionable angle exists, state explicitly: "Informational only — no immediate workflow leverage."
 
@@ -159,7 +159,7 @@ Before finalizing the deliverable, verify each:
 - [ ] Same vendor's related announcements grouped where natural; separated where genuinely independent
 
 **Ordering**
-- [ ] Top items are high-actionability T1-T2 (workflow-automation, productivity-tools, agent-framework, dev-tools, mcp-ecosystem when shipping concrete features)
+- [ ] Top items are high-actionability T1-T2 (workflow-automation, productivity-ai, agent-framework, dev-tools, mcp-ecosystem when shipping concrete features)
 - [ ] Low-actionability items (pure policy, distant research, corporate news without product impact) at bottom
 - [ ] BD-actionability ordering matches the rule in `source-quality-rubric-ai.md`
 

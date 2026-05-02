@@ -1,0 +1,85 @@
+name: Auto-merge Routine output
+
+# Triggered when Claude Code Routine pushes to a claude/* branch.
+# Validates the bulletin (frontmatter, syntactic gate, build) then merges to main.
+# Cloudflare Pages picks up the merge and deploys.
+#
+# Why this exists: Anthropic's CCR proxy currently scopes Routine git tokens
+# to read-only on direct main pushes. Routines fall back to claude/* branches
+# successfully. This workflow closes the loop autonomously.
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+permissions:
+  contents: write     # for pushing the merge to main
+  pull-requests: write
+
+jobs:
+  validate-and-merge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Find new bulletin posts in this push
+        id: find-posts
+        run: |
+          # List all .md files added in this push under src/content/posts/
+          # Compare against main to find what's new
+          git fetch origin main
+          NEW_POSTS=$(git diff --name-only --diff-filter=A origin/main...HEAD -- 'src/content/posts/*.md' | tr '\n' ' ')
+          echo "new_posts=$NEW_POSTS" >> $GITHUB_OUTPUT
+          echo "Found posts: $NEW_POSTS"
+
+      - name: Run syntactic quality gate on new posts
+        if: steps.find-posts.outputs.new_posts != ''
+        run: |
+          for post in ${{ steps.find-posts.outputs.new_posts }}; do
+            echo "Validating $post"
+            npm run verify:post -- "$post"
+          done
+
+      - name: Run Astro build (Zod schema validation + full build)
+        run: npm run build
+
+      - name: Configure Git for merge commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge claude/* branch into main
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          echo "Merging $BRANCH_NAME into main"
+          git checkout main
+          git merge --no-ff "origin/$BRANCH_NAME" -m "merge: $BRANCH_NAME from routine run [automated]"
+          git push origin main
+
+      - name: Delete merged claude/* branch
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          git push origin --delete "$BRANCH_NAME"
+          echo "Deleted $BRANCH_NAME from origin"
+
+      - name: Report success
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          echo "✓ Merged $BRANCH_NAME to main, deleted source branch."
+          echo "✓ Cloudflare Pages will auto-rebuild from main."
