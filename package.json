@@ -1,0 +1,27 @@
+{
+  "name": "ai-radar-bulletin",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "description": "Daily AI radar bulletin — autonomous research pipeline with verified sources",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "verify": "node scripts/quality-gate.mjs",
+    "verify:post": "node scripts/quality-gate.mjs --file"
+  },
+  "dependencies": {
+    "astro": "~5.13.0",
+    "@astrojs/check": "~0.9.4",
+    "typescript": "~5.6.0"
+  },
+  "devDependencies": {
+    "gray-matter": "~4.0.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

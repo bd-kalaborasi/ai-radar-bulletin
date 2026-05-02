@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostListItem from '../components/PostListItem.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+type Post = CollectionEntry<'posts'>;
+
+// Logical archive: anything older than 30 days moves to /archive
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+const cutoff = new Date(Date.now() - THIRTY_DAYS_MS);
+
+const allPosts = await getCollection('posts');
+const recentPosts = allPosts
+  .filter((p: Post) => p.data.date >= cutoff)
+  .sort((a: Post, b: Post) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title="AI Radar — Latest">
+  <div class="container">
+    <p class="section-label">Last 30 days</p>
+
+    {
+      recentPosts.length === 0 ? (
+        <div class="empty-state">
+          <p>No bulletins in the last 30 days.</p>
+          <p>
+            Browse the <a href="/archive">full archive</a>.
+          </p>
+        </div>
+      ) : (
+        <ul class="post-list">
+          {recentPosts.map((post: Post) => (
+            <PostListItem post={post} />
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</BaseLayout>

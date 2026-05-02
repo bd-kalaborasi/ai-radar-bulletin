@@ -1,0 +1,32 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { data } = post;
+
+const formatDate = (d: Date) =>
+  d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+const slug = post.id.replace(/\.md$/, '');
+---
+
+<li class="post-list-item">
+  <div class="post-meta">{formatDate(data.date)}</div>
+  <h2 class="post-list-title">
+    <a href={`/${slug}`}>{data.title}</a>
+  </h2>
+  <p class="post-summary">
+    {data.items_published} items across {data.categories.length} categories
+    &middot; {data.sources_count} sources
+  </p>
+  <div class="post-stats">
+    <span class="stat-verified">{data.verification_summary.verified} verified</span>
+    <span class="stat-secondary">{data.verification_summary.secondary} secondary</span>
+    <span class="stat-rumor">{data.verification_summary.rumor} rumor</span>
+    {data.items_dropped > 0 && <span>{data.items_dropped} dropped</span>}
+  </div>
+</li>

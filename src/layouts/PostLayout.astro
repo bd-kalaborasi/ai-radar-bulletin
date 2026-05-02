@@ -1,0 +1,43 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
+const { data } = post;
+
+const formatDate = (d: Date) =>
+  d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+---
+
+<BaseLayout title={data.title} description={`AI Radar bulletin for ${formatDate(data.date)}`}>
+  <article class="container post-article">
+    <header>
+      <div class="post-meta">{formatDate(data.date)}</div>
+      <h1>{data.title}</h1>
+      <div class="post-stats">
+        <span>{data.items_published} items</span>
+        <span class="stat-verified">{data.verification_summary.verified} verified</span>
+        <span class="stat-secondary">{data.verification_summary.secondary} secondary</span>
+        <span class="stat-rumor">{data.verification_summary.rumor} rumor</span>
+        <span>{data.sources_count} sources</span>
+        <span>{data.exploration_pct}% exploration</span>
+      </div>
+    </header>
+
+    <slot />
+
+    <div class="post-footer">
+      <p>
+        Period: {formatDate(data.period_start)} &mdash; {formatDate(data.period_end)} &middot;
+        {data.items_reviewed} items reviewed, {data.items_published} published, {data.items_dropped} dropped
+      </p>
+      <p>
+        Categories: {data.categories.join(', ')}
+      </p>
+    </div>
+  </article>
+</BaseLayout>

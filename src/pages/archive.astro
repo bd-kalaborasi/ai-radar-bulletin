@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostListItem from '../components/PostListItem.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+type Post = CollectionEntry<'posts'>;
+
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+const cutoff = new Date(Date.now() - THIRTY_DAYS_MS);
+
+const allPosts = await getCollection('posts');
+const archivedPosts = allPosts
+  .filter((p: Post) => p.data.date < cutoff)
+  .sort((a: Post, b: Post) => b.data.date.getTime() - a.data.date.getTime());
+
+// Group by year-month for readability
+type GroupedPosts = Record<string, Post[]>;
+const grouped: GroupedPosts = {};
+for (const post of archivedPosts) {
+  const key = post.data.date.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+  if (!grouped[key]) grouped[key] = [];
+  grouped[key].push(post);
+}
+const groupKeys = Object.keys(grouped);
+---
+
+<BaseLayout title="AI Radar — Archive">
+  <div class="container">
+    <p class="section-label">Archive · older than 30 days</p>
+
+    {
+      groupKeys.length === 0 ? (
+        <div class="empty-state">
+          <p>Archive is empty.</p>
+          <p>
+            <a href="/">Back to latest</a>
+          </p>
+        </div>
+      ) : (
+        groupKeys.map((monthYear) => (
+          <section>
+            <h2>{monthYear}</h2>
+            <ul class="post-list">
+              {grouped[monthYear].map((post: Post) => (
+                <PostListItem post={post} />
+              ))}
+            </ul>
+          </section>
+        ))
+      )
+    }
+  </div>
+</BaseLayout>
