@@ -1,0 +1,283 @@
+{
+  "run_metadata": {
+    "date": "2026-05-03",
+    "period_start": "2026-04-28",
+    "period_end": "2026-05-03",
+    "window_type": "5-day expanded (strict 72h yielded 5 items at expansion threshold)",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 20,
+    "items_published": 8,
+    "items_dropped": 12,
+    "exploration_pct": 42,
+    "total_searches_and_fetches": 47,
+    "exploratory_searches": 20
+  },
+  "verification_summary": {
+    "verified": 7,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "workflow-automation",
+    "productivity-ai",
+    "dev-tools",
+    "ai-for-business",
+    "model-release",
+    "research-papers"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Mistral releases 128B Medium 3.5, agentic Work Mode, and Vibe cloud coding agents",
+      "source_url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+      "source_publisher": "Mistral AI",
+      "source_date": "2026-04-29",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release", "workflow-automation"],
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "SWE-Bench Verified score: 77.6%",
+          "source": "Mistral primary (vendor-reported)",
+          "independent_verification": false
+        },
+        {
+          "claim": "tau3-Telecom score: 91.4",
+          "source": "Mistral primary (vendor-reported)",
+          "independent_verification": false
+        },
+        {
+          "claim": "API price: $1.50/$7.50 per million input/output tokens",
+          "source": "Mistral primary",
+          "independent_verification": false
+        },
+        {
+          "claim": "Self-hostable on 4 GPUs",
+          "source": "Mistral primary",
+          "independent_verification": false
+        }
+      ],
+      "caveats": ["Benchmark figures vendor-reported, no independent replication found", "Work Mode and Vibe in preview"],
+      "conflict_of_interest": "none observed"
+    },
+    {
+      "id": 2,
+      "title": "Anthropic opens Claude Security public beta to Enterprise customers",
+      "source_url": "https://claude.com/claude-code-security",
+      "source_publisher": "Anthropic",
+      "source_date": "2026-04-30",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "False positive rate below 5% (vendor-reported)",
+          "source": "Anthropic via SiliconAngle",
+          "independent_verification": false
+        },
+        {
+          "claim": "Traditional scanner false positive rate 30-60% (comparison basis)",
+          "source": "Anthropic (vendor-reported comparison)",
+          "independent_verification": false
+        },
+        {
+          "claim": "Powered by Claude Opus 4.7",
+          "source": "SiliconAngle reporting",
+          "independent_verification": false
+        }
+      ],
+      "caveats": ["Enterprise-only; Team/Max timeline unspecified", "False positive comparison is vendor-reported"],
+      "conflict_of_interest": "none observed"
+    },
+    {
+      "id": 3,
+      "title": "AWS What's Next: Amazon Quick assistant and OpenAI models on Bedrock launch",
+      "source_url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
+      "source_publisher": "AWS",
+      "source_date": "2026-04-28",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["productivity-ai", "ai-for-business"],
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "OpenAI GPT-5.5 and Codex on Bedrock in limited preview as of April 28",
+          "source": "AWS primary + OpenAI primary (openai.com/index/openai-on-aws/)",
+          "independent_verification": false
+        },
+        {
+          "claim": "Amazon Quick Free and Plus tiers",
+          "source": "AWS primary",
+          "independent_verification": false
+        }
+      ],
+      "caveats": ["OpenAI models on Bedrock in limited preview, not GA", "Amazon Quick Plus pricing undisclosed", "Connect Talent and Decisions in preview"],
+      "conflict_of_interest": "none observed",
+      "supplemental_sources": [
+        "https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/",
+        "https://openai.com/index/openai-on-aws/"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Google rolls Gemini AI into vehicles equipped with Google built-in",
+      "source_url": "https://blog.google/products-and-platforms/platforms/android/cars-with-google-built-in-gemini-tips-2026/",
+      "source_publisher": "Google",
+      "source_date": "2026-04-30",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "~4 million GM vehicles, model year 2022+, delivered via OTA",
+          "source": "GM press release (news.gm.com)",
+          "independent_verification": false
+        },
+        {
+          "claim": "Rollout started April 30, 2026, US English first",
+          "source": "Google blog primary",
+          "independent_verification": false
+        }
+      ],
+      "caveats": ["Staged rollout; global expansion timeline not specified", "Gemini Live beta not on all vehicles at launch"],
+      "conflict_of_interest": "none observed"
+    },
+    {
+      "id": 5,
+      "title": "Meta acquires Assured Robot Intelligence to build humanoid AI",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-01/meta-acquires-assured-robot-intelligence-to-help-build-humanoid-technology",
+      "source_publisher": "Bloomberg",
+      "source_date": "2026-05-01",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "Acquisition announced May 1, 2026; undisclosed sum",
+          "source": "Bloomberg primary",
+          "independent_verification": false
+        },
+        {
+          "claim": "ARI team joins Meta Superintelligence Labs",
+          "source": "Bloomberg / TechCrunch",
+          "independent_verification": false
+        }
+      ],
+      "caveats": ["Terms undisclosed", "No product timeline or hardware platform announced"],
+      "conflict_of_interest": "none observed"
+    },
+    {
+      "id": 6,
+      "title": "Peer-reviewed trial: OpenAI o1 diagnoses ER patients at 67%, outperforming triage doctors",
+      "source_url": "https://www.science.org/content/article/ai-starting-beat-doctors-making-correct-diagnoses",
+      "source_publisher": "Science (Harvard Medical School / Beth Israel Deaconess Medical Center)",
+      "source_date": "2026-04-30",
+      "tier": "T1",
+      "verification_status": "verified",
+      "methodology": "research-paper",
+      "categories": ["research-papers"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "o1 triage accuracy: 67% vs 50-55% for physicians",
+          "source": "Science (peer-reviewed)",
+          "independent_verification": true
+        },
+        {
+          "claim": "o1 enriched-data accuracy: 82% vs 70-79% for physicians (not statistically significant)",
+          "source": "Science (peer-reviewed)",
+          "independent_verification": true
+        }
+      ],
+      "caveats": [
+        "Text-only inputs; clinicians also use visual, auditory, physical examination data",
+        "Compared against two physicians only, not large-scale trial",
+        "Sample size not disclosed in secondary reporting",
+        "Science.org returned 403 during run; findings verified via NPR and Semafor"
+      ],
+      "conflict_of_interest": "none observed"
+    },
+    {
+      "id": 7,
+      "title": "Claude Code 2.1.126 adds gateway model picker and project state purge",
+      "source_url": "https://releasebot.io/updates/anthropic/claude-code",
+      "source_publisher": "Anthropic (via changelog aggregator)",
+      "source_date": "2026-05-01",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "Version 2.1.126 released May 1, 2026",
+          "source": "Anthropic changelog via releasebot",
+          "independent_verification": false
+        }
+      ],
+      "caveats": ["Anthropic primary changelog not separately accessible; verified via releasebot aggregator"],
+      "conflict_of_interest": "none observed"
+    },
+    {
+      "id": 8,
+      "title": "Anthropic in early talks to acquire AI inference chips from UK startup Fractile",
+      "source_url": "https://www.theinformation.com/articles/anthropic-talks-buy-ai-chips-u-k-startup",
+      "source_publisher": "The Information",
+      "source_date": "2026-05-02",
+      "tier": "T2-T3",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "Fractile chips expected availability: 2027",
+          "source": "The Information via Techmeme/Seeking Alpha",
+          "independent_verification": false
+        },
+        {
+          "claim": "Anthropic pursuing multi-supplier strategy to reduce NVIDIA dependence",
+          "source": "Multiple secondary outlets",
+          "independent_verification": false
+        }
+      ],
+      "caveats": ["Talks preliminary; no agreement signed", "Primary source paywalled", "2027 chip availability not confirmed by Fractile directly"],
+      "conflict_of_interest": "none observed"
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude Opus 4.7 release", "source": "anthropic.com/news/claude-opus-4-7", "reason": "Published 2026-04-16, outside 5-day window"},
+    {"title": "Google Deep Research + Deep Research Max", "source": "blog.google", "reason": "Published 2026-04-21, outside 5-day window"},
+    {"title": "Google Vision Banana universal vision model", "source": "deepmind.google/research", "reason": "Published 2026-04-22, outside 5-day window"},
+    {"title": "NVIDIA Ising quantum AI models", "source": "nvidianews.nvidia.com", "reason": "Published 2026-04-14, outside 5-day window"},
+    {"title": "OpenAI GPT-5.5 launch", "source": "openai.com/index/introducing-gpt-5-5/", "reason": "Published 2026-04-23, outside 5-day window"},
+    {"title": "Grok 4.3 API rollout", "source": "x.ai / Artificial Analysis", "reason": "Covered in 2026-05-02 bulletin"},
+    {"title": "OpenAI Workspace Agents", "source": "openai.com", "reason": "Covered in 2026-05-02 bulletin"},
+    {"title": "Microsoft Agent 365 GA", "source": "microsoft.com", "reason": "Covered in 2026-05-02 bulletin"},
+    {"title": "OpenAI macOS Axios security advisory", "source": "OpenAI (reported via devflokers)", "reason": "Primary source URL not independently confirmed during run"},
+    {"title": "GitHub Copilot CLI 1.0.40", "source": "github.com (via havoptic.com)", "reason": "In window but single-line minor patch; below actionability threshold"},
+    {"title": "MCP Python/Ruby SDK maintenance updates", "source": "github.com/modelcontextprotocol", "reason": "In window but minor SDK maintenance; no user-facing feature change"},
+    {"title": "B.AI by Justin Sun", "source": "Aggregator only", "reason": "No primary source URL confirmed; single aggregator mention"}
+  ],
+  "sources_cited": [
+    "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+    "https://claude.com/claude-code-security",
+    "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
+    "https://blog.google/products-and-platforms/platforms/android/cars-with-google-built-in-gemini-tips-2026/",
+    "https://news.gm.com/home.detail.html/Pages/news/us/en/2026/apr/0428-Google-Gemini.html",
+    "https://www.bloomberg.com/news/articles/2026-05-01/meta-acquires-assured-robot-intelligence-to-help-build-humanoid-technology",
+    "https://www.science.org/content/article/ai-starting-beat-doctors-making-correct-diagnoses",
+    "https://releasebot.io/updates/anthropic/claude-code",
+    "https://www.theinformation.com/articles/anthropic-talks-buy-ai-chips-u-k-startup"
+  ]
+}
