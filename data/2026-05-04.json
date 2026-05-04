@@ -1,0 +1,239 @@
+{
+  "run_metadata": {
+    "date": "2026-05-04",
+    "pipeline_version": "ai-radar-skill/standard",
+    "timeframe_requested": "72h",
+    "timeframe_actual": "2026-04-29 to 2026-05-04",
+    "window_expansion": "5-day expansion triggered (strict window yielded 5 verified items, ≤5 threshold)",
+    "depth": "standard",
+    "audience": "public-digest",
+    "categories_requested": "all",
+    "searches_total": 55,
+    "searches_exploratory": 27,
+    "exploration_pct": 49
+  },
+  "counts": {
+    "items_reviewed": 23,
+    "items_published": 7,
+    "items_dropped": 16
+  },
+  "verification_summary": {
+    "verified": 7,
+    "secondary": 0,
+    "rumor": 0
+  },
+  "sources_count": 16,
+  "items": [
+    {
+      "id": "manus-cloud-computer",
+      "title": "Manus launches Cloud Computer for 24/7 autonomous bot and script hosting",
+      "date": "2026-04-30",
+      "primary_url": "https://manus.im/blog/manus-cloud-computer",
+      "publisher": "Manus",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["workflow-automation"],
+      "bd_actionability": "high",
+      "in_strict_window": false,
+      "in_expanded_window": true,
+      "key_claims": [
+        { "claim": "Persistent Ubuntu VM, 24/7 operation", "source": "manus.im/blog/manus-cloud-computer" },
+        { "claim": "Three tiers: Basic, Standard, Advanced", "source": "manus.im/blog/manus-cloud-computer" },
+        { "claim": "SSH + web terminal access", "source": "manus.im/blog/manus-cloud-computer" }
+      ],
+      "caveats": ["Beta access only", "Independent reports: instability under load, 1 session/day limit during beta", "Pricing page 404 at time of research"],
+      "cross_references": [
+        { "url": "https://www.eesel.ai/blog/manus-ai-reviews", "tier": "T3", "role": "contradicting" },
+        { "url": "https://phemex.com/news/article/manus-unveils-cloud-computer-for-247-bot-and-script-operations-78019", "tier": "T3", "role": "corroborating" }
+      ]
+    },
+    {
+      "id": "mistral-medium-3-5",
+      "title": "Mistral ships Medium 3.5 and Le Chat Work Mode for multi-step agentic tasks",
+      "date": "2026-05-02",
+      "date_note": "Primary source does not display explicit date; T3 secondary sources (MarkTechPost, winbuzzer) date to 2026-05-02",
+      "primary_url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5",
+      "publisher": "Mistral AI",
+      "tier": "T2",
+      "tier_nuance": "SWE-Bench and τ²-Telecom are vendor-claimed (T4 for comparative); MMLU/GPQA/AIME/HumanEval not published",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release", "workflow-automation"],
+      "bd_actionability": "high",
+      "in_strict_window": true,
+      "in_expanded_window": true,
+      "key_claims": [
+        { "claim": "128B dense model, 256k context window", "source": "mistral.ai primary", "tier": "T2" },
+        { "claim": "$1.50/M input, $7.50/M output", "source": "mistral.ai primary", "tier": "T2" },
+        { "claim": "SWE-Bench Verified 77.6%", "source": "mistral.ai primary", "tier": "T4", "note": "vendor-claimed, unverified" }
+      ],
+      "caveats": ["Vendor-claimed benchmarks only; standard benchmarks absent at launch", "BenchLM: 2 of 178 benchmarks published"],
+      "cross_references": [
+        { "url": "https://benchlm.ai/models/mistral-medium-3-5-128b", "tier": "T2", "role": "contradicting" },
+        { "url": "https://winbuzzer.com/2026/05/02/mistral-medium-3-5-unified-flagship-chat-reasoning-code-xcxwbn/", "tier": "T3", "role": "corroborating" },
+        { "url": "https://www.marktechpost.com/2026/05/02/mistral-ai-launches-remote-agents-in-vibe-and-mistral-medium-3-5-with-77-6-swe-bench-verified-score/", "tier": "T3", "role": "corroborating" }
+      ]
+    },
+    {
+      "id": "microsoft-agent-365-ga",
+      "title": "Microsoft Agent 365 reaches general availability at $15/user/month",
+      "date": "2026-05-01",
+      "primary_url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+      "publisher": "Microsoft Security Blog",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business", "agent-framework"],
+      "bd_actionability": "high",
+      "in_strict_window": true,
+      "in_expanded_window": true,
+      "key_claims": [
+        { "claim": "GA date: 2026-05-01", "source": "Microsoft Security Blog", "tier": "T2" },
+        { "claim": "$15/user/month standalone", "source": "Microsoft Security Blog", "tier": "T2" },
+        { "claim": "M365 E7 at $99/user/month", "source": "Microsoft Security Blog", "tier": "T2" },
+        { "claim": "Local agent discovery for OpenClaw, GitHub Copilot CLI, Claude Code", "source": "Microsoft Security Blog", "tier": "T2" }
+      ],
+      "cross_references": [
+        { "url": "https://samexpert.com/microsoft-product-terms-may-2026/", "tier": "T2", "role": "corroborating" },
+        { "url": "https://m365admin.handsontek.net/microsoft-agent-365-generally-available-may-1-2026/", "tier": "T3", "role": "corroborating" }
+      ]
+    },
+    {
+      "id": "claude-security-beta",
+      "title": "Anthropic opens Claude Security to public beta for enterprise codebase scanning",
+      "date": "2026-04-30",
+      "primary_url": "https://claude.com/blog/claude-security-public-beta",
+      "publisher": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "in_strict_window": false,
+      "in_expanded_window": true,
+      "key_claims": [
+        { "claim": "Available to Claude Enterprise customers", "source": "claude.com/blog/claude-security-public-beta", "tier": "T2" },
+        { "claim": "Powered by Claude Opus 4.7", "source": "claude.com/blog/claude-security-public-beta", "tier": "T2" },
+        { "claim": "Partners: CrowdStrike, Palo Alto Networks, SentinelOne, Trend Micro, Wiz", "source": "claude.com/blog/claude-security-public-beta", "tier": "T2" },
+        { "claim": "Hundreds of organizations used research preview", "source": "claude.com/blog/claude-security-public-beta", "tier": "T4", "note": "vendor-claimed, no independent telemetry" }
+      ],
+      "caveats": ["LLM scanning non-deterministic", "Cannot assess runtime exploitability", "Source-code only — infrastructure/auth/user-behavior gaps"],
+      "cross_references": [
+        { "url": "https://www.cobalt.io/blog/where-claudes-security-scanning-falls-short-and-why-thats-okay", "tier": "T3", "role": "contradicting" },
+        { "url": "https://siliconangle.com/2026/04/30/anthropic-announces-claude-security-public-beta-find-fix-software-vulnerabilities/", "tier": "T3", "role": "corroborating" },
+        { "url": "https://thenewstack.io/anthropics-claude-security-beta/", "tier": "T3", "role": "corroborating" }
+      ]
+    },
+    {
+      "id": "xai-grok-4-3-voice-cloning",
+      "title": "xAI releases Grok 4.3 with 40% lower pricing and launches voice-cloning API",
+      "date_model": "2026-04-30",
+      "date_voice": "2026-05-02",
+      "primary_url": "https://x.com/xai/status/2050355373052223585",
+      "primary_url_note": "x.ai/news/grok-custom-voices returned HTTP 403; @xai official X post used as T2 primary",
+      "publisher": "xAI",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release", "productivity-ai"],
+      "bd_actionability": "medium-high",
+      "in_strict_window": true,
+      "in_expanded_window": true,
+      "key_claims": [
+        { "claim": "$1.25/M input, $2.50/M output", "source": "xAI primary + Artificial Analysis", "tier": "T2" },
+        { "claim": "~40% lower input, ~60% lower output vs Grok 4.20", "source": "artificialanalysis.ai", "tier": "T2" },
+        { "claim": "Intelligence Index: 53 (up from 49)", "source": "artificialanalysis.ai", "tier": "T2" },
+        { "claim": "1M token context window", "source": "xAI primary", "tier": "T2" },
+        { "claim": "80+ voices, 28 languages", "source": "xAI official post", "tier": "T2" },
+        { "claim": "Custom voice in <2 minutes", "source": "xAI official post", "tier": "T2" }
+      ],
+      "cross_references": [
+        { "url": "https://artificialanalysis.ai/articles/xai-launches-grok-4-3-with-improved-agentic-performance-and-lower-pricing", "tier": "T2", "role": "corroborating" },
+        { "url": "https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite", "tier": "T3", "role": "corroborating" }
+      ]
+    },
+    {
+      "id": "claude-code-v2-1-126",
+      "title": "Claude Code v2.1.126 ships model gateway support and project management tools",
+      "date": "2026-05-01",
+      "primary_url": "https://github.com/anthropics/claude-code/releases",
+      "publisher": "Anthropic / GitHub",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools"],
+      "bd_actionability": "medium-high",
+      "in_strict_window": true,
+      "in_expanded_window": true,
+      "key_claims": [
+        { "claim": "Model gateway support via ANTHROPIC_BASE_URL /v1/models endpoint", "source": "GitHub releases", "tier": "T2" },
+        { "claim": "claude project purge command with --dry-run, -y/--yes, -i/--interactive flags", "source": "GitHub releases", "tier": "T2" },
+        { "claim": "PowerShell 7 as primary shell on Windows when enabled", "source": "GitHub releases", "tier": "T2" },
+        { "claim": "OAuth login accepts pasted codes for WSL2/SSH/container environments", "source": "GitHub releases", "tier": "T2" }
+      ],
+      "cross_references": [
+        { "url": "https://releasebot.io/updates/anthropic/claude-code", "tier": "T3", "role": "corroborating" }
+      ]
+    },
+    {
+      "id": "craft-agents-oss",
+      "title": "Lukilabs releases Craft Agents OSS, a modular open-source agent framework",
+      "date": "2026-05-02",
+      "primary_url": "https://github.com/lukilabs/craft-agents-oss",
+      "publisher": "Lukilabs",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["agent-framework"],
+      "bd_actionability": "medium",
+      "in_strict_window": true,
+      "in_expanded_window": true,
+      "key_claims": [
+        { "claim": "Apache License 2.0", "source": "GitHub repository", "tier": "T2" },
+        { "claim": "Reached GitHub Trending shortly after launch", "source": "aitoolly.com", "tier": "T3", "note": "discovery signal only, not adoption metric" }
+      ],
+      "caveats": ["Early-stage project", "Technical maturity vs established frameworks unassessable from README alone", "Stars ≠ adoption"]
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Mistral Medium 3.5 benchmark coverage",
+      "sources": [
+        { "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5", "claim": "77.6% SWE-Bench Verified", "tier": "T4" },
+        { "url": "https://benchlm.ai/models/mistral-medium-3-5-128b", "claim": "2 of 178 tracked benchmarks published", "tier": "T2" }
+      ],
+      "resolution": "Vendor benchmark T4 for comparative purposes. Standard benchmarks absent. Reported as vendor-claimed throughout."
+    }
+  ],
+  "dropped": [
+    { "title": "GPT-5.5 general rollout", "url": "https://openai.com/index/introducing-gpt-5-5/", "reason": "April 23, 2026 — outside expanded window" },
+    { "title": "Claude Opus 4.7 launch", "url": "https://www.anthropic.com/news", "reason": "April 16, 2026 — outside expanded window" },
+    { "title": "NVIDIA Ising quantum AI models", "url": "https://nvidianews.nvidia.com/news/nvidia-launches-ising", "reason": "April 14, 2026 — outside expanded window" },
+    { "title": "Novo Nordisk + OpenAI partnership", "url": "https://www.cnbc.com/2026/04/14/novo-nordisk-openai-ai-drug-discovery-healthcare-nvo.html", "reason": "April 14, 2026 — outside expanded window" },
+    { "title": "Cursor 3 agent-first IDE", "url": "https://cursor.com/blog/cursor-3", "reason": "April 2, 2026 — outside expanded window" },
+    { "title": "Microsoft Agent Framework 1.0 GA", "url": "https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/", "reason": "April 3, 2026 — outside expanded window" },
+    { "title": "NVIDIA OpenShell (GTC launch)", "url": "https://developer.nvidia.com/blog/run-autonomous-self-evolving-agents-more-safely-with-nvidia-openshell/", "reason": "March 16, 2026 — outside expanded window" },
+    { "title": "OpenAI on Amazon Bedrock", "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/", "reason": "April 28, 2026 — just outside expanded window (floor: April 29)" },
+    { "title": "Amazon Bedrock AgentCore MCP GA", "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-server-side-tool-execution-agentcore-gateway/", "reason": "February 2026 — outside expanded window" },
+    { "title": "Claude Mythos Preview", "url": "https://red.anthropic.com/2026/mythos-preview/", "reason": "April 7, 2026 — outside expanded window; restricted-access product" },
+    { "title": "MCP 97M installs milestone", "url": "https://ai2.work/blog/model-context-protocol-hits-97m-installs-as-linux-foundation-takes-over", "reason": "March 2026 milestone — outside expanded window" },
+    { "title": "Crawl4AI RAG MCP server", "url": "https://github.com/coleam00/mcp-crawl4ai-rag", "reason": "Launched May 2025 — wrong year; AI search result summary incorrectly framed as May 2026, primary confirmed 2025" },
+    { "title": "BrowserStack MCP server", "url": "https://www.pulsemcp.com/posts/newsletter-ai-search-ide-mania-official-mcp-registry", "reason": "Launched May 2025 — wrong year; same AI search hallucination issue" },
+    { "title": "Gemini 3.1 Ultra launch", "url": null, "reason": "Could not find primary source confirming this model exists in May 2026; search results contradictory" },
+    { "title": "ElevenMusic launch", "url": "https://musically.com/2026/04/30/elevenlabs-launches-elevenmusic-as-not-just-a-listening-app/", "reason": "April 30, in expanded window but consumer music product with limited BD relevance for workflow automation audience" },
+    { "title": "Anthropic $900B valuation round", "url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/", "reason": "Financial/investment news only; no product or capability angle for workflow automation audience" }
+  ],
+  "limitations": [
+    "Window expanded from 72h to 5 days; 5 items in strict window triggered expansion",
+    "Login-walled content (X timeline, IG, LinkedIn, Discord) not accessible",
+    "x.ai/news/grok-custom-voices returned HTTP 403 — @xai X post used as T2 primary",
+    "openai.com/news returned HTTP 403",
+    "Mistral primary blog date not explicitly stated; May 2 used based on secondary sources",
+    "Manus Cloud Computer beta stability issues per independent reporting",
+    "No arXiv research papers verified for the window",
+    "No MCP ecosystem items verified in window (both candidates confirmed as 2025, not 2026)",
+    "SEA/Indonesia coverage gap persists",
+    "Mistral SWE-Bench vendor-claimed only; standard benchmarks absent"
+  ]
+}
