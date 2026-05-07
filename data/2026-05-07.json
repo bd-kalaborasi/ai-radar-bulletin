@@ -1,0 +1,436 @@
+{
+  "run_date": "2026-05-07",
+  "period_start": "2026-05-04",
+  "period_end": "2026-05-07",
+  "window_hours": 72,
+  "window_expanded": false,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 28,
+  "items_published": 10,
+  "items_dropped": 18,
+  "verification_summary": {
+    "verified": 5,
+    "secondary": 5,
+    "rumor": 0
+  },
+  "sources_count": 16,
+  "exploration_pct": 41,
+  "categories_covered": [
+    "workflow-automation",
+    "mcp-ecosystem",
+    "model-release",
+    "productivity-ai",
+    "ai-for-business",
+    "dev-tools",
+    "agent-framework",
+    "policy-regulation"
+  ],
+  "items": [
+    {
+      "id": "claude-managed-agents-dreaming-outcomes-orchestration",
+      "title": "Claude Managed Agents adds Dreaming, Outcomes, and multi-agent orchestration",
+      "date": "2026-05-06",
+      "source_url": "https://claude.com/blog/new-in-claude-managed-agents",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["workflow-automation"],
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "Up to 10 percentage points task-success improvement with Outcomes",
+          "source": "https://claude.com/blog/new-in-claude-managed-agents",
+          "tier": "T4",
+          "note": "vendor-internal benchmark, no independent replication"
+        },
+        {
+          "claim": "Docx: +8.4 pp, pptx: +10.1 pp improvement",
+          "source": "https://claude.com/blog/new-in-claude-managed-agents",
+          "tier": "T4",
+          "note": "vendor-internal benchmark, no independent replication"
+        },
+        {
+          "claim": "Harvey completion rate increased approximately 6x",
+          "source": "https://claude.com/blog/new-in-claude-managed-agents",
+          "tier": "T4",
+          "note": "vendor-cited customer result, unverified"
+        },
+        {
+          "claim": "Wisedocs: 50% faster document reviews",
+          "source": "https://claude.com/blog/new-in-claude-managed-agents",
+          "tier": "T4",
+          "note": "vendor-cited customer result, unverified"
+        }
+      ],
+      "feature_status": {
+        "Outcomes": "public beta",
+        "Multiagent orchestration": "public beta",
+        "Dreaming": "research preview"
+      },
+      "cross_references": [
+        "https://sdtimes.com/ai/new-in-claude-managed-agents-dreaming-outcomes-and-multiagent-orchestration/",
+        "https://thenewstack.io/anthropic-managed-agents-dreaming-outcomes/"
+      ]
+    },
+    {
+      "id": "tinyfish-free-search-fetch",
+      "title": "TinyFish opens web Search and Fetch to all AI agents at no cost",
+      "date": "2026-05-04",
+      "source_url": "https://www.tinyfish.ai/blog/search-and-fetch-are-now-free-for-every-agent-everywhere",
+      "source_org": "TinyFish",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["mcp-ecosystem"],
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "5 search queries/min, 25 URL fetches/min on free tier",
+          "source": "https://www.tinyfish.ai/blog/search-and-fetch-are-now-free-for-every-agent-everywhere",
+          "tier": "T2"
+        },
+        {
+          "claim": "MCP-native, no credit card required",
+          "source": "https://www.tinyfish.ai/blog/search-and-fetch-are-now-free-for-every-agent-everywhere",
+          "tier": "T2"
+        }
+      ]
+    },
+    {
+      "id": "openai-gpt55-instant-default",
+      "title": "OpenAI replaces ChatGPT default model with GPT-5.5 Instant",
+      "date": "2026-05-05",
+      "source_url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+      "source_org": "TechCrunch citing OpenAI",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["model-release"],
+      "bd_actionability": "medium",
+      "tier_note": "openai.com/index/gpt-5-5-instant/ returned HTTP 403 during this run; primary data sourced from TechCrunch article based on OpenAI-provided information",
+      "key_claims": [
+        {
+          "claim": "AIME 2025 score: 81.2 (up from 65.4 for GPT-5.3 Instant)",
+          "source": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+          "tier": "T4",
+          "note": "vendor-reported benchmark, no independent replication found at time of run"
+        },
+        {
+          "claim": "MMMU-Pro: 76 (up from 69.2)",
+          "source": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+          "tier": "T4",
+          "note": "vendor-reported benchmark, no independent replication found"
+        },
+        {
+          "claim": "Replaces GPT-5.3 Instant as default ChatGPT model",
+          "source": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+          "tier": "T3"
+        },
+        {
+          "claim": "API name: chat-latest",
+          "source": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+          "tier": "T3"
+        }
+      ]
+    },
+    {
+      "id": "anthropic-finance-agents-opus47",
+      "title": "Anthropic launches ten financial services agent templates with Claude Opus 4.7",
+      "date": "2026-05-05",
+      "source_url": "https://www.anthropic.com/news/finance-agents",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["productivity-ai", "ai-for-business"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "64.37% on Vals AI Finance Agent benchmark",
+          "source": "https://www.anthropic.com/news/finance-agents",
+          "tier": "T3",
+          "note": "Vals AI is a third-party benchmark operator; test design is Vals AI's, not Anthropic's"
+        },
+        {
+          "claim": "M365 add-ins for Excel, PowerPoint, Word GA; Outlook in beta",
+          "source": "https://www.anthropic.com/news/finance-agents",
+          "tier": "T2"
+        },
+        {
+          "claim": "8 new data connectors at launch",
+          "source": "https://www.anthropic.com/news/finance-agents",
+          "tier": "T2"
+        }
+      ],
+      "connectors": [
+        "Dun & Bradstreet",
+        "Fiscal AI",
+        "Financial Modeling Prep",
+        "Guidepoint",
+        "IBISWorld",
+        "SS&C IntraLinks",
+        "Third Bridge",
+        "Verisk"
+      ]
+    },
+    {
+      "id": "anthropic-spacex-colossus-rate-limits",
+      "title": "Anthropic secures SpaceX Colossus compute, doubles Claude Code rate limits",
+      "date": "2026-05-06",
+      "source_url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release", "ai-for-business"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "220,000+ NVIDIA GPUs at Colossus 1",
+          "source": "https://www.anthropic.com/news/higher-limits-spacex",
+          "tier": "T2",
+          "corroborated_by": "https://x.com/nvidia/status/2052091408643756296"
+        },
+        {
+          "claim": "300+ megawatts of capacity",
+          "source": "https://www.anthropic.com/news/higher-limits-spacex",
+          "tier": "T2"
+        },
+        {
+          "claim": "Claude Code 5-hour limits doubled for Pro/Max/Team/Enterprise",
+          "source": "https://www.anthropic.com/news/higher-limits-spacex",
+          "tier": "T2"
+        },
+        {
+          "claim": "Peak-hour throttling removed for Pro and Max",
+          "source": "https://www.anthropic.com/news/higher-limits-spacex",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        "https://x.com/nvidia/status/2052091408643756296",
+        "https://www.bloomberg.com/news/articles/2026-05-06/anthropic-inks-computing-deal-with-spacex-to-meet-ai-demand"
+      ]
+    },
+    {
+      "id": "unity-ai-open-beta-mcp",
+      "title": "Unity launches Unity AI into open beta with MCP Server for external coding agents",
+      "date": "2026-05-04",
+      "date_note": "approximately May 4; ±2-day uncertainty (May 2–4)",
+      "source_url": "https://80.lv/articles/unity-launches-in-editor-ai-tools-suite-in-beta",
+      "source_org": "80.lv (primary unity.com inaccessible)",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["dev-tools", "mcp-ecosystem"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "$10/month for 1,000 AI credits after 14-day free trial",
+          "source": "https://80.lv/articles/unity-launches-in-editor-ai-tools-suite-in-beta",
+          "tier": "T3"
+        },
+        {
+          "claim": "MCP Server exposes Unity scene graph to Claude Code, Cursor, Windsurf, Antigravity",
+          "source": "https://80.lv/articles/unity-launches-in-editor-ai-tools-suite-in-beta",
+          "tier": "T3"
+        },
+        {
+          "claim": "Available for Unity 6 and above",
+          "source": "https://80.lv/articles/unity-launches-in-editor-ai-tools-suite-in-beta",
+          "tier": "T3"
+        }
+      ],
+      "cross_references": [
+        "https://discussions.unity.com/t/unity-ai-s-open-beta-now-live-for-unity-6/1718560",
+        "https://gamesbeat.com/unity-launches-unity-ai-into-open-beta/"
+      ]
+    },
+    {
+      "id": "saperly-phone-carrier-ai-agents",
+      "title": "Saperly launches as dedicated phone carrier for AI agents",
+      "date": "2026-05-05",
+      "source_url": "https://saperly.com/",
+      "source_org": "Saperly",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["mcp-ecosystem"],
+      "bd_actionability": "medium",
+      "discovery": "practitioner diffusion on X (multiple accounts sharing within 24h of announcement)",
+      "caveats": [
+        "No independent tech press coverage found as of this run",
+        "Pricing and SLA not publicly documented",
+        "No enterprise adoption evidence"
+      ]
+    },
+    {
+      "id": "sierra-950m-15b-valuation",
+      "title": "Sierra closes $950M round at $15B valuation",
+      "date": "2026-05-04",
+      "source_url": "https://siliconangle.com/2026/05/04/ai-agent-startup-sierra-valued-15b-new-950m-funding-round/",
+      "source_org": "SiliconAngle",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "funding",
+      "categories": ["ai-for-business", "agent-framework"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "$950M raised at $15B valuation",
+          "source": "https://siliconangle.com/2026/05/04/ai-agent-startup-sierra-valued-15b-new-950m-funding-round/",
+          "tier": "T3",
+          "corroborated_by": ["TechCrunch", "CNBC"]
+        },
+        {
+          "claim": "$150M ARR",
+          "source": "https://siliconangle.com/2026/05/04/ai-agent-startup-sierra-valued-15b-new-950m-funding-round/",
+          "tier": "T4",
+          "note": "vendor-stated, no independent confirmation"
+        },
+        {
+          "claim": "Nearly half the Fortune 50",
+          "source": "https://siliconangle.com/2026/05/04/ai-agent-startup-sierra-valued-15b-new-950m-funding-round/",
+          "tier": "T4",
+          "note": "vendor-stated, no independent confirmation"
+        }
+      ],
+      "investors": ["GV (Alphabet)", "Tiger Global", "Benchmark", "Sequoia", "Greenoaks"],
+      "cross_references": [
+        "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/",
+        "https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html"
+      ]
+    },
+    {
+      "id": "anthropic-enterprise-ai-services-company",
+      "title": "Anthropic, Blackstone, and Goldman Sachs form a new enterprise AI services company",
+      "date": "2026-05-04",
+      "source_url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "founding_partners": ["Anthropic", "Blackstone", "Hellman & Friedman", "Goldman Sachs"],
+      "backing_investors": ["General Atlantic", "Leonard Green", "Apollo Global Management", "GIC", "Sequoia Capital"],
+      "target_market": "Mid-sized organizations (community banks, regional manufacturers, regional health systems) without internal AI engineering capacity",
+      "caveats": "No launch date, pricing, or geographic scope disclosed at announcement"
+    },
+    {
+      "id": "mythos-eu-whitehouse-scrutiny",
+      "title": "Mythos AI draws scrutiny from EU officials and the White House",
+      "date": "2026-05-05",
+      "source_url": "https://www.resultsense.com/news/2026-05-05-white-house-pre-release-ai-vetting/",
+      "source_org": "ResultSense",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "investigation / policy",
+      "categories": ["policy-regulation"],
+      "bd_actionability": "low",
+      "tier_note": "Bloomberg EU-angle article (May 5) is paywalled. EU Economy Commissioner statement sourced from secondary coverage. UK AISI evaluation is T1 for capability claims.",
+      "key_claims": [
+        {
+          "claim": "Mythos Preview executes multi-stage attacks on vulnerable networks autonomously",
+          "source": "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+          "tier": "T1"
+        },
+        {
+          "claim": "Mythos discovers zero-day vulnerabilities in open-source codebases within hours",
+          "source": "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+          "tier": "T1"
+        },
+        {
+          "claim": "EU Economy Commissioner Dombrovskis confirmed talks with Anthropic about Mythos testing access",
+          "source": "Secondary coverage of Bloomberg article (May 5)",
+          "tier": "T3"
+        },
+        {
+          "claim": "White House considering pre-release AI model review working group",
+          "source": "https://www.resultsense.com/news/2026-05-05-white-house-pre-release-ai-vetting/",
+          "tier": "T3",
+          "note": "Under deliberation — not signed; White House spokesperson non-denial"
+        }
+      ],
+      "model_status": "Restricted testing only — not publicly released, no API access, no pricing, no release date announced"
+    }
+  ],
+  "dropped": [
+    { "title": "Claude Security public beta", "source": "anthropic.com (Apr 30)", "reason": "Already covered in 2026-05-04 radar" },
+    { "title": "Microsoft Agent 365 GA", "source": "microsoft.com/security/blog (May 1)", "reason": "Already covered in 2026-05-04 radar" },
+    { "title": "Mistral Medium 3.5 + Work Mode", "source": "mistral.ai/news (Apr 29)", "reason": "Already covered in 2026-05-03 and 2026-05-04 radars" },
+    { "title": "Manus Cloud Computer", "source": "manus.im/blog (Apr 30)", "reason": "Already covered in 2026-05-04 radar" },
+    { "title": "xAI Grok 4.3 + Voice Cloning API", "source": "x.ai/news (Apr 30–May 2)", "reason": "Already covered in 2026-05-04 radar" },
+    { "title": "Claude Code v2.1.126 gateway support", "source": "github.com/anthropics/claude-code/releases (May 1)", "reason": "Already covered in 2026-05-04 radar" },
+    { "title": "Lukilabs Craft Agents OSS", "source": "github.com/lukilabs/craft-agents-oss (May 2)", "reason": "Already covered in 2026-05-04 radar" },
+    { "title": "Code Review for Claude Code", "source": "claude.com/blog/code-review (Mar 9)", "reason": "Outside 72h window" },
+    { "title": "CI auto-fix / Preview-review-merge", "source": "claude.com/blog/preview-review-and-merge (Feb 20)", "reason": "Outside 72h window" },
+    { "title": "Claude Code Routines", "source": "claude.com/blog/introducing-routines-in-claude-code (Apr 14)", "reason": "Outside 72h window; showcased at conference but not newly launched" },
+    { "title": "Gmail Gemini AI features", "source": "blog.google (Jan 8)", "reason": "Outside 72h window" },
+    { "title": "GLM-5.1 open-weight model by Z.ai", "source": "huggingface.co/zai-org/GLM-5.1 (Apr 7)", "reason": "Outside 72h window" },
+    { "title": "ARIS autonomous research paper", "source": "huggingface.co/papers/2605.03042 (May 6)", "reason": "No shipping product; low BD actionability" },
+    { "title": "OpenSeeker-v2 search agent paper", "source": "huggingface.co/papers/2605.04036 (May 6)", "reason": "No shipping product; low BD actionability" },
+    { "title": "Anthropic Orbit proactive assistant", "source": "testingcatalog.com (unconfirmed leak)", "reason": "Unannounced feature; T5 — no official source" },
+    { "title": "DeepSeek V4 models", "source": "Various aggregators", "reason": "No primary source with confirmed May 4–7 date found" },
+    { "title": "L Suite Lloyd legal AI tool", "source": "finance.yahoo.com (May 6)", "reason": "T4 only at time of research; no primary source accessible" },
+    { "title": "White House National AI Policy Framework", "source": "whitehouse.gov (Dec 2025)", "reason": "Outside 72h window" }
+  ],
+  "search_log": {
+    "total_searches": 41,
+    "exploratory_adversarial": 17,
+    "exploration_pct": 41,
+    "queries": [
+      "Anthropic Claude announcement May 2026",
+      "OpenAI announcement release May 2026",
+      "Google DeepMind Gemini release May 2026",
+      "anthropic.com/news/finance-agents (fetch)",
+      "anthropic.com/news/enterprise-ai-services-company (fetch)",
+      "OpenAI GPT-5.5 release May 5 2026 site:openai.com",
+      "openai.com/index/gpt-5-5-instant/ (fetch → 403)",
+      "techcrunch.com GPT-5.5 Instant article (fetch)",
+      "Code with Claude conference announcements May 6 2026",
+      "simonwillison.net/2026/May/6/code-w-claude-2026/ (fetch)",
+      "claude.com/code-with-claude (fetch)",
+      "Claude Managed Agents Outcomes Dreaming Orchestration May 6 2026",
+      "claude.com/blog/new-in-claude-managed-agents (fetch)",
+      "Anthropic SpaceX Colossus computing deal May 2026",
+      "anthropic.com/news/higher-limits-spacex (fetch)",
+      "github.com/anthropics/claude-code/releases (fetch)",
+      "AI agent framework launch release May 2026 [exploratory]",
+      "new AI startup launch funding May 2026 NOT Anthropic NOT OpenAI NOT Google [exploratory]",
+      "siliconangle.com Sierra funding (fetch)",
+      "huggingface.co/papers (fetch) [exploratory]",
+      "AI Indonesia startup peluncuran Mei 2026 [exploratory, cross-language]",
+      "MCP Model Context Protocol new release May 2026 [exploratory]",
+      "Anthropic Orbit proactive assistant Claude Cowork May 2026 [exploratory/adversarial]",
+      "AI policy regulation executive order May 2026 [exploratory]",
+      "Anthropic Mythos model cybersecurity EU testing May 2026 [exploratory]",
+      "resultsense.com White House AI vetting article (fetch)",
+      "aisi.gov.uk Mythos evaluation (search) [exploratory]",
+      "site:x.com @AnthropicAI Code with Claude SpaceX Managed Agents May 2026 [exploratory]",
+      "new AI tool launch May 4 5 6 7 2026 NOT Anthropic NOT OpenAI [exploratory]",
+      "Saperly phone carrier AI agents MCP May 2026 [exploratory]",
+      "saperly.com (fetch)",
+      "TinyFish web search fetch free AI agents May 2026 [exploratory]",
+      "tinyfish.ai/blog/search-fetch-free (fetch)",
+      "Unity AI open beta May 2026 site:unity.com [exploratory]",
+      "claude.com/blog (fetch)",
+      "site:claude.com OR site:anthropic.com CI auto-fix code review remote agents May 2026",
+      "claude.com/blog/code-review (fetch) [adversarial date check]",
+      "claude.com/blog/preview-review-and-merge (fetch) [adversarial date check]",
+      "Sierra AI agent startup review criticism May 2026 [adversarial]",
+      "AI benchmark criticism independent evaluation controversy May 2026 [adversarial]"
+    ]
+  },
+  "non_registry_sources_used": [
+    "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+    "https://siliconangle.com/2026/05/04/ai-agent-startup-sierra-valued-15b-new-950m-funding-round/",
+    "https://80.lv/articles/unity-launches-in-editor-ai-tools-suite-in-beta",
+    "https://www.resultsense.com/news/2026-05-05-white-house-pre-release-ai-vetting/",
+    "https://saperly.com/",
+    "https://huggingface.co/papers",
+    "https://gamesbeat.com/unity-launches-unity-ai-into-open-beta/"
+  ]
+}
