@@ -1,0 +1,212 @@
+{
+  "run_date": "2026-05-08",
+  "run_timestamp": "2026-05-08T00:00:00Z",
+  "parameters": {
+    "timeframe": "72h",
+    "period_start": "2026-05-05",
+    "period_end": "2026-05-08",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "summary": {
+    "items_reviewed": 23,
+    "items_published": 4,
+    "items_dropped": 19,
+    "exploration_pct": 43,
+    "sources_count": 12,
+    "verification": {
+      "verified": 2,
+      "secondary": 2,
+      "rumor": 0
+    }
+  },
+  "published_items": [
+    {
+      "title": "AWS MCP Server reaches general availability with full API access and audit logging",
+      "date": "2026-05-06",
+      "category": ["mcp-ecosystem", "dev-tools"],
+      "verification": "verified",
+      "tier": "T2",
+      "methodology": "announcement",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+      "publisher": "AWS",
+      "key_claims": [
+        {
+          "claim": "Single MCP tool covers any AWS API",
+          "source": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+          "tier": "T2"
+        },
+        {
+          "claim": "CloudTrail + CloudWatch logging for agent actions",
+          "source": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+          "tier": "T2"
+        },
+        {
+          "claim": "No server charge; organizations pay for AWS resources only",
+          "source": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Available in US East (N. Virginia) and EU (Frankfurt)",
+          "source": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+          "tier": "T2"
+        }
+      ],
+      "caveats": ["Two-region availability at GA", "Agent skills context-reduction claim is vendor-described, not benchmarked"]
+    },
+    {
+      "title": "NIST authorizes classified evaluation of AI models from Google DeepMind, Microsoft, and xAI",
+      "date": "2026-05-05",
+      "category": ["policy-regulation", "ai-for-business"],
+      "verification": "secondary",
+      "tier": "T2",
+      "methodology": "announcement",
+      "source_url": "https://www.nextgov.com/artificial-intelligence/2026/05/commerce-ai-center-will-evaluate-google-deepmind-microsoft-and-xai-models/413349/",
+      "publisher": "Nextgov/FCW",
+      "tier_note": "Primary NIST/Commerce Dept press release not directly fetched; Nextgov/FCW is authoritative for federal IT announcements",
+      "key_claims": [
+        {
+          "claim": "Google DeepMind, Microsoft, xAI models in scope",
+          "source": "https://www.nextgov.com/artificial-intelligence/2026/05/commerce-ai-center-will-evaluate-google-deepmind-microsoft-and-xai-models/413349/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Testing in classified environments with safety guardrails removed",
+          "source": "https://www.nextgov.com/artificial-intelligence/2026/05/commerce-ai-center-will-evaluate-google-deepmind-microsoft-and-xai-models/413349/",
+          "tier": "T2"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI opens self-serve ChatGPT Ads Manager to US businesses with CPC bidding",
+      "date": "2026-05-05",
+      "category": ["ai-for-business", "productivity-ai"],
+      "verification": "secondary",
+      "tier": "T2",
+      "methodology": "announcement",
+      "source_url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+      "publisher": "OpenAI",
+      "tier_note": "Primary URL returned HTTP 403; confirmed via Axios, AdWeek, ppc.land (all May 5, 2026)",
+      "key_claims": [
+        {
+          "claim": "CPC bidding available for US advertisers",
+          "source": "https://www.axios.com/2026/05/05/openai-self-serve-ad-platform",
+          "tier": "T3"
+        },
+        {
+          "claim": "Ads in Free and Go tiers; no ads in Pro/Business/Enterprise",
+          "source": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+          "tier": "T2 via secondary"
+        },
+        {
+          "claim": "Conversions API and pixel-based attribution launched",
+          "source": "https://ppc.land/openai-opens-chatgpt-ads-manager-to-all-us-businesses-with-cpc-bidding/",
+          "tier": "T3"
+        }
+      ],
+      "caveats": ["US-only at launch", "Ads-don't-influence-answers claim unverified independently"]
+    },
+    {
+      "title": "Microsoft Q1 2026 AI diffusion report: 17.8% global working-age adoption",
+      "date": "2026-05-07",
+      "category": ["ai-for-business"],
+      "verification": "verified",
+      "tier": "T2",
+      "methodology": "report",
+      "source_url": "https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/",
+      "publisher": "Microsoft",
+      "conflict_of_interest": "Methodology uses Microsoft telemetry — likely overrepresents Microsoft AI products",
+      "key_claims": [
+        {
+          "claim": "17.8% of global working-age population uses generative AI",
+          "source": "https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/",
+          "tier": "T2",
+          "note": "Microsoft telemetry — COI noted"
+        },
+        {
+          "claim": "UAE leads at 70.1%; US at 31.3% (21st globally)",
+          "source": "https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/",
+          "tier": "T2"
+        },
+        {
+          "claim": "US developer employment up 8.5% YoY to 2.2 million in 2025",
+          "source": "https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Global Git pushes up 78% YoY",
+          "source": "https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/",
+          "tier": "T2"
+        }
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude Managed Agents (Dreaming, Outcomes, Orchestration)", "source": "anthropic.com/news", "date": "2026-05-06", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "TinyFish free web Search and Fetch", "source": "tinyfish.ai", "date": "2026-05-04", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "OpenAI GPT-5.5 Instant as ChatGPT default model", "source": "openai.com", "date": "2026-05-05", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Anthropic finance agent templates + MS 365 GA", "source": "anthropic.com", "date": "2026-05-05", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Anthropic SpaceX Colossus compute deal", "source": "Bloomberg / anthropic.com", "date": "2026-05-06", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Unity AI open beta with MCP Server", "source": "unity.com", "date": "2026-05-04", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Saperly AI agent phone carrier (MCP)", "source": "saperly.com", "date": "2026-05-05", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Sierra closes $950M round at $15B valuation", "source": "SiliconAngle", "date": "2026-05-04", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Anthropic / Blackstone / Goldman enterprise AI company", "source": "anthropic.com", "date": "2026-05-04", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Mythos regulatory scrutiny (EU, White House)", "source": "Multiple", "date": "2026-05-04 to 2026-05-07", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Claude Opus 4.7 release", "source": "anthropic.com", "date": "2026-04-16", "reason": "Outside 72h window"},
+    {"title": "GPT-5.5 agentic model API", "source": "openai.com", "date": "2026-04-24", "reason": "Outside 72h window"},
+    {"title": "OpenAI Agents SDK sandbox + harness update", "source": "openai.com", "date": "2026-04-15", "reason": "Outside 72h window"},
+    {"title": "Mistral Workflows orchestration engine", "source": "mistral.ai", "date": "2026-04-28", "reason": "Outside 72h window"},
+    {"title": "Cursor SDK public beta", "source": "cursor.com", "date": "2026-04-29", "reason": "Outside 72h window"},
+    {"title": "xAI Grok 4.3 launch", "source": "x.ai", "date": "approx 2026-05-02", "reason": "Outside 72h window (published before May 5)"},
+    {"title": "Jama Software MCP Server (Jama Connect 9.35)", "source": "globenewswire.com", "date": "2026-05-04", "reason": "Outside 72h window (10:45 ET May 4)"},
+    {"title": "Novo Nordisk / OpenAI strategic partnership", "source": "CNBC", "date": "2026-04-14", "reason": "Outside 72h window"},
+    {"title": "JPMorgan Chase AI core infrastructure reclassification", "source": "bankingexchange.com", "date": "2026-01", "reason": "Outside 72h window"}
+  ],
+  "search_log": [
+    {"query": "Anthropic Claude announcement May 2026", "results": 10, "high_rel": 8, "type": "registry"},
+    {"query": "OpenAI GPT announcement release May 2026", "results": 10, "high_rel": 6, "type": "registry"},
+    {"query": "Google DeepMind AI announcement May 2026", "results": 10, "high_rel": 4, "type": "registry"},
+    {"query": "MCP Model Context Protocol new server release May 2026", "results": 10, "high_rel": 5, "type": "registry"},
+    {"query": "fetch: anthropic.com/news/finance-agents", "results": 1, "high_rel": 1, "type": "registry", "note": "primary confirmed May 5"},
+    {"query": "fetch: openai.com/index/gpt-5-5-instant/", "results": 1, "high_rel": 0, "type": "registry", "note": "HTTP 403"},
+    {"query": "fetch: aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/", "results": 1, "high_rel": 1, "type": "registry", "note": "T2 primary confirmed May 6"},
+    {"query": "fetch: simonwillison.net/2026/May/6/code-w-claude-2026/", "results": 1, "high_rel": 1, "type": "registry", "note": "T3 liveblog confirmed May 6"},
+    {"query": "fetch: aljazeera.com SpaceX Anthropic deal", "results": 1, "high_rel": 1, "type": "registry", "note": "confirmed May 6"},
+    {"query": "fetch: globenewswire.com Jama MCP Server", "results": 1, "high_rel": 1, "type": "registry", "note": "confirmed May 4 — outside window"},
+    {"query": "AI agent framework release launch May 2026", "results": 10, "high_rel": 4, "type": "exploratory"},
+    {"query": "AI dev tools coding assistant update May 2026", "results": 10, "high_rel": 5, "type": "exploratory"},
+    {"query": "fetch: releasebot.io/updates/cursor", "results": 1, "high_rel": 1, "type": "exploratory", "note": "Cursor 3.3 confirmed May 6"},
+    {"query": "Hugging Face new AI model release May 5 6 7 2026", "results": 10, "high_rel": 3, "type": "exploratory"},
+    {"query": "Vals AI finance agent benchmark independent evaluation methodology", "results": 8, "high_rel": 5, "type": "adversarial"},
+    {"query": "fetch: vals.ai/benchmarks/finance_agent", "results": 1, "high_rel": 1, "type": "adversarial", "note": "leaderboard confirmed Claude Opus 4.7 at 64.37%"},
+    {"query": "GPT-5.5 Instant criticism limitations hallucination May 2026", "results": 10, "high_rel": 5, "type": "adversarial"},
+    {"query": "Anthropic finance agents criticism independent review May 2026", "results": 10, "high_rel": 4, "type": "adversarial"},
+    {"query": "fetch: nextgov.com CAISI AI evaluation May 2026", "results": 1, "high_rel": 1, "type": "exploratory", "note": "T2 confirmed May 5"},
+    {"query": "OpenAI ChatGPT ads advertising announcement May 7 2026", "results": 10, "high_rel": 7, "type": "exploratory"},
+    {"query": "fetch: openai.com/index/our-approach-to-advertising-and-expanding-access/", "results": 1, "high_rel": 0, "type": "exploratory", "note": "HTTP 403"},
+    {"query": "AI news May 7 8 2026", "results": 10, "high_rel": 4, "type": "exploratory"},
+    {"query": "Mistral Workflows launch date May 2026", "results": 8, "high_rel": 4, "type": "registry", "note": "confirmed Apr 28 — outside window"},
+    {"query": "Jules Google coding agent beta GA May 2026", "results": 10, "high_rel": 4, "type": "exploratory", "note": "confirmed Aug 2025 GA — outside window"},
+    {"query": "OpenAI Agents SDK sandbox update May 2026", "results": 10, "high_rel": 5, "type": "exploratory", "note": "confirmed Apr 15-16 — outside window"},
+    {"query": "AI Indonesia startup AI model May 2026", "results": 10, "high_rel": 0, "type": "exploratory/cross-lang", "note": "background context only, no in-window launches"},
+    {"query": "JPMorgan Chase AI core infrastructure reclassification 2026", "results": 8, "high_rel": 3, "type": "exploratory", "note": "Jan 2026 — outside window"},
+    {"query": "fetch: blogs.microsoft.com/on-the-issues/2026/05/07", "results": 1, "high_rel": 1, "type": "registry", "note": "T2 primary confirmed May 7"},
+    {"query": "Google Gemini Flash new model May 2026 release date", "results": 8, "high_rel": 3, "type": "registry", "note": "no confirmed primary date in window"},
+    {"query": "xAI Grok update May 2026 OR Mistral model release May 2026", "results": 10, "high_rel": 3, "type": "registry", "note": "Grok 4.3 before window; Mistral Medium 3.5 Apr 29"},
+    {"query": "AI product launch announcement May 7 2026", "results": 10, "high_rel": 3, "type": "exploratory"},
+    {"query": "GitHub trending AI repositories May 2026", "results": 10, "high_rel": 3, "type": "exploratory"},
+    {"query": "site:x.com AI announcement May 2026", "results": 10, "high_rel": 3, "type": "exploratory"},
+    {"query": "AI news May 8 2026", "results": 10, "high_rel": 4, "type": "exploratory"}
+  ],
+  "limitations": [
+    "openai.com primary sources returned HTTP 403 — items sourced from secondary",
+    "May 5-7 overlap with 2026-05-07 radar window — 10 items already covered",
+    "NIST primary press release not fetched directly — Nextgov/FCW used",
+    "Microsoft AI diffusion uses Microsoft telemetry — COI for adoption figures",
+    "Login-walled content (X timeline, LinkedIn, Discord) not accessed",
+    "SEA-region and Indonesian-language search yielded no in-window product launches",
+    "No research-papers items: ARIS and OpenSeeker-v2 (May 6 HF papers) have no shipping product",
+    "Gemini 3.1 Flash-Lite date unconfirmed in window — excluded"
+  ]
+}
