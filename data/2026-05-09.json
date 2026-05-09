@@ -1,0 +1,234 @@
+{
+  "run_date": "2026-05-09",
+  "period_start": "2026-05-06",
+  "period_end": "2026-05-09",
+  "timeframe": "72h",
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 28,
+  "items_published": 5,
+  "items_dropped": 23,
+  "exploration_pct": 42,
+  "total_searches": 38,
+  "exploratory_adversarial_searches": 16,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "sources_count": 14,
+  "sources_domains": [
+    "openai.com",
+    "techcrunch.com",
+    "thenextweb.com",
+    "9to5mac.com",
+    "coder.com",
+    "globenewswire.com",
+    "sdtimes.com",
+    "cloud.google.com",
+    "blog.google",
+    "testingcatalog.com",
+    "artificialanalysis.ai",
+    "harvey.ai",
+    "artificiallawyer.com",
+    "helpnetsecurity.com"
+  ],
+  "items": [
+    {
+      "title": "OpenAI ships three voice API models with GPT-5-class reasoning, live translation, and streaming transcription",
+      "category": ["dev-tools", "agent-framework"],
+      "verification_status": "secondary",
+      "tier": "T2",
+      "source_url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "source_publisher": "OpenAI",
+      "source_date": "2026-05-07",
+      "source_accessible": false,
+      "source_http_status": 403,
+      "corroborating_sources": [
+        "https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/",
+        "https://thenextweb.com/news/openai-gpt-realtime-2-voice-models",
+        "https://9to5mac.com/2026/05/07/openai-has-new-voice-models-that-reason-translate-and-transcribe-as-you-speak/"
+      ],
+      "models": [
+        {
+          "name": "GPT-Realtime-2",
+          "pricing_input": "$32 per 1M audio input tokens",
+          "pricing_cached_input": "$0.40 per 1M cached audio input tokens",
+          "pricing_output": "$64 per 1M audio output tokens",
+          "context_window": "128K tokens",
+          "prior_context_window": "32K tokens",
+          "reasoning": "GPT-5-class",
+          "capabilities": ["parallel tool calls", "adjustable reasoning effort", "session recovery"]
+        },
+        {
+          "name": "GPT-Realtime-Translate",
+          "pricing": "$0.034 per minute",
+          "input_languages": "70+",
+          "output_languages": 13,
+          "capabilities": ["real-time speech translation", "conversational pacing"]
+        },
+        {
+          "name": "GPT-Realtime-Whisper",
+          "pricing": "$0.017 per minute",
+          "capabilities": ["streaming speech-to-text", "low-latency transcription"]
+        }
+      ],
+      "caveats": [
+        "Realtime API not HIPAA-eligible under OpenAI BAA (audio modality)",
+        "Default reasoning effort is 'low'; benchmark run at 'xhigh'",
+        "Session drift in long conversations; context trimming required",
+        "Zillow case study is vendor-reported, not independently verified"
+      ],
+      "bd_actionability": "high"
+    },
+    {
+      "title": "Coder launches self-hosted, model-agnostic enterprise agent platform in beta",
+      "category": ["dev-tools", "agent-framework"],
+      "verification_status": "verified",
+      "tier": "T2",
+      "source_url": "https://coder.com/blog/introducing-coder-agents",
+      "source_publisher": "Coder",
+      "source_date": "2026-05-06",
+      "source_accessible": true,
+      "key_features": [
+        "Self-hosted on customer infrastructure",
+        "Model-agnostic: Anthropic, OpenAI, Google, AWS Bedrock, self-hosted",
+        "MCP-based tool integrations",
+        "Sub-agent orchestration",
+        "Network-isolated workspace provisioning",
+        "Centralized model and prompt-policy management"
+      ],
+      "availability": "Beta — free with full premium features through September 2026",
+      "pricing_post_beta": "Not announced",
+      "caveats": [
+        "Beta status — API may have breaking changes",
+        "70% infrastructure statistic from unpublished Coder research",
+        "Post-September 2026 pricing not announced"
+      ],
+      "bd_actionability": "high"
+    },
+    {
+      "title": "Google ships Gemini 3.1 Flash-Lite to general availability",
+      "category": ["model-release"],
+      "verification_status": "verified",
+      "tier": "T2",
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available",
+      "source_publisher": "Google Cloud",
+      "source_date": "2026-05-08",
+      "source_accessible": true,
+      "preview_announced": "2026-03-03",
+      "pricing": {
+        "input_per_1m_tokens": "$0.25",
+        "output_per_1m_tokens": "$1.50",
+        "note": "From March 2026 preview blog — not confirmed in GA blog post; verify before production use"
+      },
+      "performance_vs_gemini_2_5_flash": {
+        "ttft_improvement": "2.5x faster",
+        "output_speed_improvement": "45% faster"
+      },
+      "independent_benchmarks": {
+        "facts_score": "40.6%",
+        "facts_comparison": "50.4% for Gemini 3.0 Flash Dynamic",
+        "ttft_measured_by_artificial_analysis": "5.46s",
+        "ttft_tier_median": "2.02s",
+        "source": "https://artificialanalysis.ai/models/gemini-3-1-flash-lite-preview"
+      },
+      "caveats": [
+        "GA pricing not published in Cloud blog — verify against current Google Cloud pricing page",
+        "Lower FACTS factuality score than Gemini 3.0 Flash Dynamic",
+        "TTFT above tier median per independent measurement"
+      ],
+      "bd_actionability": "medium-high"
+    },
+    {
+      "title": "Snyk embeds Claude into AI Security Platform for vulnerability discovery across code and AI artifacts",
+      "category": ["dev-tools", "ai-for-business"],
+      "verification_status": "secondary",
+      "tier": "T2",
+      "source_url": "https://www.helpnetsecurity.com/2026/05/08/snyk-ai-security-platform/",
+      "source_publisher": "Help Net Security (reporting on Snyk press release)",
+      "source_date": "2026-05-08",
+      "source_accessible": true,
+      "primary_accessible": false,
+      "primary_note": "Snyk press release distributed via Globenewswire; direct snyk.io primary not retrieved",
+      "coverage_scope": [
+        "Code (SAST)",
+        "Open-source dependencies (SCA)",
+        "Containers",
+        "AI-generated artifacts"
+      ],
+      "evo_capabilities": [
+        "Discovers models, agents, MCP servers, datasets, third-party tools",
+        "AI governance workflows alongside traditional SAST/SCA"
+      ],
+      "availability": "Available today to joint Snyk-Anthropic customers; broader rollout through 2026",
+      "caveats": [
+        "No independent benchmark for detection rates vs other AI security tools",
+        "New customers may face enterprise sales cycle",
+        "Primary snyk.io blog post not retrieved"
+      ],
+      "bd_actionability": "medium"
+    },
+    {
+      "title": "Harvey open-sources Legal Agent Benchmark with 1,200 agent tasks across 24 practice areas",
+      "category": ["research-papers", "ai-for-business"],
+      "verification_status": "verified",
+      "tier": "T2",
+      "source_url": "https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark",
+      "source_publisher": "Harvey",
+      "source_date": "2026-05-06",
+      "source_accessible": true,
+      "github_url": "https://github.com/harveyai/harvey-labs",
+      "benchmark_stats": {
+        "total_tasks": "1200+",
+        "practice_areas": 24,
+        "rubric_criteria": "75000+",
+        "evaluation_method": "all-pass grading"
+      },
+      "partner": "Artificial Analysis",
+      "leaderboard_available": false,
+      "leaderboard_note": "Baseline results and submission standards forthcoming",
+      "conflict_of_interest": "Harvey is benchmark creator and a commercial legal AI vendor",
+      "caveats": [
+        "No leaderboard at launch",
+        "Benchmark not independently peer-reviewed",
+        "Conflict of interest: Harvey is both creator and commercial vendor in the space"
+      ],
+      "bd_actionability": "low-medium"
+    }
+  ],
+  "dropped_items": [
+    {"title": "Meta Muse Spark LLM launch", "reason": "Outside window — April 8"},
+    {"title": "Anthropic Project Glasswing / Claude Mythos", "reason": "Outside window — April 7"},
+    {"title": "Microsoft Agent Framework 1.0 GA", "reason": "Outside window — April 3"},
+    {"title": "Microsoft AI Diffusion 2026 Survey", "reason": "Already covered in 2026-05-08 radar"},
+    {"title": "AWS MCP Server GA", "reason": "Already covered in 2026-05-08 radar"},
+    {"title": "NIST CAISI classified AI evaluation", "reason": "Already covered in 2026-05-08 radar"},
+    {"title": "OpenAI ChatGPT Ads Manager self-serve", "reason": "Already covered in 2026-05-08 radar"},
+    {"title": "Claude Managed Agents (Dreaming, Outcomes, Orchestration)", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Anthropic / SpaceX Colossus compute deal", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Anthropic Claude usage limit expansion", "reason": "Same blog as SpaceX deal; covered in 2026-05-07 radar"},
+    {"title": "MCP 2026 Roadmap", "reason": "Outside window — March 9"},
+    {"title": "OpenAI GPT-5.5 Instant new ChatGPT default", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "xAI Grok 4.3 API GA", "reason": "API rollout complete April 30; May 6 email was notification only"},
+    {"title": "Google Gemini 3.1 Ultra", "reason": "No primary source with confirmed May 6-9 date found"},
+    {"title": "Jama Connect MCP Server", "reason": "Outside window — May 4"},
+    {"title": "Opsera-Cursor DevSecOps Agents", "reason": "Low standalone BD signal; no primary from opsera.io"},
+    {"title": "Precisely Data Integrity Suite MCP APIs", "reason": "Low BD signal for general audience; no primary from precisely.com"},
+    {"title": "Hugging Face WAVe 1B multimodal model", "reason": "Outside window — May 5"},
+    {"title": "Microsoft Azure App Service + MAF blog", "reason": "Original MAF shipped April 3; blog is secondary integration guidance"},
+    {"title": "Scout AI $100M Series A", "reason": "Funding news; no primary from scoutai.com; low actionability"},
+    {"title": "Rhoda AI FutureVision launch", "reason": "In-window date unconfirmed; no primary source found"},
+    {"title": "Harvey $11B valuation funding round", "reason": "Outside window — May 5; funding news, low actionability"},
+    {"title": "Snyk Studio Claude Code integration (Feb 2026)", "reason": "Outside window — February 2026; distinct from May 8 announcement"}
+  ],
+  "quality_gate": {
+    "all_claims_have_source": true,
+    "no_source_quoted_twice": true,
+    "no_quote_exceeds_14_words": true,
+    "exploration_pct_above_30": true,
+    "limitations_substantive": true,
+    "dropped_section_present": true,
+    "no_hype_language": true
+  }
+}
