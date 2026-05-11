@@ -1,0 +1,348 @@
+{
+  "run": {
+    "date": "2026-05-11",
+    "timestamp": "2026-05-11T00:00:00Z",
+    "timeframe": "2026-05-06 to 2026-05-11",
+    "window_expansion": "Strict 72h window (May 8–11) yielded 1 confirmed item. Expanded to 5 days (May 6–11) per skill rules.",
+    "categories": ["all"],
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 28,
+    "items_published": 5,
+    "items_dropped": 23,
+    "verification_summary": {
+      "verified": 5,
+      "secondary": 0,
+      "rumor": 0
+    },
+    "sources_count": 14,
+    "exploration_pct": 50
+  },
+  "items": [
+    {
+      "id": "coder-agents-beta-2026-05-06",
+      "title": "Coder launches self-hosted AI coding agent platform for enterprise development teams",
+      "source_url": "https://www.globenewswire.com/news-release/2026/05/06/3288916/0/en/Coder-Sets-a-New-Standard-for-AI-Coding-with-Self-Hosted-AI-Model-Agnostic-Coder-Agents.html",
+      "tier": "T2",
+      "publication_date": "2026-05-06",
+      "author_org": "Coder",
+      "methodology": "announcement",
+      "verification_status": "verified",
+      "conflict_of_interest": null,
+      "category": ["workflow-automation", "dev-tools"],
+      "bd_actionability": "high",
+      "claims": [
+        {
+          "claim": "Coder Agents entered beta on May 6, 2026",
+          "source": "GlobeNewsWire press release",
+          "tier": "T2"
+        },
+        {
+          "claim": "Self-hosted architecture; no source code or prompts leave customer network",
+          "source": "GlobeNewsWire press release",
+          "tier": "T2"
+        },
+        {
+          "claim": "Model-agnostic: supports Anthropic, OpenAI, Google, AWS Bedrock, and local models",
+          "source": "GlobeNewsWire press release",
+          "tier": "T2"
+        },
+        {
+          "claim": "Free beta with no usage-based limits through September 2026",
+          "source": "GlobeNewsWire press release",
+          "tier": "T2"
+        },
+        {
+          "claim": "61% of engineering teams already running agents — vendor-cited market statistic; methodology not disclosed in press release",
+          "source": "GlobeNewsWire press release",
+          "tier": "T4",
+          "caveat": "unverified market statistic"
+        }
+      ],
+      "caveats": [
+        "Beta-stage; full pricing post-September 2026 not disclosed",
+        "Self-hosted claims should be independently verified before recommending for regulated or air-gapped environments",
+        "61% market statistic lacks disclosed methodology"
+      ]
+    },
+    {
+      "id": "gemini-3-1-flash-lite-ga-2026-05-08",
+      "title": "Google Gemini 3.1 Flash-Lite reaches general availability with sub-dollar-per-million-token pricing",
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available",
+      "tier": "T2",
+      "publication_date": "2026-05-08",
+      "author_org": "Google Cloud",
+      "methodology": "announcement",
+      "verification_status": "verified",
+      "conflict_of_interest": null,
+      "category": ["model-release"],
+      "bd_actionability": "high",
+      "claims": [
+        {
+          "claim": "GA date: May 8, 2026",
+          "source": "Google Cloud blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Pricing: $0.25/1M input tokens, $1.50/1M output tokens",
+          "source": "Google Cloud blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "P95 latency sub-second for classifier and tool-call workloads",
+          "source": "Gladly customer case study cited in Google Cloud blog",
+          "tier": "T3",
+          "caveat": "Single customer deployment; not independently reproduced"
+        },
+        {
+          "claim": "~60% lower cost than comparable thinking-tier models",
+          "source": "Gladly customer case study cited in Google Cloud blog",
+          "tier": "T3",
+          "caveat": "Single customer; not general benchmark"
+        },
+        {
+          "claim": "2.5x faster response times and 45% faster output generation",
+          "source": "Google marketing claims",
+          "tier": "T4",
+          "caveat": "Vendor-claimed; no independent reproduction found during this run"
+        },
+        {
+          "claim": "Intelligence Index score: 34 vs 21 average for comparable models",
+          "source": "Artificial Analysis (independent benchmark)",
+          "tier": "T1"
+        },
+        {
+          "claim": "FACTS factuality score: 40.6% vs 50.4% for Gemini 3.0 Flash Dynamic",
+          "source": "Artificial Analysis (independent benchmark)",
+          "tier": "T1"
+        }
+      ],
+      "cross_references": [
+        "https://artificialanalysis.ai/models/gemini-3-1-flash-lite-preview (T1 independent benchmark)"
+      ],
+      "caveats": [
+        "Latency/cost figures from single-customer case study (Gladly), not a general benchmark",
+        "2.5x speed improvement is vendor-claimed without disclosed baseline or independent reproduction",
+        "FACTS factuality score 40.6% lags Gemini 3.0 Flash Dynamic (50.4%) — trade-off vs speed/cost"
+      ]
+    },
+    {
+      "id": "openai-codex-0-130-0-2026-05-09",
+      "title": "OpenAI Codex 0.130.0 adds headless remote-control server mode and AWS Bedrock authentication",
+      "source_url": "https://github.com/openai/codex/releases/tag/rust-v0.130.0",
+      "tier": "T2",
+      "publication_date": "2026-05-09",
+      "author_org": "OpenAI",
+      "methodology": "changelog",
+      "verification_status": "verified",
+      "conflict_of_interest": null,
+      "category": ["dev-tools"],
+      "bd_actionability": "medium-high",
+      "claims": [
+        {
+          "claim": "codex remote-control headless entrypoint added",
+          "source": "GitHub release changelog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Bedrock authentication via AWS console-login credentials",
+          "source": "GitHub release changelog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Thread pagination with unloaded/summary/full turn item views",
+          "source": "GitHub release changelog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Live config refresh without server restart",
+          "source": "GitHub release changelog",
+          "tier": "T2"
+        },
+        {
+          "claim": "view_image resolves files through multi-environment selectors",
+          "source": "GitHub release changelog",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        "https://releasebot.io/updates/openai/codex (T3 — date confirmation; GitHub fetch returned cached non-2026 date)"
+      ],
+      "caveats": [
+        "Date confirmed as May 9, 2026 via releasebot.io (T3); GitHub release tag page returned cached date metadata incompatible with 2026",
+        "Codex CLI (agentic coding tool) — distinct from the deprecated Codex API model"
+      ]
+    },
+    {
+      "id": "anthropic-petri-meridian-labs-2026-05-07",
+      "title": "Anthropic transfers Petri alignment auditing tool to independent nonprofit Meridian Labs",
+      "source_url": "https://www.anthropic.com/research/donating-open-source-petri",
+      "tier": "T2",
+      "publication_date": "2026-05-07",
+      "author_org": "Anthropic",
+      "methodology": "announcement",
+      "verification_status": "verified",
+      "conflict_of_interest": null,
+      "category": ["research-papers"],
+      "bd_actionability": "medium",
+      "claims": [
+        {
+          "claim": "Petri donated to Meridian Labs, described as an AI evaluation nonprofit",
+          "source": "Anthropic research blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Petri 3.0 released simultaneously; auditor model now configurable separately from target model",
+          "source": "Anthropic research blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Dish component runs evaluations using model's actual system prompt and live deployment framework",
+          "source": "Anthropic research blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Petri used in Anthropic's alignment assessment since Claude Sonnet 4.5",
+          "source": "Anthropic research blog (self-reported)",
+          "tier": "T2"
+        },
+        {
+          "claim": "Petri joins Inspect and Scout within Meridian Labs evaluation stack",
+          "source": "Anthropic research blog",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        "https://meridianlabs-ai.github.io/inspect_petri/ (T3 — Meridian Labs documentation confirming tool integration)",
+        "https://x.com/AnthropicAI/status/2052494460966019137 (T2 — official Anthropic X account announcement)"
+      ],
+      "caveats": [
+        "Meridian Labs described as nonprofit; no independent governance documentation reviewed during this run",
+        "Organizational independence from Anthropic does not guarantee funding independence; relationship not fully disclosed in announcement"
+      ]
+    },
+    {
+      "id": "openai-mrc-protocol-2026-05-06",
+      "title": "OpenAI publishes MRC networking protocol for AI supercomputers, deployed at 131,000+ GPU scale",
+      "source_url": "https://openai.com/index/mrc-supercomputer-networking/",
+      "tier": "T2",
+      "publication_date": "2026-05-06",
+      "author_org": "OpenAI",
+      "methodology": "technical publication",
+      "verification_status": "verified",
+      "conflict_of_interest": null,
+      "category": ["ai-for-business"],
+      "bd_actionability": "low",
+      "claims": [
+        {
+          "claim": "MRC published May 6, 2026",
+          "source": "OpenAI primary blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Deployed at Oracle Cloud (Abilene, TX) and Microsoft Fairwater data center",
+          "source": "OpenAI primary blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "131,000 GPU cluster topology achievable using two Ethernet switch tiers",
+          "source": "OpenAI primary blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Consortium partners: AMD, Broadcom, Intel, Microsoft, NVIDIA",
+          "source": "OpenAI primary blog; AMD blog; NVIDIA blog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Adaptive packet spraying eliminates core network congestion — vendor-claimed; no independent benchmark",
+          "source": "OpenAI primary blog",
+          "tier": "T4",
+          "caveat": "Vendor-claimed performance claim; no independent measurement available"
+        }
+      ],
+      "cross_references": [
+        "https://www.amd.com/en/blogs/2026/amd-advances-ai-networking-at-scale-with-mrc (T2 — AMD corroboration)",
+        "https://blogs.nvidia.com/blog/spectrum-x-ethernet-mrc/ (T2 — NVIDIA corroboration)",
+        "https://cdn.openai.com/pdf/resilient-ai-supercomputer-networking-using-mrc-and-srv6.pdf (T2 — technical paper)"
+      ],
+      "caveats": [
+        "Congestion-elimination claim is vendor-stated; no independent measurement reproduced during this run",
+        "Deployment at Oracle and Microsoft confirmed by OpenAI but not independently verified by those vendors in the sources accessed"
+      ]
+    }
+  ],
+  "dropped": [
+    {"title": "Anthropic finance agents + Microsoft 365 GA", "source_date": "2026-05-05", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Claude Managed Agents (Dreaming, Outcomes, Orchestration)", "source_date": "2026-05-06", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "OpenAI GPT-5.5 Instant as ChatGPT default", "source_date": "2026-05-05", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "AWS MCP Server GA", "source_date": "2026-05-06", "reason": "Already covered in 2026-05-08 radar"},
+    {"title": "NIST CAISI classified AI evaluation", "source_date": "2026-05-05", "reason": "Already covered in 2026-05-08 radar"},
+    {"title": "OpenAI ChatGPT Ads Manager", "source_date": "2026-05-05", "reason": "Already covered in 2026-05-08 radar"},
+    {"title": "Microsoft AI Diffusion 2026 report", "source_date": "2026-05-07", "reason": "Already covered in 2026-05-08 radar"},
+    {"title": "SpaceX Colossus compute deal with Anthropic", "source_date": "2026-05-06", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "Anthropic/Blackstone/Goldman enterprise AI company", "source_date": "2026-05-04", "reason": "Already covered in 2026-05-07 radar"},
+    {"title": "OpenAI Workspace Agents (research preview)", "source_date": "2026-04-22", "reason": "Research preview launched April 22; not new in this window; credit-based pricing change May 6 is pricing update to existing feature"},
+    {"title": "Prismatic Skills for Claude Code", "source_date": "2026-05-04", "reason": "Outside 5-day window (May 6–11)"},
+    {"title": "Precisely Data Integration Agent + MCP Server", "source_date": "2026-05-05", "reason": "Outside 5-day window"},
+    {"title": "Snyk + Claude integration", "source_date": "2026-05-08", "reason": "Primary source (Snyk blog) not fetched during this run; aggregator-only sourcing insufficient for T2 claim"},
+    {"title": "Five Eyes agentic AI security guidance", "source_date": "2026-05-01", "reason": "Outside 5-day window"},
+    {"title": "Cohere + Aleph Alpha merger", "source_date": "2026-04-24", "reason": "Outside window"},
+    {"title": "Mistral Medium 3.5 + Vibe Agents", "source_date": "2026-04-29", "reason": "Outside window"},
+    {"title": "Meta Muse Spark", "source_date": "2026-04-08", "reason": "Outside window; aggregator misattributed to May 9"},
+    {"title": "DeepSeek V4, Kimi K2.6, GLM-5.1, MiniMax M2.7", "source_date": "2026-04-07 to 2026-04-24", "reason": "Outside window"},
+    {"title": "Anthropic $900B valuation round", "source_date": "2026-04-29", "reason": "Outside window; unconfirmed funding talks at time of window"},
+    {"title": "Anthropic/Google/Broadcom compute deal", "source_date": "2026-04-06", "reason": "Outside window"},
+    {"title": "Claude Opus 4.7", "source_date": "2026-04-16", "reason": "Outside window"},
+    {"title": "OpenAI GPT-5.5 agentic API", "source_date": "2026-04-23", "reason": "Outside window"},
+    {"title": "NVIDIA equity investment surge ($40B+)", "source_date": "2026-05-09", "reason": "Business/investment news; no product or API impact; low BD actionability"}
+  ],
+  "search_log": [
+    {"query": "Anthropic Claude announcement May 2026", "yield": "10 results, 6 high-rel", "type": "registry"},
+    {"query": "OpenAI announcement release May 2026", "yield": "10 results, 5 high-rel", "type": "registry"},
+    {"query": "Google DeepMind Gemini announcement May 2026", "yield": "10 results, 4 high-rel", "type": "registry"},
+    {"query": "Meta AI Llama announcement May 2026", "yield": "10 results, 3 high-rel", "type": "registry"},
+    {"query": "MCP Model Context Protocol new server May 2026", "yield": "10 results, 4 high-rel", "type": "registry"},
+    {"query": "AI dev tools Cursor Claude Code release May 2026", "yield": "10 results, 3 high-rel", "type": "registry"},
+    {"query": "fetch: anthropic.com/news", "yield": "no items May 8-11", "type": "registry"},
+    {"query": "fetch: releasebot.io/updates/openai", "yield": "Codex 0.130.0 May 9 confirmed", "type": "registry"},
+    {"query": "fetch: cloud.google.com/blog/.../gemini-3-1-flash-lite-is-now-generally-available", "yield": "GA confirmed May 8, pricing confirmed", "type": "registry"},
+    {"query": "fetch: anthropic.com/research/donating-open-source-petri", "yield": "Petri 3.0 May 7 confirmed", "type": "registry"},
+    {"query": "fetch: globenewswire.com Coder Agents", "yield": "May 6 confirmed, details confirmed", "type": "exploratory"},
+    {"query": "AI announcement release May 8/9/10/11 2026", "yield": "8 results, 4 high-rel", "type": "exploratory"},
+    {"query": "agent framework AI tool launch May 2026", "yield": "10 results, 3 high-rel", "type": "exploratory"},
+    {"query": "Anthropic Petri Meridian Labs May 2026", "yield": "10 results, 8 high-rel", "type": "exploratory"},
+    {"query": "AI startup funding announcement May 2026", "yield": "10 results, 3 high-rel", "type": "exploratory"},
+    {"query": "Mistral Medium 3.5 release date", "yield": "confirmed April 29-30 — outside window", "type": "exploratory"},
+    {"query": "site:x.com AI agent model release May 2026", "yield": "10 results, 2 high-rel", "type": "social/mandatory"},
+    {"query": "new AI model released May 9 10 11 2026", "yield": "10 results, 3 high-rel", "type": "exploratory"},
+    {"query": "AI Indonesia startup SEA Mei 2026", "yield": "5 results, 0 in-window", "type": "cross-lang/mandatory"},
+    {"query": "GitHub trending AI repositories May 2026", "yield": "pi-mono 43.9k stars noted; no in-window launch date confirmed", "type": "exploratory"},
+    {"query": "Google I/O 2026 date", "yield": "confirmed May 19-20 — outside window", "type": "exploratory"},
+    {"query": "xAI Grok Mistral model release May 8-11 2026", "yield": "Grok 4.3 May 6 — prior run", "type": "registry"},
+    {"query": "Hacker News AI week May 8 2026", "yield": "6 results, 2 high-rel", "type": "community/mandatory"},
+    {"query": "Gemini Flash Lite 3.1 criticism benchmark independent", "yield": "FACTS score 40.6% confirmed via Artificial Analysis", "type": "adversarial"},
+    {"query": "OpenAI workspace agents release date May 7", "yield": "April 22 launch confirmed — not new in window", "type": "exploratory"},
+    {"query": "OpenAI $25B ARR announcement May 2026", "yield": "February-March figure, not new announcement", "type": "exploratory"},
+    {"query": "DeepSeek GLM MiniMax Kimi Chinese AI May 2026", "yield": "April releases confirmed — outside window", "type": "exploratory"},
+    {"query": "OpenAI MRC Protocol supercomputing 131k GPUs", "yield": "May 6 confirmed; AMD/NVIDIA corroboration found", "type": "exploratory"},
+    {"query": "Microsoft AI announcement May 9-11 2026", "yield": "no new in-window items", "type": "exploratory"},
+    {"query": "Precisely MCP server data integration release date", "yield": "May 5 confirmed — outside window", "type": "exploratory"},
+    {"query": "Five Eyes agentic AI security guidance May 2026", "yield": "May 1 confirmed — outside window", "type": "exploratory"},
+    {"query": "Cohere Aleph Alpha merger date", "yield": "April 24 confirmed — outside window", "type": "exploratory"},
+    {"query": "new AI tool product launch May 2026", "yield": "10 results, 3 high-rel", "type": "exploratory"},
+    {"query": "AI news May 9/10/11 2026", "yield": "5 results, 2 high-rel", "type": "exploratory"},
+    {"query": "fetch: aitoolsrecap.com/Blog/ai-news-may-9-2026", "yield": "May 9 recap; primary sources mostly pre-window", "type": "exploratory"}
+  ],
+  "limitations": [
+    "Window expansion: strict 72h window (May 8–11) yielded 1 confirmed item; expanded to 5 days (May 6–11)",
+    "openai.com/news/ returned HTTP 403; openai.com/index/introducing-workspace-agents-in-chatgpt/ returned HTTP 403",
+    "X timelines, Instagram, LinkedIn private, and Discord not directly accessed",
+    "Codex 0.130.0 date confirmed via releasebot.io (T3); GitHub release tag page returned cached pre-2026 date",
+    "Gemini 3.1 Flash-Lite vendor speed/cost claims not independently reproduced",
+    "Petri/Meridian Labs governance structure not independently verified",
+    "Snyk + Claude integration (May 8) dropped: primary source not fetched; aggregator-only",
+    "mcp-ecosystem, agent-framework, productivity-ai categories had no in-window items",
+    "SEA/Indonesia search yielded no in-window product launches from local vendors"
+  ]
+}
