@@ -1,0 +1,313 @@
+{
+  "run_metadata": {
+    "date": "2026-05-12",
+    "timestamp": "2026-05-12T00:00:00Z",
+    "timeframe": "2026-05-07 to 2026-05-12",
+    "strict_window": "2026-05-09 to 2026-05-12",
+    "expanded_window": "2026-05-07 to 2026-05-12",
+    "expansion_reason": "Strict 72h window yielded 3 verified items (≤5 threshold); expanded to 5 days per skill rules",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 30,
+    "items_published": 4,
+    "items_dropped": 26,
+    "exploration_pct": 58,
+    "total_searches": 35,
+    "exploratory_searches": 20,
+    "verification_summary": {
+      "verified": 3,
+      "secondary": 1,
+      "rumor": 0
+    },
+    "sources_count": 12
+  },
+  "published_items": [
+    {
+      "id": "openai-deployment-company-2026-05-11",
+      "title": "OpenAI launches $4B enterprise AI deployment company, acquires Tomoro",
+      "date": "2026-05-11",
+      "categories": ["ai-for-business", "workflow-automation"],
+      "verification_status": "verified",
+      "tier": "T2",
+      "methodology": "announcement",
+      "primary_source": {
+        "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+        "publisher": "OpenAI",
+        "date": "2026-05-11",
+        "access_status": "HTTP 403 from sandbox; verified via partner press release and multi-outlet T2-T3 coverage"
+      },
+      "cross_references": [
+        {
+          "url": "https://www.bbva.com/en/innovation/bbva-joins-deployco-openais-new-company-to-accelerate-ai-enterprise-transformation/",
+          "tier": "T2",
+          "role": "corroborating — partner press release confirming deal"
+        },
+        {
+          "url": "https://www.axios.com/2026/05/11/openai-deployco-private-equity",
+          "tier": "T2",
+          "role": "corroborating — Tomoro acquisition details, $14B valuation figure"
+        },
+        {
+          "url": "https://techstartups.com/2026/05/11/openai-launches-4b-enterprise-ai-unit-to-accelerate-corporate-adoption-acquires-tomoro-to-scale-deployments/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "$4B+ initial capital",
+          "source": "BBVA press release (T2)",
+          "status": "verified"
+        },
+        {
+          "claim": "19 partner firms",
+          "source": "BBVA press release / multiple T2-T3 outlets",
+          "status": "verified"
+        },
+        {
+          "claim": "TPG lead; Advent, Bain Capital, Brookfield co-leads",
+          "source": "TechStartups (T3)",
+          "status": "verified"
+        },
+        {
+          "claim": "Tomoro acquisition: ~150 engineers",
+          "source": "Axios (T2)",
+          "status": "verified"
+        }
+      ],
+      "caveats": [
+        "Primary URL returned HTTP 403 from sandbox",
+        "Axios reports $14B valuation for the company; other outlets cite $4B capital; discrepancy unresolved — $4B capital figure used",
+        "Rival Anthropic announced a parallel enterprise services firm (Blackstone/Goldman/H&F, May 4) — outside this window"
+      ],
+      "bd_actionability": "high",
+      "conflict_of_interest": null,
+      "from_non_registry_source": false
+    },
+    {
+      "id": "claude-code-v2.1.139-2026-05-11",
+      "title": "Claude Code v2.1.139 ships agent orchestration view, persistent /goal command, and MCP hot-reload",
+      "date": "2026-05-11",
+      "categories": ["dev-tools", "mcp-ecosystem"],
+      "verification_status": "verified",
+      "tier": "T2",
+      "methodology": "changelog",
+      "primary_source": {
+        "url": "https://github.com/anthropics/claude-code/releases",
+        "publisher": "Anthropic",
+        "date": "2026-05-11",
+        "access_status": "fetched successfully"
+      },
+      "cross_references": [],
+      "key_claims": [
+        {
+          "claim": "Agent view (Research Preview) accessible via `claude agents`",
+          "source": "GitHub releases page (T2)",
+          "status": "verified"
+        },
+        {
+          "claim": "/goal command — Claude continues across turns until completion condition met",
+          "source": "GitHub releases page (T2)",
+          "status": "verified"
+        },
+        {
+          "claim": ".mcp.json hot-reload without server restart",
+          "source": "GitHub releases page (T2)",
+          "status": "verified"
+        },
+        {
+          "claim": "CLAUDE_CODE_PROJECT_DIR env var for stdio MCP servers",
+          "source": "GitHub releases page (T2)",
+          "status": "verified"
+        },
+        {
+          "claim": "v2.1.139 released May 11 18:43 UTC; v2.1.138 May 9 06:33 UTC; v2.1.137 May 9 00:11 UTC",
+          "source": "GitHub releases page (T2)",
+          "status": "verified"
+        }
+      ],
+      "caveats": [
+        "Agent view is labeled Research Preview — stability and feature completeness not yet at GA",
+        "/goal command in `-p` and Remote Control modes may have edge cases not yet documented"
+      ],
+      "bd_actionability": "high",
+      "conflict_of_interest": null,
+      "from_non_registry_source": false
+    },
+    {
+      "id": "hermes-agent-openrouter-1-2026-05-10",
+      "title": "Hermes Agent overtakes OpenClaw to claim #1 on OpenRouter's global token rankings",
+      "date": "2026-05-10",
+      "categories": ["agent-framework"],
+      "verification_status": "verified",
+      "tier": "T3",
+      "methodology": "adoption signal",
+      "primary_source": {
+        "url": "https://x.com/NousResearch/status/2052904761087729897",
+        "publisher": "Nous Research (official X account)",
+        "date": "2026-05-10",
+        "access_status": "indexed via search engine; not fetched directly"
+      },
+      "cross_references": [
+        {
+          "url": "https://github.com/nousresearch/hermes-agent",
+          "tier": "T2",
+          "role": "corroborating — MIT license and feature description"
+        },
+        {
+          "url": "https://openrouter.ai/apps/hermes-agent",
+          "tier": "T2",
+          "role": "corroborating — OpenRouter rankings page"
+        },
+        {
+          "url": "https://www.marktechpost.com/2026/05/10/openclaw-vs-hermes-agent-why-nous-researchs-self-improving-agent-now-leads-openrouters-global-rankings/",
+          "tier": "T3",
+          "role": "corroborating — CVE and audit details"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "224B daily tokens (Hermes) vs 186B (OpenClaw)",
+          "source": "NousResearch official X post (T2 for Nous Research stated; OpenRouter page for ranking)",
+          "status": "verified"
+        },
+        {
+          "claim": "Hermes Agent MIT-licensed, self-improving",
+          "source": "GitHub repo (T2)",
+          "status": "verified"
+        },
+        {
+          "claim": "9 CVEs against OpenClaw March 2026, one 9.9 CVSS",
+          "source": "MarkTechPost (T3)",
+          "status": "secondary — primary CVE advisories not fetched"
+        },
+        {
+          "claim": "341 malicious entries found in ClawHub audit (Koi Security)",
+          "source": "MarkTechPost (T3)",
+          "status": "secondary — primary audit report not fetched"
+        }
+      ],
+      "caveats": [
+        "Token volume is inference-demand proxy, not a measure of production deployments",
+        "CVE severity and audit details sourced from T3 only; primary advisories not fetched",
+        "No breakdown of Hermes token volume by use-case category available"
+      ],
+      "bd_actionability": "medium",
+      "conflict_of_interest": null,
+      "from_non_registry_source": true
+    },
+    {
+      "id": "indosat-sahabat-ai-2026-05-07",
+      "title": "Indosat builds sovereign LLM for Indonesian languages as center of AI North Star strategy",
+      "date": "2026-05-07",
+      "categories": ["ai-for-business"],
+      "verification_status": "secondary",
+      "tier": "T2",
+      "methodology": "original interview",
+      "tier_nuance": "T2 for CEO statements as reported; secondary because no new product launch from Indosat's own channels found in window — Sahabat AI is ongoing platform, not a new release",
+      "primary_source": {
+        "url": "https://fortune.com/2026/05/07/indosat-ooredoo-hutchison-ceo-vikram-sinha-indonesia-ai-sahabat/",
+        "publisher": "Fortune",
+        "date": "2026-05-07",
+        "access_status": "indexed via search, full content summarized via WebFetch"
+      },
+      "cross_references": [
+        {
+          "url": "https://ioh.co.id/portal/id/ioh-corp-sahabat-ai",
+          "tier": "T2",
+          "role": "corroborating — Indosat corporate page confirming platform"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "Sahabat AI trained on Bahasa Indonesia, Sundanese, Javanese, Balinese, Batak, English",
+          "source": "Fortune interview (T2)",
+          "status": "secondary"
+        },
+        {
+          "claim": "Developed with GoTo",
+          "source": "Fortune interview (T2)",
+          "status": "secondary"
+        },
+        {
+          "claim": "Positioned as startup collaboration platform",
+          "source": "Fortune interview (T2)",
+          "status": "secondary"
+        }
+      ],
+      "caveats": [
+        "Platform is ongoing — not a new launch within this window",
+        "API access or integration details not confirmed during this run",
+        "GoTo partnership terms not disclosed in the Fortune article"
+      ],
+      "bd_actionability": "low",
+      "conflict_of_interest": null,
+      "from_non_registry_source": true
+    }
+  ],
+  "dropped_items": [
+    {"title": "OpenAI GPT-Realtime-2/Translate/Whisper voice models", "source": "openai.com", "date": "2026-05-07", "reason": "Covered in 2026-05-09 radar"},
+    {"title": "OpenAI Codex 0.130.0 (remote-control mode)", "source": "github.com/openai/codex", "date": "2026-05-09", "reason": "Covered in 2026-05-11 radar"},
+    {"title": "Anthropic Petri → Meridian Labs", "source": "anthropic.com", "date": "2026-05-07", "reason": "Covered in 2026-05-11 radar"},
+    {"title": "OpenAI MRC networking protocol", "source": "openai.com", "date": "2026-05-06", "reason": "Covered in 2026-05-11 radar"},
+    {"title": "Coder Agents enterprise beta", "source": "globenewswire.com", "date": "2026-05-06", "reason": "Covered in 2026-05-09 and 2026-05-11 radars"},
+    {"title": "Google Gemini 3.1 Flash-Lite GA", "source": "cloud.google.com", "date": "2026-05-08", "reason": "Covered in 2026-05-09 and 2026-05-11 radars"},
+    {"title": "Snyk embeds Claude (AI Security Platform)", "source": "snyk.io", "date": "2026-05-08", "reason": "Covered in 2026-05-09 radar"},
+    {"title": "Harvey Legal Agent Benchmark", "source": "harvey.ai", "date": "2026-05-08", "reason": "Covered in 2026-05-09 radar"},
+    {"title": "Apple iOS 27 third-party AI model providers", "source": "bloomberg.com", "date": "2026-05-05", "reason": "Outside 5-day window (May 7–12); report not announcement"},
+    {"title": "OpenAI workspace agents credit pricing starts", "source": "openai.com", "date": "2026-05-06", "reason": "Outside 5-day window; pricing update to existing research-preview feature"},
+    {"title": "Anthropic SpaceX Colossus compute deal + rate limits doubled", "source": "anthropic.com", "date": "2026-05-06", "reason": "Outside 5-day window"},
+    {"title": "ElevenLabs $500M ARR + Series D", "source": "elevenlabs.io", "date": "2026-05-05", "reason": "Outside 5-day window"},
+    {"title": "GPT-5.5 Instant as ChatGPT default model", "source": "openai.com", "date": "2026-05-05", "reason": "Outside 5-day window"},
+    {"title": "Anthropic Enterprise AI Services (Blackstone, Goldman, H&F)", "source": "anthropic.com", "date": "2026-05-04", "reason": "Outside 5-day window"},
+    {"title": "Five Eyes Careful Adoption of Agentic AI guidance", "source": "cisa.gov", "date": "2026-05-01", "reason": "Outside 5-day window"},
+    {"title": "Anthropic $900B valuation discussions", "source": "bloomberg.com", "date": "2026-04-29", "reason": "Outside window; round not closed"},
+    {"title": "Claude Mythos Preview cybersecurity capabilities", "source": "red.anthropic.com", "date": "2026-04-07", "reason": "Outside window"},
+    {"title": "Claude Opus 4.7 release", "source": "anthropic.com", "date": "2026-04-16", "reason": "Outside window"},
+    {"title": "Meta Muse Spark launch", "source": "ai.meta.com", "date": "2026-04-08", "reason": "Outside window; aggregator misattributed to May 9"},
+    {"title": "Novo Nordisk + OpenAI full business AI integration", "source": "cnbc.com", "date": "2026-04-14", "reason": "Outside window"},
+    {"title": "Cohere + Aleph Alpha merger", "source": "techcrunch.com", "date": "2026-04-24", "reason": "Outside window"},
+    {"title": "Sierra $950M funding at $15B valuation", "source": "techcrunch.com", "date": "2026-05-04", "reason": "Outside window; low BD actionability (funding news)"},
+    {"title": "Qwen3-Coder-Next (Alibaba)", "source": "qwen.ai", "date": "2026-02-04", "reason": "Outside window; search result misidentified as May 9"},
+    {"title": "OpenAI $25B ARR milestone", "source": "The Information", "date": "2026-03-04", "reason": "Outside window; surfaced in May 9 roundup but source dates to March"},
+    {"title": "JPMorgan Chase AI infrastructure reclassification", "source": "cnbc.com", "date": "2026-05-11", "reason": "Informational; no product/API/workflow angle for BD audience"},
+    {"title": "ChatGPT Trusted Contact safety feature", "source": "openai.com", "date": "2026-05-07", "reason": "Safety UX feature; no workflow automation angle"}
+  ],
+  "search_log": [
+    {"query": "Anthropic Claude new release announcement May 2026", "type": "registry", "results": 10, "high_relevance": 6},
+    {"query": "OpenAI new model release announcement May 2026", "type": "registry", "results": 10, "high_relevance": 5},
+    {"query": "Google DeepMind Gemini release announcement May 2026", "type": "registry", "results": 10, "high_relevance": 4},
+    {"query": "AI agent framework new release May 2026", "type": "registry", "results": 10, "high_relevance": 4},
+    {"query": "MCP Model Context Protocol new server announcement May 2026", "type": "registry", "results": 10, "high_relevance": 3},
+    {"query": "AI news May 9 10 11 12 2026", "type": "exploratory", "results": 10, "high_relevance": 5},
+    {"query": "Claude Code update release May 2026", "type": "registry", "results": 10, "high_relevance": 4},
+    {"query": "Google I/O 2026 AI announcements", "type": "exploratory", "results": 10, "high_relevance": 3},
+    {"query": "AI startup funding announcement May 2026", "type": "exploratory", "results": 10, "high_relevance": 3},
+    {"query": "new LLM model released May 9 10 11 2026", "type": "exploratory", "results": 10, "high_relevance": 4},
+    {"query": "Anthropic $900 billion valuation funding round May 2026", "type": "registry", "results": 10, "high_relevance": 8},
+    {"query": "Meta Muse Spark LLM launch May 2026", "type": "exploratory", "results": 10, "high_relevance": 5},
+    {"query": "AI announcement May 10 11 12 2026", "type": "exploratory", "results": 10, "high_relevance": 4},
+    {"query": "OpenAI GPT realtime voice models release date 2026", "type": "registry", "results": 10, "high_relevance": 7},
+    {"query": "GitHub trending AI repositories May 2026", "type": "exploratory", "results": 10, "high_relevance": 3},
+    {"query": "AI Indonesia OR startup AI Asia announcement May 2026", "type": "cross-language", "results": 10, "high_relevance": 4},
+    {"query": "Hugging Face new model paper May 9 10 11 2026", "type": "registry", "results": 10, "high_relevance": 2},
+    {"query": "OpenAI Deployment Company launch May 11 2026", "type": "exploratory", "results": 10, "high_relevance": 9},
+    {"query": "Five Eyes agentic AI security guidance careful adoption May 2026", "type": "registry", "results": 10, "high_relevance": 6},
+    {"query": "Qwen3 Coder Next release May 2026", "type": "exploratory", "results": 10, "high_relevance": 3},
+    {"query": "site:github.com AI agent automation release May 2026", "type": "exploratory", "results": 10, "high_relevance": 4},
+    {"query": "Anthropic Claude news announcement May 9 10 11 12 2026", "type": "registry", "results": 10, "high_relevance": 3},
+    {"query": "AI dev tools release May 9 10 11 2026 Cursor Copilot", "type": "registry", "results": 10, "high_relevance": 2},
+    {"query": "OpenAI news May 9 10 2026", "type": "registry", "results": 10, "high_relevance": 4},
+    {"query": "Hermes Agent NousResearch OpenRouter ranking May 10 2026", "type": "exploratory", "results": 10, "high_relevance": 9},
+    {"query": "Claude Code update changelog May 7 8 9 10 2026", "type": "registry", "results": 10, "high_relevance": 5},
+    {"query": "OpenAI MRC protocol networking AI supercomputing 131000 GPUs", "type": "registry", "results": 10, "high_relevance": 7},
+    {"query": "AI news today May 12 2026", "type": "exploratory", "results": 10, "high_relevance": 3},
+    {"query": "AI policy regulation announcement May 9 10 11 2026", "type": "exploratory", "results": 10, "high_relevance": 2},
+    {"query": "Indosat Sahabat AI platform Indonesia LLM May 2026", "type": "cross-language", "results": 10, "high_relevance": 6},
+    {"query": "AI criticism limitations controversy May 9 10 11 2026", "type": "adversarial", "results": 10, "high_relevance": 2},
+    {"query": "MCP server new release launch May 2026", "type": "registry", "results": 10, "high_relevance": 3},
+    {"query": "Anthropic enterprise deployment company Blackstone Goldman May 11 2026", "type": "registry", "results": 10, "high_relevance": 7},
+    {"query": "OpenAI GPT-Realtime-2 voice models release date TechCrunch May 7 OR May 11 2026", "type": "adversarial", "results": 10, "high_relevance": 6},
+    {"query": "Novo Nordisk OpenAI partnership announcement May 2026", "type": "exploratory", "results": 10, "high_relevance": 5}
+  ]
+}
