@@ -1,0 +1,226 @@
+{
+  "run": {
+    "date": "2026-05-13",
+    "period_start": "2026-05-10",
+    "period_end": "2026-05-13",
+    "window_days": 3,
+    "window_expanded": false,
+    "items_reviewed": 25,
+    "items_published": 6,
+    "items_dropped": 19,
+    "searches_total": 44,
+    "searches_exploratory": 12,
+    "exploration_pct": 35,
+    "audience": "public-digest",
+    "depth": "standard"
+  },
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "published_items": [
+    {
+      "id": "claude-for-legal-2026-05-12",
+      "title": "Claude for Legal Expands with 12 Practice-Area Plugins and 20+ MCP Connectors",
+      "date": "2026-05-12",
+      "primary_source": "https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/",
+      "primary_publisher": "TechCrunch",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["productivity-ai", "mcp-ecosystem"],
+      "bd_actionability": "high",
+      "org": "Anthropic",
+      "tier_nuance": "Anthropic primary page anthropic.com/news/claude-for-legal returned HTTP 404 during run. TechCrunch used as best available with direct company confirmation.",
+      "cross_references": [
+        {
+          "url": "https://www.legaltechnologyhub.com/contents/anthropic-unveils-claude-for-legal-with-12-new-plugins-20-mcp-connectors-and-more/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.artificiallawyer.com/2026/05/12/claude-for-legal-launches-may-reshape-the-legal-tech-world/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {"claim": "12 practice-area plugins", "source": "TechCrunch 2026-05-12 (company-confirmed)"},
+        {"claim": "20+ MCP connectors", "source": "Legaltech Hub 2026-05-12 (company-confirmed)"},
+        {"claim": "Available to all paying Claude customers via workspace settings", "source": "Artificial Lawyer 2026-05-12"}
+      ],
+      "caveats": "Anthropic primary page unreachable. Feature list based on cross-referenced secondary sources."
+    },
+    {
+      "id": "claude-platform-aws-ga-2026-05-11",
+      "title": "Claude Platform Reaches General Availability on AWS in 18 Regions",
+      "date": "2026-05-11",
+      "primary_source": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/",
+      "primary_publisher": "AWS What's New",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["dev-tools", "ai-for-business"],
+      "bd_actionability": "high",
+      "org": "Anthropic / AWS",
+      "cross_references": [
+        {
+          "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-platform-on-aws-anthropics-native-platform-through-your-aws-account/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://thenewstack.io/anthropics-claude-platform-comes-to-aws/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {"claim": "GA date 2026-05-11", "source": "AWS What's New (T2)"},
+        {"claim": "18 regions including Jakarta", "source": "AWS What's New (T2)"},
+        {"claim": "AWS first cloud provider for native Claude Platform", "source": "AWS primary (T2)"},
+        {"claim": "Data processed outside AWS security boundary", "source": "AWS primary (T2)"}
+      ]
+    },
+    {
+      "id": "claude-code-v2.1.140-2026-05-12",
+      "title": "Claude Code v2.1.140 Patches /goal Hang and Enterprise Service Startup",
+      "date": "2026-05-12",
+      "primary_source": "https://github.com/anthropics/claude-code/releases",
+      "primary_publisher": "Anthropic (GitHub)",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools", "agent-framework"],
+      "bd_actionability": "high",
+      "org": "Anthropic",
+      "key_claims": [
+        {"claim": "v2.1.140 release 2026-05-12 21:09 UTC", "source": "GitHub releases (T2)"},
+        {"claim": "/goal hang fix for disableAllHooks / allowManagedHooksOnly", "source": "GitHub releases (T2)"},
+        {"claim": "Background service startup fix for enterprise endpoint security", "source": "GitHub releases (T2)"},
+        {"claim": "subagent_type matching now case- and separator-insensitive", "source": "GitHub releases (T2)"}
+      ]
+    },
+    {
+      "id": "deepmind-ai-pointer-2026-05-12",
+      "title": "DeepMind Publishes AI Pointer Paper, Ships Demos in Google AI Studio",
+      "date": "2026-05-12",
+      "primary_source": "https://deepmind.google/blog/ai-pointer/",
+      "primary_publisher": "Google DeepMind",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "research / early-product",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "org": "Google DeepMind",
+      "cross_references": [
+        {
+          "url": "https://9to5google.com/2026/05/12/deepmind-googlebook-magic-pointer/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {"claim": "Two interactive demos live in Google AI Studio", "source": "DeepMind blog 2026-05-12 (T2)"},
+        {"claim": "Googlebook and Gemini in Chrome integrations planned", "source": "DeepMind blog 2026-05-12 (T2)"}
+      ],
+      "caveats": "Research/concept paper with early demos. Not a generally available product. Googlebook not yet shipping (Fall 2026 planned)."
+    },
+    {
+      "id": "google-android-show-io-2026-05-12",
+      "title": "Google Announces Gemini Intelligence and Googlebook at Android Show: I/O Edition",
+      "date": "2026-05-12",
+      "primary_source": "https://www.android.com/new-features-on-android/io-2026/",
+      "primary_publisher": "Android (Google)",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "org": "Google",
+      "cross_references": [
+        {
+          "url": "https://www.engadget.com/2171038/everything-announced-at-android-show-google-io-2026/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.tomsguide.com/phones/live/the-android-show-google-i-o-edition-live-all-the-latest-android-gemini-ai-and-android-xr-news-as-it-happens",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {"claim": "Android Show date 2026-05-12", "source": "android.com (T2)"},
+        {"claim": "Gemini Intelligence rolling out on Pixel and Samsung summer 2026", "source": "android.com (T2, forward-looking intent)"},
+        {"claim": "Gemini in Chrome on Android now available", "source": "android.com (T2)"}
+      ],
+      "caveats": "Summer 2026 rollout is forward-looking intent, not committed GA date. Gemini 4 expected at I/O keynote 19 May (outside window)."
+    },
+    {
+      "id": "openai-chatgpt-ads-expansion-2026-05-11",
+      "title": "OpenAI Updates ChatGPT Ad Pilot, Expanding Beyond the US",
+      "date": "2026-05-11",
+      "primary_source": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/",
+      "primary_publisher": "OpenAI",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "org": "OpenAI",
+      "tier_nuance": "openai.com returned HTTP 403 during fetch. URL confirmed via CNBC and other T2-T3 corroboration.",
+      "cross_references": [
+        {
+          "url": "https://www.cnbc.com/2026/01/16/open-ai-chatgpt-ads-us.html",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {"claim": "Free and Go tiers only; paid tiers ad-free", "source": "OpenAI primary (T2 secondary via CNBC)"},
+        {"claim": "Expanding to Canada, Australia, New Zealand", "source": "OpenAI primary (T2 secondary)"},
+        {"claim": "Trust metrics and dismissal rates self-reported as positive", "source": "OpenAI self-reported (no independent audit)"}
+      ],
+      "caveats": "Trust and engagement metrics are self-reported. Advertising policy details subject to change."
+    }
+  ],
+  "dropped_items": [
+    {"title": "OpenAI Deployment Company ($4B, Tomoro)", "date": "2026-05-11", "reason": "Covered in 2026-05-12 bulletin"},
+    {"title": "Claude Code v2.1.139 (agent view, /goal)", "date": "2026-05-11", "reason": "Covered in 2026-05-12 bulletin"},
+    {"title": "Hermes Agent #1 on OpenRouter", "date": "2026-05-10", "reason": "Covered in 2026-05-12 bulletin"},
+    {"title": "Indosat Sahabat AI sovereign LLM", "date": "2026-05-07", "reason": "Covered in 2026-05-12 bulletin"},
+    {"title": "OpenAI GPT-Realtime-2 / Translate / Whisper", "date": "2026-05-07", "reason": "Outside 72h window; covered in 2026-05-09 bulletin"},
+    {"title": "Anthropic Dreaming for Claude Managed Agents", "date": "2026-05-06", "reason": "Outside 72h window"},
+    {"title": "Anthropic Finance Agents (10 templates)", "date": "2026-05-05", "reason": "Outside 72h window"},
+    {"title": "Anthropic / SpaceX compute deal + usage limits", "date": "2026-05-06", "reason": "Outside 72h window"},
+    {"title": "Mistral Medium 3.5 (128B)", "date": "2026-05-01", "reason": "Outside 72h window"},
+    {"title": "DeepMind AlphaEvolve 1-year impact update", "date": "2026-05-07", "reason": "Outside 72h window"},
+    {"title": "xAI Grok Speech-to-Text / TTS APIs", "date": "2026-04-18", "reason": "Outside window"},
+    {"title": "xAI Voice Cloning API (Custom Voices)", "date": "2026-05-02", "reason": "Outside 72h window"},
+    {"title": "Novo Nordisk + OpenAI strategic partnership", "date": "2026-04-14", "reason": "Outside window"},
+    {"title": "Anthropic Bloom (behavioral eval tool)", "date": "2025-12", "reason": "Outside window (>30d)"},
+    {"title": "Jama Software MCP Server launch", "date": "2026-05-04", "reason": "Outside 72h window"},
+    {"title": "Anthropic Enterprise AI Services (Blackstone, Goldman, H&F)", "date": "2026-05-04", "reason": "Outside 72h window"},
+    {"title": "MCP C# and PHP SDK maintenance updates", "date": "2026-05-11", "reason": "In window; routine maintenance, no substantive new capability"},
+    {"title": "Lyrie.ai $2M pre-seed (AI agent security layer)", "date": "2026-05-11", "reason": "In window; pre-seed stage, insufficient independent verification"},
+    {"title": "Qwen-Image-2.0 technical report (HF trending)", "date": "unknown", "reason": "Original publication date not confirmed within window"}
+  ],
+  "sources": [
+    {"url": "https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/", "tier": "T3", "role": "primary"},
+    {"url": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/", "tier": "T2", "role": "primary"},
+    {"url": "https://github.com/anthropics/claude-code/releases", "tier": "T2", "role": "primary"},
+    {"url": "https://deepmind.google/blog/ai-pointer/", "tier": "T2", "role": "primary"},
+    {"url": "https://www.android.com/new-features-on-android/io-2026/", "tier": "T2", "role": "primary"},
+    {"url": "https://openai.com/index/our-approach-to-advertising-and-expanding-access/", "tier": "T2", "role": "primary-secondary"},
+    {"url": "https://www.legaltechnologyhub.com/contents/anthropic-unveils-claude-for-legal-with-12-new-plugins-20-mcp-connectors-and-more/", "tier": "T3", "role": "cross-reference"},
+    {"url": "https://www.artificiallawyer.com/2026/05/12/claude-for-legal-launches-may-reshape-the-legal-tech-world/", "tier": "T3", "role": "cross-reference"},
+    {"url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-platform-on-aws-anthropics-native-platform-through-your-aws-account/", "tier": "T2", "role": "cross-reference"},
+    {"url": "https://thenewstack.io/anthropics-claude-platform-comes-to-aws/", "tier": "T3", "role": "cross-reference"},
+    {"url": "https://9to5google.com/2026/05/12/deepmind-googlebook-magic-pointer/", "tier": "T3", "role": "cross-reference"},
+    {"url": "https://www.engadget.com/2171038/everything-announced-at-android-show-google-io-2026/", "tier": "T3", "role": "cross-reference"},
+    {"url": "https://www.tomsguide.com/phones/live/the-android-show-google-i-o-edition-live-all-the-latest-android-gemini-ai-and-android-xr-news-as-it-happens", "tier": "T3", "role": "cross-reference"},
+    {"url": "https://www.cnbc.com/2026/01/16/open-ai-chatgpt-ads-us.html", "tier": "T2", "role": "cross-reference"}
+  ]
+}
