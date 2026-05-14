@@ -1,0 +1,270 @@
+{
+  "run": {
+    "date": "2026-05-14",
+    "period_start": "2026-05-11",
+    "period_end": "2026-05-14",
+    "window_days": 3,
+    "window_expanded": false,
+    "window_expansion_note": "Extended search pass to May 9–10 to verify signal density; all published items fall within the original May 11–14 window.",
+    "items_reviewed": 28,
+    "items_published": 8,
+    "items_dropped": 20,
+    "searches_total": 37,
+    "searches_exploratory": 15,
+    "exploration_pct": 40,
+    "audience": "public-digest",
+    "depth": "standard"
+  },
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 5,
+    "rumor": 0
+  },
+  "published_items": [
+    {
+      "id": "claude-for-small-business-2026-05-13",
+      "title": "Anthropic Launches Claude for Small Business with 15 Workflows and 7 Integrations",
+      "date": "2026-05-13",
+      "primary_source": "https://www.anthropic.com/news/claude-for-small-business",
+      "primary_publisher": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["workflow-automation", "productivity-ai"],
+      "bd_actionability": "high",
+      "org": "Anthropic",
+      "key_claims": [
+        {"claim": "15 ready-to-run agentic workflows at launch", "source": "anthropic.com primary 2026-05-13"},
+        {"claim": "7 platform integrations: QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, Microsoft 365", "source": "anthropic.com primary 2026-05-13"},
+        {"claim": "Roadshow starts 14 May in Chicago, 100 small business leaders per stop", "source": "anthropic.com primary 2026-05-13"}
+      ],
+      "cross_references": [
+        {"url": "https://finance.yahoo.com/news/anthropic-debuts-claude-for-small-business-as-it-continues-its-enterprise-software-push-160500355.html", "tier": "T3", "role": "corroborating"},
+        {"url": "https://rollingout.com/2026/05/13/claude-for-small-business-15-new/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-scales-claude-ai-across-7-small-business-apps/", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": "Pricing not disclosed. 'Agentic' framing vendor-applied; degree of human-in-loop not independently tested."
+    },
+    {
+      "id": "claude-code-v2.1.141-2026-05-13",
+      "title": "Claude Code v2.1.141 Adds Hook Notifications, Workspace Identity Federation, and Rewind Compression",
+      "date": "2026-05-13",
+      "primary_source": "https://github.com/anthropics/claude-code/releases",
+      "primary_publisher": "Anthropic (GitHub)",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools", "agent-framework"],
+      "bd_actionability": "high",
+      "org": "Anthropic",
+      "key_claims": [
+        {"claim": "v2.1.141 release timestamp 2026-05-13 23:19 UTC", "source": "GitHub releases (T2)"},
+        {"claim": "terminalSequence field in hook JSON for desktop notifications/window titles/bells without controlling terminal", "source": "GitHub releases (T2)"},
+        {"claim": "ANTHROPIC_WORKSPACE_ID env var for workload identity federation", "source": "GitHub releases (T2)"},
+        {"claim": "claude agents --cwd <path> scopes session list to directory", "source": "GitHub releases (T2)"},
+        {"claim": "Rewind menu adds 'Summarize up to here' for context compression", "source": "GitHub releases (T2)"}
+      ]
+    },
+    {
+      "id": "github-copilot-cli-v1.0.45-2026-05-11",
+      "title": "GitHub Copilot CLI v1.0.45 Adds /autopilot Command",
+      "date": "2026-05-11",
+      "primary_source": "https://github.com/github/copilot-cli/releases",
+      "primary_publisher": "GitHub",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools"],
+      "bd_actionability": "medium",
+      "org": "GitHub (Microsoft)",
+      "key_claims": [
+        {"claim": "v1.0.45 release date 2026-05-11", "source": "github.com/github/copilot-cli/releases (T2)"},
+        {"claim": "/autopilot slash command toggles between interactive and autonomous modes mid-session", "source": "GitHub releases (T2)"}
+      ],
+      "cross_references": [
+        {"url": "https://www.havoptic.com/tools/github-copilot", "tier": "T3", "role": "corroborating"}
+      ]
+    },
+    {
+      "id": "meta-ai-muse-spark-rollout-2026-05-12",
+      "title": "Meta AI App Rolls Out Voice Conversation, Live Camera, and Threads Integration",
+      "date": "2026-05-12",
+      "primary_source": "https://9to5mac.com/2026/05/12/meta-ai-app-enhanced-with-new-features-using-muse-spark-heres-whats-new/",
+      "primary_publisher": "9to5Mac",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "org": "Meta",
+      "tier_nuance": "Meta primary blog post for May 12 rollout not directly fetched. 9to5Mac used as best available secondary. Upgrade to T2 when Meta primary confirmed.",
+      "cross_references": [
+        {"url": "https://about.fb.com/news/2026/04/introducing-muse-spark-meta-superintelligence-labs/", "tier": "T2", "role": "background — Muse Spark model launch April 8"}
+      ],
+      "caveats": "Meta primary blog post not confirmed via direct fetch in this run."
+    },
+    {
+      "id": "judgment-labs-32m-2026-05-12",
+      "title": "Judgment Labs Raises $32M for AI Agent Evaluation Infrastructure",
+      "date": "2026-05-12",
+      "primary_source": "https://www.businesswire.com/news/home/20260512621556/en/Judgment-Labs-Closes-$32M-in-Seed-and-Series-A-Funding-to-Build-the-Continuous-Improvement-Layer-for-AI-Agents",
+      "primary_publisher": "BusinessWire",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["agent-framework", "ai-for-business"],
+      "bd_actionability": "medium",
+      "org": "Judgment Labs",
+      "key_claims": [
+        {"claim": "$32M combined seed and Series A, Lightspeed Venture Partners lead", "source": "BusinessWire primary 2026-05-12"}
+      ],
+      "cross_references": [
+        {"url": "https://www.citybiz.co/article/845551/judgment-labs-raises-32m-to-build-evaluation-tools-for-deep-ai-agents/", "tier": "T3", "role": "corroborating"}
+      ]
+    },
+    {
+      "id": "google-tig-ai-zero-day-2026-05-11",
+      "title": "Google Threat Intelligence Documents First Confirmed AI-Generated Zero-Day Exploit",
+      "date": "2026-05-11",
+      "primary_source": "https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html",
+      "primary_publisher": "CNBC",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "security-report",
+      "categories": ["policy-regulation", "ai-for-business"],
+      "bd_actionability": "medium",
+      "org": "Google Threat Intelligence Group",
+      "tier_nuance": "Multiple T2 outlets corroborate (Bloomberg, The Register, Axios). Google TIG's own blog post not directly fetched in this run.",
+      "key_claims": [
+        {"claim": "First documented AI-generated zero-day in active attack operation", "source": "CNBC 2026-05-11 (T2), corroborated by Bloomberg, The Register, Axios"},
+        {"claim": "2FA bypass in unnamed open-source web administration platform", "source": "CNBC (T2)"},
+        {"claim": "Google patched flaw with vendor before exploitation", "source": "CNBC (T2)"}
+      ],
+      "cross_references": [
+        {"url": "https://www.bloomberg.com/news/articles/2026-05-11/hackers-used-ai-to-build-zero-day-attack-google-researchers-say", "tier": "T2", "role": "corroborating"},
+        {"url": "https://www.theregister.com/ai-ml/2026/05/11/google-says-criminals-used-ai-built-zero-day-in-planned-mass-hack-spree/5237982", "tier": "T2", "role": "corroborating"},
+        {"url": "https://www.axios.com/2026/05/12/ai-hacking-found-google-report", "tier": "T2", "role": "corroborating"}
+      ]
+    },
+    {
+      "id": "wispr-funding-talks-2026-05-12",
+      "title": "Wispr AI Reported in Talks for $260M Round at $2B Valuation",
+      "date": "2026-05-12",
+      "primary_source": "https://www.bloomberg.com/news/articles/2026-05-12/ai-dictation-startup-wispr-in-funding-talks-at-2-billion-value",
+      "primary_publisher": "Bloomberg",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "funding-talks",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "low-medium",
+      "org": "Wispr AI",
+      "key_claims": [
+        {"claim": "~$260M raise, Menlo Ventures lead, ~$2B valuation", "source": "Bloomberg 2026-05-12 (unnamed sources, unconfirmed)"},
+        {"claim": "270 Fortune 500 companies as users", "source": "Bloomberg (vendor-claimed, unverified independently)"}
+      ],
+      "cross_references": [
+        {"url": "https://thetechportal.com/2026/05/12/ai-dictation-startup-wispr-could-secure-260mn-funding-at-2bn-valuation/", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": "Bloomberg based on unnamed sources. No term sheet signed. Deal not confirmed by Wispr or Menlo Ventures. User count is vendor-claimed."
+    },
+    {
+      "id": "anthropic-900b-funding-talks-2026-05-12",
+      "title": "Anthropic Reported in Talks for $30B Round at $900B Valuation",
+      "date": "2026-05-12",
+      "primary_source": "https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation",
+      "primary_publisher": "Bloomberg",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "funding-talks",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "org": "Anthropic",
+      "key_claims": [
+        {"claim": ">=30B round at >$900B pre-money valuation", "source": "Bloomberg 2026-05-12 (unnamed sources, unconfirmed)"},
+        {"claim": "No term sheet signed as of report date", "source": "Bloomberg 2026-05-12"}
+      ],
+      "cross_references": [
+        {"url": "https://techcrunch.com/2026/04/29/sources-anthropic-could-raise-a-new-50b-round-at-a-valuation-of-900b/", "tier": "T2", "role": "earlier report, corroborating on valuation figure"},
+        {"url": "https://finance.yahoo.com/news/anthropic-targets-900-billion-valuation-220005674.html", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": "Unnamed sources. Deal not confirmed by Anthropic. Round size revised from $50B (April reports) to >=30B (May 12 Bloomberg) suggesting terms in flux."
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude for Legal (12 plugins, 20+ MCP connectors)", "source": "anthropic.com / TechCrunch · 2026-05-12", "reason": "Covered in 2026-05-13 bulletin"},
+    {"title": "Claude Platform on AWS GA (18 regions)", "source": "aws.amazon.com · 2026-05-11", "reason": "Covered in 2026-05-13 bulletin"},
+    {"title": "Claude Code v2.1.140 (/goal hang, enterprise startup)", "source": "github.com · 2026-05-12", "reason": "Covered in 2026-05-13 bulletin"},
+    {"title": "DeepMind AI Pointer (design paper, AI Studio demos)", "source": "deepmind.google · 2026-05-12", "reason": "Covered in 2026-05-13 bulletin"},
+    {"title": "Android Show / Gemini Intelligence (device-level AI layer)", "source": "android.com · 2026-05-12", "reason": "Covered in 2026-05-13 bulletin"},
+    {"title": "OpenAI ChatGPT ads expansion (Canada, AU, NZ)", "source": "openai.com · 2026-05-11", "reason": "Covered in 2026-05-13 bulletin"},
+    {"title": "OpenAI Deployment Company ($4B, Tomoro acquisition)", "source": "openai.com · 2026-05-11", "reason": "Covered in 2026-05-12 bulletin"},
+    {"title": "Claude Mythos Preview / Project Glasswing", "source": "red.anthropic.com · 2026-04-07", "reason": "Outside window (April 7)"},
+    {"title": "OpenAI Trusted Contact (ChatGPT mental health feature)", "source": "openai.com · 2026-05-07", "reason": "Outside 72h window"},
+    {"title": "Gemma 4 (31B, 26B A4B, Apache 2.0)", "source": "blog.google · 2026-05-05", "reason": "Outside 72h window"},
+    {"title": "ServiceNow Autonomous Workforce (Knowledge 2026)", "source": "newsroom.servicenow.com · 2026-05-05", "reason": "Outside 72h window (conference May 5-7)"},
+    {"title": "ByteDance Doubao-Seed-2.0-lite (full-modal multimodal)", "source": "volcengine · 2026-05-06", "reason": "Outside 72h window"},
+    {"title": "Warp Terminal goes open source (37K GitHub stars)", "source": "warp.dev · 2026-05-02", "reason": "Outside 72h window"},
+    {"title": "Meta Muse Spark original model launch", "source": "about.fb.com · 2026-04-08", "reason": "Outside window (April 8)"},
+    {"title": "OpenAI GPT-Realtime-2 / GPT-Realtime-Translate / GPT-Realtime-Whisper", "source": "openai.com · 2026-05-07-08", "reason": "Outside 72h window; covered in 2026-05-09 bulletin"},
+    {"title": "Claude Code v2.1.137 / v2.1.138 (VS Code and internal fixes)", "source": "github.com · 2026-05-09", "reason": "Outside 72h window"},
+    {"title": "GitHub Spec Kit v0.8.7 (30+ AI agent support)", "source": "github.com · 2026-05-07", "reason": "Outside 72h window"},
+    {"title": "xAI Grok Speech-to-Text / TTS / voice-think APIs", "source": "x.ai · 2026-04-18 / 2026-05-02", "reason": "Outside window"},
+    {"title": "MCP Go SDK update (maintenance)", "source": "github.com/modelcontextprotocol · 2026-05-13", "reason": "Routine maintenance; no substantive capability change"},
+    {"title": "LangChain / LlamaIndex / CrewAI releases", "source": "github.com", "reason": "No in-window releases confirmed"}
+  ],
+  "search_log": [
+    {"query": "Anthropic Claude announcement May 13-14 2026", "results": 10, "high_rel": 4, "type": "registry"},
+    {"query": "OpenAI announcement news May 13-14 2026", "results": 10, "high_rel": 3, "type": "registry"},
+    {"query": "Google DeepMind Gemini release May 13-14 2026", "results": 10, "high_rel": 2, "type": "registry"},
+    {"query": "Meta AI Llama release May 2026", "results": 10, "high_rel": 1, "type": "registry"},
+    {"query": "New AI model release launch May 13-14 2026", "results": 10, "high_rel": 2, "type": "exploratory"},
+    {"query": "Gemma 4 Google model release date May 2026", "results": 10, "high_rel": 1, "type": "registry"},
+    {"query": "OpenAI ChatGPT Trusted Contact date launch 2026", "results": 10, "high_rel": 2, "type": "registry"},
+    {"query": "GitHub Copilot autopilot mode release May 11 2026", "results": 10, "high_rel": 3, "type": "registry"},
+    {"query": "AI startup funding May 13-14 2026", "results": 10, "high_rel": 2, "type": "exploratory"},
+    {"query": "site:x.com AnthropicAI OpenAI announcement May 13-14 2026", "results": 10, "high_rel": 1, "type": "social-X"},
+    {"query": "Agent framework launch release May 13-14 2026", "results": 10, "high_rel": 2, "type": "registry"},
+    {"query": "MCP server Model Context Protocol release May 13-14 2026", "results": 10, "high_rel": 1, "type": "registry"},
+    {"query": "AI dev tools Cursor Claude Code Copilot update May 13-14 2026", "results": 10, "high_rel": 2, "type": "registry"},
+    {"query": "AI announcement OR AI launch OR AI release May 14 2026", "results": 10, "high_rel": 2, "type": "exploratory"},
+    {"query": "AI Indonesia startup Asia Tenggara May 2026", "results": 10, "high_rel": 0, "type": "cross-lang"},
+    {"query": "adversarial: Claude for Small Business criticism concerns 2026", "results": 10, "high_rel": 1, "type": "adversarial"},
+    {"query": "Hugging Face daily papers trending May 13-14 2026", "results": 10, "high_rel": 0, "type": "exploratory"},
+    {"query": "GitHub trending AI repositories new project May 2026", "results": 10, "high_rel": 2, "type": "exploratory"},
+    {"query": "Claude Code releases May 13-14 2026 version", "results": 10, "high_rel": 4, "type": "registry"},
+    {"query": "LangChain LlamaIndex CrewAI AutoGen update May 13-14 2026", "results": 10, "high_rel": 0, "type": "registry"},
+    {"query": "Wispr AI voice dictation funding $2 billion date May 2026", "results": 10, "high_rel": 4, "type": "exploratory"},
+    {"query": "ServiceNow Knowledge 2026 conference date autonomous workforce", "results": 10, "high_rel": 3, "type": "exploratory"},
+    {"query": "ByteDance Doubao Seed 2.0 multimodal release date May 2026", "results": 10, "high_rel": 2, "type": "exploratory"},
+    {"query": "site:x.com AI dev tools announcement May 13-14 2026", "results": 10, "high_rel": 1, "type": "social-X"},
+    {"query": "xAI Grok Mistral AI announcement update May 13-14 2026", "results": 10, "high_rel": 2, "type": "registry"},
+    {"query": "New AI product workflow automation launch May 13-14 2026", "results": 10, "high_rel": 2, "type": "exploratory"},
+    {"query": "Hacker News AI trending discussion top May 13-14 2026", "results": 10, "high_rel": 2, "type": "community"},
+    {"query": "Warp terminal agentic IDE release May 2026", "results": 10, "high_rel": 3, "type": "exploratory"},
+    {"query": "Judgment Labs $32 million funding date announcement", "results": 10, "high_rel": 5, "type": "exploratory"},
+    {"query": "AI policy regulation announcement May 13-14 2026", "results": 10, "high_rel": 1, "type": "registry"},
+    {"query": "AI announcement release launch May 9-10 2026", "results": 10, "high_rel": 2, "type": "extended-window"},
+    {"query": "Anthropic OpenAI Google announcement May 9-10 2026", "results": 10, "high_rel": 2, "type": "extended-window"},
+    {"query": "Claude Code v2.1.138 v2.1.137 release May 9 2026", "results": 10, "high_rel": 2, "type": "extended-window"},
+    {"query": "Google Threat Intelligence AI zero-day May 11 2026", "results": 10, "high_rel": 6, "type": "verification"},
+    {"query": "Anthropic $900 billion valuation funding round May 2026", "results": 10, "high_rel": 5, "type": "verification"},
+    {"query": "Meta Muse Spark launch May 9 2026", "results": 10, "high_rel": 2, "type": "verification"},
+    {"query": "OpenAI o4-mini o3-pro new model May 9-14 2026", "results": 10, "high_rel": 1, "type": "registry"}
+  ],
+  "quality_gate": {
+    "all_items_have_primary_url": true,
+    "all_items_have_date": true,
+    "all_items_have_tier": true,
+    "all_items_have_verification_status": true,
+    "vendor_benchmark_claims_labeled": "not applicable — no vendor benchmark claims in this run",
+    "coi_flagged": "Anthropic concentration noted in Limitations (3/8 items are Anthropic); Bloomberg cited twice for separate items (no direct quotes used from Bloomberg in either).",
+    "no_hype_language": true,
+    "quotes_within_limit": true,
+    "no_source_quoted_twice": true,
+    "limitations_substantive": true,
+    "dropped_section_present": true,
+    "dedup_applied": true,
+    "exploration_pct_met": true,
+    "exploration_pct_actual": 40
+  }
+}
