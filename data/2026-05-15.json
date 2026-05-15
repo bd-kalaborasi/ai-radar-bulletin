@@ -1,0 +1,283 @@
+{
+  "run_date": "2026-05-15",
+  "run_timestamp": "2026-05-15T00:00:00Z",
+  "period_start": "2026-05-12",
+  "period_end": "2026-05-15",
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 30,
+  "items_published": 9,
+  "items_dropped": 21,
+  "exploration_pct": 44,
+  "verification_summary": {
+    "verified": 6,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "categories_covered": ["dev-tools", "agent-framework", "productivity-ai", "ai-for-business", "workflow-automation"],
+  "sources_count": 20,
+  "items": [
+    {
+      "rank": 1,
+      "title": "Notion Launches Developer Platform with External Agents API, Workers, and Database Sync",
+      "source_url": "https://www.notion.com/releases/2026-05-13",
+      "publisher": "Notion",
+      "publication_date": "2026-05-13",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["productivity-ai", "agent-framework", "workflow-automation"],
+      "bd_actionability": "high",
+      "key_claims": [
+        "External Agents API supports Claude Code, Cursor, Codex, Decagon at launch",
+        "Workers free in beta, moving to Notion credits 11 August 2026"
+      ],
+      "cross_references": [
+        {"url": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/", "tier": "T2", "role": "corroborating"},
+        {"url": "https://www.infoworld.com/article/4171166/notion-courts-developers-with-platform-for-ai-agents-and-workflow-automation.html", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": ["External Agents API in alpha", "Agent SDK in alpha", "Workers pricing post-Aug 11 not disclosed"]
+    },
+    {
+      "rank": 2,
+      "title": "xAI Ships Grok Build CLI Early Beta for Agentic Coding, Requiring SuperGrok Heavy at $99/Month",
+      "source_url": "https://x.ai/news/grok-build-cli",
+      "publisher": "xAI",
+      "publication_date": "2026-05-14",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "tier_nuance": "x.ai/news URL 403 from sandbox; confirmed via @xai official X post and Bloomberg",
+      "key_claims": [
+        "Up to 8 concurrent subagents (vendor-claimed, not independently benchmarked)",
+        "2M-token context window (vendor-claimed)",
+        "Introductory rate $99/month (normally $299)"
+      ],
+      "cross_references": [
+        {"url": "https://x.com/xai/status/2054993285152989373", "tier": "T2", "role": "official-announcement"},
+        {"url": "https://www.bloomberg.com/news/articles/2026-05-14/musk-s-xai-unveils-first-coding-agent-in-bid-to-rival-anthropic", "tier": "T2", "role": "corroborating"},
+        {"url": "https://www.basenor.com/blogs/news/xai-launches-grok-build-beta-agentic-coding-cli-explained", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": ["Early beta", "8-agent claim vendor-only", "xAI has documented service reliability issues through April 2026"]
+    },
+    {
+      "rank": 3,
+      "title": "Claude Code v2.1.142 Upgrades Fast Mode to Opus 4.7 and Adds Background Agent Configuration Flags",
+      "source_url": "https://github.com/anthropics/claude-code/releases",
+      "publisher": "Anthropic (anthropics/claude-code)",
+      "publication_date": "2026-05-14",
+      "publication_time_utc": "22:55",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "key_claims": [
+        "Fast mode defaults to Opus 4.7 (previously 4.6) as of v2.1.142",
+        "New background agent flags: --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, --dangerously-skip-permissions"
+      ],
+      "cross_references": []
+    },
+    {
+      "rank": 4,
+      "title": "OpenAI Brings Codex to ChatGPT Mobile App on iOS and Android in Preview",
+      "source_url": "https://openai.com/index/work-with-codex-from-anywhere/",
+      "publisher": "OpenAI",
+      "publication_date": "2026-05-14",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "tier_nuance": "Primary openai.com URL 403 from sandbox; confirmed by TechCrunch, 9to5Mac, Engadget (T2)",
+      "key_claims": [
+        "Preview available on Free, Go, Plus, Pro plans iOS and Android",
+        "4 million weekly Codex users (vendor-claimed)"
+      ],
+      "cross_references": [
+        {"url": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/", "tier": "T2", "role": "corroborating"},
+        {"url": "https://9to5mac.com/2026/05/14/openai-brings-codex-control-to-chatgpt-for-iphone-and-android/", "tier": "T2", "role": "corroborating"}
+      ],
+      "caveats": ["Preview only", "Windows remote not yet available", "Primary URL 403 from sandbox"]
+    },
+    {
+      "rank": 5,
+      "title": "Anthropic Splits Agent SDK and Programmatic Claude Usage Into a Separate Monthly Credit Pool, Effective June 15",
+      "source_url": "https://x.com/ClaudeDevs",
+      "publisher": "Anthropic (@ClaudeDevs official account)",
+      "publication_date": "2026-05-13",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "policy-change",
+      "categories": ["ai-for-business", "dev-tools"],
+      "bd_actionability": "high",
+      "key_claims": [
+        "Credit amounts: Pro $20, Max 5x $100, Max 20x $200",
+        "Effective June 15, 2026",
+        "Credits do not roll over"
+      ],
+      "cross_references": [
+        {"url": "https://www.theregister.com/ai-ml/2026/05/14/anthropic-tosses-agents-into-the-api-billing-pool/5240748", "tier": "T2", "role": "corroborating"},
+        {"url": "https://venturebeat.com/technology/anthropic-reinstates-openclaw-and-third-party-agent-usage-on-claude-subscriptions-with-a-catch", "tier": "T2", "role": "corroborating"},
+        {"url": "https://siliconangle.com/2026/05/14/anthropic-announces-programmatic-credit-pool-agentic-tool-use-rises/", "tier": "T2", "role": "corroborating"}
+      ],
+      "caveats": ["Announced via @ClaudeDevs, no Anthropic blog post published; tier T2 secondary"]
+    },
+    {
+      "rank": 6,
+      "title": "Hermes Agent by NousResearch Returns to #1 on GitHub Trending with 145K Stars and Tops OpenRouter Daily Rankings",
+      "source_url": "https://github.com/NousResearch/hermes-agent",
+      "publisher": "NousResearch",
+      "publication_date": "2026-05-13",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "community-signal",
+      "categories": ["agent-framework"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        "145,000 stars, +2,065/day on May 13, 2026 (GitHub trending, T3)",
+        "#1 on OpenRouter May 10, 224B tokens/day (community/vendor figure, T3)"
+      ],
+      "cross_references": [
+        {"url": "https://blog.pebblous.ai/report/hermes-agent-growth-with-user/en/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.7", "tier": "T2", "role": "v0.13.0 release notes"}
+      ],
+      "caveats": [
+        "Stars ≠ production deployment",
+        "224B token figure from community blog, not OpenRouter official stats",
+        "v0.13.0 release was May 7 (outside 72h window); in-window event is May 13 trending milestone"
+      ],
+      "exploration_source": true
+    },
+    {
+      "rank": 7,
+      "title": "Anthropic and Gates Foundation Form $200M Four-Year Partnership Targeting Global Health, Education, and Agriculture",
+      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "publisher": "Anthropic",
+      "publication_date": "2026-05-14",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        "$200M over four years in grants, API credits, and technical support",
+        "HPV and preeclampsia drug research, IHME collaboration"
+      ],
+      "cross_references": [
+        {"url": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/05/ai-anthropic-partnership", "tier": "T2", "role": "corroborating — Gates Foundation primary"}
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "PwC Expands Anthropic Alliance, Commits to Training 30,000 Staff on Claude",
+      "source_url": "https://www.prnewswire.com/news-releases/anthropic-and-pwc-expand-alliance-driving-impact-across-client-work-and-the-firm-302772321.html",
+      "publisher": "PwC / PRNewswire",
+      "publication_date": "2026-05-14",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        "30,000 professionals to be trained and certified on Claude",
+        "Insurance underwriting 10 weeks → 10 days (vendor-cited client result)"
+      ],
+      "cross_references": [
+        {"url": "https://siliconangle.com/2026/05/14/pwc-expands-anthropic-alliance-will-train-30000-staff-claude/", "tier": "T2", "role": "corroborating"},
+        {"url": "https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html", "tier": "T2", "role": "PwC primary — 403 from sandbox"}
+      ],
+      "caveats": ["Client metrics vendor-cited; no independent audit"],
+      "exploration_source": true
+    },
+    {
+      "rank": 9,
+      "title": "IBM Consulting Launches Forward Deployed Units: Six-Person AI-Agent Pods at Think 2026",
+      "source_url": "https://newsroom.ibm.com/2026-05-14-A-New-Way-to-Make-AI-Actually-Work-in-the-Real-World",
+      "publisher": "IBM",
+      "publication_date": "2026-05-14",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "key_claims": [
+        "6-person pod = 30-person team equivalent (vendor-claimed, no independent audit)",
+        "Named clients: Riyadh Air, Nestlé, Heineken, Pearson"
+      ],
+      "cross_references": [
+        {"url": "https://www.prnewswire.com/news-releases/a-new-way-to-make-ai-actually-work-in-the-real-world-302771685.html", "tier": "T2", "role": "corroborating"}
+      ],
+      "caveats": ["5:1 efficiency ratio IBM-stated; no third-party validation; pricing not disclosed"],
+      "exploration_source": true
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude for Small Business", "source": "anthropic.com · 2026-05-13", "reason": "Covered in 2026-05-14 bulletin"},
+    {"title": "Claude Code v2.1.141", "source": "github.com · 2026-05-13", "reason": "Covered in 2026-05-14 bulletin"},
+    {"title": "GitHub Copilot CLI v1.0.45", "source": "github.com · 2026-05-11", "reason": "Covered in 2026-05-14 bulletin"},
+    {"title": "Meta AI App (voice, live camera, Threads)", "source": "9to5Mac · 2026-05-12", "reason": "Covered in 2026-05-14 bulletin"},
+    {"title": "Judgment Labs $32M", "source": "BusinessWire · 2026-05-12", "reason": "Covered in 2026-05-14 bulletin"},
+    {"title": "Google TIG first AI-generated zero-day", "source": "CNBC · 2026-05-11", "reason": "Covered in 2026-05-14 bulletin"},
+    {"title": "Wispr AI $260M funding talks", "source": "Bloomberg · 2026-05-12", "reason": "Covered in 2026-05-14 bulletin"},
+    {"title": "Anthropic $30B round at $900B valuation", "source": "Bloomberg · 2026-05-12", "reason": "Covered in 2026-05-14 bulletin"},
+    {"title": "OpenAI Deployment Co. / Tomoro acquisition", "source": "openai.com · 2026-05-11", "reason": "Covered in 2026-05-12 bulletin"},
+    {"title": "Claude Opus 4.7 release", "source": "anthropic.com · 2026-04-16", "reason": "Outside window (April 16)"},
+    {"title": "Novo Nordisk-OpenAI partnership", "source": "CNBC · 2026-04-14", "reason": "Outside window (April 14)"},
+    {"title": "Gemma 4 (31B, Apache 2.0)", "source": "blog.google · 2026-05-05", "reason": "Outside 72h window"},
+    {"title": "ThoughtSpot MCP Server GA", "source": "thoughtspot.com · 2026-03-20", "reason": "Outside window"},
+    {"title": "Windsurf 2.0", "source": "xda-developers.com", "reason": "Release date not confirmed within 72h window"},
+    {"title": "Grok SuperHeavy subscription tier", "source": "xai.com · 2026-05-14", "reason": "Folded into Grok Build item"},
+    {"title": "Hermes Agent v0.13.0 release", "source": "github.com · 2026-05-07", "reason": "Outside 72h window; May 13 trending milestone covered in Item 6"},
+    {"title": "ServiceNow Autonomous Workforce", "source": "newsroom.servicenow.com · 2026-05-05", "reason": "Outside 72h window"},
+    {"title": "ByteDance Doubao-Seed-2.0-lite", "source": "volcengine · 2026-05-06", "reason": "Outside 72h window"},
+    {"title": "IBM Think 2026 other keynote items", "source": "ibm.com · 2026-05-12–14", "reason": "IBM FDU covers the headline; other items maintenance-level"},
+    {"title": "HuggingFace daily papers May 13–14 (MinT, MulTaBench, AnyFlow)", "source": "huggingface.co · 2026-05-13–14", "reason": "No immediate BD-actionable finding"},
+    {"title": "Google I/O 2026 Gemini model", "source": "Anticipated May 19", "reason": "Not yet announced"}
+  ],
+  "search_log": [
+    {"query": "Anthropic Claude announcement news May 14 15 2026", "results": 10, "high_relevance": 3, "type": "registry"},
+    {"query": "OpenAI announcement release ChatGPT May 14 15 2026", "results": 9, "high_relevance": 2, "type": "registry"},
+    {"query": "Google DeepMind Gemini AI announcement May 14 15 2026", "results": 10, "high_relevance": 1, "type": "registry"},
+    {"query": "new AI model release launch May 14 2026", "results": 10, "high_relevance": 1, "type": "exploratory"},
+    {"query": "Anthropic Claude Opus 4.7 release date announcement 2026", "results": 10, "high_relevance": 0, "type": "registry"},
+    {"query": "OpenAI Codex Work with Codex from anywhere May 14 2026", "results": 1, "high_relevance": 1, "type": "registry"},
+    {"query": "Anthropic Agent SDK credit split June 15 2026", "results": 10, "high_relevance": 5, "type": "registry"},
+    {"query": "anthropic.com/news (web_fetch)", "results": 1, "high_relevance": 1, "type": "registry"},
+    {"query": "Claude Code release update May 14 15 2026", "results": 10, "high_relevance": 3, "type": "registry"},
+    {"query": "MCP Model Context Protocol server release May 14 15 2026", "results": 10, "high_relevance": 0, "type": "registry"},
+    {"query": "github.com/anthropics/claude-code/releases (web_fetch)", "results": 3, "high_relevance": 1, "type": "registry"},
+    {"query": "Anthropic subscription billing claude -p agent SDK May 13 14 2026", "results": 10, "high_relevance": 4, "type": "registry"},
+    {"query": "IBM new way to make AI May 14 2026 FDU consulting", "results": 5, "high_relevance": 3, "type": "exploratory"},
+    {"query": "AI agent framework release launch new May 14 15 2026", "results": 10, "high_relevance": 4, "type": "exploratory"},
+    {"query": "notion.com/releases/2026-05-13 (web_fetch)", "results": 1, "high_relevance": 1, "type": "registry"},
+    {"query": "Notion developer platform Workers External Agent API May 13 2026", "results": 10, "high_relevance": 5, "type": "registry"},
+    {"query": "PwC Claude Anthropic partnership deployment May 14 2026", "results": 10, "high_relevance": 4, "type": "exploratory"},
+    {"query": "Novo Nordisk OpenAI partnership announcement May 2026", "results": 10, "high_relevance": 0, "type": "exploratory"},
+    {"query": "OpenAI Codex mobile ChatGPT app May 14 2026 release", "results": 10, "high_relevance": 5, "type": "registry"},
+    {"query": "Anthropic agent programmatic billing blog post May 2026", "results": 10, "high_relevance": 3, "type": "registry"},
+    {"query": "xAI Grok Build SuperHeavy beta May 14 2026", "results": 10, "high_relevance": 4, "type": "registry"},
+    {"query": "xAI Grok Mistral Meta announcement May 14 15 2026", "results": 10, "high_relevance": 1, "type": "registry"},
+    {"query": "AI announcement launch news May 15 2026", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "new LLM new model released May 14 15 2026", "results": 10, "high_relevance": 0, "type": "exploratory"},
+    {"query": "agent framework OR AI tool launch May 14 15 2026", "results": 10, "high_relevance": 3, "type": "exploratory"},
+    {"query": "Grok Build criticism problems limitations concerns May 2026", "results": 10, "high_relevance": 3, "type": "adversarial"},
+    {"query": "huggingface.co papers (web_fetch, May 13-15)", "results": 5, "high_relevance": 0, "type": "exploratory"},
+    {"query": "site:x.com AI agent OR MCP server announcement May 14 15 2026", "results": 10, "high_relevance": 1, "type": "social-X"},
+    {"query": "AI Indonesia OR startup AI Asia OR model AI lokal May 2026", "results": 10, "high_relevance": 0, "type": "cross-lang"},
+    {"query": "Anthropic Gates Foundation partnership criticism concerns May 2026", "results": 10, "high_relevance": 2, "type": "adversarial"},
+    {"query": "Hermes Agent NousResearch github May 13 14 2026", "results": 10, "high_relevance": 3, "type": "exploratory"},
+    {"query": "ThoughtSpot MCP server announcement date May 2026", "results": 10, "high_relevance": 0, "type": "exploratory"}
+  ],
+  "limitations_summary": {
+    "sources_unreachable": ["x.ai/news/grok-build-cli (403)", "openai.com/index/work-with-codex-from-anywhere (403)", "pwc.com press release (403)", "ibm.com/new/announcements/ibm-think-2026 (403)"],
+    "login_walled": "X timelines, Instagram, LinkedIn, Discord not accessed directly",
+    "thin_categories": ["model-release", "mcp-ecosystem", "research-papers", "policy-regulation"],
+    "items_requiring_upgrade": ["OpenAI Codex mobile (T3→T2)", "Anthropic billing (T2 secondary→verified)", "Hermes Agent OpenRouter ranking (T3→T2)"],
+    "geographic_bias": "US/EU heavy; SEA search ran — no in-window primary items",
+    "exploration_non_registry_items": 3,
+    "exploration_non_registry_pct": 33
+  }
+}
