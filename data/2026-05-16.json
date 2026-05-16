@@ -1,0 +1,313 @@
+{
+  "run_date": "2026-05-16",
+  "run_timestamp": "2026-05-16T00:00:00Z",
+  "parameters": {
+    "timeframe": "72h",
+    "period_start": "2026-05-13",
+    "period_end": "2026-05-16",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "counts": {
+    "items_reviewed": 15,
+    "items_published": 8,
+    "items_dropped": 7,
+    "verified": 7,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "searches": {
+    "total": 32,
+    "exploratory_adversarial": 23,
+    "exploration_pct": 72
+  },
+  "sources_count": 22,
+  "items": [
+    {
+      "id": 1,
+      "title": "Anthropic launches Claude for Small Business via Claude Cowork",
+      "date": "2026-05-13",
+      "source_url": "https://www.anthropic.com/news/claude-for-small-business",
+      "publisher": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["workflow-automation", "productivity-ai"],
+      "bd_actionability": "high",
+      "key_facts": [
+        "15 pre-built agentic workflows",
+        "15 repeatable skills",
+        "Integrations: QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace, Microsoft 365",
+        "Deployed via Claude Cowork",
+        "User approval required before task execution",
+        "Pricing not disclosed"
+      ],
+      "caveats": [
+        "Pricing not disclosed",
+        "Connector support limited to 7 platforms at launch",
+        "Pro/Max plan includes AI training data opt-in by default (manual opt-out required)",
+        "No independent adoption evidence"
+      ],
+      "cross_references": [
+        "https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners/",
+        "https://www.theregister.com/ai-ml/2026/05/13/anthropic-butts-in-to-small-business-promises-help-with-payroll-and-other-core-tasks/5239967"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Notion launches Developer Platform 3.5 with hosted Workers and External Agents API",
+      "date": "2026-05-13",
+      "source_url": "https://www.notion.com/blog/introducing-developer-platform",
+      "publisher": "Notion",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["agent-framework", "dev-tools"],
+      "bd_actionability": "high",
+      "key_facts": [
+        "Workers: hosted Node/TypeScript sandbox, free through August 2026",
+        "External Agents API: Claude Code, Cursor, Codex, Decagon native integrations",
+        "External Agents API in private beta (waitlist)",
+        "Database Sync: Zendesk, Salesforce, Postgres and other API-backed systems",
+        "CLI (ntn) available on all plans"
+      ],
+      "caveats": [
+        "External Agents SDK is alpha — not production-ready",
+        "Pricing per Worker invocation post-August not announced",
+        "Supported languages and resource limits undocumented"
+      ],
+      "cross_references": [
+        "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/",
+        "https://www.notion.com/releases/2026-05-13"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Amazon ships Alexa for Shopping, combining Alexa+ and Rufus",
+      "date": "2026-05-13",
+      "source_url": "https://www.aboutamazon.com/news/devices/echo-show-alexa-plus-shopping",
+      "publisher": "Amazon",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["workflow-automation", "productivity-ai"],
+      "bd_actionability": "high",
+      "key_facts": [
+        "Merges Alexa+ and Rufus into single shopping assistant",
+        "Available on Amazon mobile app, website, Echo Show devices",
+        "Core features available without Prime membership",
+        "'Buy for Me' cross-site purchasing requires Alexa+ subscription",
+        "3x purchase completion rate vs original Alexa (vendor-claimed)"
+      ],
+      "caveats": [
+        "3x purchase rate is vendor-measured, no independent replication",
+        "Alexa+ subscription pricing not confirmed in available sources"
+      ],
+      "cross_references": [
+        "https://techcrunch.com/2026/05/13/amazon-launches-an-ai-shopping-assistant-for-the-search-bar-powered-by-alexa/",
+        "https://www.geekwire.com/2026/amazon-unifies-alexa-and-rufus-as-ai-rivals-move-into-online-shopping/"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "OpenAI connects ChatGPT to financial accounts via Plaid for US Pro subscribers",
+      "date": "2026-05-15",
+      "source_url": "https://openai.com/index/personal-finance-chatgpt/",
+      "publisher": "OpenAI",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "high",
+      "tier_nuance": "Primary URL returned HTTP 403; content confirmed via TechCrunch, MacRumors, 9to5Mac, and Plaid blog",
+      "key_facts": [
+        "Pro subscribers in US can connect 12,000+ financial institutions via Plaid",
+        "Read-only access: balances, transactions, investments, liabilities",
+        "Cannot see full account numbers or execute transactions",
+        "Account data deletion takes 30 days after disconnecting",
+        "Dashboard shows spending, subscriptions, upcoming payments, portfolio",
+        "200M users already ask financial questions to ChatGPT monthly (vendor-claimed)"
+      ],
+      "caveats": [
+        "Primary URL inaccessible from run environment",
+        "Pro subscribers, US only at launch",
+        "Data use beyond AI training not clearly documented",
+        "Active class action lawsuit for prior data-sharing with Google/Meta",
+        "Significant public backlash on Hacker News"
+      ],
+      "cross_references": [
+        "https://plaid.com/blog/chatgpt-personal-finance-plaid/",
+        "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+        "https://news.ycombinator.com/item?id=48150723"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "PwC deploys Claude to hundreds of thousands of professionals, launches Office of the CFO unit",
+      "date": "2026-05-14",
+      "source_url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "publisher": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "tier_nuance": "Performance claims (70% improvement, underwriting timeline) are vendor-claimed; no independent audit",
+      "key_facts": [
+        "Roll out to US teams first, then global workforce of hundreds of thousands",
+        "30,000 professionals to be trained and certified on Claude",
+        "Joint Center of Excellence established",
+        "Office of the CFO new business unit anchored in Anthropic technology",
+        "Targets regulated industries: banking, insurance, healthcare"
+      ],
+      "caveats": [
+        "All performance figures self-reported in co-authored announcement",
+        "'Hundreds of thousands' is a global target, not current deployment count",
+        "70% delivery improvement and 10-week → 10-day underwriting are client case claims, not audited"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Anthropic and Gates Foundation commit $200M to global health, education, and economic mobility AI",
+      "date": "2026-05-14",
+      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "publisher": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "key_facts": [
+        "$200M in grants, Claude credits, and technical support over 4 years",
+        "Domains: global health, life sciences, K-12 education (US, sub-Saharan Africa, India), economic mobility",
+        "Public goods: benchmarks, datasets, evaluation frameworks for healthcare AI"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Cerebras Systems raises $5.55B in Nasdaq IPO, closes first day at ~$95B market cap",
+      "date": "2026-05-14",
+      "source_url": "https://www.cnbc.com/2026/05/14/cerebras-cbrs-stock-trade-nasdaq-ipo.html",
+      "publisher": "CNBC",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "market event",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "key_facts": [
+        "Ticker: CBRS on Nasdaq",
+        "30M shares at $185, raised $5.55B",
+        "Largest US tech IPO since Uber 2019",
+        "Closed +68% at ~$311, market cap ~$95B",
+        "$510M 2025 revenue, 47% net margin",
+        "OpenAI compute deal 750MW expiring 2028",
+        "Stock fell ~10% on day 2 (May 15)"
+      ],
+      "cross_references": [
+        "https://techcrunch.com/2026/05/14/cerebras-raises-5-5b-kicking-off-2026s-ipo-season-with-a-bang/",
+        "https://www.bloomberg.com/news/articles/2026-05-14/cerebras-shares-indicated-to-surge-89-after-year-s-top-ipo",
+        "https://www.cnbc.com/2026/05/15/cerebras-stock-ipo-debut-ai.html"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Recursive Superintelligence emerges from stealth with $650M at $4.65B valuation",
+      "date": "2026-05-13",
+      "source_url": "https://tech.eu/2026/05/13/recursive-superintelligence-emerges-from-stealth-with-650m-raise/",
+      "publisher": "Tech.eu",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "key_facts": [
+        "$650M raised, $4.65B valuation",
+        "Round led by GV and Greycroft, Nvidia and AMD participating",
+        "Round oversubscribed",
+        "Founders: Richard Socher (ex-Salesforce CSO) and Tim Rocktäschel (UCL / ex-DeepMind)",
+        "London HQ, San Francisco presence",
+        "Fewer than 30 employees, no shipped product",
+        "Mission: self-improving AI through open-ended algorithms"
+      ],
+      "caveats": [
+        "No shipped product; 4 months of operating history",
+        "'50,000 doctors' capability claim is pre-product marketing, no benchmark"
+      ],
+      "cross_references": [
+        "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/",
+        "https://thenextweb.com/news/recursive-superintelligence-self-improving-ai-funding"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {
+      "title": "Google Android Gemini Intelligence announcement",
+      "source": "blog.google",
+      "date": "2026-05-12",
+      "reason": "Published May 12 — 1 day outside strict 72h window"
+    },
+    {
+      "title": "Google Deep Research Max",
+      "source": "blog.google",
+      "date": "2026-04-21",
+      "reason": "Outside window (April 21)"
+    },
+    {
+      "title": "ServiceNow AI Control Tower expansion at Knowledge 2026",
+      "source": "newsroom.servicenow.com",
+      "date": "2026-05-05",
+      "reason": "Outside window (May 5)"
+    },
+    {
+      "title": "AWS MCP Server general availability",
+      "source": "aws.amazon.com",
+      "date": "2026-05-06",
+      "reason": "Outside window (May 6)"
+    },
+    {
+      "title": "Sakana AI RL Conductor / Fugu Beta",
+      "source": "sakana.ai",
+      "date": "~2026-05-07",
+      "reason": "Outside window; commercial Fugu launch ~May 7"
+    },
+    {
+      "title": "Broadridge agentic post-trade capabilities",
+      "source": "newsroom.broadridge.com",
+      "date": "2026-05-13",
+      "reason": "Could not confirm scope of 'production-ready' claim from primary source within run"
+    },
+    {
+      "title": "Microsoft Agent Framework Building Blocks Part 3",
+      "source": "devblogs.microsoft.com",
+      "date": "unknown",
+      "reason": "Could not confirm publication date within May 13-16 window"
+    }
+  ],
+  "conflicts_surfaced": [
+    {
+      "item_id": 4,
+      "topic": "OpenAI personal finance privacy",
+      "description": "OpenAI presented read-only access and no account-number visibility as privacy reassurances without addressing an active class action lawsuit alleging prior unauthorized data sharing with Google and Meta. Hacker News thread showed significant practitioner skepticism (>200 comments). Trust gap is real but unresolved.",
+      "reconciliation": "Privacy claims are vendor-stated, unverified. No independent security audit available at time of publication."
+    }
+  ],
+  "exploration_stats": {
+    "total_searches": 32,
+    "exploratory_searches": 23,
+    "items_from_non_registry_sources": 3,
+    "non_registry_items": ["Cerebras IPO (CNBC/financial press)", "Recursive Superintelligence (tech.eu)", "Amazon Alexa for Shopping (aboutamazon.com)"],
+    "sea_search_conducted": true,
+    "sea_search_result": "Background reporting on Indosat Sahabat AI (May 7) and Indonesia AI ecosystem; no in-window primary announcements from region",
+    "adversarial_searches": 4
+  },
+  "quality_gate": {
+    "all_items_have_primary_url": true,
+    "no_source_quoted_twice": true,
+    "no_quote_exceeds_14_words": true,
+    "exploration_pct_above_30": true,
+    "limitations_substantive": true,
+    "dropped_section_present": true,
+    "no_hype_language": true
+  }
+}
