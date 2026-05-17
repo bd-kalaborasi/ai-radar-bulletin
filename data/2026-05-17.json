@@ -1,0 +1,277 @@
+{
+  "run": {
+    "date": "2026-05-17",
+    "period_start": "2026-05-14",
+    "period_end": "2026-05-17",
+    "window_hours": 72,
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 22,
+    "items_published": 6,
+    "items_dropped": 16,
+    "searches_total": 34,
+    "searches_exploratory": 15,
+    "exploration_pct": 44,
+    "sources_count": 24,
+    "verification_summary": {
+      "verified": 2,
+      "secondary": 4,
+      "rumor": 0
+    }
+  },
+  "items": [
+    {
+      "id": "anthropic-agent-sdk-billing-june15",
+      "title": "Anthropic meters Agent SDK usage separately from subscriptions, effective June 15",
+      "source_url": "https://www.theregister.com/ai-ml/2026/05/14/anthropic-tosses-agents-into-the-api-billing-pool/",
+      "source_publisher": "The Register",
+      "source_date": "2026-05-14",
+      "announcement_date": "2026-05-13",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "policy announcement",
+      "categories": ["dev-tools", "ai-for-business"],
+      "primary_url_status": "no public Anthropic blog post found; announcement via email and @ClaudeDevs X account",
+      "key_claims": [
+        {
+          "claim": "Effective date June 15, 2026",
+          "source": "The Register primary",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Credit amounts: Pro $20, Max 5x $100, Max 20x $200",
+          "source": "The Register, The New Stack corroborating",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Credits billed at full API list rates, no monthly rollover",
+          "source": "The Register primary",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Developer-computed effective price increase 12x-175x by workload",
+          "source": "T4 developer community analysis (GitHub Gist); not Anthropic-confirmed",
+          "type": "community"
+        }
+      ],
+      "cross_references": [
+        {"url": "https://thenewstack.io/anthropic-agent-sdk-credits/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://www.infoworld.com/article/4171274/anthropic-puts-claude-agents-on-a-meter-across-its-subscriptions.html", "tier": "T3", "role": "corroborating"},
+        {"url": "https://zed.dev/blog/anthropic-subscription-changes", "tier": "T3", "role": "corroborating"},
+        {"url": "https://gist.github.com/MagnaCapax/d9177e35b355853f03c730dfcaa693ef", "tier": "T4", "role": "cost-impact analysis"}
+      ],
+      "caveats": [
+        "Anthropic original notification was May 13 subscriber email — 1 day outside strict 72h window; May 14 secondary coverage is in-window",
+        "No Anthropic blog post or help-center page found at time of publication",
+        "12x-175x cost-increase figure is developer-computed, not Anthropic-confirmed"
+      ]
+    },
+    {
+      "id": "claude-code-v2142-v2143",
+      "title": "Claude Code ships v2.1.142 and v2.1.143 with new agent flags and Opus 4.7 Fast mode",
+      "source_url": "https://github.com/anthropics/claude-code/releases",
+      "source_publisher": "anthropics/claude-code GitHub",
+      "source_date": "2026-05-14",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools"],
+      "key_claims": [
+        {
+          "claim": "v2.1.142 released May 14 with 8 new claude agents flags",
+          "source": "GitHub releases primary",
+          "type": "descriptive"
+        },
+        {
+          "claim": "v2.1.143 released May 15 with cost estimates in plugin marketplace",
+          "source": "GitHub releases primary",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Fast mode now uses Opus 4.7 by default (was Opus 4.6)",
+          "source": "GitHub releases v2.1.142 changelog",
+          "type": "descriptive"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "id": "xai-grok-build-early-beta",
+      "title": "xAI launches Grok Build early beta — agentic coding CLI for SuperGrok Heavy subscribers",
+      "source_url": "https://x.ai/news/grok-build-cli",
+      "source_publisher": "xAI",
+      "source_date": "2026-05-14",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "primary_url_status": "HTTP 403 from run environment; confirmed via CIO Dive, Gigazine, Dataconomy",
+      "key_claims": [
+        {
+          "claim": "Introductory pricing $99/month, standard $299/month (SuperGrok Heavy tier)",
+          "source": "CIO Dive, Gigazine (T3)",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Context window: 256K tokens (grok-code-fast-1)",
+          "source": "DevOps.com (T3)",
+          "type": "descriptive"
+        },
+        {
+          "claim": "SWE-Bench Verified score 70.8%",
+          "source": "xAI-internal benchmark (vendor-measured, no independent replication)",
+          "type": "vendor-benchmark"
+        }
+      ],
+      "cross_references": [
+        {"url": "https://www.ciodive.com/news/xAI-coding-agents-Grok-Build/820422/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://gigazine.net/gsc_news/en/20260515-grok-build-beta/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://dataconomy.com/2026/05/15/xai-launches-grok-build-coding-agent-for-developers/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://devops.com/xai-enters-the-coding-agent-race-with-grok-build/", "tier": "T3", "role": "technical detail"}
+      ],
+      "caveats": [
+        "Primary URL (x.ai/news/grok-build-cli) returned HTTP 403 from run environment",
+        "SWE-Bench 70.8% is vendor-measured on xAI's own harness; no independent replication at publication",
+        "256K context trails Claude Opus 4.7 (1M+) for large-codebase tasks",
+        "Terminal-only at launch; no IDE integrations",
+        "Early beta, SuperGrok Heavy subscribers only"
+      ]
+    },
+    {
+      "id": "openai-brockman-product-leadership-chatgpt-codex-merge",
+      "title": "OpenAI merges ChatGPT, Codex, and developer API under Greg Brockman's permanent product leadership",
+      "source_url": "https://www.wired.com/story/openai-brockman-chatgpt-codex-merge/",
+      "source_publisher": "Wired",
+      "source_date": "2026-05-16",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "organizational announcement",
+      "categories": ["ai-for-business"],
+      "primary_url_status": "Wired unreachable from run environment; OpenAI confirmed substance to TechCrunch",
+      "key_claims": [
+        {
+          "claim": "Brockman permanently leads product, effective May 16 (previously interim)",
+          "source": "OpenAI confirmed to TechCrunch",
+          "type": "descriptive"
+        },
+        {
+          "claim": "ChatGPT, Codex, and developer API merge into single product organization",
+          "source": "Wired memo, confirmed by TechCrunch",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Announcement 3 days before Google I/O 2026",
+          "source": "Multiple outlets noting public calendar",
+          "type": "context"
+        }
+      ],
+      "cross_references": [
+        {"url": "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/", "tier": "T2-T3", "role": "corroborating; OpenAI confirmed"},
+        {"url": "https://www.theinformation.com/briefings/openai-reorganizes-product-teams-around-unified-app-strategy", "tier": "T2", "role": "corroborating; paywalled"}
+      ],
+      "caveats": [
+        "Wired primary inaccessible from run environment",
+        "No integration timeline for Codex API customers published",
+        "Fidji Simo return timeline not disclosed",
+        "Brockman span-of-control concerns (product + infrastructure) flagged by analysts"
+      ]
+    },
+    {
+      "id": "arxiv-ai-submission-ban",
+      "title": "arXiv enforces one-year submission ban for papers with unchecked AI-generated content",
+      "source_url": "https://www.404media.co/new-arxiv-rules-ai-generated-papers-ban/",
+      "source_publisher": "404 Media",
+      "source_date": "2026-05-15",
+      "announcement_date": "2026-05-15",
+      "announcer": "Thomas Dietterich, arXiv CS section chair (via X post)",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "policy announcement",
+      "categories": ["policy-regulation", "research-papers"],
+      "primary_url_status": "Announcement on X by Thomas Dietterich; 404 Media provides most complete sourced reporting",
+      "key_claims": [
+        {
+          "claim": "1-year submission ban + subsequent peer-review requirement for future arXiv submissions",
+          "source": "404 Media citing Dietterich X post",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Triggers: hallucinated references, LLM metacomments, placeholder data in submissions",
+          "source": "404 Media primary",
+          "type": "descriptive"
+        }
+      ],
+      "cross_references": [
+        {"url": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://the-decoder.com/arxiv-tightens-penalties-for-ai-bungling-in-scientific-papers/", "tier": "T3", "role": "corroborating; includes community criticism"}
+      ],
+      "caveats": [
+        "Policy announced via X, not a formal arXiv policy document at time of publication",
+        "AI-detection tools have known false-positive rates; detection methodology not disclosed by arXiv",
+        "Community critics flag selective enforcement risk and draconian penalty for honest editing errors",
+        "One-strike rule with appeal process; section chairs confirm evidence before bans are imposed"
+      ]
+    },
+    {
+      "id": "musk-altman-trial-closing-arguments",
+      "title": "Musk v. Altman closing arguments conclude; jury deliberates starting May 18",
+      "source_url": "https://www.cnbc.com/2026/05/14/closing-arguments-jury-openai-musk-altman.html",
+      "source_publisher": "CNBC",
+      "source_date": "2026-05-14",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "court proceedings",
+      "categories": ["policy-regulation", "ai-for-business"],
+      "key_claims": [
+        {
+          "claim": "Closing arguments concluded May 14; deliberations begin May 18",
+          "source": "CNBC primary",
+          "type": "descriptive"
+        },
+        {
+          "claim": "$134 billion penalty cited in remedies phase",
+          "source": "TechTimes citing court filings",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Microsoft received 27% stake in October 2025 recapitalization",
+          "source": "CNBC primary",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Jury verdict is advisory; judge issues final liability ruling",
+          "source": "CNBC primary",
+          "type": "descriptive"
+        }
+      ],
+      "cross_references": [
+        {"url": "https://www.bloomberg.com/news/articles/2026-05-14/musk-altman-make-final-pitches-to-jury-in-battle-over-openai", "tier": "T2", "role": "corroborating"},
+        {"url": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/", "tier": "T2", "role": "week 3 testimony summary"},
+        {"url": "https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/", "tier": "T3", "role": "jury scope explainer"}
+      ],
+      "caveats": [
+        "Jury deliberation outcome not known at publication; deliberations begin May 18",
+        "Advisory verdict only — judge makes final liability determination",
+        "Trial outcome subject to appeal regardless of verdict"
+      ]
+    }
+  ],
+  "dropped": [
+    {"title": "Googlebook AI-native laptop", "source": "blog.google", "date": "2026-05-12", "reason": "Outside strict 72h window"},
+    {"title": "GPT-Realtime-2 voice models GA", "source": "openai.com", "date": "2026-05-08", "reason": "Outside window"},
+    {"title": "LangGraph v1.2 release", "source": "github.com/langchain-ai/langgraph", "date": "2026-05-11", "reason": "Outside window"},
+    {"title": "Anthropic Claude for Small Business", "source": "anthropic.com", "date": "2026-05-13", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Notion Developer Platform 3.5", "source": "notion.com", "date": "2026-05-13", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Amazon Alexa for Shopping", "source": "aboutamazon.com", "date": "2026-05-13", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "OpenAI ChatGPT personal finance / Plaid", "source": "openai.com", "date": "2026-05-15", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Anthropic PwC partnership expansion", "source": "anthropic.com", "date": "2026-05-14", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Anthropic Gates Foundation $200M", "source": "anthropic.com", "date": "2026-05-14", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Cerebras Systems Nasdaq IPO", "source": "cnbc.com", "date": "2026-05-14", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Recursive Superintelligence $650M funding", "source": "tech.eu", "date": "2026-05-13", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "OpenAI self-serve ChatGPT ad platform", "source": "openai.com", "date": "2026-05-05", "reason": "Outside window"},
+    {"title": "ChatGPT for Excel and Google Sheets globally", "source": "openai.com", "date": "2026-05-05", "reason": "Outside window"},
+    {"title": "Sakana AI RL Conductor (ICLR 2026)", "source": "sakana.ai", "date": "2026-04-27", "reason": "Outside window; previously considered in 2026-05-16 run"},
+    {"title": "xAI model retirement (legacy API models)", "source": "docs.x.ai", "date": "2026-05-15", "reason": "Housekeeping migration; no new capability shipped"},
+    {"title": "Sierra raises $950M at $15B valuation", "source": "techcrunch.com", "date": "2026-05-04", "reason": "Outside window"}
+  ]
+}
