@@ -1,0 +1,206 @@
+{
+  "run_date": "2026-05-18",
+  "run_timestamp": "2026-05-18T00:00:00Z",
+  "timeframe": {
+    "strict_start": "2026-05-15",
+    "strict_end": "2026-05-18",
+    "expanded_start": "2026-05-13",
+    "expanded_end": "2026-05-18",
+    "expansion_reason": "Strict 72h window (May 15-18) yielded 0 uncover items not previously published. Expanded to 5 days (May 13-18) per skill rule."
+  },
+  "parameters": {
+    "depth": "standard",
+    "audience": "public-digest",
+    "categories": "all"
+  },
+  "counts": {
+    "items_reviewed": 25,
+    "items_published": 4,
+    "items_dropped": 21,
+    "verified": 2,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "search_budget": {
+    "total_searches": 38,
+    "exploratory_searches": 15,
+    "exploratory_pct": 39
+  },
+  "published_items": [
+    {
+      "title": "OpenAI adds Codex to ChatGPT mobile app with remote SSH and HIPAA-compliant local environments",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "primary_date": "2026-05-14",
+      "primary_org": "OpenAI",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "key_facts": [
+        "iOS and Android mobile preview of Codex released 2026-05-14",
+        "Mobile connects to Codex running on macOS; Windows support pending",
+        "Remote SSH reached general availability",
+        "Programmatic access tokens GA for Business and Enterprise plans",
+        "HIPAA-compliant local environments for ChatGPT Enterprise",
+        "Hooks reached GA",
+        "Claude Code shipped remote session management February 2026 (four months earlier)"
+      ],
+      "conflict_of_interest": null,
+      "caveats": ["Primary URL blocked from run environment; facts from T3 secondaries", "macOS-only host requirement", "HIPAA applies to local environments only, not cloud-hosted Codex"],
+      "cross_references": [
+        {"url": "https://www.macrumors.com/2026/05/15/openai-brings-codex-chatgpt-mobile-app/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://sdtimes.com/ai/openai-announces-codex-for-mobile-devices/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://www.testingcatalog.com/openai-brings-codex-to-chatgpt-mobile-app-for-ios-and-android/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://www.gadgetbridge.com/news/openai-codex-lands-on-chatgpt-mobile-app-for-ios-and-android-with-remote-ssh-support/", "tier": "T3", "role": "competitive context"}
+      ]
+    },
+    {
+      "title": "Meta launches Incognito Chat in WhatsApp and Meta AI app with Trusted Execution Environment architecture",
+      "primary_url": "https://about.fb.com/news/2026/05/incognito-chat-whatsapp-meta-ai/",
+      "primary_date": "2026-05-13",
+      "primary_org": "Meta",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Trusted Execution Environments on AMD EPYC with memory encryption",
+        "Oblivious HTTP relay via Fastly strips IP before reaching Meta servers",
+        "Anonymous credentials layer verifies users without identifying them",
+        "Conversations not logged by default; disappear when session ends",
+        "Technical whitepaper published at ai.meta.com/static-resource/private-processing-technical-whitepaper",
+        "Text-only at launch; web search capped at 100 characters and 5 queries per prompt",
+        "Rolling out on WhatsApp and Meta AI app; Messenger and Instagram to follow",
+        "Side Chat companion feature planned for future"
+      ],
+      "conflict_of_interest": null,
+      "caveats": ["Independent security audit of TEE implementation not yet published", "Ephemeral logs create accountability vacuum for post-incident investigation", "Meta historical privacy penalties create credibility context"],
+      "cross_references": [
+        {"url": "https://blog.whatsapp.com/introducing-incognito-chat-with-meta-ai-a-completely-private-way-to-chat-with-ai", "tier": "T2", "role": "corroborating"},
+        {"url": "https://techcrunch.com/2026/05/13/whatsapp-adds-an-incognito-mode-in-meta-ai-chats/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://www.malwarebytes.com/blog/news/2026/05/metas-confusing-new-approach-to-chat-privacy", "tier": "T3", "role": "contradicting"},
+        {"url": "https://www.ghacks.net/2026/05/17/meta-launches-incognito-chat-with-meta-ai-for-private-conversations-on-whatsapp-and-meta-ai-app/", "tier": "T3", "role": "corroborating"}
+      ]
+    },
+    {
+      "title": "HubSpot launches AEO Sensor, a free public dashboard tracking brand visibility in ChatGPT, Gemini, and Perplexity",
+      "primary_url": "https://www.hubspot.com/company-news/hubspot-aeo",
+      "primary_date": "2026-05-14",
+      "primary_org": "HubSpot",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business", "productivity-ai"],
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Free, login-free public dashboard; no subscription required",
+        "Tracks ChatGPT, Gemini, Perplexity citation behavior",
+        "Daily volatility scores (0-100) from four inputs: mention rate, citation rate, citation type, AI-referred traffic",
+        "Aggregated, anonymized AI-referred traffic data from HubSpot customer network",
+        "Industry-level benchmarking view for sector comparisons",
+        "Launched 2026-05-14",
+        "27% year-over-year organic traffic decline for HubSpot customers (vendor-claimed)"
+      ],
+      "conflict_of_interest": null,
+      "caveats": ["27% organic traffic figure is vendor-claimed from HubSpot customer base, not independent audit", "Data drawn from HubSpot customer network only; non-HubSpot sites not represented", "Volatility methodology not independently audited"],
+      "cross_references": [
+        {"url": "https://ppc.land/hubspot-aeo-sensor-goes-live-as-chatgpt-traffic-hits-12-month-low/", "tier": "T3", "role": "corroborating"}
+      ]
+    },
+    {
+      "title": "OpenAI deploys cross-conversation safety summaries in ChatGPT, improving safe-response rates in high-risk scenarios",
+      "primary_url": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations/",
+      "primary_date": "2026-05-14",
+      "primary_org": "OpenAI",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "medium-low",
+      "key_facts": [
+        "Cross-conversation safety summaries detect risk buildup across long sessions",
+        "Separate safety model generates narrowly scoped, time-limited notes",
+        "50% improvement in safe-response rates for suicide/self-harm (internal eval, vendor-measured)",
+        "16% improvement in harm-to-others scenarios (internal eval, vendor-measured)",
+        "GPT-5.5 Instant: 52% harm-to-others, 39% suicide/self-harm improvement (vendor-measured)",
+        "Evaluated across 4,000+ assessments",
+        "Developed with psychiatrists and psychologists from OpenAI Global Physicians Network",
+        "Companion Trusted Contact feature launched May 7 (prior window)"
+      ],
+      "conflict_of_interest": null,
+      "caveats": ["All improvement metrics vendor-measured internal evaluations, no independent replication", "Long single-conversation test conditions; multi-session behavior not covered", "Addresses detection layer, not response generation; hallucinated harmful advice is a distinct failure mode", "Active class action lawsuits regarding prior unsafe ChatGPT responses provide legal context"],
+      "cross_references": [
+        {"url": "https://www.resultsense.com/news/2026-05-15-openai-chatgpt-sensitive-conversations-safety/", "tier": "T3", "role": "corroborating"},
+        {"url": "https://decrypt.co/367937/openai-new-chatgpt-safety-features-lawsuits-investigations", "tier": "T3", "role": "legal context"}
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude Code v2.1.143", "source": "github.com/anthropics/claude-code", "date": "2026-05-15", "reason": "Covered in 2026-05-17 bulletin"},
+    {"title": "OpenAI ChatGPT personal finance / Plaid integration", "source": "openai.com", "date": "2026-05-15", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Anthropic Agent SDK billing pool change (effective June 15)", "source": "theregister.com", "date": "2026-05-14", "reason": "Covered in 2026-05-17 bulletin"},
+    {"title": "xAI Grok Build early beta", "source": "x.ai", "date": "2026-05-14", "reason": "Covered in 2026-05-17 bulletin"},
+    {"title": "OpenAI Brockman product reorganization", "source": "wired.com", "date": "2026-05-16", "reason": "Covered in 2026-05-17 bulletin"},
+    {"title": "arXiv one-year ban for unchecked AI output", "source": "404media.co", "date": "2026-05-15", "reason": "Covered in 2026-05-17 bulletin"},
+    {"title": "Musk v. Altman jury deliberations begin", "source": "cnbc.com", "date": "2026-05-14", "reason": "Covered in 2026-05-17 bulletin; no verdict yet as of May 18"},
+    {"title": "Anthropic Claude for Small Business", "source": "anthropic.com", "date": "2026-05-13", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Notion Developer Platform 3.5", "source": "notion.com", "date": "2026-05-13", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Amazon Alexa for Shopping", "source": "aboutamazon.com", "date": "2026-05-13", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Cerebras Systems Nasdaq IPO", "source": "cnbc.com", "date": "2026-05-14", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Recursive Superintelligence $650M funding", "source": "tech.eu", "date": "2026-05-13", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Anthropic PwC partnership expansion", "source": "anthropic.com", "date": "2026-05-14", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Anthropic Gates Foundation $200M partnership", "source": "anthropic.com", "date": "2026-05-14", "reason": "Covered in 2026-05-16 bulletin"},
+    {"title": "Anthropic Claude for Legal (20+ MCP connectors, 12 plugins)", "source": "lawnext.com", "date": "2026-05-12", "reason": "Outside expanded 5-day window (May 12 < May 13)"},
+    {"title": "Anthropic Claude Platform on AWS GA", "source": "aws.amazon.com", "date": "2026-05-11", "reason": "Outside expanded 5-day window"},
+    {"title": "WildClawBench: Real-World Long-Horizon Agent Benchmark", "source": "arxiv.org/abs/2605.10912", "date": "2026-05-11", "reason": "Outside expanded 5-day window; 374 HF likes noted for future monitoring"},
+    {"title": "Microsoft DELEGATE-52 / LLMs Corrupt Your Documents When You Delegate", "source": "arxiv.org/abs/2604.15597", "date": "2026-04", "reason": "Outside window; The Register coverage May 11 also outside expanded window"},
+    {"title": "Google Gemini Omni UI string leak", "source": "sources.news", "date": "2026-05-02", "reason": "UI string only, no product launch; Google I/O (May 19-20) expected primary announcement"},
+    {"title": "OpenAI Codex File Library expansion to Free/Go users", "source": "openai.com", "date": "2026-05-14", "reason": "Incremental feature expansion; no new capability threshold"},
+    {"title": "OpenAI Codex Windows Sandbox implementation", "source": "openai.com", "date": "2026-05-14", "reason": "Security hardening detail; deferred to Codex mobile item as context"}
+  ],
+  "limitations": [
+    "Strict 72h window (May 15-18) yielded zero new uncovered items; expanded to 5 days (May 13-18)",
+    "openai.com primary URLs returned HTTP 403; two items rated secondary",
+    "No Google I/O announcements (event May 19-20, outside window)",
+    "No new frontier model release in window",
+    "mcp-ecosystem: no individual MCP server launch met significance bar",
+    "agent-framework: no new standalone framework release in window",
+    "workflow-automation: no new end-user autonomous agent product in window",
+    "research-papers: WildClawBench and DELEGATE-52 outside expanded window",
+    "SEA/Indonesia coverage: no in-window primary announcements",
+    "Musk trial verdict: deliberations began May 18, no verdict yet"
+  ],
+  "sources_accessed": [
+    "about.fb.com",
+    "blog.whatsapp.com",
+    "techcrunch.com",
+    "malwarebytes.com",
+    "techtimes.com",
+    "ghacks.net",
+    "openai.com (blocked 403)",
+    "resultsense.com",
+    "decrypt.co",
+    "macrumors.com",
+    "testingcatalog.com",
+    "gadgetbridge.com",
+    "sdtimes.com",
+    "thenewstack.io",
+    "hubspot.com",
+    "ppc.land",
+    "github.com/anthropics/claude-code",
+    "huggingface.co/papers"
+  ],
+  "exploration_searches": [
+    "Open-ended discovery: AI announcement launch May 18 2026; AI news May 16-18 2026; AI startup launch product May 17-18",
+    "GitHub trending: GitHub trending AI agent OR LLM OR MCP week May 2026",
+    "Social/X: site:x.com AI agent OR MCP server; site:x.com @MetaAI OR @WhatsApp incognito chat",
+    "HN Algolia: two API queries (both returned 0 hits for date range)",
+    "Hugging Face Daily Papers: fetch huggingface.co/papers",
+    "Indonesian/SEA: AI Indonesia startup AI Asia Tenggara Mei 2026",
+    "Adversarial: OpenAI safety summaries criticism; OpenAI Codex mobile criticism",
+    "Non-registry discovery: HubSpot AEO Sensor; Meta Incognito Chat",
+    "Cross-reference diffusion tracking: ghacks.net Meta article May 17 confirmed in-window diffusion"
+  ]
+}
