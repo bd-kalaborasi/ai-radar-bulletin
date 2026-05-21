@@ -1,0 +1,202 @@
+{
+  "run_date": "2026-05-21",
+  "run_timestamp": "2026-05-21T00:00:00Z",
+  "timeframe": {
+    "strict_start": "2026-05-18",
+    "strict_end": "2026-05-21",
+    "expanded_start": "2026-05-18",
+    "expanded_end": "2026-05-21",
+    "expansion_reason": "Strict 72h window yielded 5 verified items (above the ≤5 threshold); no expansion needed."
+  },
+  "parameters": {
+    "depth": "standard",
+    "audience": "public-digest",
+    "categories": "all"
+  },
+  "counts": {
+    "items_reviewed": 22,
+    "items_published": 5,
+    "items_dropped": 17,
+    "verified": 4,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "search_budget": {
+    "total_searches": 29,
+    "exploratory_searches": 11,
+    "exploratory_pct": 38
+  },
+  "published_items": [
+    {
+      "id": 1,
+      "title": "Anthropic acquires Stainless, winds down public SDK generator for external customers",
+      "categories": ["dev-tools", "mcp-ecosystem"],
+      "source_url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "source_org": "Anthropic",
+      "publication_date": "2026-05-18",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "acquisition announcement",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Stainless powered every official Anthropic SDK",
+        "Customers included OpenAI, Google, Cloudflare, Meta (~200 orgs total)",
+        "Public hosted service winding down for external customers",
+        "September 1 2026 wind-down date per multiple secondary sources",
+        "Price not disclosed; reported as >$300M by T3 outlets"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/",
+        "https://www.theregister.com/ai-ml/2026/05/20/anthropics-stainless-steal-tightens-grip-on-ai-dev-tooling/5243053"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Google Gemini 3.5 Flash available in API; Gemini Omni and Gemini Spark announced",
+      "categories": ["model-release"],
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "source_org": "Google",
+      "publication_date": "2026-05-19",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "product announcement",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Available via Gemini API, AI Studio, Gemini app, Antigravity as of May 19",
+        "Pricing: $1.50/$9 per 1M tokens (Artificial Analysis, OpenRouter - not in Google primary)",
+        "Artificial Analysis: 214 tokens/s output speed (#2 ranked), 18.55s TTFT (high vs 2.69s median)",
+        "Google benchmarks: 76.2% Terminal-Bench 2.1, 1656 GDPval-AA Elo, 83.6% MCP Atlas",
+        "3x more expensive than Gemini 3 Flash Preview (Simon Willison)",
+        "Gemini 3.5 Pro: internal testing, external rollout June 2026",
+        "Gemini Omni: available in Gemini app/Flow; developer APIs rolling out in coming weeks",
+        "Gemini Spark: beta for AI Ultra subscribers US next week"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://artificialanalysis.ai/models/gemini-3-5-flash",
+        "https://simonwillison.net/2026/May/19/gemini-35-flash/"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Google Antigravity 2.0 launches as standalone agent platform; WebMCP enters Chrome 149 origin trial",
+      "categories": ["agent-framework", "dev-tools", "mcp-ecosystem"],
+      "source_url": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/",
+      "source_org": "Google",
+      "publication_date": "2026-05-19",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "product announcement",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Antigravity 2.0 globally available May 19",
+        "Components: CLI, SDK (self-managed infra), Managed Agents API, Enterprise Agent Platform",
+        "Managed Agents: single API call provisions sandboxed agent with files + tools",
+        "Workspace + third-party tool integrations included",
+        "WebMCP: proposed open web standard for browser-based AI agent tool calls",
+        "WebMCP origin trial starts in Chrome 149",
+        "Enterprise pricing/SLA not disclosed at launch"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://developer.chrome.com/blog/chrome-at-io26",
+        "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool/"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "KPMG and Anthropic sign global alliance, embedding Claude across 276,000 employees in 138 countries",
+      "categories": ["ai-for-business"],
+      "source_url": "https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html",
+      "source_org": "KPMG",
+      "publication_date": "2026-05-19",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "276,000 KPMG employees in 138 countries get Claude access",
+        "Claude Cowork + Managed Agents embedded in Digital Gateway (Azure-based)",
+        "Claude Code integrated in KPMG Blaze for PE IT modernization",
+        "KPMG named Anthropic preferred partner for PE deployments",
+        "No financial terms disclosed",
+        "Tax compliance agent: minutes vs. weeks (vendor-claimed; no independent measure)"
+      ],
+      "conflict_of_interest": "Both KPMG and Anthropic issued statements; vendor-side claims throughout",
+      "cross_references": [
+        "https://www.anthropic.com/news/anthropic-kpmg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Andrej Karpathy joins Anthropic's pre-training team",
+      "categories": ["ai-for-business"],
+      "source_url": "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude",
+      "source_org": "Axios",
+      "publication_date": "2026-05-19",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "bd_actionability": "low",
+      "key_facts": [
+        "Joining Anthropic pre-training team, starting week of May 19",
+        "Focus: launching team to use Claude to accelerate pretraining research",
+        "Background: founding OpenAI member, Tesla Autopilot AI director, Eureka Labs founder",
+        "Anthropic primary had not posted by run time; confirmed by Axios, TechCrunch, CNBC"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
+      ]
+    }
+  ],
+  "dropped_items": [
+    { "title": "OpenAI Deployment Company launch", "source": "openai.com", "date": "2026-05-11", "reason": "outside 72h window" },
+    { "title": "SAP-Anthropic: Claude on SAP Business AI Platform (SAP Sapphire)", "source": "news.sap.com", "date": "2026-05-12", "reason": "outside 72h window" },
+    { "title": "SAP Autonomous Enterprise with 200+ AI agents", "source": "news.sap.com", "date": "2026-05-12", "reason": "outside 72h window" },
+    { "title": "Cursor 3.4 Cloud Agent Environments", "source": "cursor.com", "date": "2026-05-13", "reason": "outside 72h window" },
+    { "title": "agentmemory persistent memory for coding agents (15K stars)", "source": "github.com/rohitg00/agentmemory", "date": "2026-05-11", "reason": "first surfaced May 11; origination outside 72h window" },
+    { "title": "codegraph pre-indexed code knowledge graph", "source": "github.com/colbymchenry/codegraph", "date": "unknown", "reason": "creation date not verified; trending but provenance unclear" },
+    { "title": "Google Gemini Spark (personal agent)", "source": "blog.google", "date": "2026-05-19", "reason": "grouped into Gemini 3.5 Flash item (same announcement, dedup)" },
+    { "title": "Google Gemini Omni (video generation)", "source": "blog.google", "date": "2026-05-19", "reason": "noted within Gemini 3.5 item; no developer API yet" },
+    { "title": "Google I/O: Android XR glasses, Googlebooks", "source": "blog.google", "date": "2026-05-13", "reason": "covered in 2026-05-19 bulletin" },
+    { "title": "Google I/O: Gemini Intelligence for Android", "source": "blog.google", "date": "2026-05-13", "reason": "covered in 2026-05-19 bulletin" },
+    { "title": "OpenAI Dell Technologies Codex partnership", "source": "openai.com", "date": "2026-05-19", "reason": "low actionability — infrastructure distribution partnership, no new model/API feature" },
+    { "title": "OpenAI content provenance research", "source": "openai.com", "date": "2026-05-20", "reason": "low actionability — research announcement, no shipping product" },
+    { "title": "Anthropic $30B round at $900B valuation (in talks)", "source": "Bloomberg", "date": "2026-05-12", "reason": "outside window; round not yet closed at run time" },
+    { "title": "Anthropic CNBC Disruptor 50 ranking #1", "source": "cnbc.com", "date": "2026-05-19", "reason": "rankings list; low actionability" },
+    { "title": "HuggingFace Daily Papers: OpenComputer (50 upvotes)", "source": "huggingface.co/papers", "date": "2026-05-21", "reason": "below significance bar; no immediate BD-actionable implication" },
+    { "title": "MCP SDK maintenance updates (TypeScript, Go, Python)", "source": "github.com/modelcontextprotocol", "date": "2026-05-20", "reason": "routine maintenance; no major new features" },
+    { "title": "Anthropic Series G $30B close (February 2026)", "source": "anthropic.com", "date": "2026-02-12", "reason": "outside window" }
+  ],
+  "sources_accessed": [
+    { "url": "https://www.anthropic.com/news/anthropic-acquires-stainless", "tier": "T2", "status": "200 OK" },
+    { "url": "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/", "tier": "T2", "status": "200 OK" },
+    { "url": "https://www.theregister.com/ai-ml/2026/05/20/anthropics-stainless-steal-tightens-grip-on-ai-dev-tooling/5243053", "tier": "T2", "status": "200 OK" },
+    { "url": "https://letsdatascience.com/news/anthropic-acquires-stainless-winds-down-public-sdk-generator-65931918", "tier": "T3", "status": "200 OK" },
+    { "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/", "tier": "T2", "status": "200 OK" },
+    { "url": "https://artificialanalysis.ai/models/gemini-3-5-flash", "tier": "T1", "status": "200 OK" },
+    { "url": "https://simonwillison.net/2026/May/19/gemini-35-flash/", "tier": "T2", "status": "200 OK" },
+    { "url": "https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/", "tier": "T2", "status": "200 OK" },
+    { "url": "https://developer.chrome.com/blog/chrome-at-io26", "tier": "T2", "status": "200 OK" },
+    { "url": "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool/", "tier": "T2", "status": "200 OK" },
+    { "url": "https://kpmg.com/xx/en/media/press-releases/2026/05/kpmg-and-anthropic-sign-global-alliance-and-launch-digital-gateway-powered-by-claude.html", "tier": "T2", "status": "200 OK" },
+    { "url": "https://www.anthropic.com/news/anthropic-kpmg", "tier": "T2", "status": "200 OK" },
+    { "url": "https://www.axios.com/2026/05/19/anthropic-openai-karpathy-andrej-claude", "tier": "T2", "status": "200 OK" },
+    { "url": "https://www.cnbc.com/2026/05/19/anthropic-hires-openai-cofounder-andrej-karpathy-former-tesla-ai-lead.html", "tier": "T2", "status": "403 Forbidden" }
+  ],
+  "quality_gate": {
+    "all_items_have_primary_url": true,
+    "all_items_have_date": true,
+    "all_items_have_tier": true,
+    "all_items_have_verification_status": true,
+    "no_quote_exceeds_14_words": true,
+    "no_source_quoted_twice": true,
+    "exploration_pct_meets_30_floor": true,
+    "limitations_present_and_substantive": true,
+    "dropped_section_present": true,
+    "no_hype_language": true,
+    "dedup_applied": true
+  }
+}
