@@ -1,0 +1,243 @@
+{
+  "run_date": "2026-05-24",
+  "period_start": "2026-05-21",
+  "period_end": "2026-05-24",
+  "timeframe_hours": 72,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 22,
+  "items_published": 7,
+  "items_dropped": 15,
+  "exploration_pct": 37,
+  "searches_total": 35,
+  "searches_exploratory": 13,
+  "sources_count": 15,
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 4,
+    "rumor": 0
+  },
+  "categories_covered": ["dev-tools", "workflow-automation", "productivity-ai", "ai-for-business", "policy-regulation"],
+  "categories_empty_this_run": ["model-release", "agent-framework", "mcp-ecosystem", "research-papers"],
+  "window_expansion_applied": false,
+  "items": [
+    {
+      "id": "codex-goal-mode-ga",
+      "title": "OpenAI Codex Goal Mode reaches general availability across app, IDE, and CLI",
+      "primary_url": "https://developers.openai.com/codex/changelog",
+      "publisher": "OpenAI",
+      "date": "2026-05-21",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "category": ["dev-tools", "workflow-automation"],
+      "bd_actionability": "high",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Goal Mode available in app, VS Code/JetBrains extension, CLI",
+          "source_url": "https://developers.openai.com/codex/changelog",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Appshots: both Command keys attaches foreground app window",
+          "source_url": "https://developers.openai.com/codex/changelog",
+          "type": "descriptive"
+        }
+      ],
+      "caveats": []
+    },
+    {
+      "id": "walmart-sparky-q1-2026",
+      "title": "Walmart Sparky Q1 2026: weekly active users double, average order value 35% higher",
+      "primary_url": "https://www.digitalcommerce360.com/2026/05/22/walmart-sparky-agent-ai-sales-supply-chain/",
+      "publisher": "Digital Commerce 360 (citing Walmart Q1 FY2026 earnings call)",
+      "date": "2026-05-22",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "earnings call report",
+      "category": ["workflow-automation", "ai-for-business"],
+      "bd_actionability": "high",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Weekly active users more than doubled QoQ",
+          "source_url": "https://www.digitalcommerce360.com/2026/05/22/walmart-sparky-agent-ai-sales-supply-chain/",
+          "type": "quantitative"
+        },
+        {
+          "claim": "Sparky users have ~35% higher average order value than non-users",
+          "source_url": "https://www.digitalcommerce360.com/2026/05/22/walmart-sparky-agent-ai-sales-supply-chain/",
+          "type": "quantitative",
+          "caveat": "self-reported, no attribution methodology disclosed"
+        }
+      ],
+      "caveats": ["Self-reported earnings call metrics; no independent attribution study; selection bias likely present"]
+    },
+    {
+      "id": "salesforce-agentforce-coworker",
+      "title": "Salesforce Agentforce Coworker launches in beta inside every Salesforce search bar",
+      "primary_url": "https://developer.salesforce.com/docs/data/agentforce-coworker/guide/agentforce-coworker-turn-on-infrastructure.html",
+      "publisher": "Salesforce",
+      "date": "2026-05-21",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "category": ["workflow-automation", "productivity-ai"],
+      "bd_actionability": "high",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Available for Agentforce Enterprise, Unlimited, Agentforce 1 editions",
+          "source_url": "https://www.salesforceben.com/salesforce-announces-agentforce-coworker-ai-in-every-search-bar/",
+          "type": "descriptive"
+        }
+      ],
+      "caveats": ["Beta; no pricing disclosed; Salesforce primary press release URL redirected"]
+    },
+    {
+      "id": "gemini-creative-integrations",
+      "title": "Gemini gains Canva integration (live now), CapCut and Adobe partnerships announced",
+      "primary_url": "https://9to5google.com/2026/05/21/capcut-announces-partnership-with-gemini-app/",
+      "publisher": "9to5Google",
+      "date": "2026-05-21",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "category": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Canva Connected App live since 19 May, limited English markets, all plans",
+          "source_url": "https://9to5google.com/2026/05/21/capcut-announces-partnership-with-gemini-app/",
+          "type": "descriptive"
+        },
+        {
+          "claim": "CapCut partnership confirmed, no launch date",
+          "source_url": "https://9to5google.com/2026/05/21/capcut-announces-partnership-with-gemini-app/",
+          "type": "descriptive"
+        }
+      ],
+      "caveats": ["Only Canva is live; CapCut and Adobe have no scheduled release dates; Canva limited to English-speaking markets"]
+    },
+    {
+      "id": "elevenreader-200k-titles",
+      "title": "ElevenReader secures 200,000 human-narrated titles at $11/month",
+      "primary_url": "https://www.techtimes.com/articles/317030/20260522/elevenreader-lands-200000-human-narrated-titles-11-subscription-takes-aim-audible.htm",
+      "publisher": "TechTimes",
+      "date": "2026-05-22",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "category": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "200,000 human-narrated titles licensed from major publishing houses",
+          "source_url": "https://www.techtimes.com/articles/317030/20260522/elevenreader-lands-200000-human-narrated-titles-11-subscription-takes-aim-audible.htm",
+          "type": "quantitative",
+          "caveat": "publisher names not disclosed"
+        },
+        {
+          "claim": "$11/month subscription on iOS and Android",
+          "source_url": "https://www.techtimes.com/articles/317030/20260522/elevenreader-lands-200000-human-narrated-titles-11-subscription-takes-aim-audible.htm",
+          "type": "quantitative"
+        }
+      ],
+      "caveats": ["Publisher names not disclosed; catalog rollout date unspecified"]
+    },
+    {
+      "id": "teampcp-supply-chain-attack",
+      "title": "TeamPCP supply chain worm hits GitHub internals and AI company SDKs",
+      "primary_url": "https://therecord.media/github-confirms-teampcp-hack-customers-unaffected",
+      "publisher": "The Record from Recorded Future News",
+      "date": "2026-05-20",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "security incident report",
+      "category": ["dev-tools", "policy-regulation"],
+      "bd_actionability": "medium",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "~3,800 internal GitHub repos exfiltrated via Nx Console v18.95.0",
+          "source_url": "https://therecord.media/github-confirms-teampcp-hack-customers-unaffected",
+          "type": "quantitative"
+        },
+        {
+          "claim": "CVE-2026-45321, CVSS 9.6 — TanStack CI/CD exploitation",
+          "source_url": "https://www.tenable.com/blog/mini-shai-hulud-frequently-asked-questions",
+          "type": "descriptive"
+        },
+        {
+          "claim": "170+ npm packages affected by worm propagation",
+          "source_url": "https://phoenix.security/teampcp-github-breach-durabletask-pypi-supply-chain-wave-four-2026/",
+          "type": "quantitative"
+        }
+      ],
+      "caveats": ["GitHub investigation ongoing; customer data impact may be updated; OpenAI scope still being characterized"]
+    },
+    {
+      "id": "openai-ipo-filing",
+      "title": "OpenAI files confidential IPO prospectus with SEC, targets September listing",
+      "primary_url": "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html",
+      "publisher": "CNBC",
+      "date": "2026-05-22",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "financial announcement",
+      "category": ["ai-for-business"],
+      "bd_actionability": "low",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "S-1 filed 22 May 2026 with Goldman Sachs and Morgan Stanley",
+          "source_url": "https://fortune.com/2026/05/22/openai-ipo-filing-1-trillion-may-finally-answer-these-big-questions/",
+          "type": "descriptive"
+        },
+        {
+          "claim": "Target valuation $852B–$1T",
+          "source_url": "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html",
+          "type": "quantitative"
+        },
+        {
+          "claim": "Q1 2026 operating margin -122% on $5.7B revenue",
+          "source_url": "https://seekingalpha.com/news/4572572-openai-sees-internal-divide-over-ipo-timing-as-spending-risks-mount-report",
+          "type": "quantitative",
+          "caveat": "from reporting; actual prospectus not yet public"
+        }
+      ],
+      "caveats": ["Confidential S-1 not yet public; all financials from reporting, not prospectus; CFO dissent sourced from reporting not public statement"]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Anthropic MCP Tunnels + self-hosted sandboxes", "date": "2026-05-19", "reason": "Outside window; covered in 2026-05-22 bulletin"},
+    {"title": "Google I/O: Gemini 3.5 Flash / Antigravity 2.0", "date": "2026-05-19", "reason": "Outside window; covered in prior bulletins"},
+    {"title": "WebMCP Chrome 149 origin trial", "date": "2026-05-19", "reason": "Outside window; covered in 2026-05-23 bulletin"},
+    {"title": "Gemini Spark personal agent US beta", "date": "2026-05-19", "reason": "Outside window; covered in 2026-05-23 bulletin"},
+    {"title": "OpenAI Erdos geometry conjecture", "date": "2026-05-20", "reason": "Outside window; covered in 2026-05-23 bulletin"},
+    {"title": "OpenAI C2PA + SynthID watermarking", "date": "2026-05-19", "reason": "Outside window; covered in 2026-05-23 bulletin"},
+    {"title": "Anthropic Project Glasswing initial update", "date": "2026-05-22", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Hark $700M Series A at $6B valuation", "date": "2026-05-21", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Andrej Karpathy joins Anthropic", "date": "2026-05-19", "reason": "Outside window; covered in 2026-05-23 bulletin"},
+    {"title": "Grok connectors: Vercel, Canva, Gamma, S&P Global", "date": "2026-05-22", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "MCP Release Candidate 2026-07-28", "date": "2026-05-21", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Intuit 3,000 layoffs for AI refocus", "date": "2026-05-20", "reason": "Borderline outside window; corporate restructuring, low BD-actionability"},
+    {"title": "Anthropic / Gates Foundation $200M partnership", "date": "2026-05-14", "reason": "Outside window"},
+    {"title": "Spotify / ElevenLabs audiobook creation tool for authors", "date": "2026-05-21", "reason": "Merged into ElevenReader item as cross-reference; beta launches June 2026"},
+    {"title": "Jack Clark Oxford AI risk predictions", "date": "2026-05-22", "reason": "Speculative predictions; no verifiable product claim"}
+  ],
+  "limitations": [
+    "openai.com/news returned 403; OpenAI items confirmed via CNBC and Codex changelog",
+    "Salesforce primary press release URL redirected; confirmed via developer docs and CEO announcement",
+    "X/LinkedIn/Discord not accessed directly; key handles checked via search-indexed posts",
+    "SEA/Indonesia search yielded no in-window AI product launches",
+    "Window overlap with 2026-05-22 and 2026-05-23 bulletins: Google I/O items and prior May 22 items excluded to avoid duplication",
+    "No new model releases in window; model-release category empty",
+    "No new MCP servers found beyond prior bulletins; mcp-ecosystem category empty",
+    "Walmart 35% AOV figure self-reported with no methodology disclosure; selection bias likely",
+    "TeamPCP investigation still ongoing at time of publication"
+  ]
+}
