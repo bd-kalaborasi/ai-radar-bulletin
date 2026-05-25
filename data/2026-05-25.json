@@ -1,0 +1,259 @@
+{
+  "run_date": "2026-05-25",
+  "pipeline_version": "ai-radar-skill-v1",
+  "parameters": {
+    "timeframe": "5-day expanded (strict 72h yielded ≤3 uncovered items)",
+    "period_start": "2026-05-20",
+    "period_end": "2026-05-25",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "summary": {
+    "items_reviewed": 28,
+    "items_published": 5,
+    "items_dropped": 23,
+    "verification": {
+      "verified": 2,
+      "secondary": 3,
+      "rumor": 0
+    },
+    "sources_count": 12,
+    "exploration_pct": 45,
+    "window_expansion_reason": "Strict 72h window (May 22-25) held ≤3 items not already covered by bulletins on May 22, 23, and 24. Expanded to 5 days per standard rule."
+  },
+  "items_published": [
+    {
+      "title": "Intuit cuts 3,000 jobs, redirects budget to AI agent development for QuickBooks and TurboTax",
+      "date": "2026-05-20",
+      "source_url": "https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/",
+      "source_publisher": "TechCrunch",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "category": "ai-for-business",
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "3,000 roles eliminated, approximately 17% of 18,200-person workforce",
+          "source": "TechCrunch citing Intuit CEO memo"
+        },
+        {
+          "claim": "US severance: 16 weeks base pay + 2 weeks per year of service",
+          "source": "TechCrunch"
+        },
+        {
+          "claim": "US effective date: July 31, 2026",
+          "source": "TechCrunch"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.cfodive.com/news/intuit-slash-workforce-layoffs-labor-generativeai/821040/",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": null
+    },
+    {
+      "title": "Alibaba ships Qwen 3.7 Max in preview: 1M-token agentic model, API on OpenRouter from May 21",
+      "date": "2026-05-20",
+      "source_url": "https://technode.com/2026/05/21/alibaba-introduces-qwen3-7-max-as-next-gen-ai-agent-model/",
+      "source_publisher": "TechNode",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "category": "model-release",
+      "bd_actionability": "medium",
+      "tier_nuance": "qwen.ai primary returned no content; confirmed via TechNode and OpenRouter. Benchmark claims vendor-stated.",
+      "key_claims": [
+        {
+          "claim": "1M-token context window",
+          "source": "vendor-claimed via TechNode (T3)"
+        },
+        {
+          "claim": "OpenRouter: $2.50 input / $7.50 output per 1M tokens",
+          "source": "https://openrouter.ai/qwen/qwen3.7-max (T2)"
+        },
+        {
+          "claim": "35-hour autonomous kernel optimization run, ~10x speedup claimed",
+          "source": "vendor-claimed, no independent replication"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://openrouter.ai/qwen/qwen3.7-max",
+          "tier": "T2",
+          "role": "corroborating — pricing and availability"
+        },
+        {
+          "url": "https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Preview only (-Preview suffix). No open-weight version. Benchmark claims vendor-run on Alibaba's own chip hardware."
+    },
+    {
+      "title": "Anthropic tells investors it projects $10.9B Q2 revenue and first operating profit of $559M",
+      "date": "2026-05-20",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-20/anthropic-on-pace-for-first-profitable-quarter-as-revenue-surges",
+      "source_publisher": "Bloomberg",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "financial disclosure via reporting",
+      "category": "ai-for-business",
+      "bd_actionability": "medium",
+      "tier_nuance": "Investor disclosure during fundraising, not a public Anthropic announcement. No company primary source exists.",
+      "key_claims": [
+        {
+          "claim": "Q2 2026 projected revenue: ~$10.9B",
+          "source": "Bloomberg and CNBC citing investor disclosure (T3)"
+        },
+        {
+          "claim": "Q1 2026 actual revenue: $4.8B",
+          "source": "Bloomberg/CNBC (T3)"
+        },
+        {
+          "claim": "Q2 projected operating profit: $559M",
+          "source": "Digitimes citing investor materials (T3)"
+        },
+        {
+          "claim": "Claude Code annualized revenue >$1B within 6 months of launch",
+          "source": "investor disclosure via trade reporting (T3)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Investor-disclosed projections during fundraising have documented optimism bias. No Anthropic primary source. Profitability not expected Q3-Q4 2026."
+    },
+    {
+      "title": "Trump postpones AI executive order after tech industry pressure, policy future uncertain",
+      "date": "2026-05-21",
+      "source_url": "https://www.cnbc.com/2026/05/21/trump-ai-executive-order-postponed.html",
+      "source_publisher": "CNBC",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "policy announcement",
+      "category": "policy-regulation",
+      "bd_actionability": "low",
+      "tier_nuance": "Draft order contents from press reporting on unpublished document. Trump statement is T2; draft framework details are T2-T3.",
+      "key_claims": [
+        {
+          "claim": "90-day NSA-involved pre-launch review framework in draft",
+          "source": "Axios citing draft document (T2-T3)"
+        },
+        {
+          "claim": "Trump stated he was concerned the order could have been a blocker",
+          "source": "CNBC direct quote (T2)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.axios.com/2026/05/22/ai-executive-order-cancelled-white-house",
+          "tier": "T2",
+          "role": "corroborating — draft document detail"
+        },
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/05/21/white-house-tore-down-ai-rules-now-its-building-new-defenses/",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Draft order not publicly released. Full text not available. No revised timeline announced."
+    },
+    {
+      "title": "Pope Leo XIV publishes Magnifica Humanitas, the first papal encyclical on artificial intelligence",
+      "date": "2026-05-25",
+      "source_url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
+      "source_publisher": "Vatican News",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "institutional announcement",
+      "category": "policy-regulation",
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "Encyclical signed May 15, published May 25, 2026",
+          "source": "Vatican News (T2)"
+        },
+        {
+          "claim": "Presented by Pope Leo XIV alongside Christopher Olah (Anthropic co-founder)",
+          "source": "National Catholic Reporter (T2)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.ncronline.org/vatican/vatican-news/pope-leo-present-his-encyclical-ai-alongside-anthropic-co-founder",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.americamagazine.org/vatican-dispatch/2026/05/18/pope-leo-encyclical-artifical-intelligence-anthropic/",
+          "tier": "T2",
+          "role": "corroborating — theological framing"
+        }
+      ],
+      "caveats": null
+    }
+  ],
+  "items_dropped": [
+    {"title": "Gemini 3.5 Flash + Antigravity 2.0", "date": "2026-05-19", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "MCP Release Candidate 2026-07-28", "date": "2026-05-21", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Gemini Spark US beta", "date": "2026-05-19", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "WebMCP Chrome 149 origin trial", "date": "2026-05-19", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "OpenAI Erdős geometry conjecture", "date": "2026-05-20", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Anthropic Project Glasswing 10,000+ bugs", "date": "2026-05-22", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Andrej Karpathy joins Anthropic", "date": "2026-05-19", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Hark $700M Series A at $6B valuation", "date": "2026-05-21", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Grok connectors: Vercel, Canva, Gamma, S&P Global", "date": "2026-05-22", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "OpenAI C2PA + SynthID watermarking", "date": "2026-05-19", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "TeamPCP supply chain attack: GitHub, OpenAI, Mistral", "date": "2026-05-18", "reason": "Covered in 2026-05-24 bulletin"},
+    {"title": "OpenAI confidential IPO S-1 filing", "date": "2026-05-22", "reason": "Covered in 2026-05-24 bulletin"},
+    {"title": "Walmart Sparky Q1: WAUs doubled, 35% AOV lift", "date": "2026-05-22", "reason": "Covered in 2026-05-24 bulletin"},
+    {"title": "Salesforce Agentforce Coworker beta", "date": "2026-05-21", "reason": "Covered in 2026-05-24 bulletin"},
+    {"title": "OpenAI Codex Goal Mode GA", "date": "2026-05-21", "reason": "Covered in 2026-05-24 bulletin"},
+    {"title": "ElevenReader 200K audiobooks at $11/month", "date": "2026-05-22", "reason": "Covered in 2026-05-24 bulletin"},
+    {"title": "Google Gemini + Canva/CapCut/Adobe integrations", "date": "2026-05-19", "reason": "Covered in 2026-05-24 bulletin"},
+    {"title": "Jack Clark Oxford AI self-improvement forecasts", "date": "2026-05-22", "reason": "Speculative forward-looking predictions; no verifiable product claim"},
+    {"title": "Meta workforce reduction (~8,000)", "date": "2026-05-20", "reason": "Corporate workforce news; AI product coverage out of scope"},
+    {"title": "OpenAI macOS code-signing certificate revocation", "date": "2026-05-22", "reason": "Follow-up to TeamPCP item; covered in 2026-05-24 bulletin context"},
+    {"title": "Gemini 3 series / Gemini Omni", "date": "2026-05-19", "reason": "Covered in 2026-05-23 bulletin"},
+    {"title": "Anthropic KPMG alliance (276,000 employees)", "date": "2026-05-19", "reason": "Outside expanded window; covered in prior bulletin"},
+    {"title": "Samsung Android XR glasses fall 2026", "date": "2026-05-19", "reason": "Hardware announcement, outside AI-radar scope"}
+  ],
+  "limitations": {
+    "sources_unreachable": [
+      "vaticannews.va (403) — confirmed via National Catholic Reporter and America Magazine",
+      "qwen.ai blog (empty) — confirmed via TechNode and OpenRouter",
+      "openai.com news pages (403) — affected items carried from prior bulletin runs"
+    ],
+    "login_walled": "X timelines, LinkedIn, IG, Discord not directly accessed. Social posts checked via search-indexed results.",
+    "window_expansion": "Strict 72h window (May 22-25) held only 3 items not covered by prior bulletins; expanded to 5 days per standard rule.",
+    "sea_coverage": "One dedicated SEA/Indonesia search yielded no in-window AI product launches. Coverage is US/EU/China-heavy.",
+    "thin_categories": ["agent-framework", "dev-tools", "mcp-ecosystem", "workflow-automation", "productivity-ai"],
+    "secondary_items_upgrade_path": {
+      "Qwen 3.7 Max": "Independent benchmark evaluation; qwen.ai primary page access",
+      "Anthropic $10.9B projection": "Q2 actuals due after June 30, 2026; or public Anthropic financial announcement"
+    }
+  },
+  "search_log": {
+    "total_searches": 28,
+    "exploratory_searches": 13,
+    "exploratory_pct": 46,
+    "primary_fetches_attempted": 9,
+    "primary_fetches_successful": 6,
+    "primary_fetches_blocked": 3
+  }
+}
