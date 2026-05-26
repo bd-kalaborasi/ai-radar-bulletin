@@ -1,0 +1,233 @@
+{
+  "run": {
+    "date": "2026-05-26",
+    "timestamp": "2026-05-26T00:00:00Z",
+    "timeframe": "2026-05-21 to 2026-05-26 (5-day expanded; strict 72h yielded ≤2 items)",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest",
+    "window_expanded": true,
+    "window_expansion_reason": "Strict 72h window (May 23–26) held 2 items not yet covered by prior bulletins; expanded to 5 days (May 21–26) per standard expansion rule",
+    "items_reviewed": 22,
+    "items_published": 3,
+    "items_dropped": 19,
+    "searches_total": 44,
+    "searches_exploratory": 20,
+    "exploration_pct": 45,
+    "sources_count": 10
+  },
+  "verification_summary": {
+    "verified": 2,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "published_items": [
+    {
+      "id": 1,
+      "title": "Gemini Interactions API new schema becomes default for all REST calls on May 26",
+      "source_url": "https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026",
+      "publisher": "Google AI for Developers",
+      "date": "2026-05-26",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "category": "dev-tools",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "New schema (steps array) becomes default for all REST API calls on May 26, 2026",
+          "source": "https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026",
+          "tier": "T2"
+        },
+        {
+          "claim": "Legacy schema permanently removed June 8, 2026",
+          "source": "https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/interactions",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://byteiota.com/gemini-interactions-api-migrate-before-june-8/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": null,
+      "bd_actionability": "high"
+    },
+    {
+      "id": 2,
+      "title": "Claude Code 2.1.149 closes two security gaps, ships 20+ fixes",
+      "source_url": "https://github.com/anthropics/claude-code/releases",
+      "publisher": "Anthropic / GitHub",
+      "date": "2026-05-22",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "category": "dev-tools",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Release date: May 22, 2026",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "Two security patches in this release: PowerShell permission bypass and git worktree sandbox allowlist gap",
+          "source": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": null,
+      "bd_actionability": "high"
+    },
+    {
+      "id": 3,
+      "title": "Anthropic $30B funding round at $900B+ valuation expected to close this week",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-close-over-30-billion-194250599.html",
+      "publisher": "Yahoo Finance (reporting Bloomberg, 2026-05-22)",
+      "date": "2026-05-22",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "financial reporting",
+      "category": "ai-for-business",
+      "conflict_of_interest": null,
+      "tier_nuance": "Bloomberg original paywalled; no Anthropic primary source. Multiple outlets confirm independently. T3 secondary until Anthropic publishes announcement.",
+      "key_claims": [
+        {
+          "claim": "Round size: $30B+",
+          "source": "Bloomberg (T3, paywalled), confirmed independently by Yahoo Finance and Business Standard",
+          "tier": "T3"
+        },
+        {
+          "claim": "Pre-money valuation: $900B+",
+          "source": "Multiple outlets, consistent across sourcing",
+          "tier": "T3"
+        },
+        {
+          "claim": "Co-leads at ~$2B each: Sequoia, Dragoneer, Altimeter, Greenoaks",
+          "source": "Bloomberg via trade reporting",
+          "tier": "T3"
+        },
+        {
+          "claim": "Prior Anthropic round: $30B at $380B valuation, February 12, 2026",
+          "source": "https://www.cnbc.com/2026/02/12/anthropic-closes-30-billion-funding-round-at-380-billion-valuation.html",
+          "tier": "T2"
+        },
+        {
+          "claim": "OpenAI March 2026 valuation for comparison: $852B",
+          "source": "Multiple outlets",
+          "tier": "T3"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week",
+          "tier": "T3",
+          "role": "original report (paywalled)"
+        },
+        {
+          "url": "https://www.business-standard.com/world-news/anthropic-set-to-close-over-30-billion-round-as-soon-as-next-week-126052300112_1.html",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.techtimes.com/articles/317066/20260523/anthropic-funding-round-top-30b-900b-valuation-would-surpass-openai-most-valuable-ai-startup.htm",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Round not yet confirmed by Anthropic primary source. Bloomberg reporting based on people familiar with the matter. Final valuation and size may differ.",
+      "bd_actionability": "medium"
+    }
+  ],
+  "dropped_items": [
+    { "title": "Claude Opus 4.7 GA", "source": "anthropic.com (2026-04-16)", "reason": "Outside window — April 16" },
+    { "title": "Claude for Small Business: 15 workflows across QuickBooks, HubSpot, Canva", "source": "anthropic.com (2026-05-13)", "reason": "Outside 5-day window" },
+    { "title": "Claude for Legal: 20+ connectors, 12 practice-area plugins", "source": "claude.com (2026-05-12)", "reason": "Outside 5-day window" },
+    { "title": "ChatGPT personal finance — bank account connect via Plaid", "source": "openai.com (2026-05-15)", "reason": "Outside 5-day window" },
+    { "title": "OpenAI Deployment Company ($4B raise, $10B pre-money, 19 partners)", "source": "openai.com (2026-05-11)", "reason": "Outside 5-day window" },
+    { "title": "Grok Build 0.1 coding model ($1/$2 per 1M tokens, 256K context)", "source": "x.ai (2026-05-14)", "reason": "Outside 5-day window" },
+    { "title": "Cursor 3.3: async subagents, redesigned PR workflow, Bugbot usage-based billing", "source": "cursor.com (2026-05-07)", "reason": "Outside 5-day window" },
+    { "title": "Camunda ProcessOS closed beta — agentic OS for business processes", "source": "businesswire.com (2026-05-20)", "reason": "Outside 5-day window" },
+    { "title": "Snowflake AI Pulse May 2026: Cortex agents, Microsoft Copilot Studio MCP integration", "source": "snowflake.com (2026-05-19)", "reason": "Outside 5-day window" },
+    { "title": "Terminal-Bench Science benchmark — open for scientific workflow task contributions", "source": "tbench.ai (2026-05-20)", "reason": "Outside 5-day window" },
+    { "title": "Parallel Web Systems $100M Series B at $2B valuation (Parag Agrawal, Sequoia)", "source": "siliconangle.com (2026-04-28)", "reason": "Outside window — April 28" },
+    { "title": "xAI Grok Voice Think Fast 1.0 voice agent API ($0.05/min, 25+ languages)", "source": "x.ai (2026-04-23)", "reason": "Outside window — April 23" },
+    { "title": "NVIDIA Agent Toolkit launch with 17 enterprise partners (Adobe, SAP, Salesforce)", "source": "nvidianews.nvidia.com", "reason": "Date unclear; GTC 2026 — likely pre-window" },
+    { "title": "Gemini 3 Deep Think upgrade — API access for select researchers", "source": "blog.google (2026-05-19)", "reason": "Covered in 2026-05-23 bulletin as part of Google I/O" },
+    { "title": "Gemini 3.5 Flash 5-day independent eval (Intelligence Index #8, 61% hallucination rate)", "source": "digitalapplied.com (2026-05-24)", "reason": "Adversarial context for item covered in 2026-05-23 bulletin; not a new announcement" },
+    { "title": "Grok connectors: Vercel, Canva, Gamma, S&P Global", "source": "x.ai (2026-05-22)", "reason": "Covered in 2026-05-23 bulletin" },
+    { "title": "Anthropic Q2 revenue projection $10.9B, first operating profit $559M", "source": "bloomberg.com (2026-05-20)", "reason": "Covered in 2026-05-25 bulletin" },
+    { "title": "Pope Leo XIV Magnifica Humanitas AI encyclical", "source": "vaticannews.va (2026-05-25)", "reason": "Covered in 2026-05-25 bulletin" },
+    { "title": "SEA/Indonesia AI exploration", "source": "multiple searches", "reason": "No in-window AI product launches from region found" }
+  ],
+  "limitations": [
+    "Strict 72h window (May 23–26) held 2 items not yet covered by prior bulletins; window expanded to 5 days (May 21–26) per standard expansion rule",
+    "Bloomberg May 22 article on Anthropic funding round is paywalled; confirmed by multiple independent outlets",
+    "Anthropic funding round is expected close, not confirmed close — no Anthropic primary source as of this run",
+    "openai.com/news returned 403 throughout this run",
+    "workflow-automation, productivity-ai, agent-framework, mcp-ecosystem, model-release, research-papers, policy-regulation: no new items this window — all covered in prior bulletins",
+    "Gemini 3.5 Flash independent evaluations (May 24) weaken some Google I/O benchmark claims covered in May 23 bulletin",
+    "X timelines, Instagram, LinkedIn, Discord not accessed directly",
+    "SEA-region searches yielded no in-window items"
+  ],
+  "search_log": [
+    { "query": "Anthropic Claude AI announcement May 24 25 26 2026", "type": "registry", "results": 10, "high_relevance": 5 },
+    { "query": "OpenAI ChatGPT release announcement May 24 25 26 2026", "type": "registry", "results": 9, "high_relevance": 3 },
+    { "query": "Google DeepMind Gemini AI update May 24 25 26 2026", "type": "registry", "results": 8, "high_relevance": 4 },
+    { "query": "xAI Grok Meta Llama Mistral model release May 24 25 26 2026", "type": "registry", "results": 9, "high_relevance": 2 },
+    { "query": "MCP Model Context Protocol new server release May 2026", "type": "registry", "results": 9, "high_relevance": 2 },
+    { "query": "Claude Opus 4.7 release date announcement 2026", "type": "verification", "results": 8, "high_relevance": 5 },
+    { "query": "AI agent framework launch release May 24 25 26 2026", "type": "registry", "results": 10, "high_relevance": 3 },
+    { "query": "AI dev tools Cursor Claude Code update release May 2026", "type": "registry", "results": 9, "high_relevance": 3 },
+    { "query": "AI startup launch funding announcement May 24 25 26 2026", "type": "exploratory", "results": 10, "high_relevance": 3 },
+    { "query": "AI Indonesia OR startup AI Asia Tenggara OR model AI lokal May 2026", "type": "SEA-exploration", "results": 10, "high_relevance": 1 },
+    { "query": "Claude legal MCP connectors practice area plugins law firm May 2026", "type": "verification", "results": 9, "high_relevance": 5 },
+    { "query": "ChatGPT personal finance experience financial account connect May 2026", "type": "verification", "results": 8, "high_relevance": 6 },
+    { "query": "OpenAI Agents SDK update May 2026 release", "type": "registry", "results": 9, "high_relevance": 2 },
+    { "query": "Cursor 3.3 Bugbot release date changelog May 2026", "type": "registry", "results": 9, "high_relevance": 4 },
+    { "query": "AI news announcement May 25 26 2026 new product launch", "type": "exploratory", "results": 8, "high_relevance": 3 },
+    { "query": "new AI model tool release May 26 2026", "type": "exploratory", "results": 8, "high_relevance": 2 },
+    { "query": "Anthropic $30 billion fundraising round $900 billion valuation May 25 2026", "type": "exploratory", "results": 8, "high_relevance": 7 },
+    { "query": "Gemini API Interactions schema breaking change May 26 2026", "type": "registry", "results": 9, "high_relevance": 8 },
+    { "query": "Snowflake AI Pulse May 2026 product announcement details", "type": "exploratory", "results": 8, "high_relevance": 4 },
+    { "query": "GitHub Claude Code release update May 24 25 26 2026", "type": "registry", "results": 9, "high_relevance": 5 },
+    { "query": "AI announcement launched May 26 2026", "type": "exploratory", "results": 8, "high_relevance": 2 },
+    { "query": "site:github.com topic:mcp-server stars:100 created:2026-05", "type": "github-exploration", "results": 9, "high_relevance": 2 },
+    { "query": "Hugging Face Daily Papers May 24 25 2026 research", "type": "registry", "results": 8, "high_relevance": 2 },
+    { "query": "AI regulation policy news May 24 25 26 2026", "type": "registry", "results": 9, "high_relevance": 2 },
+    { "query": "OpenAI announcement May 25 26 2026 new feature product", "type": "registry", "results": 8, "high_relevance": 2 },
+    { "query": "NVIDIA AI agent development platform open launch May 2026", "type": "exploratory", "results": 8, "high_relevance": 3 },
+    { "query": "Camunda ProcessOS AI agentic business process May 2026 launch date", "type": "exploratory", "results": 9, "high_relevance": 5 },
+    { "query": "Anthropic $30 billion round close May 25 26 2026 announcement", "type": "adversarial", "results": 9, "high_relevance": 6 },
+    { "query": "NextEra Dominion merger AI data center power $67 billion May 2026", "type": "exploratory", "results": 9, "high_relevance": 7 },
+    { "query": "OpenRouter Chinese models 60% usage share May 2026", "type": "exploratory", "results": 9, "high_relevance": 3 },
+    { "query": "xAI grok-voice-think-fast release date May 2026 voice agent API", "type": "verification", "results": 8, "high_relevance": 5 },
+    { "query": "Anthropic ad-free commitment announcement date May 2026", "type": "adversarial", "results": 8, "high_relevance": 4 },
+    { "query": "AI news today May 26 2026 latest announcement", "type": "exploratory", "results": 8, "high_relevance": 2 },
+    { "query": "Google Gemini 3 Deep Think upgrade release date May 2026", "type": "registry", "results": 8, "high_relevance": 4 },
+    { "query": "AI benchmark criticism limitation problem May 24 25 26 2026", "type": "adversarial", "results": 7, "high_relevance": 2 },
+    { "query": "Gemini 3.5 Flash criticism benchmark independent evaluation May 2026", "type": "adversarial", "results": 9, "high_relevance": 5 },
+    { "query": "site:x.com AI agent OR model release May 25 26 2026", "type": "social-exploration", "results": 8, "high_relevance": 1 },
+    { "query": "Parallel Web Systems Parag Agrawal $100 million funding date May 2026", "type": "exploratory", "results": 8, "high_relevance": 5 },
+    { "query": "site:x.com AnthropicAI OR OpenAI OR GoogleDeepMind announcement May 25 26 2026", "type": "social-exploration", "results": 9, "high_relevance": 2 },
+    { "query": "Claude for Small Business announcement date May 2026", "type": "verification", "results": 9, "high_relevance": 6 },
+    { "query": "OpenAI Deployment Company launch announcement date May 2026", "type": "exploratory", "results": 8, "high_relevance": 5 },
+    { "query": "Terminal-Bench Science benchmark AI agents scientific workflows launch 2026", "type": "exploratory", "results": 7, "high_relevance": 5 },
+    { "query": "Anthropic funding round closed confirmed May 26 2026", "type": "adversarial", "results": 8, "high_relevance": 5 },
+    { "query": "Claude for Small Business announcement date May 2026", "type": "verification", "results": 9, "high_relevance": 6 }
+  ]
+}
