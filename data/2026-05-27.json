@@ -1,0 +1,447 @@
+{
+  "run": {
+    "date": "2026-05-27",
+    "timestamp": "2026-05-27T00:00:00Z",
+    "timeframe": "2026-05-24 to 2026-05-27 (strict 72h)",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest",
+    "window_expanded": false,
+    "window_expansion_reason": null,
+    "items_reviewed": 24,
+    "items_published": 7,
+    "items_dropped": 17,
+    "searches_total": 35,
+    "searches_exploratory": 12,
+    "exploration_pct": 35,
+    "sources_count": 17
+  },
+  "verification_summary": {
+    "verified": 2,
+    "secondary": 5,
+    "rumor": 0
+  },
+  "published_items": [
+    {
+      "id": 1,
+      "title": "OpenAI Codex CLI 0.134.0 adds conversation search and MCP OAuth",
+      "source_url": "https://github.com/openai/codex/releases",
+      "publisher": "OpenAI / GitHub",
+      "date": "2026-05-26",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "category": "dev-tools",
+      "key_claims": [
+        {
+          "claim": "Release tagged 2026-05-26",
+          "source": "https://github.com/openai/codex/releases"
+        },
+        {
+          "claim": "Local conversation search with case-insensitive matching and result previews",
+          "source": "https://github.com/openai/codex/releases"
+        },
+        {
+          "claim": "Per-server MCP environment targeting and OAuth for streamable HTTP servers",
+          "source": "https://github.com/openai/codex/releases"
+        },
+        {
+          "claim": "Concurrent read-only MCP tools when readOnlyHint is set",
+          "source": "https://github.com/openai/codex/releases"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://developers.openai.com/codex/changelog",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://releasebot.io/updates/openai/codex",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": null,
+      "coi": null,
+      "bd_actionability": "high"
+    },
+    {
+      "id": 2,
+      "title": "xAI Grok Build CLI enters early beta for SuperGrok subscribers",
+      "source_url": "https://cryptobriefing.com/xai-grok-build-coding-agent-beta/",
+      "publisher": "CryptoBriefing",
+      "date": "2026-05-25",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "category": "dev-tools",
+      "primary_url_note": "https://x.ai/news/grok-build-cli returned HTTP 403 in this run",
+      "key_claims": [
+        {
+          "claim": "Early beta launch date: 2026-05-25",
+          "source": "https://cryptobriefing.com/xai-grok-build-coding-agent-beta/"
+        },
+        {
+          "claim": "Access limited to SuperGrok and X Premium Plus subscribers at $300/month",
+          "source": "https://cryptobriefing.com/xai-grok-build-coding-agent-beta/"
+        },
+        {
+          "claim": "CLI uses 2M-token context window",
+          "source": "https://cryptobriefing.com/xai-grok-build-coding-agent-beta/"
+        },
+        {
+          "claim": "API version grok-build-0.1 available May 20 at $1/$2 per 1M tokens, 256K context",
+          "source": "https://codersera.com/blog/grok-build-vs-claude-code-vs-codex-cli-2026/ (T3, vendor-reported)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.engadget.com/2173482/xai-coding-agent-grok-build/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.thetechoutlook.com/new-release/software-apps/xai-launches-an-early-beta-of-grok-build-available-for-all-supergrok-and-x-premium-plus-subscribers/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://codersera.com/blog/grok-build-vs-claude-code-vs-codex-cli-2026/",
+          "tier": "T3",
+          "role": "comparative benchmarks — vendor figures only, no independent audit"
+        }
+      ],
+      "caveats": "Primary source returned 403. Grok Build 0.1 SWE-bench 70.8% applies to deprecated grok-code-fast-1, not production grok-build-0.1. xAI staffing turbulence post-SpaceX merger noted in press. Pricing at $300/month significantly above competing tools.",
+      "coi": null,
+      "bd_actionability": "high"
+    },
+    {
+      "id": 3,
+      "title": "Gemini Spark expands to broader US access at $100/month",
+      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/",
+      "publisher": "Google",
+      "date": "2026-05-19",
+      "deployment_milestone_date": "2026-05-26",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "deployment milestone",
+      "category": "workflow-automation",
+      "key_claims": [
+        {
+          "claim": "AI Ultra subscription reduced to $100/month from $250/month",
+          "source": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html (T2)"
+        },
+        {
+          "claim": "Broader US access to all AI Ultra subscribers starting week of May 26",
+          "source": "https://www.techtimes.com/articles/317144/20260525/gemini-spark-googles-24-7-cloud-ai-agent-now-executes-tasks-third-party-apps.htm (T3)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.techtimes.com/articles/317144/20260525/gemini-spark-googles-24-7-cloud-ai-agent-now-executes-tasks-third-party-apps.htm",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+          "tier": "T2",
+          "role": "I/O announcement with pricing"
+        },
+        {
+          "url": "https://theaiinsider.tech/2026/05/22/googles-ai-agent-ambitions-are-real-but-remain-locked-behind-a-100-monthly-paywall/",
+          "tier": "T3",
+          "role": "contradicting — paywall and limitations critique"
+        }
+      ],
+      "caveats": "No standalone Google blog post for May 26 broader rollout date; inferred from I/O timeline and corroborating reports. Google's own in-product warning notes sensitive actions may be taken without per-action confirmation. EU/UK launch pending AI Act compliance; Q3 2026 analyst estimate only.",
+      "coi": null,
+      "bd_actionability": "medium-high"
+    },
+    {
+      "id": 4,
+      "title": "Gemini 3.5 Flash becomes the global default model in Google AI Mode",
+      "source_url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
+      "publisher": "Google",
+      "date": "2026-05-19",
+      "deployment_milestone_date": "2026-05-26",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "deployment milestone",
+      "category": "model-release",
+      "key_claims": [
+        {
+          "claim": "Gemini 3.5 Flash deployed as AI Mode default on May 26",
+          "source": "multiple search-coverage outlets (T3)"
+        },
+        {
+          "claim": "AI Mode: 1 billion monthly users as of May 19",
+          "source": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/ (T2)"
+        },
+        {
+          "claim": "Personal Intelligence expanded to ~200 countries",
+          "source": "https://blog.google/products-and-platforms/products/search/search-io-2026/ (T2)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://discoveredlabs.com/blog/google-ai-mode-may-2026-search-update",
+          "tier": "T3",
+          "role": "impact analysis"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs/changelog",
+          "tier": "T2",
+          "role": "no May 26 entry; last entry May 19 GA"
+        }
+      ],
+      "caveats": "No standalone Google announcement post for May 26 deployment date. One independent 5-day evaluation published ~May 24 reported Intelligence Index rank #8 and 61% hallucination rate — weaker than Google I/O figures. Audited head-to-head benchmarks not yet available.",
+      "coi": null,
+      "bd_actionability": "medium"
+    },
+    {
+      "id": 5,
+      "title": "Anthropic appoints KiYoung Choi as Korea Representative Director",
+      "source_url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea",
+      "publisher": "Anthropic",
+      "date": "2026-05-26",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "category": "ai-for-business",
+      "key_claims": [
+        {
+          "claim": "KiYoung Choi appointed Representative Director of Anthropic Korea",
+          "source": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea (T2)"
+        },
+        {
+          "claim": "Joins from Snowflake where he was General Manager for Korea",
+          "source": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea (T2)"
+        },
+        {
+          "claim": "Korea: top-5 globally for Claude usage; 3.5x expected rate relative to population",
+          "source": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea (T2)"
+        },
+        {
+          "claim": "Seoul office = 3rd Asia-Pacific location after Tokyo and Bengaluru",
+          "source": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea (T2)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific",
+          "tier": "T2",
+          "role": "background — October 2025 Seoul office announcement"
+        },
+        {
+          "url": "https://finance.yahoo.com/news/anthropic-open-south-korea-office-120403852.html",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": null,
+      "coi": null,
+      "bd_actionability": "low-medium"
+    },
+    {
+      "id": 6,
+      "title": "Suno AI raising $250M+ at $5B valuation led by Bond Capital",
+      "source_url": "https://www.axios.com/pro/all-deals/2026/05/26/suno-spotify-remix-bond-raise",
+      "publisher": "Axios",
+      "date": "2026-05-26",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "deal reporting",
+      "category": "ai-for-business",
+      "key_claims": [
+        {
+          "claim": "Bond Capital leading round expected to exceed $250M",
+          "source": "https://www.axios.com/pro/all-deals/2026/05/26/suno-spotify-remix-bond-raise (T2 deal reporting)"
+        },
+        {
+          "claim": "Valuation target: $5B",
+          "source": "https://www.axios.com/pro/all-deals/2026/05/26/suno-spotify-remix-bond-raise (T2 deal reporting)"
+        },
+        {
+          "claim": "Prior round: $250M at $2.45B valuation, November 2025",
+          "source": "https://techcrunch.com/2025/11/19/legally-embattled-ai-music-startup-suno-raises-at-2-45b-valuation-on-200m-revenue/ (T2)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.musicbusinessworldwide.com/suno-is-raising-another-250-million-at-a-5-billion-valuation-reports/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.digitalmusicnews.com/2026/05/04/suno-series-d-reports/",
+          "tier": "T3",
+          "role": "earlier reporting on round"
+        }
+      ],
+      "caveats": "Round not yet closed as of May 26 reporting. Ongoing copyright litigation from major record labels is an unresolved risk. Deal terms may change.",
+      "coi": null,
+      "bd_actionability": "low-medium"
+    },
+    {
+      "id": 7,
+      "title": "Fireworks AI in funding talks targeting $15B valuation",
+      "source_url": "https://www.valuethemarkets.com/cryptocurrency/news/fireworks-ai-seeks-15-billion-valuation-in-new-funding-round",
+      "publisher": "Value The Markets",
+      "date": "2026-05-27",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "deal reporting",
+      "category": "ai-for-business",
+      "key_claims": [
+        {
+          "claim": "Valuation target: $15B",
+          "source": "https://www.valuethemarkets.com/cryptocurrency/news/fireworks-ai-seeks-15-billion-valuation-in-new-funding-round (T3, citing Bloomberg sourcing)"
+        },
+        {
+          "claim": "Previous Series C: $250M at $4B, October 2025",
+          "source": "https://fireworks.ai/blog/series-c (T2)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://fireworks.ai/blog/series-c",
+          "tier": "T2",
+          "role": "October 2025 Series C primary source"
+        },
+        {
+          "url": "https://sacra.com/c/fireworks-ai/",
+          "tier": "T3",
+          "role": "company profile with funding history"
+        }
+      ],
+      "caveats": "Talks only; no term sheet or close announced. Round size not disclosed. Multiple outlets summarizing Bloomberg-sourced reporting; Bloomberg primary not directly accessible.",
+      "coi": null,
+      "bd_actionability": "low"
+    }
+  ],
+  "dropped_items": [
+    {
+      "title": "Anthropic $30B round at $900B+ valuation closing this week",
+      "source": "Bloomberg/Yahoo Finance (2026-05-22)",
+      "reason": "Already covered in 2026-05-26 bulletin with same T3 secondary status; no new primary source confirming close as of May 27"
+    },
+    {
+      "title": "Gemini Interactions API new schema default",
+      "source": "ai.google.dev (2026-05-26)",
+      "reason": "Covered in 2026-05-26 bulletin"
+    },
+    {
+      "title": "Claude Code 2.1.149 security fixes",
+      "source": "github.com/anthropics/claude-code (2026-05-22)",
+      "reason": "Covered in 2026-05-26 bulletin"
+    },
+    {
+      "title": "Grok Build 0.1 API model ($1/$2 per 1M tokens, 256K context)",
+      "source": "x.ai (2026-05-14)",
+      "reason": "Outside window — May 14; CLI beta (May 25) covered as separate item"
+    },
+    {
+      "title": "Stability AI Stable Audio 3.0 open-weight release",
+      "source": "stability.ai (2026-05-20)",
+      "reason": "Outside strict window (May 24–27) and outside expanded 5-day window (May 22–27)"
+    },
+    {
+      "title": "Anthropic KiYoung Choi remarks on Pope Leo XIV encyclical",
+      "source": "anthropic.com (2026-05-25)",
+      "reason": "Response article to prior bulletin item; no new substantive claim"
+    },
+    {
+      "title": "QUEST paper — training deep research agents with synthetic tasks",
+      "source": "arxiv.org (2026-05-26)",
+      "reason": "arXiv preprint; T3 tier; no practical deployment claim beyond directional research"
+    },
+    {
+      "title": "CUA-Gym — benchmarking computer-use agent training environments",
+      "source": "arxiv.org (2026-05-26)",
+      "reason": "arXiv preprint; T3 tier"
+    },
+    {
+      "title": "Michigan Ross AI forecasting study — AI outperformed 346 MBA managers on 30 tech ventures",
+      "source": "michiganross.umich.edu",
+      "reason": "Exact date unclear; could not confirm May 24–27 window"
+    },
+    {
+      "title": "DuckDuckGo app installs surge 30% after Google I/O AI Search overhaul",
+      "source": "Multiple outlets",
+      "reason": "Discovery signal only; no primary source with verified install figures"
+    },
+    {
+      "title": "OpenAI CMO appointment — Colin Fleming, ex-ServiceNow",
+      "source": "Adweek (2026-05-26)",
+      "reason": "Low BD-actionability; corporate org change with no product impact"
+    },
+    {
+      "title": "Cognition AI $25B valuation talks",
+      "source": "Bloomberg (2026-04-23)",
+      "reason": "Outside window — April 23"
+    },
+    {
+      "title": "Google Deep Research Max",
+      "source": "blog.google (2026-04-21)",
+      "reason": "Outside window — April 21"
+    },
+    {
+      "title": "AWS MCP Server GA",
+      "source": "aws.amazon.com (2026-05-06)",
+      "reason": "Outside window — May 6"
+    },
+    {
+      "title": "Baseten valuation / new round",
+      "source": "Multiple",
+      "reason": "Could not verify a May 24–27 announcement; last confirmed round was January 2026 at $5B"
+    },
+    {
+      "title": "SEA/Indonesia AI exploration",
+      "source": "Multiple searches",
+      "reason": "No in-window product launches from region found"
+    },
+    {
+      "title": "Gemini Spark first practitioner user reports",
+      "source": "Multiple",
+      "reason": "No peer-reviewed practitioner reports yet; rollout milestone covered in Item 3"
+    }
+  ],
+  "search_log": [
+    {"query": "Anthropic Claude announcement May 2026", "results": 10, "high_relevance": 5},
+    {"query": "OpenAI announcement release May 26 27 2026", "results": 10, "high_relevance": 3},
+    {"query": "Google DeepMind Gemini release May 26 27 2026", "results": 10, "high_relevance": 3},
+    {"query": "Anthropic news page (fetch)", "results": 2, "high_relevance": 2, "type": "fetch"},
+    {"query": "AI agent framework launch release May 25 26 27 2026", "results": 10, "high_relevance": 2},
+    {"query": "MCP Model Context Protocol new server update May 26 27 2026", "results": 10, "high_relevance": 1},
+    {"query": "OpenAI Codex goals update May 26 2026 changelog", "results": 10, "high_relevance": 4},
+    {"query": "OpenAI Codex CLI changelog (fetch)", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "xAI Grok Meta Llama Mistral announcement May 26 27 2026", "results": 10, "high_relevance": 2},
+    {"query": "AI news launch release May 27 2026", "results": 10, "high_relevance": 3},
+    {"query": "Grok Build launch beta May 25 2026 xAI coding", "results": 10, "high_relevance": 8},
+    {"query": "AI startup funding announcement product launch May 25 26 27 2026 [exploratory]", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "Anthropic KiYoung Choi Korea appointment (fetch)", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "Grok Build CryptoBriefing (fetch)", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "Google Deep Research Max autonomous research agent May 26 2026", "results": 10, "high_relevance": 2},
+    {"query": "new AI model release announcement May 26 27 2026", "results": 10, "high_relevance": 1},
+    {"query": "OpenAI ChatGPT new feature update May 26 27 2026", "results": 10, "high_relevance": 2},
+    {"query": "GitHub trending AI repos [exploratory]", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "Cursor Claude Code dev tools update May 26 27 2026", "results": 10, "high_relevance": 1},
+    {"query": "Grok Build controversy criticism limitation May 2026 [adversarial]", "results": 10, "high_relevance": 3, "type": "adversarial"},
+    {"query": "new LLM model open source released May 25 26 27 2026", "results": 10, "high_relevance": 0},
+    {"query": "Hugging Face Papers May 26 2026 (fetch)", "results": 5, "high_relevance": 3, "type": "fetch"},
+    {"query": "Stability AI Stable Audio 3 open weights API release May 26 2026", "results": 10, "high_relevance": 2},
+    {"query": "Suno AI $250 million funding Bond Capital May 26 2026", "results": 10, "high_relevance": 5},
+    {"query": "Fireworks AI $15 billion valuation funding talks date May 27 2026", "results": 10, "high_relevance": 4},
+    {"query": "AI Indonesia OR startup AI Asia Tenggara OR model AI lokal May 2026 [SEA]", "results": 8, "high_relevance": 0, "type": "exploratory"},
+    {"query": "Google Gemini AI Mode global rollout May 26 2026", "results": 10, "high_relevance": 4},
+    {"query": "Gemini Spark availability launch date user report May 26 27 2026", "results": 10, "high_relevance": 5},
+    {"query": "Anthropic $900 billion round closed confirmed May 27 2026 [adversarial]", "results": 10, "high_relevance": 2, "type": "adversarial"},
+    {"query": "Google Gemini Spark problems limitations user complaints May 2026 [adversarial]", "results": 10, "high_relevance": 4, "type": "adversarial"},
+    {"query": "Anthropic $900 billion round criticism concerns investors [adversarial]", "results": 10, "high_relevance": 3, "type": "adversarial"},
+    {"query": "Mistral Meta Cohere new model release May 25 26 27 2026", "results": 10, "high_relevance": 0},
+    {"query": "AI forecasting tournament outperformed human forecasters tech ventures May 26 2026 [exploratory]", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "Anthropic funding round closed confirmed announcement primary source May 27 2026 [adversarial]", "results": 10, "high_relevance": 1, "type": "adversarial"},
+    {"query": "ChatGPT personal finance feature launch date May 2026 [verification]", "results": 10, "high_relevance": 3, "type": "verification"}
+  ]
+}
