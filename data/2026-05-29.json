@@ -1,0 +1,426 @@
+{
+  "run": {
+    "date": "2026-05-29",
+    "timestamp": "2026-05-29T00:00:00Z",
+    "timeframe": "2026-05-26 to 2026-05-29 (strict 72h)",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest",
+    "window_expanded": false,
+    "window_expansion_reason": null,
+    "items_reviewed": 28,
+    "items_published": 5,
+    "items_dropped": 23,
+    "searches_total": 31,
+    "searches_exploratory": 11,
+    "exploration_pct": 35,
+    "sources_count": 18
+  },
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "published_items": [
+    {
+      "id": 1,
+      "title": "Claude Opus 4.8 ships with dynamic workflows and leads independent benchmark ranking",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "publisher": "Anthropic",
+      "date": "2026-05-28",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release", "dev-tools"],
+      "key_claims": [
+        {
+          "claim": "Fast-mode price: $10/$50 per 1M input/output tokens (3x cheaper)",
+          "source": "https://www.anthropic.com/news/claude-opus-4-8",
+          "tier": "T2"
+        },
+        {
+          "claim": "Dynamic Workflows: tens-to-hundreds parallel subagents, research preview in Claude Code",
+          "source": "https://www.anthropic.com/news/claude-opus-4-8",
+          "tier": "T2"
+        },
+        {
+          "claim": "Intelligence Index rank #1, score 61.4 (+4.1 vs Opus 4.7)",
+          "source": "https://artificialanalysis.ai/articles/claude-opus-4-8-analysis-and-benchmarks",
+          "tier": "T1"
+        },
+        {
+          "claim": "SWE-bench Verified: 88.6%",
+          "source": "https://artificialanalysis.ai/articles/claude-opus-4-8-analysis-and-benchmarks",
+          "tier": "T1"
+        },
+        {
+          "claim": "Online-Mind2Web: 84% (vendor-measured)",
+          "source": "https://www.anthropic.com/news/claude-opus-4-8",
+          "tier": "T2",
+          "caveat": "vendor-measured, not independently replicated"
+        },
+        {
+          "claim": "GitHub Copilot GA for Pro+, Business, Enterprise as of 2026-05-28",
+          "source": "https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot/",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://artificialanalysis.ai/articles/claude-opus-4-8-analysis-and-benchmarks",
+          "tier": "T1",
+          "role": "corroborating — independent benchmarks"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot/",
+          "tier": "T2",
+          "role": "corroborating — Copilot integration"
+        },
+        {
+          "url": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Dynamic Workflows is research preview, not GA. Prompt injection robustness regressed: 9.6% attack success rate (Gray Swan) vs 6.0% for Opus 4.7. System card notes model may show awareness of evaluation. GPQA Diamond 93.6% slightly below Opus 4.7 (94.2%). Uses ~30% more turns than GPT-5.5 on agentic tasks per Artificial Analysis.",
+      "coi": null,
+      "bd_actionability": "high"
+    },
+    {
+      "id": 2,
+      "title": "Google Pay & Wallet Developer MCP server enters public preview",
+      "source_url": "https://developers.googleblog.com/the-latest-updates-to-google-pay/",
+      "publisher": "Google Developers Blog",
+      "date": "2026-05-27",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["mcp-ecosystem"],
+      "key_claims": [
+        {
+          "claim": "Public Preview as of 2026-05-27",
+          "source": "https://developers.googleblog.com/the-latest-updates-to-google-pay/",
+          "tier": "T2"
+        },
+        {
+          "claim": "GA date: later in 2026 (forward-looking intent)",
+          "source": "https://developers.googleblog.com/the-latest-updates-to-google-pay/",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://developers.google.com/pay/api/web/guides/use-pay-wallet-mcp",
+          "tier": "T2",
+          "role": "implementation guide"
+        },
+        {
+          "url": "https://developers.google.com/wallet/reference/mcp",
+          "tier": "T2",
+          "role": "MCP reference documentation"
+        }
+      ],
+      "caveats": "Public Preview only; no specific GA month committed. No pricing disclosed for the MCP server.",
+      "coi": null,
+      "bd_actionability": "high"
+    },
+    {
+      "id": 3,
+      "title": "Cognition raises $1B at $26B valuation as Devin ARR reaches $492M",
+      "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+      "publisher": "TechCrunch",
+      "date": "2026-05-27",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "deal reporting",
+      "categories": ["workflow-automation", "ai-for-business"],
+      "key_claims": [
+        {
+          "claim": "Round size: $1B",
+          "source": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Valuation: $26B post-money",
+          "source": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+          "tier": "T2",
+          "caveat": "paywalled"
+        },
+        {
+          "claim": "ARR run-rate: $492M (up from $37M May 2025)",
+          "source": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+          "tier": "T2",
+          "caveat": "paywalled; not confirmed by Cognition primary"
+        },
+        {
+          "claim": "Prior valuation: $10.2B, September 2025",
+          "source": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+          "tier": "T2",
+          "role": "corroborating — paywalled primary"
+        },
+        {
+          "url": "https://news.crunchbase.com/venture/biggest-funding-rounds-ai-autonomy-biotech-anthropic/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "ARR of $492M cited from Bloomberg (paywalled); no Cognition primary blog post found. Valuation varies slightly across outlets ($25B pre vs $26B post); post-money used. No independent ARR audit.",
+      "coi": null,
+      "bd_actionability": "medium-high"
+    },
+    {
+      "id": 4,
+      "title": "Anthropic signals Mythos-class models to reach general availability in the coming weeks",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "publisher": "Anthropic",
+      "date": "2026-05-28",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "forward-looking statement",
+      "categories": ["model-release"],
+      "tier_nuance": "Forward-looking intent, not a committed date. Specific rollout language reported by BleepingComputer citing the Anthropic blog post.",
+      "key_claims": [
+        {
+          "claim": "Anthropic expects to bring Mythos-class models to all customers in the coming weeks",
+          "source": "https://www.anthropic.com/news/claude-opus-4-8 (referenced via BleepingComputer)",
+          "tier": "T2",
+          "caveat": "forward-looking intent"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-mythos-class-models-will-roll-out-to-the-public/",
+          "tier": "T2",
+          "role": "corroborating — reports specific rollout language"
+        },
+        {
+          "url": "https://www.anthropic.com/glasswing",
+          "tier": "T2",
+          "role": "Project Glasswing program background"
+        },
+        {
+          "url": "https://decrypt.co/369383/anthropic-claude-mythos-ai-model-nearing-release-cybersecurity-alarms",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Intent statement, not a committed date. Access currently limited to Project Glasswing. Rollout may be delayed. No public-access GA date announced.",
+      "coi": null,
+      "bd_actionability": "medium"
+    },
+    {
+      "id": 5,
+      "title": "Anthropic closes $65B Series H at $965B valuation",
+      "source_url": "https://www.anthropic.com/news/series-h",
+      "publisher": "Anthropic",
+      "date": "2026-05-28",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "key_claims": [
+        {
+          "claim": "Amount: $65B",
+          "source": "https://www.anthropic.com/news/series-h",
+          "tier": "T2"
+        },
+        {
+          "claim": "Post-money valuation: $965B",
+          "source": "https://www.anthropic.com/news/series-h",
+          "tier": "T2"
+        },
+        {
+          "claim": "ARR run-rate: $47B (self-reported, not audited)",
+          "source": "https://www.anthropic.com/news/series-h",
+          "tier": "T2"
+        },
+        {
+          "claim": "Amazon commitment: $5B plus option for up to $20B",
+          "source": "https://www.anthropic.com/news/series-h",
+          "tier": "T2"
+        },
+        {
+          "claim": "Compute: Amazon 5GW, Google/Broadcom 5GW TPU, SpaceX Colossus GPU access",
+          "source": "https://www.anthropic.com/news/series-h",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://fortune.com/2026/05/28/anthropic-series-h-valuation-ipo-unicorn/",
+          "tier": "T2",
+          "role": "corroborating — includes circular-funding critique"
+        },
+        {
+          "url": "https://cryptobriefing.com/anthropic-nears-1t-valuation-65b-funding/",
+          "tier": "T3",
+          "role": "corroborating with revenue skepticism"
+        }
+      ],
+      "caveats": "Circular funding structure: infrastructure partners (Amazon, Google, SpaceX) are investors while Anthropic commits compute spending to the same entities. $47B ARR is self-reported without audited financials. Analysts have questioned revenue growth rate. IPO timeline reported but no date or prospectus announced.",
+      "coi": null,
+      "bd_actionability": "medium"
+    }
+  ],
+  "dropped_items": [
+    {
+      "title": "Anthropic Milan office opening",
+      "source": "anthropic.com (2026-05-27)",
+      "reason": "Low BD-actionability; geographic expansion with no product impact"
+    },
+    {
+      "title": "NSA MCP security advisory",
+      "source": "nsa.gov (2026-05-20)",
+      "reason": "Outside window — May 20"
+    },
+    {
+      "title": "Google Managed MCP Servers GA",
+      "source": "cloud.google.com (2026-04-29)",
+      "reason": "Outside window — April 29"
+    },
+    {
+      "title": "MCP 2026-07-28 release candidate",
+      "source": "modelcontextprotocol.io (2026-05-21)",
+      "reason": "Outside window — May 21"
+    },
+    {
+      "title": "ChatGPT GPT-5.5 Thinking routing update for connected financial accounts",
+      "source": "openai.com (2026-05-27)",
+      "reason": "Incremental routing change to existing feature launched May 15; insufficient new signal"
+    },
+    {
+      "title": "LangChain langchain-perplexity 1.3.0",
+      "source": "GitHub releases (2026-05-27)",
+      "reason": "Minor version bump; low BD-actionability"
+    },
+    {
+      "title": "Claude Code v2.1.153 specific changes",
+      "source": "github.com/anthropics/claude-code (2026-05-28)",
+      "reason": "Grouped with Opus 4.8 item; changes include MCP reconnect fix, macOS background agents, skipLfs option"
+    },
+    {
+      "title": "Hugging Face papers May 28 — Gamma-World, ProRL, Agent Explorative Policy",
+      "source": "arxiv.org (2026-05-28)",
+      "reason": "T3 preprints; no practical deployment implication in abstracts"
+    },
+    {
+      "title": "Tencent Hunyuan HY3 Preview",
+      "source": "Multiple (2026-05-27)",
+      "reason": "Insufficient primary source detail confirmed in window"
+    },
+    {
+      "title": "Meta subscription plans — Instagram, Facebook, WhatsApp",
+      "source": "TechCrunch (2026-05-27)",
+      "reason": "Consumer subscription tiers; no AI-specific capability change"
+    },
+    {
+      "title": "GitHub trending repos — Understand-Anything, codegraph",
+      "source": "github.com/trending",
+      "reason": "Stars-based discovery; no verifiable primary launch announcement in window"
+    },
+    {
+      "title": "Suno $250M+ round",
+      "source": "Axios (2026-05-26)",
+      "reason": "Covered in 2026-05-27 bulletin"
+    },
+    {
+      "title": "Fireworks AI $15B valuation talks",
+      "source": "Value The Markets (2026-05-27)",
+      "reason": "Covered in 2026-05-27 bulletin"
+    },
+    {
+      "title": "Vercel AI SDK patch updates",
+      "source": "GitHub releases (2026-05-27)",
+      "reason": "Minor dependency updates; no new feature"
+    },
+    {
+      "title": "OpenAI ChatGPT for Excel/Google Sheets GA",
+      "source": "openai.com (2026-05-05)",
+      "reason": "Outside window"
+    },
+    {
+      "title": "SEA/Indonesia AI exploration",
+      "source": "Multiple searches",
+      "reason": "No in-window product launches from region found"
+    },
+    {
+      "title": "Camunda ProcessOS closed beta",
+      "source": "camunda.com (2026-05-20)",
+      "reason": "Outside window — May 20"
+    },
+    {
+      "title": "Meta image/video model development report",
+      "source": "TechCrunch (2025-12-19)",
+      "reason": "Outside window; no 2026 primary update found in window"
+    },
+    {
+      "title": "OpenAI GPT-5.6 reference in Codex logs",
+      "source": "Multiple (undated)",
+      "reason": "T5 — undated, screenshot-sourced, unverifiable"
+    },
+    {
+      "title": "DeepSeek V4 preview",
+      "source": "TechCrunch (2026-04-24)",
+      "reason": "Outside window"
+    },
+    {
+      "title": "Cognition AI $25B valuation talks — prior reporting",
+      "source": "Bloomberg (2026-04-23)",
+      "reason": "Superseded by confirmed May 27 close — covered in Item 3"
+    },
+    {
+      "title": "AI coding comparison roundups — Cursor 3.4, Claude Code 2.x",
+      "source": "Multiple",
+      "reason": "Roundup articles, not primary source product announcements in window"
+    },
+    {
+      "title": "Artificial Analysis Intelligence Index May 2026 general update",
+      "source": "artificialanalysis.ai",
+      "reason": "Discovery aid only; specific Opus 4.8 benchmark used in Item 1 with appropriate citation"
+    }
+  ],
+  "search_log": [
+    {"query": "Anthropic news May 26-29 2026 (fetch anthropic.com/news)", "results": 4, "high_relevance": 4, "type": "fetch"},
+    {"query": "AI announcement release launch May 28 29 2026", "results": 9, "high_relevance": 3},
+    {"query": "fetch anthropic.com/news/claude-opus-4-8", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "fetch anthropic.com/news/series-h", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "Claude Opus 4.8 benchmark independent review May 28 2026", "results": 10, "high_relevance": 8},
+    {"query": "fetch artificialanalysis.ai/articles/claude-opus-4-8-analysis-and-benchmarks", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "Claude Opus 4.8 criticism concerns limitations May 2026", "results": 10, "high_relevance": 5, "type": "adversarial"},
+    {"query": "Google DeepMind Gemini announcement May 28 29 2026", "results": 9, "high_relevance": 0},
+    {"query": "Google Pay Wallet Developer MCP server May 28 2026", "results": 10, "high_relevance": 5},
+    {"query": "fetch developers.googleblog.com/the-latest-updates-to-google-pay/", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "Cognition AI $1 billion funding May 27 2026", "results": 10, "high_relevance": 8},
+    {"query": "AI startup funding announcement May 27 28 29 2026", "results": 10, "high_relevance": 4, "type": "exploratory"},
+    {"query": "Anthropic Mythos model announcement May 28 2026", "results": 6, "high_relevance": 5},
+    {"query": "fetch bleepingcomputer.com Mythos rollout article", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "Anthropic Series H $65 billion criticism concerns May 2026", "results": 7, "high_relevance": 4, "type": "adversarial"},
+    {"query": "OpenAI GPT update release May 27 28 2026", "results": 10, "high_relevance": 2},
+    {"query": "ChatGPT financial accounts GPT-5.5 Thinking May 27 2026", "results": 8, "high_relevance": 2},
+    {"query": "Cursor Claude Code dev tools update May 27 28 29 2026", "results": 10, "high_relevance": 2},
+    {"query": "Claude Code update release May 27-29 2026 github", "results": 10, "high_relevance": 3},
+    {"query": "AI regulation policy announcement May 27 28 29 2026", "results": 9, "high_relevance": 2},
+    {"query": "AI agent framework release launch May 27 28 29 2026", "results": 10, "high_relevance": 1},
+    {"query": "MCP Model Context Protocol new server update May 2026", "results": 10, "high_relevance": 2},
+    {"query": "new LLM open source model release May 28 29 2026", "results": 10, "high_relevance": 0},
+    {"query": "fetch github.com/trending?since=weekly [exploratory]", "results": 8, "high_relevance": 2, "type": "exploratory"},
+    {"query": "Hugging Face Daily Papers May 28 29 2026 (fetch) [exploration]", "results": 5, "high_relevance": 2, "type": "exploratory"},
+    {"query": "NSA MCP security advisory Model Context Protocol May 2026 [adversarial]", "results": 10, "high_relevance": 3, "type": "adversarial"},
+    {"query": "site:x.com AnthropicAI OpenAI release May 2026 [social search]", "results": 8, "high_relevance": 1, "type": "exploratory"},
+    {"query": "AI Indonesia startup Asia Tenggara model lokal May 2026 [SEA exploration]", "results": 9, "high_relevance": 0, "type": "exploratory"},
+    {"query": "fetch github.blog/changelog Opus 4.8 Copilot", "results": 1, "high_relevance": 1, "type": "fetch"},
+    {"query": "productivity AI tool announcement release May 27 28 2026 [exploratory]", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "new AI release announcement May 28 29 2026 site:techcrunch.com OR site:theverge.com", "results": 10, "high_relevance": 1}
+  ]
+}
