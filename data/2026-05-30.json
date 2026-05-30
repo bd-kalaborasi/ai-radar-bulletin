@@ -1,0 +1,405 @@
+{
+  "run_metadata": {
+    "date": "2026-05-30",
+    "period_start": "2026-05-27",
+    "period_end": "2026-05-30",
+    "timeframe_hours": 72,
+    "depth": "standard",
+    "audience": "public-digest",
+    "run_timestamp": "2026-05-30T00:00:00Z",
+    "items_reviewed": 27,
+    "items_published": 10,
+    "items_dropped": 17,
+    "exploration_pct": 40,
+    "total_searches": 27,
+    "exploratory_searches": 11
+  },
+  "verification_summary": {
+    "verified": 7,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "model-release",
+    "workflow-automation",
+    "dev-tools",
+    "productivity-ai",
+    "ai-for-business",
+    "policy-regulation"
+  ],
+  "items": [
+    {
+      "id": "mistral-vibe-work-code-mode",
+      "title": "Mistral launches Vibe as unified work-and-code agent",
+      "source_url": "https://mistral.ai/news/vibe-agent/",
+      "publisher": "Mistral AI",
+      "publication_date": "2026-05-28",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["workflow-automation", "productivity-ai", "dev-tools"],
+      "bd_actionability": "high",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Pro tier: $14.99/month",
+          "source": "https://mistral.ai/news/vibe-agent/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Team tier: $24.99/user/month",
+          "source": "https://mistral.ai/news/vibe-agent/",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://mistral.ai/news/search-toolkit/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://the-decoder.com/mistral-rebrands-lechat-as-vibe-betting-its-chatbots-future-is-as-a-full-blown-work-agent/",
+          "tier": "T3",
+          "role": "discovery"
+        }
+      ],
+      "caveats": null
+    },
+    {
+      "id": "openai-thrive-tax-agent-codex",
+      "title": "OpenAI and Thrive ship self-improving tax agent built on Codex",
+      "source_url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+      "publisher": "OpenAI",
+      "publication_date": "2026-05-28",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "case-study",
+      "categories": ["workflow-automation"],
+      "bd_actionability": "high",
+      "conflict_of_interest": "OpenAI holds equity stake in Thrive Holdings (December 2025)",
+      "key_claims": [
+        {
+          "claim": "7,000 returns processed, 30+ accounting firms",
+          "source": "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+          "tier": "T2",
+          "note": "vendor-claimed"
+        },
+        {
+          "claim": "97% accuracy (vendor-claimed, no independent audit)",
+          "source": "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+          "tier": "T2",
+          "note": "vendor-claimed"
+        },
+        {
+          "claim": "75% → 86% correct field completion over six weeks",
+          "source": "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+          "tier": "T2",
+          "note": "vendor-claimed"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.kucoin.com/news/flash/openai-and-thrive-launch-self-improving-tax-ai-with-97-accuracy",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Primary URL returned HTTP 403 from this environment. Vendor-claimed accuracy and efficiency. OpenAI equity in Thrive is conflict of interest for objective case study framing."
+    },
+    {
+      "id": "claude-opus-4-8-dynamic-workflows",
+      "title": "Claude Opus 4.8 ships with Dynamic Workflows for Claude Code",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "publisher": "Anthropic",
+      "publication_date": "2026-05-28",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release", "workflow-automation", "dev-tools"],
+      "bd_actionability": "high",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Dynamic Workflows cap: 1,000 parallel subagents (ultracode setting)",
+          "source": "https://www.anthropic.com/news/claude-opus-4-8",
+          "tier": "T2"
+        },
+        {
+          "claim": "Fast mode price: $10/$50 per 1M tokens",
+          "source": "https://www.anthropic.com/news/claude-opus-4-8",
+          "tier": "T2"
+        },
+        {
+          "claim": "Online-Mind2Web: 84% (vendor-measured)",
+          "source": "https://www.anthropic.com/news/claude-opus-4-8",
+          "tier": "T2",
+          "note": "vendor-measured benchmark"
+        },
+        {
+          "claim": "~4x less likely to miss code flaws vs Opus 4.7",
+          "source": "https://www.anthropic.com/news/claude-opus-4-8",
+          "tier": "T2",
+          "note": "vendor-claimed"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://simonwillison.net/2026/May/28/claude-opus-4-8/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot/",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Dynamic Workflows in research preview only. Fast mode restricted to research-preview orgs at launch. Online-Mind2Web score is vendor-measured."
+    },
+    {
+      "id": "mistral-search-toolkit",
+      "title": "Mistral Search Toolkit enters public preview",
+      "source_url": "https://mistral.ai/news/search-toolkit/",
+      "publisher": "Mistral AI",
+      "publication_date": "2026-05-28",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "bd_actionability": "medium",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Open-source, public preview as of 2026-05-28",
+          "source": "https://mistral.ai/news/search-toolkit/",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [],
+      "caveats": null
+    },
+    {
+      "id": "cognition-devin-1b-round",
+      "title": "Cognition raises $1B at $26B as Devin ARR reaches $492M",
+      "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+      "publisher": "TechCrunch",
+      "publication_date": "2026-05-27",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "funding-announcement",
+      "categories": ["dev-tools", "ai-for-business"],
+      "bd_actionability": "medium",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "$26B post-money valuation ($25B pre-money)",
+          "source": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+          "tier": "T2"
+        },
+        {
+          "claim": "$492M ARR",
+          "source": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+          "tier": "T2"
+        },
+        {
+          "claim": "50% MoM enterprise usage growth, 6 consecutive months",
+          "source": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": null
+    },
+    {
+      "id": "anthropic-65b-series-h",
+      "title": "Anthropic closes $65B Series H at $965B valuation",
+      "source_url": "https://www.anthropic.com/news/series-h",
+      "publisher": "Anthropic",
+      "publication_date": "2026-05-28",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Total raise: $65B",
+          "source": "https://www.anthropic.com/news/series-h",
+          "tier": "T2"
+        },
+        {
+          "claim": "Post-money valuation: $965B",
+          "source": "https://www.anthropic.com/news/series-h",
+          "tier": "T2"
+        },
+        {
+          "claim": "$47B annualized revenue run-rate (vendor-reported)",
+          "source": "https://www.anthropic.com/news/series-h",
+          "tier": "T2",
+          "note": "vendor-reported, not independently audited"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.axios.com/2026/05/28/anthropic-ai-fundraising-openai",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "ARR figure is vendor-reported, not independently audited. Also published in 2026-05-29 bulletin."
+    },
+    {
+      "id": "openai-rosalind-biodefense",
+      "title": "OpenAI opens Rosalind Biodefense to vetted developers",
+      "source_url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+      "publisher": "OpenAI",
+      "publication_date": "2026-05-29",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Launch date 2026-05-29, access restricted to vetted developers and government partners",
+          "source": "https://www.axios.com/2026/05/29/openai-biodefense-program",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.axios.com/2026/05/29/openai-biodefense-program",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Primary URL returned HTTP 403. No model card or public benchmark for GPT-Rosalind. Access not open to general public."
+    },
+    {
+      "id": "openai-frontier-governance-framework",
+      "title": "OpenAI publishes Frontier Governance Framework",
+      "source_url": "https://openai.com/index/openai-frontier-governance-framework/",
+      "publisher": "OpenAI",
+      "publication_date": "2026-05-28",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "policy-document",
+      "categories": ["policy-regulation"],
+      "bd_actionability": "low",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Publication date: 2026-05-28; aligns with CA Transparency in Frontier AI Act and EU AI Act Code of Practice",
+          "source": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/openai-rolls-out-frontier-governance-framework",
+          "tier": "T3"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/openai-rolls-out-frontier-governance-framework",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": "Primary URL returned HTTP 403. Claims sourced from T3 outlet; cross-checked against multiple corroborating reports."
+    },
+    {
+      "id": "mistral-physics-ai",
+      "title": "Mistral launches Physics AI for industrial simulation",
+      "source_url": "https://mistral.ai/news/physics-ai/",
+      "publisher": "Mistral AI",
+      "publication_date": "2026-05-27",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Targets manufacturing, aerospace, energy, semiconductors",
+          "source": "https://mistral.ai/news/physics-ai/",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [],
+      "caveats": "No benchmark figures or independent results disclosed at launch. URL inferred from news index listing — direct article URL not independently fetched."
+    },
+    {
+      "id": "anthropic-milan-office",
+      "title": "Anthropic opens Milan office for Italian enterprise and research",
+      "source_url": "https://www.anthropic.com/news",
+      "publisher": "Anthropic",
+      "publication_date": "2026-05-27",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "Milan office opened 2026-05-27",
+          "source": "https://www.anthropic.com/news",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [],
+      "caveats": "Cited from news index page; direct article URL not confirmed. No product or API changes accompany the announcement."
+    }
+  ],
+  "dropped_items": [
+    {"title": "OpenAI ChatGPT Personal Finance Dashboard", "source": "techcrunch.com", "date": "2026-05-15", "reason": "Outside 72h window"},
+    {"title": "OpenAI DeployCo $4B consulting subsidiary", "source": "openai.com", "date": "2026-05-11", "reason": "Outside window"},
+    {"title": "KPMG-Anthropic global alliance, 276K employees", "source": "anthropic.com", "date": "2026-05-19", "reason": "Outside window"},
+    {"title": "Gemini 3.5 Flash general availability", "source": "blog.google", "date": "2026-05-19", "reason": "Outside window"},
+    {"title": "xAI Grok Custom Skills launch", "source": "x.ai", "date": "2026-05-26", "reason": "Outside window"},
+    {"title": "xAI grok-voice-think-fast-1.0 API", "source": "x.ai/docs", "date": "~2026-05-07", "reason": "Outside window"},
+    {"title": "Mistral MCP Connectors in Studio", "source": "mistral.ai", "date": "2026-05-22", "reason": "Outside window"},
+    {"title": "Mistral Medium 3.5 + Remote Agents", "source": "mistral.ai", "date": "2026-05-22", "reason": "Outside window"},
+    {"title": "Anthropic Claude Managed Agents sandboxes + MCP tunnels", "source": "anthropic.com", "date": "2026-05-19", "reason": "Outside window"},
+    {"title": "MCP Spec 2026 Release Candidate locked", "source": "blog.modelcontextprotocol.io", "date": "2026-05-21", "reason": "Outside window"},
+    {"title": "AWS MCP Server general availability", "source": "aws.amazon.com", "date": "2026-05-06", "reason": "Outside window"},
+    {"title": "EY-Microsoft $1B+ alliance", "source": "news.microsoft.com", "date": "2026-05-21", "reason": "Outside window"},
+    {"title": "LangGraph v1.2", "source": "langchain blog", "date": "May 2026 (unconfirmed)", "reason": "Exact date unverifiable; could not confirm within 72h window"},
+    {"title": "Cursor 3.3 with parallel agents", "source": "cursor.com changelog", "date": "May 2026 (unconfirmed)", "reason": "Exact date unverifiable; could not confirm within 72h window"},
+    {"title": "NBA AI officiating announcement", "source": "basketballforever.com", "date": "2026-05-28", "reason": "Statement of future plans only; not a shipping product; low BD relevance"},
+    {"title": "GUIDE AI workflow automation on AWS", "source": "hpcwire.com/aiwire", "date": "2026-05-29", "reason": "Single low-tier source; primary source not found; insufficient verification"},
+    {"title": "Anthropic Korea Director appointment", "source": "anthropic.com", "date": "2026-05-26", "reason": "Outside window"}
+  ],
+  "sources_cited": [
+    "https://mistral.ai/news/vibe-agent/",
+    "https://mistral.ai/news/search-toolkit/",
+    "https://mistral.ai/news/physics-ai/",
+    "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+    "https://openai.com/index/openai-frontier-governance-framework/",
+    "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+    "https://www.anthropic.com/news/claude-opus-4-8",
+    "https://www.anthropic.com/news/series-h",
+    "https://www.anthropic.com/news",
+    "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+    "https://www.bloomberg.com/news/articles/2026-05-27/ai-coding-startup-cognition-raises-1-billion-at-26-billion-value",
+    "https://www.axios.com/2026/05/29/openai-biodefense-program",
+    "https://simonwillison.net/2026/May/28/claude-opus-4-8/",
+    "https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot/"
+  ],
+  "search_log": {
+    "total_searches": 27,
+    "exploratory_searches": 11,
+    "exploratory_pct": 41
+  }
+}
