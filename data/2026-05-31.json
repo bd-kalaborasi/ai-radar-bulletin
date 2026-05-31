@@ -1,0 +1,223 @@
+{
+  "run_date": "2026-05-31",
+  "run_timestamp": "2026-05-31T00:00:00Z",
+  "parameters": {
+    "timeframe": "2026-05-26 to 2026-05-31",
+    "window_strict": "2026-05-28 to 2026-05-31",
+    "window_expanded": "2026-05-26 to 2026-05-31",
+    "expansion_reason": "Strict 72h window yielded only 2 items not covered in prior bulletins; expanded to 5 days per standard rule",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "summary": {
+    "items_reviewed": 22,
+    "items_published": 4,
+    "items_dropped": 18,
+    "verified": 3,
+    "secondary": 1,
+    "rumor": 0,
+    "exploration_pct": 34,
+    "sources_count": 12
+  },
+  "items": [
+    {
+      "id": "codex-computer-use-windows-2026-05-29",
+      "title": "OpenAI Codex adds Computer Use on Windows and mobile initiation",
+      "date": "2026-05-29",
+      "category": ["workflow-automation", "dev-tools"],
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "primary_source": "https://developers.openai.com/codex/changelog",
+      "publisher": "OpenAI Developers",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "Computer Use on Windows shipped May 29, 2026 (version 26.527)",
+          "source": "https://developers.openai.com/codex/changelog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Mobile initiation via ChatGPT iOS/Android for Windows machines",
+          "source": "https://developers.openai.com/codex/changelog",
+          "tier": "T2"
+        },
+        {
+          "claim": "Unavailable in EEA, UK, Switzerland at launch",
+          "source": "https://www.totalum.app/blog/codex-on-windows-totalum",
+          "tier": "T3"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://the-decoder.com/openais-codex-can-now-operate-your-windows-pc-autonomously-hunting-bugs-and-testing-apps-on-its-own/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.neowin.net/news/openai-rolls-out-major-codex-for-windows-update-with-computer-use-and-mobile-access/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": ["Foreground-only on Windows — takes desktop control during execution", "EEA/UK/CH regional restriction", "Requires eligible Codex plan"]
+    },
+    {
+      "id": "copilot-studio-may-2026-a2a-voice-ga",
+      "title": "Microsoft Copilot Studio May 2026 update ships A2A communication GA and voice agents GA",
+      "date": "2026-05-26",
+      "category": ["workflow-automation"],
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "primary_source": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+      "publisher": "Microsoft Copilot Blog",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "Agent-to-agent (A2A) communication now generally available in Copilot Studio",
+          "source": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Real-time voice agents GA in North America via Dynamics 365 Contact Center",
+          "source": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Computer-using agents reached GA separately on May 13, 2026",
+          "source": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427",
+          "tier": "T2"
+        },
+        {
+          "claim": "Orchestrator improvement: ~20% eval performance, ~50% net token reduction (vendor-measured)",
+          "source": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+          "tier": "T2",
+          "note": "vendor-measured, unverified independently"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": ["Voice agents GA restricted to North America at launch", "A2A requires Power Platform licensing", "Orchestrator figures are vendor-measured", "Redesigned workflows in early release only"]
+    },
+    {
+      "id": "deepseek-v4-pro-permanent-pricing-2026-05-31",
+      "title": "DeepSeek makes V4-Pro 75% price cut permanent at May 31 deadline",
+      "date_effective": "2026-05-31",
+      "date_announced": "2026-05-22",
+      "category": ["model-release"],
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "pricing announcement",
+      "primary_source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "publisher": "DeepSeek",
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "Permanent pricing: $0.435/M input, $0.87/M output",
+          "source": "https://api-docs.deepseek.com/quick_start/pricing",
+          "tier": "T2"
+        },
+        {
+          "claim": "Pre-promotion list pricing: $1.74/M input, $3.48/M output",
+          "source": "https://api-docs.deepseek.com/quick_start/pricing",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://the-decoder.com/deepseek-makes-its-75-percent-discount-permanent-pricing-output-tokens-at-least-34x-below-gpt-5-5/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.engadget.com/2180062/deepseek-permanently-reduces-the-price-of-its-flagship-v4-model-by-75-percent/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": ["Announcement date ~May 22 is outside 5-day expanded window; included on effective date May 31", "Subject to future revision", "Chinese-origin service — data residency review required for regulated workflows"]
+    },
+    {
+      "id": "eu-mythos-access-stalled-2026-05-29",
+      "title": "EU access to Anthropic Mythos stalled as US blocks non-US sharing",
+      "date": "2026-05-29",
+      "category": ["policy-regulation"],
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "policy reporting",
+      "primary_source": "https://www.cnbc.com/2026/05/29/mythos-ai-models-eu-talks-us.html",
+      "primary_source_note": "HTTP 403 from this environment; claims confirmed via T3 secondary sources",
+      "publisher": "CNBC",
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "EU Commission sought Mythos access; Anthropic required US government authorization",
+          "source": "https://www.cnbc.com/2026/05/29/mythos-ai-models-eu-talks-us.html",
+          "tier": "T3",
+          "note": "primary 403 — corroborated by The Star, Blockonomi (T3)"
+        },
+        {
+          "claim": "White House opposed Anthropic sharing Mythos with non-US entities",
+          "source": "https://www.thestar.com.my/tech/tech-news/2026/05/29/anthropic-plans-wide-release-of-mythos-level-ai-models-in-weeks",
+          "tier": "T3"
+        },
+        {
+          "claim": "EU AI Office enforcement powers begin August 2026",
+          "source": "https://cdt.org/insights/cdt-europes-ai-bulletin-may-2026/",
+          "tier": "T3"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/05/29/anthropic-plans-wide-release-of-mythos-level-ai-models-in-weeks",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://blockonomi.com/eu-seeks-u-s-talks-over-ai-safety-as-anthropic-plans-mythos-rollout/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/05/11/openai-eu-cyber-model-anthropic-mythos-gpt.html",
+          "tier": "T2",
+          "role": "background — OpenAI granted EU access to its cyber AI model on different terms"
+        }
+      ],
+      "caveats": ["All sourcing T3 — primary CNBC unavailable", "Mythos GA rollout may render bilateral standoff moot", "No GA date committed by Anthropic"]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Anthropic Mythos wide-release announcement", "date": "2026-05-28", "reason": "Covered in 2026-05-29 bulletin"},
+    {"title": "OpenAI Rosalind Biodefense program", "date": "2026-05-29", "reason": "Covered in 2026-05-30 bulletin"},
+    {"title": "OpenAI Frontier Governance Framework", "date": "2026-05-28", "reason": "Covered in 2026-05-30 bulletin"},
+    {"title": "Google Pay MCP server public preview", "date": "2026-05-27", "reason": "Covered in 2026-05-29 bulletin"},
+    {"title": "GPT-5.5 Instant response style update", "date": "2026-05-30", "reason": "Incremental improvement; no new capability"},
+    {"title": "Codex Pro 2x promotion expiry", "date": "2026-05-31", "reason": "Minor pricing footnote; subsumed into Codex item"},
+    {"title": "Project Glasswing initial update (10K+ bugs)", "date": "2026-05-22", "reason": "Outside 5-day expanded window"},
+    {"title": "Indonesia launches .ai.id AI-specific domain", "date": "2026-05-29", "reason": "SEA exploration find; low BD-actionability for public-digest"},
+    {"title": "Microsoft Build 2026 pre-announcements", "date": "2026-06-02", "reason": "Forward-looking; conference June 2-3; no products shipped yet"},
+    {"title": "Claude for Small Business", "date": "2026-05-13", "reason": "Outside window (May 13)"},
+    {"title": "Anthropic Finance Agent templates", "date": "2026-05-05", "reason": "Outside window (May 5)"},
+    {"title": "Adobe AI Productivity Agent", "date": "2026-05-06", "reason": "Outside window (May 6)"},
+    {"title": "OpenAI ChatGPT for Excel/Google Sheets GA", "date": "2026-05-05", "reason": "Outside window (May 5)"},
+    {"title": "OpenAI GPT-5.3 Instant Mini fallback model", "date": "2026-04-09", "reason": "Outside window"},
+    {"title": "NSA MCP security advisory", "date": "2026-05-20", "reason": "Outside window (May 20)"},
+    {"title": "GitHub trending repos (Understand-Anything, etc.)", "date": null, "reason": "Stars-only discovery; no primary launch found in window"},
+    {"title": "Hugging Face Daily Papers May 28-30", "date": "2026-05-28", "reason": "T3 preprints; no deployment implications in abstracts"},
+    {"title": "OpenAI GPT-5.6 reference in Codex logs", "date": null, "reason": "T5 — undated, screenshot-sourced, no primary"}
+  ],
+  "search_log": {
+    "total_searches": 46,
+    "exploratory_adversarial": 16,
+    "exploration_pct": 34,
+    "primary_fetches": 9
+  }
+}
