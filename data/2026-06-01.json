@@ -1,0 +1,242 @@
+{
+  "run": {
+    "date": "2026-06-01",
+    "period_start": "2026-05-27",
+    "period_end": "2026-06-01",
+    "window_base": "72h",
+    "window_expanded": "5d",
+    "window_expansion_reason": "Strict 72h window (May 29–Jun 1) yielded 5 verified items; expanded to 5 days (May 27–Jun 1) to add 2 items (YouTube labels May 27, OpenAI model retirements ~May 28).",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 26,
+    "items_published": 7,
+    "items_dropped": 19,
+    "searches_total": 37,
+    "searches_exploratory": 14,
+    "exploration_pct": 38,
+    "verification_summary": {
+      "verified": 5,
+      "secondary": 2,
+      "rumor": 0
+    }
+  },
+  "items": [
+    {
+      "title": "GitHub Copilot transitions to AI Credits billing",
+      "source_url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "publisher": "GitHub Blog",
+      "pub_date": "2026-04-27",
+      "effective_date": "2026-06-01",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "key_claims": [
+        { "claim": "Pro plan: $10/month including $10 monthly AI Credits", "source": "github.blog" },
+        { "claim": "Pro+ plan: $39/month including $39 monthly AI Credits", "source": "github.blog" },
+        { "claim": "Business: $19/user/month including $19 credits plus $30 bonus through August", "source": "github.blog" },
+        { "claim": "Enterprise: $39/user/month including $39 credits plus $70 bonus through August", "source": "github.blog" },
+        { "claim": "Code completions and Next Edit suggestions remain free across all plans", "source": "github.blog" },
+        { "claim": "Community announcement received 400+ comments and ~900 downvotes", "source": "github.com/orgs/community/discussions/192948" }
+      ],
+      "cross_refs": [
+        { "url": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/", "tier": "T2", "role": "corroborating — developer backlash coverage" },
+        { "url": "https://visualstudiomagazine.com/articles/2026/04/27/devs-sound-off-on-usage-based-copilot-pricing-change-you-will-get-less-but-pay-the-same-price.aspx", "tier": "T3", "role": "corroborating" }
+      ],
+      "caveats": "Annual plan subscribers remain on existing pricing until plan expiry."
+    },
+    {
+      "title": "Gemini 2.0 Flash API deprecated",
+      "source_url": "https://ai.google.dev/gemini-api/docs/deprecations",
+      "publisher": "Google AI for Developers",
+      "pub_date": "2026-06-01",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "deprecation",
+      "categories": ["dev-tools", "model-release"],
+      "bd_actionability": "high",
+      "key_claims": [
+        { "claim": "gemini-2.0-flash API calls return errors from June 1, 2026", "source": "ai.google.dev" },
+        { "claim": "Gemini 2.5 Flash-Lite priced identically to 2.0 Flash ($0.10/$0.40 per 1M tokens in/out)", "source": "tokencost.app (T3, vendor-implied pricing)" },
+        { "claim": "Gemini 2.5 Flash costs approximately 3x more on input than 2.0 Flash", "source": "tokencost.app (T3)" }
+      ],
+      "cross_refs": [
+        { "url": "https://gemilab.net/en/articles/gemini-api/gemini-2-0-flash-deprecation-june-2026-migration-guide", "tier": "T3", "role": "corroborating — migration guide" }
+      ],
+      "caveats": "Pricing figures for Gemini 2.5 models cited from third-party cost tracker; verify against Google's current pricing page."
+    },
+    {
+      "title": "Claude Code v2.1.157-158: Plugin auto-loading and cloud auto mode",
+      "source_url": "https://github.com/anthropics/claude-code/releases",
+      "publisher": "Anthropic via GitHub",
+      "pub_date_range": "2026-05-29 to 2026-05-31",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "key_claims": [
+        { "claim": "v2.1.157 (May 29): Plugins in .claude/skills now auto-load without marketplace", "source": "github.com/anthropics/claude-code/releases" },
+        { "claim": "v2.1.157: claude plugin init <name> scaffolds new plugins", "source": "github.com/anthropics/claude-code/releases" },
+        { "claim": "v2.1.158 (May 30): Auto mode available on Bedrock, Vertex, Foundry for Opus 4.7 and 4.8", "source": "github.com/anthropics/claude-code/releases" },
+        { "claim": "Auto mode opt-in via CLAUDE_CODE_ENABLE_AUTO_MODE=1", "source": "github.com/anthropics/claude-code/releases" }
+      ]
+    },
+    {
+      "title": "Microsoft to unveil homegrown AI coding model at Build 2026",
+      "source_url": "https://www.resultsense.com/news/2026-05-29-microsoft-coding-model-build-conference/",
+      "publisher": "Resultsense via Reuters",
+      "pub_date": "2026-05-29",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "report",
+      "categories": ["dev-tools", "ai-for-business"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        { "claim": "Microsoft plans to unveil a suite of in-house AI models at Build 2026 (June 2-3, San Francisco)", "source": "Reuters via resultsense.com" },
+        { "claim": "Suite includes coding, transcription, reasoning, speech, and image models", "source": "Reuters" },
+        { "claim": "Coding model targets GitHub Copilot market share recovery from Claude Code", "source": "Reuters" },
+        { "claim": "MS stock rose ~3% on report", "source": "market data / Reuters" }
+      ],
+      "cross_refs": [
+        { "url": "https://cybernews.com/ai-news/microsoft-new-homegrown-ai-models-copilot-github/", "tier": "T3", "role": "corroborating" },
+        { "url": "https://seekingalpha.com/news/4598018-microsoft-plans-to-showcase-new-coding-model-at-next-weeks-build-conference-report", "tier": "T3", "role": "corroborating" },
+        { "url": "https://fortune.com/2026/05/21/microsoft-copilot-ai-openai-satya-nadella-gemini-claude/", "tier": "T2", "role": "corroborating — context on Copilot adoption decline" }
+      ],
+      "caveats": "Pre-announcement; capabilities not yet disclosed. Microsoft declined to comment. Prior Copilot coding efforts have underperformed rivals. Report sourced from Reuters; direct Reuters URL not retrievable."
+    },
+    {
+      "title": "YouTube rolls out automatic AI content detection and labeling",
+      "source_url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+      "publisher": "YouTube Blog",
+      "pub_date": "2026-05-27",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["policy-regulation"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        { "claim": "Automatic detection begins May 2026 using C2PA metadata, SynthID watermarks, and internal signals", "source": "blog.youtube" },
+        { "claim": "Labels moved to below video player on long-form and bottom-left overlay on Shorts", "source": "blog.youtube" },
+        { "claim": "No algorithm penalties or monetization impact from AI labels", "source": "blog.youtube" }
+      ],
+      "cross_refs": [
+        { "url": "https://9to5google.com/2026/05/27/youtube-updating-ai-content-labels/", "tier": "T3", "role": "corroborating" }
+      ]
+    },
+    {
+      "title": "OpenAI announces GPT-4.5 and o3 retirement from ChatGPT",
+      "source_url": "https://openai.com/index/retiring-gpt-4o-and-older-models/",
+      "publisher": "OpenAI",
+      "pub_date": "2026-05-28",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["model-release"],
+      "bd_actionability": "low",
+      "key_claims": [
+        { "claim": "GPT-4.5 retires from ChatGPT June 27, 2026 (30-day sunset)", "source": "openai.com (T2 secondary, primary 403)" },
+        { "claim": "o3 retires from ChatGPT August 26, 2026 (90-day sunset)", "source": "openai.com (T2 secondary, primary 403)" },
+        { "claim": "API access to GPT-4.5 and o3 unchanged", "source": "openai.com (T2 secondary)" }
+      ],
+      "cross_refs": [
+        { "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/openai-just-quietly-retired-the-last-of-the-gpt-4-models-and-it-feels-like-the-end-of-an-ai-era", "tier": "T3", "role": "corroborating" }
+      ],
+      "caveats": "Primary page returned HTTP 403 from research environment. Pub date (~May 28) inferred from retirement date minus sunset periods; secondary sources confirm."
+    },
+    {
+      "title": "Indonesia launches .ai.id country-code domain for AI ecosystem",
+      "source_url": "https://radiostar.harianjogja.com/2026/05/30/indonesia-luncurkan-domain-ai-id-untuk-perkuat-ekosistem-ai-nasional/",
+      "publisher": "Star Jogja FM / Harian Jogja",
+      "pub_date": "2026-05-30",
+      "event_date": "2026-05-29",
+      "tier": "T3",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["policy-regulation", "ai-for-business"],
+      "bd_actionability": "low",
+      "key_claims": [
+        { "claim": "Official launch: May 29, 2026", "source": "radiostar.harianjogja.com" },
+        { "claim": "Sunrise registration phase (trademark holders): June 2 – July 2, 2026", "source": "radiostar.harianjogja.com" },
+        { "claim": "General availability: October 5, 2026", "source": "radiostar.harianjogja.com" },
+        { "claim": "Organized by KORIKA and PANDI", "source": "radiostar.harianjogja.com" }
+      ],
+      "cross_refs": [
+        { "url": "https://www.komdigi.go.id", "tier": "T2", "role": "corroborating — Ministry of Communication & Digital backing" },
+        { "url": "https://youngster.id/headline/technology/indonesia-pimpin-adopsi-kecerdasan-buatan-di-asia-tenggara/", "tier": "T3", "role": "corroborating — SEA AI adoption context" }
+      ]
+    }
+  ],
+  "dropped": [
+    { "title": "OpenAI Rosalind Biodefense (May 29)", "reason": "Covered in 2026-05-30 bulletin" },
+    { "title": "Anthropic Milan office (May 27)", "reason": "Covered in 2026-05-30 bulletin" },
+    { "title": "Claude Opus 4.8 and Dynamic Workflows (May 28)", "reason": "Covered in 2026-05-30 bulletin" },
+    { "title": "Anthropic Series H $65B (May 28)", "reason": "Covered in 2026-05-30 bulletin" },
+    { "title": "Mistral Vibe agent (May 28)", "reason": "Covered in 2026-05-30 bulletin" },
+    { "title": "Mistral Search Toolkit (May 28)", "reason": "Covered in 2026-05-30 bulletin" },
+    { "title": "Cognition $1B funding (May 27)", "reason": "Covered in 2026-05-30 bulletin" },
+    { "title": "OpenAI Frontier Governance Framework (May 28)", "reason": "Covered in 2026-05-30 bulletin" },
+    { "title": "Apple macOS kernel exploit via Claude Mythos (May 14)", "reason": "Outside expanded 5-day window" },
+    { "title": "Microsoft Copilot Studio May update — computer-using agents GA (May 26)", "reason": "Outside expanded 5-day window" },
+    { "title": "DeepSeek V4-Pro 75% price cut permanent (May 22–23)", "reason": "Outside expanded 5-day window" },
+    { "title": "Claude Mythos wider release signals", "reason": "No specific primary announcement in window; Glasswing update (May 26) outside window" },
+    { "title": "Gemini 3.5 Pro allowlist open", "reason": "No confirmed specific in-window announcement; GA expected later in June" },
+    { "title": "Anthropic Agent SDK credit pool (announced May 14)", "reason": "Outside window; implementation June 15, claim email June 8 — no in-window primary" },
+    { "title": "xAI Grok V9 Medium training confirmed (May 25)", "reason": "Outside window; no actual release in window" },
+    { "title": "MCP ecosystem — no new server launches confirmed in window", "reason": "Coverage gap this window" },
+    { "title": "OpenAI GPT-5.5-Cyber for Cyber (May 7-8)", "reason": "Outside window" },
+    { "title": "ChatGPT Excel/Google Sheets enterprise free preview ending June 2", "reason": "Not a new announcement; admin notification for previously launched feature" },
+    { "title": "OpenAI Trusted Access for Cyber Advanced Account Security June 1", "reason": "Policy implementation date for existing program; low standalone news value" }
+  ],
+  "limitations": [
+    "Strict 72h window (May 29–Jun 1) yielded 5 items; expanded to 5 days (May 27–Jun 1) to recover 2 additional items.",
+    "openai.com blog returned HTTP 403 for primary page on model retirement announcement; date and content confirmed via multiple T3 corroborators.",
+    "Reuters primary URL for Microsoft MAI report not directly accessible; report confirmed by multiple independent outlets.",
+    "No new MCP server launches confirmed in this window; category underrepresented.",
+    "No agent framework releases (LangChain, CrewAI, AutoGen) confirmed in window.",
+    "X/Twitter and LinkedIn timelines not accessible; public posts via search-engine index captured for @AnthropicAI, @OpenAI, @MistralAI, @xai, @GoogleDeepMind.",
+    "US/EU-heavy coverage; one SEA regional search yielded the Indonesia .ai.id item.",
+    "Microsoft Build 2026 (June 2-3) falls just outside the window; announcements will be covered in the next bulletin.",
+    "Gemini 2.5 model pricing figures cited from third-party tracker, not Google primary page."
+  ],
+  "search_log": [
+    { "query": "Anthropic news announcement June 2026", "results": 9, "high_relevance": 2 },
+    { "query": "OpenAI news release announcement June 2026", "results": 10, "high_relevance": 4 },
+    { "query": "Google DeepMind Gemini announcement May June 2026", "results": 7, "high_relevance": 3 },
+    { "query": "new AI model release launched May 30 31 June 1 2026", "results": 10, "high_relevance": 3 },
+    { "query": "Anthropic Claude Mythos model preview announcement 2026", "results": 8, "high_relevance": 1 },
+    { "query": "OpenAI GPT-5.5 cyber security release June 2026", "results": 9, "high_relevance": 1 },
+    { "query": "xAI Grok announcement May June 2026", "results": 9, "high_relevance": 1 },
+    { "query": "MCP Model Context Protocol new server announcement June 2026", "results": 10, "high_relevance": 0 },
+    { "query": "GitHub Copilot usage-based billing June 1 2026 changes", "results": 10, "high_relevance": 8 },
+    { "query": "Anthropic Claude subscription Agent SDK credit pool June 15 2026", "results": 10, "high_relevance": 2 },
+    { "query": "AI announcement launch product June 1 2026", "results": 7, "high_relevance": 2 },
+    { "query": "AI news May 30 31 2026 new product launch", "results": 8, "high_relevance": 4 },
+    { "query": "Microsoft Build 2026 AI announcements coding model Copilot preview", "results": 9, "high_relevance": 7 },
+    { "query": "ChatGPT Excel Google Sheets June 2026 launch features", "results": 10, "high_relevance": 1 },
+    { "query": "AI agent framework LangChain CrewAI AutoGen release May 30 31 June 1 2026", "results": 8, "high_relevance": 0 },
+    { "query": "Mistral AI announcement May June 2026", "results": 9, "high_relevance": 1 },
+    { "query": "OpenAI GPT-4.5 retirement June 27 o3 retirement August 2026 announcement", "results": 10, "high_relevance": 5 },
+    { "query": "Microsoft Copilot Studio May 2026 computer using agents workflows update", "results": 9, "high_relevance": 3 },
+    { "query": "Gemini 3.5 Pro allowlist enterprise June 2026 availability", "results": 9, "high_relevance": 1 },
+    { "query": "Reuters Microsoft homegrown coding model Build 2026 May 29", "results": 5, "high_relevance": 5 },
+    { "query": "Gemini 2.0 flash deprecated June 1 2026 developer migration impact", "results": 10, "high_relevance": 7 },
+    { "query": "GitHub Copilot usage billing criticism developers June 2026", "results": 9, "high_relevance": 6, "type": "adversarial" },
+    { "query": "Microsoft MAI coding model Copilot skepticism controversy", "results": 10, "high_relevance": 4, "type": "adversarial" },
+    { "query": "\"AI agent\" OR \"autonomous agent\" launch shipped May June 2026 site:x.com", "results": 10, "high_relevance": 2, "type": "exploratory-social" },
+    { "query": "AI Indonesia startup Asia Tenggara Mei Juni 2026 announcement", "results": 9, "high_relevance": 3, "type": "exploratory-sea" },
+    { "query": "GitHub trending AI repository June 2026 new stars", "results": 9, "high_relevance": 2, "type": "exploratory" },
+    { "query": "Hugging Face daily papers AI June 2026", "results": 8, "high_relevance": 1, "type": "exploratory" },
+    { "query": "AI announcement May 29 2026 -anthropic -mistral -openai", "results": 8, "high_relevance": 3, "type": "exploratory" },
+    { "query": "Hacker News AI trending discussion May 30 31 2026", "results": 8, "high_relevance": 3, "type": "exploratory" },
+    { "query": "Apple macOS kernel vulnerability Claude Anthropic credited 2026", "results": 8, "high_relevance": 1, "type": "exploratory" },
+    { "query": "DeepSeek V4-Pro 75% price cut announcement May 2026", "results": 9, "high_relevance": 6, "type": "exploratory" },
+    { "query": "YouTube AI labeling generated content announcement May June 2026", "results": 9, "high_relevance": 7, "type": "exploratory" },
+    { "query": "AI benchmark critique controversy criticism May 30 31 June 1 2026", "results": 10, "high_relevance": 2, "type": "adversarial" },
+    { "query": "new MCP server launch product pulsemcp June 2026", "results": 10, "high_relevance": 0, "type": "exploratory" },
+    { "query": "Anthropic Claude Mythos general availability Glasswing June 2026", "results": 8, "high_relevance": 1, "type": "exploratory" },
+    { "query": "Anthropic Claude Code update release May 30 31 June 1 2026", "results": 9, "high_relevance": 6, "type": "exploratory" },
+    { "query": "OpenAI retiring GPT-4.5 o3 ChatGPT announcement date May 2026", "results": 10, "high_relevance": 4, "type": "exploratory" }
+  ]
+}
