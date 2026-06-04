@@ -1,0 +1,353 @@
+{
+  "run_date": "2026-06-04",
+  "period_start": "2026-06-01",
+  "period_end": "2026-06-04",
+  "timeframe_hours": 72,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 24,
+  "items_published": 9,
+  "items_dropped": 15,
+  "exploration_pct": 45,
+  "total_searches": 27,
+  "exploratory_searches": 15,
+  "sources_count": 13,
+  "verification_summary": {
+    "verified": 8,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "dev-tools",
+    "workflow-automation",
+    "model-release",
+    "ai-for-business",
+    "policy-regulation"
+  ],
+  "categories_with_no_items": [
+    "agent-framework",
+    "mcp-ecosystem",
+    "productivity-ai",
+    "research-papers"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Windsurf Becomes Devin Desktop with Open Agent Client Protocol",
+      "date": "2026-06-02",
+      "source_url": "https://devin.ai/blog/windsurf-is-now-devin-desktop",
+      "source_org": "Cognition (Devin)",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "dev-tools",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Windsurf rebranded as Devin Desktop on June 2, 2026",
+        "Shipped as OTA update; plans, pricing, extensions unchanged",
+        "Agent Command Center (Kanban view) replaces file tree as default screen",
+        "Agent Client Protocol (ACP) is open standard for third-party agents: Codex, Claude Agent, OpenCode",
+        "Local agent rewritten in Rust with 30% token efficiency improvement over Cascade",
+        "Cascade available through July 1, 2026"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": []
+    },
+    {
+      "id": 2,
+      "title": "Microsoft Scout Autopilot Ships at Build 2026",
+      "date": "2026-06-02",
+      "source_url": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+      "source_org": "Microsoft",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "workflow-automation",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Autopilot: new category of always-on agent with own system identity",
+        "Scout is first Autopilot — handles meeting prep, scheduling, routine tasks",
+        "Supported on Windows 11+ and macOS 12+",
+        "Built on OpenClaw open-source multi-step workflow runtime",
+        "Rolling out to Frontier customers only at launch",
+        "Foundry Agent Service: hosted agents with per-session sandboxes + persistent memory",
+        "Microsoft Execution Containers (MXC): OS-enforced agent sandboxing, currently preview",
+        "Agent 365: cross-agent governance and observability layer"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://news.microsoft.com/build-2026/"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Cursor Teams Pricing Restructured with New Premium Tier",
+      "date": "2026-06-01",
+      "source_url": "https://cursor.com/blog/teams-pricing-june-2026",
+      "source_org": "Cursor",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "dev-tools",
+      "bd_actionability": "medium-high",
+      "key_facts": [
+        "Standard seats: $32/seat/month annual (down from $40); $40/month monthly (unchanged)",
+        "New Premium seats: $96/seat/month annual, 5x usage of Standard",
+        "Separate usage pools for Cursor-native models and third-party API calls",
+        "Effective immediately for new customers; July 1, 2026 for renewing customers",
+        "Vendor claims 90% of teams will see lower costs — no published methodology"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": []
+    },
+    {
+      "id": 4,
+      "title": "Microsoft Debuts MAI Model Family at Build 2026",
+      "date": "2026-06-02",
+      "source_url": "https://microsoft.ai/news/introducing-mai-thinking-1/",
+      "source_org": "Microsoft",
+      "tier": "T2 (descriptive); T4 (comparative benchmarks)",
+      "verification_status": "verified (release/availability); benchmarks vendor-claimed",
+      "category": "model-release",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "MAI-Thinking-1: 35B active params, sparse MoE, 256K context, private preview on Foundry",
+        "AIME 2025: 97.0% (vendor-run); AIME 2026: 94.5% (vendor-run)",
+        "Surge human eval (1,276 tasks): raters preferred over Claude Sonnet 4.6 — vendor methodology, unverified independently",
+        "Trained without distillation from third-party models",
+        "MAI-Code-1: coding model, already live in GitHub Copilot and VS Code",
+        "MAI-Image-2.5: text-to-image and image-to-image",
+        "MAI-Transcribe-1.5: 43 languages",
+        "MAI-Voice-2: 15+ additional language voices",
+        "No pricing disclosed for MAI-Thinking-1"
+      ],
+      "conflict_of_interest": "Microsoft benchmarked its own model against competitors using a contracted partner (Surge); evaluate accordingly",
+      "cross_references": [
+        "https://www.latent.space/p/ainews-microsoft-build-mai-thinking"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "MiniMax M3: Open-Weight Model with 1M-Token Context",
+      "date": "2026-06-01",
+      "source_url": "https://www.minimax.io/blog/minimax-m3",
+      "source_org": "MiniMax",
+      "tier": "T2 (descriptive); T4 (comparative benchmarks)",
+      "verification_status": "verified (release and API); benchmarks vendor-run; weights not yet public",
+      "category": "model-release",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Architecture: MiniMax Sparse Attention (MSA) — vendor claims 1/20th compute vs standard attention at long context",
+        "Context window: 1M tokens",
+        "Native multimodal: image and video input; can operate desktop computers",
+        "SWE-Bench Pro: 59.0% (vendor-run); BrowseComp: 83.5 (vendor-run)",
+        "Weights not released at launch; committed within 10 days (~June 11)",
+        "API live at platform.minimax.io; plans from $20/month",
+        "Full open-source designation not yet applicable — training code and inference operators not released"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://the-decoder.com/minimax-m3-open-weight-model-with-a-million-token-context-challenges-proprietary-leaders/",
+        "https://www.techtimes.com/articles/317532/20260601/minimax-m3-open-weight-coding-model-frontier-claims-unverified-benchmarks.htm"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Anthropic Scales Project Glasswing to 150+ Organizations in 15+ Countries",
+      "date": "2026-06-02",
+      "source_url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "ai-for-business",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Glasswing expanded from ~50 to 150+ new orgs across 15+ countries",
+        "New sectors: power, water, healthcare, communications, hardware",
+        "Initial cohort found 10,000+ high/critical-severity security flaws since April launch",
+        "Claude Mythos Preview: codebase scanning, patch writing, penetration testing",
+        "Major partners: Apple, NVIDIA, Microsoft, CrowdStrike, Palo Alto Networks, U.S. government",
+        "Claude Security (public) released for codebase scanning outside Glasswing"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://www.cnbc.com/2026/06/02/anthropic-mythos-ai-project-glasswing.html",
+        "https://cyberscoop.com/anthropic-project-glasswing-expansion-critical-infrastructure-claude-mythos/"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Anthropic Launches Claude Partner Network Services Track",
+      "date": "2026-06-03",
+      "source_url": "https://www.anthropic.com/news",
+      "source_org": "Anthropic",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "category": "ai-for-business",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Services Track adds structured pathway for consulting/SI organizations",
+        "Partner Hub: training materials, sales playbooks, technical certifications",
+        "Claude Certified Architect certification launched March 2026",
+        "$100M annual program investment (announced March 2026)",
+        "Application at claude.com/partners; free to join",
+        "Primary article returned 404; confirmed via news index + secondary sources"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Anthropic Maps a Year of AI-Enabled Cyber Threats",
+      "date": "2026-06-03",
+      "source_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "policy-regulation",
+      "bd_actionability": "low-medium",
+      "key_facts": [
+        "Study period: March 2025 to March 2026",
+        "Sample: 832 banned accounts linked to malicious cyber activity",
+        "13,873 observed actions; 482 unique MITRE ATT&CK techniques",
+        "Medium/high-risk actors using AI for cyberattacks: 33% → 56% (70% increase by Anthropic's methodology)",
+        "Malware development: cited in ~67% of analyzed accounts",
+        "Findings shared with Verizon for 2026 Data Breach Investigations Report",
+        "In discussion with MITRE on ATT&CK framework extension for AI behaviors",
+        "Caveat: Anthropic's internal research; no independent replication published"
+      ],
+      "conflict_of_interest": "Anthropic is assessing threats from misuse of AI systems including its own; note self-reporting bias",
+      "cross_references": [
+        "https://cryptobriefing.com/anthropic-ai-cyber-threats-analysis/"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Anthropic Files Confidential S-1 with the SEC",
+      "date": "2026-06-01",
+      "source_url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "ai-for-business",
+      "bd_actionability": "low",
+      "key_facts": [
+        "Confidential draft Form S-1 submitted to SEC on June 1, 2026",
+        "No shares, price, or financial details disclosed in official announcement",
+        "Filed under Securities Act Rule 135 — not an offer to sell securities",
+        "IPO contingent on SEC review and market conditions",
+        "Secondary sourcing (TechCrunch, CNBC): revenue run rate $47B, Series H at $65B, valuation ~$965B — not in official S-1 announcement"
+      ],
+      "conflict_of_interest": null,
+      "cross_references": [
+        "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
+        "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {
+      "title": "Gemini 2.0 Flash / Flash Lite shutdown",
+      "source": "ai.google.dev/gemini-api/docs/changelog",
+      "reason": "Duplicate — covered in previous bulletin (period ending 2026-06-01)"
+    },
+    {
+      "title": "Google Gemini 3.5 Flash GA",
+      "source": "blog.google/gemini-3-5/",
+      "reason": "Outside 72h window — announced May 19, 2026"
+    },
+    {
+      "title": "Google Managed Agents API public preview",
+      "source": "developers.googleblog.com",
+      "reason": "Outside 72h window — announced May 19, 2026"
+    },
+    {
+      "title": "Claude Opus 4.8 Dynamic Workflows",
+      "source": "anthropic.com",
+      "reason": "Outside 72h window; covered in previous bulletin"
+    },
+    {
+      "title": "SAP Joule Studio 2.0",
+      "source": "SAP press",
+      "reason": "No confirmed June 1-4 launch date; 'rolling out June 2026' too vague"
+    },
+    {
+      "title": "Colorado AI Act effective date",
+      "source": "Colorado state legislation",
+      "reason": "Future-dated (June 30); not an in-window event"
+    },
+    {
+      "title": "Google Cloud SEA AI accelerator corridor",
+      "source": "itbrief.asia",
+      "reason": "Could not confirm June 1-4 specific launch date; may be prior-period"
+    },
+    {
+      "title": "Hermes Agent 140k+ GitHub stars",
+      "source": "GitHub / OpenRouter",
+      "reason": "No specific new June 1-4 release; ongoing stars growth is not an event"
+    },
+    {
+      "title": "Anthropic $65B Series H raise",
+      "source": "Multiple",
+      "reason": "Prior period (May 2026); outside window"
+    },
+    {
+      "title": "Microsoft Work IQ / Fabric IQ / Foundry IQ APIs",
+      "source": "blogs.microsoft.com",
+      "reason": "Build 2026 enterprise infrastructure stack — low standalone actionability; contextual reference only"
+    },
+    {
+      "title": "AI startup funding roundup (Hark $700M, Stord $250M, RADAR $170M)",
+      "source": "techstartups.com",
+      "reason": "Items dated late May; outside 72h window"
+    },
+    {
+      "title": "Proofpoint Agent Integrity Framework (RSAC 2026)",
+      "source": "x.com/proofpoint",
+      "reason": "Could not confirm RSAC 2026 date in window; single X post = T4; verification failed"
+    },
+    {
+      "title": "Microsoft Majorana 2 quantum chip",
+      "source": "blogs.microsoft.com",
+      "reason": "Off-scope — quantum roadmap not directly AI/ML"
+    },
+    {
+      "title": "GitHub Copilot App native desktop (Build 2026)",
+      "source": "blogs.microsoft.com",
+      "reason": "Build 2026 item worth standalone follow-up; dropped for space"
+    },
+    {
+      "title": "Cursor vs Claude Code market comparison",
+      "source": "Multiple comparison posts",
+      "reason": "Comparison content, not a primary news event"
+    }
+  ],
+  "search_log": [
+    {"query": "Anthropic Claude announcement June 2026", "type": "registry", "results": 9, "high_relevance": 5},
+    {"query": "OpenAI announcement release June 2026", "type": "registry", "results": 10, "high_relevance": 4},
+    {"query": "Google DeepMind Gemini release June 2026", "type": "registry", "results": 8, "high_relevance": 4},
+    {"query": "AI agent framework launch release June 2026", "type": "registry", "results": 10, "high_relevance": 3},
+    {"query": "MCP Model Context Protocol new server release June 2026", "type": "exploratory", "results": 10, "high_relevance": 1},
+    {"query": "Microsoft Build 2026 AI announcements June 2 3", "type": "registry", "results": 8, "high_relevance": 5},
+    {"query": "Gemini 3.5 Flash release Google June 2026 managed agents", "type": "registry", "results": 9, "high_relevance": 3},
+    {"query": "AI dev tools Cursor Claude Code new release June 2026", "type": "exploratory", "results": 10, "high_relevance": 4},
+    {"query": "Anthropic IPO filing SEC S-1 June 2026", "type": "registry", "results": 9, "high_relevance": 5},
+    {"query": "AI startup funding announcement June 2026", "type": "exploratory", "results": 10, "high_relevance": 2},
+    {"query": "MiniMax M3 open source model release June 2026", "type": "exploratory", "results": 9, "high_relevance": 5},
+    {"query": "Windsurf Devin Desktop rebrand June 2026", "type": "exploratory", "results": 8, "high_relevance": 4},
+    {"query": "Anthropic Project Glasswing expansion June 2026", "type": "registry", "results": 9, "high_relevance": 5},
+    {"query": "productivity AI tool launch announcement June 2026", "type": "exploratory", "results": 10, "high_relevance": 1},
+    {"query": "site:x.com AI announcement June 2026 agent framework", "type": "social-mandatory", "results": 10, "high_relevance": 2},
+    {"query": "AI Indonesia startup SEA June 2026 launch", "type": "stage-3.5-cross-language", "results": 10, "high_relevance": 1},
+    {"query": "new LLM model released June 2026 open source", "type": "exploratory", "results": 9, "high_relevance": 3},
+    {"query": "MAI-Thinking-1 Microsoft benchmark controversy independent verification", "type": "stage-3.5-adversarial", "results": 7, "high_relevance": 4},
+    {"query": "MiniMax M3 benchmark criticism independent replication June 2026", "type": "stage-3.5-adversarial", "results": 8, "high_relevance": 3},
+    {"query": "AI policy regulation announcement June 2026", "type": "exploratory", "results": 10, "high_relevance": 2},
+    {"query": "new MCP server launch June 2026 github.com pulsemcp.com", "type": "stage-3.5", "results": 10, "high_relevance": 0},
+    {"query": "Cursor pricing restructure standard seats June 2026 date", "type": "exploratory", "results": 10, "high_relevance": 3},
+    {"query": "Google Antigravity agent managed agents API public preview June 2026", "type": "registry", "results": 9, "high_relevance": 3},
+    {"query": "GitHub trending AI repos week June 2026 stars", "type": "stage-3.5", "results": 10, "high_relevance": 2},
+    {"query": "Hacker News front page AI June 2026 discussion", "type": "stage-3.5", "results": 10, "high_relevance": 2},
+    {"query": "Anthropic AI cybersecurity threats MITRE report June 3 2026", "type": "exploratory", "results": 9, "high_relevance": 4},
+    {"query": "primary fetch: anthropic.com/news/AI-enabled-cyber-threats-mitre-attack", "type": "primary-fetch", "results": 1, "high_relevance": 1}
+  ]
+}
