@@ -1,0 +1,248 @@
+{
+  "run_date": "2026-06-05",
+  "period_start": "2026-06-02",
+  "period_end": "2026-06-05",
+  "timeframe_hours": 72,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 27,
+  "items_published": 5,
+  "items_dropped": 22,
+  "exploration_pct": 41,
+  "total_searches": 27,
+  "exploratory_searches": 11,
+  "sources_count": 10,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "dev-tools",
+    "agent-framework",
+    "workflow-automation",
+    "productivity-ai",
+    "ai-for-business"
+  ],
+  "categories_with_no_items": [
+    "model-release",
+    "mcp-ecosystem",
+    "research-papers",
+    "policy-regulation"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "GitHub Copilot Ships App Preview and SDK GA",
+      "date": "2026-06-02",
+      "source_url": "https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/",
+      "source_org": "GitHub",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "dev-tools",
+      "subcategory": "agent-framework",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Copilot App (standalone desktop app) opened to all Pro/Pro+/Business/Enterprise subscribers on June 2",
+        "Canvases feature: bidirectional work surface where agent and user can edit side-by-side",
+        "Cloud automations: schedule recurring agent runs without local machine active",
+        "Voice mode uses on-device speech-to-text (no audio leaves device)",
+        "Copilot SDK reached GA same day in 6 languages: Node.js/TypeScript, Python, Go, .NET, Rust, Java",
+        "SDK supports MCP server connectivity, hook system for agent behavior interception, and BYOK auth",
+        "BYOK providers: OpenAI, Microsoft Foundry, Anthropic",
+        "Third June 2 release: agentic capabilities added to Copilot CLI and JetBrains IDEs"
+      ],
+      "caveats": [
+        "Context window up to ~8,000 tokens — limits full-codebase awareness in large monorepos",
+        "Developer community reports quality regressions in Copilot suggestion accuracy since late 2025",
+        "App in technical preview; production-readiness timeline not disclosed"
+      ],
+      "cross_references": [
+        {
+          "url": "https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-06-02-introducing-copilot-cli-and-agentic-capabilities-enhancements-in-jetbrains-ides/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://devops.com/github-copilot-gets-its-own-app-and-agents-are-the-reason-why/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "OpenAI Codex Adds Role Plugins and Sites Preview",
+      "date": "2026-06-02",
+      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "source_org": "OpenAI",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "category": "productivity-ai",
+      "bd_actionability": "high",
+      "key_facts": [
+        "6 role-specific plugins: data analytics, creative production, sales, product design, equity investing, investment banking",
+        "Plugins bundle 62 apps and 110 skills; no coding required",
+        "Sites preview: build and host interactive web apps via natural language on OpenAI-managed URL",
+        "Available to ChatGPT Teams, Pro, and Enterprise plans",
+        "June 3 update added annotations for refining AI outputs"
+      ],
+      "caveats": [
+        "openai.com returned HTTP 403 on all direct fetch attempts during this run",
+        "All figures (62 apps, 110 skills) sourced from secondary reporting only",
+        "Sites is in preview; GA timeline not disclosed"
+      ],
+      "cross_references": [
+        {
+          "url": "https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://thenextweb.com/news/openai-codex-enterprise-plugins-sites-non-developers",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://sdtimes.com/ai/news-roundup-june-3-2026-outsystems-testlio-openai-neo4j/",
+          "tier": "T3",
+          "role": "discovery"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Cursor Rolls Out Organizations for Enterprise",
+      "date": "2026-06-03",
+      "source_url": "https://cursor.com/changelog",
+      "source_org": "Anysphere (Cursor)",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "dev-tools",
+      "subcategory": "ai-for-business",
+      "bd_actionability": "high",
+      "key_facts": [
+        "New Organizations layer generally available to all Enterprise customers on June 3",
+        "Three-level hierarchy: Organization (top) → Team → Group (user collections)",
+        "Per-team security policies, governance settings, budget limits, and feature flags",
+        "Consolidated spend and token usage view rolled up across all teams",
+        "Separate usage pools from June 1 pricing restructure apply per team under Org umbrella"
+      ],
+      "caveats": [
+        "Organizations layer is for Enterprise plan only; Free, Pro, and Teams plans unaffected"
+      ],
+      "cross_references": []
+    },
+    {
+      "id": 4,
+      "title": "Cursor v3.7 Ships Canvas Design Mode and Context Usage Reports",
+      "date": "2026-06-04",
+      "source_url": "https://cursor.com/changelog",
+      "source_org": "Anysphere (Cursor)",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "dev-tools",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Canvas Design Mode: users point at live UI elements in Agents Window browser to annotate and select",
+        "Agent locates and rewrites corresponding source components from the annotated context",
+        "Requires development server running and app loaded in Agents Window",
+        "Context Usage Reports: renders token distribution across session as interactive canvas",
+        "Reports show which files/code regions consumed context budget; allows scope pruning before reruns"
+      ],
+      "caveats": [
+        "Design Mode requires a running dev server and app in Agents Window; does not work on static screenshots or external URLs",
+        "No independent reproduction of Design Mode performance found at publication time"
+      ],
+      "cross_references": []
+    },
+    {
+      "id": 5,
+      "title": "GitHub Copilot Chat for Pull Requests Reaches General Availability",
+      "date": "2026-06-04",
+      "source_url": "https://github.blog/changelog/2026-06-04-copilot-chat-brings-richer-context-to-pull-requests/",
+      "source_org": "GitHub",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "dev-tools",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Moved from public preview to GA on June 4",
+        "Available to all GitHub Copilot license holders at no additional cost",
+        "Side-by-side diff and chat interface: eliminates window-toggling during PR review",
+        "Automatic repository and diff context improves accuracy of review questions",
+        "Access: 'Ask about this diff' button, Copilot nav button, or highlight + dropdown"
+      ],
+      "caveats": [],
+      "cross_references": []
+    }
+  ],
+  "dropped_items": [
+    { "title": "Microsoft Scout Autopilot Ships at Build 2026", "reason": "Covered in previous bulletin (2026-06-04)" },
+    { "title": "Microsoft MAI Model Family at Build 2026", "reason": "Covered in previous bulletin (2026-06-04)" },
+    { "title": "Windsurf → Devin Desktop with Agent Client Protocol", "reason": "Covered in previous bulletin (2026-06-04)" },
+    { "title": "Anthropic Project Glasswing expansion", "reason": "Covered in previous bulletin (2026-06-04)" },
+    { "title": "Anthropic Claude Partner Network Services Track", "reason": "Covered in previous bulletin (2026-06-04)" },
+    { "title": "Anthropic MITRE ATT&CK AI cyber threat mapping", "reason": "Covered in previous bulletin (2026-06-04)" },
+    { "title": "Anthropic S-1 confidential SEC filing", "reason": "Covered in previous bulletin (2026-06-04)" },
+    { "title": "MiniMax M3 open-weight model", "reason": "Covered in previous bulletin (2026-06-04); weights still pending ~June 11" },
+    { "title": "Cursor Teams pricing restructure", "reason": "Covered in previous bulletin (2026-06-04); June 1 item" },
+    { "title": "OpenAI Codex Computer Use on Windows", "reason": "Outside 72h window — shipped May 29" },
+    { "title": "Vermont H.816 therapy bot restrictions", "reason": "Outside 72h window — legislature adjourned May 29" },
+    { "title": "Claude Opus 4.8 release", "reason": "Outside 72h window — shipped May 28" },
+    { "title": "Google Gemini 3.5 Flash GA", "reason": "Outside 72h window — announced May 19 at Google I/O 2026" },
+    { "title": "Gemini 3.5 Pro release", "reason": "Not released in window; announced as 'next month' from May 19; no date confirmed" },
+    { "title": "GPT-Rosalind update for life sciences", "reason": "June 4; low actionability for general audience; specialized research domain" },
+    { "title": "OpenAI deprecates Evals platform and Agent Builder", "reason": "Low actionability; openai.com blocked; secondary sources insufficient" },
+    { "title": "GitHub Copilot usage-based billing GA", "reason": "Outside 72h window — June 1" },
+    { "title": "GitHub Copilot code review for Azure Repos technical preview", "reason": "June 2; folded into Copilot App+SDK item context; below standalone threshold" },
+    { "title": "Grok V9-Medium training completion", "reason": "Model in RL training, not released; expected mid-June" },
+    { "title": "Indonesia .ai.id domain Sunrise phase", "reason": "Minor policy/infrastructure item; no product or model shipping; low actionability" },
+    { "title": "Microsoft Agent Framework at Build 2026", "reason": "Conference sessions announcement only; no new version or feature release confirmed" },
+    { "title": "Cursor cloud agents research blog", "reason": "Editorial content; no new feature released" }
+  ],
+  "limitations": [
+    "Previous bulletin overlap: major Build 2026 items (Scout, MAI, Windsurf/Devin Desktop, Anthropic actions) covered on 2026-06-04",
+    "openai.com returned HTTP 403 on all direct fetch attempts; Codex item graded secondary",
+    "Login-walled coverage: X timelines, IG, LinkedIn, Discord not accessed directly",
+    "Category gap — model-release: no major model released in window; Gemini 3.5 Pro, Grok V9-Medium, Claude Mythos 1 not yet shipped",
+    "Category gap — workflow-automation, mcp-ecosystem, research-papers, policy-regulation: no items confirmed for June 2-5",
+    "Category gap — productivity-ai breadth: no Notion/Linear/Granola/Mem.ai launch in window beyond Codex plugins",
+    "All capability claims from vendor changelogs only; no independent benchmarks cited",
+    "Geographic bias: SEA/Indonesia search yielded .ai.id domain item (dropped); US/EU heavy"
+  ],
+  "search_log": [
+    { "query": "Anthropic news announcement June 2026", "results": 8, "high_relevance": 4, "type": "registry" },
+    { "query": "OpenAI announcement release June 2026", "results": 10, "high_relevance": 3, "type": "registry" },
+    { "query": "Google DeepMind AI announcement June 2026", "results": 8, "high_relevance": 3, "type": "registry" },
+    { "query": "xAI Grok model release June 2026", "results": 10, "high_relevance": 2, "type": "registry" },
+    { "query": "Meta AI Llama model release June 2026", "results": 10, "high_relevance": 1, "type": "registry" },
+    { "query": "Mistral AI model release announcement June 2026", "results": 8, "high_relevance": 1, "type": "registry" },
+    { "query": "LangChain CrewAI AutoGen agent framework release June 2026", "results": 9, "high_relevance": 1, "type": "registry" },
+    { "query": "Claude Code update release June 2026", "results": 10, "high_relevance": 4, "type": "registry" },
+    { "query": "MCP Model Context Protocol new servers June 2026", "results": 9, "high_relevance": 2, "type": "exploratory" },
+    { "query": "Cursor IDE update changelog June 2026", "results": 8, "high_relevance": 5, "type": "registry" },
+    { "query": "OpenAI Codex Computer Use Windows release June 2026", "results": 10, "high_relevance": 4, "type": "registry" },
+    { "query": "AI startup funding launch announcement June 2026", "results": 10, "high_relevance": 1, "type": "exploratory" },
+    { "query": "GitHub Copilot new feature update June 2026", "results": 10, "high_relevance": 5, "type": "registry" },
+    { "query": "AI news announcement June 4 OR June 5 2026", "results": 4, "high_relevance": 2, "type": "exploratory" },
+    { "query": "GitHub Copilot SDK generally available June 2 2026 features", "results": 9, "high_relevance": 5, "type": "registry" },
+    { "query": "Claude Opus 4.8 release features benchmark June 2026", "results": 10, "high_relevance": 4, "type": "registry" },
+    { "query": "site:x.com Model Context Protocol OR MCP server June 2026", "results": 9, "high_relevance": 2, "type": "social-mandatory" },
+    { "query": "AI Indonesia startup Asia Juni 2026 OR June 2026", "results": 10, "high_relevance": 2, "type": "cross-language-exploratory" },
+    { "query": "new AI model launch June 4 2026 OR June 5 2026", "results": 8, "high_relevance": 1, "type": "exploratory" },
+    { "query": "Copilot App canvases agent sessions June 2 2026 features", "results": 9, "high_relevance": 5, "type": "registry" },
+    { "query": "AI agent framework new release June 3 4 5 2026", "results": 9, "high_relevance": 3, "type": "exploratory" },
+    { "query": "new MCP server launch June 3 4 5 2026 github", "results": 9, "high_relevance": 0, "type": "exploratory" },
+    { "query": "OpenAI announcement news June 3 OR June 4 2026", "results": 8, "high_relevance": 4, "type": "registry" },
+    { "query": "Vermont therapy bot ban AI June 2026 legislation", "results": 9, "high_relevance": 3, "type": "exploratory-adversarial" },
+    { "query": "Gemini 3.5 Pro release date June 2026", "results": 8, "high_relevance": 2, "type": "adversarial" },
+    { "query": "GitHub Copilot SDK criticism limitations independent review June 2026", "results": 6, "high_relevance": 3, "type": "adversarial" },
+    { "query": "OpenAI Codex six new OR role-specific plugins June 3 2026", "results": 9, "high_relevance": 5, "type": "verification" }
+  ]
+}
