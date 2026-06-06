@@ -1,0 +1,465 @@
+{
+  "run_metadata": {
+    "date": "2026-06-06",
+    "period_start": "2026-06-01",
+    "period_end": "2026-06-06",
+    "window_note": "Strict 72h (June 3–6) yielded 5 verified items; expanded to 5 days per skill protocol",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 32,
+    "items_published": 10,
+    "items_dropped": 22,
+    "exploration_pct": 42,
+    "sources_count": 28,
+    "verification_summary": {
+      "verified": 8,
+      "secondary": 2,
+      "rumor": 0
+    },
+    "categories": [
+      "model-release",
+      "dev-tools",
+      "workflow-automation",
+      "productivity-ai",
+      "mcp-ecosystem",
+      "ai-for-business",
+      "policy-regulation"
+    ]
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "OpenAI ChatGPT Dreaming V3 Replaces Manual Memory with Background Synthesis",
+      "date": "2026-06-04",
+      "primary_url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "publisher": "OpenAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "category": ["productivity-ai"],
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "Factual recall 82.8% on OpenAI internal eval (up from 41.5% in 2024)",
+          "source": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "status": "vendor-reported, unverified independently"
+        },
+        {
+          "claim": "5× compute reduction for Free-tier rollout",
+          "source": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "status": "vendor-reported"
+        },
+        {
+          "claim": "2× more memory for Plus/Pro users",
+          "source": "https://openai.com/index/chatgpt-memory-dreaming/",
+          "status": "vendor-reported"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.techtimes.com/articles/317840/20260605/chatgpt-memory-dreaming-update-openai-rewrites-personalization-engine-limits-audit-trail.htm",
+          "tier": "T3",
+          "role": "corroborating+adversarial"
+        }
+      ],
+      "caveats": ["All performance metrics are vendor self-reported", "US Plus/Pro rollout only initially"]
+    },
+    {
+      "id": 2,
+      "title": "xAI Opens Grok Voice Agent API and Grok Imagine Video 1.5 Preview to Developers",
+      "date": "2026-06-03",
+      "date_range_end": "2026-06-04",
+      "primary_url": "https://x.ai/news/grok-voice-agent-api",
+      "primary_url_2": "https://docs.x.ai/developers/models/grok-imagine-video-1.5-preview",
+      "publisher": "xAI",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "category": ["dev-tools"],
+      "bd_actionability": "high",
+      "note": "x.ai/news primary returned HTTP 403; confirmed via docs.x.ai (T2) and multiple T3 outlets",
+      "key_claims": [
+        {
+          "claim": "Grok Voice Agent API priced at $0.05/minute",
+          "source": "https://docs.x.ai/developers/models",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "Grok Imagine Video 1.5 priced at $0.08/second of output",
+          "source": "https://docs.x.ai/developers/models/grok-imagine-video-1.5-preview",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "Voice Agent API #1 on Big Bench Audio",
+          "source": "https://x.ai/news/grok-voice-agent-api",
+          "status": "vendor-claimed, no independent verification this run"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://releasebot.io/updates/xai",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": ["Primary news pages at x.ai returned 403", "Benchmark ranking is vendor-claimed"]
+    },
+    {
+      "id": 3,
+      "title": "Microsoft Scout Always-On Personal Agent Enters Private Preview",
+      "date": "2026-06-02",
+      "primary_url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+      "publisher": "Microsoft",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "category": ["workflow-automation"],
+      "bd_actionability": "medium-high",
+      "key_claims": [
+        {
+          "claim": "Requires GitHub Copilot license + Frontier enrollment",
+          "source": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "Each agent operates with its own Entra identity",
+          "source": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "Built on OpenClaw open-source technology",
+          "source": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+          "status": "vendor-stated"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-06-02/microsoft-launches-ai-that-works-like-an-executive-assistant",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.uctoday.com/unified-communications/microsoft-scout-and-the-agentic-upgrade-coming-to-teams-and-m365/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": ["Experimental private preview only", "GA timeline not disclosed", "No pricing disclosed", "Third-party agent auto-discovery listed as future capability"]
+    },
+    {
+      "id": 4,
+      "title": "NVIDIA Nemotron 3 Ultra (550B) Open-Weight Model Goes Live on HuggingFace",
+      "date_announced": "2026-06-01",
+      "date_available": "2026-06-04",
+      "primary_url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+      "publisher": "NVIDIA Research",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement+release",
+      "category": ["model-release"],
+      "bd_actionability": "high",
+      "note": "Primary research page not directly fetched; confirmed via Artificial Analysis (T2) and multiple T3 outlets",
+      "key_claims": [
+        {
+          "claim": "550B total parameters, 55B active per inference pass (MoE architecture)",
+          "source": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "300+ tokens/second throughput on pre-release DeepInfra endpoint",
+          "source": "NVIDIA Research",
+          "status": "pre-release vendor benchmark, unverified"
+        },
+        {
+          "claim": "Artificial Analysis Intelligence Index score: 48 (US open-weight leader)",
+          "source": "https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-launch-announced",
+          "status": "independent benchmark (T2)"
+        },
+        {
+          "claim": "Kimi K2.6 leads global open-weight leaderboard at 54 on same index",
+          "source": "https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-launch-announced",
+          "status": "independent benchmark (T2)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://artificialanalysis.ai/articles/nvidia-nemotron-3-ultra-launch-announced",
+          "tier": "T2",
+          "role": "corroborating+adversarial"
+        },
+        {
+          "url": "https://the-decoder.com/nvidias-nemotron-3-ultra-becomes-the-smartest-open-us-model-but-china-still-leads/",
+          "tier": "T3",
+          "role": "adversarial"
+        }
+      ],
+      "caveats": ["Throughput figure is pre-release vendor measurement", "Primary page not directly fetched"]
+    },
+    {
+      "id": 5,
+      "title": "Noma Launches Agentic Access Control for AI Agents and MCP Servers",
+      "date": "2026-06-02",
+      "primary_url": "https://noma.security/blog/controlling-agent-and-mcp-access-with-noma/",
+      "publisher": "Noma Security",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "category": ["mcp-ecosystem"],
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "Per-tool policy enforcement at tool, agent, user, team, or environment granularity",
+          "source": "https://noma.security/blog/controlling-agent-and-mcp-access-with-noma/",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "Real-time dynamic registry of all agents and MCP servers",
+          "source": "https://noma.security/blog/controlling-agent-and-mcp-access-with-noma/",
+          "status": "vendor-stated"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.helpnetsecurity.com/2026/06/02/noma-brings-visibility-and-access-governance-to-ai-agents-and-mcp-servers/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/noma-launches-agentic-access-control-to-govern-ai-agents-and-mcp-servers-across-the-enterprise-302788534.html",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Microsoft Debuts MAI-Code-1-Flash and MAI-Thinking-1 at Build 2026",
+      "date": "2026-06-02",
+      "primary_url": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+      "publisher": "Microsoft AI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "category": ["model-release", "dev-tools"],
+      "bd_actionability": "medium",
+      "tier_nuance": "Competitive benchmark comparisons (SWE-Bench Pro, Surge evaluations) are vendor-designed or vendor-commissioned — downgraded to T4",
+      "key_claims": [
+        {
+          "claim": "MAI-Code-1-Flash: 5B parameters, rolling out to all GitHub Copilot tiers",
+          "source": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "MAI-Thinking-1: 35B active parameters, 256k context, commercially licensed training data",
+          "source": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "SWE-Bench Pro: MAI-Code 51.2% vs. Claude Haiku 4.5 35.2%",
+          "source": "https://microsoft.ai/news/introducingmai-code-1-flash/",
+          "status": "vendor-designed benchmark, T4, unverified independently"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/2/microsofts-new-models/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": ["MAI-Thinking-1 private preview only; GA timeline not disclosed", "All benchmark comparisons vendor-run or vendor-commissioned"]
+    },
+    {
+      "id": 7,
+      "title": "Anthropic Launches Claude Partner Network Services Track with $100M Investment",
+      "date": "2026-06-03",
+      "primary_url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "publisher": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "category": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "Preferred tier: 100 certified individuals, 15 deployed joint customers minimum",
+          "source": "https://www.anthropic.com/news/services-track-partner-hub",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "Global Premier: 1,000 certified individuals, 100 deployed customers across 3+ regions",
+          "source": "https://www.anthropic.com/news/services-track-partner-hub",
+          "status": "vendor-stated"
+        },
+        {
+          "claim": "$100 million investment in partner training and support",
+          "source": "https://www.anthropic.com/news/services-track-partner-hub",
+          "status": "vendor-stated"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Anthropic Maps a Year of AI-Enabled Cyberattacks to MITRE ATT&CK",
+      "date": "2026-06-03",
+      "primary_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "publisher": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "research-analysis",
+      "category": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "832 accounts analyzed (March 2025 – March 2026)",
+          "source": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "status": "vendor-stated (own system telemetry)"
+        },
+        {
+          "claim": "67.3% of accounts used AI for malware development",
+          "source": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "status": "vendor-stated (own system telemetry)"
+        },
+        {
+          "claim": "Medium-risk-or-higher actor proportion rose from 33% to 56% across two 6-month periods",
+          "source": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+          "status": "vendor-stated (own system telemetry)"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.helpnetsecurity.com/2026/06/05/anthropic-ai-cyber-activity-analysis/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://letsdatascience.com/blog/anthropic-mapped-a-year-of-ai-hacking-mitre-attack",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Trump Signs AI Executive Order Requiring Voluntary 30-Day Pre-Release Model Review",
+      "date": "2026-06-02",
+      "primary_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+      "publisher": "The White House",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "government-action",
+      "category": ["policy-regulation"],
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "Voluntary 30-day pre-release government access to frontier AI models",
+          "source": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+          "status": "government primary"
+        },
+        {
+          "claim": "Earlier draft required mandatory 90-day window; reduced and made voluntary in final order",
+          "source": "https://www.cnbc.com/2026/06/02/trump-executive-order-ai.html",
+          "status": "T3 corroborating"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/trumps-new-ai-executive-order-drastically-shifts-the-administrations-stance-on-the-tech/",
+          "tier": "T2",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Anthropic Files Confidential S-1 with SEC for Proposed IPO",
+      "date": "2026-06-01",
+      "primary_url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "publisher": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "category": ["ai-for-business"],
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "Confidential S-1 submitted June 1, 2026",
+          "source": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+          "status": "vendor-confirmed"
+        },
+        {
+          "claim": "IPO subject to SEC review and market conditions; no price or share count set",
+          "source": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+          "status": "vendor-confirmed"
+        },
+        {
+          "claim": "$965B post-Series H valuation",
+          "source": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
+          "status": "third-party unconfirmed by Anthropic; cited for context only"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.npr.org/2026/06/01/nx-s1-5843199/anthropic-ipo-filing-ai-large",
+          "tier": "T2",
+          "role": "corroborating"
+        }
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude Opus 4.8 release", "reason": "Outside window — released May 28"},
+    {"title": "Gemini 3.5 Flash GA", "reason": "Outside window — May 19 (Google I/O)"},
+    {"title": "Google Managed Agents / Antigravity 2.0", "reason": "Outside window — May 19 (Google I/O)"},
+    {"title": "Grok V9-Medium (1.5T params)", "reason": "Not yet released; mid-June expected"},
+    {"title": "Microsoft Aion 1.0 on-device models", "reason": "June 2; lower priority vs. MAI models; insufficient standalone detail"},
+    {"title": "Microsoft MXC OS-level agent sandbox", "reason": "June 2; T3 source only; insufficient primary detail"},
+    {"title": "OpenAI GPT-Rosalind life-sciences update", "reason": "June 4; specialized audience; low general BD relevance"},
+    {"title": "SAP Joule Studio 2.0", "reason": "Exact in-window date unverified; lower BD relevance"},
+    {"title": "Gopuff 'Go' AI shopping assistant", "reason": "Off-scope — consumer retail"},
+    {"title": "ASEAN AI Ready MoU", "reason": "June 4; T3 source only; insufficient for standalone item"},
+    {"title": "Anthropic Expanding Project Glasswing", "reason": "June 2; low BD actionability"},
+    {"title": "Multiple Microsoft Build 2026 session recaps", "reason": "Discovery aids; covered by primary items"},
+    {"title": "AI Twitter roundup posts", "reason": "Discovery aids only; claims traced to primary items"},
+    {"title": "Startup funding rounds (Runware, Coralogix, Lassie)", "reason": "No confirmed product angle for this window"},
+    {"title": "Gemini CLI → Antigravity CLI deprecation notice", "reason": "Deprecation/transition notice, low BD impact"},
+    {"title": "ChatGPT Canvas deprecated in GPT-5.5", "reason": "Deprecation of existing feature; low BD impact"},
+    {"title": "LangGraph / CrewAI / AutoGen updates", "reason": "No material new in-window releases confirmed"},
+    {"title": "NVIDIA/ServiceNow governed enterprise agents", "reason": "Pre-dates window (ServiceNow Knowledge 2026)"},
+    {"title": "Gemini Omni on Crun AI", "reason": "T4 press release; minor platform; not a Google primary announcement"},
+    {"title": "Trump EO analysis pieces (5 outlets)", "reason": "Covered by single primary-sourced item; duplicates stripped"},
+    {"title": "Anthropic IPO valuation coverage (6 outlets)", "reason": "Covered by single primary-sourced item; vendor-unconfirmed figures"},
+    {"title": "Big Bench Audio benchmark (standalone)", "reason": "Discovery aid for xAI item; vendor-claimed; not a primary item"}
+  ],
+  "search_log_summary": {
+    "total_searches": 34,
+    "exploratory_or_adversarial": 14,
+    "exploration_pct": 41,
+    "registry_bound": false,
+    "non_registry_items_found": ["Noma Agentic Access Control", "Trump AI Executive Order", "Microsoft Scout", "NVIDIA Nemotron 3 Ultra (direct research page)"]
+  },
+  "quality_gate": {
+    "all_quantitative_claims_sourced": true,
+    "no_source_quoted_more_than_once": true,
+    "no_quote_exceeds_14_words": true,
+    "stage_3_5_exploration_done": true,
+    "limitations_section_substantive": true,
+    "dropped_section_present": true,
+    "no_hype_language": true
+  }
+}
