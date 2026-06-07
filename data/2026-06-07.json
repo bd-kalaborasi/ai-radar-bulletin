@@ -1,0 +1,305 @@
+{
+  "run_date": "2026-06-07",
+  "run_timestamp": "2026-06-07T00:00:00Z",
+  "parameters": {
+    "timeframe": "2026-06-02 to 2026-06-07",
+    "window_note": "Strict 72h window (Jun 4-7) yielded 5 verified items; expanded to 5 days (Jun 2-7) per skill signal-density protocol.",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "run_summary": {
+    "items_reviewed": 28,
+    "items_published": 10,
+    "items_dropped": 18,
+    "searches_total": 35,
+    "searches_exploratory_adversarial": 15,
+    "exploration_pct": 43,
+    "sources_count": 23
+  },
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 6,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "workflow-automation",
+    "productivity-ai",
+    "dev-tools",
+    "model-release",
+    "ai-for-business",
+    "policy-regulation"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "OpenAI Codex adds Sites, six role-specific plugins, and 62 business-app integrations",
+      "date": "2026-06-02",
+      "category": ["workflow-automation", "dev-tools"],
+      "source_url": "https://openai.com/index/codex-for-knowledge-work/",
+      "source_note": "HTTP 403; confirmed via TechCrunch, Axios, VentureBeat",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "5 million weekly active users, ~20% non-developer",
+          "source": "TechCrunch, Axios"
+        },
+        {
+          "claim": "62 business apps, 110 automated skills across 6 role plugins",
+          "source": "VentureBeat"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "OpenAI frontier models and Codex reach AWS Bedrock general availability",
+      "date": "2026-06-02",
+      "category": ["dev-tools", "workflow-automation"],
+      "source_url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
+      "source_note": "HTTP 403; AWS confirmed via aboutamazon.com/news/aws/bedrock-openai-models (T2 official)",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "GPT-5.5, GPT-5.4, and Codex GA on Amazon Bedrock (commercial and GovCloud)",
+          "source": "aboutamazon.com (T2 AWS official)"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ChatGPT Dreaming V3 replaces saved-memory lists with background synthesis",
+      "date": "2026-06-04",
+      "category": ["productivity-ai"],
+      "source_url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "source_note": "HTTP 403; confirmed via 9to5Mac (Jun 4), TechTimes (Jun 5), Windows News (Jun 5)",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "~5x compute cost reduction enabling Free tier expansion",
+          "source": "OpenAI-claimed; confirmed via 9to5Mac"
+        },
+        {
+          "claim": "82.8% factual recall, 71.3% preference adherence, 75.1% time-sensitive accuracy",
+          "source": "OpenAI internal evaluation, not independently replicated"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "OpenAI Lockdown Mode disables ChatGPT tool access to defend against prompt injection",
+      "date": "2026-06-04",
+      "category": ["dev-tools"],
+      "source_url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+      "source_note": "HTTP 403; confirmed via TechCrunch (Jun 6), The Hacker News (Jun 4)",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "Available on all personal accounts (Free, Go, Plus, Pro) and self-serve Business",
+          "source": "TechCrunch (T2), The Hacker News (T3)"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Claude Code v2.1.166 severs cross-session authority to harden multi-agent security",
+      "date": "2026-06-06",
+      "category": ["dev-tools"],
+      "source_url": "https://github.com/anthropics/claude-code/releases",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "SendMessage messages from other Claude sessions no longer carry user authority",
+          "source": "GitHub releases primary (T2)"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Microsoft launches 7-model MAI family at Build 2026, trained independently from OpenAI",
+      "date": "2026-06-02",
+      "category": ["model-release", "dev-tools"],
+      "source_url": "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "MAI-Code-1-Flash: $0.75/M input, $4.50/M output",
+          "source": "GitHub Changelog 2026-06-02 (T2)"
+        },
+        {
+          "claim": "MAI-Thinking-1: 35B active / 1T total parameters, 256K context",
+          "source": "Microsoft Blog (T2)"
+        },
+        {
+          "claim": "Training included proprietary web crawl (~1.2T pages) and Common Crawl",
+          "source": "Simon Willison review (T2) — contradicts Microsoft marketing framing"
+        }
+      ],
+      "conflicts": [
+        {
+          "claim": "MAI-Thinking-1 preferred to Sonnet 4.6 in blind evaluations",
+          "microsoft_grade": "T4",
+          "note": "Microsoft-run evaluation only; no independent replication"
+        },
+        {
+          "claim": "Trained on clean, commercially licensed data",
+          "microsoft_grade": "T4",
+          "simon_willison_grade": "T2",
+          "resolution": "Willison confirmed Common Crawl and proprietary web crawl included; Microsoft framing was overstated"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Anthropic expands Project Glasswing to 150 organizations covering power, water, and healthcare",
+      "date": "2026-06-02",
+      "category": ["ai-for-business"],
+      "source_url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "coi": "Anthropic is sole source on program scale and outcomes",
+      "key_claims": [
+        {
+          "claim": "150 new organizations in 15+ countries",
+          "source": "Anthropic primary (T2)"
+        },
+        {
+          "claim": "Initial cohort uncovered 10,000+ high/critical severity flaws",
+          "source": "Anthropic-claimed; COI noted; no independent audit"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "White House EO on AI promotes innovation and creates voluntary frontier model access framework",
+      "date": "2026-06-02",
+      "category": ["policy-regulation"],
+      "source_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+      "tier": "T1",
+      "verification_status": "verified",
+      "methodology": "government policy",
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "30-day deadline for CISA AI cyber defense guidance",
+          "source": "Whitehouse.gov (T1)"
+        },
+        {
+          "claim": "60-day classified benchmarking process for covered frontier models",
+          "source": "Whitehouse.gov (T1)"
+        },
+        {
+          "claim": "No mandatory licensing, preclearance, or permitting requirements",
+          "source": "Whitehouse.gov (T1)"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Great American AI Act draft proposes 3-year federal preemption of state AI laws",
+      "date": "2026-06-04",
+      "category": ["policy-regulation"],
+      "source_url": "https://obernolte.house.gov/media/press-releases/obernolte-trahan-release-discussion-draft-great-american-ai-act",
+      "source_note": "HTTP 403; confirmed via FedScoop (T2), Roll Call (T2)",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "legislative discussion draft",
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "3-year preemption of state AI model development laws",
+          "source": "FedScoop (T2)"
+        },
+        {
+          "claim": ">$500M revenue threshold for large frontier developers",
+          "source": "FedScoop (T2)"
+        },
+        {
+          "claim": "$300M for CAISI over 3 years; 6-month mandatory audits for large frontier developers",
+          "source": "FedScoop (T2)"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "OpenAI expands ChatGPT advertising to UK Free and Go users",
+      "date": "2026-06-04",
+      "category": ["ai-for-business"],
+      "source_url": "https://releasebot.io/updates/openai",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "product update",
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "UK Free and Go users receiving ads from June 4; paid plans remain ad-free",
+          "source": "Releasebot (T3) and multiple aggregators"
+        }
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Anthropic confidential S-1 SEC filing", "date": "2026-06-01", "reason": "Outside June 2-7 expanded window"},
+    {"title": "MiniMax M3 open-weight model launch", "date": "2026-06-01", "reason": "Outside expanded window; open weights not released at launch"},
+    {"title": "OpenAI GPT-Rosalind life sciences model", "date": "2026-06-03", "reason": "Low BD relevance; specialized life sciences audience"},
+    {"title": "Anthropic Services Track + Partner Hub", "date": "2026-06-03", "reason": "Insufficient primary detail to write full verified item"},
+    {"title": "Anthropic AI-enabled cyber threats report", "date": "2026-06-03", "reason": "Insufficient primary detail retrieved"},
+    {"title": "OpenAI Codex Enterprise plugin sharing (June 5 rollout)", "date": "2026-06-05", "reason": "Merged into OpenAI Codex knowledge work item"},
+    {"title": "Claude Code v2.1.162 and v2.1.165", "date": "2026-06-04/05", "reason": "Grouped with v2.1.166; v2.1.166 carries the significant change"},
+    {"title": "Microsoft Scout personal work agent", "date": "2026-06-02", "reason": "Grouped with MAI item; no separate primary URL or pricing"},
+    {"title": "Gemini 3.5 Flash GA", "date": "2026-05-19", "reason": "Outside expanded window"},
+    {"title": "Gemini 3.5 Pro expected release", "date": null, "reason": "Not yet shipped; in limited enterprise preview only"},
+    {"title": "Alibaba Qwen 3.7 Max", "date": null, "reason": "Publication date unverified within window"},
+    {"title": "GPT-5.6 leaked benchmarks", "date": null, "reason": "T5 rumor; no primary source"},
+    {"title": "Colorado AI Act SB 26-189 revision", "date": "2026-05-14", "reason": "Announcement outside window; effective January 1, 2027"},
+    {"title": "Anthropic Claude subscription credit split", "date": "2026-05-14", "reason": "Announcement outside window; June 15 is implementation, not new announcement"},
+    {"title": "AI Ready ASEAN expansion (Indonesia, June 4)", "date": "2026-06-04", "reason": "Workforce training initiative; no AI product or tooling shipping"},
+    {"title": "Zoom ZoomMate launch", "date": "2026-06-01", "reason": "Outside expanded window"},
+    {"title": "headroom GitHub trending library", "date": null, "reason": "Precise release date unconfirmed; stars signal noted in search log"},
+    {"title": "Holo3.1 local computer use agent", "date": "2026-06-02", "reason": "Limited BD actionability; no production deployment path documented"}
+  ],
+  "sources_list": [
+    "https://openai.com/index/codex-for-knowledge-work/",
+    "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
+    "https://openai.com/index/chatgpt-memory-dreaming/",
+    "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/",
+    "https://github.com/anthropics/claude-code/releases",
+    "https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/",
+    "https://www.anthropic.com/news/expanding-project-glasswing",
+    "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+    "https://obernolte.house.gov/media/press-releases/obernolte-trahan-release-discussion-draft-great-american-ai-act",
+    "https://releasebot.io/updates/openai",
+    "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/",
+    "https://www.axios.com/2026/06/02/openai-codex-knowledge-workers",
+    "https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins",
+    "https://www.aboutamazon.com/news/aws/bedrock-openai-models",
+    "https://9to5mac.com/2026/06/04/openai-says-chatgpts-memory-feature-is-getting-smarter-and-coming-to-free-users/",
+    "https://www.techtimes.com/articles/317840/20260605/chatgpt-memory-dreaming-update-openai-rewrites-personalization-engine-limits-audit-trail.htm",
+    "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/",
+    "https://thehackernews.com/2026/06/new-chatgpt-lockdown-mode-limits-tools.html",
+    "https://github.blog/changelog/2026-06-02-mai-code-1-flash-is-now-available-for-github-copilot/",
+    "https://simonwillison.net/2026/Jun/2/microsofts-new-models/",
+    "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/",
+    "https://fedscoop.com/bipartisan-great-american-ai-act-draft-proposes-new-federal-ai-governance-framework/",
+    "https://openai.com/index/our-approach-to-advertising-and-expanding-access/"
+  ]
+}
