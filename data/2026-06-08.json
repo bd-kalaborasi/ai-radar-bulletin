@@ -1,0 +1,285 @@
+{
+  "run_date": "2026-06-08",
+  "run_timestamp": "2026-06-08T00:00:00Z",
+  "parameters": {
+    "timeframe": "2026-06-01 to 2026-06-08",
+    "window_note": "Strict 72h window (Jun 5-8) yielded 0 items not already in the 2026-06-07 bulletin. Expanded to 7 days (Jun 1-8) to include Jun 1 S-1 filing and recover items dropped from Jun 7 due to insufficient primary detail at that run time.",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "run_summary": {
+    "items_reviewed": 18,
+    "items_published": 7,
+    "items_dropped": 11,
+    "searches_total": 28,
+    "searches_exploratory_adversarial": 12,
+    "exploration_pct": 43,
+    "sources_count": 14
+  },
+  "verification_summary": {
+    "verified": 6,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "dev-tools",
+    "workflow-automation",
+    "ai-for-business",
+    "policy-regulation",
+    "mcp-ecosystem"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "GitHub Copilot desktop app expands technical preview to all paid Copilot tiers",
+      "date": "2026-06-02",
+      "category": ["dev-tools", "workflow-automation"],
+      "source_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
+      "source_org": "GitHub",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "Technical preview available to all Copilot Pro, Pro+, Business, Enterprise customers",
+          "source": "GitHub blog primary (T2)"
+        },
+        {
+          "claim": "Parallel agent sessions via isolated git worktrees",
+          "source": "GitHub blog primary (T2)"
+        },
+        {
+          "claim": "Three modes: Interactive, Plan, Autopilot",
+          "source": "GitHub blog primary (T2)"
+        }
+      ],
+      "cross_references": [
+        "https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/"
+      ],
+      "caveats": "Technical preview — not GA. GA timeline not disclosed."
+    },
+    {
+      "id": 2,
+      "title": "Anthropic separates Agent SDK into standalone monthly credit pool starting June 15",
+      "date": "2026-06-02",
+      "category": ["dev-tools"],
+      "source_url": "https://thenewstack.io/anthropic-agent-sdk-credits/",
+      "source_org": "The New Stack",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "product update",
+      "bd_actionability": "high",
+      "tier_note": "No dedicated Anthropic blog post URL confirmed; The New Stack and TechTimes (T2) independently confirm June 15 date and credit amounts.",
+      "key_claims": [
+        {
+          "claim": "Pro: $20/month, Max 5x: $100/month, Max 20x: $200/month",
+          "source": "The New Stack (T2), TechTimes (T2)"
+        },
+        {
+          "claim": "Agent SDK, claude -p, Claude Code GitHub Actions, third-party agents move to credit pool",
+          "source": "multiple T2-T3 sources"
+        },
+        {
+          "claim": "Interactive Claude Code terminal sessions unaffected",
+          "source": "multiple T2-T3 sources"
+        },
+        {
+          "claim": "Credits expire monthly without rollover",
+          "source": "multiple T2-T3 sources"
+        }
+      ],
+      "cross_references": [
+        "https://www.techtimes.com/articles/317625/20260602/anthropic-ends-subscription-subsidy-agents-june-15-credit-pool-replaces-flat-rate-access.htm"
+      ],
+      "caveats": "Primary Anthropic announcement URL not confirmed. Verify against Anthropic API documentation before acting on billing configuration changes."
+    },
+    {
+      "id": 3,
+      "title": "Headroom reaches 16.9k stars — open-source context compression layer for LLM agents",
+      "date": "2026-06-04",
+      "category": ["dev-tools", "mcp-ecosystem"],
+      "source_url": "https://github.com/chopratejas/headroom",
+      "source_org": "chopratejas (independent developer)",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "open-source release",
+      "bd_actionability": "high",
+      "key_claims": [
+        {
+          "claim": "60-95% token reduction with maintained answer accuracy",
+          "source": "author-stated (T3); no independent replication"
+        },
+        {
+          "claim": "v0.23.0 released 2026-06-04; 16.9k stars, 1.1k forks",
+          "source": "GitHub (T3)"
+        },
+        {
+          "claim": "Four modes: library, proxy, MCP server, agent wrapper",
+          "source": "GitHub README (T3)"
+        }
+      ],
+      "caveats": "Stars-only adoption signal. 60-95% range is best-case on author-selected benchmarks. No independent evaluation available."
+    },
+    {
+      "id": 4,
+      "title": "Anthropic maps 832 AI-enabled threat actor cases to MITRE ATT&CK",
+      "date": "2026-06-03",
+      "category": ["policy-regulation"],
+      "source_url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "research report",
+      "bd_actionability": "medium",
+      "coi": "Anthropic analyzed its own banned accounts; no third-party audit of methodology.",
+      "key_claims": [
+        {
+          "claim": "832 banned accounts analyzed, March 2025-March 2026",
+          "source": "Anthropic primary (T2)"
+        },
+        {
+          "claim": "Medium-risk-or-higher actors rose from 33% to 56%",
+          "source": "Anthropic primary (T2)"
+        },
+        {
+          "claim": "67.3% used AI for malware writing or attack preparation",
+          "source": "Anthropic primary (T2)"
+        },
+        {
+          "claim": "AI account discovery +8.9%, AI-assisted phishing -8.6%",
+          "source": "Anthropic primary (T2)"
+        },
+        {
+          "claim": "MITRE ATT&CK lacks categories for AI-autonomous attack chaining",
+          "source": "Anthropic assessment (T2)"
+        }
+      ],
+      "caveats": "Sample is Anthropic's own banned accounts — not a random or representative sample of all AI-enabled threat actors. Risk classification methodology not externally audited."
+    },
+    {
+      "id": 5,
+      "title": "Anthropic launches Services Track and Partner Hub within Claude Partner Network",
+      "date": "2026-06-03",
+      "category": ["ai-for-business"],
+      "source_url": "https://www.anthropic.com/news",
+      "source_note": "June 3 item confirmed via Anthropic news index direct fetch",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "key_claims": [
+        {
+          "claim": "Services Track recognizes firms delivering Claude implementations professionally",
+          "source": "Anthropic news (T2)"
+        },
+        {
+          "claim": "$100M investment for Partner Network in 2026",
+          "source": "Anthropic primary"
+        },
+        {
+          "claim": "Claude Certified Architect certification available at launch",
+          "source": "Anthropic primary"
+        },
+        {
+          "claim": "Partner-facing team scaling fivefold",
+          "source": "Anthropic-stated"
+        }
+      ],
+      "caveats": "$100M figure and team expansion are Anthropic self-reported. Eligibility criteria for Services Track not fully disclosed in available sources."
+    },
+    {
+      "id": 6,
+      "title": "Anthropic confidentially files draft S-1 with the SEC for a proposed IPO",
+      "date": "2026-06-01",
+      "category": ["ai-for-business"],
+      "source_url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "regulatory filing notice",
+      "bd_actionability": "medium",
+      "window_note": "June 1 falls outside the 2026-06-07 bulletin window (Jun 2-7); included here under 7-day expansion.",
+      "key_claims": [
+        {
+          "claim": "Confidential draft S-1 submitted to SEC June 1, 2026",
+          "source": "Anthropic primary (T2)"
+        },
+        {
+          "claim": "No share count or price determined at filing",
+          "source": "Anthropic primary"
+        },
+        {
+          "claim": "$965B post-money valuation, $65B Series H",
+          "source": "Third-party reporting (SiliconANGLE T3, CBS News T2); not from Anthropic's Rule 135 notice"
+        }
+      ],
+      "cross_references": [
+        "https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/",
+        "https://siliconangle.com/2026/05/28/anthropic-launches-claude-opus-4-8-raises-65b-new-funding/"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Suno raises $400M Series D at $5.4B valuation with licensed music model in development",
+      "date": "2026-06-03",
+      "category": ["ai-for-business"],
+      "source_url": "https://variety.com/2026/digital/news/ai-music-suno-funding-round-400-million-5-4-billion-valuation-1236765727/",
+      "source_org": "Variety",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "funding announcement",
+      "bd_actionability": "low",
+      "key_claims": [
+        {
+          "claim": "$400M Series D, $5.4B valuation, led by Bond Capital",
+          "source": "Variety (T2), Hollywood Reporter (T2), Boston Globe (T2)"
+        },
+        {
+          "claim": "WMG licensing partnership since November 2025",
+          "source": "multiple T2 sources"
+        },
+        {
+          "claim": "First industry-licensed model in development, no release date given",
+          "source": "Variety, Billboard (T2)"
+        }
+      ],
+      "cross_references": [
+        "https://www.billboard.com/pro/suno-raised-400m-new-ai-model-made-with-music-industry/",
+        "https://techcrunch.com/2026/06/03/still-facing-copyright-lawsuits-ai-music-generator-suno-raises-another-400m/"
+      ],
+      "caveats": "Active copyright lawsuits from labels other than WMG ongoing. Licensed model has no confirmed release date."
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude Code v2.1.167/168 (June 6)", "date": "2026-06-06", "reason": "Covered in 2026-06-07 bulletin (v2.1.166 item); subsequent patches are bug-fix only"},
+    {"title": "ChatGPT Dreaming V3", "date": "2026-06-04", "reason": "Published in 2026-06-07 bulletin"},
+    {"title": "OpenAI Lockdown Mode", "date": "2026-06-04", "reason": "Published in 2026-06-07 bulletin"},
+    {"title": "Great American AI Act discussion draft", "date": "2026-06-04", "reason": "Published in 2026-06-07 bulletin"},
+    {"title": "White House EO on AI innovation and security", "date": "2026-06-02", "reason": "Published in 2026-06-07 bulletin"},
+    {"title": "Microsoft MAI model family (7 models)", "date": "2026-06-02", "reason": "Published in 2026-06-07 bulletin"},
+    {"title": "Project Glasswing 150-org expansion", "date": "2026-06-02", "reason": "Published in 2026-06-07 bulletin"},
+    {"title": "Apple WWDC 2026 keynote", "date": "2026-06-08", "reason": "Keynote opens today at 10am PT; no confirmed announcements in primary sources at run time"},
+    {"title": "OpenAI GPT-Rosalind life sciences model", "date": "2026-06-04", "reason": "Low general BD relevance; specialized life sciences use case"},
+    {"title": "DeepSeek V4 Pro", "date": "2026-04-24", "reason": "Released April 24 — outside expanded window"},
+    {"title": "Google Cloud SEA-Silicon Valley startup corridor", "date": null, "reason": "Primary announcement date not confirmed within window; workforce/accelerator program, not AI tooling"}
+  ],
+  "sources_list": [
+    "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
+    "https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/",
+    "https://thenewstack.io/anthropic-agent-sdk-credits/",
+    "https://www.techtimes.com/articles/317625/20260602/anthropic-ends-subscription-subsidy-agents-june-15-credit-pool-replaces-flat-rate-access.htm",
+    "https://github.com/chopratejas/headroom",
+    "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
+    "https://www.anthropic.com/news",
+    "https://www.anthropic.com/news/confidential-draft-s1-sec",
+    "https://www.cbsnews.com/news/anthropic-ipo-confidential-filing-claude-ai/",
+    "https://variety.com/2026/digital/news/ai-music-suno-funding-round-400-million-5-4-billion-valuation-1236765727/",
+    "https://www.billboard.com/pro/suno-raised-400m-new-ai-model-made-with-music-industry/",
+    "https://techcrunch.com/2026/06/03/still-facing-copyright-lawsuits-ai-music-generator-suno-raises-another-400m/",
+    "https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026",
+    "https://aitoolly.com/ai-news/article/2026-06-05-headroom-innovative-compression-tool-reduces-llm-token-consumption-by-up-to-95-percent"
+  ]
+}
