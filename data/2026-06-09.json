@@ -1,0 +1,243 @@
+{
+  "run": {
+    "date": "2026-06-09",
+    "period_start": "2026-06-04",
+    "period_end": "2026-06-09",
+    "window_note": "Strict 72h (June 6-9) yielded 1 verified item; expanded to 5 days (June 4-9) per skill rule",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 28,
+    "items_published": 6,
+    "items_dropped": 22,
+    "verification_summary": {
+      "verified": 5,
+      "secondary": 1,
+      "rumor": 0
+    },
+    "sources_count": 14,
+    "exploration_pct": 43,
+    "timestamp": "2026-06-09T00:00:00Z"
+  },
+  "items": [
+    {
+      "id": "wwdc-2026-ios27-extensions",
+      "title": "Apple iOS 27 opens Siri AI to Claude, ChatGPT, and Gemini via Extensions framework",
+      "date": "2026-06-08",
+      "primary_url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+      "publisher": "Apple Newsroom",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "high",
+      "cross_references": [
+        { "url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/", "tier": "T3", "role": "corroborating" },
+        { "url": "https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html", "tier": "T3", "role": "corroborating" },
+        { "url": "https://www.macrumors.com/2026/06/08/siri-ai-not-available-eu-china/", "tier": "T2", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "Gemini model powers rebuilt Siri", "source": "Apple Newsroom (T2)" },
+        { "claim": "Third-party AI selectable from Settings (Claude, ChatGPT, Gemini)", "source": "Apple Newsroom (T2)" },
+        { "claim": "iPhone 11 and later supported", "source": "Apple Newsroom (T2)" },
+        { "claim": "Not available EU or China at launch", "source": "MacRumors citing Apple (T2)" },
+        { "claim": "~$1B/year licensing deal with Google", "source": "CNBC/Engadget citing Apple briefings (T3, unconfirmed in press release)" },
+        { "claim": "~1.2 trillion parameter Gemini model", "source": "TechCrunch citing Apple briefings (T3, unconfirmed in press release)" }
+      ],
+      "caveats": [
+        "Apple press release does not disclose $1B/year figure or 1.2T parameter count — both from T3 media reports",
+        "Features announced for Fall 2026; not yet shipped",
+        "Privacy boundary at Gemini routing tier not formally documented",
+        "Not available EU or China at initial launch"
+      ]
+    },
+    {
+      "id": "chatgpt-dreaming-v3",
+      "title": "OpenAI overhauls ChatGPT memory with Dreaming V3 background synthesis",
+      "date": "2026-06-04",
+      "primary_url": "https://openai.com/index/chatgpt-memory-dreaming/",
+      "publisher": "OpenAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "high",
+      "cross_references": [
+        { "url": "https://www.techtimes.com/articles/317840/20260605/chatgpt-memory-dreaming-update-openai-rewrites-personalization-engine-limits-audit-trail.htm", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "5x compute reduction vs prior memory system", "source": "OpenAI primary (vendor-claimed, T4 for the efficiency claim)" },
+        { "claim": "Rollout: Plus/Pro US first", "source": "OpenAI primary (T2)" },
+        { "claim": "Memory Summary audit page", "source": "OpenAI primary (T2)" },
+        { "claim": "Weights memories by freshness, continuity, relevance", "source": "OpenAI primary (T2)" }
+      ],
+      "caveats": [
+        "5x compute efficiency is vendor-claimed; no independent benchmark",
+        "Data retention policies for synthesized memory snapshots not detailed in announcement",
+        "International rollout timeline not announced"
+      ]
+    },
+    {
+      "id": "cursor-sdk-june-2026",
+      "title": "Cursor SDK adds custom tools, auto-review routing, and recursive subagents",
+      "date": "2026-06-04",
+      "primary_url": "https://cursor.com/changelog/sdk-updates-jun-2026",
+      "publisher": "Cursor",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools", "agent-framework"],
+      "bd_actionability": "high",
+      "cross_references": [],
+      "key_claims": [
+        { "claim": "Custom tools exposed via local.customTools through built-in MCP server", "source": "Cursor changelog (T2)" },
+        { "claim": "Auto-review routes tool calls via permissions.json classifier", "source": "Cursor changelog (T2)" },
+        { "claim": "Nested subagents to any depth", "source": "Cursor changelog (T2)" },
+        { "claim": "JSONL and custom store backends supported", "source": "Cursor changelog (T2)" }
+      ],
+      "caveats": []
+    },
+    {
+      "id": "grok-voice-rollout",
+      "title": "xAI Grok Voice rolls out to all users on web and mobile",
+      "date": "2026-06-04",
+      "primary_url": "https://x.ai/news",
+      "primary_url_note": "Returned HTTP 403 during this run; confirmed via @elonmusk on X and multiple secondary outlets",
+      "publisher": "xAI",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "cross_references": [
+        { "url": "https://www.basenor.com/blogs/news/grok-voice-is-live-xais-ai-assistant-now-talks-back", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "Available to all Grok users, not SuperGrok-only", "source": "Multiple T3 secondary sources" },
+        { "claim": "Voice cloning available in API tier", "source": "Multiple T3 secondary sources" }
+      ],
+      "caveats": [
+        "Primary source (x.ai/news) unreachable during this run; graded T3 secondary",
+        "Voice cloning is a separate API-tier feature from base Grok Voice"
+      ]
+    },
+    {
+      "id": "anthropic-recursive-self-improvement",
+      "title": "Anthropic publishes analysis of recursive self-improvement risk",
+      "date": "2026-06-05",
+      "primary_url": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "publisher": "Anthropic Institute",
+      "authors": ["Jack Clark (co-founder, Anthropic)", "Marina Favaro (Anthropic Institute)"],
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "policy analysis",
+      "categories": ["ai-for-business", "policy-regulation"],
+      "bd_actionability": "medium",
+      "coi": "Jack Clark is co-founder of Anthropic",
+      "cross_references": [
+        { "url": "https://www.cnn.com/2026/06/05/business/anthropic-calls-for-ai-brake-pedal", "tier": "T3", "role": "corroborating" },
+        { "url": "https://www.euronews.com/next/2026/06/05/anthropic-calls-for-brake-pedal-before-ai-develops-itself-without-human-oversight", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "Claude authored >80% of Anthropic production code in May 2026", "source": "Anthropic Institute primary (T2)" },
+        { "claim": "Anthropic engineers ship ~8x code per quarter vs 2021-2025 baseline", "source": "Anthropic Institute primary (T2)" },
+        { "claim": "Calls for internationally coordinated pause mechanism analogous to nuclear arms control", "source": "Anthropic Institute primary (T2)" }
+      ],
+      "caveats": [
+        "COI: Jack Clark is co-founder of Anthropic; treat productivity/capability claims about Claude with appropriate weight",
+        "The 8x engineer output figure and 80% AI-authored code figure are self-reported by Anthropic"
+      ]
+    },
+    {
+      "id": "great-american-ai-act",
+      "title": "US Congress releases bipartisan Great American AI Act discussion draft",
+      "date": "2026-06-04",
+      "primary_url": "https://obernolte.house.gov/media/press-releases/obernolte-trahan-release-discussion-draft-great-american-ai-act",
+      "publisher": "Rep. Jay Obernolte (R-CA)",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "government primary",
+      "categories": ["policy-regulation"],
+      "bd_actionability": "low",
+      "cross_references": [
+        { "url": "https://trahan.house.gov/news/documentsingle.aspx?DocumentID=3783", "tier": "T1", "role": "corroborating" },
+        { "url": "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.citizen.org/news/obernolte-trahan-bill-strips-states-authority-to-protect-consumers-workers-and-children/", "tier": "T2", "role": "contradicting" }
+      ],
+      "key_claims": [
+        { "claim": "269-page discussion draft released June 4", "source": "Obernolte primary (T1)" },
+        { "claim": "Three-year federal preemption of state AI laws", "source": "Obernolte primary (T1)" },
+        { "claim": "$100M annual NIST Center for AI Standards and Innovation", "source": "Trahan primary (T1)" },
+        { "claim": "Bipartisan: Obernolte (R-CA) + Trahan (D-MA)", "source": "Both primaries (T1)" }
+      ],
+      "caveats": [
+        "Discussion draft only; no formal introduction, no legislative force yet",
+        "Public Citizen flags preemption clause as removing state-level consumer/worker protections before federal replacement exists",
+        "Colorado AI Act (June 30) and EU AI Act (August 2) proceed regardless of this draft's fate"
+      ]
+    }
+  ],
+  "dropped": [
+    { "title": "Claude Opus 4.8 release", "source": "anthropic.com/news/claude-opus-4-8", "date": "2026-05-28", "reason": "Outside expanded 5-day window (12 days ago)" },
+    { "title": "Microsoft MAI family (7 models: MAI-Thinking-1, MAI-Code-1-Flash, others)", "source": "microsoft.ai/news", "date": "2026-06-02", "reason": "Outside expanded 5-day window" },
+    { "title": "OpenAI GPT-Rosalind life sciences update", "source": "openai.com/index/introducing-new-capabilities-to-gpt-rosalind/", "date": "2026-06-03", "reason": "One day outside expanded 5-day window" },
+    { "title": "Google Gemini 3.5 Flash GA", "source": "ai.google.dev", "date": "2026-05-19", "reason": "Outside window" },
+    { "title": "OpenAI Intelligence at Work / Codex expansion to non-developer roles", "source": "openai.com", "date": "2026-06-02", "reason": "Outside window" },
+    { "title": "xAI Grok Connectors (SharePoint, Outlook, Google Workspace)", "source": "x.ai/news/grok-connectors", "date": "2026-05-06", "reason": "Outside window" },
+    { "title": "xAI Grok Build terminal coding agent early beta", "source": "x.ai/news/grok-build-cli", "date": "2026-05-25", "reason": "Outside window" },
+    { "title": "xAI image-to-video model (grok-imagine-video-1.5-preview)", "source": "x.ai/news", "date": "2026-06", "reason": "Outside window; could not confirm June 4+ primary date" },
+    { "title": "SAP Joule Studio 2.0 production rollout", "source": "news.sap.com/2026/05", "date": "2026-05-11", "reason": "No confirmed June 4+ primary event found" },
+    { "title": "Anthropic SpaceX compute deal ($1.25B/month)", "source": "SpaceX S-1 / Axios", "date": "2026-05-20", "reason": "Outside window" },
+    { "title": "Anthropic confidential S-1 IPO filing", "source": "anthropic.com/news/confidential-draft-s1-sec", "date": "2026-06-01", "reason": "Outside window" },
+    { "title": "Anthropic Claude Partner Hub", "source": "anthropic.com/news", "date": "2026-06-03", "reason": "Outside window" },
+    { "title": "MCP 2026-07-28 specification release candidate", "source": "blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/", "date": "2026-06", "reason": "Announcement date could not be confirmed within window; final spec ships July 28" },
+    { "title": "Hermes-agent GitHub update (Claude agent meta-harness)", "source": "github.com/hermes-agent", "date": "2026-06-08", "reason": "Stars-only signal; no shipping announcement or changelog found" },
+    { "title": "RAGFlow June 8 update (82.2k stars)", "source": "github.com/infiniflow/ragflow", "date": "2026-06-08", "reason": "Incremental update to existing tool; no major feature announcement" },
+    { "title": "Google Gemini Managed Agents in Gemini API (public preview)", "source": "ai.google.dev", "date": "2026-05", "reason": "Outside window" },
+    { "title": "Grok V9-Medium 1.5T parameter model", "source": "Media reports", "date": "N/A", "reason": "Forward-looking; model not yet released; expected mid-June" },
+    { "title": "Trump/Sanders government equity stakes in AI companies", "source": "Media reports", "date": "2026-06-07", "reason": "Discussion framing with no formal proposal or bill text; not a primary action" },
+    { "title": "Cursor v3.7 Browser Design Mode", "source": "buildfastwithai roundup", "date": "2026-06-06", "reason": "Date referenced in secondary roundup only; no Cursor primary changelog entry confirmed" },
+    { "title": "xAI OneGov federal contract for Grok 4", "source": "fedscoop.com", "date": "2026-09-25-2025", "reason": "Announcement dated September 2025, not in window" },
+    { "title": "GPT-5.5 Instant as ChatGPT default model", "source": "openai.com/index/gpt-5-5-instant/", "date": "2026-05-05", "reason": "Outside window" },
+    { "title": "Google Cloud SEA-Silicon Valley AI startup corridor", "source": "youngster.id / medcom.id", "date": "2026-06", "reason": "Program starts August 2026; no product launch in window" }
+  ],
+  "searches": [
+    { "query": "Anthropic Claude news announcement June 2026", "type": "registry", "yield": "10 results, 6 high-rel" },
+    { "query": "OpenAI news release announcement June 2026", "type": "registry", "yield": "10 results, 5 high-rel" },
+    { "query": "Google DeepMind Gemini announcement June 2026", "type": "registry", "yield": "10 results, 4 high-rel" },
+    { "query": "xAI Grok release announcement June 2026", "type": "registry", "yield": "10 results, 4 high-rel" },
+    { "query": "Meta AI Llama model announcement June 2026", "type": "registry", "yield": "10 results, 2 high-rel" },
+    { "query": "Mistral AI model release June 2026", "type": "registry", "yield": "10 results, 2 high-rel" },
+    { "query": "fetch: anthropic.com/news", "type": "registry", "yield": "June 1-3 confirmed; June 4-9 not loaded" },
+    { "query": "fetch: apple.com/newsroom WWDC 2026", "type": "registry", "yield": "T2 primary confirmed June 8" },
+    { "query": "Apple WWDC 2026 Siri AI Gemini June 2026", "type": "registry", "yield": "10 results, 8 high-rel" },
+    { "query": "MCP Model Context Protocol new servers release June 2026", "type": "registry", "yield": "10 results, 3 high-rel" },
+    { "query": "Claude Opus 4.8 release date announcement anthropic", "type": "registry", "yield": "May 28 confirmed — outside window" },
+    { "query": "OpenAI ChatGPT Dreaming V3 memory primary source June 2026", "type": "registry", "yield": "T2 primary confirmed June 4" },
+    { "query": "Cursor AI dev tools update release June 6 7 8 9 2026", "type": "registry", "yield": "10 results, 5 high-rel" },
+    { "query": "fetch: cursor.com/changelog/sdk-updates-jun-2026", "type": "registry", "yield": "T2 primary confirmed June 4" },
+    { "query": "GPT-5.5 OpenAI release features June 4 2026", "type": "registry", "yield": "May 5 confirmed — outside window" },
+    { "query": "Microsoft MAI models release June 2026", "type": "registry", "yield": "June 2 confirmed — outside window" },
+    { "query": "Anthropic SpaceX compute deal 1.25 billion June 2026", "type": "registry", "yield": "May 20 confirmed — outside window" },
+    { "query": "site:anthropic.com brake pedal OR recursive self-improvement 2026", "type": "registry", "yield": "T2 primary URL confirmed" },
+    { "query": "Congress Great American AI Act Obernolte Trahan June 2026 primary source URL", "type": "registry", "yield": "T1 primary confirmed June 4" },
+    { "query": "Grok Build xAI launch date announcement June 2026", "type": "registry", "yield": "May 25/29 confirmed — outside window" },
+    { "query": "xAI Grok Voice rollout June 4 2026 primary source", "type": "registry", "yield": "T3 secondary confirmed June 4; primary 403" },
+    { "query": "AI news June 6 7 8 9 2026", "type": "exploratory", "yield": "10 results, 6 high-rel" },
+    { "query": "AI announcement OR new model OR AI release June 8 9 2026", "type": "exploratory", "yield": "10 results, 4 high-rel" },
+    { "query": "AI agent framework launch release June 2026", "type": "exploratory", "yield": "10 results, 4 high-rel" },
+    { "query": "fetch: buildfastwithai.com/blogs/ai-news-today-june-8-2026", "type": "exploratory", "yield": "summary confirmed; primary URLs extracted" },
+    { "query": "fetch: buildfastwithai.com/blogs/ai-news-today-june-7-2026", "type": "exploratory", "yield": "summary confirmed" },
+    { "query": "AI Indonesia startup AI Asia Tenggara model lokal Juni 2026", "type": "exploratory-cross-lang", "yield": "10 results, 0 in-window product launches" },
+    { "query": "site:x.com AI announcement release June 2026", "type": "exploratory-social", "yield": "7 results, 3 relevant" },
+    { "query": "Apple WWDC 2026 Siri AI Gemini criticism limitations concerns", "type": "adversarial", "yield": "10 results, 5 relevant — privacy concerns surfaced" },
+    { "query": "AI benchmark criticism controversy June 2026", "type": "adversarial", "yield": "10 results, 3 relevant — benchmark saturation noted" },
+    { "query": "xAI government contract federal agencies Grok 4 date June 2026", "type": "exploratory", "yield": "Sept 2025 — outside window" },
+    { "query": "fetch: huggingface.co/papers", "type": "exploratory", "yield": "June 6-9 papers found; 0 high BD-actionability" }
+  ],
+  "totals": {
+    "total_searches": 32,
+    "registry_searches": 18,
+    "exploratory_searches": 14,
+    "exploration_pct": 43.75
+  }
+}
