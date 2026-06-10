@@ -1,0 +1,207 @@
+{
+  "run": {
+    "date": "2026-06-10",
+    "period_start": "2026-06-07",
+    "period_end": "2026-06-10",
+    "window_note": "Strict 72h (June 7-10) yielded 4 verified items (≤5); expanded search to 5 days (June 5-10). June 5-6 items all previously covered in Jun 9 bulletin. Published items all within strict window.",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 33,
+    "items_published": 4,
+    "items_dropped": 29,
+    "verification_summary": {
+      "verified": 2,
+      "secondary": 2,
+      "rumor": 0
+    },
+    "sources_count": 14,
+    "exploration_pct": 43,
+    "timestamp": "2026-06-10T00:00:00Z"
+  },
+  "items": [
+    {
+      "id": "claude-fable-5-mythos-5",
+      "title": "Anthropic releases Claude Fable 5 as a generally available Mythos-class model",
+      "date": "2026-06-09",
+      "primary_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+      "publisher": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release", "dev-tools"],
+      "bd_actionability": "high",
+      "cross_references": [
+        { "url": "https://github.blog/changelog/2026-06-09-claude-fable-5-is-generally-available-for-github-copilot/", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.aboutamazon.com/news/aws/claude-fable-5-anthropic-available-amazon-bedrock", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html", "tier": "T3", "role": "corroborating" },
+        { "url": "https://venturebeat.com/technology/anthropic-brings-mythos-to-the-masses-with-claude-fable-5-its-most-powerful-generally-available-model-ever", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "Pricing: $10 input / $50 output per million tokens", "source": "Anthropic primary (T2)" },
+        { "claim": "SWE-Bench Pro: 80.3%", "source": "Anthropic primary (T2); competitive comparisons T4 — vendor-cited" },
+        { "claim": "Stripe: 50M-line Ruby migration in one day vs two months", "source": "Anthropic primary, customer testimonial (T3)" },
+        { "claim": "Classifiers trigger in <5% of sessions", "source": "Anthropic primary (T2)" },
+        { "claim": "GitHub Copilot: 30-day data retention", "source": "GitHub changelog (T2)" },
+        { "claim": "Drug design: 9 of 14 protein targets viable", "source": "Anthropic primary (T2)" },
+        { "claim": "Memory: 3x performance gain in Slay the Spire testing", "source": "Anthropic primary (T2)" }
+      ],
+      "caveats": [
+        "Comparative benchmark figures (vs GPT-5.5, Gemini 3.1 Pro) are vendor-cited T4 — no independent replication at publication",
+        "Safety classifiers produce false positives on harmless queries in cybersecurity, biology, healthcare, math",
+        "GitHub Copilot: admin opt-in required for Business/Enterprise; 30-day data retention applies",
+        "Mythos 5 restricted to vetted Project Glasswing partners only"
+      ]
+    },
+    {
+      "id": "miasma-worm-microsoft-github-ai-tools",
+      "title": "Miasma worm compromises 73 Microsoft GitHub repos through AI coding tool integrations",
+      "date": "2026-06-08",
+      "primary_url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
+      "publisher": "TechCrunch",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "investigative-disclosure",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "cross_references": [
+        { "url": "https://www.theregister.com/security/2026/06/08/github-nukes-70-microsoft-repos-amid-suspected-worm-attack/5252169", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.theregister.com/cyber-crime/2026/06/09/miasma-supply-chain-attack-toolkit-goes-public-on-github/5253074", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.rescana.com/post/miasma-worm-supply-chain-attack-73-microsoft-github-repositories-compromised-via-ai-coding-tools", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "73 Microsoft GitHub repos disabled in 105 seconds", "source": "The Register (T2)" },
+        { "claim": "Azure/durabletask: initial infection point", "source": "TechCrunch primary (T2)" },
+        { "claim": "Claude Code, Gemini CLI, Cursor named as attack vectors", "source": "TechCrunch primary (T2)" },
+        { "claim": "Miasma toolkit released publicly on GitHub June 9", "source": "The Register (T2)" },
+        { "claim": "Microsoft notified 'a small number of customers'", "source": "TechCrunch citing Microsoft statement (T2)" }
+      ],
+      "caveats": [
+        "Total number of affected developers not disclosed by Microsoft",
+        "Some repos restored; others remain offline at publication",
+        "Full list of affected package versions not confirmed publicly"
+      ]
+    },
+    {
+      "id": "openai-pbc-deployment-company",
+      "title": "OpenAI completes PBC conversion and launches Deployment Company with $4B+ initial investment",
+      "date": "2026-06-08",
+      "primary_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/",
+      "publisher": "OpenAI",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "tier_note": "openai.com returned HTTP 403 during this run; primary URL confirmed via multiple secondary sources",
+      "cross_references": [
+        { "url": "https://openai.com/index/openai-launches-the-deployment-company/", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.fourweekmba.com/openai-three-phase-plan-ipo-prospectus-mission-statement/", "tier": "T3", "role": "analysis" }
+      ],
+      "key_claims": [
+        { "claim": "Deployment Company initial investment: >$4B", "source": "Secondary sources corroborating primary" },
+        { "claim": "Microsoft stake: ~27% at ~$135B valuation", "source": "Secondary sources corroborating primary" },
+        { "claim": "Anchor investors: Amazon, NVIDIA, SoftBank; co-investors: a16z, D.E. Shaw, MGX, TPG, T. Rowe Price", "source": "Secondary sources" },
+        { "claim": "OpenAI Foundation: ≥$1B annual commitment", "source": "Secondary sources" }
+      ],
+      "caveats": [
+        "All claims derived from secondary sources; openai.com inaccessible (HTTP 403) throughout run",
+        "Exact equity percentages are approximations; PBC charter requires SEC filing review",
+        "$135B valuation is an approximation cited by secondary reporters"
+      ]
+    },
+    {
+      "id": "openai-economic-research-exchange",
+      "title": "OpenAI launches Economic Research Exchange for external AI impact studies",
+      "date": "2026-06-08",
+      "primary_url": "https://openai.com/index/economic-research-exchange/",
+      "publisher": "OpenAI",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "tier_note": "openai.com returned HTTP 403 during this run; URL confirmed via multiple secondary sources",
+      "cross_references": [
+        { "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN42G0YO:0-openai-launches-openai-economic-research-exchange/", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/openai-launches-ai-economic-research-program", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "Application deadline: July 5, 2026", "source": "Secondary sources citing primary" },
+        { "claim": "Researcher notification: July 31, 2026", "source": "Secondary sources" },
+        { "claim": "Builds on OpenAI Signals economic monitoring tool", "source": "Secondary sources" }
+      ],
+      "caveats": [
+        "All claims from secondary sources; openai.com inaccessible (HTTP 403)",
+        "Not an open data access program — project-based collaborations only"
+      ]
+    }
+  ],
+  "dropped": [
+    { "title": "Apple WWDC 2026 — Siri AI Extensions, iOS 27", "source": "apple.com/newsroom · June 8", "reason": "Covered in Jun 9 bulletin" },
+    { "title": "OpenAI Dreaming V3 ChatGPT memory architecture", "source": "openai.com · June 4", "reason": "Covered in Jun 9 bulletin" },
+    { "title": "Cursor SDK custom tools, auto-review, nested subagents", "source": "cursor.com/changelog · June 4", "reason": "Covered in Jun 9 bulletin" },
+    { "title": "xAI Grok Voice rollout", "source": "x.ai · June 4", "reason": "Covered in Jun 9 bulletin" },
+    { "title": "Anthropic recursive self-improvement analysis", "source": "anthropic.com/institute · June 5", "reason": "Covered in Jun 9 bulletin" },
+    { "title": "Great American AI Act discussion draft", "source": "obernolte.house.gov · June 4", "reason": "Covered in Jun 9 bulletin" },
+    { "title": "Gemini CLI → Antigravity CLI sunset June 18", "source": "developers.googleblog.com · May 19", "reason": "Announcement outside window" },
+    { "title": "Google I/O 2026 — Gemini 3.5 Flash GA, Antigravity platform", "source": "blog.google · May 19-20", "reason": "Outside window" },
+    { "title": "GPT-5.5, GPT-5.4, Codex GA on Amazon Bedrock", "source": "aws.amazon.com · June 1", "reason": "Outside window" },
+    { "title": "Microsoft MAI-Code-1-Flash, MAI-Thinking-1", "source": "microsoft.com · June 2", "reason": "Outside window" },
+    { "title": "GitHub Copilot App standalone", "source": "github.blog · June 2", "reason": "Outside window" },
+    { "title": "Windsurf rebranded as Devin Desktop", "source": "multiple · June 2", "reason": "Outside window" },
+    { "title": "OpenAI + Dell Codex enterprise partnership", "source": "openai.com · May 18", "reason": "Outside window" },
+    { "title": "OpenAI Codex six enterprise plugins", "source": "openai.com · June 2", "reason": "Outside window" },
+    { "title": "Alibaba Qwen 3.7 Max launch", "source": "qwenlm.github.io · May 19", "reason": "Outside window" },
+    { "title": "Alibaba Qwen 3.7 Plus GA", "source": "Qwen team · June 1-2", "reason": "Outside window" },
+    { "title": "NVIDIA Ising open AI models for quantum computing", "source": "nvidianews.nvidia.com · April 14", "reason": "Outside window" },
+    { "title": "Novo Nordisk / OpenAI drug discovery partnership", "source": "cnbc.com · April 14", "reason": "Outside window" },
+    { "title": "Salesforce Agentforce Operations GA", "source": "salesforce.com · April 29", "reason": "Outside window" },
+    { "title": "LangGraph 1.0 GA", "source": "changelog.langchain.com · October 2025", "reason": "Outside window" },
+    { "title": "Mistral Connectors in Studio (MCP via API/SDK)", "source": "mistral.ai · May 22", "reason": "Outside window" },
+    { "title": "White House EO: Promoting Advanced AI Innovation and Security", "source": "whitehouse.gov · June 2", "reason": "Outside window" },
+    { "title": "Anthropic S-1 IPO confidential filing", "source": "cbsnews.com · June 1", "reason": "Outside window" },
+    { "title": "Anthropic Claude Partner Hub", "source": "anthropic.com · June 3", "reason": "Outside window" },
+    { "title": "Anthropic Claude for Small Business", "source": "anthropic.com · May 13", "reason": "Outside window" },
+    { "title": "SpaceX/xAI IPO roadshow start", "source": "cnbc.com · June 8", "reason": "Financial market event; insufficient AI product signal" },
+    { "title": "ChatGPT 'Better memory' June 8 consumer blog post", "source": "openai.com · June 8", "reason": "Likely editorial restatement of Dreaming V3 (Jun 4); content not independently confirmed as new features" },
+    { "title": "OpenAI ChatGPT super app transformation", "source": "openai.com / FT reporting · early June", "reason": "No specific in-window product launch; structural plans only" },
+    { "title": "OpenAI ChatGPT Trusted Contact / Active sessions features", "source": "openai.com · date unclear", "reason": "Date unconfirmed in window" }
+  ],
+  "search_log": [
+    { "query": "Anthropic news June 2026", "type": "registry", "yield": "10 results, 4 high-rel" },
+    { "query": "OpenAI news June 7-10 2026", "type": "registry", "yield": "10 results, 3 high-rel" },
+    { "query": "Google DeepMind Gemini June 2026", "type": "registry", "yield": "8 results, 2 high-rel; I/O May 19-20 out-of-window" },
+    { "query": "xAI Grok June 7-10 2026", "type": "registry", "yield": "10 results, 2 high-rel; Grok Voice Jun 4 out-of-window" },
+    { "query": "Meta Llama June 7-10 2026", "type": "registry", "yield": "5 results, 0 in-window" },
+    { "query": "Mistral Connectors Studio MCP June 2026", "type": "registry", "yield": "7 results; May 22 out-of-window" },
+    { "query": "fetch: anthropic.com/news", "type": "registry", "yield": "1 in-window item confirmed" },
+    { "query": "fetch: anthropic.com/news/claude-fable-5-mythos-5", "type": "registry", "yield": "Full content T2 confirmed" },
+    { "query": "fetch: openai.com/news", "type": "registry", "yield": "HTTP 403" },
+    { "query": "Google IO 2026 date", "type": "registry", "yield": "May 19-20 confirmed, outside window" },
+    { "query": "AI news June 9-10 2026", "type": "exploratory", "yield": "8 results, 2 high-rel" },
+    { "query": "Microsoft Miasma worm June 8 2026", "type": "exploratory", "yield": "10 results, 6 high-rel" },
+    { "query": "fetch: techcrunch.com Miasma article", "type": "exploratory", "yield": "Full content T2 confirmed" },
+    { "query": "MCP new server release June 2026", "type": "registry", "yield": "No in-window items" },
+    { "query": "GitHub Copilot Cursor update June 7-10 2026", "type": "registry", "yield": "10 results, 0 new in-window" },
+    { "query": "fetch: github.blog Fable 5 Copilot changelog", "type": "registry", "yield": "T2 confirmed June 9" },
+    { "query": "Claude Fable 5 classifier criticism", "type": "adversarial", "yield": "8 results, 3 relevant" },
+    { "query": "OpenAI Economic Research Exchange June 8", "type": "registry", "yield": "6 results, URL confirmed" },
+    { "query": "AI Indonesia startup SEA June 2026", "type": "cross-language", "yield": "8 results, 0 in-window launches" },
+    { "query": "NVIDIA Ising release date", "type": "exploratory", "yield": "April 2026, outside window" },
+    { "query": "Alibaba Qwen 3.7 Max date", "type": "exploratory", "yield": "May 19-21, outside window" },
+    { "query": "OpenAI Built to benefit everyone June 8", "type": "registry", "yield": "URL confirmed; 403 for primary" },
+    { "query": "AI announcement June 5-7 2026", "type": "exploratory", "yield": "10 results, 0 new in-window beyond Jun 9 bulletin" },
+    { "query": "xAI SpaceX IPO roadshow June 8", "type": "exploratory", "yield": "8 results; financial story, dropped" },
+    { "query": "Gemini Antigravity CLI June 18 deadline", "type": "exploratory", "yield": "Announcement May 19, outside window" },
+    { "query": "LangChain LangGraph June 7-9 2026", "type": "registry", "yield": "No in-window releases" },
+    { "query": "Productivity AI tools June 7-9 2026", "type": "registry", "yield": "April data; 0 in-window" },
+    { "query": "AI startup funding June 7-10 2026", "type": "exploratory", "yield": "No AI product launches of sufficient signal" },
+    { "query": "Workflow automation launch June 5-10 2026", "type": "exploratory", "yield": "No in-window autonomous agent products" },
+    { "query": "AWS Bedrock June 7-10 2026", "type": "registry", "yield": "GPT-5.5 June 1, outside window" },
+    { "query": "AI research paper practical June 2026", "type": "exploratory", "yield": "No high-actionability papers in window" },
+    { "query": "OpenAI ChatGPT June 9-10 2026", "type": "registry", "yield": "Likely Dreaming V3 follow-up; dropped" },
+    { "query": "GitHub trending AI June 9-10", "type": "exploratory", "yield": "Ongoing trends, no in-window launches" },
+    { "query": "fetch: google developers blog Antigravity", "type": "registry", "yield": "May 19, outside window" },
+    { "query": "HN AI June 8-9 2026", "type": "exploratory", "yield": "No specific in-window items indexed" }
+  ]
+}
