@@ -1,0 +1,243 @@
+{
+  "run": {
+    "date": "2026-06-11",
+    "period_start": "2026-06-08",
+    "period_end": "2026-06-11",
+    "window_note": "Strict 72h window (June 8–11) yielded 6 verified items, above the ≤5 expansion threshold. No window expansion applied.",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 24,
+    "items_published": 6,
+    "items_dropped": 18,
+    "verification_summary": {
+      "verified": 2,
+      "secondary": 4,
+      "rumor": 0
+    },
+    "sources_count": 12,
+    "exploration_pct": 44,
+    "timestamp": "2026-06-11T00:00:00Z"
+  },
+  "items": [
+    {
+      "id": "google-diffusiongemma-26b",
+      "title": "Google releases DiffusionGemma 26B open model",
+      "date": "2026-06-10",
+      "primary_url": "https://developers.googleblog.com/en/diffusiongemma-the-developer-guide/",
+      "publisher": "Google Developers Blog",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release", "dev-tools"],
+      "bd_actionability": "high",
+      "cross_references": [
+        { "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it", "tier": "T2", "role": "corroborating" },
+        { "url": "https://ai.google.dev/gemma/docs/diffusiongemma", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "26B total parameters, 3.8B active at inference (MoE)", "source": "Google Developers Blog (T2)" },
+        { "claim": "1,000+ tokens/sec on H100; 700+ tokens/sec on RTX 5090", "source": "Google Developers Blog (T2); vendor-measured, unverified independently" },
+        { "claim": "Fits in 18 GB VRAM quantized", "source": "Google Developers Blog (T2)" },
+        { "claim": "256K token context window; 140 languages", "source": "Google Developers Blog (T2)" },
+        { "claim": "Apache 2.0 license", "source": "Hugging Face model card (T2)" },
+        { "claim": "Up to 4× faster than autoregressive Gemma (vendor-claimed)", "source": "Google Developers Blog (T2); parallel block diffusion vs sequential — different architecture, not quality comparison" }
+      ],
+      "caveats": [
+        "Speed figures are vendor-measured; no independent replication at publication",
+        "Output quality lower than standard Gemma 4 per Google's own documentation — explicit design trade-off",
+        "4× speed comparison is architecture-specific; not a direct task-quality benchmark"
+      ]
+    },
+    {
+      "id": "fable5-databricks-unity-ai-gateway",
+      "title": "Claude Fable 5 available on Databricks via Unity AI Gateway",
+      "date": "2026-06-09",
+      "primary_url": "https://www.databricks.com/blog/claude-fable-5-now-available-databricks-fully-governed-through-unity-ai-gateway",
+      "publisher": "Databricks",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["dev-tools", "ai-for-business"],
+      "bd_actionability": "high",
+      "cross_references": [
+        { "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.startuphub.ai/ai-news/technology/2026/claude-fable-5-arrives-on-databricks", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "Available across AWS, Azure, GCP rolling out week of June 9", "source": "Databricks Blog (T2)" },
+        { "claim": "AI Spend Controls: per-user, per-team, per-workspace, per-account", "source": "Databricks Blog (T2)" },
+        { "claim": "All requests/responses logged to Unity Catalog", "source": "Databricks Blog (T2)" },
+        { "claim": "30-day data retention for trust and safety (Anthropic policy)", "source": "Databricks Blog (T2)" }
+      ],
+      "caveats": [
+        "Multi-cloud rollout described as 'over the next week'; Azure/GCP may not be fully live at publication",
+        "OfficeQA Pro benchmark cited by Databricks is vendor-provided, not independently verified"
+      ]
+    },
+    {
+      "id": "openai-oracle-cloud-codex",
+      "title": "OpenAI models and Codex accessible through Oracle Cloud commitments",
+      "date": "2026-06-10",
+      "primary_url": "https://openai.com/index/openai-on-oracle-cloud/",
+      "publisher": "OpenAI",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["ai-for-business", "dev-tools"],
+      "bd_actionability": "medium",
+      "tier_note": "openai.com returned HTTP 403 during this run. Primary URL confirmed via secondary sources.",
+      "cross_references": [
+        { "url": "https://www.dotnetramblings.com/post/10_06_2026/10_06_2026_1/", "tier": "T3", "role": "corroborating" },
+        { "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN42I14M:0-openai-access-openai-models-and-codex-through-your-oracle-cloud-commitment/", "tier": "T2", "role": "corroborating" },
+        { "url": "https://openai.com/index/stargate-advances-with-partnership-with-oracle/", "tier": "T2", "role": "discovery" }
+      ],
+      "key_claims": [
+        { "claim": "Oracle customers apply OCI Universal Credits toward OpenAI models and Codex", "source": "Secondary sources corroborating primary URL" }
+      ],
+      "caveats": [
+        "Primary source inaccessible (HTTP 403) during run",
+        "Credit redemption pricing structure not disclosed in available secondary sources"
+      ]
+    },
+    {
+      "id": "xai-grok-v9-medium-deployment",
+      "title": "xAI begins deploying Grok V9-Medium to Tesla fleet and X platform",
+      "date": "2026-06-10",
+      "primary_url": "https://www.techtimes.com/articles/318165/20260610/grok-v9-rolls-tesla-cars-x-why-musks-distribution-flywheel-worries-ai-rivals.htm",
+      "publisher": "TechTimes",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "deployment-report",
+      "categories": ["model-release"],
+      "bd_actionability": "medium",
+      "tier_note": "Primary xAI source (x.ai/blog) inaccessible (HTTP 403). Deployment traces to Musk's X posts (T2 for direct statement); confirmed by secondary press.",
+      "cross_references": [
+        { "url": "https://www.kucoin.com/news/flash/xai-completes-training-of-1-5t-grok-v9-medium-model-with-cursor-data-integration", "tier": "T3", "role": "corroborating" },
+        { "url": "https://www.notateslaapp.com/news/4251/tesla-brings-grok-to-more-countries-with-update-202620", "tier": "T3", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "1.5T parameter MoE, ~3× larger than v8-small (500B)", "source": "Secondary sources citing Musk's May 26 X post" },
+        { "claim": "Deployment to Tesla/X began June 10", "source": "TechTimes (T3)" },
+        { "claim": "V9-Medium trained with Cursor developer-workflow data", "source": "Secondary sources" },
+        { "claim": "Developer API expected mid-June 2026", "source": "Secondary sources citing Musk statement" },
+        { "claim": "0.5T variant planned for open-source by end of 2026", "source": "Secondary sources citing Musk statement" }
+      ],
+      "caveats": [
+        "No independent benchmark results for V9-Medium at publication",
+        "Deployment to Tesla/X is internal rollout; developer API access not yet confirmed",
+        "xAI blog inaccessible (HTTP 403); claims from secondary reporting",
+        "Mid-June API date is stated intent, not confirmed schedule"
+      ]
+    },
+    {
+      "id": "anthropic-200m-economic-futures-amodei-essay",
+      "title": "Anthropic pledges $200M for AI economic research; CEO publishes five-pillar policy framework",
+      "date": "2026-06-10",
+      "primary_url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "publisher": "Dario Amodei (Anthropic CEO)",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement / policy-essay",
+      "categories": ["policy-regulation", "ai-for-business"],
+      "bd_actionability": "low",
+      "tier_note": "Essay is T2 (CEO's own primary statement). $200M fund confirmed only via AP wire (T3); no Anthropic.com news post identified.",
+      "cross_references": [
+        { "url": "https://abcnews.com/Politics/wireStory/anthropic-pledges-200-million-research-ais-economic-impact-133763972", "tier": "T3", "role": "corroborating" },
+        { "url": "https://www.usnews.com/news/business/articles/2026-06-10/anthropic-pledges-200-million-to-research-ais-economic-impact-as-ceo-suggests-job-loss-solutions", "tier": "T3", "role": "corroborating" },
+        { "url": "https://www.anthropic.com/economic-futures", "tier": "T2", "role": "discovery" }
+      ],
+      "key_claims": [
+        { "claim": "Economic Futures Research Fund: $200M", "source": "AP wire June 10 (T3)" },
+        { "claim": "National fellowship program: $150M", "source": "AP wire June 10 (T3)" },
+        { "claim": "Unemployment scenario tiers: 5%, 10%, unprecedented", "source": "darioamodei.com (T2)" },
+        { "claim": "Policy proposals: wage insurance, retention credits, UBI via corporate taxes or capital gains", "source": "darioamodei.com (T2)" }
+      ],
+      "caveats": [
+        "Fund announcement confirmed only via AP wire; no Anthropic.com primary post found",
+        "Essay and fund are companion pieces but separate provenance",
+        "Policy proposals are advocacy positions, not legislative commitments"
+      ]
+    },
+    {
+      "id": "openai-s1-sec-filing",
+      "title": "OpenAI submits confidential S-1 to SEC",
+      "date": "2026-06-08",
+      "primary_url": "https://openai.com/index/openai-submits-confidential-s-1/",
+      "publisher": "OpenAI",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "tier_note": "openai.com returned HTTP 403. Primary URL confirmed via Fortune and NBC News.",
+      "cross_references": [
+        { "url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/", "tier": "T2", "role": "corroborating" },
+        { "url": "https://www.nbcnews.com/business/markets/openai-chatgpt-files-ipo-rcna349101", "tier": "T2", "role": "corroborating" }
+      ],
+      "key_claims": [
+        { "claim": "S-1 filed June 8, 2026", "source": "Fortune (T2), NBC News (T2)" },
+        { "claim": "Valuation: $852B (March 2026 private round)", "source": "Multiple secondary sources" },
+        { "claim": "ARR: >$20B for FY2025", "source": "Multiple secondary sources" },
+        { "claim": "Underwriters: Goldman Sachs, Morgan Stanley", "source": "Multiple secondary sources" },
+        { "claim": "Analyst-estimated IPO window: Sept–Nov 2026 (not company guidance)", "source": "Multiple secondary sources" }
+      ],
+      "caveats": [
+        "Primary source inaccessible (HTTP 403)",
+        "IPO timing unconfirmed; filing opens the option but commits to nothing",
+        "Analyst IPO window is estimate, not OpenAI forward guidance"
+      ]
+    }
+  ],
+  "dropped": [
+    { "title": "Claude Fable 5 and Mythos 5 main release", "source": "anthropic.com · June 9", "reason": "Covered in Jun 10 bulletin" },
+    { "title": "Miasma worm / 73 Microsoft GitHub repos", "source": "techcrunch.com · June 8", "reason": "Covered in Jun 10 bulletin" },
+    { "title": "OpenAI PBC conversion and Deployment Company", "source": "openai.com · June 8", "reason": "Covered in Jun 10 bulletin" },
+    { "title": "OpenAI Economic Research Exchange", "source": "openai.com · June 8", "reason": "Covered in Jun 10 bulletin" },
+    { "title": "Apple WWDC 2026 — Siri AI, iOS 27", "source": "apple.com/newsroom · June 8", "reason": "Covered in Jun 9 bulletin" },
+    { "title": "GPT-5.5 Instant personalization rollout to Go/Free", "source": "openai.com · June 9", "reason": "Incremental expansion of May release; underlying features covered in prior bulletins" },
+    { "title": "Kwai Keye-VL-2.0 vision-language model (HuggingFace, 785 upvotes)", "source": "Kuaishou via HuggingFace · June 10", "reason": "In window; insufficient primary source for capability claims; BD-actionability low" },
+    { "title": "ChatGPT UK ads pilot (first European market)", "source": "OpenAI VP via LinkedIn · June 6", "reason": "Outside strict 72h window; no expansion applied (6 in-window items above threshold)" },
+    { "title": "Meta Muse Spark API delay", "source": "WSJ / multiple · June 4", "reason": "No new in-window announcement; existing delay story" },
+    { "title": "Asana Dash AI chief of staff", "source": "Asana Work Innovation Summit · June 4", "reason": "Outside window" },
+    { "title": "Snowflake Summit AI announcements (CoCo, CoWork)", "source": "snowflake.com · June 2", "reason": "Outside window" },
+    { "title": "CDT Dark Patterns in AI Chatbots report", "source": "cdt.org · May 29", "reason": "Outside window" },
+    { "title": "Zoom ZoomMate AI agent launch", "source": "news.zoom.com · June 1", "reason": "Outside window" },
+    { "title": "Asana acquires StackAI for $75M", "source": "asana.com · May 28", "reason": "Outside window" },
+    { "title": "Colorado AI Act amendment delayed to January 2027", "source": "Colorado Governor SB 189 · May 14", "reason": "Outside window" },
+    { "title": "Grok 4.3 model release and legacy model retirement", "source": "xAI · April 30", "reason": "Outside window" },
+    { "title": "University of Toronto autonomous AI worm (arXiv preprint)", "source": "arXiv · June 2–3", "reason": "Outside window" },
+    { "title": "OpenAI Codex for knowledge workers adoption report", "source": "openai.com · June 2", "reason": "Outside window" }
+  ],
+  "search_log": [
+    { "query": "Anthropic news June 10 11 2026", "type": "registry", "yield": "8 results, 2 high-rel" },
+    { "query": "OpenAI announcement June 10 11 2026", "type": "registry", "yield": "9 results, 2 high-rel" },
+    { "query": "Google DeepMind Gemini AI announcement June 10 11 2026", "type": "registry", "yield": "9 results, 1 in-window" },
+    { "query": "xAI Grok release June 10 11 2026", "type": "registry", "yield": "10 results, 3 high-rel" },
+    { "query": "fetch: anthropic.com/news", "type": "registry", "yield": "4 items listed; none new beyond Fable 5 Jun 9" },
+    { "query": "Meta Llama AI announcement June 2026", "type": "registry", "yield": "LlamaCon items; outside window" },
+    { "query": "Mistral AI news June 10 11 2026", "type": "registry", "yield": "Vibe/Le Chat renaming; outside window" },
+    { "query": "Cursor GitHub Copilot dev tools June 10 11 2026", "type": "registry", "yield": "Credit billing shift June 1; outside window" },
+    { "query": "AI news June 10 2026 productivity workflow automation", "type": "exploratory", "yield": "10 results, 2 high-rel; OpenAI Codex Jun 2 outside window" },
+    { "query": "MCP server new release launch June 2026", "type": "registry", "yield": "No specific in-window new launches" },
+    { "query": "Grok V9-Medium release Tesla deployment June 10 2026", "type": "exploratory", "yield": "10 results, 5 high-rel" },
+    { "query": "Claude Fable 5 independent benchmark criticism", "type": "adversarial", "yield": "10 results, 3 relevant" },
+    { "query": "Anthropic Economic Futures Research Fund June 10 2026", "type": "registry", "yield": "6 results, 3 confirmed June 10" },
+    { "query": "OpenAI Oracle Cloud Codex partnership June 11 2026", "type": "registry", "yield": "10 results, June 10 date confirmed" },
+    { "query": "Databricks Claude Fable 5 Unity AI Gateway date", "type": "registry", "yield": "June 9 confirmed via direct fetch" },
+    { "query": "fetch: developers.googleblog.com DiffusionGemma", "type": "exploratory", "yield": "T2 confirmed June 10" },
+    { "query": "Google DiffusionGemma 26B model release June 10 2026", "type": "exploratory", "yield": "10 results, 6 high-rel" },
+    { "query": "Asana Dash Work Innovation Summit June 2026 date", "type": "exploratory", "yield": "June 4 event; outside window" },
+    { "query": "Zoom ZoomMate launch date June 2026", "type": "exploratory", "yield": "June 1; outside window" },
+    { "query": "AI startup funding announcement June 10 11 2026", "type": "exploratory", "yield": "No in-window product launches" },
+    { "query": "Hacker News AI top story June 10 11 2026", "type": "exploratory", "yield": "Claude Fable 5 trending; AI worm Jun 2-3 outside window" },
+    { "query": "AI Indonesia startup SEA June 2026", "type": "cross-language", "yield": "No in-window launches from SEA-region vendors" },
+    { "query": "site:x.com AI announcement June 10 11 2026", "type": "social", "yield": "No specific in-window items returned" },
+    { "query": "ChatGPT ads UK rollout date June 2026", "type": "exploratory", "yield": "June 6; outside strict window" },
+    { "query": "CDT dark patterns AI report date 2026", "type": "adversarial", "yield": "May 29; outside window" },
+    { "query": "Colorado AI Act June 30 2026 enforcement update", "type": "exploratory", "yield": "SB 189 amendment May 14; deadline moved to Jan 2027" },
+    { "query": "Meta Muse Spark API launch June 10 11 2026", "type": "exploratory", "yield": "Still delayed; no new in-window announcement" },
+    { "query": "OpenAI S-1 IPO filing June 8 2026", "type": "registry", "yield": "Confirmed June 8; missed in previous run" },
+    { "query": "LangChain AutoGen CrewAI new release June 2026", "type": "registry", "yield": "No in-window releases" }
+  ]
+}
