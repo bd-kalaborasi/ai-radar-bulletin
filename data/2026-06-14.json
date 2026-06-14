@@ -1,0 +1,573 @@
+{
+  "run": {
+    "date": "2026-06-14",
+    "period_start": "2026-06-11",
+    "period_end": "2026-06-14",
+    "window_hours": 72,
+    "window_expanded": false,
+    "audience": "public-digest",
+    "depth": "standard",
+    "items_reviewed": 24,
+    "items_published": 7,
+    "items_dropped": 17,
+    "verification_summary": {
+      "verified": 4,
+      "secondary": 3,
+      "rumor": 0
+    },
+    "sources_count": 15,
+    "searches_total": 22,
+    "searches_exploratory": 9,
+    "exploration_pct": 41,
+    "categories_covered": [
+      "policy-regulation",
+      "ai-for-business",
+      "model-release",
+      "dev-tools",
+      "agent-framework"
+    ],
+    "categories_thin": [
+      "workflow-automation",
+      "productivity-ai",
+      "mcp-ecosystem",
+      "research-papers"
+    ]
+  },
+  "items_published": [
+    {
+      "id": "fable5-mythos5-export-control",
+      "title": "US Export Control Suspends Anthropic's Fable 5 and Mythos 5 Worldwide",
+      "date": "2026-06-12",
+      "category": ["policy-regulation", "model-release"],
+      "source_primary": {
+        "url": "https://www.anthropic.com/news/fable-mythos-access",
+        "org": "Anthropic",
+        "tier": "T2",
+        "methodology": "policy-response / announcement",
+        "verification_status": "verified",
+        "coi": null
+      },
+      "source_cross_refs": [
+        {
+          "url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+          "tier": "T2",
+          "role": "Amazon angle — investigative"
+        },
+        {
+          "url": "https://www.neowin.net/news/anthropic-pulls-fable-5-and-mythos-5-after-us-export-control-order/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "Export control directive received June 12 at 5:21 PM ET",
+          "source_tier": "T2",
+          "source_url": "https://www.anthropic.com/news/fable-mythos-access",
+          "verified": true
+        },
+        {
+          "claim": "Jailbreak mechanism: requesting model to read codebase and identify software flaws",
+          "source_tier": "T2",
+          "source_url": "https://www.anthropic.com/news/fable-mythos-access",
+          "verified": true
+        },
+        {
+          "claim": "Amazon CEO reportedly demonstrated technique to federal officials",
+          "source_tier": "T2",
+          "source_url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/",
+          "verified": false,
+          "note": "Amazon unconfirmed"
+        },
+        {
+          "claim": "All other Anthropic models remain unaffected",
+          "source_tier": "T2",
+          "source_url": "https://www.anthropic.com/news/fable-mythos-access",
+          "verified": true
+        }
+      ],
+      "caveats": [
+        "Full legal basis and issuing authority not public",
+        "Amazon has not confirmed specific research demonstration",
+        "No restoration date committed by Anthropic",
+        "Fable 5 launched June 9 — export control arrived 3 days later"
+      ],
+      "bd_actionability": "high",
+      "recency_weight": 1.0
+    },
+    {
+      "id": "tcs-anthropic-partnership",
+      "title": "TCS Signs Global Premier Partnership with Anthropic for Regulated Industries",
+      "date": "2026-06-12",
+      "category": ["ai-for-business"],
+      "source_primary": {
+        "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+        "org": "Anthropic",
+        "tier": "T2",
+        "methodology": "announcement",
+        "verification_status": "verified",
+        "coi": "Partnership announced via Anthropic's own news page"
+      },
+      "source_cross_refs": [
+        {
+          "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-anthropic-launch-global-premier-partnership-drive-enterprise-ai-scaling",
+          "tier": "T2",
+          "role": "TCS primary press release"
+        },
+        {
+          "url": "https://letsdatascience.com/news/tcs-and-anthropic-form-global-enterprise-ai-partnership-0b2bfc42",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "50,000 TCS associates to be trained on Claude",
+          "source_tier": "T2",
+          "source_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+          "verified": true,
+          "note": "Deployment target, not completed"
+        },
+        {
+          "claim": "Global Premier tier in Claude Partner Network",
+          "source_tier": "T2",
+          "source_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+          "verified": true
+        },
+        {
+          "claim": "115,000 employees across 56 countries",
+          "source_tier": "T2",
+          "source_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+          "verified": true
+        },
+        {
+          "claim": "Diligenta serves 22 million policyholders",
+          "source_tier": "T2",
+          "source_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+          "verified": true
+        }
+      ],
+      "caveats": [
+        "Financial terms not disclosed",
+        "50,000 training figure is a target",
+        "No timeline for first joint client deliveries"
+      ],
+      "bd_actionability": "high",
+      "recency_weight": 1.0
+    },
+    {
+      "id": "kimi-k2-7-code",
+      "title": "Moonshot AI Open-Sources Kimi K2.7-Code, a 1T-Parameter Coding Model",
+      "date": "2026-06-12",
+      "category": ["model-release", "dev-tools"],
+      "source_primary": {
+        "url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
+        "org": "MarkTechPost (citing Moonshot AI / Hugging Face)",
+        "tier": "T3",
+        "methodology": "release announcement",
+        "verification_status": "secondary",
+        "coi": null,
+        "tier_note": "Primary source is Moonshot AI Hugging Face model page — not directly accessed. T3 secondary."
+      },
+      "source_cross_refs": [
+        {
+          "url": "https://cryptobriefing.com/kimi-k2-7-code-open-source-release/",
+          "tier": "T3",
+          "role": "corroborating, includes HuggingFace link"
+        },
+        {
+          "url": "https://kingy.ai/ai/kimi-k2-7-code-benchmarks-specs/",
+          "tier": "T3",
+          "role": "spec details"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "1T total parameters, 32B active (MoE, 384 experts)",
+          "source_tier": "T3",
+          "verified": false,
+          "note": "Secondary — Hugging Face model card not directly accessed"
+        },
+        {
+          "claim": "256K token context window",
+          "source_tier": "T3",
+          "verified": false
+        },
+        {
+          "claim": "Modified MIT license",
+          "source_tier": "T3",
+          "verified": false
+        },
+        {
+          "claim": "API pricing $0.95 / $4.00 per million I/O tokens",
+          "source_tier": "T3",
+          "verified": false
+        },
+        {
+          "claim": "21.8% gain on Kimi Code Bench v2",
+          "source_tier": "T4",
+          "verified": false,
+          "note": "Vendor-designed benchmark — no independent evaluation"
+        }
+      ],
+      "caveats": [
+        "All benchmarks are Moonshot-designed; no independent evaluation available",
+        "Modified MIT license has use restrictions — review before production deployment",
+        "Primary Hugging Face model page not directly accessed during run"
+      ],
+      "bd_actionability": "high",
+      "recency_weight": 1.0
+    },
+    {
+      "id": "harmonyos-7-developer-beta",
+      "title": "Huawei Launches HarmonyOS 7 Developer Beta with Agent Framework 2.0",
+      "date": "2026-06-12",
+      "category": ["agent-framework"],
+      "source_primary": {
+        "url": "https://pandaily.com/huawei-hdc-2026-harmonyos-7",
+        "org": "Pandaily (citing Huawei Developer Conference 2026)",
+        "tier": "T3",
+        "methodology": "conference announcement",
+        "verification_status": "secondary",
+        "coi": null,
+        "tier_note": "Huawei primary developer portal inaccessible (403). Claims from multiple independent press reports of HDC 2026 keynote."
+      },
+      "source_cross_refs": [
+        {
+          "url": "https://www.intomobile.com/2026/06/12/huawei-announces-harmonyos-7-with-agentic-ai-and-15-performance-boost/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://dataconomy.com/2026/06/12/huawei-harmonyos-7-developer-beta-api-26/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "Developer beta launched June 12 at HDC 2026",
+          "source_tier": "T3",
+          "verified": false,
+          "note": "Multiple independent corroborating sources"
+        },
+        {
+          "claim": "Agent Framework 2.0: task decomposition, tool calls, autonomous execution",
+          "source_tier": "T3",
+          "verified": false
+        },
+        {
+          "claim": "Consumer release: fall 2026, Huawei Mate 90 series",
+          "source_tier": "T3",
+          "verified": false
+        }
+      ],
+      "caveats": [
+        "Huawei primary portal not accessible",
+        "Agent capabilities described at announcement level only",
+        "HarmonyOS market reach outside China is limited"
+      ],
+      "bd_actionability": "medium",
+      "recency_weight": 1.0
+    },
+    {
+      "id": "kpmg-ai-report-hallucinations",
+      "title": "KPMG Withdraws Client AI Report After Hallucinated Citations Identified",
+      "date": "2026-06-13",
+      "category": ["ai-for-business"],
+      "source_primary": {
+        "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+        "org": "TechCrunch",
+        "tier": "T2",
+        "methodology": "investigative reporting",
+        "verification_status": "verified",
+        "coi": null
+      },
+      "source_cross_refs": [
+        {
+          "url": "https://www.theregister.com/ai-and-ml/2026/06/12/kpmgs-ai-report-turns-into-a-demo-of-ai-hallucinations/",
+          "tier": "T2",
+          "role": "The Register investigation, June 12"
+        },
+        {
+          "url": "https://www.cityam.com/kpmg-report-on-ai-found-riddled-with-ai-hallucinations/",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "40 of 45 citations inaccurate or fabricated",
+          "source_tier": "T2",
+          "source_url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+          "verified": true
+        },
+        {
+          "claim": "UBS, NHS, SBB, Transport for London denied claims",
+          "source_tier": "T2",
+          "verified": true,
+          "note": "Via Financial Times; corroborated by TechCrunch"
+        },
+        {
+          "claim": "KPMG removed report pending internal investigation",
+          "source_tier": "T2",
+          "verified": true
+        },
+        {
+          "claim": "Original report: 'Redefining Excellence in the Age of Agentic AI', October 2025",
+          "source_tier": "T2",
+          "verified": true
+        }
+      ],
+      "caveats": [
+        "Proportion of content AI-generated vs human-authored not disclosed by KPMG",
+        "Root cause of citation failures not yet established (drafting error, hallucination, other)",
+        "Investigation outcome not yet published"
+      ],
+      "bd_actionability": "medium",
+      "recency_weight": 1.0
+    },
+    {
+      "id": "gpt52-deprecated-chatgpt",
+      "title": "GPT-5.2 Deprecated in ChatGPT; GPT-5.5 Now Default Across All Plans",
+      "date": "2026-06-12",
+      "category": ["model-release"],
+      "source_primary": {
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "org": "OpenAI",
+        "tier": "T3",
+        "methodology": "changelog",
+        "verification_status": "secondary",
+        "coi": null,
+        "tier_note": "help.openai.com HTTP 403 in this run. Date and change confirmed via TechTimes, GitHub Changelog."
+      },
+      "source_cross_refs": [
+        {
+          "url": "https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm",
+          "tier": "T3",
+          "role": "corroborating, June 13"
+        },
+        {
+          "url": "https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated/",
+          "tier": "T2",
+          "role": "GitHub Copilot deprecation — pre-announced, June 5"
+        }
+      ],
+      "key_claims": [
+        {
+          "claim": "GPT-5.2 Instant, Thinking, and Pro removed from ChatGPT June 12",
+          "source_tier": "T3",
+          "verified": false,
+          "note": "Primary not accessible"
+        },
+        {
+          "claim": "Traffic routed to GPT-5.5 equivalents",
+          "source_tier": "T3",
+          "verified": false
+        },
+        {
+          "claim": "GitHub Copilot GPT-5.2 deprecation effective June 5",
+          "source_tier": "T2",
+          "source_url": "https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated/",
+          "verified": true
+        }
+      ],
+      "caveats": [
+        "Primary source inaccessible",
+        "No behavior-comparison documentation published",
+        "Change appears ChatGPT-product-only; API-tier deprecation timeline unconfirmed"
+      ],
+      "bd_actionability": "medium",
+      "recency_weight": 1.0
+    },
+    {
+      "id": "anthropic-public-record",
+      "title": "Anthropic Publishes First Public Record Survey on AI Attitudes",
+      "date": "2026-06-12",
+      "category": ["policy-regulation"],
+      "source_primary": {
+        "url": "https://www.anthropic.com/news/anthropic-public-record",
+        "org": "Anthropic",
+        "tier": "T2",
+        "methodology": "survey results",
+        "verification_status": "verified",
+        "coi": "Anthropic sponsors and publishes the survey; framing reflects Anthropic's transparency agenda"
+      },
+      "source_cross_refs": [],
+      "key_claims": [
+        {
+          "claim": "51,993 respondents, Nov-Dec 2025, YouGov, US Census weights",
+          "source_tier": "T2",
+          "source_url": "https://www.anthropic.com/news/anthropic-public-record",
+          "verified": true
+        },
+        {
+          "claim": "64% cite AI job loss as primary concern",
+          "source_tier": "T2",
+          "verified": true
+        },
+        {
+          "claim": "15% trust AI companies with development decisions",
+          "source_tier": "T2",
+          "verified": true
+        },
+        {
+          "claim": "70%+ support government role in AI regulation",
+          "source_tier": "T2",
+          "verified": true
+        },
+        {
+          "claim": "6% qualify as 'integrated users'",
+          "source_tier": "T2",
+          "verified": true
+        }
+      ],
+      "caveats": [
+        "Data from Nov-Dec 2025, predates June 2026 Fable 5 launch and export control",
+        "YouGov online panel may have self-selection bias",
+        "Anthropic is the survey sponsor — question framing reflects their agenda",
+        "Raw question wording not published in summary reviewed"
+      ],
+      "bd_actionability": "low",
+      "recency_weight": 0.85
+    }
+  ],
+  "items_dropped": [
+    {
+      "title": "DXC Technology and Anthropic global enterprise integration partnership",
+      "source_url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+      "source_date": "2026-06-11",
+      "reason": "Covered in Jun 12 bulletin"
+    },
+    {
+      "title": "Anthropic launches Claude Corps national fellowship",
+      "source_url": "https://www.anthropic.com/news/claude-corps",
+      "source_date": "2026-06-11",
+      "reason": "Covered in Jun 12 bulletin"
+    },
+    {
+      "title": "Google DiffusionGemma 26B open model",
+      "source_url": "https://developers.googleblog.com/en/diffusiongemma-the-developer-guide/",
+      "source_date": "2026-06-10",
+      "reason": "Covered in Jun 11 bulletin"
+    },
+    {
+      "title": "OpenAI models and Codex on Oracle Cloud",
+      "source_url": "https://openai.com/index/openai-on-oracle-cloud/",
+      "source_date": "2026-06-10",
+      "reason": "Covered in Jun 11 bulletin"
+    },
+    {
+      "title": "Anthropic $200M Economic Futures Research Fund",
+      "source_url": "https://darioamodei.com/post/policy-on-the-ai-exponential",
+      "source_date": "2026-06-10",
+      "reason": "Covered in Jun 11 bulletin"
+    },
+    {
+      "title": "OpenAI confidential S-1 SEC filing",
+      "source_url": "https://openai.com/index/openai-submits-confidential-s-1/",
+      "source_date": "2026-06-08",
+      "reason": "Covered in Jun 11 bulletin"
+    },
+    {
+      "title": "xAI Grok V9-Medium Tesla and X deployment",
+      "source_url": "https://www.techtimes.com/articles/318165/20260610/grok-v9-rolls-tesla-cars-x.htm",
+      "source_date": "2026-06-10",
+      "reason": "Covered in Jun 11 bulletin"
+    },
+    {
+      "title": "Gemini 3.5 Live Translate (70-language real-time speech model)",
+      "source_url": "https://deepmind.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/",
+      "source_date": "2026-06-09",
+      "reason": "Outside strict 72h window"
+    },
+    {
+      "title": "MetaMask Agent Wallet launch (early access)",
+      "source_url": "https://metamask.io/news/metamask-launches-agent-wallet-giving-ai-agents-full-defi-access-with-default-security-on-every-transaction",
+      "source_date": "2026-06-09",
+      "reason": "Outside window"
+    },
+    {
+      "title": "Gemma 4 12B encoder-free multimodal model",
+      "source_url": "https://deepmind.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
+      "source_date": "2026-06-03",
+      "reason": "Outside window"
+    },
+    {
+      "title": "White House EO: Promoting Advanced AI Innovation and Security",
+      "source_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+      "source_date": "2026-06-02",
+      "reason": "Outside window"
+    },
+    {
+      "title": "agnt8x AI agent workforce management platform launch",
+      "source_url": "https://www.globenewswire.com/news-release/2026/06/03/3306081/0/en/agnt8x-Launches.html",
+      "source_date": "2026-06-03",
+      "reason": "Outside window"
+    },
+    {
+      "title": "SpaceX SPCX IPO debut, +25% close",
+      "source_url": "https://cnbc.com",
+      "source_date": "2026-06-13",
+      "reason": "Off-scope — not an AI product or tooling item"
+    },
+    {
+      "title": "GPT-5.6 'kindle-alpha' checkpoint leak",
+      "source_url": null,
+      "source_date": "2026-06",
+      "reason": "T5 — unconfirmed; no official OpenAI announcement; Polymarket odds are not a primary source"
+    },
+    {
+      "title": "Claude Code /fork session branching command",
+      "source_url": "https://www.techtimes.com/articles/318344/20260613/claude-code-adds--fork-command.htm",
+      "source_date": "2026-06-13",
+      "reason": "TechTimes reporting is retrospective; feature implementation dates to Build 2026 week (June 2-3), outside window"
+    },
+    {
+      "title": "Ramp AI Index: Anthropic overtakes OpenAI in business adoption",
+      "source_url": "https://ramp.com/leading-indicators/ai-index-may-2026",
+      "source_date": "2026-05-13",
+      "reason": "May 2026 data; first reported May 13 — outside window"
+    },
+    {
+      "title": "Claude Code v2.1.173 bug fix release",
+      "source_url": "https://releasebot.io/updates/anthropic/claude-code",
+      "source_date": "2026-06-11",
+      "reason": "Minor bug fix only (Fable 5 model name normalization, Windows sandbox warning) — no standalone publication value"
+    }
+  ],
+  "limitations": {
+    "sources_unreachable": [
+      "openai.com (HTTP 403) — GPT-5.2 deprecation primary unconfirmed",
+      "x.ai/blog (HTTP 403) — no xAI items in window",
+      "huawei developer portal (HTTP 403) — HarmonyOS 7 claims via secondary only",
+      "deepmind.google DiffusionGemma blog post (HTTP 404) — covered in prior bulletin"
+    ],
+    "login_walled": [
+      "X timelines",
+      "Instagram",
+      "LinkedIn private feeds",
+      "Discord"
+    ],
+    "thin_categories": [
+      "workflow-automation",
+      "productivity-ai",
+      "mcp-ecosystem",
+      "research-papers",
+      "dev-tools (minor Claude Code bug fix only)"
+    ],
+    "geographic_bias": "US/EU heavy; SEA-region search yielded no qualifying in-window product launches",
+    "anthropic_concentration": "4 of 7 items Anthropic-related; reflects genuine density of June 12 announcements",
+    "items_requiring_upgrade": [
+      "HarmonyOS 7 — needs Huawei primary portal confirmation",
+      "GPT-5.2 deprecation — needs help.openai.com primary access",
+      "Kimi K2.7-Code — needs direct Moonshot HuggingFace model card verification",
+      "Amazon-Jassy reporting — needs Amazon primary confirmation"
+    ]
+  }
+}
