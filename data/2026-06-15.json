@@ -1,0 +1,250 @@
+{
+  "run": {
+    "date": "2026-06-15",
+    "period_start": "2026-06-10",
+    "period_end": "2026-06-15",
+    "timeframe_label": "5-day (expanded from 72h; strict window yielded ≤5 items)",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 25,
+    "items_published": 8,
+    "items_dropped": 17,
+    "exploration_pct": 40,
+    "total_searches": 35,
+    "exploratory_searches": 14,
+    "sources_count": 14
+  },
+  "verification_summary": {
+    "verified": 6,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "policy-regulation",
+    "model-release",
+    "dev-tools",
+    "agent-framework",
+    "ai-for-business"
+  ],
+  "categories_not_covered": [
+    "mcp-ecosystem",
+    "workflow-automation",
+    "productivity-ai",
+    "research-papers"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Fable 5 and Mythos 5 Suspended by US Export-Control Directive",
+      "category": ["policy-regulation", "model-release"],
+      "date": "2026-06-12",
+      "source_url": "https://www.anthropic.com/news/fable-mythos-access",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "US BIS export-control directive received 2026-06-12 at 5:21 PM ET. Fable 5 and Mythos 5 disabled globally because Anthropic cannot verify nationality in real time. All other Claude models unaffected. Jailbreak by Pliny the Liberator reportedly triggered complaint, Amazon implicated as source. Anthropic disputes severity.",
+      "cross_references": [
+        "https://www.nbcnews.com/tech/tech-news/anthropic-suspends-new-ai-models-fable-mythos-government-directive-rcna349901",
+        "https://9to5mac.com/2026/06/12/anthropic-pulls-claude-mythos-5-and-claude-fable-5-following-us-government-directive/",
+        "https://www.marktechpost.com/2026/06/13/anthropic-disables-claude-fable-5-and-mythos-5-after-us-government-order/"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Anthropic Agent SDK Billing Split Goes Live",
+      "category": ["dev-tools", "agent-framework"],
+      "date": "2026-06-15",
+      "announced_date": "2026-05-14",
+      "source_url": "https://thenewstack.io/anthropic-agent-sdk-credits/",
+      "source_org": "The New Stack (trade press); Anthropic announcement confirmed via multiple outlets",
+      "tier": "T3",
+      "verification": "verified",
+      "methodology": "announcement confirmed by multiple sources",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Agent SDK, claude -p, Claude Code GitHub Actions, and third-party SDK apps now draw from a separate credit pool at API list rates: $20/Pro, $100/Max-5x, $200/Max-20x. Developer reaction negative; analyses show 12x–175x effective cost increases for heavy agent workloads. Third billing intervention by Anthropic since January 2026.",
+      "cross_references": [
+        "https://gist.github.com/MagnaCapax/d9177e35b355853f03c730dfcaa693ef",
+        "https://codersera.com/blog/anthropic-june-2026-billing-change-claude-code/"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "DiffusionGemma 26B-A4B Open-Weights Released",
+      "category": ["model-release", "dev-tools"],
+      "date": "2026-06-10",
+      "source_url": "https://deepmind.google/models/gemma/diffusiongemma/",
+      "source_org": "Google DeepMind",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "release announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "medium",
+      "summary": "26B MoE (3.8B active per step) text-diffusion model generating 256 tokens in parallel per forward pass. Vendor claims >1,000 tok/s on H100 (unverified independently); H200 figure 1,288 tok/s confirmed by vLLM post. Apache 2.0. Available on HF, Kaggle, Vertex AI Model Garden. Quality acknowledged lower than Gemma 4. Speed conditional on low-concurrency deployment.",
+      "caveats": [
+        "Speed advantage collapses under high-throughput batched serving",
+        "Lower output quality than comparable Gemma 4 models per Google's own disclosure",
+        "H100 and consumer GPU figures are vendor-measured only"
+      ],
+      "cross_references": [
+        "https://blogs.nvidia.com/blog/rtx-ai-garage-local-gemma-diffusion/",
+        "https://nerova.ai/news/google-diffusiongemma-26b-a4b-local-text-generation-june-10-2026"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Kimi K2.7 Code by Moonshot AI Released Open-Weight",
+      "category": ["model-release"],
+      "date": "2026-06-12",
+      "source_url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
+      "source_org": "Moonshot AI (via MarkTechPost — primary vendor blog not retrieved)",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "press coverage of release",
+      "conflict_of_interest": null,
+      "bd_actionability": "medium",
+      "summary": "1T-parameter MoE (32B active, 384 experts), 256K context, Modified MIT license. API: $0.95/$4.00 per M tokens. Moonshot reports +21.8% on Kimi Code Bench v2 vs K2.6, 30% fewer reasoning tokens. All benchmarks are proprietary. No SWE-bench Verified, LiveCodeBench, or Terminal-Bench results available.",
+      "caveats": [
+        "All benchmarks proprietary (Kimi Code Bench v2, Program Bench, MLS Bench Lite)",
+        "K2.6 scored only 24% on independent DeepSWE benchmark vs high internal scores",
+        "Primary Moonshot AI announcement URL not directly fetched"
+      ],
+      "cross_references": [
+        "https://venturebeat.com/technology/kimi-k2-7-code-cuts-thinking-tokens-30-practitioners-say-benchmarks-dont-check-out",
+        "https://cryptobriefing.com/kimi-k2-7-code-open-source-release/"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "TCS-Anthropic Global Premier Partnership",
+      "category": ["ai-for-business"],
+      "date": "2026-06-12",
+      "source_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "source_org": "Anthropic / TCS (dual primary)",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "joint announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "medium",
+      "summary": "TCS designated Global Premier Partner in Claude Partner Network. 50,000+ TCS associates to use Claude across 56 countries. Dedicated business unit for regulated industries. Products: insurance claims processing, banking lending advisory. TCS iON will run Claude certification programs (75M annual assessments). Target: financial services, healthcare, aviation, telecoms, medtech.",
+      "cross_references": [
+        "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-anthropic-launch-global-premier-partnership-drive-enterprise-ai-scaling"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "DXC Technology to Integrate Claude in Regulated-Industry Systems",
+      "category": ["ai-for-business"],
+      "date": "2026-06-11",
+      "source_url": "https://www.anthropic.com/news/",
+      "source_org": "Anthropic (news page listing; DXC press release not retrieved)",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "vendor news listing",
+      "conflict_of_interest": null,
+      "bd_actionability": "low",
+      "summary": "DXC Technology will integrate Claude into mission-critical systems serving banks, airlines, and regulated industries. Scope: core operational infrastructure, not productivity tooling. Announcement confirmed via Anthropic news page June 11; DXC primary release not fetched.",
+      "cross_references": []
+    },
+    {
+      "id": 7,
+      "title": "Anthropic Launches Claude Corps — $150M Nonprofit AI Fellowship",
+      "category": ["ai-for-business"],
+      "date": "2026-06-11",
+      "source_url": "https://www.anthropic.com/claude-corps/fellow",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "low",
+      "summary": "$150M commitment. 1,000 fellows at $85K/year placed in US nonprofits for 1 year. First cohort: 100 fellows, applications open until July 17, 2026, starting October. Administered by Anthropic, CodePath, Social Finance. Requirements: US work-authorized, <2 years full-time experience.",
+      "cross_references": [
+        "https://qz.com/anthropic-claude-corps-fellowship-nonprofits-150-million-061126",
+        "https://www.usnews.com/news/best-states/california/articles/2026-06-11/anthropic-announces-claude-corps-to-teach-nonprofits-to-use-ai-more-effectively"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Anthropic Public Record — First Survey Results",
+      "category": ["policy-regulation"],
+      "date": "2026-06-12",
+      "source_url": "https://www.anthropic.com/news/anthropic-public-record",
+      "source_org": "Anthropic / YouGov",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "survey (YouGov, n=51,993, ±0.6 pp national margin)",
+      "conflict_of_interest": "Anthropic-commissioned survey; methodology disclosed (YouGov, nationally representative quotas)",
+      "bd_actionability": "low",
+      "summary": "n=51,993 Americans, Nov–Dec 2025. Top fear: AI job displacement (64%, top in every state). Top hope: AI cures major diseases (48%). Institutional trust in AI companies: 15% (lowest tested). Government regulation support: 70%+. Survey period: Nov–Dec 2025 (not June 2026 data).",
+      "cross_references": []
+    }
+  ],
+  "dropped_items": [
+    {"title": "Apple Siri AI / WWDC 2026", "reason": "Outside 5-day window (June 8)"},
+    {"title": "Google Gemma 4 12B launch", "reason": "Outside 5-day window (June 3)"},
+    {"title": "Google Gemini 3.5 Live Translate", "reason": "Outside 5-day window (June 9)"},
+    {"title": "Claude Fable 5 initial launch", "reason": "Outside window (June 9); covered as context in item 1"},
+    {"title": "SpaceX–Cursor $60B option deal", "reason": "Announced April 2026; IPO date June 12 is not a new development"},
+    {"title": "Microsoft Build 2026 / Agent Framework 1.0", "reason": "Outside window (June 2–3)"},
+    {"title": "Claude Opus 4.8 launch", "reason": "Outside window (May 28)"},
+    {"title": "Anthropic confidential S-1 filing", "reason": "Outside window (June 1)"},
+    {"title": "Meta–Nebius $27B infrastructure deal", "reason": "Outside window; announced before June 10"},
+    {"title": "GitHub Copilot usage-based credits", "reason": "Outside 5-day window (June 1)"},
+    {"title": "Google Antigravity 2.0 platform", "reason": "Launched at Google I/O May 19; no new release in window"},
+    {"title": "NVIDIA accelerates DiffusionGemma (June 12)", "reason": "Merged into DiffusionGemma item as supporting confirmation"},
+    {"title": "MCP 2026 roadmap (March)", "reason": "Published March 2026; no new spec changes in window"},
+    {"title": "Google DeepMind multi-agent safety investment", "reason": "Date unconfirmed within 5-day window"},
+    {"title": "Google education AI impact (Sierra Leone)", "reason": "Date unconfirmed; low BD actionability"},
+    {"title": "Anthropic IPO coverage", "reason": "Outside window (June 1 filing)"},
+    {"title": "AGIBOT APC 2026 Indonesia robotics conference", "reason": "Outside window (June 9); low relevance for software automation audience"}
+  ],
+  "search_log": {
+    "total_searches": 35,
+    "exploratory_or_adversarial": 14,
+    "exploration_pct": 40,
+    "queries": [
+      "Anthropic Claude announcement June 2026",
+      "OpenAI GPT announcement release June 2026",
+      "Google DeepMind Gemini release June 2026",
+      "AI agent framework release June 2026",
+      "MCP Model Context Protocol update June 2026",
+      "Claude Fable 5 export control suspension June 12 2026",
+      "Google Antigravity Agent public preview June 2026",
+      "AI news model release dev tools June 12 13 14 15 2026",
+      "LangChain LlamaIndex AutoGen CrewAI release update June 2026",
+      "DiffusionGemma release date June 2026 DeepMind",
+      "Anthropic Claude Corps fellowship program June 11 2026",
+      "Google Gemma 4 12B release June 2026 Hugging Face",
+      "Apple Siri Intelligence update June 2026",
+      "AI startup launch product release June 12 13 14 2026",
+      "GitHub trending AI agent MCP tools June 2026",
+      "TCS Anthropic Claude regulated industries partnership June 2026",
+      "MCP new servers June 2026 pulsemcp new additions",
+      "Kimi K2.7 Code Moonshot AI open source June 12 2026",
+      "Kimi K2.7 Code independent benchmark test June 2026 criticism",
+      "DiffusionGemma 4x faster independent benchmark criticism limitations",
+      "Hugging Face papers June 12 13 14 2026 AI research",
+      "Claude Fable 5 export control criticism jailbreak details",
+      "Anthropic billing change Agent SDK June 15 2026 developer reaction",
+      "AI Indonesia startup AI model AI June 2026",
+      "Claude Opus 4.8 release SWE-bench June 9 2026",
+      "SpaceX Cursor acquisition $60 billion June 2026",
+      "Anthropic public record results June 12 2026",
+      "Gemini 3.5 Live Translate release date June 2026",
+      "AI startup funding announcement June 13 14 15 2026"
+    ],
+    "primary_sources_fetched": [
+      "https://www.anthropic.com/news",
+      "https://www.anthropic.com/news/fable-mythos-access",
+      "https://www.anthropic.com/news/anthropic-public-record",
+      "https://deepmind.google/models/gemma/diffusiongemma/",
+      "https://deepmind.google/discover/blog/",
+      "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/",
+      "https://blog.modelcontextprotocol.io/posts/2026-mcp-roadmap/"
+    ]
+  }
+}
