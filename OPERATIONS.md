@@ -93,7 +93,11 @@ STEP 7 — COMMIT & PUSH
 Commit message format:
   ai-radar: YYYY-MM-DD — N items (V verified, S secondary, R rumor)
 
-Push to main. Cloudflare Pages picks it up automatically.
+Push using GH_TOKEN (the CCR local proxy at 127.0.0.1:PORT can return 403):
+  git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/bd-kalaborasi/ai-radar-bulletin.git"
+  git push -u origin <branch>
+
+Cloudflare Pages picks up main automatically after branch is merged.
 
 STEP 8 — REPORT
 Output a one-paragraph run summary: items reviewed, published, dropped,
@@ -126,7 +130,7 @@ it as raw notes.
 | Source unreachable | Skill logs in Limitations, continues | None — already documented in post |
 | Syntactic gate fails | `quality-gate.mjs` exits non-zero | Routine retries 2× then logs error; owner reviews next day |
 | Astro build fails | `npm run build` exits non-zero | Same |
-| Git push fails | Auth or merge conflict | Routine retries once, then errors. Manual: `git pull --rebase && git push` |
+| Git push fails | Auth or merge conflict | CCR proxy may 403 — use `git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/bd-kalaborasi/ai-radar-bulletin.git" && git push` |
 | Token quota hit | Routine error mid-run | Wait for reset (5h rolling). Check at claude.ai/code/routines |
 | Stage 3.5 <30% | Quality gate (Layer 2) catches it | Claude re-runs with explicit broader exploration scope |
 | Quiet period | ≤2 verified items | Acceptable. No publish. Sunday catch-up summarizes the gap |
