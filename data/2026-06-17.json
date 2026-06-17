@@ -1,0 +1,236 @@
+{
+  "run": {
+    "date": "2026-06-17",
+    "period_start": "2026-06-14",
+    "period_end": "2026-06-17",
+    "timeframe_label": "72h (strict window yielded 6 items; no expansion needed)",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 22,
+    "items_published": 7,
+    "items_dropped": 15,
+    "exploration_pct": 42,
+    "total_searches": 33,
+    "exploratory_searches": 14,
+    "sources_count": 13
+  },
+  "verification_summary": {
+    "verified": 5,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "agent-framework",
+    "dev-tools",
+    "workflow-automation",
+    "ai-for-business",
+    "policy-regulation",
+    "model-release",
+    "productivity-ai"
+  ],
+  "categories_not_covered": [
+    "mcp-ecosystem",
+    "research-papers"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Anthropic Reverses Agent SDK Billing Change on Implementation Day",
+      "category": ["agent-framework", "dev-tools"],
+      "date": "2026-06-15",
+      "source_url": "https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan",
+      "source_org": "Anthropic Help Center",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Anthropic halted the Agent SDK billing restructuring on June 15 — the same day it was scheduled to take effect. The Help Center notice reads: 'We're pausing the changes to Claude Agent SDK usage described below. For now, nothing has changed.' Agent SDK, claude -p, and third-party app usage continue drawing from existing subscription limits. The previously described credit tiers ($20 Pro, $100 Max 5x, $200 Max 20x at API list rates) are not active. Anthropic committed to providing advance notice before any future change.",
+      "cross_references": [
+        "https://the-decoder.com/anthropic-backs-off-unpopular-billing-overhaul-as-price-war-with-openai-looms/",
+        "https://www.digitalapplied.com/blog/anthropic-claude-credit-overhaul-june-15-2026"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Microsoft Work IQ APIs Reach General Availability",
+      "category": ["workflow-automation", "dev-tools"],
+      "date": "2026-06-16",
+      "announced_date": "2026-06-02",
+      "source_url": "https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/",
+      "source_org": "Microsoft 365 Dev Blog",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement / changelog",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Three Work IQ endpoints reached GA on June 16: Agent-to-Agent (A2A) API, redesigned remote MCP server, and a REST API for web applications. Work IQ provides AI agents with permission-aware access to Microsoft 365 organizational data via a Rego-based policy engine. Usage is consumption-based, billed in Copilot Credits independent of a Microsoft 365 Copilot license. Vendor scenario estimates: $0.20–$1.50 per interaction. Three production deployments documented at GA: SLB, HP, Miro.",
+      "caveats": [
+        "Pricing estimates are vendor-provided scenario models, not live billing data",
+        "Production implementations at GA are early-access customers; may not represent typical deployments"
+      ],
+      "cross_references": [
+        "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+        "https://m365admin.handsontek.net/general-availability-work-iq-api-copilot-credits-billing/"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Claude Code Ships Permission Rule Syntax and Sub-agent Governance Fixes (2.1.178/2.1.179)",
+      "category": ["dev-tools"],
+      "date": "2026-06-15",
+      "second_date": "2026-06-16",
+      "source_url": "https://code.claude.com/docs/en/changelog",
+      "source_org": "Anthropic Claude Code Docs",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Version 2.1.178 (June 15) added Tool(param:value) syntax to permission rules, nested .claude/ directory precedence, and sub-agent spawn classifier. Version 2.1.179 (June 16) fixed mid-stream connection drops, WSL2 mouse-wheel scrolling regression (introduced in 2.1.172), and denyRead/allowRead glob bug over large directory trees."
+    },
+    {
+      "id": 4,
+      "title": "OpenAI Launches Partner Network with $150M Investment",
+      "category": ["ai-for-business"],
+      "date": "2026-06-14",
+      "source_url": "https://openai.com/index/introducing-openai-partner-network/",
+      "source_org": "OpenAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "medium",
+      "summary": "OpenAI launched its first formal partner program on June 14, backed by $150M in ecosystem investment. Three tiers: Select, Advanced, Elite. Specializations in Codex, cybersecurity, and AI agents. Forward Deployed Experts program for complex enterprise implementations. Target: 300,000 certified consultants by end of 2026. Colleen Kapase (former Google Cloud channel exec) hired to lead.",
+      "notes": "openai.com returned 403 in this environment; key details confirmed via ChannelInsider (T3) and TechBriefly (T3). Tier set to T2 based on corroborating detail; downgrade to T3 if direct primary fetch fails.",
+      "cross_references": [
+        "https://www.channelinsider.com/news-and-trends/openai-debuts-partner-network-backed-by-150m-investment/"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "GLM-5.2 Receives Independent Benchmark Coverage Four Days After Launch",
+      "category": ["model-release"],
+      "date": "2026-06-16",
+      "primary_launch_date": "2026-06-13",
+      "source_url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+      "source_org": "VentureBeat",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "benchmark coverage + model launch",
+      "conflict_of_interest": null,
+      "bd_actionability": "medium",
+      "summary": "Z.ai launched GLM-5.2 on June 13 — 744B-parameter MoE (40B active), 1M-token context, MIT license, $12.60/month Coding Plan. VentureBeat published benchmark comparisons June 16 showing GLM-5.2 ahead of GPT-5.5 on SWE-bench Pro (62.1 vs 58.6) and FrontierSWE (74.4% vs 72.6%). BenchLM provisional: #3 of 124; verified leaderboard: #9 of 33.",
+      "caveats": [
+        "Benchmarks are vendor-submitted leaderboard runs, not independently administered trials",
+        "Prior Zhipu models have shown large gaps between internal and independent benchmark results",
+        "Independent SWE-bench Verified and LiveCodeBench results not yet available"
+      ],
+      "cross_references": [
+        "https://www.marktechpost.com/2026/06/14/z-ai-launches-glm-5-2-with-a-usable-1m-token-context-two-thinking-effort-levels-and-no-benchmarks-at-launch/",
+        "https://benchlm.ai/models/glm-5.2"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "OpenAI Academy Adds Three Workplace AI Courses",
+      "category": ["productivity-ai"],
+      "date": "2026-06-14",
+      "source_url": "https://openai.com/index/academy-courses-applying-ai-at-work/",
+      "source_org": "OpenAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "low",
+      "summary": "OpenAI Academy published three new courses on June 14: AI Foundations, Applied AI Foundations, and Agents and Workflows. Designed to take organizational teams from understanding AI basics to deploying agents in structured workflows.",
+      "notes": "openai.com returned 403; confirmed via EdTech Innovation Hub and TechBriefly corroborating sources (T3)."
+    },
+    {
+      "id": 7,
+      "title": "Anthropic Technical Team Meets Commerce Department Over Fable 5 Ban",
+      "category": ["policy-regulation"],
+      "date": "2026-06-16",
+      "source_url": "https://www.androidheadlines.com/2026/06/anthropic-white-house-meetings-claude-fable-5-ai-export-ban.html",
+      "source_org": "AndroidHeadlines",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "news reporting",
+      "conflict_of_interest": null,
+      "bd_actionability": "medium",
+      "summary": "Anthropic's Frontier Red Team held face-to-face meetings with the US Commerce Department's Center for AI Standards and Innovation on June 16, presenting a technical brief on Fable 5's cybersecurity infrastructure. Weekend calls involved Anthropic co-founder Tom Brown, Commerce Secretary Howard Lutnick, and National Cyber Director Sean Cairncross. Anthropic characterizes the triggering jailbreak as affecting 'a small number of previously known, minor vulnerabilities'. No restoration timeline announced.",
+      "caveats": [
+        "Meeting details sourced from press reporting only",
+        "No Anthropic primary statement covers the June 16 in-person sessions",
+        "Government position not confirmed from a US government primary source"
+      ],
+      "cross_references": [
+        "https://siliconangle.com/2026/06/14/white-house-forces-anthropic-disable-new-frontier-models-following-abrupt-export-ban/",
+        "https://www.businesstoday.in/technology/artificial-intelligence/story/anthropic-had-90-minutes-to-restrict-claude-fable-5-as-white-house-feared-chinese-access-537095-2026-06-16"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Anthropic Claude privacy policy ID verification", "reason": "Primary source June 8 — outside strict and 5-day expanded windows"},
+    {"title": "GPT-5.6 upcoming release", "reason": "No release confirmed; prediction-market speculation only (83% probability, June 22–28 window)"},
+    {"title": "NAVER + NVIDIA DSX infrastructure", "reason": "Outside window (June 7)"},
+    {"title": "Claude Code nested sub-agents (2.1.172)", "reason": "Outside window (June 10)"},
+    {"title": "Cursor Bugbot 90-second review speedup", "reason": "Outside window (June 10)"},
+    {"title": "ChatGPT memory Dreaming V3", "reason": "Outside window (June 4)"},
+    {"title": "Cursor Teams pricing update", "reason": "Outside window (June 1); GA for existing customers July 1"},
+    {"title": "Microsoft Build 2026 announcements", "reason": "Outside window (June 2–3)"},
+    {"title": "OpenAI multistate investigation / Florida AG suit", "reason": "Ongoing legal matter predating window; no new development in window"},
+    {"title": "OpenAI ChatGPT GPT-5.2 retirement", "reason": "June 12 — outside strict window"},
+    {"title": "Anthropic STEM Fellows Program starts", "reason": "Program start June 15; low BD actionability"},
+    {"title": "Z.ai GLM-5.2 initial launch (no benchmarks)", "reason": "Merged into GLM-5.2 benchmark item as discovery cross-reference"},
+    {"title": "MetaMask Agent Wallet early access", "reason": "Early access June 8, outside window"},
+    {"title": "OpenAI PRC influence operations report", "reason": "Date unconfirmed within window"},
+    {"title": "Hugging Face Daily Papers June 14–16", "reason": "Fetched; no research paper in window cleared the BD-actionability bar for standard-depth inclusion"}
+  ],
+  "search_log": {
+    "total_searches": 33,
+    "exploratory_or_adversarial": 14,
+    "exploration_pct": 42,
+    "queries": [
+      "Anthropic Claude announcement release June 2026",
+      "OpenAI GPT release announcement June 15 16 17 2026",
+      "Google DeepMind Gemini AI release June 2026",
+      "AI agent framework release update June 2026",
+      "Claude Microsoft 365 Excel PowerPoint Word add-in general availability June 2026",
+      "Anthropic Claude legal MCP connectors law firms June 2026",
+      "Gemini API Managed Agents public preview June 2026",
+      "Anthropic Claude credit overhaul pause June 15 2026",
+      "Cursor AI IDE update release June 14 15 16 17 2026",
+      "Claude Code update release June 2026",
+      "MCP Model Context Protocol new server release June 2026",
+      "Meta Llama xAI Grok Mistral model release June 2026",
+      "Anthropic White House Claude Fable 5 meeting June 16 2026",
+      "NAVER NVIDIA DSX sovereign AI infrastructure announcement June 2026",
+      "AI productivity tools workflow automation launch June 14 15 16 2026",
+      "site:x.com Anthropic announcement June 15 16 2026",
+      "new MCP server launch June 14 15 16 2026 pulsemcp",
+      "OpenAI Academy courses work announcement June 14 2026",
+      "Google Gemini update announcement feature June 14 15 16 2026",
+      "Microsoft AI announcement feature June 14 15 16 17 2026",
+      "GLM-5.2 Z.ai launch June 13 2026",
+      "AI news announcement June 14 2026",
+      "OpenAI announcement feature June 14 15 16 2026",
+      "AI startup launch funding June 15 16 17 2026",
+      "GitHub trending AI agents MCP automation tools June 2026",
+      "Anthropic billing reversal pause criticism developer reaction June 15 2026",
+      "GLM-5.2 criticism limitations benchmark independent June 2026",
+      "Cursor 3.6 Teams usage update release date June 2026",
+      "OpenAI Partner Network announcement June 16 2026",
+      "Microsoft Scout Work IQ APIs Autopilot agent June 16 2026",
+      "GLM-5.2 VentureBeat benchmark GPT-5.5 comparison June 2026",
+      "AI Asia Pacific announcement June 14 15 16 2026",
+      "AI Indonesia startup model launch June 2026"
+    ],
+    "primary_sources_fetched": [
+      "https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan",
+      "https://code.claude.com/docs/en/changelog",
+      "https://devblogs.microsoft.com/microsoft365dev/work-iq-production-ready-intelligence-for-every-agent/",
+      "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/"
+    ]
+  }
+}
