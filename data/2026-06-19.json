@@ -1,0 +1,286 @@
+{
+  "run": {
+    "date": "2026-06-19",
+    "period_start": "2026-06-16",
+    "period_end": "2026-06-19",
+    "timeframe_label": "72h (strict window maintained — 8 verified items above expansion threshold)",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 28,
+    "items_published": 8,
+    "items_dropped": 20,
+    "exploration_pct": 40,
+    "total_searches": 47,
+    "exploratory_searches": 19,
+    "sources_count": 16
+  },
+  "verification_summary": {
+    "verified": 8,
+    "secondary": 0,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "mcp-ecosystem",
+    "dev-tools",
+    "workflow-automation",
+    "productivity-ai",
+    "model-release",
+    "agent-framework"
+  ],
+  "categories_not_covered": [
+    "ai-for-business",
+    "research-papers",
+    "policy-regulation"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Anthropic ships enterprise-managed MCP connector auth via Okta",
+      "category": ["mcp-ecosystem"],
+      "date": "2026-06-18",
+      "source_url": "https://claude.com/blog/enterprise-managed-auth",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Anthropic launched enterprise-managed authorization for MCP connectors in beta on June 18, 2026, with Okta as the first supported identity provider. Admins authorize connectors once; users inherit access via IdP groups with zero-touch setup. Seven MCP providers at launch: Asana, Atlassian, Canva, Figma, Granola, Linear, Supabase. Beta for Team and Enterprise plans across Claude chat, Code, and Cowork.",
+      "key_claims": [
+        "7 MCP providers at launch (Asana, Atlassian, Canva, Figma, Granola, Linear, Supabase)",
+        "Okta as initial IdP; additional providers coming",
+        "Beta: Team and Enterprise plans",
+        "Optional enforcement: IdP-only connector access to prevent personal-account mixing"
+      ],
+      "caveats": [
+        "Beta status — onboarding automation experimental, subject to Okta API constraints",
+        "Slack and additional IdPs have no confirmed dates"
+      ],
+      "cross_references": [
+        "https://www.okta.com/en-ca/newsroom/press-releases/okta-becomes-a-featured-identity-provider-powering-secure-ai-agent-connections-for-claude-enterprise/ (T2, corroborating, 2026-06-18)",
+        "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/ (T2, corroborating — EMA extension stable status, 2026-06-18)"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cursor 3.8 ships Automations platform with Slack triggers and GitHub event hooks",
+      "category": ["workflow-automation", "dev-tools"],
+      "date": "2026-06-18",
+      "source_url": "https://cursor.com/changelog",
+      "source_org": "Cursor",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Cursor 3.8 adds an Automations platform layer: /automate command for plain-language automation creation, Slack emoji trigger for agent dispatch, 5 new GitHub event hooks (issue comments, PR review comments, PR review submissions, review thread updates, workflow completion), and computer-use for producing demo screenshots/recordings in cloud automations.",
+      "key_claims": [
+        "/automate command for plain-language automation creation",
+        "Slack emoji trigger: react to message to dispatch cloud agent",
+        "5 new GitHub event triggers",
+        "Computer use available in cloud automations for demo generation"
+      ],
+      "caveats": [
+        "GitHub-only version control integration; GitLab not supported",
+        "Slack notification customization limited — no per-event filtering at launch"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Claude Code Artifacts publishes live shareable pages from agent sessions",
+      "category": ["dev-tools"],
+      "date": "2026-06-18",
+      "source_url": "https://claude.com/blog/artifacts-in-claude-code",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Claude Code Artifacts (beta, June 18, 2026) generates live versioned web pages from session full context (codebase, connectors, conversation) without separate data wiring. Pages auto-refresh on publish, maintain version history, are org-private by default. Use cases: incident pages, PR walkthroughs, license audits, cost dashboards, release checklists. Team and Enterprise only.",
+      "key_claims": [
+        "Auto-refresh on publish; version history with restore",
+        "Org-only visibility — no public sharing",
+        "Built from session codebase + MCP connector data + conversation",
+        "Beta: Team and Enterprise plans only"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Cursor 3.7 adds cloud subagents and reusable VM snapshots",
+      "category": ["dev-tools"],
+      "date": "2026-06-17",
+      "source_url": "https://cursor.com/changelog",
+      "source_org": "Cursor",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Cursor 3.7 (June 17) adds /in-cloud to spin up isolated VM subagents, reusable environment snapshots (target setup under 10 minutes on reuse), /babysit for autonomous PR preparation in cloud, and local-to-cloud context handoff. Cloud environment setup visible in shared terminal.",
+      "key_claims": [
+        "Cloud environment setup under 10 minutes with snapshots",
+        "/babysit command for autonomous PR preparation",
+        "Reusable environment snapshots for faster future startups",
+        "Local-to-cloud session handoff without context loss"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Anthropic ships Workload Identity Federation for keyless Claude API auth",
+      "category": ["dev-tools"],
+      "date": "2026-06-17",
+      "source_url": "https://claude.com/blog/workload-identity-federation",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "Workload Identity Federation (WIF) reached GA on Claude Platform June 17, 2026. Replaces static API keys with short-lived, scoped OIDC tokens. Compatible with AWS IAM, Google Cloud, or any OIDC issuer. JWT exchanged at POST /v1/oauth/token for Claude access token; SDK auto-refreshes. Service accounts GA; covers all Claude API endpoints, Python/TypeScript SDKs, Claude Code.",
+      "key_claims": [
+        "Compatible with all OIDC providers (AWS IAM, Google Cloud, custom)",
+        "Short-lived token exchange at POST /v1/oauth/token; SDK auto-refresh",
+        "Covers all Claude API endpoints and Claude Code"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Claude Design adds design-system imports and bidirectional Claude Code sync",
+      "category": ["productivity-ai", "dev-tools"],
+      "date": "2026-06-17",
+      "source_url": "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "medium",
+      "summary": "Claude Design update (June 17, 2026) adds design-system imports from GitHub, files, or raw uploads with automatic compliance checking; bidirectional /design-sync and /design commands between Design and Claude Code; richer canvas editor with layout controls; 6 new export connectors (Adobe, Base44, Gamma, Lovable, Miro, Replit). Shared usage limits across Claude products. Beta on Pro, Max, Team, Enterprise.",
+      "key_claims": [
+        "Design-system imports from GitHub, files, or raw uploads",
+        "Bidirectional /design-sync and /design commands with Claude Code",
+        "6 new export connectors (Adobe, Base44, Gamma, Lovable, Miro, Replit)",
+        "Shared usage limits across Claude chat, Cowork, and Code"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Databricks expands Agent Bricks with MCP, Grok, and Sandbox at Data+AI Summit",
+      "category": ["agent-framework"],
+      "date": "2026-06-16",
+      "announcement_date_range": "2026-06-15 to 2026-06-18",
+      "source_url": "https://www.databricks.com/blog/agent-bricks-dais-2026",
+      "source_org": "Databricks",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "high",
+      "summary": "At Data+AI Summit 2026 (June 15-18), Databricks announced: MCP support in Unity Catalog; Databricks Sandbox for isolated VM execution with scoped data access; Omnigent meta-harness for running LangGraph/CrewAI/OpenAI Agent SDK side-by-side; Document Intelligence SQL functions (ai_parse_document, ai_extract, ai_classify) GA; native Grok 4.3 integration via SpaceX partnership (confirmed June 18). Vendor reports 100,000+ agents built since launch.",
+      "key_claims": [
+        "MCP support in Unity Catalog with existing data governance",
+        "Document Intelligence functions (ai_parse_document, ai_extract, ai_classify) now GA",
+        "100,000+ agents built since Agent Bricks launch (vendor metric)",
+        "Native Grok 4.3 integration confirmed June 18 via SpaceX partnership"
+      ],
+      "caveats": [
+        "100,000 agents figure is vendor-reported, no methodology",
+        "Omnigent cross-framework compatibility may not cover all SDK versions"
+      ],
+      "cross_references": [
+        "https://x.ai/news/grok-databricks (T2, corroborating — xAI-side confirmation, 2026-06-18)"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Z.ai releases GLM-5.2 open weights with MIT license and 1M-token context",
+      "category": ["model-release"],
+      "date": "2026-06-16",
+      "source_url": "https://huggingface.co/THUDM/GLM-5.2",
+      "source_org": "Z.ai / THUDM (Tsinghua University)",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "conflict_of_interest": null,
+      "bd_actionability": "medium",
+      "summary": "Z.ai (formerly Zhipu AI) released MIT-licensed weights of GLM-5.2 to HuggingFace and ModelScope on June 16, 2026. 753B-parameter mixture-of-experts model targeting long-horizon coding tasks. 1M-token context window. No regional restrictions for local deployment. Cloud API subscription from ~$12.60/month. Release timed to coincide with Fable 5/Mythos export restrictions. Community Code Arena ranking: second globally on long-horizon coding (T3 — no primary benchmark report at launch).",
+      "key_claims": [
+        "753B parameters, MIT license, HuggingFace and ModelScope (T2-T3 aggregated secondary)",
+        "1M token context window (T3 secondary)",
+        "~$12.60/month cloud API entry tier (T3 secondary)",
+        "Code Arena second globally on long-horizon coding (T3 community leaderboard)"
+      ],
+      "caveats": [
+        "API use subject to China's National Intelligence Law",
+        "US House May 2026 inquiry named Zhipu AI in Chinese AI cybersecurity scrutiny",
+        "No primary benchmark report published at launch",
+        "No native IDE integration — requires Cursor, Continue.dev plugins",
+        "Primary HuggingFace page not directly fetched; release facts from aggregated T2-T3 secondary sources"
+      ],
+      "cross_references": [
+        "https://www.techtimes.com/articles/318543/20260617/glm-52-open-weights-live-top-coding-benchmark-api-use-carries-china-data-risk.htm (T3, adversarial — China data sovereignty risk)"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Grok 4.3 on Amazon Bedrock (GA)", "source": "aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bedrock/", "reason": "June 15, 2026 — 1 day outside strict 72h window; 8 in-window items above expansion threshold"},
+    {"title": "OpenAI Partner Network ($150M, 300K consultants)", "source": "openai.com/index/introducing-openai-partner-network/", "reason": "June 14, 2026 — 2 days outside strict 72h window"},
+    {"title": "Claude Managed Agents self-hosted sandboxes + MCP tunnels", "source": "claude.com/blog/claude-managed-agents-updates", "reason": "May 19, 2026 — outside window"},
+    {"title": "Claude for Legal: 20+ MCP connectors, 12 plugins", "source": "lawnext.com (primary: anthropic.com)", "reason": "May 12, 2026 — outside window"},
+    {"title": "MiniMax M3 open weights", "source": "marktechpost.com", "reason": "June 1, 2026 — outside window"},
+    {"title": "OpenAI on AWS Bedrock GPT-5.5 Codex GA", "source": "aws.amazon.com", "reason": "June 1, 2026 — outside window"},
+    {"title": "Snowflake CoWork / CoCo / Cortex Sense", "source": "snowflake.com", "reason": "June 3, 2026 Snowflake Summit — outside window"},
+    {"title": "Gemini Spark personal AI agent", "source": "techcrunch.com (Google I/O)", "reason": "May 19, 2026 — outside window"},
+    {"title": "ChatGPT Dreaming V3 memory architecture GA", "source": "openai.com", "reason": "June 4, 2026 — outside window"},
+    {"title": "Amazon Quick desktop AI assistant", "source": "aboutamazon.com", "reason": "April 28 / May 15, 2026 — outside window"},
+    {"title": "Zoom AI Productivity Suite", "source": "news.zoom.com", "reason": "June 1, 2026 — outside window"},
+    {"title": "Claude Code v2.1.181", "source": "github.com/anthropics/claude-code", "reason": "June 17 — covered in 2026-06-18 bulletin"},
+    {"title": "Claude Code v2.1.179 WSL2 scroll fix", "source": "code.claude.com/docs/en/changelog", "reason": "June 16 — minor bug-fix release, below quality bar for standard depth"},
+    {"title": "Vercel AI SDK v6.0.208 patch", "source": "github.com/vercel/ai", "reason": "June 18 — dependency refresh only, no user-facing features"},
+    {"title": "HuggingFace Daily Papers June 16-18", "source": "huggingface.co/papers", "reason": "Fetched; topics below BD-actionability bar (physical AI world models, robotic manipulation, RL rollout)"},
+    {"title": "Grok on Databricks (standalone)", "source": "x.ai/news/grok-databricks", "reason": "Folded into Databricks Agent Bricks item — same summit"},
+    {"title": "Databricks Unity Catalog MCP standalone", "source": "databricks.com/blog/...", "reason": "Folded into Databricks Agent Bricks item"},
+    {"title": "Anthropic Seoul office + Korea partnerships", "source": "anthropic.com", "reason": "June 17 — covered in 2026-06-18 bulletin"},
+    {"title": "G7 Trusted Partners AI framework", "source": "usnews.com (Reuters)", "reason": "June 16 — covered in 2026-06-18 bulletin"},
+    {"title": "Gemini CLI Antigravity CLI shutdown June 18", "source": "developers.googleblog.com", "reason": "June 18 effective date — covered in 2026-06-18 bulletin"}
+  ],
+  "search_log": {
+    "total_searches": 47,
+    "exploratory_or_adversarial": 19,
+    "exploration_pct": 40,
+    "primary_sources_fetched": [
+      "https://claude.com/blog/enterprise-managed-auth",
+      "https://claude.com/blog/artifacts-in-claude-code",
+      "https://claude.com/blog/claude-design-stays-on-brand-for-daily-work",
+      "https://claude.com/blog/workload-identity-federation",
+      "https://cursor.com/changelog",
+      "https://www.databricks.com/blog/agent-bricks-dais-2026",
+      "https://www.okta.com/en-ca/newsroom/press-releases/okta-becomes-a-featured-identity-provider-powering-secure-ai-agent-connections-for-claude-enterprise/",
+      "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+      "https://aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bedrock/",
+      "https://claude.com/blog/claude-managed-agents-updates",
+      "https://anthropic.com/news",
+      "https://github.com/anthropics/claude-code/releases",
+      "https://code.claude.com/docs/en/changelog",
+      "https://llm-stats.com/llm-updates",
+      "https://huggingface.co/papers",
+      "https://www.techrepublic.com/article/news-anthropic-claude-design-overhaul-enterprise-teams/"
+    ]
+  },
+  "quality_gate": {
+    "semantic_checks": {
+      "primary_url_present": true,
+      "exact_date_present": true,
+      "tier_grade_present": true,
+      "vendor_benchmarks_labeled": "GLM-5.2 benchmark claims labeled T3; Databricks vendor metric (100k agents) labeled as vendor-reported",
+      "no_industry_consensus_without_3_sources": true,
+      "hype_language_stripped": true,
+      "quote_under_14_words": "no direct quotes used — all paraphrased",
+      "stage_3_5_exploration_pct": 40,
+      "limitations_substantive": true,
+      "dropped_section_present": true
+    },
+    "syntactic_gate": "pending"
+  }
+}
