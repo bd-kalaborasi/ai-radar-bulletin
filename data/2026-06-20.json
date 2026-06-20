@@ -1,0 +1,195 @@
+{
+  "run_date": "2026-06-20",
+  "period_start": "2026-06-15",
+  "period_end": "2026-06-20",
+  "window_note": "72h strict window (June 17-20) yielded 3 items; expanded to 5 days (June 15-20) per mandatory expansion rule.",
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 32,
+  "items_published": 6,
+  "items_dropped": 26,
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "exploration_pct": 51,
+  "sources_count": 16,
+  "categories": ["dev-tools", "mcp-ecosystem", "productivity-ai", "policy-regulation", "research-papers"],
+  "items": [
+    {
+      "title": "headroom ships token-compression library and MCP server for AI agent workflows",
+      "primary_url": "https://github.com/chopratejas/headroom",
+      "publisher": "chopratejas (open-source)",
+      "date": "2026-06-16",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "release",
+      "category": ["dev-tools", "mcp-ecosystem"],
+      "bd_actionability": "high",
+      "key_claims": [
+        "60-95% token reduction (self-reported, unverified by independent benchmark)",
+        "92% reduction on code search: 17.7K to 1.4K tokens (self-reported)",
+        "65,694 to 5,118 tokens on SRE incident debug (self-reported)",
+        "38.7k GitHub stars, +12.8k week of June 17-20"
+      ],
+      "caveats": ["Benchmarks self-reported in README. No independent reproduction. Token reduction is workload-dependent."]
+    },
+    {
+      "title": "Claude Code v2.1.183 blocks destructive commands in auto mode",
+      "primary_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
+      "publisher": "Anthropic GitHub",
+      "date": "2026-06-19",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "category": ["dev-tools"],
+      "bd_actionability": "high",
+      "key_claims": [
+        "git reset --hard, git checkout -- ., git clean -fd, git stash drop blocked unless explicitly requested",
+        "terraform destroy, pulumi destroy, cdk destroy blocked unless explicitly asked",
+        "git commit --amend blocked on commits not made by agent in current session",
+        "Deprecation warnings on stderr in print mode and agent frontmatter"
+      ],
+      "caveats": []
+    },
+    {
+      "title": "WARP attack poisons deep-research AI agents via user-generated content",
+      "primary_url": "https://arxiv.org/abs/2605.24245",
+      "publisher": "Cornell Tech (Zhang, Triedman, Shmatikov)",
+      "date": "2026-05-22",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "research-paper",
+      "category": ["research-papers"],
+      "bd_actionability": "medium",
+      "window_note": "arXiv preprint May 22; media traction began June 15 in expanded window",
+      "key_claims": [
+        "~13-word injection in single Reddit post: 38-51% attack success rate",
+        "Multi-thread injection: up to 62% success rate",
+        "17-23% of deep-research agent retrieved content comes from user-generated sites",
+        "Gemini Deep Research cites UGC ~12%; OpenAI Deep Research ~0.4%"
+      ],
+      "caveats": [
+        "arXiv preprint, not peer-reviewed",
+        "Commercial tool assessment based on citation behavior, not answer manipulation",
+        "Success rates vary by topic and platform"
+      ]
+    },
+    {
+      "title": "OpenAI updates GPT-5.5 Instant health performance; independent study documents safety gaps",
+      "primary_url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+      "publisher": "OpenAI",
+      "date": "2026-06-18",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "category": ["productivity-ai"],
+      "bd_actionability": "medium",
+      "primary_access_note": "Primary URL returned HTTP 403; details confirmed via Search Engine Journal (T2, June 18)",
+      "key_claims": [
+        "GPT-5.5 Instant performs at parity with OpenAI frontier Thinking models on HealthBench (vendor-claimed)",
+        "71% reduction in health responses flagged for factuality issues over 2 months (vendor-claimed, internal monitoring)",
+        "Physician panels rated GPT-5.5 Instant above physician-written responses in 3,500-response eval (vendor-claimed)",
+        "260 physicians across 60 countries in review network (vendor-claimed)",
+        "230 million weekly ChatGPT health queries (vendor-claimed)"
+      ],
+      "conflicts": [
+        {
+          "source": "Nature Medicine (Ramaswamy et al., Mount Sinai, 2026-02)",
+          "tier": "T1",
+          "direction": "contradicting",
+          "claim": "52% undertriage of gold-standard emergencies; 35% overtriage of non-urgent cases in ChatGPT Health prior version"
+        }
+      ],
+      "caveats": [
+        "All performance claims based on OpenAI internal benchmarks; no external audit",
+        "Nature Medicine study predates June 18 update; may not reflect current model",
+        "71% improvement is relative to GPT-5.3 Instant, not to medical-grade external standard"
+      ]
+    },
+    {
+      "title": "150+ cybersecurity experts urge Commerce Department to reverse Fable 5 / Mythos 5 export ban",
+      "primary_url": "https://www.cybersecuritydive.com/news/anthropic-us-government-export-ban-mythos-fable/822909/",
+      "publisher": "Cybersecurity Dive",
+      "date": "2026-06-15",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "news-reporting",
+      "category": ["policy-regulation"],
+      "bd_actionability": "medium-low",
+      "primary_access_note": "Letter at freefable.org not directly fetched; Cybersecurity Dive and Fortune (both T2) used as sources",
+      "key_claims": [
+        "Letter signed by Alex Stamos, Katie Moussouris, Rachel Tobac, Chris Wysopal, Joe Levy",
+        "76 signatures at publication (June 15); grew to 150+ by June 17",
+        "Addressed to Commerce Secretary Lutnick and National Cyber Director Cairncross",
+        "Argument: comparable capabilities available in GPT-5.5, Opus, Sonnet, Chinese models"
+      ],
+      "caveats": [
+        "Primary letter at freefable.org not fetched in this run",
+        "Signature count from secondary sources; may have grown further",
+        "No formal government response published as of June 20"
+      ]
+    },
+    {
+      "title": "Google Gemini Home Speaker opens pre-orders at $99.99, ships June 25",
+      "primary_url": "https://blog.google/products-and-platforms/devices/google-nest/google-home-speaker-gemini-features/",
+      "publisher": "Google",
+      "date": "2026-06-17",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "category": ["productivity-ai"],
+      "bd_actionability": "low",
+      "key_claims": [
+        "Price: $99.99",
+        "Pre-order June 17; ship June 25",
+        "First Google smart speaker in six years",
+        "Thread 1.3 border-router support",
+        "Gemini Live and Camera History Search require Google Home Premium subscription"
+      ],
+      "caveats": [
+        "Advanced conversational features (Gemini Live) require paid subscription tier",
+        "US availability confirmed; international pricing not announced"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Anthropic Seoul office + Korean enterprise partnerships", "source": "anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem", "reason": "Covered in 2026-06-18 bulletin"},
+    {"title": "Claude Code v2.1.181 in-prompt config syntax", "source": "github.com/anthropics/claude-code/releases/tag/v2.1.181", "reason": "Covered in 2026-06-18 bulletin"},
+    {"title": "Flue 1.0 Beta TypeScript agent harness", "source": "flueframework.com/blog/flue-1-0-beta/", "reason": "Covered in 2026-06-18 bulletin"},
+    {"title": "Claude Sonnet 4 / Opus 4 model ID retirements", "source": "platform.claude.com/docs/en/about-claude/model-deprecations", "reason": "Covered in 2026-06-18 bulletin"},
+    {"title": "Gemini CLI end-of-life (June 18 deadline)", "source": "developers.googleblog.com", "reason": "Covered in 2026-06-18 bulletin"},
+    {"title": "G7 'Trusted Partners' AI access framework", "source": "usnews.com (Reuters)", "reason": "Covered in 2026-06-18 bulletin"},
+    {"title": "Enterprise MCP connector auth via Okta", "source": "claude.com/blog/enterprise-managed-auth", "reason": "Covered in 2026-06-19 bulletin"},
+    {"title": "Cursor 3.8 Automations platform", "source": "cursor.com/changelog", "reason": "Covered in 2026-06-19 bulletin"},
+    {"title": "Claude Code Artifacts (live org pages)", "source": "claude.com/blog/artifacts-in-claude-code", "reason": "Covered in 2026-06-19 bulletin"},
+    {"title": "Cursor 3.7 cloud subagents and VM snapshots", "source": "cursor.com/changelog", "reason": "Covered in 2026-06-19 bulletin"},
+    {"title": "Anthropic Workload Identity Federation GA", "source": "claude.com/blog/workload-identity-federation", "reason": "Covered in 2026-06-19 bulletin"},
+    {"title": "Claude Design bidirectional sync", "source": "claude.com/blog/claude-design-stays-on-brand", "reason": "Covered in 2026-06-19 bulletin"},
+    {"title": "Databricks Agent Bricks expansion at Data+AI Summit", "source": "databricks.com/blog/agent-bricks-dais-2026", "reason": "Covered in 2026-06-19 bulletin"},
+    {"title": "Z.ai GLM-5.2 open weights (MIT license)", "source": "huggingface.co/THUDM/GLM-5.2", "reason": "Covered in 2026-06-19 bulletin"},
+    {"title": "Grok 4.3 on Amazon Bedrock (GA)", "source": "aws.amazon.com", "reason": "June 15 — covered in 2026-06-19 dropped section"},
+    {"title": "OpenAI Partner Network ($150M, 300K consultants)", "source": "openai.com", "reason": "June 14 — outside 5-day expanded window"},
+    {"title": "Microsoft Scout 'Autopilot' autonomous agent", "source": "devblogs.microsoft.com/agent-framework", "reason": "June 16 — outside strict and 5-day expanded windows"},
+    {"title": "Microsoft Work IQ APIs (MCP + semantic index)", "source": "devblogs.microsoft.com/agent-framework", "reason": "June 16 — outside strict and 5-day expanded windows"},
+    {"title": "Prometheus $12B Series B at $41B valuation", "source": "techcrunch.com/2026/06/11", "reason": "June 11 — outside window"},
+    {"title": "MiniMax M3 open weights + API", "source": "marktechpost.com", "reason": "June 1 — outside window"},
+    {"title": "OpenAI Astral acquisition (uv, ruff, ty)", "source": "openai.com/index/openai-to-acquire-astral/", "reason": "March 19 — outside window"},
+    {"title": "GPT-5.6 release", "source": "multiple", "reason": "Not released as of June 20; speculation only"},
+    {"title": "Claude Fable 5 release", "source": "infoq.com", "reason": "June 9 — outside window"},
+    {"title": "Fable 5 / Mythos 5 export ban directive", "source": "anthropic.com/news/fable-mythos-access", "reason": "June 12 — outside window; context folded into cybersecurity letter item"},
+    {"title": "codebase-memory-mcp (GitHub trending)", "source": "github.com/DeusData/codebase-memory-mcp", "reason": "Last release June 12 — outside window; trending without new in-window release"},
+    {"title": "HuggingFace Daily Papers June 15-20", "source": "huggingface.co/papers", "reason": "Papers reviewed (Moebius, DragMesh-2, LedgerAgent, FAPO); no papers cleared BD-actionability bar"}
+  ],
+  "search_log_summary": {
+    "total_searches": 41,
+    "exploratory_adversarial": 21,
+    "exploration_pct": 51,
+    "sources_unreachable": [
+      "openai.com/index/improving-health-intelligence-in-chatgpt/ (HTTP 403)",
+      "openai.com/news/ (HTTP 403)",
+      "freefable.org (not fetched)"
+    ]
+  }
+}
