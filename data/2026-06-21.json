@@ -1,0 +1,167 @@
+{
+  "run_date": "2026-06-21",
+  "period_start": "2026-06-16",
+  "period_end": "2026-06-21",
+  "window_note": "Strict 72h window yielded 3 items; expanded to 5-day window per skill rule (≤5 items triggers expansion).",
+  "items_reviewed": 26,
+  "items_published": 5,
+  "items_dropped": 21,
+  "exploration_pct": 40,
+  "sources_count": 13,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "search_log": [
+    { "query": "SpaceX Cursor acquisition 2026", "type": "web_search", "yield": 4 },
+    { "query": "site:cnbc.com SpaceX Cursor", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "Cloudflare temporary accounts agent 2026", "type": "web_search", "yield": 3 },
+    { "query": "site:blog.cloudflare.com temporary-accounts", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "AutoJack AutoGen Studio RCE June 2026", "type": "web_search", "yield": 4 },
+    { "query": "site:microsoft.com/security/blog autojack", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "ARD agentic resource discovery specification 2026", "type": "web_search", "yield": 5 },
+    { "query": "site:developers.googleblog.com agentic-resource-discovery", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "OpenAI LifeSciBench 2026", "type": "web_search", "yield": 4 },
+    { "query": "site:openai.com life-sci-bench", "type": "web_fetch", "yield": 0, "status": "HTTP 403 — secondary used" },
+    { "query": "Grok V9-Medium xAI release June 2026", "type": "web_search", "yield": 3, "status": "no primary found, item dropped" },
+    { "query": "site:x.ai/news", "type": "web_fetch", "yield": 0, "status": "HTTP 403" },
+    { "query": "\"AI Indonesia\" OR \"startup AI\" \"Asia Tenggara\" June 2026", "type": "web_search", "yield": 0 },
+    { "query": "GitHub trending AI repos June 2026", "type": "web_fetch", "yield": 3, "status": "no new vs prior bulletins" },
+    { "query": "Hacker News AI front page June 17-21", "type": "web_search", "yield": 2, "status": "diffusion signal for ARD and AutoJack" },
+    { "query": "\"agent framework\" launch June 2026", "type": "web_search", "yield": 4, "status": "all duplicates of prior bulletins" },
+    { "query": "\"new LLM\" OR \"model release\" June 2026", "type": "web_search", "yield": 7, "status": "Mistral unverified date, Grok no primary, rest prior bulletin items" },
+    { "query": "PulseMCP mcp.so new servers June 2026", "type": "web_search", "yield": 2, "status": "below T3 threshold" },
+    { "query": "Latent Space newsletter June 2026 twitter weekly", "type": "web_search", "yield": 1, "status": "diffusion signal only" }
+  ],
+  "items": [
+    {
+      "id": "2026-06-21-001",
+      "title": "SpaceX Acquires Cursor in $60B All-Stock Deal",
+      "date": "2026-06-16",
+      "category": ["ai-for-business", "dev-tools"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "announcement",
+      "primary_url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+      "publisher": "CNBC",
+      "cross_references": [
+        "https://techcrunch.com/2026/06/16/spacex-cursor-acquisition/",
+        "https://www.bloomberg.com/news/articles/2026-06-16/spacex-cursor-60-billion"
+      ],
+      "key_claims": [
+        { "claim": "$60B all-stock valuation", "source": "vendor-disclosed", "independent_confirmation": false },
+        { "claim": "Cursor ARR ~$4B", "source": "last private round disclosure", "independent_confirmation": false },
+        { "claim": "1M+ paying users", "source": "vendor-disclosed", "independent_confirmation": false },
+        { "claim": "Expected close Q3 2026", "source": "vendor-disclosed", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": null,
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-21-002",
+      "title": "Cloudflare Ships Temporary Accounts for AI Agent Deployments",
+      "date": "2026-06-19",
+      "category": ["workflow-automation", "dev-tools"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "announcement",
+      "primary_url": "https://blog.cloudflare.com/temporary-accounts/",
+      "publisher": "Cloudflare Blog",
+      "cross_references": [],
+      "key_claims": [
+        { "claim": "wrangler deploy --temporary flag enables feature", "source": "vendor primary", "independent_confirmation": false },
+        { "claim": "60-minute credential TTL", "source": "vendor primary", "independent_confirmation": false },
+        { "claim": "No human authentication handoff required", "source": "vendor primary", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": null,
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-21-003",
+      "title": "Microsoft Discloses AutoJack: Chained RCE in AutoGen Studio Dev Builds",
+      "date": "2026-06-18",
+      "category": ["dev-tools"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "security disclosure",
+      "primary_url": "https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/",
+      "publisher": "Microsoft Security Blog",
+      "cross_references": [],
+      "key_claims": [
+        { "claim": "Three chained CVEs: CWE-1385 + CWE-306 + CWE-78", "source": "Microsoft primary", "independent_confirmation": false },
+        { "claim": "Affected: autogenstudio 0.4.3.dev1 and 0.4.3.dev2 only", "source": "Microsoft primary", "independent_confirmation": false },
+        { "claim": "Fix in commit b047730", "source": "Microsoft primary", "independent_confirmation": false },
+        { "claim": "Stable PyPI releases confirmed safe", "source": "Microsoft primary", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": "Microsoft is a vendor of competing products; scoping claim (dev builds only) not independently validated",
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-21-004",
+      "title": "Industry Consortium Publishes ARD Open Spec for Agent Capability Discovery",
+      "date": "2026-06-17",
+      "category": ["mcp-ecosystem", "agent-framework"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "announcement",
+      "primary_url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/",
+      "publisher": "Google Developers Blog",
+      "cross_references": [
+        "https://github.com/ards-project/ard-spec"
+      ],
+      "key_claims": [
+        { "claim": "ai-catalog.json manifest + registry API as two core primitives", "source": "spec primary", "independent_confirmation": false },
+        { "claim": "Apache 2.0 reference implementation", "source": "GitHub repo", "independent_confirmation": true },
+        { "claim": "10 founding consortium members", "source": "vendor-disclosed", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": "Google hosts the announcement but spec is under Linux Foundation governance; moderate COI",
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-21-005",
+      "title": "OpenAI Publishes LifeSciBench and Near-Autonomous Chemistry Results",
+      "date": "2026-06-17",
+      "category": ["research-papers"],
+      "verification_status": "secondary",
+      "source_tier": "T2",
+      "methodology": "research",
+      "primary_url": "https://openai.com/index/introducing-life-sci-bench/",
+      "primary_url_status": "HTTP 403 from environment",
+      "secondary_source": "https://www.marktechpost.com/2026/06/17/openai-lifescibench/",
+      "publisher": "OpenAI (primary inaccessible); MarkTechPost (secondary, same date)",
+      "cross_references": [
+        "https://venturebeat.com/2026/06/17/openai-lifescibench/",
+        "https://www.thedecoder.de/2026/06/17/openai-lifescibench/"
+      ],
+      "key_claims": [
+        { "claim": "750-task benchmark, 173 PhD scientists", "source": "vendor-disclosed via secondary", "independent_confirmation": false },
+        { "claim": "GPT-Rosalind: 36.1% on LifeSciBench", "source": "vendor benchmark, not independently replicated", "independent_confirmation": false },
+        { "claim": "AI chemist autonomously improved multi-step synthesis yield", "source": "vendor demo conditions", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": "OpenAI is both benchmark publisher and model developer — self-evaluation without independent replication",
+      "dropped_reason": null
+    }
+  ],
+  "dropped_items": [
+    { "title": "Grok V9-Medium (xAI)", "reason": "No primary source accessible (HTTP 403); insufficient verification" },
+    { "title": "DiffusionGemma (Google DeepMind)", "reason": "Dated June 10 — outside expanded 5-day window" },
+    { "title": "Claude Code v2.1.183 / v2.1.184", "reason": "Already published in June 20 bulletin" },
+    { "title": "Cursor 3.8 Automations", "reason": "Already published in June 19 bulletin" },
+    { "title": "Enterprise MCP Auth / Okta integration", "reason": "Already published in June 19 bulletin" },
+    { "title": "Databricks Agent Bricks", "reason": "Already published in June 19 bulletin" },
+    { "title": "Z.ai GLM-5.2", "reason": "Already published in June 19 bulletin" },
+    { "title": "Anthropic Seoul office expansion", "reason": "Already published in June 18 bulletin" },
+    { "title": "Gemini CLI GA", "reason": "Already published in June 18 bulletin" },
+    { "title": "G7 Trusted AI Partners framework", "reason": "Already published in June 18 bulletin" },
+    { "title": "Microsoft 365 Copilot Agent Mode GA", "reason": "Duplicate of June 17 bulletin item" },
+    { "title": "OpenAI voice API pricing update", "reason": "Pricing adjustment only, no new capability, low BD-actionability" },
+    { "title": "Mistral Magistral-8B open release", "reason": "Could not confirm June 16-21 date from primary source" },
+    { "title": "Perplexity Pro Enterprise pricing", "reason": "Pricing change only, no new capability" },
+    { "title": "GitHub Copilot model switcher expansion", "reason": "Minor UI update, no new model access this window" },
+    { "title": "LangChain 0.3.12 patch", "reason": "Bugfix release only, no new features affecting BD-relevant workflows" },
+    { "title": "Hugging Face Inference API v3 beta", "reason": "Invite-only beta, no public pricing, premature to surface" },
+    { "title": "EU AI Act compliance tooling (2 items)", "reason": "Policy/compliance tooling, low direct BD-actionability this window" },
+    { "title": "AI startup funding rounds (3 items)", "reason": "Seed/Series A without product shipping or API access" }
+  ]
+}
