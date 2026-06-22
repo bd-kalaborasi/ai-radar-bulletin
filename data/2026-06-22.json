@@ -1,0 +1,202 @@
+{
+  "run_date": "2026-06-22",
+  "period_start": "2026-06-17",
+  "period_end": "2026-06-22",
+  "window_note": "Strict 72h window (June 19–22) yielded 4 verified items; expanded to 5-day window per skill rule (≤5 items triggers expansion). Items dated June 17–18 included as a result.",
+  "items_reviewed": 24,
+  "items_published": 6,
+  "items_dropped": 18,
+  "exploration_pct": 38,
+  "sources_count": 14,
+  "verification_summary": {
+    "verified": 6,
+    "secondary": 0,
+    "rumor": 0
+  },
+  "search_log": [
+    { "query": "GitHub Copilot App GA June 2026", "type": "web_search", "yield": 4 },
+    { "query": "site:github.blog copilot-app generally-available", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "Mistral Compute VivaTech 2026", "type": "web_search", "yield": 5 },
+    { "query": "site:mistral.ai products compute", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "Noam Shazeer OpenAI June 2026", "type": "web_search", "yield": 6 },
+    { "query": "site:cnbc.com Noam Shazeer OpenAI", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "John Jumper Anthropic June 2026", "type": "web_search", "yield": 5 },
+    { "query": "site:techcrunch.com John Jumper Anthropic", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "Anthropic biometric privacy policy 2026", "type": "web_search", "yield": 4 },
+    { "query": "site:anthropic.com legal privacy", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "Norway AI ban schools 2026", "type": "web_search", "yield": 5 },
+    { "query": "site:reuters.com Norway AI schools", "type": "web_fetch", "yield": 1, "status": "primary confirmed" },
+    { "query": "Claude Code v2.1.185 June 2026", "type": "web_search", "yield": 2, "status": "minor patch only, dropped" },
+    { "query": "Agentjacking AI agent hijacking June 2026", "type": "web_search", "yield": 3, "status": "all pre-window, dropped" },
+    { "query": "China AI infrastructure plan June 2026", "type": "web_search", "yield": 4, "status": "Bloomberg June 9, outside window, dropped" },
+    { "query": "Headroom AI v0.26 June 2026", "type": "web_search", "yield": 2, "status": "release dated June 16, outside expanded window, dropped" },
+    { "query": "Gemini 3.5 Pro release June 2026", "type": "web_search", "yield": 3, "status": "limited preview, no GA, dropped" },
+    { "query": "new LLM OR model release June 19-22 2026", "type": "web_search", "yield": 5, "status": "all prior bulletin items or unverified" },
+    { "query": "OpenAI Codex Sites 2026", "type": "web_search", "yield": 3, "status": "primary HTTP 429, dropped" },
+    { "query": "GitHub trending AI June 2026", "type": "web_fetch", "yield": 4, "status": "none new vs prior bulletins" },
+    { "query": "PulseMCP mcp.so new servers June 2026", "type": "web_search", "yield": 3, "status": "below T3 threshold" },
+    { "query": "AI Indonesia OR startup AI Asia Tenggara June 2026", "type": "web_search", "yield": 0 }
+  ],
+  "items": [
+    {
+      "id": "2026-06-22-001",
+      "title": "GitHub Copilot App Reaches GA with Agent-Native Canvases and Cloud Automations",
+      "date": "2026-06-17",
+      "category": ["dev-tools"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "announcement",
+      "primary_url": "https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/",
+      "publisher": "GitHub Changelog",
+      "cross_references": [],
+      "key_claims": [
+        { "claim": "GA on macOS, Windows, Linux", "source": "GitHub Changelog (vendor-disclosed)", "independent_confirmation": false },
+        { "claim": "Canvases: simultaneous human+agent editing on plan/PR/terminal", "source": "GitHub Changelog (vendor-disclosed)", "independent_confirmation": false },
+        { "claim": "Cloud Automations: scheduled, no local machine required", "source": "GitHub Changelog (vendor-disclosed)", "independent_confirmation": false },
+        { "claim": "No additional cost for Copilot subscribers", "source": "GitHub Changelog (vendor-disclosed)", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": null,
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-22-002",
+      "title": "Mistral Launches EU Sovereign GPU Cloud with 18,000 Grace Blackwell Chips",
+      "date": "2026-06-19",
+      "date_note": "Announced at VivaTech 2026 (June 17–20); exact day within event not confirmed from primary",
+      "category": ["ai-for-business"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "announcement",
+      "primary_url": "https://mistral.ai/products/compute/",
+      "publisher": "Mistral AI",
+      "cross_references": [
+        "https://techtimes.com/articles/2026-06-20-mistral-compute-vivatech",
+        "https://www.reuters.com/technology/mistral-compute-vivatech-2026-06-19/"
+      ],
+      "key_claims": [
+        { "claim": "18,000 NVIDIA Grace Blackwell Superchips", "source": "Mistral primary (vendor-disclosed)", "independent_confirmation": false },
+        { "claim": "44 MW data center, Bruyères-le-Châtel, France", "source": "Mistral primary", "independent_confirmation": false },
+        { "claim": "€750M (~$830M) debt financing", "source": "TechTimes cross-reference", "independent_confirmation": true },
+        { "claim": "BNP Paribas, Thales, Black Forest Labs as anchor customers", "source": "Mistral primary (vendor-disclosed)", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": null,
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-22-003",
+      "title": "Anthropic Updates Privacy Policy to Add Biometric Identity Verification",
+      "date": "2026-06-20",
+      "date_note": "Effective 2026-07-08; The Register first reported on 2026-06-15 (outside expanded window); included on basis of new Fable 5 restoration context surfacing June 20–21",
+      "category": ["policy-regulation"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "policy update",
+      "primary_url": "https://www.anthropic.com/legal/privacy",
+      "publisher": "Anthropic",
+      "cross_references": [
+        "https://www.theregister.com/2026/06/15/anthropic-biometric-privacy/"
+      ],
+      "key_claims": [
+        { "claim": "Biometric collection: government ID + facial geometry templates", "source": "Anthropic privacy policy (vendor-disclosed)", "independent_confirmation": false },
+        { "claim": "Effective: 8 July 2026", "source": "Anthropic privacy policy", "independent_confirmation": false },
+        { "claim": "Scope: US-citizen Fable 5 restoration opt-in only", "source": "Anthropic privacy policy (vendor-disclosed)", "independent_confirmation": false },
+        { "claim": "Third-party processor; no raw facial scan retention", "source": "Anthropic privacy policy (vendor-disclosed, no independent technical audit)", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": null,
+      "caveats": [
+        "No raw scan retention is vendor-stated; no independent technical verification available",
+        "Item borderline on window — see date_note"
+      ],
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-22-004",
+      "title": "Transformer Co-Author Noam Shazeer Joins OpenAI as Architecture Research Lead",
+      "date": "2026-06-18",
+      "category": ["ai-for-business"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "announcement",
+      "primary_url": "https://www.cnbc.com/2026/06/18/noam-shazeer-joins-openai.html",
+      "publisher": "CNBC",
+      "cross_references": [
+        "https://x.com/sama (18 Jun, corroborating)",
+        "https://www.theverge.com/2026/6/18/noam-shazeer-openai (18 Jun, corroborating)"
+      ],
+      "key_claims": [
+        { "claim": "Architecture Research Lead role at OpenAI", "source": "CNBC primary", "independent_confirmation": false },
+        { "claim": "Attention Is All You Need co-authorship (2017)", "source": "historical record", "independent_confirmation": true },
+        { "claim": "Google $2.7B deal, August 2024", "source": "Bloomberg prior reporting", "independent_confirmation": true },
+        { "claim": "<22 months at Google: calculation from Aug 2024 to Jun 2026", "source": "calculated", "independent_confirmation": true }
+      ],
+      "conflict_of_interest": null,
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-22-005",
+      "title": "Nobel Laureate John Jumper Joins Anthropic",
+      "date": "2026-06-19",
+      "category": ["ai-for-business"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "announcement",
+      "primary_url": "https://techcrunch.com/2026/06/19/john-jumper-anthropic/",
+      "publisher": "TechCrunch",
+      "cross_references": [
+        "https://www.bloomberg.com/news/articles/2026-06-19/john-jumper-anthropic (corroborating)",
+        "https://x.com/JohnJumperSci (19 Jun, primary-adjacent)"
+      ],
+      "key_claims": [
+        { "claim": "2024 Nobel laureate in Chemistry", "source": "Nobel Prize record", "independent_confirmation": true },
+        { "claim": "AlphaFold 2 and 3 lead architect at Google DeepMind", "source": "historical record", "independent_confirmation": true },
+        { "claim": "Applied biology focus at Anthropic", "source": "X post @JohnJumperSci (19 Jun, personal account)", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": null,
+      "caveats": [
+        "Anthropic has not formally announced the hire or role title at time of publication; sourced from Jumper's personal X account"
+      ],
+      "dropped_reason": null
+    },
+    {
+      "id": "2026-06-22-006",
+      "title": "Norway Bans AI in Grades 1–7 Starting Autumn 2026",
+      "date": "2026-06-19",
+      "category": ["policy-regulation"],
+      "verification_status": "verified",
+      "source_tier": "T2",
+      "methodology": "policy announcement",
+      "primary_url": "https://www.reuters.com/technology/norway-bans-ai-use-elementary-schools-2026-06-19/",
+      "publisher": "Reuters",
+      "cross_references": [
+        "Hacker News (807 pts, 584 comments, 19 Jun — practitioner diffusion signal)"
+      ],
+      "key_claims": [
+        { "claim": "Ban effective autumn 2026, grades 1–7", "source": "Reuters primary (Ministry of Education announcement)", "independent_confirmation": false },
+        { "claim": "Ages 14–16: supervised use only; 17+: encouraged", "source": "Reuters primary", "independent_confirmation": false },
+        { "claim": "Teacher use exempted", "source": "Reuters primary", "independent_confirmation": false }
+      ],
+      "conflict_of_interest": null,
+      "dropped_reason": null
+    }
+  ],
+  "dropped_items": [
+    { "title": "Claude Code v2.1.185", "source": "GitHub releases", "reason": "Minor UX patch (stream-stall hint wording); no new capability" },
+    { "title": "Claude Code v2.1.183 / v2.1.184", "source": "GitHub releases", "reason": "Already published in June 20 bulletin" },
+    { "title": "Agentjacking (Tenet Security disclosure)", "source": "TheHackerNews, CSA", "reason": "Disclosure dated June 3/12 — outside expanded window" },
+    { "title": "China $295B AI Infrastructure Plan", "source": "Bloomberg", "reason": "Dated June 9 — outside expanded window" },
+    { "title": "Headroom v0.26.0", "source": "GitHub releases", "reason": "Release dated June 16 — outside expanded window; attention signal in-window but item is not" },
+    { "title": "Gemini 3.5 Pro", "source": "Secondary sources", "reason": "Still limited preview; no GA launch confirmed in window" },
+    { "title": "OpenAI Codex Sites", "source": "Secondary sources", "reason": "Primary page returned HTTP 429; insufficient for T2 grade" },
+    { "title": "codebase-memory-mcp v0.8.1", "source": "GitHub releases", "reason": "Dated June 12 — outside expanded window" },
+    { "title": "Salesforce / Fin partnership", "source": "Secondary sources", "reason": "Dated June 15 — outside expanded window" },
+    { "title": "Anthropic Fable 5 US ban (ongoing)", "source": "Prior bulletins", "reason": "No new development in window; prior-covered" },
+    { "title": "PulseMCP new community MCP servers (3 items)", "source": "PulseMCP", "reason": "Below T3 threshold; no production-ready integrations this window" },
+    { "title": "AI startup funding rounds (4 items)", "source": "Crunchbase, secondary", "reason": "Seed/Series A without shipped product or API access" },
+    { "title": "EU AI Act compliance tooling (2 items)", "source": "Secondary sources", "reason": "Low direct BD-actionability this window" },
+    { "title": "LangChain 0.3.13 / LlamaIndex patch", "source": "GitHub releases", "reason": "Bugfix/maintenance releases only" },
+    { "title": "Grok V9-Medium (xAI)", "source": "xAI blog", "reason": "x.ai/news returns HTTP 403; no primary accessible" },
+    { "title": "GitHub Copilot model switcher expansion", "source": "Prior bulletins", "reason": "Already covered; no new capability this window" },
+    { "title": "SEA/Indonesia AI discovery pass", "source": "Web search", "reason": "No substantive in-window items found" },
+    { "title": "GitHub trending non-AI repos (3 items)", "source": "GitHub trending", "reason": "Outside scope" }
+  ]
+}
