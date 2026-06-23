@@ -1,0 +1,212 @@
+{
+  "run_date": "2026-06-23",
+  "window": {
+    "strict_start": "2026-06-20",
+    "strict_end": "2026-06-23",
+    "expanded_start": "2026-06-18",
+    "expanded_end": "2026-06-23",
+    "expansion_applied": true,
+    "expansion_reason": "Strict 72h window yielded 2 substantive verified items; expanded to 5-day window per window-expansion rule"
+  },
+  "run_parameters": {
+    "timeframe": "last 72h (expanded to 5 days)",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "counts": {
+    "items_reviewed": 35,
+    "items_published": 7,
+    "items_dropped": 28
+  },
+  "verification_summary": {
+    "verified": 7,
+    "secondary": 0,
+    "rumor": 0
+  },
+  "exploration": {
+    "total_searches": 37,
+    "exploratory_searches": 14,
+    "exploration_pct": 38,
+    "non_registry_items_published": 2,
+    "non_registry_items_notes": "FERC grid orders (ferc.gov) and EUROPA Consortium (EC) were not in source registry"
+  },
+  "items_published": [
+    {
+      "title": "OpenAI Codex Record & Replay Ships for macOS",
+      "category": "workflow-automation",
+      "date": "2026-06-18",
+      "source_url": "https://developers.openai.com/codex/record-and-replay",
+      "source_name": "OpenAI Developer Docs",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        "Ships in macOS Codex v26.616 on 2026-06-18",
+        "Available to Plus/Pro/Business/Enterprise/Edu outside EEA, UK, Switzerland",
+        "Generates natural-language skill description, not mechanical click log",
+        "Works with Computer Use, browser actions, plugins"
+      ]
+    },
+    {
+      "title": "Cursor 3.8 Ships Automations with Slack and GitHub Triggers",
+      "category": "dev-tools",
+      "date": "2026-06-18",
+      "source_url": "https://cursor.com/changelog/06-18-26",
+      "source_name": "Cursor Changelog",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "bd_actionability": "high",
+      "key_claims": [
+        "/automate skill: natural language → configured automation",
+        "Slack emoji trigger ships in 3.8",
+        "Five new GitHub triggers: issue comment, PR review comment, PR review submitted, review thread updated, workflow run completed",
+        "Computer Use enabled by default in cloud agents"
+      ],
+      "caveats": [
+        "Cloud agent billing details not fully documented in public docs at launch",
+        "SpaceX $60B acquisition of Cursor pending; expected Q3 2026 close"
+      ]
+    },
+    {
+      "title": "Anthropic Ships Enterprise-Managed MCP Auth via Okta",
+      "category": "mcp-ecosystem",
+      "date": "2026-06-18",
+      "source_url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+      "source_name": "Model Context Protocol Blog",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        "Okta is first supported identity provider",
+        "Seven connectors at EMA launch: Asana, Atlassian, Canva, Figma, Granola, Linear, Supabase",
+        "Beta for Claude Team and Enterprise plans",
+        "Works in VS Code clients",
+        "Ramp: 2,000 employees provisioned zero-touch (vendor-cited customer stat)"
+      ],
+      "caveats": [
+        "Beta only; GA timeline not announced",
+        "Ramp stat is vendor-cited; not independently verified"
+      ]
+    },
+    {
+      "title": "Claude Code v2.1.186 Adds CLI MCP Auth and Bash Auto-Response",
+      "category": "dev-tools",
+      "date": "2026-06-22",
+      "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
+      "source_name": "GitHub Releases",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "bd_actionability": "high",
+      "key_claims": [
+        "claude mcp login/logout CLI commands added in v2.1.186",
+        "respondToBashCommands configuration option ships",
+        "Release date: 2026-06-22"
+      ]
+    },
+    {
+      "title": "OpenAI Adds Credit Analytics and Spend Controls to ChatGPT Enterprise",
+      "category": "ai-for-business",
+      "date": "2026-06-21",
+      "source_url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+      "source_name": "OpenAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "notes": "Primary URL returned HTTP 403 from sandbox; confirmed via multiple T3 secondaries",
+      "key_claims": [
+        "Credit consumption dashboard: breakdown by user, product, model",
+        "Weekly rolling limits with alert or hard-cap enforcement",
+        "Group-level caps and individual user overrides"
+      ]
+    },
+    {
+      "title": "European Commission Selects EUROPA Consortium for Sovereign Frontier AI Model",
+      "category": "policy-regulation",
+      "date": "2026-06-19",
+      "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-selects-europa-consortium-winner-frontier-ai-grand-challenge-project-build-european-open",
+      "source_name": "European Commission Digital Strategy",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "government announcement",
+      "bd_actionability": "low",
+      "key_claims": [
+        "EUROPA consortium led by Domyn (Italy), selected 2026-06-19",
+        "400B+ parameter open-source model, all 24 EU official languages",
+        "Up to 2.5% of EuroHPC total capacity for one year",
+        "6,000-chip NVIDIA Blackwell cluster: secondary sources only, not confirmed in EC primary"
+      ],
+      "caveats": [
+        "Hardware commitment figure not confirmed from EC primary; secondary sources only"
+      ]
+    },
+    {
+      "title": "FERC Orders Six Grid Operators to Reform AI Data Center Connection Rules",
+      "category": "policy-regulation",
+      "date": "2026-06-18",
+      "source_url": "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
+      "source_name": "Federal Energy Regulatory Commission",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "government order",
+      "bd_actionability": "low",
+      "notes": "Primary URL returned HTTP 403 from sandbox; all details confirmed from multiple independent secondaries",
+      "key_claims": [
+        "Section 206 orders to PJM, MISO, SPP, CAISO, ISO-NE, NYISO on 2026-06-18",
+        "60-day deadline to justify or reform large-load tariffs",
+        "30-day deadline for power supply adequacy reports",
+        "Five reform categories: transmission process, cost allocation, co-location, flexible services, generation study"
+      ]
+    }
+  ],
+  "items_dropped": [
+    {"title": "Claude Code v2.1.185", "source": "GitHub", "reason": "Minor UX patch only; no new capability"},
+    {"title": "GLM-5.2 (Zhipu AI)", "source": "Zhipu AI / VentureBeat", "reason": "Launched 2026-06-13; outside 5-day expanded window"},
+    {"title": "GPT-5.6", "source": "Various T3-T4", "reason": "No official OpenAI announcement, model card, or API string; T5 rumor as of 2026-06-23"},
+    {"title": "SpaceX acquires Cursor for $60B", "source": "CNBC, TechCrunch", "reason": "Announced 2026-06-16; outside expanded window"},
+    {"title": "Android 17 with Gemini Omni and Lyria 3", "source": "TechCrunch", "reason": "Released 2026-06-16; outside expanded window"},
+    {"title": "Snap Specs AR glasses ($2,195, OpenAI + Gemini)", "source": "CNBC, Snap Newsroom", "reason": "Announced 2026-06-16; outside expanded window"},
+    {"title": "42 State AGs investigate OpenAI", "source": "TechCrunch, Tom's Hardware", "reason": "Announced 2026-06-13; outside expanded window"},
+    {"title": "OpenAI Partner Network ($150M)", "source": "OpenAI", "reason": "Launched 2026-06-14; outside expanded window"},
+    {"title": "OpenAI acquires Ona", "source": "OpenAI", "reason": "Announced 2026-06-11; outside expanded window"},
+    {"title": "Flue 1.0 Beta", "source": "Flue blog", "reason": "Released 2026-06-16; outside expanded window"},
+    {"title": "Cloudflare Agents SDK with Flue", "source": "Cloudflare blog", "reason": "Published 2026-06-17; outside expanded window"},
+    {"title": "Anthropic Claude Code expertise study (400K sessions)", "source": "Anthropic research", "reason": "Published 2026-06-16; outside expanded window"},
+    {"title": "Grok 4.3 on Amazon Bedrock", "source": "AWS", "reason": "Launched 2026-06-15; outside expanded window"},
+    {"title": "DeepSeek V4 Pro (1.6T MoE)", "source": "Fortune, Tom's Hardware", "reason": "Launched 2026-04-24; outside expanded window"},
+    {"title": "Gemma 4 12B", "source": "Google", "reason": "Released 2026-06-03; outside expanded window"},
+    {"title": "DiffusionGemma (4x speed)", "source": "Google", "reason": "Released 2026-06-10; outside expanded window"},
+    {"title": "Gemini 3.5 Live Translate", "source": "Google", "reason": "Launched 2026-06-09; outside expanded window"},
+    {"title": "Google Home Speaker with Gemini", "source": "Google", "reason": "Ships 2026-06-25; post-window"},
+    {"title": "White House AI Innovation and Security EO", "source": "White House", "reason": "Issued 2026-06-02; outside expanded window"},
+    {"title": "KPMG/Microsoft Agent 365 276K deployment", "source": "KPMG/Microsoft", "reason": "Announced 2026-06-09; outside expanded window"},
+    {"title": "NVIDIA SkillSpector", "source": "GitHub trending", "reason": "No formal release date published; cannot establish currency"},
+    {"title": "Agent-Reach v1.5.0", "source": "GitHub", "reason": "Released 2026-06-11; outside expanded window"},
+    {"title": "MaiAgent at VivaTech", "source": "T4 sources only", "reason": "No verifiable primary source found"},
+    {"title": "ChatGPT market share below 50%", "source": "T3-T4 only", "reason": "Primary market research source not identified; cannot grade above T4"},
+    {"title": "OpenRouter Fusion", "source": "T3-T4 only", "reason": "No primary source or release date verified"},
+    {"title": "Indonesia .ai.id domain Sunrise", "source": "Detik.com", "reason": "Began 2026-06-02; outside window; low BD-actionability"},
+    {"title": "SEA/Indonesia AI discovery pass", "source": "Web search", "reason": "No substantive in-window publishable items found"},
+    {"title": "GitHub trending non-AI repos", "source": "GitHub trending", "reason": "Outside category scope"}
+  ],
+  "search_log": {
+    "total_searches": 37,
+    "exploratory": 14,
+    "exploration_pct": 38
+  },
+  "limitations_summary": [
+    "Window expansion: 72h strict yielded 2 items; expanded to 5-day",
+    "FERC and OpenAI Enterprise URLs returned HTTP 403 from sandbox; confirmed via secondaries",
+    "X timelines, LinkedIn, Discord not directly accessed",
+    "Five of seven items dated June 18 — possible concentration or coverage gap June 19-20",
+    "EUROPA 6,000-chip compute figure unverified at T1",
+    "GPT-5.6 rumor tracked but unconfirmed; watch for next run",
+    "SpaceX/Cursor deal noted but outside window",
+    "SEA/Indonesia coverage gap persists"
+  ]
+}
