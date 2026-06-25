@@ -1,0 +1,184 @@
+{
+  "run_date": "2026-06-25",
+  "period_start": "2026-06-22",
+  "period_end": "2026-06-25",
+  "window_expanded": false,
+  "window_expansion_note": "72h strict window yielded 5 verified items; no expansion required",
+  "run_parameters": {
+    "timeframe": "last 72h",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "items_reviewed": 16,
+  "items_published": 5,
+  "items_dropped": 11,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "exploration": {
+    "total_searches": 43,
+    "exploratory_searches": 15,
+    "exploration_pct": 35,
+    "adversarial_searches": 2,
+    "non_registry_items_published": 3,
+    "non_registry_items_notes": "Sakana AI Fugu, Qualcomm Dragonfly, and Legion LegalTech were not in source registry"
+  },
+  "sources_count": 9,
+  "published_items": [
+    {
+      "id": "sakana-fugu",
+      "title": "Sakana AI Fugu launches as multi-agent orchestration API",
+      "category": "agent-framework",
+      "date": "2026-06-22",
+      "source_url": "https://sakana.ai/fugu",
+      "publisher": "Sakana AI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        "OpenAI-compatible single API endpoint",
+        "Two tiers: Fugu (balanced) and Fugu Ultra (complex tasks)",
+        "Fugu Ultra: 73.7% SWE-Bench Pro (self-reported, not independently verified)",
+        "Pricing: $20-$200/month subscription + pay-as-you-go",
+        "Not yet available in EU/EEA",
+        "Independent tests: up to 30-minute waits on complex shader tasks"
+      ],
+      "caveats": [
+        "Benchmarks are vendor self-reported; not independently reproduced at time of publication",
+        "Underlying model pool composition undisclosed",
+        "Ensemble comparison methodology not disclosed vs monolithic model baselines"
+      ]
+    },
+    {
+      "id": "qualcomm-dragonfly-meta",
+      "title": "Qualcomm unveils Dragonfly data center AI chip brand, signs Meta as first customer",
+      "category": "ai-for-business",
+      "date": "2026-06-24",
+      "source_url": "https://investor.qualcomm.com/news-events/investor-events/events/event-details/2026/Investor-Day-2026-2026-n10yE1c5BC/default.aspx",
+      "publisher": "Qualcomm",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "key_claims": [
+        "Dragonfly C1000: 250+ cores, PCIe Gen7, CXL, chiplet design",
+        "Meta announced as first named customer, multi-generation supply agreement",
+        "Production target: H2 2028",
+        "CEO declared 2026 'year of AI agents'"
+      ],
+      "caveats": [
+        "Microsoft as early customer mentioned by Seeking Alpha (T3) but not confirmed in primary press release",
+        "H2 2028 production target is 2+ years out; subject to change"
+      ]
+    },
+    {
+      "id": "legion-legaltech-lawsuit",
+      "title": "Legion LegalTech sues US government to overturn Fable 5 and Mythos 5 access ban",
+      "category": "policy-regulation",
+      "date": "2026-06-23",
+      "source_url": "https://thenextweb.com/news/legion-legaltech-sues-us-anthropic-access",
+      "publisher": "The Next Web",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "legal reporting",
+      "bd_actionability": "medium",
+      "primary_url_accessible": false,
+      "primary_url_status": "paywalled (Bloomberg)",
+      "confirmation_method": "four T3 outlets (The Next Web, Gizmodo, Medianama, Eastern Herald)",
+      "key_claims": [
+        "Suit filed June 23, 2026 in federal court, Washington DC",
+        "Plaintiff: Legion LegalTech Corp",
+        "Argument: ECCN 4E091 (AI weight export control) rescinded May 2025 with no replacement; directive lacks statutory authority",
+        "Relief sought: declaratory judgment + injunction to halt enforcement",
+        "Impact described as 'immediate, irreparable, and existential' to Legion's business"
+      ],
+      "caveats": [
+        "Court docket not independently accessed; all details from T3 trade press",
+        "Legal outcome highly uncertain; filed 24 hours before this bulletin"
+      ]
+    },
+    {
+      "id": "google-home-speaker-gemini",
+      "title": "Google Home Speaker ships June 25 at $99.99 with Gemini for Home",
+      "category": "productivity-ai",
+      "date": "2026-06-25",
+      "source_url": "https://blog.google/products-and-platforms/devices/google-nest/google-home-speaker-gemini-features/",
+      "publisher": "Google",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "low",
+      "key_claims": [
+        "Price: $99.99 (US), £99.99 (UK), AU$199",
+        "On sale June 25, 2026",
+        "Full Gemini conversational features require Google Home Premium subscription",
+        "Colors: Jade, Berry, Porcelain, Hazel (US); Porcelain and Hazel only outside US",
+        "Gemini for Home: multi-step voice commands, self-correction mid-sentence"
+      ]
+    },
+    {
+      "id": "bytedance-seedance-25",
+      "title": "ByteDance Seedance 2.5 announced: 30-second native AI video, enterprise beta open",
+      "category": "productivity-ai",
+      "date": "2026-06-23",
+      "source_url": "https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0",
+      "publisher": "Seed (ByteDance)",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "key_claims": [
+        "30-second native video generation (vs 15-second in Seedance 2.0)",
+        "Up to 50 reference inputs per generation",
+        "Localized frame editing without touching rest of shot",
+        "Seedance 2.0 simultaneously gains 4K output upgrade",
+        "Enterprise beta open June 23, 2026",
+        "Public launch target: early July 2026"
+      ],
+      "caveats": [
+        "No pricing or public API announced at time of publication",
+        "No benchmark numbers published; performance claims unverifiable without model access",
+        "Enterprise beta access is gated — not self-serve"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Anthropic Claude Tag beta (June 23)", "source": "anthropic.com", "reason": "Covered in 2026-06-24 bulletin"},
+    {"title": "OpenAI Daybreak + GPT-5.5-Cyber (June 22)", "source": "openai.com", "reason": "Covered in 2026-06-24 bulletin"},
+    {"title": "GitHub Copilot + Claude in JetBrains preview (June 22)", "source": "github.blog", "reason": "Covered in 2026-06-24 bulletin"},
+    {"title": "OpenAI Codex v0.142.0 (June 22)", "source": "developers.openai.com", "reason": "Covered in 2026-06-24 bulletin"},
+    {"title": "Samsung + ChatGPT Enterprise and Codex (June 21)", "source": "openai.com", "reason": "Covered in 2026-06-24 bulletin"},
+    {"title": "Claude Code v2.1.187 (June 23)", "source": "github.com/anthropics/claude-code", "reason": "Covered in 2026-06-24 bulletin"},
+    {"title": "GPT-5.6", "source": "Various T3-T5", "reason": "No OpenAI announcement, model card, or API string; treated as rumor as of 2026-06-25"},
+    {"title": "Gemini 3.5 Pro", "source": "Various T3", "reason": "Not released; in limited enterprise preview; no new in-window announcement"},
+    {"title": "Claude outage (June 23)", "source": "claude.ai/status", "reason": "Operational incident resolved same day; not a product development item"},
+    {"title": "ChatGPT large-paste-to-attachment (June 23)", "source": "Releasebot (T3)", "reason": "Minor UI feature; no primary OpenAI post found; below actionability bar"},
+    {"title": "Grok 5", "source": "Various T4-T5", "reason": "Not released; Q2 launch window missed; prediction market odds for June 30 release <20%"}
+  ],
+  "limitations_summary": [
+    "openai.com/index/daybreak-securing-the-world returned HTTP 403; confirmed via T3 secondaries only (Daybreak covered in June 24 bulletin)",
+    "bloomberg.com Legion lawsuit article paywalled; confirmed via four T3 outlets",
+    "Sakana Fugu benchmarks self-reported, not independently reproduced",
+    "X timelines, LinkedIn, Discord not directly accessed",
+    "SEA/Indonesia dedicated search pass yielded no publishable in-window items — coverage US/Japan/China-heavy",
+    "Categories model-release, dev-tools, mcp-ecosystem, workflow-automation have no new items this run — covered in June 22-24 bulletins",
+    "Legion lawsuit legal argument (ECCN 4E091 claim) not verified from court docket or Federal Register"
+  ],
+  "search_log": {
+    "total_searches": 43,
+    "exploratory": 15,
+    "adversarial": 2,
+    "exploration_pct": 35,
+    "primary_fetches_attempted": 8,
+    "primary_fetches_succeeded": 6,
+    "primary_fetches_failed": 2,
+    "failed_urls": [
+      "openai.com/index/daybreak-securing-the-world (HTTP 403)",
+      "bloomberg.com Legion lawsuit article (paywall)"
+    ]
+  }
+}
