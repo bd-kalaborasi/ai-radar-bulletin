@@ -1,0 +1,231 @@
+{
+  "run_date": "2026-06-26",
+  "period_start": "2026-06-23",
+  "period_end": "2026-06-26",
+  "window_expanded": false,
+  "window_expansion_note": "72h strict window yielded 5 qualifying items; no expansion required",
+  "run_parameters": {
+    "timeframe": "last 72h",
+    "categories": "all",
+    "depth": "standard",
+    "audience": "public-digest"
+  },
+  "items_reviewed": 22,
+  "items_published": 5,
+  "items_dropped": 17,
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "exploration": {
+    "total_searches": 40,
+    "exploratory_searches": 12,
+    "exploration_pct": 30,
+    "adversarial_searches": 3,
+    "non_registry_items_published": 2,
+    "non_registry_items_notes": "AIR security research and OpenAI Jalapeño were not in source registry; found via exploratory and adversarial passes"
+  },
+  "sources_count": 12,
+  "published_items": [
+    {
+      "id": "mistral-ocr-4",
+      "title": "Mistral ships OCR 4 with 170-language coverage and self-hosted deployment option",
+      "category": "dev-tools",
+      "date": "2026-06-23",
+      "source_url": "https://mistral.ai/news/ocr-4/",
+      "publisher": "Mistral AI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "high",
+      "key_claims": [
+        "170 languages supported across 10 language groups → mistral.ai/news/ocr-4/ (T2)",
+        "OlmOCRBench public leaderboard score: 85.20 (top score) → OlmOCRBench public evaluation (T2)",
+        "72% win rate in blind preference tests → Mistral-commissioned annotator evaluation, 600+ documents (T3 — vendor-commissioned)",
+        "$4 per 1,000 pages API; $2 Batch API → mistral.ai/news/ocr-4/ (T2)",
+        "2,000 pages/min single GPU → mistral.ai/news/ocr-4/ (T2 — vendor-stated, not independently replicated)",
+        "Available via Mistral Studio API, Amazon SageMaker, Microsoft Foundry, and self-hosted single container"
+      ],
+      "caveats": [
+        "72% win rate is from Mistral's own commissioned evaluation — not an independent third-party benchmark",
+        "Throughput claim (2,000 pages/min) not independently reproduced",
+        "Self-hosted deployment requires sales contact for enterprise licensing"
+      ],
+      "cross_references": [
+        "https://venturebeat.com/data/mistral-launches-ocr-4-turning-document-extraction-into-a-full-enterprise-ai-play (T3, corroborating)",
+        "https://www.marktechpost.com/2026/06/23/mistral-ocr-4/ (T3, technical detail)"
+      ]
+    },
+    {
+      "id": "claude-code-v2191-v2193",
+      "title": "Claude Code ships /rewind, 37% CPU cut, and bash autocomplete across two back-to-back releases",
+      "category": "dev-tools",
+      "date": "2026-06-24",
+      "date_secondary": "2026-06-25",
+      "source_url": "https://github.com/anthropics/claude-code/releases",
+      "publisher": "Anthropic / GitHub",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "changelog",
+      "bd_actionability": "high",
+      "key_claims": [
+        "/rewind support — resume conversation from before /clear was run → v2.1.191 (T2)",
+        "37% CPU reduction during streaming via text-update coalescing → v2.1.191 (T2)",
+        "Background agent resurrection fix — permanent → v2.1.191 (T2)",
+        "MCP server reliability improvements via transient-error retries → v2.1.191 (T2)",
+        "autoMode.classifyAllShell — routes all Bash/PowerShell through auto-mode classifier → v2.1.193 (T2)",
+        "Live file path autocomplete in bash mode → v2.1.193 (T2)",
+        "claude_code.assistant_response OpenTelemetry log event → v2.1.193 (T2)"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "air-fake-agent-skill",
+      "title": "Security firm publishes fake AI agent skill that bypassed Cisco and NVIDIA scanners and spread to 26,000 agents",
+      "category": "agent-framework",
+      "date": "2026-06-23",
+      "source_url": "https://thehackernews.com/2026/06/fake-ai-agent-skill-passed-security.html",
+      "publisher": "The Hacker News",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "security research",
+      "bd_actionability": "medium",
+      "primary_url_accessible": false,
+      "primary_url_status": "AIR research paper not directly accessed; confirmed via 4 independent trade press outlets",
+      "confirmation_method": "The Hacker News, CyberNews, Security Boulevard, The Next Web — all reporting AIR research consistently",
+      "key_claims": [
+        "~26,000 agents reached → AIR research, via thehackernews.com (T3 — AIR's own measurement)",
+        "Bypassed Cisco and NVIDIA skill scanners → AIR research, via thehackernews.com (T3)",
+        "Attack vector: mutable external link post-scan → thenextweb.com (T3, corroborating)"
+      ],
+      "caveats": [
+        "AIR is the author of this finding — security-vendor research, not yet independently replicated",
+        "26,000 agent count is AIR's own measurement",
+        "Original AIR research paper not directly accessed; details sourced from trade press"
+      ],
+      "cross_references": [
+        "https://cybernews.com/ai-news/fake-ai-skill-hijacks-26000-agents-instagram/ (T3, corroborating)",
+        "https://thenextweb.com/news/fake-ai-agent-skill-security-scanners-bypassed-26000-agents (T3, attack vector detail)",
+        "https://securityboulevard.com/2026/06/malicious-ai-skill-bypasses-security-scans-reaches-26000-ai-agents/ (T3, corroborating)"
+      ]
+    },
+    {
+      "id": "openai-jalapeno-chip",
+      "title": "OpenAI unveils Jalapeño inference chip, co-built with Broadcom in nine months",
+      "category": "ai-for-business",
+      "date": "2026-06-24",
+      "source_url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "publisher": "OpenAI",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "primary_url_accessible": false,
+      "primary_url_status": "HTTP 403 from research environment sandbox",
+      "confirmation_method": "TechCrunch, CNBC, CNN Business (all T3 secondaries)",
+      "key_claims": [
+        "Nine-month ASIC development cycle from design to tape-out → TechCrunch, CNBC (T3)",
+        "Production deployment targeted end 2026 → TechCrunch, CNBC (T3)",
+        "'Materially stronger performance-per-watt' vs current alternatives → OpenAI claim via CNBC (T4 — vendor comparative, no methodology)",
+        "Pre-training continues on NVIDIA → TechCrunch (T3)"
+      ],
+      "caveats": [
+        "OpenAI primary source unreachable from research environment (HTTP 403); all details sourced from secondary reporting",
+        "No TFLOPS, power draw, memory capacity, or process node disclosed",
+        "Performance-per-watt claim is vendor-stated with no methodology",
+        "No independent benchmark published at time of announcement",
+        "Deployment timeline could slip"
+      ],
+      "cross_references": [
+        "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/ (T3, primary used given openai.com 403)",
+        "https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html (T3, corroborating)",
+        "https://thenextweb.com/news/openai-jalapeno-chip-broadcom-nvidia (T3, strategic context)"
+      ]
+    },
+    {
+      "id": "bytedance-doubao-seed-21",
+      "title": "ByteDance launches Doubao Seed 2.1 Pro and Turbo, targeting coding and agent workflows",
+      "category": "model-release",
+      "date": "2026-06-24",
+      "source_url": "https://seed.bytedance.com/en/seed2_1",
+      "publisher": "ByteDance Seed",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "bd_actionability": "medium",
+      "tier_nuance": "Comparative benchmark claims ('comparable to GPT-5.5') downgraded to T4 — vendor-designed evaluations, not independently replicated",
+      "key_claims": [
+        "Seed 2.1 Pro: 6 yuan/M input tokens, 30 yuan/M output → ByteDance primary (T2)",
+        "Seed 2.1 Turbo: 3 yuan/M input, 15 yuan/M output → ByteDance primary (T2)",
+        "1-million-token context window → ByteDance primary (T2)",
+        "Leads OSWorld, MobileWorld, MMMU-Pro → ByteDance evaluations (T4 — vendor-designed benchmarks)",
+        "'Comparable to GPT-5.5' on coding and agent benchmarks → ByteDance claim (T4 — vendor comparative, not independently verified)"
+      ],
+      "caveats": [
+        "All comparative benchmark scores are from ByteDance's own evaluation suite",
+        "No independent third-party evaluation published at time of announcement",
+        "China data-residency: compliance review mandatory before production use"
+      ],
+      "cross_references": [
+        "https://dataconomy.com/2026/06/24/bytedance-launches-doubao-2-1-pro-language-model/ (T3, corroborating)",
+        "https://pandaily.com/bytedance-doubao-2-1-seedance-2-5-jun2026 (T3, conference context)"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude Tag on Slack (June 23)", "source": "anthropic.com/news", "reason": "Covered in 2026-06-24 bulletin"},
+    {"title": "Grok Build /goal autonomous mode (June 22)", "source": "x.ai/news", "reason": "Outside strict window (June 22; 72h window starts June 23)"},
+    {"title": "Grok Imagine Video 1.5 Fast (June 16)", "source": "x.ai/news/grok-imagine-video-1-5", "reason": "Outside window"},
+    {"title": "Grok 4.3 on Amazon Bedrock (June 15)", "source": "aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bedrock", "reason": "Outside window"},
+    {"title": "Grok for Microsoft Word add-in (June 16)", "source": "x.ai/grok/word", "reason": "Outside window"},
+    {"title": "Gemini 3.5 Pro", "source": "blog.google", "reason": "Not released in window; still in limited Vertex AI preview; no new announcement June 23–26"},
+    {"title": "L'Oréal + OpenAI ModiFace partnership (June 17)", "source": "loreal-finance.com", "reason": "Outside window"},
+    {"title": "John Jumper leaves DeepMind for Anthropic (June 19)", "source": "bloomberg.com / techcrunch.com", "reason": "Outside window"},
+    {"title": "IBM 0.7nm chip research (June 25)", "source": "x.com/marketsday", "reason": "Research-stage semiconductor announcement; no AI model or product impact"},
+    {"title": "Qualcomm–Tenstorrent acquisition talks (June 15–16)", "source": "theregister.com", "reason": "Outside window; unconfirmed negotiations only"},
+    {"title": "OpenAI real-time audio models GPT-Realtime-2 (May 7)", "source": "openai.com", "reason": "Outside window"},
+    {"title": "ChatGPT Ads Manager self-serve (May 5)", "source": "openai.com", "reason": "Outside window"},
+    {"title": "Anthropic confidential S-1 filing (June 1)", "source": "anthropic.com/news", "reason": "Outside window"},
+    {"title": "OpenAI GPT-5.5 Goblin Incident postmortem (April 29)", "source": "openai.com", "reason": "Outside window"},
+    {"title": "GPT-5.6", "source": "Various T3–T5", "reason": "No official OpenAI announcement or model card in window; treated as rumor"},
+    {"title": "Grok 5", "source": "Various T4–T5", "reason": "Not released in window; no announcement"},
+    {"title": "ByteDance Seedance 2.5 video model (June 23)", "source": "seed.bytedance.com", "reason": "Covered in 2026-06-25 bulletin"}
+  ],
+  "limitations_summary": [
+    "openai.com/index/openai-broadcom-jalapeno-inference-chip/ returned HTTP 403; Jalapeño confirmed via TechCrunch, CNBC, CNN Business (T3 secondaries)",
+    "grok.com/release-notes returned HTTP 403; Grok release dates cross-checked via releasebot.io and MarkTechPost",
+    "AIR research paper not directly accessed; details sourced from 4 independent trade press outlets",
+    "X timelines, LinkedIn private feeds, and Discord not accessed directly",
+    "SEA/Indonesia dedicated search pass yielded no publishable in-window items; coverage US/EU/China-heavy",
+    "Categories mcp-ecosystem, workflow-automation, productivity-ai, research-papers, policy-regulation had no qualifying in-window items",
+    "All Doubao Seed 2.1 benchmark scores are from ByteDance's internal evaluation suite; no independent third-party evaluation published",
+    "Mistral OCR 4 72% win rate is vendor-commissioned, not a truly independent evaluation"
+  ],
+  "search_log": {
+    "total_searches": 40,
+    "exploratory": 12,
+    "adversarial": 3,
+    "exploration_pct": 30,
+    "primary_fetches_attempted": 7,
+    "primary_fetches_succeeded": 5,
+    "primary_fetches_failed": 2,
+    "succeeded_urls": [
+      "mistral.ai/news/ocr-4/",
+      "seed.bytedance.com/en/seed2_1",
+      "anthropic.com/news",
+      "github.com/anthropics/claude-code/releases",
+      "buildfastwithai.com/blogs/ai-news-today-june-25-2026"
+    ],
+    "failed_urls": [
+      "openai.com/index/openai-broadcom-jalapeno-inference-chip/ (HTTP 403)",
+      "grok.com/release-notes (HTTP 403)"
+    ]
+  },
+  "suggested_follow_ups": [
+    "Jalapeño independent benchmarks — no TFLOPS/process node/power draw disclosed; watch for MLPerf or independent inference benchmarks H2 2026",
+    "ByteDance Doubao Seed 2.1 third-party evaluation — Artificial Analysis or LMSYS Arena benchmarks would confirm or regrade competitive claims",
+    "Mistral OCR 4 enterprise adoption — watch for SageMaker and Foundry marketplace integration announcements",
+    "AIR agent skill security follow-up — whether Cisco and NVIDIA publish remediation timelines or updated vetting processes"
+  ]
+}
