@@ -1,0 +1,152 @@
+{
+  "run_date": "2026-06-27",
+  "period_start": "2026-06-24",
+  "period_end": "2026-06-27",
+  "window_hours": 72,
+  "window_expanded": false,
+  "items_reviewed": 32,
+  "items_published": 5,
+  "items_dropped": 27,
+  "exploration_pct": 33,
+  "sources_count": 14,
+  "searches_total": 34,
+  "searches_exploratory_or_adversarial": 11,
+  "verification_summary": {
+    "verified": 2,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "categories": ["dev-tools", "model-release", "policy-regulation", "ai-for-business"],
+  "published_items": [
+    {
+      "id": 1,
+      "title": "OpenAI releases GPT-5.6 Sol, Terra, and Luna in government-gated limited preview",
+      "date": "2026-06-26",
+      "category": ["model-release", "policy-regulation"],
+      "verification": "secondary",
+      "source_tier": "T3",
+      "primary_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "primary_url_status": "403",
+      "fallback_urls": [
+        "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+        "https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump",
+        "https://deploymentsafety.openai.com/gpt-5-6-preview",
+        "https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov"
+      ],
+      "key_facts": [
+        "Three models: Sol (flagship), Terra (balanced), Luna (fastest)",
+        "All three rated High in bio and cybersecurity under Preparedness Framework",
+        "~20 government-approved preview companies",
+        "Sol self-reasoning control rate: 1.3%, tripled from prior generation",
+        "White House ONCD and OSTP requested access restriction on June 25",
+        "Sol introduces 'ultra' mode: subagent-based task parallelism"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Claude Code v2.1.195 fixes background agent data loss and hook matcher bugs",
+      "date": "2026-06-26",
+      "category": ["dev-tools"],
+      "verification": "verified",
+      "source_tier": "T2",
+      "primary_url": "https://github.com/anthropics/claude-code/releases",
+      "primary_url_status": "200",
+      "release_timestamp_utc": "2026-06-26T21:29:00Z",
+      "key_facts": [
+        "Background agent data loss in `claude agents` fixed",
+        "Hook matcher hyphenated identifier substring bug fixed (now exact-match only)",
+        "macOS voice dictation silence capture bug fixed",
+        "Japanese, Chinese, Thai auto-submit in space-free languages fixed",
+        "External plugin install consent prompt on every loader path fixed",
+        "New CLAUDE_CODE_DISABLE_MOUSE_CLICKS env var added"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Anthropic accuses Alibaba of 28.8 million-exchange distillation attack on Claude",
+      "date": "2026-06-24",
+      "category": ["policy-regulation", "ai-for-business"],
+      "verification": "secondary",
+      "source_tier": "T2",
+      "primary_url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+      "primary_url_status": "403",
+      "fallback_urls": [
+        "https://www.bloomberg.com/news/articles/2026-06-24/anthropic-accuses-alibaba-of-illicitly-accessing-its-ai-models",
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-that-chinas-alibaba-illicitly-distilled-its-models-from-april-to-june-2026"
+      ],
+      "key_facts": [
+        "28.8 million exchanges with Claude",
+        "~25,000 fraudulent accounts",
+        "Campaign window: April 22 to June 5, 2026",
+        "Senate letter addressed to Tim Scott and Elizabeth Warren",
+        "Targeted capabilities: agentic reasoning, software engineering, long-horizon tasks",
+        "Alibaba denied allegations",
+        "Alibaba stock fell ~3% following disclosure",
+        "Described as largest known distillation attack; DeepSeek/Moonshot/MiniMax alleged in February 2026"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Two more Google DeepMind researchers plan to join Anthropic",
+      "date": "2026-06-24",
+      "category": ["ai-for-business"],
+      "verification": "secondary",
+      "source_tier": "T2",
+      "primary_url": "https://www.bloomberg.com/news/articles/2026-06-24/google-poised-to-lose-two-more-high-profile-ai-staffers-to-anthropic",
+      "primary_url_status": "200",
+      "fallback_urls": [
+        "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/"
+      ],
+      "key_facts": [
+        "Jonas Adler (AI coding lead at Google) planning to join Anthropic",
+        "Alexander Pritzel (pretraining researcher) planning to join Anthropic",
+        "Both are AlphaFold contributors alongside Nobel Prize winner John Jumper",
+        "John Jumper previously announced departure to Anthropic",
+        "Noam Shazeer (Gemini architect) recently joined OpenAI"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Gemini 3.5 Pro launch pushed to July 2026",
+      "date": "2026-06-25",
+      "category": ["model-release"],
+      "verification": "secondary",
+      "source_tier": "T3",
+      "primary_url": "https://www.investing.com/news/stock-market-news/google-delays-gemini-35-pro-model-release-to-july--insider-93CH-4758816",
+      "primary_url_status": "200",
+      "fallback_urls": [
+        "https://cryptobriefing.com/google-delays-gemini-35-pro-launch-to-july-2026/"
+      ],
+      "key_facts": [
+        "Pushed from June to July 2026",
+        "Further tuning: coding performance, token efficiency, long-task handling",
+        "Google declined to comment",
+        "Single unnamed source"
+      ]
+    }
+  ],
+  "dropped_count": 27,
+  "dropped_reasons": {
+    "covered_prior_bulletin": 5,
+    "outside_window": 15,
+    "insufficient_verification": 4,
+    "minor_no_new_capability": 1,
+    "no_qualifying_release_found": 2
+  },
+  "limitations": [
+    "openai.com primary URL returned HTTP 403; GPT-5.6 details from T3 sources and T2 system card",
+    "Anthropic/Alibaba Senate letter not publicly hosted; sourced via CNBC and Bloomberg",
+    "Login-walled coverage (X, LinkedIn, Discord) not directly accessed",
+    "No independent third-party benchmarks for GPT-5.6 Sol at time of run",
+    "Gemini 3.5 Pro delay: single unnamed source, unconfirmed by Google",
+    "DeepMind researcher departures: unconfirmed by Google or Anthropic",
+    "workflow-automation, productivity-ai, agent-framework, mcp-ecosystem, research-papers had no qualifying in-window releases",
+    "SEA/Indonesia coverage absent this bulletin"
+  ],
+  "suggested_next_runs": [
+    "GPT-5.6 Sol independent benchmarks (LMSYS Arena, Artificial Analysis)",
+    "Anthropic/Alibaba Senate response and bipartisan sanctions bill status",
+    "Gemini 3.5 Pro July official announcement",
+    "Adler/Pritzel Anthropic start date confirmation"
+  ]
+}
