@@ -1,0 +1,184 @@
+{
+  "run_date": "2026-06-28",
+  "period_start": "2026-06-25",
+  "period_end": "2026-06-28",
+  "window_hours": 72,
+  "window_expanded": false,
+  "items_reviewed": 30,
+  "items_published": 5,
+  "items_dropped": 25,
+  "exploration_pct": 37,
+  "sources_count": 10,
+  "searches_total": 34,
+  "searches_exploratory_or_adversarial": 13,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "categories": ["policy-regulation", "workflow-automation", "dev-tools", "productivity-ai", "model-release"],
+  "published_items": [
+    {
+      "id": 1,
+      "title": "US government partially lifts Mythos 5 export restrictions",
+      "date": "2026-06-26",
+      "category": ["policy-regulation", "ai-for-business"],
+      "verification": "secondary",
+      "source_tier": "T2",
+      "primary_url": "https://www.cnbc.com/2026/06/26/us-government-anthropic-claude-mythos5-ai.html",
+      "primary_url_status": "200",
+      "cross_reference_urls": [
+        "https://www.anthropic.com/news/fable-mythos-access",
+        "https://www.bloomberg.com/news/articles/2026-06-26/us-allows-trusted-partners-to-use-anthropic-s-mythos-5-ai-model",
+        "https://www.nbcnews.com/tech/tech-news/us-government-gives-anthropic-green-light-limited-re-release-mythos-5-rcna352018",
+        "https://fortune.com/2026/06/27/anthropic-mythos-5-ai-model-us-commerce-department-clearance-fable/",
+        "https://www.axios.com/2026/06/27/commerce-anthropic-mythos-restrictions-lift"
+      ],
+      "blocked_urls": [
+        "https://www.axios.com/2026/06/27/commerce-anthropic-mythos-restrictions-lift"
+      ],
+      "key_facts": [
+        "Commerce Secretary Howard Lutnick signed letter finding 'appropriate safeguards are in place' for Mythos 5",
+        "Roughly 100 companies and federal agencies cleared for Mythos 5",
+        "Approval limited to cyber defenders and critical infrastructure operators",
+        "Fable 5 remains suspended as of June 28, 2026",
+        "Original launch: June 9, 2026; government suspension directive: June 12, 2026",
+        "Anthropic primary statement on suspension at anthropic.com/news/fable-mythos-access (T2, June 12)",
+        "Lutnick letter not publicly released — details via CNBC, Bloomberg, NBC News who reviewed/were briefed",
+        "Three parallel media investigations: NYT (political targeting), WSJ (researcher briefing government), WIRED (infeasible jailbreak-resistance standard)",
+        "Senator Warner claim about Mythos/NSA systems — journalist subsequently advised caution; no NSA corroboration"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Codex Remote reaches general availability on all ChatGPT plans",
+      "date": "2026-06-25",
+      "category": ["workflow-automation"],
+      "verification": "verified",
+      "source_tier": "T2",
+      "primary_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "primary_url_status": "200",
+      "cross_reference_urls": [
+        "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
+        "https://www.techradar.com/pro/a-new-rhythm-for-collaboration-is-emerging-openai-adds-remote-access-to-bring-codex-to-chatgpt-for-iphone-ipad-and-android"
+      ],
+      "key_facts": [
+        "GA on all ChatGPT plans (previously Enterprise-only)",
+        "iPhone, iPad, and Android apps can supervise, review, and steer desktop Codex sessions",
+        "QR-paired device authentication for one-to-one mobile-to-host link",
+        "DigitalOcean Droplet Workspace plugin released simultaneously",
+        "DigitalOcean plugin provisions a cloud Droplet with SSH, connects as remote workspace",
+        "Usage billed under ChatGPT AI Credits (token-based billing as of June 1, 2026)"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Anthropic consolidates API rate limits across Claude models",
+      "date": "2026-06-26",
+      "category": ["dev-tools"],
+      "verification": "verified",
+      "source_tier": "T2",
+      "primary_url": "https://platform.claude.com/docs/en/api/rate-limits",
+      "primary_url_status": "200",
+      "key_facts": [
+        "Sonnet and Haiku rate limits now match Opus limits at every tier",
+        "Three-tier structure: Start, Build, Scale",
+        "No existing account downgraded",
+        "Organizations maintained existing limits or received higher ones",
+        "Prior structure had Opus-only higher limits at upper tiers",
+        "Change detected via releasebot.io/updates/anthropic/claude-developer-platform aggregator"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "OpenAI deploys updated dictation model in ChatGPT",
+      "date": "2026-06-26",
+      "category": ["productivity-ai"],
+      "verification": "verified",
+      "source_tier": "T2",
+      "primary_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "primary_url_status": "200",
+      "key_facts": [
+        "New speech-to-text model for dictation across all plans",
+        "At least 10% lower word error rate for top languages (OpenAI internal evaluation)",
+        "Improved accuracy: Japanese, Korean, Chinese, Urdu, Vietnamese, accented English, long-form Spanish, French, Italian, Portuguese",
+        "Better handling: noisy environments, quiet/whispered speech, mixed-language code-switching, letter-number combinations",
+        "WER improvement is vendor-measured only; no independent benchmark replication published"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Claude Opus 4.7 fast mode deprecated, removal July 24",
+      "date": "2026-06-25",
+      "category": ["model-release"],
+      "verification": "verified",
+      "source_tier": "T2",
+      "primary_url": "https://platform.claude.com/docs/en/api/rate-limits",
+      "primary_url_status": "200",
+      "key_facts": [
+        "Fast mode for claude-opus-4-7 deprecated June 25, 2026",
+        "API removal date: July 24, 2026",
+        "After July 24, requests with speed: 'fast' on claude-opus-4-7 return an error",
+        "Migration target: claude-opus-4-8 with speed: 'fast'",
+        "No capability or pricing changes for Opus 4.8 fast mode noted alongside deprecation",
+        "29-day migration window from announcement to removal"
+      ]
+    }
+  ],
+  "dropped_count": 25,
+  "dropped_reasons": {
+    "covered_prior_bulletin": 6,
+    "outside_window": 13,
+    "minor_no_new_capability": 4,
+    "market_event_off_scope": 1,
+    "no_qualifying_release_found": 1
+  },
+  "dropped_items": [
+    {"title": "OpenAI GPT-5.6 Sol, Terra, Luna limited preview", "reason": "covered_prior_bulletin"},
+    {"title": "Claude Code v2.1.195 background agent data loss fix", "reason": "covered_prior_bulletin"},
+    {"title": "Claude Code v2.1.193 auto-mode classifier, OTel logging", "reason": "covered_prior_bulletin"},
+    {"title": "Anthropic vs Alibaba 28.8M-exchange distillation attack", "reason": "covered_prior_bulletin"},
+    {"title": "DeepMind researchers Adler/Pritzel plan to join Anthropic", "reason": "covered_prior_bulletin"},
+    {"title": "Gemini 3.5 Pro launch pushed to July 2026", "reason": "covered_prior_bulletin"},
+    {"title": "Anthropic Series H $65B at $965B post-money valuation", "reason": "outside_window", "actual_date": "2026-05-28"},
+    {"title": "Claude support for Apple Foundation Models (iOS 27)", "reason": "outside_window", "actual_date": "2026-06-08"},
+    {"title": "Anthropic IPO confidential S-1 SEC filing", "reason": "outside_window", "actual_date": "2026-06-01"},
+    {"title": "Anthropic Workload Identity Federation GA", "reason": "outside_window", "actual_date": "2026-06-17"},
+    {"title": "Claude Design launch (Anthropic Labs)", "reason": "outside_window", "actual_date": "2026-04-17"},
+    {"title": "White House EO 14409 Promoting AI Innovation and Security", "reason": "outside_window", "actual_date": "2026-06-02"},
+    {"title": "GitHub Copilot moves to token-based billing", "reason": "outside_window", "actual_date": "2026-04-27"},
+    {"title": "NVIDIA DGX Spark June 2026 update / NemoClaw streamlined install", "reason": "outside_window", "actual_date": "2026-06-01"},
+    {"title": "Gemini 3.5 Flash launch", "reason": "outside_window", "actual_date": "2026-05-19"},
+    {"title": "MCP 2026-07-28 spec release candidate", "reason": "outside_window", "actual_date": "2026-05-21"},
+    {"title": "OpenAI weighs drastic token price cuts", "reason": "outside_window", "actual_date": "2026-06-11"},
+    {"title": "OpenMontage agentic video production system", "reason": "outside_window", "actual_date": "2026-06-22"},
+    {"title": "codebase-memory-mcp v0.8.1 code intelligence MCP server", "reason": "outside_window", "actual_date": "2026-06-12"},
+    {"title": "xAI Grok releases (Bedrock June 15, Build /goal June 22, Word add-in June 16)", "reason": "outside_window", "actual_dates": ["2026-06-15", "2026-06-16", "2026-06-22"]},
+    {"title": "GPT-4.5 retirement from ChatGPT", "reason": "minor_no_new_capability"},
+    {"title": "OpenAI personal finance expansion to Plus users", "reason": "minor_no_new_capability"},
+    {"title": "Claude Trusted Devices for Remote Control on Team/Enterprise", "reason": "minor_no_new_capability"},
+    {"title": "OpenAI Codex 0.142.3 maintenance patch", "reason": "minor_no_new_capability"},
+    {"title": "Alphabet $269B market cap decline (week of June 23-27)", "reason": "market_event_off_scope"}
+  ],
+  "limitations": [
+    "Howard Lutnick's letter to Anthropic dated June 26 was not publicly released; all details from CNBC, Bloomberg, NBC News, Fortune, CNN Business",
+    "Fable 5 remains suspended as of June 28 with no published timeline or conditions for restoration",
+    "Mythos 5 jailbreak technical claims unverified by independent third-party security firm",
+    "Senator Warner NSA claim unverified and subsequently qualified by reporting journalist",
+    "axios.com Mythos clearance article returned HTTP 403 from research environment",
+    "Anthropic rate limits update sourced through releasebot.io aggregator; no standalone blog post",
+    "OpenAI dictation WER improvement is vendor-measured only; no independent replication",
+    "Login-walled coverage (X, LinkedIn, Discord) not directly accessed",
+    "SEA/Indonesia dedicated searches yielded no publishable in-window items; bulletin is US-heavy",
+    "agent-framework, mcp-ecosystem, research-papers: no qualifying releases in June 25-28 window"
+  ],
+  "suggested_next_runs": [
+    "Fable 5 restoration — watch for Anthropic statement on timeline and conditions",
+    "Mythos 5 trusted-partner deployment scope — track which organizations received access",
+    "GPT-5.6 broader API availability — OpenAI indicated 'coming weeks' from June 26",
+    "Anthropic rate-limit tier documentation — Start/Build/Scale numerical limits update on platform.claude.com"
+  ],
+  "access_errors": [
+    {"url": "https://www.axios.com/2026/06/27/commerce-anthropic-mythos-restrictions-lift", "status": 403, "resolution": "content captured via CNBC, Bloomberg, NBC News corroboration"}
+  ]
+}
