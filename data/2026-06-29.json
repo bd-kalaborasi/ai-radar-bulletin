@@ -1,0 +1,242 @@
+{
+  "run_date": "2026-06-29",
+  "period_start": "2026-06-24",
+  "period_end": "2026-06-29",
+  "window_note": "Strict 72h window (June 26-29) yielded 5 items; expanded to 5 days (June 24-29) per skill rule.",
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 22,
+  "items_published": 8,
+  "items_dropped": 14,
+  "verification_summary": {
+    "verified": 5,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "sources_count": 19,
+  "exploration_pct": 50,
+  "searches_total": 32,
+  "searches_exploratory_adversarial": 16,
+  "published_items": [
+    {
+      "id": 1,
+      "title": "OpenAI previews GPT-5.6 Sol, Terra, and Luna at restricted scale",
+      "date": "2026-06-26",
+      "source_url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "source_org": "OpenAI",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement",
+      "categories": ["model-release", "workflow-automation"],
+      "bd_actionability": "high",
+      "key_facts": {
+        "Sol_pricing_input_per_1M": "$5",
+        "Sol_pricing_output_per_1M": "$30",
+        "Terra_pricing_input_per_1M": "$2.50",
+        "Terra_pricing_output_per_1M": "$15",
+        "Luna_pricing_input_per_1M": "$1",
+        "Luna_pricing_output_per_1M": "$6",
+        "access_restriction": "~20 organizations approved by US government",
+        "availability_status": "limited preview — broad availability 'coming weeks'"
+      },
+      "tier_nuance": "Primary blog 403 this run; confirmed via TechCrunch T2, Axios T2, MacRumors T3",
+      "caveats": "Vendor benchmarks only. 0.8pt Sol vs Mythos 5 gap within measurement variance. Government gate prevents independent evaluation.",
+      "cross_refs": [
+        "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+        "https://www.macrumors.com/2026/06/26/openai-gpt-5-6-sol/"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "OpenAI and Broadcom unveil Jalapeño, a custom LLM inference chip",
+      "date": "2026-06-24",
+      "source_url": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor",
+      "source_org": "Broadcom Inc.",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "key_facts": {
+        "chip_name": "Jalapeño",
+        "purpose": "LLM inference (not training)",
+        "development_cycle": "nine months design to tape-out",
+        "deployment_target": "end of 2026",
+        "performance_claim": "substantially better performance per watt vs current GPU configs (vendor-claimed)"
+      },
+      "caveats": "Performance claims vendor-only. End-2026 deployment is a target.",
+      "cross_refs": [
+        "https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html",
+        "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Anthropic tells Senate Alibaba ran 28.8M-interaction distillation campaign; lawmakers draft sanctions",
+      "date_primary": "2026-06-24",
+      "date_letter": "2026-06-10",
+      "date_congressional_response": "2026-06-27",
+      "source_url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+      "source_org": "CNBC (reporting Bloomberg first report)",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "announcement / regulatory",
+      "categories": ["policy-regulation", "ai-for-business"],
+      "bd_actionability": "medium",
+      "key_facts": {
+        "interactions_count": "28.8 million",
+        "fraudulent_accounts": "~25,000",
+        "attack_window": "April 22 – June 5, 2026",
+        "targets": "agentic reasoning and software engineering capabilities",
+        "letter_recipients": "Senate Banking Committee Chair Tim Scott, Ranking Member Elizabeth Warren",
+        "congressional_response": "Senators Hagerty (R-TN) and Kim (D-NJ) drafting sanctions amendment to defense legislation"
+      },
+      "caveats": "Anthropic letter not publicly released. Alibaba has not confirmed or denied. Sanctions amendment not yet formally tabled.",
+      "tier_nuance": "Congressional response sourced from Eastern Herald (T3) only — needs T1-T2 confirmation.",
+      "cross_refs": [
+        "https://www.techtimes.com/articles/319105/20260625/alibaba-ran-largest-known-ai-theft-campaign-against-claude-anthropic-tells-senate.htm",
+        "https://easternherald.com/2026/06/27/anthropic-alibaba-claude-distillation-senate-sanctions/"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Claude Code adds Trusted Devices for remote sessions",
+      "date": "2026-06-26",
+      "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "source_org": "Anthropic",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "changelog",
+      "categories": ["dev-tools"],
+      "bd_actionability": "medium",
+      "key_facts": {
+        "feature": "Trusted Devices — device verification before remote Claude Code sessions",
+        "plans": "Team and Enterprise",
+        "bug_fixes": [
+          "Hook matchers with hyphenated identifiers now exact-match (not substring-match)",
+          "macOS voice dictation fixed in long-running sessions",
+          "Background jobs no longer disappear from claude agents under specific write conditions"
+        ]
+      },
+      "cross_refs": [
+        "https://releasebot.io/updates/anthropic/claude-code"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "ByteDance launches Seed 2.1 Pro and Turbo",
+      "date": "2026-06-24",
+      "source_url": "https://seed.bytedance.com/en/blog/seed-2-1-preview-model-release-on-arena",
+      "source_org": "ByteDance Seed",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["model-release"],
+      "bd_actionability": "medium",
+      "key_facts": {
+        "models": ["Seed 2.1 Pro", "Seed 2.1 Turbo"],
+        "context_window": "1M tokens",
+        "Pro_pricing_input_per_1M": "6 yuan",
+        "Pro_pricing_output_per_1M": "30 yuan",
+        "Turbo_pricing_input_per_1M": "3 yuan",
+        "Turbo_pricing_output_per_1M": "15 yuan",
+        "benchmark_claims": "TerminalBench 2.1, SWE-Pro, SciCode — vendor-claimed competitive with GPT-5.5"
+      },
+      "caveats": "Benchmark scores vendor-measured. International API access outside Volcano Engine not confirmed.",
+      "cross_refs": [
+        "https://dataconomy.com/2026/06/24/bytedance-launches-doubao-2-1-pro-language-model/"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Google DeepMind loses sixth researcher as coding-pivot exits continue",
+      "date": "2026-06-28",
+      "source_url": "https://www.axios.com/2026/06/23/ai-lab-agi-google-deepmind-departures",
+      "source_org": "Axios",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "news",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "low",
+      "key_facts": {
+        "departures": [
+          {"name": "Noam Shazeer", "role": "Gemini co-lead, Transformer co-author", "destination": "OpenAI", "date": "2026-06-18"},
+          {"name": "John Jumper", "role": "Nobel laureate, AlphaFold lead", "destination": "Anthropic", "date": "2026-06-20"},
+          {"name": "Jonas Adler", "role": "AI coding researcher", "destination": "Anthropic", "date": "2026-06-24"},
+          {"name": "Alexander Pritzel", "role": "Pretraining specialist", "destination": "Anthropic", "date": "2026-06-24"},
+          {"name": "Arthur Conmy", "role": "Gemini 2.5 contributor", "destination": "Anthropic", "date": "late June"},
+          {"name": "sixth researcher (unnamed)", "role": "unspecified", "destination": "Meta", "date": "by June 28"}
+        ],
+        "alphabet_market_cap_loss": "~$270B across two trading sessions (T3 source — market data estimate)"
+      },
+      "cross_refs": [
+        "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html",
+        "https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html",
+        "https://www.techtimes.com/articles/319219/20260628/google-deepminds-coding-pivot-lost-six-researchers-meta-openai-anthropic.htm"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "GPT-4.5 removed from ChatGPT",
+      "date": "2026-06-26",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source_org": "OpenAI",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "changelog",
+      "categories": ["model-release"],
+      "bd_actionability": "low",
+      "key_facts": {
+        "model_retired": "GPT-4.5",
+        "retirement_date": "2026-06-26",
+        "notice_date": "2026-05-28",
+        "migration": "Conversations auto-migrated to GPT-5.5",
+        "prior_retirement": "GPT-5.2 retired June 12"
+      },
+      "tier_nuance": "OpenAI Help Center 403 this run; confirmed via release-tracking services.",
+      "cross_refs": [
+        "https://releasebot.io/updates/openai/chatgpt"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "California Assembly passes AI public school teacher ban unanimously; bill heads to Newsom",
+      "date": "2026-06-24",
+      "source_url": "https://www.transparencycoalition.ai/news/ai-legislative-update-june26-2026",
+      "source_org": "Transparency Coalition",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "legislative",
+      "categories": ["policy-regulation"],
+      "bd_actionability": "low",
+      "key_facts": {
+        "bill": "AB 2148",
+        "requirement": "Public school employees and contractors must be natural persons",
+        "assembly_vote": "76-0 on May 4, 2026",
+        "senate_vote": "38-0 on June 18, 2026",
+        "enrolled_date": "June 24, 2026",
+        "status": "Awaiting Governor Newsom signature or veto"
+      },
+      "tier_nuance": "Transparency Coalition is T3 aggregator; upgraded to secondary via O'Melveny T2 legal corroboration.",
+      "cross_refs": [
+        "https://www.omm.com/insights/alerts-publications/california-continues-its-push-to-regulate-ai/"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Colorado AI Act takes effect June 30", "source": "Aggregator (llm-stats.com)", "reason": "Verification failed: SB 189 (May 14) delayed effective date to Jan 1, 2027 — aggregator error"},
+    {"title": "Claude Tag launches in Slack", "source": "anthropic.com (June 23)", "reason": "Outside 5-day window"},
+    {"title": "Grok /goal autonomous mode", "source": "MarkTechPost (June 22)", "reason": "Outside 5-day window"},
+    {"title": "Grok for Word, Excel, PowerPoint", "source": "Windows News (June 18)", "reason": "Outside window"},
+    {"title": "Rhode Island therapy chatbot ban signed", "source": "RI Governor (June 22)", "reason": "Outside 5-day window"},
+    {"title": "Arcade raises $60M Series A", "source": "BusinessWire (June 15)", "reason": "Outside window"},
+    {"title": "OpenAI confidential IPO S-1 filing", "source": "OpenAI (June 8)", "reason": "Outside window"},
+    {"title": "Ramp AI Index June 2026: Anthropic leads OpenAI at 41%", "source": "ramp.com", "reason": "Exact publication date in window unconfirmed; month-aggregate metric"},
+    {"title": "Gemini 3.5 Pro with Deep Think mode", "source": "Google (June 22)", "reason": "Outside 5-day window"},
+    {"title": "Grok 4.3 on Amazon Bedrock GA", "source": "xAI/AWS (mid-June)", "reason": "Date not confirmed in window"},
+    {"title": "Ponytail AI coding skill GitHub viral 53K+ stars", "source": "GitHub (June 12-21)", "reason": "Outside window"},
+    {"title": "Microsoft Scout autonomous agent GA", "source": "Microsoft Blog (pre-June 24)", "reason": "Outside 5-day window"},
+    {"title": "OpenAI advertising strategy — 900M weekly active users", "source": "Aggregator summary (June 27)", "reason": "No T1-T2 primary source found"},
+    {"title": "ByteDance Seedance 2.5 video model", "source": "kie.ai", "reason": "Date not confirmed in window; different product from Seed 2.1"}
+  ]
+}
