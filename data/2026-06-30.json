@@ -1,0 +1,153 @@
+{
+  "run_date": "2026-06-30",
+  "period_start": "2026-06-25",
+  "period_end": "2026-06-30",
+  "window_expansion": {
+    "applied": true,
+    "reason": "Strict 72h window (2026-06-27 to 2026-06-30) yielded 2 verified items, below the 5-item threshold",
+    "strict_window": "2026-06-27 to 2026-06-30",
+    "expanded_window": "2026-06-25 to 2026-06-30"
+  },
+  "totals": {
+    "items_reviewed": 27,
+    "items_published": 5,
+    "items_dropped": 22,
+    "verified": 4,
+    "secondary": 1,
+    "rumor": 0,
+    "sources_count": 19,
+    "exploration_pct": 40
+  },
+  "published_items": [
+    {
+      "id": 1,
+      "title": "Claude API Rate Limits Unified Across Sonnet, Haiku, and Opus",
+      "date": "2026-06-26",
+      "tier": "T2",
+      "verification": "verified",
+      "type": "changelog",
+      "categories": ["dev-tools", "model-release"],
+      "primary_url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "source_org": "Anthropic",
+      "conflict_of_interest": false,
+      "notes": "Four tiers consolidated to three: Start, Build, Scale. Sonnet and Haiku rate limits now match Opus at every tier."
+    },
+    {
+      "id": 2,
+      "title": "OpenAI Codex Remote Generally Available on All Paid ChatGPT Plans",
+      "date": "2026-06-25",
+      "tier": "T2",
+      "verification": "secondary",
+      "type": "changelog",
+      "categories": ["dev-tools", "workflow-automation"],
+      "primary_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source_org": "OpenAI",
+      "conflict_of_interest": false,
+      "secondary_reason": "Primary URL returned HTTP 403. Date confirmed via Releasebot (T3) and URL-pattern dating of TechTimes article (20260627).",
+      "notes": "Available on Plus, Pro, Business, Enterprise, Education. Mac/Windows desktop app required for session control. QR-based device pairing."
+    },
+    {
+      "id": 3,
+      "title": "Claude Generally Available in Microsoft Azure Foundry",
+      "date": "2026-06-29",
+      "tier": "T2",
+      "verification": "verified",
+      "type": "announcement",
+      "categories": ["ai-for-business", "dev-tools"],
+      "primary_url": "https://claude.com/blog/claude-in-microsoft-foundry",
+      "secondary_url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+      "source_org": "Anthropic",
+      "conflict_of_interest": false,
+      "notes": "Opus 4.8 and Haiku 4.5 available in East US, West US 2, West Europe. CRITICAL: inference on Anthropic-hosted servers, NOT Azure EU-native. EU data residency not guaranteed. Go/Ruby SDKs not supported at GA."
+    },
+    {
+      "id": 4,
+      "title": "HP Inc. and OpenAI Launch Frontier Enterprise Partnership",
+      "date": "2026-06-28",
+      "tier": "T2",
+      "verification": "verified",
+      "type": "announcement",
+      "categories": ["ai-for-business"],
+      "primary_url": "https://www.hp.com/us-en/newsroom/press-releases/2026/open-ai-partnership.html",
+      "secondary_url": "https://openai.com/index/hp-frontier-partnership/",
+      "source_org": "HP Inc.",
+      "conflict_of_interest": false,
+      "notes": "Feb-May 2026 pilot. Four tracks: CX, telemetry, employee productivity, software dev. 122 PRs and bug-remediation figures are vendor-disclosed only — no independent methodology or baseline."
+    },
+    {
+      "id": 5,
+      "title": "Anthropic Economic Index: AI Usage Tracks Work Rhythms",
+      "date": "2026-06-26",
+      "tier": "T2",
+      "verification": "verified",
+      "type": "research-report",
+      "categories": ["research-papers", "ai-for-business"],
+      "primary_url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+      "source_org": "Anthropic",
+      "conflict_of_interest": true,
+      "conflict_note": "Anthropic measuring own product's workforce impact on self-selected Claude user sample (n≈9700). Not generalisable to broader workforce.",
+      "notes": "Key findings: usage mirrors Mon-Fri work schedule with peaks 10am/3pm; ~35% expect AI to handle most work in 12 months; 57% say AI made skills more valuable; women 12% of linked sample."
+    }
+  ],
+  "dropped_items": [
+    { "title": "GPT-5.6 release", "reason": "Covered in 2026-06-29 bulletin" },
+    { "title": "Jalapeño (Anthropic internal)", "reason": "Covered in 2026-06-29 bulletin" },
+    { "title": "Claude/Alibaba distillation", "reason": "Covered in 2026-06-29 bulletin" },
+    { "title": "Claude Code Trusted Devices", "reason": "Covered in 2026-06-29 bulletin" },
+    { "title": "ByteDance Seed 2.1", "reason": "Covered in 2026-06-29 bulletin" },
+    { "title": "DeepMind leadership exits", "reason": "Covered in 2026-06-29 bulletin" },
+    { "title": "GPT-4.5 removal from API", "reason": "Covered in 2026-06-29 bulletin" },
+    { "title": "California AB 2148", "reason": "Covered in 2026-06-29 bulletin" },
+    { "title": "SpaceX / Cursor $60B valuation", "reason": "June 16, outside 5-day window" },
+    { "title": "Kimi K2.7 Code model", "reason": "June 12-19, outside window" },
+    { "title": "Sakana AI Fugu release", "reason": "June 22, outside window" },
+    { "title": "Claude Managed Agents self-hosted sandboxes", "reason": "Published May 19, outside window" },
+    { "title": "Apple WWDC / Siri AI overhaul", "reason": "June 8, outside window" },
+    { "title": "White House Executive Order on AI", "reason": "June 2, outside window" },
+    { "title": "NSPM-11 AI national security directive", "reason": "June 5, outside window" },
+    { "title": "Colorado AI Act SB 24-205", "reason": "Effective date moot: SB 26-189 signed May 14, 2026 replaced before June 30; correct effective date January 1, 2027" },
+    { "title": "Linzumi YC batch launch", "reason": "Exact in-window date unconfirmed; primary source inaccessible" },
+    { "title": "Claude Opus 4.6 fast-mode removal", "reason": "Minor platform change below significance threshold" },
+    { "title": "Opus 4.7 fast-mode deprecation", "reason": "Minor platform change below significance threshold" },
+    { "title": "Anthropic API key rotation tooling", "reason": "Operational tooling update; below editorial significance threshold" },
+    { "title": "SEA/Indonesia AI launches", "reason": "Dedicated search found no in-window items from the region" },
+    { "title": "General LLM benchmark updates", "reason": "No in-window independently replicated results found" }
+  ],
+  "sources_reached": {
+    "accessible": [
+      "platform.claude.com",
+      "claude.com/blog",
+      "anthropic.com/research",
+      "azure.microsoft.com",
+      "hp.com/newsroom",
+      "openai.com/index",
+      "releasebot.ai",
+      "ycombinator.com",
+      "coleg.gov",
+      "jdsupra.com"
+    ],
+    "inaccessible": [
+      { "url": "help.openai.com", "reason": "HTTP 403" },
+      { "url": "techtimes.com", "reason": "HTTP 403" },
+      { "url": "opendatascience.com", "reason": "HTTP 403" },
+      { "url": "llm-stats.com", "reason": "Partial data — showed releases through June 24 only" }
+    ]
+  },
+  "conflicts_reconciled": [
+    {
+      "topic": "Colorado AI Act effective date",
+      "sources_disagreed": ["JD Supra said June 30, 2026", "Previous bulletin said January 1, 2027"],
+      "resolution": "SB 26-189 (signed May 14, 2026) replaced SB 24-205 before June 30. Correct effective date: January 1, 2027. Item dropped."
+    },
+    {
+      "topic": "Anthropic Economic Index date",
+      "sources_disagreed": ["AI Pulse newsletter said June 19", "Anthropic primary source said June 26"],
+      "resolution": "Trusted primary source (anthropic.com). Date: June 26, 2026."
+    },
+    {
+      "topic": "Claude Managed Agents self-hosted sandboxes",
+      "sources_disagreed": ["Initially appeared as potential June item"],
+      "resolution": "Primary source confirmed May 19, 2026. Outside any window. Dropped."
+    }
+  ]
+}
