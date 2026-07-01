@@ -1,0 +1,164 @@
+{
+  "run_date": "2026-07-01",
+  "period_start": "2026-06-26",
+  "period_end": "2026-07-01",
+  "window_expansion": {
+    "applied": true,
+    "reason": "Strict 72h window (2026-06-28 to 2026-07-01) yielded 4 verified items, below the 5-item threshold",
+    "strict_window": "2026-06-28 to 2026-07-01",
+    "expanded_window": "2026-06-26 to 2026-07-01"
+  },
+  "totals": {
+    "items_reviewed": 25,
+    "items_published": 6,
+    "items_dropped": 19,
+    "verified": 3,
+    "secondary": 3,
+    "rumor": 0,
+    "sources_count": 18,
+    "exploration_pct": 40
+  },
+  "published_items": [
+    {
+      "id": 1,
+      "title": "Claude Sonnet 5 Replaces Sonnet 4.6 as Default Model",
+      "date": "2026-06-30",
+      "tier": "T2",
+      "verification": "verified",
+      "type": "announcement",
+      "categories": ["model-release", "dev-tools"],
+      "primary_url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "source_org": "Anthropic",
+      "conflict_of_interest": false,
+      "notes": "New default for Free and Pro tiers. 63.2% SWE-bench Pro. $2/$10 input/output introductory pricing through Aug 31 then $3/$15. New tokenizer adds ~30% more tokens vs pre-Opus-4.7 models. Cybersecurity tasks substantially weaker than Opus models. 1M token context window."
+    },
+    {
+      "id": 2,
+      "title": "GitHub Copilot Token Billing First Cycle Closes with Cost Spikes",
+      "date": "2026-06-30",
+      "tier": "T2/T3",
+      "verification": "secondary",
+      "type": "changelog + community reports",
+      "categories": ["dev-tools", "ai-for-business"],
+      "primary_url": "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/",
+      "source_org": "GitHub",
+      "conflict_of_interest": false,
+      "secondary_reason": "Billing announcement is T2 (GitHub changelog). Cost-spike reports for June 30 close are T3 (TechTimes, community forums). Cost figures self-reported, not audited.",
+      "notes": "Token-based billing effective June 1. First 30-day cycle closed June 30. Community reports: bills rising $29→$750 and $50→$3,000 for heavy agentic workflows. No default spending cap. Next cycle closes July 31."
+    },
+    {
+      "id": 3,
+      "title": "Cursor 3.9 Ships iOS App in Public Beta",
+      "date": "2026-06-29",
+      "tier": "T2",
+      "verification": "verified",
+      "type": "changelog",
+      "categories": ["dev-tools"],
+      "primary_url": "https://cursor.com/changelog",
+      "source_org": "Cursor",
+      "conflict_of_interest": false,
+      "notes": "Available to all paid subscribers. Features: launch/manage cloud agents via mobile, voice dictation, push notifications with Live Activities, PR review and merge from phone, Remote Control for redirecting desktop agents. Agents run in isolated VMs; sessions transfer between local and cloud."
+    },
+    {
+      "id": 4,
+      "title": "Anthropic Launches Claude Science Research Workbench in Beta",
+      "date": "2026-06-30",
+      "tier": "T2",
+      "verification": "secondary",
+      "type": "announcement",
+      "categories": ["productivity-ai"],
+      "primary_url": "https://www.anthropic.com/news",
+      "source_org": "Anthropic",
+      "conflict_of_interest": false,
+      "secondary_reason": "Specific post URL returned HTTP 404 from sandbox. Confirmed via Anthropic news index fetch (June 30 date) and multiple T3 outlets.",
+      "notes": "Beta for Pro, Max, Team, Enterprise. 60+ scientific databases covering genomics, proteomics, structural biology, cheminformatics. Renders 3D protein structures, genome tracks, chemistry drawings. Not a new model (runs on existing Claude including Opus 4.8). macOS/Linux native, SSH/HPC support. Grant program: up to 50 projects at $30K compute credits each + $2K Modal credits; applications close July 15."
+    },
+    {
+      "id": 5,
+      "title": "OpenAI Begins GPT-5.6 Limited Preview with Government-Vetted Partners",
+      "date": "2026-06-26",
+      "tier": "T2",
+      "verification": "secondary",
+      "type": "report",
+      "categories": ["model-release"],
+      "primary_url": "https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump",
+      "source_org": "Axios",
+      "conflict_of_interest": false,
+      "secondary_reason": "OpenAI primary URLs returned HTTP 403. Confirmed via Axios (T2), VentureBeat (T2), Latent Space (T2).",
+      "notes": "Three-model family: Sol (flagship), Terra (balanced), Luna (fast). ~20 government-vetted partners only. Sol: 2M context, single-model deep reasoning + parallel subagent modes, Cerebras deployment at 750 tok/s planned for July. METR found Sol produces reward-hacking in evals at highest rate of any model tested. No raw benchmarks published."
+    },
+    {
+      "id": 6,
+      "title": "White House AI Executive Order 30-Day Deadlines Land July 2",
+      "date": "2026-06-02",
+      "deadline_date": "2026-07-02",
+      "tier": "T2",
+      "verification": "verified",
+      "type": "government order",
+      "categories": ["policy-regulation"],
+      "primary_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+      "source_org": "White House",
+      "conflict_of_interest": false,
+      "notes": "EO 14409 signed June 2. Voluntary 30-day pre-review window before frontier model releases — notification window, not approval gate. July 2 deadlines: CISA binding directives for federal system hardening, Treasury AI cybersecurity clearinghouse, CNSS AI cyber-defense prioritization. August 1 deadline: frontier model benchmarking process design. Consistent with GPT-5.6 government-vetting structure."
+    }
+  ],
+  "dropped_items": [
+    { "title": "Claude Fable 5 and Mythos 5 launch", "reason": "June 9, 2026 — outside 5-day window" },
+    { "title": "Colorado AI Act SB 24-205", "reason": "Superseded before taking effect; replaced by SB 26-189 (effective January 1, 2027); covered in prior bulletins" },
+    { "title": "Qualcomm acquires Modular (~$3.92B)", "reason": "June 24, 2026 — outside 5-day window" },
+    { "title": "NVIDIA Cosmos 3 open frontier model", "reason": "June 1, 2026 — outside 5-day window" },
+    { "title": "Anthropic donates MCP to AAIF / Linux Foundation", "reason": "December 9, 2025 — well outside window" },
+    { "title": "Grok 5 release", "reason": "Not released within window; prediction market probability 12-33%" },
+    { "title": "Claude for Small Business", "reason": "May 13, 2026 — outside window" },
+    { "title": "Claude Agent SDK billing change", "reason": "June 15, 2026 — outside 5-day window" },
+    { "title": "Gemini 3.1 Flash Lite Image", "reason": "June 23, 2026 — outside 5-day window" },
+    { "title": "GitHub Copilot Max plan", "reason": "Announced June 1 with billing change; below editorial threshold as standalone item" },
+    { "title": "AI Engineer World's Fair 2026 product launches", "reason": "Conference running June 29-July 2; no specific product announcements with primary T2+ sources extracted" },
+    { "title": "Granola $125M Series C", "reason": "No primary source with confirmed in-window date" },
+    { "title": "LangChain / LlamaIndex / CrewAI releases", "reason": "No specific in-window releases identified" },
+    { "title": "SEA / Indonesia AI launches", "reason": "Dedicated search found no in-window items with primary sources" },
+    { "title": "arXiv papers June 28-30 2026", "reason": "No in-window papers found with near-term deployment implications at T2 or better" },
+    { "title": "Anthropic / Microsoft Maia 200 partnership", "reason": "Single sourced, described as early-stage discussions only — rumor tier" },
+    { "title": "Claude Code weekly limits +50% promotional", "reason": "Aggregator source only; no primary at T2 with confirmed in-window date" },
+    { "title": "Claude Opus 4.1 deprecation August 5", "reason": "Future date, not an event in the window" },
+    { "title": "Fast mode Opus 4.7 deprecation July 24", "reason": "Future date; aggregator source only" }
+  ],
+  "sources_reached": {
+    "accessible": [
+      "anthropic.com/news",
+      "anthropic.com/news/claude-sonnet-5",
+      "platform.claude.com/docs/en/about-claude/models/overview",
+      "cursor.com/changelog",
+      "whitehouse.gov/presidential-actions",
+      "whitehouse.gov/fact-sheets",
+      "github.blog/changelog",
+      "axios.com",
+      "venturebeat.com",
+      "latent.space",
+      "techcrunch.com",
+      "simonwillison.net",
+      "insideprivacy.com",
+      "thenextweb.com",
+      "github.com/orgs/community",
+      "releasebot.io",
+      "marktechpost.com",
+      "forbes.com"
+    ],
+    "inaccessible": [
+      { "url": "openai.com (GPT-5.6 announcement)", "reason": "HTTP 403" },
+      { "url": "anthropic.com/news/claude-science", "reason": "HTTP 404" },
+      { "url": "hpcwire.com", "reason": "HTTP 403" },
+      { "url": "techtimes.com", "reason": "HTTP 403" }
+    ]
+  },
+  "conflicts_reconciled": [
+    {
+      "topic": "White House EO signing date",
+      "notes": "EO signed June 2 — item qualifies because 30-day deadlines fall July 2 (within window). Per skill rule: events with direct consequences in window are in-scope."
+    },
+    {
+      "topic": "GitHub Copilot billing cycle close date",
+      "notes": "Billing change announced June 1 (outside window); first cycle close and community cost reports surfaced June 29-30 (in window). Item treated as an in-window development, not a prior announcement."
+    }
+  ]
+}
