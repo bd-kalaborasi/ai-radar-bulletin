@@ -1,0 +1,262 @@
+{
+  "run": {
+    "date": "2026-07-02",
+    "period_start": "2026-06-29",
+    "period_end": "2026-07-02",
+    "timeframe_hours": 72,
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 22,
+    "items_published": 4,
+    "items_dropped": 18,
+    "exploration_pct": 66,
+    "total_searches": 35,
+    "exploratory_searches": 23,
+    "window_expanded": false
+  },
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "items_published": [
+    {
+      "id": "fable5-export-lift",
+      "title": "Anthropic Restores Fable 5 After US Lifts Export Ban",
+      "primary_url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "publisher": "Anthropic",
+      "date": "2026-06-30",
+      "access_restored_date": "2026-07-01",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["policy-regulation", "workflow-automation"],
+      "key_claims": [
+        {
+          "claim": "Jailbreak classifier blocks technique in >99% of attempts",
+          "source": "https://www.anthropic.com/news/redeploying-fable-5",
+          "status": "vendor-claimed-unreplicated"
+        },
+        {
+          "claim": "Fable 5 in 50% of weekly usage limits through July 7 for paid plans",
+          "source": "https://www.anthropic.com/news/redeploying-fable-5",
+          "status": "vendor-primary"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.cnbc.com/amp/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html",
+          "tier": "T2-T3",
+          "role": "corroborating",
+          "note": "HTTP 403 from sandbox"
+        },
+        {
+          "url": "https://9to5mac.com/2026/07/01/claude-fable-5-cleared-to-return-as-us-lifts-anthropics-export-control-restriction/",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://thehackernews.com/2026/07/anthropic-restores-claude-fable-5-after.html",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.anthropic.com/news/fable-mythos-access",
+          "tier": "T2",
+          "role": "original-ban-statement",
+          "date": "2026-06-12"
+        }
+      ],
+      "caveats": [
+        "Mythos 5 global access remains more restricted than Fable 5 at publication date",
+        "Four-lab jailbreak severity framework is a commitment, not yet a published specification",
+        "Classifier effectiveness figure is vendor-tested only"
+      ]
+    },
+    {
+      "id": "california-anthropic-deal",
+      "title": "California Extends Claude Access to All State Agencies at 50% Discount",
+      "primary_url": "https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/",
+      "publisher": "Governor of California",
+      "date": "2026-06-29",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["ai-for-business", "policy-regulation"],
+      "key_claims": [
+        {
+          "claim": "50% discount on Claude pricing for all CA state agencies and local governments",
+          "source": "https://www.gov.ca.gov/2026/06/29/...",
+          "status": "primary"
+        },
+        {
+          "claim": "Access via California Department of Technology SITeS procurement portal",
+          "source": "https://www.gov.ca.gov/2026/06/29/...",
+          "status": "primary"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
+          "tier": "T2-T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://thenextweb.com/news/anthropic-california-newsom-claude-half-price-government",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.foxbusiness.com/politics/newsoms-office-touts-anthropic-partnership-50-discount-claude-ai-california-agencies-localities",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": [
+        "Total contract value not disclosed",
+        "Whether discount applies to API usage or web-interface only not specified",
+        "Training/support commitment details not specified"
+      ]
+    },
+    {
+      "id": "klaviyo-ai-agents",
+      "title": "Klaviyo Ships Composer Marketing Agent and Customer Agent in Public Beta",
+      "primary_url": "https://www.klaviyo.com/newsroom/CRM-agents",
+      "publisher": "Klaviyo",
+      "date": "2026-06-30",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "categories": ["workflow-automation"],
+      "key_claims": [
+        {
+          "claim": "Composer draws on 14 years of customer data and patterns from ~200,000 brands",
+          "source": "https://www.klaviyo.com/newsroom/CRM-agents",
+          "status": "vendor-claimed-context"
+        },
+        {
+          "claim": "Customer Agent runs across web chat, email, SMS, WhatsApp via pre-built connectors",
+          "source": "https://www.klaviyo.com/newsroom/CRM-agents",
+          "status": "vendor-claimed"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.businesswire.com/news/home/20260630493754/en/Klaviyo-Launches-AI-Agents-that-Work-Together-to-Drive-Revenue-for-Consumer-Brands",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "caveats": [
+        "Human review step before campaign publication not specified in announcement",
+        "Customer Agent actions scoped to pre-built connectors; custom surfaces require API integration",
+        "No independent testing or performance data published"
+      ]
+    },
+    {
+      "id": "microsoft-wti-indonesia",
+      "title": "Microsoft Work Trend Index 2026: Indonesia's Advanced AI Workers Double Global Average",
+      "primary_url": "https://news.microsoft.com/source/asia/2026/06/30/microsofts-work-trend-index-2026-33-of-indonesian-workers-are-at-the-forefront-of-ai-adoption/",
+      "publisher": "Microsoft",
+      "date": "2026-06-30",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "commissioned-survey",
+      "categories": ["productivity-ai"],
+      "tier_nuance": "Microsoft-commissioned survey by Edelman Data x Intelligence. Findings reflect self-reported AI usage.",
+      "key_claims": [
+        {
+          "claim": "33% of Indonesian workers = Frontier Professional tier vs 16% global average",
+          "source": "Microsoft/Edelman survey",
+          "status": "self-reported-survey"
+        },
+        {
+          "claim": "85% of Indonesian AI users concerned about falling behind vs 65% globally",
+          "source": "Microsoft/Edelman survey",
+          "status": "self-reported-survey"
+        },
+        {
+          "claim": "Survey: 20,000 workers, 10 markets, Feb 18-Apr 7 2026, by Edelman Data x Intelligence",
+          "source": "https://news.microsoft.com/source/asia/2026/06/30/...",
+          "status": "methodology-disclosed"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/agents-human-agency-and-the-opportunity-for-every-organization",
+          "tier": "T2",
+          "role": "full-report"
+        },
+        {
+          "url": "https://hybrid.co.id/post/laporan-microsoft-work-trend-index-2026-pekerja-ri-dominasi-adopsi-kecerdasan-buatan-di-asia/",
+          "tier": "T3",
+          "role": "corroborating",
+          "language": "Indonesian"
+        }
+      ],
+      "caveats": [
+        "Self-reported survey; Frontier Professional is a Microsoft-defined classification",
+        "Survey window (Feb-Apr 2026) predates Fable 5 and Sonnet 5 releases",
+        "No independent replication of country-level findings published"
+      ]
+    }
+  ],
+  "items_dropped": [
+    {"title": "Claude Sonnet 5 launch", "source": "anthropic.com/news/claude-sonnet-5", "date": "2026-06-30", "reason": "covered-in-july-1-bulletin"},
+    {"title": "Claude Science research workbench beta", "source": "anthropic.com/news", "date": "2026-06-30", "reason": "covered-in-july-1-bulletin"},
+    {"title": "Cursor 3.9 iOS app public beta", "source": "cursor.com/changelog", "date": "2026-06-29", "reason": "covered-in-july-1-bulletin"},
+    {"title": "GitHub Copilot token billing first cycle closes", "source": "github.blog/changelog", "date": "2026-06-01", "reason": "covered-in-july-1-bulletin"},
+    {"title": "OpenAI GPT-5.6 Sol/Terra/Luna limited preview", "source": "openai.com/index/previewing-gpt-5-6-sol/", "date": "2026-06-26", "reason": "covered-in-july-1-bulletin; no GA date confirmed by July 2"},
+    {"title": "White House AI EO July 2 CISA/Treasury deadlines", "source": "whitehouse.gov", "date": "2026-06-02", "reason": "covered-in-july-1-bulletin; implementation outcomes not confirmed published by run date"},
+    {"title": "GPT-5.6 Sol on Cerebras at 750 tokens/second", "source": "openai.com", "reason": "announced as launching in July without confirmed specific date; forward-looking intent"},
+    {"title": "Qualcomm-Tenstorrent acquisition talks", "source": "theinformation.com / reuters", "date": "2026-06-15", "reason": "mid-June rumor; CEO denial June 30 — resolves to rumor-denial, no confirmed deal"},
+    {"title": "Squidbleed CVE-2026-47729 (Mythos 5 security discovery)", "source": "calif.io / theregister.com", "date": "2026-06-23", "reason": "outside-72h-window"},
+    {"title": "Gemini 3.5 Flash general availability", "source": "blog.google", "date": "2026-05-20", "reason": "outside-window"},
+    {"title": "Google Antigravity 2.0", "source": "techcrunch.com", "date": "2026-05-19", "reason": "outside-window"},
+    {"title": "MCP 2026-07-28 Release Candidate", "source": "blog.modelcontextprotocol.io", "date": "2026-05-21", "reason": "outside-window"},
+    {"title": "Meta workforce restructuring / 8,000 layoffs", "source": "axios.com", "date": "2026-04-23", "reason": "outside-window"},
+    {"title": "Anthropic $30B revenue run rate", "source": "bloomberg.com", "date": "2026-04-06", "reason": "outside-window"},
+    {"title": "Microsoft Work Trend Index Singapore", "source": "news.microsoft.com", "date": "2026-06-16", "reason": "outside-72h-window"},
+    {"title": "AI startup funding roundup June 30", "source": "techstartups.com", "date": "2026-06-30", "reason": "no AI-primary items met T2 threshold with confirmed dates"},
+    {"title": "SEA / Indonesia AI product launches", "source": "various", "reason": "no in-window product launches found with primary T2 sources from SEA-based organizations"},
+    {"title": "World AI Show Jakarta July 7-8", "source": "openpr.com", "reason": "future event, not a shipped item"}
+  ],
+  "search_log": {
+    "total_searches": 35,
+    "exploratory_searches": 23,
+    "exploration_pct": 66,
+    "queries": [
+      "Anthropic Claude announcement July 2 2026",
+      "OpenAI announcement release July 2026",
+      "Google DeepMind Gemini AI release July 2026",
+      "AI agent framework release July 2026",
+      "MCP Model Context Protocol new server July 2026",
+      "Anthropic Fable 5 Mythos 5 export control lift July 2026",
+      "Google Gemini 3.5 Flash release date July 2026",
+      "AI news June 29 30 July 1 2 2026",
+      "California Newsom Anthropic partnership AI state agencies June 29 2026",
+      "Anthropic Redeploying Fable 5 date access restored July 2026",
+      "OpenAI GPT-5.6 Sol Cerebras 750 tokens per second July 2026 launch",
+      "Squidbleed CVE-2026-47729 Claude AI security discovery July 2026",
+      "Microsoft Qualcomm Tenstorrent AI chip deal July 2026",
+      "Meta layoffs AI restructuring 8000 employees date July 2026",
+      "White House AI executive order CISA Treasury deadline July 2 2026",
+      "new AI launch release announcement July 2 2026",
+      "AI startup funding announcement June 30 July 1 2 2026",
+      "GitHub Copilot Cursor LangChain CrewAI update July 2026",
+      "AI Indonesia startup Southeast Asia announcement July 2026",
+      "Anthropic Fable 5 restoration criticism concern jailbreak safety July 2026",
+      "open source LLM model release Hugging Face July 2026",
+      "California Anthropic AI government deal criticism concerns July 2026",
+      "Anthropic revenue $30 billion run rate 2026 date source",
+      "Microsoft Work Trend Index 2026 Indonesia AI adoption date findings",
+      "site:x.com AnthropicAI fable mythos restore July 2026",
+      "Hacker News top AI stories July 1 2 2026",
+      "AI workflow automation agentic product launch July 2026",
+      "OpenAI GPT-5.6 Sol API general availability date July 2026",
+      "CISA binding directive AI July 2 2026 published",
+      "Klaviyo AI agents launch June 30 2026 details capabilities",
+      "Google Antigravity platform AI developers July 2026"
+    ]
+  }
+}
