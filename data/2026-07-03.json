@@ -1,0 +1,164 @@
+{
+  "run_date": "2026-07-03",
+  "period_start": "2026-06-30",
+  "period_end": "2026-07-03",
+  "timeframe_hours": 72,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 18,
+  "items_published": 4,
+  "items_dropped": 14,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 0,
+    "rumor": 0
+  },
+  "exploration_pct": 52,
+  "sources_count": 14,
+  "categories": ["ai-for-business", "policy-regulation", "agent-framework", "dev-tools"],
+  "search_log": [
+    {"query": "anthropic.com/news (fetch)", "type": "registry", "yield": "1 in-window post"},
+    {"query": "openai.com/news (fetch)", "type": "registry", "yield": "403 error"},
+    {"query": "AI announcement release July 2 3 2026", "type": "exploratory", "yield": "3 high-relevance"},
+    {"query": "OpenAI GPT announcement July 2026", "type": "registry", "yield": "GPT-5.6 limited preview confirmed, no July 1-3 GA"},
+    {"query": "anthropic.com/news/fable-safeguards-jailbreak-framework (fetch)", "type": "registry", "yield": "July 2 confirmed, CJS framework extracted"},
+    {"query": "Google Gemma 4 12B release July 2026", "type": "registry", "yield": "Released June 3 — outside window"},
+    {"query": "OpenAI GPT-5.6 Sol Cerebras July 3 2026", "type": "registry", "yield": "No confirmed July 1-3 date"},
+    {"query": "new AI agent framework release July 2026", "type": "exploratory", "yield": "No new in-window releases found"},
+    {"query": "MCP Model Context Protocol update July 2026", "type": "registry", "yield": "RC dated July 28 — outside window"},
+    {"query": "Cursor Claude Code GitHub Copilot July 2-3 2026", "type": "registry", "yield": "Copilot Sonnet 5 confirmed June 30 — already in Jul 1 bulletin"},
+    {"query": "AI model release announcement July 2 3 2026", "type": "exploratory", "yield": "No net-new frontier model"},
+    {"query": "LangChain LlamaIndex CrewAI AutoGen release July 2026", "type": "registry", "yield": "No in-window releases"},
+    {"query": "GitHub Copilot Claude Sonnet 5 July 2026 date", "type": "registry", "yield": "June 30 confirmed — Jul 1 bulletin"},
+    {"query": "White House AI EO CISA Treasury July 2-3 2026", "type": "exploratory", "yield": "BOD 26-04 published June 10 — outside 72h window"},
+    {"query": "site:x.com AI announcement July 2-3 2026", "type": "social", "yield": "NVIDIA Sharon AI July 1 identified"},
+    {"query": "NVIDIA Sharon AI GPU deployment July 1 2 2026", "type": "exploratory", "yield": "NVIDIA DSX AI Factory blog July 1 confirmed"},
+    {"query": "CISA BOD 26-04 July 2026", "type": "registry", "yield": "Published June 10 — outside window"},
+    {"query": "open source LLM model weights released July 1-3 2026", "type": "exploratory", "yield": "No confirmed in-window open-weight releases"},
+    {"query": "Firmus Indonesia Batam Nvidia July 2026", "type": "exploratory-SEA", "yield": "Bloomberg June 28 (outside window); NVIDIA blog July 1 subsumes"},
+    {"query": "Together AI $800M Aramco July 1 2026", "type": "exploratory", "yield": "Confirmed July 1 announcement"},
+    {"query": "NVIDIA DSX criticism concerns July 2026", "type": "adversarial", "yield": "Circular financing criticism identified"},
+    {"query": "Anthropic jailbreak severity framework criticism July 2026", "type": "adversarial", "yield": "Severity contested; vendor-described as 'potential narrow jailbreak'"},
+    {"query": "Together AI open source criticism July 2026", "type": "adversarial", "yield": "Savings claims internally inconsistent (6x-20x vs 6x-60x)"},
+    {"query": "site:x.com AnthropicAI OpenAI announcement July 2-3 2026", "type": "social", "yield": "No new material beyond already found"},
+    {"query": "TwelveLabs $100M Series B July 1 2026", "type": "exploratory", "yield": "Confirmed; AWS Trainium deal identified"},
+    {"query": "OpenAI Cerebras Sol launch date July 2026", "type": "registry", "yield": "No confirmed July 1-3 date"},
+    {"query": "AI news July 3 2026", "type": "exploratory", "yield": "Claude Sonnet 5 default detail; no new items"},
+    {"query": "Gemini 3.1 Flash-Lite Image June 30 2026", "type": "registry", "yield": "Minor model update, June 30 — below threshold"},
+    {"query": "huggingface.co papers July 1-3 2026", "type": "exploratory", "yield": "No confirmed in-window paper-backed releases"},
+    {"query": "AI productivity tool new feature July 2-3 2026", "type": "exploratory", "yield": "No primary-source in-window launches found"},
+    {"query": "AI Indonesia startup announcement July 2026", "type": "cross-language-SEA", "yield": "No in-window T2 SEA product launches; Firmus Batam found (subsumed)"}
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "title": "Anthropic Publishes Cyber Jailbreak Severity Framework with Amazon, Google, Microsoft",
+      "source_url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+      "source_org": "Anthropic",
+      "date": "2026-07-02",
+      "tier": "T2",
+      "methodology": "announcement",
+      "verification_status": "verified",
+      "categories": ["policy-regulation", "dev-tools"],
+      "bd_actionability": "medium",
+      "summary": "Anthropic proposed a five-level Cyber Jailbreak Severity (CJS-0 to CJS-4) scale scored on four axes: capability gain, breadth of capability gain, ease of weaponization, and discoverability. The framework was co-developed with Amazon, Google, Microsoft, and other Glasswing partners and is open for feedback from academia, industry, civil society, and government. The post also detailed Fable 5's four-category cybersecurity classifier: prohibited use (blocked), high-risk dual-use (blocked), low-risk dual-use (sometimes blocked), and benign use (allowed).",
+      "quantitative_claims": [
+        {"claim": "CJS scale scores 0-10 combining four axes each scored 0-2 or 0-4", "source": "anthropic.com/news/fable-safeguards-jailbreak-framework", "tier": "T2"}
+      ],
+      "conflict_of_interest": "Anthropic is the primary author of the framework it is proposing as an industry standard",
+      "cross_references": [
+        "https://www.cnas.org/publications/cnas-insights/cnas-insights-governing-jailbreak-incidents",
+        "https://www.cybersecuritydive.com/news/anthropic-ai-mythos-fable-reenable/824214/"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Together AI Raises $800M Series C to Scale Open-Model Inference Infrastructure",
+      "source_url": "https://www.together.ai/blog/announcing-our-series-c",
+      "source_org": "Together AI",
+      "date": "2026-07-01",
+      "tier": "T2",
+      "methodology": "announcement",
+      "verification_status": "verified",
+      "categories": ["ai-for-business", "agent-framework"],
+      "bd_actionability": "high",
+      "summary": "$800M Series C from Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, and others. Together AI serves customers including Cognition, Decagon, Eleven Labs, Cursor, and Suno with open-model inference at claimed 31% higher throughput vs next-fastest OSS engine. Annual bookings exceeded $1.15B per multiple press outlets; primary blog does not disclose valuation.",
+      "quantitative_claims": [
+        {"claim": "$800M raised", "source": "together.ai/blog/announcing-our-series-c", "tier": "T2"},
+        {"claim": "$8.3B post-money valuation", "source": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/", "tier": "T2-T3"},
+        {"claim": "$1.15B annual bookings", "source": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/", "tier": "T3"},
+        {"claim": "31% more TPS than next-fastest OSS engine (production coding agent workloads)", "source": "together.ai/blog/announcing-our-series-c", "tier": "T4-vendor benchmark, no independent verification"},
+        {"claim": "Decagon reduced inference costs 6x after switching to Together AI", "source": "together.ai/blog/announcing-our-series-c", "tier": "T4-single customer testimonial"}
+      ],
+      "caveats": "31% TPS claim is vendor-measured benchmark. Savings claims in press release (6x-20x) inconsistent with primary blog. Annual bookings figure from TechCrunch, not primary blog."
+    },
+    {
+      "rank": 3,
+      "title": "NVIDIA Launches DSX AI Factory Revenue-Share Program; Partners Deploy 210,000 GPUs in Australia and Indonesia",
+      "source_url": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/",
+      "source_org": "NVIDIA",
+      "date": "2026-07-01",
+      "tier": "T2",
+      "methodology": "announcement",
+      "verification_status": "verified",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "summary": "NVIDIA launched a new model allowing AI cloud companies to acquire GPU infrastructure through a revenue-sharing and credit-support arrangement, earning NVIDIA both hardware margin and a share of cloud service revenue. Initial named partners: Sharon AI (up to 40,000 GB300 GPUs, 72 MW, Australia) and Firmus/DayOne (up to 170,000 GPUs, 360 MW Batam, Indonesia — expected $25-30B committed offtake over 6 years).",
+      "quantitative_claims": [
+        {"claim": "Sharon AI: up to 40,000 NVIDIA GB300 GPUs, 72 MW", "source": "blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale...", "tier": "T2"},
+        {"claim": "Firmus/DayOne: up to 170,000 GPUs, 360 MW, Batam, Indonesia", "source": "blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale...", "tier": "T2"},
+        {"claim": "Firmus expects $25-30B committed offtake over 6 years", "source": "https://thenextweb.com/news/firmus-nvidia-indonesia-batam-data-center-30-billion", "tier": "T3"}
+      ],
+      "caveats": "GPU counts are target/max figures. Circular financing criticism noted: NVIDIA separately holds large stakes in OpenAI ($30B) and xAI ($20B). Firmus Indonesia deal was first reported by Bloomberg June 28 (outside strict window); NVIDIA consolidated blog July 1 is primary.",
+      "cross_references": [
+        "https://www.bloomberg.com/news/articles/2026-06-28/ai-startup-firmus-to-build-indonesia-data-center-with-nvidia",
+        "https://www.stocktitan.net/news/NVDA/sharon-ai-announces-six-year-strategic-compute-collaboration-with-e2pvuxororjd.html"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "TwelveLabs Raises $100M Series B and Signs AWS Trainium Exclusivity Deal",
+      "source_url": "https://www.twelvelabs.io/blog/twelvelabs-series-b-100m",
+      "source_org": "TwelveLabs",
+      "date": "2026-07-01",
+      "tier": "T2",
+      "methodology": "announcement",
+      "verification_status": "verified",
+      "categories": ["ai-for-business"],
+      "bd_actionability": "medium",
+      "summary": "$100M Series B led by NEA and NAVER Ventures with Amazon, Radical Ventures, and Index Ventures. TwelveLabs builds video cognition infrastructure combining Marengo (video embedding model) and Pegasus (video-language model). A multiyear AWS Trainium agreement commits new models to launch first on AWS.",
+      "quantitative_claims": [
+        {"claim": "$100M Series B raised", "source": "twelvelabs.io/blog/twelvelabs-series-b-100m", "tier": "T2"}
+      ],
+      "caveats": "'World's most powerful video embedding model' is vendor-claimed, no independent benchmark cited. '90% of world's data is video' is a widely-cited industry estimate, not sourced specifically. No performance benchmarks for Marengo 3.0 or Pegasus 1.5 from independent testers."
+    }
+  ],
+  "dropped_items": [
+    {"title": "Anthropic restores Fable 5 after US lifts export ban", "source": "anthropic.com/news/redeploying-fable-5", "reason": "Covered in July 2 bulletin"},
+    {"title": "California extends Claude access to all state agencies at 50% discount", "source": "gov.ca.gov/2026/06/29/...", "reason": "Covered in July 2 bulletin"},
+    {"title": "Klaviyo Composer marketing agent + Customer Agent public beta", "source": "klaviyo.com/newsroom/CRM-agents", "reason": "Covered in July 2 bulletin"},
+    {"title": "Microsoft Work Trend Index 2026 Indonesia AI adoption", "source": "news.microsoft.com/source/asia/...", "reason": "Covered in July 2 bulletin"},
+    {"title": "Claude Sonnet 5 launch and default for Free/Pro plans", "source": "anthropic.com/news/claude-sonnet-5", "reason": "Covered in July 1 bulletin"},
+    {"title": "Claude Science research workbench beta", "source": "anthropic.com/news", "reason": "Covered in July 1 bulletin"},
+    {"title": "GitHub Copilot Claude Sonnet 5 GA", "source": "github.blog/changelog/2026-06-30-claude-sonnet-5-is-generally-available-for-github-copilot/", "reason": "June 30; covered in July 1 bulletin"},
+    {"title": "GPT-5.6 Sol/Terra/Luna limited preview", "source": "openai.com/index/previewing-gpt-5-6-sol/", "reason": "Covered in July 1 bulletin; no GA date confirmed by July 3"},
+    {"title": "GPT-5.6 Sol on Cerebras at 750 tokens/second", "source": "openai.com", "reason": "Announced as 'July' launch; no confirmed date within July 1-3 window"},
+    {"title": "White House AI EO June 2 and CNSS/Treasury deadlines", "source": "whitehouse.gov", "reason": "Covered in July 1 bulletin"},
+    {"title": "CISA BOD 26-04: Prioritizing Security Updates Based on Risk", "source": "cisa.gov/news-events/directives/bod-26-04...", "reason": "Published June 10, 2026 — outside 72h window"},
+    {"title": "Google Gemma 4 12B multimodal release", "source": "blog.google/innovation-and-ai/...", "reason": "Released June 3, 2026 — outside window"},
+    {"title": "Gemini 3.1 Flash-Lite Image availability June 30", "source": "ai.google.dev/gemini-api/docs/changelog", "reason": "Minor model update (lite preview replacement); below publication threshold"},
+    {"title": "MCP 2026-07-28 specification release candidate", "source": "blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/", "reason": "Publication date July 28 — outside window"}
+  ],
+  "limitations": [
+    "openai.com/news fetch returned HTTP 403 — OpenAI items sourced via search results and secondary coverage only",
+    "CISA.gov fetch returned HTTP 403 — BOD 26-04 details sourced via CyberScoop and secondary coverage",
+    "X/Twitter timelines not directly accessible; public posts searched via search engine indexing",
+    "No in-window MCP server releases found at T2+ with primary sources",
+    "No in-window open-weight model releases found",
+    "GPT-5.6 Sol on Cerebras stated as 'July launch' in original announcement; no primary source confirmed an exact date within July 1-3",
+    "Firmus Indonesia deal: Bloomberg June 28 (outside window); consolidated into July 1 NVIDIA blog item",
+    "SEA/Indonesia: no in-window product launches from SEA-based organizations at T2; Firmus Batam captured via NVIDIA blog",
+    "AI productivity tools (Notion, Linear, Granola etc.): no in-window announcements found at T2",
+    "Together AI savings claims internally inconsistent across blog post and press release; only vendor-reported performance data available"
+  ]
+}
