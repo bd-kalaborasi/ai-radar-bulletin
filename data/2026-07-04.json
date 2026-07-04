@@ -1,0 +1,382 @@
+{
+  "run": {
+    "date": "2026-07-04",
+    "period_start": "2026-07-01",
+    "period_end": "2026-07-04",
+    "timeframe_hours": 72,
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 21,
+    "items_published": 5,
+    "items_dropped": 16,
+    "exploration_pct": 38,
+    "total_searches": 37,
+    "exploratory_searches": 14,
+    "sources_count": 17,
+    "verification_summary": {
+      "verified": 2,
+      "secondary": 3,
+      "rumor": 0
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "title": "GitHub Copilot Adds Kimi K2.7 Code as First Open-Weight Model Picker Option",
+      "date": "2026-07-01",
+      "source_url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/",
+      "source_publisher": "GitHub Changelog",
+      "tier": "T2",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["dev-tools"],
+      "bd_actionability": "high",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "First open-weight model in GitHub Copilot model picker",
+          "source": "github.blog/changelog primary",
+          "tier": "T2"
+        },
+        {
+          "claim": "Hosted on Microsoft Azure at provider list pricing (usage-based billing)",
+          "source": "github.blog/changelog primary",
+          "tier": "T2"
+        },
+        {
+          "claim": "Rollout: Pro, Pro+, Max first; Business/Enterprise over coming weeks",
+          "source": "github.blog/changelog primary",
+          "tier": "T2"
+        },
+        {
+          "claim": "Off by default for Business and Enterprise; admin policy enable required",
+          "source": "github.blog/changelog primary",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [],
+      "caveats": [
+        "GitHub advises reviewing open-weight models against security, compliance, and data-governance requirements before enabling",
+        "'Provider list pricing' not defined in changelog; check current Moonshot AI Azure pricing before estimating cost"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Anthropic Removes Steganographic Tracking from Claude Code; Alibaba Bans Tool",
+      "date": "2026-07-03",
+      "source_url": "https://thenextweb.com/news/alibaba-bans-claude-code-anthropic-tracking-chinese-users",
+      "source_publisher": "The Next Web",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "news",
+      "categories": ["dev-tools", "policy-regulation"],
+      "bd_actionability": "medium-high",
+      "conflict_of_interest": "Anthropic engineer statement is from an interested party; Alibaba characterization as 'backdoor' disputed",
+      "key_claims": [
+        {
+          "claim": "June 30: Reddit reverse-engineer (LegitMichel777) discovers steganographic tracking code in Claude Code",
+          "source": "thenextweb.com citing Reddit original",
+          "tier": "T3"
+        },
+        {
+          "claim": "July 1: Anthropic confirms tracking removal via PR merge — 'an experiment we launched in March'",
+          "source": "Thariq Shihipar on X",
+          "tier": "T2"
+        },
+        {
+          "claim": "Alibaba ban effective July 10; employees directed to use Qoder",
+          "source": "South China Morning Post via thenextweb.com",
+          "tier": "T3"
+        },
+        {
+          "claim": "25,000 fraudulent accounts, 28.8M Claude interactions: Alibaba-linked distillation campaign Apr–Jun 2026",
+          "source": "Anthropic Senate Banking Committee letter, June 10 2026",
+          "tier": "T2"
+        },
+        {
+          "claim": "Anthropic the only frontier AI lab explicitly restricting PRC-controlled entity access",
+          "source": "Anthropic statement via FT (paywalled)",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+          "tier": "T2",
+          "role": "corroborating",
+          "note": "June 24 — just outside window"
+        },
+        {
+          "url": "https://cryptobriefing.com/anthropic-closes-loopholes-chinese-access-claude/",
+          "tier": "T3",
+          "role": "corroborating",
+          "note": "FT loophole closure confirmation, July 3"
+        },
+        {
+          "url": "https://thenextweb.com/news/anthropic-accuses-alibaba-distillation-claude-qwen",
+          "tier": "T3",
+          "role": "corroborating",
+          "note": "Background on prior distillation campaign"
+        }
+      ],
+      "caveats": [
+        "FT primary article on loophole closure paywalled; confirmed via thenextweb.com, cryptobriefing, investing.com",
+        "Alibaba's characterization as 'backdoor' disputed by Anthropic",
+        "Distillation attack attribution based on Anthropic's own Senate letter, not independent verification"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "OpenAI Proposes 5% US Government Equity Stake in Alaska-Style Public AI Fund",
+      "date": "2026-07-02",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-07-02/openai-proposes-giving-the-us-government-a-5-stake-ft-says",
+      "source_publisher": "Bloomberg (citing FT)",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "methodology": "news",
+      "categories": ["ai-for-business", "policy-regulation"],
+      "bd_actionability": "low",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "5% stake at OpenAI's $852B valuation ≈ $42.6B",
+          "source": "The Next Web citing FT",
+          "tier": "T2-T3"
+        },
+        {
+          "claim": "Altman discussed proposal with Trump, Lutnick, Bessent, Sanders",
+          "source": "Bloomberg citing FT",
+          "tier": "T2"
+        },
+        {
+          "claim": "Discussions described as 'conceptual and early-stage'",
+          "source": "Multiple outlets citing FT",
+          "tier": "T2-T3"
+        },
+        {
+          "claim": "Implementation would likely require an act of Congress",
+          "source": "Forbes, Bloomberg",
+          "tier": "T2-T3"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/07/02/openai-reportedly-pitches-granting-us-government-5-stake/",
+          "tier": "T2-T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://thenextweb.com/news/openai-5-percent-stake-trump-administration",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.techtimes.com/articles/319571/20260702/openai-offers-washington-426-billion-stake-experts-warn-safety-rules-face-conflict-risk.htm",
+          "tier": "T3",
+          "role": "contradicting",
+          "note": "Safety-oversight conflict-of-interest analysis"
+        },
+        {
+          "url": "https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/",
+          "tier": "T2",
+          "role": "corroborating",
+          "note": "Broader OpenAI vs Anthropic revenue context"
+        }
+      ],
+      "caveats": [
+        "FT primary article and Bloomberg article returned HTTP 403; confirmed via multiple independent secondary outlets",
+        "Proposal not formally accepted or submitted to Congress as of July 4",
+        "Proposal days after US government delayed GPT-5.6 public release — likely related to government leverage dynamic"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "White House Finalizing Voluntary AI Release Review Framework with OpenAI, Google, Anthropic",
+      "date": "2026-07-03",
+      "source_url": "https://aitoolsrecap.com/Blog/ai-news-july-3-2026",
+      "source_publisher": "AIToolsRecap (summarizing FT July 3 2026)",
+      "tier": "T3",
+      "verification_status": "secondary",
+      "methodology": "news",
+      "categories": ["policy-regulation"],
+      "bd_actionability": "medium",
+      "conflict_of_interest": null,
+      "tier_nuance": "Primary source is FT (July 3, paywalled). T3 reflects aggregator access, not FT original-reporting quality.",
+      "key_claims": [
+        {
+          "claim": "White House in 'advanced talks' with OpenAI, Google, Anthropic on voluntary AI release standards",
+          "source": "FT July 3 via AIToolsRecap",
+          "tier": "T3"
+        },
+        {
+          "claim": "Framework addresses review timelines and threshold definitions for 'covered frontier model' designation",
+          "source": "FT July 3 via AIToolsRecap",
+          "tier": "T3"
+        },
+        {
+          "claim": "Formal announcement expected 'next week' as of July 3",
+          "source": "FT July 3 via AIToolsRecap",
+          "tier": "T3"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+          "tier": "T1",
+          "role": "corroborating",
+          "note": "June 2 Executive Order establishing the voluntary framework basis"
+        },
+        {
+          "url": "https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order",
+          "tier": "T2",
+          "role": "corroborating",
+          "note": "NPR reporting on June 2 EO voluntary structure"
+        }
+      ],
+      "caveats": [
+        "Forward-looking: formal announcement had not occurred as of July 4",
+        "'Voluntary' framework — companies cannot be legally compelled to participate",
+        "FT primary paywalled; AIToolsRecap summary may omit nuance"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "UN Independent Panel Releases First Global Scientific Assessment of AI",
+      "date": "2026-07-01",
+      "source_url": "https://news.un.org/en/story/2026/07/1167853",
+      "source_publisher": "UN News",
+      "tier": "T1",
+      "verification_status": "verified",
+      "methodology": "announcement",
+      "categories": ["policy-regulation"],
+      "bd_actionability": "low",
+      "conflict_of_interest": null,
+      "key_claims": [
+        {
+          "claim": "40-member independent expert panel",
+          "source": "UN News primary",
+          "tier": "T1"
+        },
+        {
+          "claim": "US holds 75% of world's top 500 AI supercomputers; China 15%",
+          "source": "UN assessment via UN News",
+          "tier": "T1"
+        },
+        {
+          "claim": "AI capability doubling every 4–7 months implies evaluation benchmarks can become outdated within one product cycle",
+          "source": "UN panel assessment",
+          "tier": "T1"
+        },
+        {
+          "claim": "No scientific guarantees that AI systems will not violate instructions",
+          "source": "UN assessment",
+          "tier": "T1"
+        },
+        {
+          "claim": "Full comprehensive assessment due 2027; Geneva dialogue July 6–7 2026",
+          "source": "UN News",
+          "tier": "T1"
+        }
+      ],
+      "cross_references": [
+        {
+          "url": "https://www.un.org/independent-international-scientific-panel-ai/en/preliminary-report",
+          "tier": "T1",
+          "role": "corroborating",
+          "note": "Primary report PDF"
+        },
+        {
+          "url": "https://decrypt.co/372543/un-ai-safety-panel-scientists-catastrophic-harm",
+          "tier": "T2",
+          "role": "corroborating",
+          "note": "Editorial with key findings"
+        },
+        {
+          "url": "https://webtv.un.org/en/asset/k1v/k1v0ss6l5a",
+          "tier": "T1",
+          "role": "corroborating",
+          "note": "Launch press conference recording"
+        }
+      ],
+      "caveats": [
+        "Evidence base for some risks relies on modelling exercises, laboratory studies, and theoretical analysis — not all empirical",
+        "Comprehensive assessment with full evidence base due 2027"
+      ]
+    }
+  ],
+  "dropped": [
+    {"title": "Together AI $800M Series C", "url": "https://www.together.ai/blog/announcing-our-series-c", "reason": "Covered in July 3 bulletin"},
+    {"title": "NVIDIA DSX AI Factory Revenue-Share Program (Batam, Indonesia)", "url": "https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/", "reason": "Covered in July 3 bulletin"},
+    {"title": "TwelveLabs $100M Series B + AWS Trainium deal", "url": "https://www.twelvelabs.io/blog/twelvelabs-series-b-100m", "reason": "Covered in July 3 bulletin"},
+    {"title": "Anthropic Fable 5 restored after US lifts export ban", "url": "https://www.anthropic.com/news/redeploying-fable-5", "reason": "Covered in July 2 bulletin"},
+    {"title": "Claude Sonnet 5 launch and default for Free/Pro plans", "url": "https://www.anthropic.com/news/claude-sonnet-5", "reason": "Covered in July 1 bulletin"},
+    {"title": "Anthropic Cyber Jailbreak Severity (CJS) framework", "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework", "reason": "Covered in July 3 bulletin"},
+    {"title": "GPT-5.6 Sol/Terra/Luna limited preview", "url": "https://openai.com/index/previewing-gpt-5-6-sol/", "reason": "Covered in July 1 bulletin; no broad GA within window"},
+    {"title": "GPT-5.6 Sol on Cerebras at 750 tok/s", "url": "https://openai.com", "reason": "No confirmed launch date within July 1–4 window; forward-looking"},
+    {"title": "Gemini 3.5 Pro GA launch", "url": "https://blog.google", "reason": "Still in limited Vertex AI preview; no confirmed GA date within window"},
+    {"title": "Baseten $1.5B Series F", "url": "https://www.businesswire.com/news/home/20260622645563/en/Baseten-Raises-%241.5-Billion-to-Power-the-Next-Era-of-AI-Inference", "reason": "Published June 22, 2026 — outside window"},
+    {"title": "Crusoe in talks to raise $3B at ~$30B valuation", "url": "https://www.bloomberg.com/news/articles/2026-07-02/crusoe-in-talks-to-raise-3-billion-in-round-that-may-triple-firm-s-value", "reason": "In talks only — round not closed; primary paywalled (HTTP 403)"},
+    {"title": "Gemma 4 12B open model", "url": "https://blog.google", "reason": "Released June 3, 2026 — outside window"},
+    {"title": "White House AI EO June 2 CNSS/Treasury implementation", "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/", "reason": "Implementation details covered in prior bulletins; no new in-window steps confirmed"},
+    {"title": "Microsoft Work Trend Index 2026 Indonesia AI adoption", "url": "https://news.microsoft.com", "reason": "Covered in July 2 bulletin"},
+    {"title": "Program-as-Weights research paper (U. Waterloo)", "url": "https://huggingface.co/papers", "reason": "Pure research; no confirmed practical deployment path within window"},
+    {"title": "agency-agents GitHub repo (msitarzewski)", "url": "https://github.com/msitarzewski/agency-agents", "reason": "126k stars but no verifiable production adoption data beyond star count; tutorial-level documentation"}
+  ],
+  "limitations": [
+    "FT paywall: Three items sourced from FT (OpenAI stake, Anthropic loopholes, White House standards) — all paywalled. Confirmed via multiple independent secondaries.",
+    "openai.com/news: HTTP 403",
+    "bloomberg.com: HTTP 403 for OpenAI stake and Crusoe articles",
+    "Login-walled coverage: X timelines, LinkedIn, Discord not directly accessed",
+    "US holiday effect: July 4 Independence Day — minimal vendor announcements on this date",
+    "Model release coverage thin: No new frontier model GA in window",
+    "MCP ecosystem: No in-window (July 1–4) T2+ MCP spec or server releases",
+    "Agent frameworks: No new major agent framework releases within window",
+    "SEA/Indonesia: Cross-language search conducted; no new in-window T2+ launches",
+    "White House framework forward-looking: Announcement expected in July; not yet occurred as of July 4",
+    "Claude Code tracking severity contested: Alibaba 'backdoor' vs Anthropic 'anti-abuse experiment' — no independent security analysis published"
+  ],
+  "search_log": {
+    "total_searches": 37,
+    "exploratory_searches": 14,
+    "exploration_pct": 38,
+    "queries": [
+      "anthropic.com/news (fetch)",
+      "openai.com/news (fetch) → HTTP 403",
+      "AI announcement release July 3 4 2026",
+      "new AI model release July 4 2026",
+      "White House voluntary AI release standards July 2026 OpenAI Google Anthropic",
+      "OpenAI GPT-5.6 delayed government access July 2026",
+      "OpenAI government stake 5% July 2026",
+      "AI agent framework release July 3 4 2026 (exploratory)",
+      "aitoolsrecap.com/Blog/ai-news-july-3-2026 (fetch)",
+      "LangChain LlamaIndex CrewAI AutoGen update July 2026 (exploratory)",
+      "Anthropic Claude revenue overtakes OpenAI July 2026",
+      "Google AI DeepMind announcement July 3 4 2026 (exploratory)",
+      "deepmind.google/discover/blog/ (fetch) (exploratory)",
+      "MCP Model Context Protocol update July 2026 (exploratory)",
+      "Cursor Claude Code GitHub Copilot update July 3 4 2026",
+      "Meta Llama Mistral xAI Grok release July 3 4 2026 (exploratory)",
+      "Gemini 3.5 Pro launch July 2026 (exploratory)",
+      "AI news July 4 2026",
+      "site:x.com AnthropicAI OpenAI July 3 4 2026 (social)",
+      "fortune.com/2026/07/02 (fetch)",
+      "AI Indonesia OR startup AI Asia Tenggara July 2026 (cross-language exploratory)",
+      "GitHub Copilot kimi-k2 model July 1 2026 release",
+      "AI funding Series July 3 4 2026 startup raise (exploratory)",
+      "Anthropic loophole Chinese companies bypass ban Claude Code July 2026",
+      "github.blog/changelog/2026-07-01-kimi-k2-7 (fetch)",
+      "Crusoe $3 billion fundraise July 2026 AI infrastructure (exploratory)",
+      "OpenAI government stake criticism concern July 2026 (adversarial)",
+      "github.com/trending (fetch) (exploratory)",
+      "new AI startup product launch July 4 2026 producthunt techcrunch (exploratory)",
+      "huggingface.co/papers (fetch) (exploratory)",
+      "Baseten $1.5 billion Series F July 2026",
+      "thenextweb.com/news/alibaba-bans-claude-code (fetch)",
+      "Anthropic China distillation attack Alibaba Qwen criticism response July 2026 (adversarial)",
+      "UN AI scientific panel assessment criticism gaps limitations July 2026 (adversarial)",
+      "news.un.org/en/story/2026/07/1167853 (fetch)",
+      "axios.com/2026/07/02/openai-stake-trump-altman (fetch) → HTTP 403",
+      "bloomberg.com/news/articles/2026-07-02 (fetch) → HTTP 403"
+    ]
+  }
+}
