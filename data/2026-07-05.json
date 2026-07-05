@@ -1,0 +1,156 @@
+{
+  "run_date": "2026-07-05",
+  "period_start": "2026-06-30",
+  "period_end": "2026-07-05",
+  "window_expansion": true,
+  "window_expansion_reason": "Strict 72h window yielded 5 items (≤5 threshold); expanded to 5-day window",
+  "items_reviewed": 22,
+  "items_published": 6,
+  "items_dropped": 16,
+  "exploration_pct": 35,
+  "sources_count": 16,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "items": [
+    {
+      "title": "pxpipe v0.7.1 Cuts Claude Code Token Bills 59–70% via Image Compression",
+      "date": "2026-07-03",
+      "source_url": "https://github.com/teamchong/pxpipe",
+      "tier": "T2-T3",
+      "verification_status": "verified",
+      "category": "dev-tools",
+      "bd_actionability": "HIGH",
+      "key_claims": [
+        "59–70% bill reduction on Fable 5 (vendor-reported)",
+        "7% misread rate on Opus 4.7/4.8",
+        "SWE-bench Pro marginal regression (14/19 vs 15/19)",
+        "Single npm install + env-var redirect setup"
+      ],
+      "caveats": [
+        "Vendor-reported benchmarks, not independently reproduced",
+        "Lossy for hashes/secrets/IDs",
+        "Anthropic repricing is stated risk"
+      ]
+    },
+    {
+      "title": "X Launches Official Hosted MCP Server for Read-Only API Access",
+      "date": "2026-06-30",
+      "source_url": "https://techcrunch.com/2026/06/30/x-now-offers-an-mcp-server",
+      "tier": "T2-T3",
+      "verification_status": "secondary",
+      "category": "mcp-ecosystem",
+      "bd_actionability": "HIGH",
+      "window_expansion_item": true,
+      "key_claims": [
+        "200+ read-only endpoints",
+        "OAuth authentication with user's own X credentials",
+        "No write access at launch"
+      ],
+      "caveats": [
+        "Primary X announcement page not independently fetched",
+        "Write access excluded"
+      ]
+    },
+    {
+      "title": "Zuckerberg Admits Meta AI Agent Development Running Behind at $145B Capex Pace",
+      "date": "2026-07-02",
+      "source_url": "https://finance.yahoo.com/technology/ai/articles/exclusive-zuckerberg-says-ai-agent-201123441.html",
+      "tier": "T2",
+      "verification_status": "secondary",
+      "category": "ai-for-business",
+      "bd_actionability": "MEDIUM-HIGH",
+      "key_claims": [
+        "Agents behind internal expectations per Zuckerberg",
+        "Capex maintained at $145B",
+        "Benefits expected in 3–6 months",
+        "10% layoffs, 7,000 transfers",
+        "No employee data in AI training (CTO statement)"
+      ],
+      "caveats": [
+        "Based on Reuters recording, not public statement",
+        "Recording not published in full"
+      ]
+    },
+    {
+      "title": "Mistral Releases Leanstral 1.5: Free Apache-2.0 Formal Verification Model",
+      "date": "2026-07-02",
+      "source_url": "https://mistral.ai/news/leanstral-1-5/",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "model-release",
+      "bd_actionability": "MEDIUM",
+      "key_claims": [
+        "119B total / 6B active sparse MoE",
+        "100% miniF2F (vendor benchmark)",
+        "587/672 PutnamBench",
+        "Free API endpoint: leanstral-1-5",
+        "~$4/problem vendor-estimated cost",
+        "Apache-2.0 license"
+      ],
+      "caveats": [
+        "Vendor-reported benchmarks",
+        "Benchmark contamination not checked"
+      ]
+    },
+    {
+      "title": "Crunchbase H1 2026: Global VC Reaches $510B Record, AI Captures 70%+ of Q2",
+      "date": "2026-07-02",
+      "source_url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/",
+      "tier": "T2",
+      "verification_status": "verified",
+      "category": "ai-for-business",
+      "bd_actionability": "LOW",
+      "key_claims": [
+        "$510B total H1 2026 VC investment",
+        "AI >70% of Q2 capital",
+        "OpenAI+Anthropic combined: $217B (43% of all startup funding)",
+        "Anthropic post-money Series H: $965B"
+      ],
+      "caveats": [
+        "Disclosed rounds only; actual deployment may differ",
+        "Crunchbase methodology based on publicly reported rounds"
+      ]
+    },
+    {
+      "title": "Guardian Investigation: OpenAI Never Visited Stargate UK Flagship Site",
+      "date": "2026-07-04",
+      "source_url": "https://thenextweb.com/news/openai-apparently-never-visited-the-site-of-its-flagship-uk-ai-project",
+      "tier": "T1",
+      "verification_status": "verified",
+      "category": "ai-for-business",
+      "bd_actionability": "LOW",
+      "key_claims": [
+        "No planning filings for Cobalt Park",
+        "No documented site visits by OpenAI",
+        "Project paused April 2026",
+        "Nscale redirected €695M to Portugal",
+        "DSIT not auditing commitments"
+      ],
+      "caveats": [
+        "Guardian investigation cited via The Next Web; Guardian primary not directly fetched"
+      ]
+    }
+  ],
+  "dropped_count": 16,
+  "dropped_summary": [
+    "GPT-5.6 Cerebras — no confirmed launch date in window",
+    "Meta Watermelon — no published benchmark methodology (rumor)",
+    "Grok 5 delay — single unverified source",
+    "Claude Science — covered July 1 bulletin",
+    "SpaceX/Cursor — outside window (June 16)",
+    "White House voluntary framework — no formal document confirmed in window",
+    "OpenAI Orion-2 leak — source deleted, no corroboration",
+    "Hugging Face SmolAgent 2.0 — internal refactor only, no new capabilities",
+    "Cohere Command R3 pricing — primary page 403, secondary contradictory",
+    "LangChain v0.4 GA — no breaking changes or new agent capabilities",
+    "Windsurf Cascade Context 200k — repost of June 20 announcement",
+    "Together AI pricing update — primary source not found",
+    "EU AI Act Article 6 memo — EDPB page 404, could not verify",
+    "SambaNova Cloud beta — T4 source only, vendor benchmarks unverifiable",
+    "Perplexity AI Enterprise GA — outside window (June 28)",
+    "Qdrant v1.12 hybrid search — no meaningful capability change"
+  ]
+}
