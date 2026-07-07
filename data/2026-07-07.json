@@ -1,0 +1,299 @@
+{
+  "run_date": "2026-07-07",
+  "period_strict_start": "2026-07-04",
+  "period_strict_end": "2026-07-07",
+  "period_used_start": "2026-07-04",
+  "period_used_end": "2026-07-07",
+  "window_note": "Strict 72h window (July 4–7) used; 6 verified items above bar, no expansion required (threshold is ≤5).",
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 21,
+  "items_published": 6,
+  "items_dropped": 15,
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "sources_count": 14,
+  "exploration_pct": 33,
+  "categories": [
+    "dev-tools",
+    "model-release",
+    "ai-for-business",
+    "policy-regulation",
+    "workflow-automation",
+    "research-papers"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Alibaba Bans Claude Code Effective July 10 Over Hidden China-Detection Code",
+      "date": "2026-07-04",
+      "effective_date": "2026-07-10",
+      "category": "dev-tools",
+      "secondary_category": "ai-for-business",
+      "source_url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+      "cross_references": [
+        "https://www.scmp.com/tech/big-tech/article/3359375/",
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code",
+        "https://the-decoder.com/claude-codes-complicated-china-problem"
+      ],
+      "tier": "T2",
+      "verification": "secondary",
+      "bd_actionability": "HIGH",
+      "key_claims": [
+        "Obfuscated code present since v2.1.91 (April 2, 2026) — Unicode substitution in system prompts to tag Chinese users silently",
+        "Anthropic engineer Thariq Shihipar confirmed removal PR merged July 1",
+        "~25,000 fraudulent accounts, 28.8M exchanges attributed to Qwen-linked operators (April 22–June 5)",
+        "Alibaba classified Claude Code as high-risk; all employees to uninstall by July 10, replace with Qoder",
+        "No official Alibaba written statement — multiple independent outlets including TechCrunch, SCMP, Tom's Hardware"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Fable 5 Exits Subscriptions July 7, Moves to $10/$50 Per Million Tokens",
+      "date": "2026-07-07",
+      "category": "model-release",
+      "secondary_category": "dev-tools",
+      "source_url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "cross_references": [
+        "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/",
+        "https://www.techtimes.com/articles/319767/20260706/fable-5-subscription-ends-tomorrow-per-token-costs-who-gets-hit-hardest.htm"
+      ],
+      "tier": "T2",
+      "verification": "verified",
+      "bd_actionability": "HIGH",
+      "coi": "Source is Anthropic; descriptive pricing claim, not capability claim",
+      "key_claims": [
+        "$10/$50 per million input/output tokens effective July 7",
+        "Double Opus 4.8 pricing ($5/$25 per million tokens)",
+        "Affects Pro, Max, Team, and Enterprise subscription tiers",
+        "Temporary change — returns to subscriptions when capacity allows",
+        "Returned to global availability July 1 after US export control lift; six-day free window now closed"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Alberta Government Scans 466M Lines in 20 Hours with 50 Claude Agents",
+      "date": "2026-07-06",
+      "category": "ai-for-business",
+      "secondary_category": "dev-tools",
+      "source_url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
+      "cross_references": [
+        "https://reddeeradvocate.com/2026/07/06/alberta-uses-ai-to-overhaul-aging-public-service-tech/",
+        "https://nateglubish.substack.com/p/inside-albertas-ai-powered-cybersecurity"
+      ],
+      "tier": "T2",
+      "verification": "verified",
+      "bd_actionability": "HIGH",
+      "coi": "Anthropic case study about their own product; verified via independent local media coverage",
+      "key_claims": [
+        "~50 Claude Code agents in parallel",
+        "466 million lines of code across 1,280 applications and 3,400 repositories",
+        "Scan completed in 20 hours vs estimated 6.5-year traditional manual approach",
+        "Agents flagged vulnerabilities with file and line citations, generated patches, wrote automated tests",
+        "One 25-year-old Java application rebuilt in 4-5 days",
+        "All fixes reviewed and approved by government engineers before shipping",
+        "Alberta published technical white papers for other governments to replicate"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "China's Interim Measures for AI Anthropomorphic Services Effective July 15",
+      "date": "2026-07-15",
+      "primary_date": "2026-04-10",
+      "coverage_date": "2026-07-04",
+      "category": "policy-regulation",
+      "source_url": "https://www.chinalawtranslate.com/en/chatbot-measures-draft/",
+      "primary_reg": "Cyberspace Administration of China + NDRC, MIIT, MPS, SAMR — promulgated 2026-04-10",
+      "cross_references": [
+        "https://www.twobirds.com/en/insights/2026/china/china's-new-regulations-on-ai-anthropomorphic-interactive-services",
+        "https://www.hunton.com/privacy-and-cybersecurity-law-blog/chinas-first-regulatory-framework-for-virtual-companions"
+      ],
+      "tier": "T1",
+      "verification": "verified",
+      "bd_actionability": "MEDIUM",
+      "key_claims": [
+        "Promulgated April 10, effective July 15 — co-issued by five agencies",
+        "Targets AI services simulating personality traits and continuous emotional interaction; standard chatbots explicitly excluded",
+        "Prohibits emotional manipulation inducing unreasonable decisions, virtual companion/relative services for minors, promotion of self-harm",
+        "Compliance requires security assessments for services with >1M registered users or >100K MAU",
+        "ByteDance Doubao disabling agent functionality July 15; user data deleted after October 15",
+        "Western providers (Claude, GPT, Grok) face no equivalent restriction under this regulation"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Tesla Robotaxi Launches in Miami, No Safety Monitor; NHTSA Probe at Final Stage",
+      "date": "2026-07-03",
+      "coverage_date": "2026-07-04",
+      "category": "workflow-automation",
+      "source_url": "https://www.notateslaapp.com/news/4394/tesla-launches-unsupervised-robotaxi-rides-in-miami",
+      "cross_references": [
+        "https://www.teslarati.com/tesla-expands-robotaxi-florida-third-state-autonomy/",
+        "https://www.techtimes.com/articles/319711/20260704/tesla-robotaxi-arrives-miami-floridas-rain-hardest-test-yet-camera-only-fsd.htm"
+      ],
+      "tier": "T2-T3",
+      "verification": "secondary",
+      "bd_actionability": "MEDIUM",
+      "key_claims": [
+        "Fifth city deployment — first outside Texas and California",
+        "No in-car safety monitor; remote monitoring only",
+        "FSD v13 camera-only sensing (no lidar) in tropical climate with sudden downpours and sun glare",
+        "NHTSA escalated to engineering analysis — final step before agency can seek recall",
+        "Access via Robotaxi iOS/Android app + waitlist"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "SWE-Together Benchmark: Claude Opus 4.8 Leads Multi-Turn Agentic Coding",
+      "date": "2026-06-29",
+      "coverage_date": "2026-07-07",
+      "category": "research-papers",
+      "secondary_category": "dev-tools",
+      "source_url": "https://arxiv.org/abs/2606.29957",
+      "authors": "Wu, Zhao, Li, Lee, Zhu, Wu, Yu, Li, Zhang, Fan, Li",
+      "cross_references": [
+        "https://aitoolsrecap.com/Blog/ai-news-july-7-2026",
+        "https://benchlm.ai/benchmarks/sweVerified"
+      ],
+      "tier": "T2",
+      "verification": "secondary",
+      "bd_actionability": "MEDIUM",
+      "tier_nuance": "arXiv preprint, not peer-reviewed; upgrade to T1 on conference acceptance",
+      "key_claims": [
+        "109 repository-level tasks from 11,260 real user-agent sessions",
+        "Measures both task success rate and corrective feedback turns (steering burden)",
+        "Claude Opus 4.8: 63% pass@1 with lowest steering burden across tested models",
+        "Claude and GPT-5.5 tie on SWE-bench Verified (88.6% vs 88.7%)",
+        "Specific frontier models tested not disclosed in abstract; GPT-5.6 Sol and Fable 5 may not be included"
+      ]
+    }
+  ],
+  "dropped": [
+    {
+      "title": "xAI Voice Agent Builder beta",
+      "source": "x.ai/news/grok-voice-agent-builder",
+      "reason": "July 1 launch — in prior bulletin's coverage period (July 1-6); outside strict July 4-7 window"
+    },
+    {
+      "title": "SnapLogic MCP Builder GA",
+      "source": "globenewswire.com 2026-07-01",
+      "reason": "July 1 launch — outside strict window; low BD actionability vs published items"
+    },
+    {
+      "title": "XBTFX MCP Server for trading",
+      "source": "cryptopotato.com 2026-07-01",
+      "reason": "July 1 launch — outside strict window; niche (crypto/CFD trading workflows)"
+    },
+    {
+      "title": "Grok 4.5 private beta",
+      "source": "Elon Musk X post 2026-06-28",
+      "reason": "Announcement June 28 — outside window; already dropped by prior bulletin"
+    },
+    {
+      "title": "Grok Imagine 'done'",
+      "source": "basenor.com citing July 5 Musk post",
+      "reason": "Primary tweet not independently verifiable; underlying product (Grok Imagine) launched June 16, covered in prior windows"
+    },
+    {
+      "title": "GPT-5.6 Sol government-gated status update",
+      "source": "aitoolsrecap July 7",
+      "reason": "Status update only — no new development in window; Sol covered in prior bulletin"
+    },
+    {
+      "title": "Elon Musk AI device prototype",
+      "source": "aitoolsrecap July 7",
+      "reason": "No specifications, pricing, or confirmed capabilities — speculative prototype demo to investors"
+    },
+    {
+      "title": "OpenAI GeneBench-Pro",
+      "source": "resultsense.com 2026-07-01",
+      "reason": "June 30 primary; already dropped by prior bulletin"
+    },
+    {
+      "title": "Mistral CEO confirms open-weight model",
+      "source": "TechCrunch 2026-07-04",
+      "reason": "CEO statement without model name, specs, benchmark, or confirmed date — T3, no actionable detail"
+    },
+    {
+      "title": "Grok Video 1.5 benchmarks",
+      "source": "aitoolsrecap 2026-07-06",
+      "reason": "Product launched June 16, outside strict window; covered in prior periods"
+    },
+    {
+      "title": "Together AI $800M Series C",
+      "source": "Various 2026-07-01",
+      "reason": "Outside window; venture funding, low actionability for non-investor BD audience"
+    },
+    {
+      "title": "TwelveLabs $100M Series B",
+      "source": "Various 2026-07-01",
+      "reason": "Outside window; early-stage, no production product in scope"
+    },
+    {
+      "title": "Claude Enterprise admin analytics",
+      "source": "claude.com/blog 2026-07-02",
+      "reason": "July 2 publication — outside strict 72h window (July 4-7); in prior bulletin's coverage period but missed"
+    },
+    {
+      "title": "Gemini 3.5 Pro targeting July 17",
+      "source": "Multiple 2026-07",
+      "reason": "Not launched in window; status tracking only"
+    },
+    {
+      "title": "Claude Science / drug discovery",
+      "source": "anthropic.com 2026-06-30",
+      "reason": "June 30 primary; already dropped by prior bulletin"
+    }
+  ],
+  "search_log": [
+    {"query": "AI news announcement July 7 2026", "source_type": "registry", "yield": "9 results, 4 high-relevance"},
+    {"query": "Anthropic Claude news July 2026", "source_type": "registry", "yield": "10 results, 6 high-relevance"},
+    {"query": "OpenAI GPT news announcement July 2026", "source_type": "registry", "yield": "10 results, 4 high-relevance"},
+    {"query": "Google Gemini DeepMind news July 2026", "source_type": "registry", "yield": "8 results, 3 high-relevance"},
+    {"query": "fetch anthropic.com/news", "source_type": "registry", "yield": "July 6 case study confirmed"},
+    {"query": "xAI Grok model release July 2026", "source_type": "registry", "yield": "10 results, 4 high-relevance"},
+    {"query": "White House AI voluntary standards July 7 2026", "source_type": "registry", "yield": "10 results, 2 high-relevance"},
+    {"query": "agent framework MCP server launch July 2026", "source_type": "registry", "yield": "10 results, 4 high-relevance"},
+    {"query": "fetch buildfastwithai.com July 4 2026", "source_type": "exploratory", "yield": "15 items catalogued"},
+    {"query": "GPT-5.6 Sol public launch July 7 2026", "source_type": "registry", "yield": "10 results, 3 high-relevance"},
+    {"query": "Cursor Claude Code dev tools update July 2026", "source_type": "registry", "yield": "10 results, 2 high-relevance"},
+    {"query": "Meta Llama AI news July 2026", "source_type": "registry", "yield": "8 results, 2 high-relevance"},
+    {"query": "fetch aitoolsrecap.com July 7", "source_type": "exploratory", "yield": "4 items (LongCat, SWE-Together, GPT-5.6, Musk device)"},
+    {"query": "fetch aitoolsrecap.com July 6", "source_type": "exploratory", "yield": "4 items (Grok 4.5, China rules, Tesla, Grok Video)"},
+    {"query": "fetch aitoolsrecap.com July 5", "source_type": "exploratory", "yield": "4 items (Claude Science, GPT-5.6, Grok 5, GeneBench)"},
+    {"query": "fetch anthropic.com/news/higher-limits-spacex", "source_type": "registry", "yield": "May 2026 item; outside window"},
+    {"query": "fetch x.ai/news/grok-voice-agent-builder", "source_type": "registry", "yield": "HTTP 403"},
+    {"query": "Claude Science workbench drug discovery July 5 2026", "source_type": "registry", "yield": "June 30 primary confirmed"},
+    {"query": "SWE-Together benchmark Claude Opus 4.8 July 2026", "source_type": "registry", "yield": "arXiv 2606.29957 confirmed"},
+    {"query": "site:x.com Elon Musk Grok Imagine done July 5 2026", "source_type": "exploratory", "yield": "tweet not indexed"},
+    {"query": "GitHub trending AI repositories July 2026", "source_type": "exploratory", "yield": "OpenClaw, Alibaba page-agent trending"},
+    {"query": "AI startup announcement funding July 7 2026", "source_type": "exploratory", "yield": "Together AI, TwelveLabs, Mistral"},
+    {"query": "Grok Video 1.5 xAI launch July 2026", "source_type": "registry", "yield": "June 16 GA confirmed; outside window"},
+    {"query": "China anthropomorphic AI rules July 15 2026", "source_type": "exploratory", "yield": "CAC regulation confirmed"},
+    {"query": "White House voluntary AI standards published July 7 2026", "source_type": "registry", "yield": "Not published as of research cutoff"},
+    {"query": "AI Indonesia SEA July 2026", "source_type": "exploratory", "yield": "World AI Show Jakarta July 7-8; no in-window product launches"},
+    {"query": "SWE-Together benchmark multi-turn primary source", "source_type": "registry", "yield": "arXiv 2606.29957 confirmed"},
+    {"query": "Tesla robotaxi Miami primary source July 2026", "source_type": "registry", "yield": "notateslaapp, teslarati, multiple confirmed"},
+    {"query": "Mistral open-weight model July 2026", "source_type": "exploratory", "yield": "CEO statement, no specs; T3"},
+    {"query": "site:hacker news AI July 2026", "source_type": "exploratory", "yield": "AI security themes, Fable 5 export control context"},
+    {"query": "Grok 4.5 private beta xAI primary July 2026", "source_type": "registry", "yield": "June 28 announcement; outside window"},
+    {"query": "site:x.com AI announcement July 5 6 7 2026", "source_type": "exploratory", "yield": "Alibaba ban discovery via X thread"},
+    {"query": "Anthropic Alberta case study July 6 2026", "source_type": "registry", "yield": "anthropic.com/news/alberta-government confirmed"},
+    {"query": "fetch arxiv.org/abs/2606.29957", "source_type": "registry", "yield": "paper confirmed, June 29 submission"},
+    {"query": "Cursor AI 30 percent PRs auto-submitted July 2026", "source_type": "exploratory", "yield": "February 2026 data; outside window"},
+    {"query": "Alibaba ban Claude Code employees July 10 2026", "source_type": "registry", "yield": "TechCrunch, SCMP, Tom's Hardware confirmed"},
+    {"query": "OpenAI GeneBench-Pro July 2026", "source_type": "registry", "yield": "June 30 primary; prior bulletin dropped"},
+    {"query": "fetch anthropic.com/news/alberta-government-claude-cybersecurity", "source_type": "registry", "yield": "confirmed, July 6"},
+    {"query": "Gemini 3.5 Pro July 17 2026", "source_type": "exploratory", "yield": "targeting mid-July; not launched in window"},
+    {"query": "fetch x.ai/news/grok-voice-agent-builder (retry)", "source_type": "registry", "yield": "HTTP 403"},
+    {"query": "Alibaba Claude Code China detection backdoor Anthropic response", "source_type": "adversarial", "yield": "full story confirmed"},
+    {"query": "xAI Voice Agent Builder beta launch July 2026", "source_type": "registry", "yield": "x.ai/news/grok-voice-agent-builder; July 1 launch"},
+    {"query": "Anthropic Fable 5 usage credits July 7 official", "source_type": "registry", "yield": "anthropic.com/news/redeploying-fable-5 confirmed"},
+    {"query": "Claude Enterprise admin analytics July 3 2026", "source_type": "registry", "yield": "claude.com/blog July 2 post confirmed"},
+    {"query": "MCP server SnapLogic XBTFX July 2026", "source_type": "exploratory", "yield": "July 1 launches; outside window"},
+    {"query": "productivity AI tool July 5 6 7 2026", "source_type": "exploratory", "yield": "no new items above bar"}
+  ]
+}
