@@ -1,0 +1,297 @@
+{
+  "run_date": "2026-07-08",
+  "period_strict_start": "2026-07-05",
+  "period_strict_end": "2026-07-08",
+  "period_used_start": "2026-07-03",
+  "period_used_end": "2026-07-08",
+  "window_note": "Strict 72h window (Jul 5–8) yielded only 4 strongly verified items, below the 5-item threshold. Expanded to 5-day window (Jul 3–8) per skill mandatory rule.",
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 22,
+  "items_published": 8,
+  "items_dropped": 14,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 4,
+    "rumor": 0
+  },
+  "sources_count": 25,
+  "exploration_pct": 34,
+  "categories": [
+    "workflow-automation",
+    "productivity-ai",
+    "dev-tools",
+    "model-release",
+    "ai-for-business",
+    "research-papers",
+    "policy-regulation"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Anthropic Launches Cowork for Real-Time Team Collaboration with Claude",
+      "date": "2026-07-07",
+      "category": "workflow-automation",
+      "secondary_category": "productivity-ai",
+      "source_url": "https://claude.com/blog/cowork-web-mobile",
+      "tier": "T2",
+      "verification": "verified",
+      "bd_actionability": "HIGH",
+      "coi": "Anthropic primary blog for own product — descriptive availability claim, not capability benchmark",
+      "key_claims": [
+        "Cowork expanded to web and mobile July 7 2026",
+        "Multiple users can join shared thread and direct Claude in real time",
+        "Available on Pro, Max, Team, and Enterprise plans",
+        "Session context persists across handoffs and devices"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "OpenAI Ships gpt-realtime-2.1 and gpt-realtime-2.1-mini to API",
+      "date": "2026-07-06",
+      "category": "dev-tools",
+      "source_url": "https://community.openai.com/t/new-realtime-models-on-the-api-gpt-realtime-2-1-and-gpt-realtime-2-1-mini/1385896",
+      "source_note": "OpenAI official community forum post — T2 for feature availability claim",
+      "tier": "T2",
+      "verification": "verified",
+      "bd_actionability": "HIGH",
+      "key_claims": [
+        "gpt-realtime-2.1 and gpt-realtime-2.1-mini released to Realtime API July 6 2026",
+        "Lower voice turn latency than gpt-realtime-2.0-preview",
+        "Improved instruction following",
+        "Mini variant targets cost-sensitive deployments",
+        "Both models in general availability"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sysdig Discovers JADEPUFFER: AI Agent Automates End-to-End Ransomware Attack",
+      "date": "2026-07-01",
+      "date_note": "Approximate — Sysdig primary (HTTP 503). Secondary sources place disclosure Jul 1–3 2026",
+      "category": "ai-for-business",
+      "secondary_category": "research-papers",
+      "source_url": "https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion",
+      "source_note": "HTTP 503 during run; verified through four independent security outlets",
+      "cross_references": [
+        "https://hackread.com (Jul 2 2026)",
+        "https://securityaffairs.com (Jul 3 2026)",
+        "https://www.darkreading.com",
+        "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/"
+      ],
+      "tier": "T2",
+      "verification": "secondary",
+      "bd_actionability": "HIGH",
+      "key_claims": [
+        "JADEPUFFER deploys an AI agent to automate database attack chain end-to-end",
+        "Agent autonomously enumerates accessible PostgreSQL and MongoDB instances",
+        "Exfiltrates records, issues ransom demands, adapts strategy on credential failure",
+        "No human-in-the-loop direction at attack execution stage",
+        "Sysdig Threat Research Team disclosure; four independent security outlets confirmed"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Z.ai Releases ZCode Coding Assistant",
+      "date": "2026-07-04",
+      "primary_date": "2026-07-02",
+      "category": "dev-tools",
+      "source_url": "https://techtimes.com/articles/2026/07/04/z-ai-zcode.html",
+      "source_note": "VentureBeat primary (HTTP 403); TechTimes used as secondary; Z.ai API docs cross-referenced",
+      "tier": "T2",
+      "verification": "secondary",
+      "bd_actionability": "MEDIUM",
+      "key_claims": [
+        "Z.ai (formerly Zhipu AI) released ZCode coding assistant ~July 2 2026",
+        "English-language trade coverage appeared July 4",
+        "Available via Z.ai API",
+        "Vendor-claimed competitive HumanEval performance — not independently replicated this run"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Meituan Open-Sources LongCat-2.0 Long-Context Model",
+      "date": "2026-06-30",
+      "coverage_date": "2026-07-05",
+      "date_note": "Primary GitHub release June 30; first broad English coverage July 5–7. Boundary case — included because item crossed discovery threshold within expanded window.",
+      "category": "model-release",
+      "source_url": "https://github.com/meituan-longcat/LongCat-2.0",
+      "cross_references": [
+        "MarkTechPost (Jul 5–7 2026)",
+        "Meituan technical blog (Chinese, Jun 30 2026)"
+      ],
+      "tier": "T2",
+      "verification": "secondary",
+      "bd_actionability": "MEDIUM",
+      "key_claims": [
+        "LongCat-2.0 released on GitHub June 30 2026 by Meituan",
+        "Targets long-context document understanding",
+        "Weights and code publicly available under permissive license",
+        "Context window extent is vendor-stated; no independent evaluation published at time of writing"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "xAI Rebrands as SpaceXAI",
+      "date": "2026-07-06",
+      "category": "ai-for-business",
+      "source_url": "https://basenor.com/xai-rebrands-to-spacexai/",
+      "source_note": "x.ai primary (HTTP 403); downgraded to T3/secondary",
+      "cross_references": [
+        "AndroidHeadlines (HTTP 403 during run)",
+        "The Motley Fool",
+        "Additional outlets (4+ consistent reports)"
+      ],
+      "tier": "T3",
+      "verification": "secondary",
+      "bd_actionability": "LOW",
+      "key_claims": [
+        "xAI announced rebrand to SpaceXAI on or around July 6 2026",
+        "Four independent outlets reported with consistent details",
+        "No change to Grok API endpoints or pricing reported",
+        "x.ai primary URL inaccessible (HTTP 403) during run"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Anthropic Signs $19B Power and Data Center Lease with TeraWulf",
+      "date": "2026-07-06",
+      "category": "ai-for-business",
+      "source_url": "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-long-term-power-agreement-with-anthropic",
+      "tier": "T2",
+      "verification": "verified",
+      "bd_actionability": "MEDIUM",
+      "key_claims": [
+        "Long-term power and data center agreement valued at ~$19 billion",
+        "Announced via TeraWulf investor relations July 6 2026",
+        "Provides Anthropic with dedicated compute and power infrastructure",
+        "No model release, API change, or capacity increase timeline tied to announcement"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "UN AI for Good Commission Convenes with Tech CEOs and Heads of State",
+      "date": "2026-07-01",
+      "meeting_dates": "2026-07-07 to 2026-07-08",
+      "category": "policy-regulation",
+      "source_url": "https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders",
+      "tier": "T2",
+      "verification": "verified",
+      "bd_actionability": "LOW",
+      "key_claims": [
+        "UN convened AI for Good commission with technology CEOs and heads of state",
+        "Axios reporting dated July 1; commission meetings July 7–8 2026",
+        "Aims to develop governance frameworks emphasizing developing-country access",
+        "No binding agreements or enforcement mechanisms announced within window"
+      ]
+    }
+  ],
+  "dropped": [
+    {
+      "title": "Claude Code auto-mode / manual permission mode",
+      "source": "claude.com/blog",
+      "reason": "Traced to Mar 24 2026 publication — outside window; not a July announcement"
+    },
+    {
+      "title": "Anthropic $47B ARR milestone",
+      "source": "Financial press (May 2026)",
+      "reason": "Traced to May 2026 figure; no new July announcement found"
+    },
+    {
+      "title": "White House voluntary AI framework (implementation)",
+      "source": "White House (EO Jun 2 2026)",
+      "reason": "Implementation document expected week of Jul 7 but not confirmed published within window"
+    },
+    {
+      "title": "xAI Voice Agent Builder (Grok Voice API)",
+      "source": "x.ai/news/grok-voice-agent-builder",
+      "reason": "Primary URL returned HTTP 403; insufficient secondary verification for capability claims"
+    },
+    {
+      "title": "GPT-5.6 Sol GA status",
+      "source": "OpenAI community forum",
+      "reason": "Could not confirm GA date within Jul 3–8 window; preview-only status unresolved"
+    },
+    {
+      "title": "Gemini 2.5 Pro performance update",
+      "source": "Google DeepMind blog",
+      "reason": "Substantive coverage dated Jun 17–24; outside expanded window"
+    },
+    {
+      "title": "Meta AI social integration expansion",
+      "source": "Meta Newsroom",
+      "reason": "Last substantive update May 2026; no Jul 3–8 announcement confirmed"
+    },
+    {
+      "title": "Perplexity AI Comet browser update",
+      "source": "TechCrunch (single source)",
+      "reason": "Single-source T4 report; no primary confirmation or corroborating secondary in window"
+    },
+    {
+      "title": "Mistral Medium 3 pricing revision",
+      "source": "Mistral changelog",
+      "reason": "No pricing change confirmed Jul 3–8; last confirmed change pre-dates window"
+    },
+    {
+      "title": "Cohere Command R+ API update",
+      "source": "Cohere changelog",
+      "reason": "No Jul 3–8 update confirmed; last change pre-dates window"
+    },
+    {
+      "title": "EU AI Act high-risk system registry (filing deadline)",
+      "source": "EU Official Journal",
+      "reason": "Filing deadline Jul 2; registry data not publicly searchable at time of run"
+    },
+    {
+      "title": "AI-generated content hiring discrimination lawsuit",
+      "source": "Bloomberg / Reuters leads",
+      "reason": "T4 only at time of review; primary court filings not accessible in window"
+    },
+    {
+      "title": "Nvidia H200 compute supply allocation",
+      "source": "Supply chain press",
+      "reason": "Multiple conflicting T3–T4 reports; no T1–T2 primary in window"
+    },
+    {
+      "title": "OpenAI o3 reasoning benchmark follow-up papers",
+      "source": "arXiv (under review)",
+      "reason": "Papers listed as under review; no accepted or published paper in window"
+    }
+  ],
+  "search_log": [
+    {"query": "anthropic cowork web mobile launch july 2026", "source_type": "registry", "yield": "6 results, 3 high-relevance"},
+    {"query": "claude.com/blog/cowork-web-mobile july 7 2026", "source_type": "registry", "yield": "4 results, 3 high-relevance"},
+    {"query": "openai realtime api 2.1 july 2026", "source_type": "registry", "yield": "5 results, 4 high-relevance"},
+    {"query": "gpt-realtime-2.1 gpt-realtime-2.1-mini release", "source_type": "registry", "yield": "4 results, 3 high-relevance"},
+    {"query": "JADEPUFFER sysdig agentic ransomware 2026", "source_type": "registry", "yield": "8 results, 5 high-relevance"},
+    {"query": "jadepuffer ransomware AI agent postgresql mongodb", "source_type": "registry", "yield": "5 results, 4 high-relevance"},
+    {"query": "agentic ransomware database extortion july 2026", "source_type": "registry", "yield": "7 results, 3 high-relevance"},
+    {"query": "Z.ai ZCode coding assistant launch july 2026", "source_type": "registry", "yield": "5 results, 3 high-relevance"},
+    {"query": "Zhipu AI ZCode coding model release 2026", "source_type": "registry", "yield": "4 results, 2 high-relevance"},
+    {"query": "LongCat 2.0 Meituan open source july 2026", "source_type": "registry", "yield": "6 results, 4 high-relevance"},
+    {"query": "meituan longcat 2.0 github long-context model weights", "source_type": "registry", "yield": "5 results, 3 high-relevance"},
+    {"query": "xAI SpaceXAI rebrand announcement july 2026", "source_type": "registry", "yield": "7 results, 5 high-relevance"},
+    {"query": "xai grok spacexai rebrand july 6 2026", "source_type": "registry", "yield": "5 results, 3 high-relevance"},
+    {"query": "anthropic terawulf power agreement $19 billion", "source_type": "registry", "yield": "5 results, 4 high-relevance"},
+    {"query": "terawulf anthropic investor relations july 6 2026", "source_type": "registry", "yield": "4 results, 4 high-relevance"},
+    {"query": "UN AI for good commission july 2026 CEOs heads of state", "source_type": "registry", "yield": "6 results, 3 high-relevance"},
+    {"query": "united nations artificial intelligence commission july 7 2026", "source_type": "registry", "yield": "5 results, 2 high-relevance"},
+    {"query": "AI news product launch july 3 8 2026", "source_type": "registry", "yield": "8 results, 3 high-relevance"},
+    {"query": "fetch claude.com/blog/cowork-web-mobile", "source_type": "registry", "yield": "confirmed July 7 2026"},
+    {"query": "fetch community.openai.com realtime-2.1 thread", "source_type": "registry", "yield": "confirmed July 6 2026"},
+    {"query": "fetch sysdig.com/blog/jadepuffer", "source_type": "registry", "yield": "HTTP 503"},
+    {"query": "fetch hackread.com jadepuffer july 2 2026", "source_type": "registry", "yield": "confirmed secondary Jul 2"},
+    {"query": "fetch investors.terawulf.com press-releases detail 142", "source_type": "registry", "yield": "confirmed $19B July 6 2026"},
+    {"query": "mcp ecosystem new server release july 2026", "source_type": "exploratory", "yield": "4 results, 0 high-relevance — thin category confirmed"},
+    {"query": "agent framework new release launch july 2026", "source_type": "exploratory", "yield": "4 results, 1 high-relevance — no standalone framework in window"},
+    {"query": "workflow automation tool AI launch july 2026", "source_type": "exploratory", "yield": "5 results, 2 high-relevance"},
+    {"query": "claude code auto mode permission update july 2026", "source_type": "exploratory", "yield": "6 results, 2 high-relevance — traced to Mar 24 2026"},
+    {"query": "anthropic revenue ARR $47 billion 2026", "source_type": "exploratory", "yield": "4 results, 1 high-relevance — traced to May 2026"},
+    {"query": "white house AI voluntary framework implementation july 7 2026", "source_type": "exploratory", "yield": "5 results, 2 high-relevance — not confirmed published"},
+    {"query": "xai grok voice agent builder API july 2026 GA", "source_type": "exploratory", "yield": "4 results, 1 high-relevance — x.ai 403"},
+    {"query": "GPT-5.6 sol general availability july 2026", "source_type": "exploratory", "yield": "5 results, 2 high-relevance — preview status unresolved"},
+    {"query": "SEA southeast asia AI product launch july 2026", "source_type": "exploratory", "yield": "4 results, 0 high-relevance — geo gap confirmed"},
+    {"query": "openai model announcement july 3 8 2026", "source_type": "adversarial", "yield": "6 results, 2 high-relevance — no additional OpenAI items found"},
+    {"query": "anthropic model update claude july 2026 new", "source_type": "adversarial", "yield": "5 results, 2 high-relevance — no additional Anthropic model items"},
+    {"query": "google deepmind gemini new release july 2026", "source_type": "adversarial", "yield": "6 results, 1 high-relevance — Jun 17-24 coverage, outside window"}
+  ]
+}
