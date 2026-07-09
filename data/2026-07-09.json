@@ -1,0 +1,222 @@
+{
+  "run_date": "2026-07-09",
+  "period_start": "2026-07-06",
+  "period_end": "2026-07-09",
+  "timeframe_hours": 72,
+  "window_expanded": false,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 24,
+  "items_published": 6,
+  "items_dropped": 18,
+  "exploration_pct": 48,
+  "sources_count": 26,
+  "verification_summary": {
+    "verified": 2,
+    "secondary": 4,
+    "rumor": 0
+  },
+  "categories_covered": [
+    "model-release",
+    "dev-tools",
+    "productivity-ai",
+    "workflow-automation",
+    "ai-for-business",
+    "policy-regulation"
+  ],
+  "categories_thin": [
+    "mcp-ecosystem",
+    "agent-framework",
+    "research-papers"
+  ],
+  "items": [
+    {
+      "id": "gpt56-public-launch",
+      "title": "OpenAI Ships GPT-5.6 Sol, Terra, and Luna to the Public",
+      "date": "2026-07-09",
+      "categories": ["model-release"],
+      "source_url": "https://www.neowin.net/news/openai-to-release-gpt-56-sol-terra-and-luna-on-july-9/",
+      "source_tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "primary_url_status": "HTTP 403 on openai.com/index/previewing-gpt-5-6-sol/",
+      "cross_references": [
+        "https://www.axios.com/2026/07/08/openai-gpt-trump-ban-lifted",
+        "https://www.pymnts.com/news/artificial-intelligence/2026/openai-readies-gpt-5-6-launch-as-white-house-lifts-restriction-request/",
+        "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/"
+      ],
+      "key_claims": [
+        { "claim": "Sol: $5/$30 per million input/output tokens", "source": "explainx.ai citing OpenAI", "verified": false },
+        { "claim": "Terra: $2.50/$15; Luna: $1/$6", "source": "explainx.ai citing OpenAI", "verified": false },
+        { "claim": "Public launch July 9", "source": "Neowin Jul 8, Axios Jul 8, Engadget, Business Standard", "verified": true },
+        { "claim": "Government testing by Dept of Commerce CISA", "source": "Axios Jul 8", "verified": true }
+      ],
+      "caveats": ["Pricing unconfirmed from OpenAI primary — check platform.openai.com", "OpenAI primary blog returned HTTP 403"]
+    },
+    {
+      "id": "gpt-live-voice",
+      "title": "OpenAI Launches GPT-Live Full-Duplex Voice Models",
+      "date": "2026-07-08",
+      "categories": ["dev-tools", "productivity-ai"],
+      "source_url": "https://www.macrumors.com/2026/07/08/openai-gpt-live-voice/",
+      "source_tier": "T2",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "primary_url_status": "HTTP 403 on openai.com/index/introducing-gpt-live/",
+      "cross_references": [
+        "https://venturebeat.com/technology/openai-launches-gpt-live-a-full-duplex-voice-upgrade-that-lets-chatgpt-talk-more-like-a-person",
+        "https://siliconangle.com/2026/07/08/openai-launches-gpt-live-voice-model-series-ahead-broad-gpt-5-6-release/",
+        "https://www.benzinga.com/markets/private-markets/26/07/60346806/openai-unveils-gpt-live-as-competition-heats-up-around-ai-voice-assistants"
+      ],
+      "key_claims": [
+        { "claim": "Full-duplex architecture: processes input and output simultaneously", "source": "MacRumors, VentureBeat", "verified": true },
+        { "claim": "GPT-Live-1 and mini variants launched", "source": "multiple secondary Jul 8", "verified": true },
+        { "claim": "Delegates complex queries to GPT-5.5 backend", "source": "MacRumors, Benzinga", "verified": true }
+      ],
+      "caveats": ["API pricing not confirmed in secondary sources", "Primary blog HTTP 403"]
+    },
+    {
+      "id": "claude-gov-fedramp",
+      "title": "Anthropic Launches Claude Code and Cowork in Public Beta for Government",
+      "date": "2026-07-07",
+      "categories": ["workflow-automation", "productivity-ai"],
+      "source_url": "https://claude.com/blog/bringing-claude-code-and-claude-cowork-to-government",
+      "source_tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "primary_url_status": "fetched successfully",
+      "key_claims": [
+        { "claim": "FedRAMP High authorized desktop environment", "source": "Anthropic blog Jul 7", "verified": true },
+        { "claim": "SCIM-group-based rate limits and hard spending caps", "source": "Anthropic blog Jul 7", "verified": true },
+        { "claim": "Tamper-evident audit logs for ATO support", "source": "Anthropic blog Jul 7", "verified": true }
+      ]
+    },
+    {
+      "id": "alibaba-ban-claude-code",
+      "title": "Alibaba Bans Claude Code Over Alleged Tracking Code",
+      "date": "2026-07-06",
+      "categories": ["ai-for-business"],
+      "source_url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+      "source_tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "cross_references": [
+        "https://www.cnbc.com/video/2026/07/06/alibaba-bans-claude-code-usage.html",
+        "https://www.scmp.com/tech/big-tech/article/3359375/alibaba-bans-staff-using-claude-code-over-anthropic-spyware-concerns",
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/alibaba-bans-anthropics-claude-code-after-an-alleged-hidden-china-detection-backdoor-is-uncovered-employees-told-to-switch-to-qoder-as-the-rift-between-the-firms-widens"
+      ],
+      "key_claims": [
+        { "claim": "Ban effective July 10, switch to Qoder", "source": "TechCrunch Jul 4, CNBC Jul 6", "verified": true },
+        { "claim": "Code present since version 2.1.91, April 2", "source": "TechCrunch (citing Reddit)", "verified": false },
+        { "claim": "Anthropic described it as anti-abuse experiment from March", "source": "TechCrunch quoting Thariq Shihipar", "verified": true }
+      ],
+      "caveats": ["No official Alibaba press release found", "Tracking behavior technically verified only by single Reddit user (T4 for that specific claim)", "Anthropic confirmed code existed but disputes framing"]
+    },
+    {
+      "id": "illinois-ai-safety-act",
+      "title": "Illinois Signs AI Safety Measures Act with Mandatory Annual Audits",
+      "date": "2026-07-06",
+      "categories": ["policy-regulation"],
+      "source_url": "https://gov-pritzker-newsroom.prezly.com/gov-pritzker-signs-nation-leading-artificial-intelligence-safety-law",
+      "source_tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "cross_references": [
+        "https://capitolnewsillinois.com/news/pritzker-signs-landmark-ai-regulation-bill-that-aims-to-mitigate-risks/",
+        "https://chicago.suntimes.com/politics/2026/07/06/ai-regulations-illinois-law-pritzker-signed",
+        "https://news.wttw.com/2026/07/06/pritzker-signs-landmark-ai-regulation-bill-aims-mitigate-risks"
+      ],
+      "key_claims": [
+        { "claim": "$500M annual revenue threshold for covered entities", "source": "Gov. Pritzker newsroom", "verified": true },
+        { "claim": "Annual independent third-party audits required (first in any US state)", "source": "Gov. Pritzker newsroom, Capitol News Illinois", "verified": true },
+        { "claim": "72h/24h incident reporting requirement", "source": "Capitol News Illinois, ABC7 Chicago", "verified": true },
+        { "claim": "$1M first offense / $3M subsequent civil penalties", "source": "WTTW citing bill text", "verified": true },
+        { "claim": "Effective January 1, 2027", "source": "Gov. Pritzker newsroom", "verified": true }
+      ]
+    },
+    {
+      "id": "gemini35-pro-delay",
+      "title": "Gemini 3.5 Pro Targets July 17 Launch After Architectural Rebuild",
+      "date": "2026-07-08",
+      "categories": ["model-release"],
+      "source_url": "https://www.techtimes.com/articles/319877/20260708/gemini-35-pro-targets-july-17-deepseeks-july-24-deadline-hits-developers-now.htm",
+      "source_tier": "T3",
+      "verification": "secondary",
+      "methodology": "rumor-adjacent",
+      "primary_url_status": "No Google primary found",
+      "cross_references": [
+        "https://hackernoon.com/google-delays-gemini-35-pro-to-july-17-the-strategic-play-behind-the-scrapped-base-model",
+        "https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a",
+        "https://blog.getbind.co/gemini-3-5-pro-slips-to-july-and-four-senior-google-researchers-just-left-for-anthropic/"
+      ],
+      "key_claims": [
+        { "claim": "July 17 target date", "source": "TechTimes, HackerNoon, BigGo (all T3, no Google primary)", "verified": false },
+        { "claim": "2M token context window", "source": "Press reports; Google confirmed 3.5 family at I/O — 2M figure unconfirmed specifically", "verified": false },
+        { "claim": "Architectural rebuild of 2.5 Pro pretraining", "source": "HackerNoon, Bind AI (T3, unnamed sources)", "verified": false }
+      ],
+      "caveats": ["All specifications are press-reported from unnamed sources", "No Google primary found", "July 17 date may prove incorrect"]
+    }
+  ],
+  "dropped_items": [
+    { "title": "Anthropic Cowork web and mobile expansion", "reason": "Already in Jul 8 bulletin" },
+    { "title": "OpenAI gpt-realtime-2.1 / mini", "reason": "Already in Jul 8 bulletin" },
+    { "title": "Sysdig JADEPUFFER ransomware", "reason": "Already in Jul 8 bulletin" },
+    { "title": "Z.ai ZCode coding assistant", "reason": "Already in Jul 8 bulletin" },
+    { "title": "Meituan LongCat-2.0", "reason": "Already in Jul 8 bulletin" },
+    { "title": "xAI SpaceXAI rebrand", "reason": "Already in Jul 8 bulletin" },
+    { "title": "Anthropic $19B TeraWulf lease", "reason": "Already in Jul 8 bulletin" },
+    { "title": "UN AI for Good Commission", "reason": "Already in Jul 8 bulletin" },
+    { "title": "Claude Sonnet 5 as default in Claude Code", "reason": "Primary release June 30 — outside strict 72h window" },
+    { "title": "Anthropic Fable 5 jailbreak severity framework", "reason": "Published July 2 — outside strict 72h window" },
+    { "title": "MCP 2026-07-28 spec release candidate", "reason": "Final spec ships July 28, not yet in window" },
+    { "title": "Apple Safari MCP server", "reason": "July 1 — outside strict 72h window" },
+    { "title": "SnapLogic MCP Builder GA", "reason": "July 1 — outside strict 72h window" },
+    { "title": "Together AI $800M Series C", "reason": "July 1 — outside strict 72h window" },
+    { "title": "Bespoke Labs $40M Series A", "reason": "Low BD-priority; no product launch in window" },
+    { "title": "White House voluntary AI standards framework", "reason": "Implementation docs not confirmed published in Jul 6–9 window" },
+    { "title": "GPT-5.6 preview benchmarks", "reason": "Subsumed by GPT-5.6 launch item" },
+    { "title": "OpenAI Flex processing tier", "reason": "T4 sources only; no primary or T2 confirmation" }
+  ],
+  "search_log": {
+    "total_searches": 23,
+    "exploratory_adversarial": 11,
+    "exploration_pct": 48,
+    "queries": [
+      "Anthropic Claude news announcement July 2026",
+      "OpenAI news product launch July 2026",
+      "Google DeepMind Gemini release July 2026",
+      "AI model release announcement July 7 8 9 2026",
+      "agent framework launch MCP server July 2026",
+      "OpenAI GPT-Live announcement July 8 2026",
+      "Claude for Government FedRAMP launch July 2026",
+      "Claude Microsoft 365 write tools email calendar SharePoint July 2026",
+      "Fable 5 cyber safeguards jailbreak framework Anthropic July 2026",
+      "Alibaba bans Claude Code July 2026",
+      "OpenAI GPT-5.6 Sol broader release July 9 2026",
+      "workflow automation AI agent new product July 7 8 2026",
+      "AI startup funding raise announcement July 2026",
+      "AI Indonesia startup Asia Tenggara July 2026",
+      "github.com trending AI agent repository July 2026",
+      "Claude Sonnet 5 default Claude Code 1M token July 2026",
+      "Gemini 3.5 Pro delay July 17 2026 architectural rebuild",
+      "OpenAI GPT-5.6 White House permission broader release July 8 9 2026",
+      "new AI model launch July 8 9 2026 open source",
+      "AI safety regulation policy announcement July 7 8 2026",
+      "GPT-Live adversarial criticism limitations July 2026",
+      "Anthropic Claude Government FedRAMP criticism limitations July 2026",
+      "Illinois AI Safety Measures Act Pritzker signed July 6 2026 details"
+    ]
+  },
+  "limitations": {
+    "sources_unreachable": [
+      "openai.com/index/ (HTTP 403) — GPT-Live and GPT-5.6 items secondary-sourced",
+      "cnbc.com video (HTTP 403) — Alibaba confirmed via TechCrunch and SCMP",
+      "news.wttw.com (HTTP 403) — Illinois Act confirmed via gov-pritzker-newsroom.prezly.com",
+      "axios.com (HTTP 403 on some URLs) — used search excerpt",
+      "neowin.net (HTTP 403) — used search excerpt"
+    ],
+    "login_walled": "X/Twitter timelines, LinkedIn, Instagram, Discord not directly accessed",
+    "thin_categories": ["mcp-ecosystem", "agent-framework", "research-papers"],
+    "geo_bias": "US-heavy; SEA-region search returned no in-window items"
+  }
+}
