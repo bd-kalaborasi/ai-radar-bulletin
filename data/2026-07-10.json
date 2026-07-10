@@ -1,0 +1,134 @@
+{
+  "run_date": "2026-07-10",
+  "pipeline_version": "ai-radar/v1",
+  "period_start": "2026-07-07",
+  "period_end": "2026-07-10",
+  "window_type": "strict-72h",
+  "items_reviewed": 28,
+  "items_published": 7,
+  "items_dropped": 21,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "sources_count": 14,
+  "exploration_pct": 50,
+  "searches_total": 34,
+  "searches_exploratory": 17,
+  "categories": [
+    "workflow-automation",
+    "productivity-ai",
+    "model-release",
+    "dev-tools",
+    "mcp-ecosystem"
+  ],
+  "published_items": [
+    {
+      "id": "openai-chatgpt-work",
+      "title": "OpenAI Launches ChatGPT Work Long-Running Agent Desktop App",
+      "category": "workflow-automation",
+      "date": "2026-07-09",
+      "tier": "T3",
+      "verification": "secondary",
+      "primary_url": "https://www.engadget.com/2211869/openai-releases-chatgpt-work-tool-macos-windows-web-plans/",
+      "secondary_url": "https://www.testingcatalog.com/openai-launches-chatgpt-work-for-pro-enterprise-and-edu-plans/",
+      "fetch_status": "403 on openai.com primary; T3 trade press confirmed"
+    },
+    {
+      "id": "xai-grok-45",
+      "title": "xAI Launches Grok 4.5 Coding and Agentic Model",
+      "category": "model-release",
+      "date": "2026-07-08",
+      "tier": "T2",
+      "verification": "secondary",
+      "primary_url": "https://axios.com/technology/2026/07/08/grok-45-xai-launch",
+      "secondary_url": "https://techcrunch.com/2026/07/08/xai-grok-4-5-coding-model/",
+      "fetch_status": "403 on x.ai primary blog; T2 trade press (Axios, TechCrunch) confirmed"
+    },
+    {
+      "id": "vscode-1128",
+      "title": "VS Code 1.128 Ships Multi-Chat Agent Sessions and Copilot Vision GA",
+      "category": "dev-tools",
+      "date": "2026-07-08",
+      "tier": "T2",
+      "verification": "verified",
+      "primary_url": "https://code.visualstudio.com/updates/v1_128",
+      "fetch_status": "200 OK — fetched successfully"
+    },
+    {
+      "id": "kimi-k27-copilot",
+      "title": "Kimi K2.7 Available in GitHub Copilot Business and Enterprise",
+      "category": "dev-tools",
+      "date": "2026-07-07",
+      "tier": "T2",
+      "verification": "verified",
+      "primary_url": "https://github.blog/changelog/2026-07-07-kimi-k2-7-copilot-business-enterprise/",
+      "fetch_status": "200 OK — fetched successfully"
+    },
+    {
+      "id": "anthropic-claude-reflect",
+      "title": "Anthropic Launches Claude Reflect Usage Analytics Dashboard",
+      "category": "productivity-ai",
+      "date": "2026-07-09",
+      "tier": "T2",
+      "verification": "verified",
+      "primary_url": "https://www.anthropic.com/news/claude-reflect",
+      "fetch_status": "200 OK — fetched successfully"
+    },
+    {
+      "id": "automox-mcp-22",
+      "title": "Automox Releases MCP Server 2.2 with Bidirectional Sync and Conditional Logic",
+      "category": "mcp-ecosystem",
+      "date": "2026-07-07",
+      "tier": "T2",
+      "verification": "verified",
+      "primary_url": "https://www.globenewswire.com/news-release/2026/07/07/automox-mcp-server-2-2",
+      "fetch_status": "200 OK — fetched successfully"
+    },
+    {
+      "id": "meta-muse-image",
+      "title": "Meta Debuts Muse Image, Its First In-House Image Generation Model",
+      "category": "productivity-ai",
+      "date": "2026-07-07",
+      "tier": "T2",
+      "verification": "secondary",
+      "primary_url": "https://www.cnbc.com/2026/07/07/meta-muse-image-launch.html",
+      "secondary_url": "https://axios.com/technology/2026/07/07/meta-muse-image-generator",
+      "fetch_status": "403 on meta.ai primary; T2 trade press (CNBC, Axios) confirmed"
+    }
+  ],
+  "dropped_items": [
+    {"reason": "Published in Jul 9 bulletin", "title": "GPT-5.6 GA (Sol/Terra/Luna tiers)"},
+    {"reason": "Published in Jul 9 bulletin", "title": "GPT-Live-1 full-duplex voice"},
+    {"reason": "Published in Jul 9 bulletin", "title": "Claude for Government FedRAMP High"},
+    {"reason": "Published in Jul 9 bulletin", "title": "Alibaba bans Claude Code for employees"},
+    {"reason": "Published in Jul 9 bulletin", "title": "Illinois AI Safety Act signed"},
+    {"reason": "Published in Jul 9 bulletin", "title": "Gemini 3.5 Pro launch delayed to Jul 17"},
+    {"reason": "Published in Jul 8 bulletin", "title": "Anthropic Cowork web and mobile apps"},
+    {"reason": "Published in Jul 8 bulletin", "title": "OpenAI gpt-realtime-2.1 and mini"},
+    {"reason": "Published in Jul 8 bulletin", "title": "Sysdig JADEPUFFER ransomware-as-a-service"},
+    {"reason": "Published in Jul 8 bulletin", "title": "Z.ai ZCode coding IDE"},
+    {"reason": "Published in Jul 8 bulletin", "title": "Meituan LongCat-2.0 delivery AI"},
+    {"reason": "Published in Jul 8 bulletin", "title": "SpaceXAI rebrand announcement"},
+    {"reason": "Published in Jul 8 bulletin", "title": "Anthropic $19B TeraWulf data center lease"},
+    {"reason": "Published in Jul 8 bulletin", "title": "UN AI for Good Commission report"},
+    {"reason": "Below actionability threshold — no new capability", "title": "ChatGPT iOS interface update (cosmetic)"},
+    {"reason": "Unverifiable — single anonymous source, no corroboration", "title": "OpenAI o4-preview leak claim"},
+    {"reason": "Scope out-of-window — pre-Jul-7 announcement", "title": "MCP spec RC July 28 finalization"},
+    {"reason": "Below threshold — minor patch, no behavior change", "title": "LangChain v0.3.18 patch"},
+    {"reason": "Duplicate — same event as Kimi K2.7 Copilot item", "title": "Moonshot AI Kimi K2.7 benchmark scores"},
+    {"reason": "Vendor-only benchmark with no independent replication", "title": "Grok 4.5 MATH-500 score (xAI self-reported)"},
+    {"reason": "No verifiable source found — possible confusion with GPT-5.6", "title": "Alleged GPT-4.5 refresh rumor"}
+  ],
+  "403_sources": [
+    "openai.com/index/*",
+    "x.ai/blog/*",
+    "meta.ai/blog/*",
+    "neowin.net (article-specific)"
+  ],
+  "adversarial_findings": [
+    "Grok 4.5 CursorBench: training-data overlap flagged by independent researchers; scores noted with caveat",
+    "Meta Muse 'Nano Banana 2' competing model: undocumented; flagged as vendor-designed benchmark"
+  ]
+}
