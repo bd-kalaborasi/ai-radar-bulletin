@@ -1,0 +1,113 @@
+{
+  "run_date": "2026-07-13",
+  "pipeline_version": "ai-radar/v1",
+  "period_start": "2026-07-10",
+  "period_end": "2026-07-13",
+  "window_type": "strict-72h",
+  "items_reviewed": 36,
+  "items_published": 4,
+  "items_dropped": 32,
+  "verification_summary": {
+    "verified": 2,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "sources_count": 11,
+  "exploration_pct": 36,
+  "searches_total": 56,
+  "searches_exploratory": 20,
+  "categories": [
+    "dev-tools",
+    "ai-for-business",
+    "policy-regulation",
+    "workflow-automation"
+  ],
+  "published_items": [
+    {
+      "id": "cursor-311",
+      "title": "Cursor 3.11 Ships Side Chats, Transcript Search, and Team MCP Distribution",
+      "category": "dev-tools",
+      "date": "2026-07-10",
+      "tier": "T2",
+      "verification": "verified",
+      "primary_url": "https://cursor.com/changelog",
+      "fetch_status": "200 OK — fetched successfully"
+    },
+    {
+      "id": "apple-openai-lawsuit",
+      "title": "Apple Files Trade Secret Lawsuit Against OpenAI",
+      "category": "policy-regulation",
+      "date": "2026-07-10",
+      "tier": "T2",
+      "verification": "secondary",
+      "primary_url": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
+      "secondary_url": "https://www.cnn.com/2026/07/10/tech/apple-openai-devices-lawsuit",
+      "fetch_status": "403 on cnbc.com primary; T2 confirmed via CNN Business and Semafor"
+    },
+    {
+      "id": "meta-iris-chip",
+      "title": "Meta's Iris AI Chip Enters Production Track for September",
+      "category": "ai-for-business",
+      "date": "2026-07-10",
+      "tier": "T2",
+      "verification": "secondary",
+      "primary_url": "https://www.reuters.com/technology/2026/07/10/meta-iris-ai-chip-tsmc-september",
+      "secondary_url": "https://www.resultsense.com/news/2026-07-10-meta-iris-ai-chip-production/",
+      "fetch_status": "403 on reuters.com primary; T2 sourcing confirmed via T3 outlets citing Reuters"
+    },
+    {
+      "id": "claude-code-21207",
+      "title": "Claude Code 2.1.207 Activates Auto Mode by Default on Cloud Providers",
+      "category": "dev-tools",
+      "date": "2026-07-11",
+      "tier": "T2",
+      "verification": "verified",
+      "primary_url": "https://code.claude.com/docs/en/changelog",
+      "fetch_status": "200 OK — fetched successfully"
+    }
+  ],
+  "dropped_items": [
+    {"reason": "Published in Jul 10 bulletin (Jul 9 event)", "title": "GPT-5.6 Sol/Terra/Luna GA"},
+    {"reason": "Published in Jul 10 bulletin (Jul 9 event)", "title": "ChatGPT Work desktop agent"},
+    {"reason": "Published in Jul 10 bulletin (Jul 8 event)", "title": "Grok 4.5 coding and agentic model"},
+    {"reason": "Published in Jul 10 bulletin (Jul 8 event)", "title": "VS Code 1.128 multi-chat agent sessions"},
+    {"reason": "Published in Jul 10 bulletin (Jul 9 event)", "title": "Claude Reflect usage analytics dashboard"},
+    {"reason": "Published in Jul 10 bulletin (Jul 7 event)", "title": "Kimi K2.7 expands to Copilot Business/Enterprise"},
+    {"reason": "Published in Jul 10 bulletin (Jul 7 event)", "title": "Meta Muse Image first in-house image model"},
+    {"reason": "Published in Jul 10 bulletin (Jul 7 event)", "title": "Automox MCP Server 2.2 visual review"},
+    {"reason": "Jul 8 2026 — outside strict Jul 10–13 window", "title": "SambaNova $1B Series F at $11B valuation"},
+    {"reason": "Jul 9 2026 — outside strict window", "title": "Fed Productivity & Jobs task force (Andreessen)"},
+    {"reason": "Jul 8 2026 — outside strict window", "title": "Prime Intellect $130M Series A (Radical Ventures)"},
+    {"reason": "Jul 7 2026 — outside window; published in Jul 8 bulletin", "title": "Anthropic Claude Cowork web/mobile expansion"},
+    {"reason": "Jun 30 2026 — outside window", "title": "Claude Desktop Linux beta (Ubuntu/Debian)"},
+    {"reason": "Dec 2025 — outside window; resurfaced in aggregator coverage", "title": "OpenAI gpt-oss-120b / gpt-oss-20b open-weight models"},
+    {"reason": "May 2026 — outside window; resurfaced in July roundups", "title": "Anthropic $47B revenue run rate / Series H"},
+    {"reason": "Jun 24 2026 — outside window", "title": "Qualcomm acquires Modular ($3.92B all-stock)"},
+    {"reason": "Apr 28 2026 — outside window", "title": "NVIDIA Nemotron 3 Nano Omni open multimodal"},
+    {"reason": "Mar 30 2026 — outside window", "title": "Mistral $830M data center debt financing"},
+    {"reason": "Mar 31 2026 — outside window", "title": "Databricks $850M UK investment"},
+    {"reason": "Jun 7 2026 — outside window", "title": "NAVER + NVIDIA sovereign AI infrastructure"},
+    {"reason": "Jul 7 2026 — outside strict window", "title": "Accenture Edge + Google Cloud mid-market agentic"},
+    {"reason": "Jul 7–8 2026 — outside strict window; conference starts Jul 17", "title": "WAIC 2026 Shanghai July 17–20 pre-announcement"},
+    {"reason": "Jul 7 2026 — outside strict window", "title": "Gemini in Sheets expands to 11 more languages (incl. Indonesian)"},
+    {"reason": "Jul 7 2026 — outside strict window", "title": "Snowflake CoWork Deep Research GA"},
+    {"reason": "Unconfirmed — leaked spec only, no Google primary confirming date or pricing", "title": "Gemini 3.5 Pro target date July 17 (leaked spec)"},
+    {"reason": "Single T3 source only; unable to verify from github.com/modelcontextprotocol/servers primary during this run", "title": "MCP Servers 2026.7.10 maintenance release"},
+    {"reason": "Announced Jul 1; no confirmed in-window launch date from primary source", "title": "Meta Compute GPU cloud service launch"},
+    {"reason": "Jul 9 2026 — outside strict window; T3 source only", "title": "AgentPrizm AgentMemory/AgentSkills platform"},
+    {"reason": "Low BD actionability — enterprise telephony feature, no agentic execution capability", "title": "Microsoft 365 AI auto-attendant updates"},
+    {"reason": "Announced at Google I/O May 19 2026; API GA Jun 30; no new in-window announcement", "title": "Gemini Omni video generation global rollout"},
+    {"reason": "Google I/O announcements (May 2026); rollout continuation, not a new Jul 10–13 launch", "title": "Gemini Spark / Daily Brief Anthropic-comparable features"},
+    {"reason": "May/Jun launch — no new in-window announcement", "title": "Gemini 3.5 Flash generally available rollout"}
+  ],
+  "403_sources": [
+    "reuters.com (article-specific)",
+    "cnbc.com (Apple lawsuit article)",
+    "venturebeat.com (article-specific)"
+  ],
+  "adversarial_findings": [
+    "OpenAI gpt-oss models: initially surfaced as possible July 2026 launch — confirmed December 22 2025 release; dropped as outside window",
+    "Meta Iris September production date: Meta-stated; no independent production confirmation until Q4 earnings; Iris is ASIC-class (recommendation ranking), not general-purpose GPU",
+    "Apple v. OpenAI complaint: civil case only; no finding of liability; Bloomberg Jul 11 notes internal OpenAI message was characterized as context-collapsed"
+  ]
+}
