@@ -1,0 +1,231 @@
+{
+  "run_date": "2026-07-14",
+  "period_start": "2026-07-11",
+  "period_end": "2026-07-14",
+  "window_type": "strict_72h",
+  "depth": "standard",
+  "audience": ["public-digest"],
+  "items_reviewed": 38,
+  "items_published": 7,
+  "items_dropped": 31,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "sources_count": 12,
+  "exploration_pct": 36,
+  "search_passes": 44,
+  "exploratory_passes": 16,
+  "categories": [
+    "dev-tools",
+    "workflow-automation",
+    "productivity-ai",
+    "ai-for-business",
+    "research-papers",
+    "agent-framework",
+    "policy-regulation"
+  ],
+  "items": [
+    {
+      "id": "gpt56-bedrock-ga",
+      "title": "GPT-5.6 Sol/Terra/Luna Generally Available on Amazon Bedrock",
+      "date": "2026-07-13",
+      "category": ["dev-tools", "ai-for-business"],
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/openai-gpt-5-6-sol-terra-and-luna-are-now-generally-available-on-amazon-bedrock/",
+      "source_publisher": "AWS Machine Learning Blog",
+      "bd_actionability": "high",
+      "key_claims": [
+        "Sol available in US East (N. Virginia) and Ohio; Terra/Luna also in US West (Oregon)",
+        "Pricing matches OpenAI first-party rates",
+        "Usage counts toward AWS commitments"
+      ],
+      "cross_references": [
+        "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/"
+      ],
+      "caveats": null
+    },
+    {
+      "id": "openai-5hr-cap-removed",
+      "title": "OpenAI Temporarily Removes 5-Hour Cap on ChatGPT Work and Codex",
+      "date": "2026-07-12",
+      "category": ["workflow-automation", "dev-tools"],
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "announcement via product lead X post + multiple outlet confirmation",
+      "source_url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-temporarily-relaxes-gpt-56-sol-usage-limits/",
+      "source_publisher": "Bleeping Computer",
+      "bd_actionability": "high",
+      "key_claims": [
+        "5-hour limit removed July 12; one-time usage reset issued",
+        "Approximately 10% more usage per credit from Sol efficiency improvements (vendor-stated)",
+        "Codex not being discontinued — confirmed by OpenAI product lead",
+        "Weekly aggregate limits remain in place"
+      ],
+      "cross_references": [
+        "https://www.digitaltrends.com/computing/openai-just-took-the-handcuffs-off-your-chatgpt-work-and-codex-usage-limits-at-least-for-now/",
+        "https://the-decoder.com/openai-admits-it-didnt-get-everything-quite-right-with-chatgpt-work-launch-and-scrambles-to-fix-ux-and-costs/"
+      ],
+      "caveats": "Labeled 'temporary' by OpenAI; no official blog post, announcement via product lead X post only"
+    },
+    {
+      "id": "ios27-public-beta-siri-ai",
+      "title": "iOS 27 Public Beta Launches with Rebuilt Siri AI",
+      "date": "2026-07-13",
+      "category": ["productivity-ai"],
+      "tier": "T2-T3",
+      "verification": "secondary",
+      "methodology": "announcement",
+      "source_url": "https://9to5mac.com/2026/07/13/ios-27-public-beta/",
+      "source_publisher": "9to5Mac",
+      "bd_actionability": "medium",
+      "key_claims": [
+        "Public beta released July 13 across all five Apple platforms",
+        "iPhone 15 Pro minimum for Apple Intelligence features",
+        "iPhone 17 Pro/Air required for most capable on-device model (12 GB RAM)",
+        "Waitlist required to access Siri AI after beta install"
+      ],
+      "cross_references": [
+        "https://www.macrumors.com/2026/07/13/apple-seeds-ios-27-public-beta-1/",
+        "https://www.macworld.com/article/3190070/the-os-27-public-betas-are-out-now-with-siri-ai-platform-improvements-and-more.html"
+      ],
+      "caveats": "Beta software; EU rollout delayed (Digital Markets Act); waitlist timing variable (4h to 1+ week); Apple primary release page not directly fetched"
+    },
+    {
+      "id": "nadella-reverse-info-paradox",
+      "title": "Satya Nadella Reverse Information Paradox Warns Enterprises About AI Data Leakage",
+      "date": "2026-07-12",
+      "category": ["ai-for-business"],
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "CEO direct statement — LinkedIn essay",
+      "source_url": "https://www.linkedin.com/posts/satyanadella_the-reverse-information-paradox-activity-7482090659898630144-J4sB",
+      "source_publisher": "Satya Nadella (LinkedIn)",
+      "bd_actionability": "medium",
+      "coi": "Nadella's proposed solutions favor Microsoft's own AI infrastructure products (Copilot, Azure AI Foundry); essay serves dual role as analysis and product pitch",
+      "key_claims": [
+        "Essay published July 12 — 3.7M+ views reported (Business Standard, 2026-07-13)"
+      ],
+      "cross_references": [
+        "https://www.theregister.com/ai-and-ml/2026/07/13/microsoft-chief-turns-hostile-on-frontier-ai-labs-warns-companies-to-guard-their-ip/5270628",
+        "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/"
+      ],
+      "caveats": "LinkedIn posts login-walled for some users; content confirmed via The Register and TechCrunch"
+    },
+    {
+      "id": "nous-research-75m-hermes",
+      "title": "Nous Research Raises $75M+ at $1.5B Valuation for Hermes Open-Source Agent",
+      "date": "2026-07-13",
+      "category": ["agent-framework"],
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "original reporting — named investors confirmed by TechCrunch",
+      "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
+      "source_publisher": "TechCrunch",
+      "bd_actionability": "medium",
+      "key_claims": [
+        "At least $75M being raised at $1.5B valuation",
+        "Robot Ventures leading; USV participating",
+        "Prior total funding: $70M (Paradigm, North Island Ventures, OSS Capital, Balaji Srinivasan)",
+        "GitHub: ~214,000 stars, ~40,000 forks",
+        "Cloud-hosted tier: $20–$200/month"
+      ],
+      "cross_references": [
+        "https://github.com/NousResearch/hermes-agent"
+      ],
+      "caveats": "Round reported as 'in talks' — not yet closed; final amount and valuation may change before close"
+    },
+    {
+      "id": "anthropic-claude-values-languages",
+      "title": "Anthropic Publishes Cross-Language Claude Values Study",
+      "date": "2026-07-13",
+      "category": ["research-papers"],
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "research study",
+      "source_url": "https://www.anthropic.com/research/claude-values-models-languages",
+      "source_publisher": "Anthropic Research",
+      "bd_actionability": "low-medium",
+      "key_claims": [
+        "309,815 anonymized conversations analyzed",
+        "Data from two-week period in May 2026 on Claude.ai",
+        "Three models studied: Sonnet 4.6, Opus 4.6, Opus 4.7",
+        "Twenty most common Claude.ai languages in scope",
+        "Four value axes identified: Deference vs. Caution; Warmth vs. Rigor; Depth vs. Brevity; Candor vs. Execution"
+      ],
+      "cross_references": [],
+      "caveats": "Consumer Claude.ai conversations only — not API enterprise deployments; models studied (Sonnet 4.6, Opus 4.6, Opus 4.7) no longer current"
+    },
+    {
+      "id": "china-anthropomorphic-ai-rules",
+      "title": "China Companion-AI Rules Take Effect July 15",
+      "date": "2026-07-15",
+      "original_publication_date": "2026-04-10",
+      "category": ["policy-regulation"],
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "regulatory filing — CAC Interim Measures",
+      "source_url": "https://iapp.org/news/a/china-s-new-ai-rules-ethics-ai-agents-and-anthropomorphic-ai",
+      "source_publisher": "IAPP (analyzing CAC regulation)",
+      "bd_actionability": "low-for-general-audiences, high-for-china-market-companion-ai",
+      "key_claims": [
+        "Enforcement deadline: July 15, 2026",
+        "Scope: services providing 'continuous emotional interaction' in China",
+        "Carve-outs: educational tutoring bots and productivity assistants",
+        "Required: CAC algorithm filing, security assessment, AI disclosure"
+      ],
+      "cross_references": [
+        "https://www.twobirds.com/en/insights/2026/china/china's-new-regulations-on-ai-anthropomorphic-interactive-services",
+        "https://www.lexology.com/library/detail.aspx?g=d30367dd-5199-43fd-b297-5a4ba8a9c8d9",
+        "https://www.msn.com/en-us/news/other/china-just-issued-regulations-for-ai-companions-chatbots-and-virtual-friends-every-provider-must-comply-by-july-15/ar-AA22WfzJ"
+      ],
+      "caveats": "Original CAC measure is in Chinese; this item relies on English-language legal analyses rather than direct translation. Legal counsel in China required for compliance assessment."
+    }
+  ],
+  "dropped_items": [
+    {"title": "Claude Code 2.1.207 auto-mode default", "reason": "Published in Jul 13 bulletin (Jul 11 event)"},
+    {"title": "Apple v. OpenAI trade secret lawsuit", "reason": "Published in Jul 13 bulletin (Jul 10 event)"},
+    {"title": "Meta Iris AI chip TSMC production", "reason": "Published in Jul 13 bulletin (Jul 10 event)"},
+    {"title": "Cursor 3.11 side chats/transcript search/team MCP", "reason": "Published in Jul 13 bulletin (Jul 10 event)"},
+    {"title": "GPT-5.6 Sol/Terra/Luna GA", "reason": "Published in Jul 10 bulletin (Jul 9 event)"},
+    {"title": "ChatGPT Work launch", "reason": "Published in Jul 10 bulletin (Jul 9 event)"},
+    {"title": "GPT-5.6 in Microsoft 365 Copilot", "reason": "Published in Jul 10 bulletin (Jul 9 event)"},
+    {"title": "Grok 4.5", "reason": "Published in Jul 10 bulletin (Jul 8 event)"},
+    {"title": "Claude for Government Desktop FedRAMP High beta", "reason": "Jul 7 2026 — outside strict window"},
+    {"title": "Claude Cowork web/mobile expansion + Microsoft 365 write tools", "reason": "Jul 7 2026 — outside strict window"},
+    {"title": "Claude Monthly Recap in Reflect", "reason": "Jul 9 2026 — outside strict window"},
+    {"title": "Claude Sonnet 5 with 1M context window", "reason": "Jun 30 2026 — outside window"},
+    {"title": "OpenAI Jalapeño custom inference chip (with Broadcom)", "reason": "Jun 24 2026 — outside window"},
+    {"title": "China weighs restricting overseas AI model access", "reason": "Jul 7 2026 — outside strict window; meeting stage only, no confirmed policy"},
+    {"title": "Gemini 3.5 Pro targeting July 17 GA", "reason": "Not yet released; forward-looking intent only (T3)"},
+    {"title": "DeepSeek API legacy name deprecation deadline July 24", "reason": "No new announcement in window; deadline is Jul 24 (announced Apr 24)"},
+    {"title": "PixVerse $439M Series C extension", "reason": "Incorrect data — confirmed $300M Series C in Mar 2026, outside window"},
+    {"title": "US HHS AERO ChatGPT state audit", "reason": "May 21 2026 — outside window"},
+    {"title": "Meta Muse Spark 1.1", "reason": "Jul 9 2026 — outside strict window"},
+    {"title": "ByteDance Seedream 5.0 Pro", "reason": "Jul 9 2026 — outside strict window"},
+    {"title": "Claude Developer Platform API key expiration controls", "reason": "Jul 8 2026 — outside strict window"},
+    {"title": "Xi Jinping WAIC Shanghai keynote (July 17)", "reason": "Conference starts Jul 17 — outside strict window"},
+    {"title": "Gemini Robotics-ER 1.6 launch", "reason": "Apr 15 2026 — outside window; resurfaced in July aggregators"},
+    {"title": "GLM-5.2 by Z.ai (62.1% SWE-bench Pro)", "reason": "Jun 13 2026 — outside window"},
+    {"title": "DeepSeek V4 Flash / V4 Pro", "reason": "Apr 24 2026 — outside window"},
+    {"title": "SK Hynix $26.5B AI infrastructure capital raise", "reason": "Date unconfirmed within window; off primary AI-product scope"},
+    {"title": "MCP 2026-07-28 RC and final spec", "reason": "RC published May 21 — outside window; final spec Jul 28 not yet shipped"},
+    {"title": "Meta Compute GPU cloud service", "reason": "Jul 1 2026 — outside window; confirmed launch date from Meta primary unavailable"},
+    {"title": "Long-Horizon-Terminal-Bench paper (Tencent)", "reason": "Preprint Jul 13 — low immediate BD actionability; no product release"},
+    {"title": "Video Generation as Vision Learners (Google DeepMind)", "reason": "Preprint Jul 13 — research-only; no product release"},
+    {"title": "Dokie AI MCP presentation integration", "reason": "Exact date unverified from primary source within window"}
+  ],
+  "limitations": [
+    "openai.com returned HTTP 403 for direct fetch",
+    "LinkedIn Nadella post is login-walled for some users; content confirmed via T2 media",
+    "Apple primary beta release page not directly fetched; iOS 27 details from 9to5Mac/MacRumors",
+    "No MCP server launches confirmed within strict Jul 11-14 window",
+    "No new frontier model releases in window (Gemini 3.5 Pro targeting Jul 17)",
+    "Four of seven items concentrated on July 13 (post-cluster quiet period)",
+    "SEA/Indonesia AI: World AI Show Jakarta (Jul 7-8) and AI Revolution Summit (Jul 16) both outside window; no in-window SEA product launches confirmed",
+    "GPT-5.6 Sol performance benchmark (80 points on Artificial Analysis Coding Agent Index) is vendor-stated; independent replication not reviewed"
+  ]
+}
