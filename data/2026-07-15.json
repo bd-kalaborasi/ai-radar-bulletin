@@ -1,0 +1,151 @@
+{
+  "run_date": "2026-07-15",
+  "period_start": "2026-07-12",
+  "period_end": "2026-07-15",
+  "timeframe_label": "Jul 12–15 2026 (strict 72h window)",
+  "depth": "standard",
+  "audience": ["public-digest"],
+  "items_reviewed": 32,
+  "items_published": 5,
+  "items_dropped": 27,
+  "exploration_pct": 55,
+  "sources_count": 15,
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "categories_covered": ["productivity-ai", "policy-regulation", "dev-tools", "ai-for-business"],
+  "published_items": [
+    {
+      "title": "Anthropic Launches Claude for Teachers, Free for US K-12 Educators",
+      "date": "2026-07-14",
+      "category": "productivity-ai",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "product launch",
+      "source_url": "https://www.anthropic.com/news/claude-for-teachers",
+      "source_org": "Anthropic",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Free for verified US K-12 educators who sign up by June 30, 2027",
+        "Includes Claude Code and Cowork for autonomous daily task scheduling",
+        "FERPA-compliant; no model training on educator conversations",
+        "Nine platform integrations at launch: ASSISTments, Brisk Teaching, Canva Education, others",
+        "School/district tier with separately negotiated terms in development"
+      ]
+    },
+    {
+      "title": "China Companion-AI Enforcement: Doubao/Qwen Shut Down, Shanghai Pulls 14,000 Agents",
+      "date": "2026-07-15",
+      "category": "policy-regulation",
+      "tier": "T2-T3",
+      "verification": "secondary",
+      "methodology": "regulatory enforcement",
+      "source_url": "https://technode.com/2026/07/06/bytedances-doubao-and-alibabas-qwen-to-shut-down-ai-agent-features-on-july-15/",
+      "source_org": "TechNode",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Doubao and Qwen companion-agent features disabled July 15, 2026",
+        "Shanghai Cyberspace Administration removed >14,000 non-compliant AI agents pre-deadline",
+        "Doubao migrates users to Maoxiang (ByteDance compliance-ready app)",
+        "Qwen data permanently deleted after October 15, 2026; no migration path",
+        "Regulation: CAC Interim Measures for Anthropomorphic AI Interactive Services, effective July 15"
+      ]
+    },
+    {
+      "title": "White House Launches Gold Eagle AI Cybersecurity Clearinghouse",
+      "date": "2026-07-14",
+      "category": "policy-regulation",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "government launch",
+      "source_url": "https://www.whitehouse.gov/releases/2026/07/white-house-launches-gold-eagle-initiative-for-unprecedented-cybersecurity-vulnerability-coordination/",
+      "source_org": "White House",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Launched July 14; established under Executive Order 14409 (June 2, 2026)",
+        "Managed by Treasury, CISA, DHS, DoD with private sector partners",
+        "Uses frontier AI models to scan for and prioritize cybersecurity vulnerabilities",
+        "VINTS platform (Vulnerability Information and Coordination Environment) developed with Carnegie Mellon SEI",
+        "Accepts third-party vulnerability reports; coordinates patching across government and critical infrastructure"
+      ]
+    },
+    {
+      "title": "OpenAI Codex Micro Launches: Developer Macro Pad for Codex",
+      "date": "2026-07-15",
+      "category": "dev-tools",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "hardware launch",
+      "source_url": "https://devops.com/openai-expands-into-developer-hardware-with-codex-micro-keyboard/",
+      "source_org": "DevOps.com",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "First OpenAI-branded hardware; launched July 15, 2026",
+        "Co-built with Work Louder (Creator Micro 2 chassis)",
+        "13 mechanical keys, joystick, rotary encoder, 6 programmable layers",
+        "BLE + Wi-Fi connectivity; on-device local inference",
+        "Keys map to Codex agent actions (refactor, test generation, review, docs, security scan)",
+        "Price unconfirmed; openai.com returned HTTP 403 during run",
+        "Separate from OpenAI's consumer AI home speaker (Bloomberg, 2026-07-14) and Jony Ive hardware project"
+      ],
+      "caveats": ["Primary launch page (openai.com) unreachable during run — price and final specs unconfirmed"]
+    },
+    {
+      "title": "Anthropic Commits $10M CAD to Canadian AI Research",
+      "date": "2026-07-14",
+      "category": "ai-for-business",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "funding announcement",
+      "source_url": "https://www.anthropic.com/news/canadian-ai-research",
+      "source_org": "Anthropic",
+      "bd_actionability": "low-medium",
+      "key_facts": [
+        "$10M CAD committed to eight Canadian institutions",
+        "Institutes: Mila (Montréal), Vector (Toronto), Amii (Alberta)",
+        "Healthcare: CHEO (pediatric AI), CAMH (computational mental health)",
+        "Academic: Université Laval (LLM cross-cultural behavior, low-resource languages), U of T, U of Saskatchewan",
+        "Mila, Vector, Amii added to Anthropic Startups program with $5,000 minimum API credits per affiliated startup",
+        "Additional partnerships planned later in 2026"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Gemini 3.5 Pro targeting July 17", "reason": "Forward-looking — not yet shipped", "source": "coursiv.io, techtimes.com"},
+    {"title": "OpenAI consumer AI home speaker (screenless, camera, motion sensors)", "reason": "Not yet shipping; no OpenAI primary confirmation", "source": "Bloomberg 2026-07-14"},
+    {"title": "OpenAI response to Apple trade secret lawsuit", "reason": "Follow-up to Jul 13 bulletin item; low BD actionability", "source": "TechCrunch, Bloomberg 2026-07-14"},
+    {"title": "WAIC Shanghai / Xi Jinping keynote", "reason": "Conference starts July 17 — outside strict window", "source": "SCMP, Bloomberg 2026-07-13"},
+    {"title": "Miles Wang (OpenAI) drug discovery startup at $2B valuation", "reason": "Low BD actionability; round in talks, Wang disputes figures", "source": "TechCrunch 2026-07-14"},
+    {"title": "Bespoke Labs $40M Series A (post-training automation)", "reason": "Low immediate BD actionability; funding only, no product launch", "source": "multiple 2026-07-14"},
+    {"title": "Even Realities $150M Series A (smart glasses, MicroLED)", "reason": "Hardware funding; no AI workflow integration in window", "source": "multiple 2026-07-14"},
+    {"title": "MCP Enterprise-Managed Authorization (EMA) promoted to stable", "reason": "Outside strict window (July 6 announcement)", "source": "InfoQ 2026-07-06"},
+    {"title": "Perplexity Bumblebee open-source supply chain scanner", "reason": "Outside window (May 22, 2026)", "source": "marktechpost.com 2026-05-22"},
+    {"title": "Hugging Face Daily Papers: 6 papers Jul 14-15", "reason": "Research-only; no product release or near-term BD application", "source": "huggingface.co/papers"},
+    {"title": "Nscale $900M revolving credit facility", "reason": "Outside strict window (July 7)", "source": "PYMNTS, CityAM 2026-07-07"},
+    {"title": "GPT-Live-1 and GPT-Live-1 mini voice models", "reason": "Outside window (July 8); published in Jul 10 bulletin", "source": "openai.com 2026-07-08"},
+    {"title": "Grok Voice Agent Builder (no-code, beta)", "reason": "Outside window (July 1)", "source": "x.ai 2026-07-01"},
+    {"title": "SpaceXAI 21 new Grok Voice voices", "reason": "Outside window (July 6)", "source": "x.ai 2026-07-06"},
+    {"title": "Sea Ltd + OpenAI SEA strategic partnership", "reason": "Outside window (June 22)", "source": "Sea.com/OpenAI 2026-06-22"},
+    {"title": "Google Cloud SEA AI Startup Corridor", "reason": "Date unverified within window", "source": "Google Cloud Press"},
+    {"title": "California Poppy AI state worker assistant (67 departments)", "reason": "Rollout date unconfirmed from primary source within window", "source": "multiple"},
+    {"title": "Claude Science AI-for-Science grants (deadline July 15)", "reason": "Application deadline event, not a product launch; announced Jun 30", "source": "anthropic.com"},
+    {"title": "Together AI $800M Series C at $8.3B valuation", "reason": "Date unconfirmed within strict window", "source": "Crunchbase"},
+    {"title": "Anthropic Claude Code Week 28 (sandboxed browser, /doctor, auto mode)", "reason": "Outside strict window (July 10)", "source": "releasebot.io 2026-07-10"},
+    {"title": "Anthropic Claude Developer Platform Fable 5 / Sonnet 5 in Dreams preview", "reason": "Outside strict window (July 10)", "source": "releasebot.io 2026-07-10"},
+    {"title": "ICML 2026 agentic AI emphasis (Seoul)", "reason": "Outside strict window; ongoing event, not a discrete launch", "source": "multiple (Jul 6 open)"},
+    {"title": "ABot-N1 navigation model (Alibaba)", "reason": "Research only, no product release", "source": "huggingface.co/papers"},
+    {"title": "Weak-to-Strong Generalization paper (ByteDance/Tsinghua)", "reason": "Research only, no product release", "source": "huggingface.co/papers"},
+    {"title": "GLM-5.2 by Z.ai open-weight", "reason": "June 13, 2026 — outside window", "source": "llm-stats.com"},
+    {"title": "China companion-AI regulation text and scope (general)", "reason": "Published in Jul 14 bulletin; today's item covers enforcement actions only", "source": "IAPP, Bird & Bird 2026-07-13"},
+    {"title": "Doubao daily token usage reaching 180 trillion (context)", "reason": "Background context, not a discrete in-window event", "source": "multiple"}
+  ],
+  "search_log_summary": {
+    "total_searches": 37,
+    "exploratory_adversarial_geo": 20,
+    "exploration_pct": 54,
+    "sources_returning_403": ["openai.com/index/codex-micro/", "x.ai/news/grok-voice-agent-builder"],
+    "geo_diversity_searches": ["AI Indonesia startup announcement July 2026 SEA Asia"]
+  }
+}
