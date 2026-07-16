@@ -1,0 +1,163 @@
+{
+  "run_date": "2026-07-16",
+  "period_start": "2026-07-13",
+  "period_end": "2026-07-16",
+  "timeframe_label": "Jul 13–16 2026 (strict 72h window)",
+  "depth": "standard",
+  "audience": ["public-digest"],
+  "items_reviewed": 30,
+  "items_published": 5,
+  "items_dropped": 25,
+  "exploration_pct": 65,
+  "sources_count": 22,
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "categories_covered": ["dev-tools", "policy-regulation", "ai-for-business", "model-release"],
+  "published_items": [
+    {
+      "title": "Grok Build Open-Sourced After Silent Whole-Repo Upload Incident",
+      "date": "2026-07-15",
+      "category": "dev-tools",
+      "tier": "T2-T3",
+      "verification": "secondary",
+      "methodology": "product release + security disclosure",
+      "source_url": "https://github.com/xai-org/grok-build",
+      "source_org": "xAI (GitHub)",
+      "bd_actionability": "high",
+      "key_facts": [
+        "xAI released Grok Build Rust source on GitHub July 15, 2026",
+        "Researcher cereblab discovered v0.2.93 silently uploaded entire repos to grok-code-session-traces GCS bucket",
+        "192 KB of code needed vs 5.10 GiB uploaded — a 27,800x data gap per session",
+        ".env files with credentials included in uploads; xAI pledged deletion of collected data",
+        "xAI primary blog (x.ai/news) returned HTTP 403 during run; confirmed via multiple T2-T3 trade outlets and GitHub repository",
+        "Open-source release appears linked to post-disclosure transparency response"
+      ],
+      "caveats": ["x.ai/news primary blog inaccessible (HTTP 403); item confirmed via GitHub repo + multiple T2-T3 outlets (The Register, TNW, The Hacker News, CryptoBriefing)"]
+    },
+    {
+      "title": "ChatGPT Returns to WhatsApp in EEA via EU Emergency Antitrust Order",
+      "date": "2026-07-13",
+      "category": "policy-regulation",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "regulatory enforcement",
+      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1276",
+      "source_org": "European Commission",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "EU Commission issued Article 8(1) Regulation 1/2003 emergency interim measures on July 13, 2026",
+        "Order requires Meta to restore ChatGPT integration across WhatsApp for all 30 EEA countries",
+        "Approximately 500 million EEA WhatsApp users affected",
+        "ChatGPT integration powered by GPT-5.5",
+        "EU found Meta's unilateral removal constituted abuse of dominant position under Article 102 TFEU",
+        "Restoration required within 72 hours of order; penalties for non-compliance unspecified in presscorner summary"
+      ]
+    },
+    {
+      "title": "Anthropic Launches Self-Serve HIPAA Configuration and Admin API Beta",
+      "date": "2026-07-14",
+      "category": "ai-for-business",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "product launch",
+      "source_url": "https://www.anthropic.com/news/hipaa-admin-api",
+      "source_org": "Anthropic",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Self-serve BAA (Business Associate Agreement) signing available in-console without sales engagement",
+        "HIPAA configuration guide and technical controls accessible from Anthropic dashboard",
+        "Admin API Beta enables programmatic user management, workspace administration, and access control",
+        "Available to Enterprise plan and API organizations",
+        "Launched July 14, 2026",
+        "Reduces healthcare onboarding from weeks-long sales cycle to same-day self-service"
+      ]
+    },
+    {
+      "title": "\"We Must Act Now\": 16 Nobel Laureates and 200+ Economists Warn on AI Economic Transformation",
+      "date": "2026-07-13",
+      "category": "policy-regulation",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "open letter / academic statement",
+      "source_url": "https://www.brookings.edu/articles/ai-economic-transformation-open-letter-2026/",
+      "source_org": "Brookings Institution",
+      "bd_actionability": "low",
+      "key_facts": [
+        "Open letter organized by Erik Brynjolfsson, Ajay Agrawal, Anton Korinek, and Colm Cunningham",
+        "16 Nobel Prize laureates and 200+ economists signed",
+        "Acemoglu and Johnson (2024 Nobel) reversed prior skeptical position on AI displacement",
+        "Letter calls for immediate policy frameworks on labor displacement, wealth concentration, and international AI governance",
+        "Brynjolfsson quote: \"AI capabilities are advancing far faster than our understanding of the economic implications\" (13 words)",
+        "Published July 13, 2026"
+      ]
+    },
+    {
+      "title": "Anthropic Extends Fable 5 Free Access to July 19 — Third Extension",
+      "date": "2026-07-15",
+      "category": "model-release",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "product update",
+      "source_url": "https://dataconomy.com/2026/07/15/anthropic-fable-5-free-access-extended/",
+      "source_org": "Dataconomy",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Third extension of Fable 5 free-access period since June 22, 2026 original cutoff",
+        "Free access now runs through July 19, 2026",
+        "After July 19: $10/million input tokens, $50/million output tokens",
+        "Extension communicated via in-product messaging, not an Anthropic news post",
+        "Context: Grok 4.5 and GPT-5.6 Sol launched as competing frontier models in the same window",
+        "No Anthropic primary blog URL confirmed during run"
+      ],
+      "caveats": ["Anthropic communicated via in-product message only; no anthropic.com/news primary source confirmed. Verified via Dataconomy and BleepingComputer (T3 secondary)."]
+    }
+  ],
+  "dropped_items": [
+    {"title": "OpenAI GPT-5.6 Sol launch details", "reason": "Outside strict window (July 12); covered as context only", "source": "multiple outlets"},
+    {"title": "Grok 4.5 launch details", "reason": "Outside strict window (July 12); covered as competitive context", "source": "x.ai, The Verge"},
+    {"title": "WAIC Shanghai Day 1 highlights", "reason": "Conference opened July 17 — outside strict window end", "source": "SCMP, Bloomberg"},
+    {"title": "Meta AI Studio expanded creator tools", "reason": "Date unconfirmed within strict window from primary source", "source": "The Verge"},
+    {"title": "Google DeepMind AlphaGenome paper", "reason": "Research-only; no product release or near-term BD application", "source": "Nature, DeepMind blog"},
+    {"title": "Microsoft Copilot Pages GA", "reason": "Outside strict window (July 10); launched in Jul 12-13 bulletin", "source": "Microsoft blog"},
+    {"title": "Perplexity Assistant 2.0 voice upgrade", "reason": "Date unconfirmed within strict window from primary source", "source": "TechCrunch"},
+    {"title": "AWS Bedrock inline agents GA", "reason": "Outside strict window (July 11)", "source": "AWS blog"},
+    {"title": "Hugging Face SmolVLM-2 open-source", "reason": "Research paper / model card only; no product launch", "source": "huggingface.co"},
+    {"title": "Mistral Devstral 2 code model", "reason": "Outside strict window (July 11)", "source": "Mistral blog"},
+    {"title": "Cohere Command R+ v2 enterprise update", "reason": "Date unconfirmed within strict window from primary source", "source": "Cohere blog"},
+    {"title": "AI Safety Institute UK — interim governance update", "reason": "Low BD actionability; policy process update only", "source": "gov.uk"},
+    {"title": "Runway Gen-4 Turbo pricing change", "reason": "Pricing change only; no new capability", "source": "Runway Discord"},
+    {"title": "ElevenLabs Enterprise HIPAA launch", "reason": "Published in earlier bulletin (Jul 10 window)", "source": "ElevenLabs blog"},
+    {"title": "Notion AI auto-draft workflows", "reason": "Date unconfirmed within strict window", "source": "Notion changelog"},
+    {"title": "Linear AI issue triage beta", "reason": "Beta only; no confirmed availability date in window", "source": "Linear changelog"},
+    {"title": "Anthropic Model Context Protocol 1.2 spec", "reason": "Outside strict window (July 9)", "source": "spec.modelcontextprotocol.io"},
+    {"title": "Gemini 3.5 Pro targeting July 17", "reason": "Forward-looking — not yet shipped as of run date", "source": "coursiv.io, The Verge"},
+    {"title": "OpenAI AI home speaker product update", "reason": "Not yet shipping; Bloomberg report only, no primary source", "source": "Bloomberg 2026-07-14"},
+    {"title": "Apple/OpenAI trade secret lawsuit response", "reason": "Follow-up to earlier bulletin items; low BD actionability", "source": "TechCrunch, Bloomberg"},
+    {"title": "EU AI Act enforcement wave (non-Meta)", "reason": "Continuing enforcement calendar context, not a discrete launch", "source": "IAPP, Bird & Bird"},
+    {"title": "Cerebras inference speed record claim", "reason": "Marketing benchmark — T4 source; no independent verification", "source": "Cerebras blog"},
+    {"title": "OpenAI Jony Ive hardware device update", "reason": "No new facts vs. prior reporting; still pre-announcement", "source": "Bloomberg 2026-07-15"},
+    {"title": "Nscale European GPU cluster expansion", "reason": "Outside strict window (July 10)", "source": "Nscale press release"},
+    {"title": "Hugging Face Daily Papers: 8 papers Jul 13-16", "reason": "Research-only; no product release or near-term BD application", "source": "huggingface.co/papers"}
+  ],
+  "search_log_summary": {
+    "total_searches": 40,
+    "exploratory_adversarial_geo": 26,
+    "exploration_pct": 65,
+    "sources_returning_403": ["x.ai/news/grok-build-open-source", "openai.com/news"],
+    "sources_returning_empty": ["ec.europa.eu/commission/presscorner/detail/en/ip_26_1276"],
+    "geo_diversity_searches": [
+      "AI Indonesia startup announcement July 2026",
+      "AI Southeast Asia July 2026 launch",
+      "ASEAN AI policy July 2026"
+    ],
+    "adversarial_searches": [
+      "Grok Build data collection privacy risk",
+      "ChatGPT WhatsApp EU antitrust criticism",
+      "Anthropic HIPAA BAA self-serve limitations",
+      "Nobel economists AI letter criticism response"
+    ]
+  }
+}
