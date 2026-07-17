@@ -1,0 +1,209 @@
+{
+  "run_date": "2026-07-17",
+  "period_start": "2026-07-14",
+  "period_end": "2026-07-17",
+  "timeframe_label": "Jul 14–17 2026 (strict 72h window)",
+  "depth": "standard",
+  "audience": ["public-digest"],
+  "items_reviewed": 30,
+  "items_published": 6,
+  "items_dropped": 24,
+  "exploration_pct": 43,
+  "sources_count": 18,
+  "verification_summary": {
+    "verified": 3,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "categories_covered": ["model-release", "dev-tools", "policy-regulation", "ai-for-business"],
+  "published_items": [
+    {
+      "title": "Kimi K3 — Moonshot's 2.8T MoE Model Tops Frontend Code Arena, Open Weights July 27",
+      "date": "2026-07-16",
+      "category": "model-release",
+      "tier": "T2-T3",
+      "verification": "secondary",
+      "methodology": "vendor launch + independent benchmark",
+      "source_url": "https://kimi.ai",
+      "source_org": "Moonshot AI",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Kimi K3 launched July 16 on Kimi Code and Kimi app; two variants: K3 Max and K3 Swarm Max",
+        "API pricing: $3.00/$15.00 per 1M tokens; cache-hit input $0.30",
+        "Open weights scheduled for public release July 27",
+        "Frontend Code Arena: 1,679 points, #1; beats Claude Fable 5 (1,631) and GPT-5.6 Sol (1,618) in 6/7 sub-domains",
+        "Hallucination rate: 51% (up from 39% for predecessor); accuracy improved in parallel (Artificial Analysis)",
+        "Architecture: 2.8T total parameters; 1M context; sparsity ratio undisclosed",
+        "13,241 reasoning tokens per task; hidden ~85-token system prompt (simonwillison.net)"
+      ],
+      "caveats": [
+        "No formal Moonshot AI blog post URL indexed; architecture from third-party reporting",
+        "Moonshot has not disclosed sparsity ratio or active parameter count",
+        "Arena scores reflect community voting preferences, not production workflow performance",
+        "Artificial Analysis hallucination methodology may not generalize across all workload types",
+        "July 27 open-weight date is Moonshot-stated, not independently confirmed"
+      ]
+    },
+    {
+      "title": "Thinking Machines Lab Releases Inkling — 975B Open-Weight Multimodal Model",
+      "date": "2026-07-15",
+      "category": "model-release",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "vendor primary blog + T2 trade press",
+      "source_url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "source_org": "Thinking Machines Lab",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "Inkling released July 15; 975B total / 41B active MoE parameters; 1M context; 45T training tokens",
+        "Weights at thinkingmachines/inkling on Hugging Face",
+        "API via TogetherAI, Fireworks, Modal, Databricks, Baseten",
+        "Inkling-Small: 276B/12B, preview release same date",
+        "Tinker platform: 64K/256K context options; 50% introductory discount",
+        "Founded by Mira Murati (former OpenAI CTO); ~200 employees; trained on Nvidia GB300 NVL72",
+        "Company explicitly states Inkling is 'not the strongest overall model available today'"
+      ],
+      "caveats": [
+        "No independent benchmark results published at launch; Arena.ai and Artificial Analysis scores not yet available",
+        "Tinker pricing details not disclosed in launch post",
+        "Company headcount and GPU infrastructure from TechCrunch reporting, not independently verified",
+        "1M-token context may not be available on all hosting partners"
+      ]
+    },
+    {
+      "title": "Claude Mid-Conversation System Messages Exit Beta on Fable 5, Mythos 5, Opus 4.8",
+      "date": "2026-07-15",
+      "category": "dev-tools",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "docs confirmed state + Releasebot date",
+      "source_url": "https://platform.claude.com/docs/en/build-with-claude/mid-conversation-system-messages",
+      "source_org": "Anthropic",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Beta header requirement removed; feature GA on Claude API, Amazon Bedrock, Google Cloud Vertex",
+        "Available on Claude Fable 5, Claude Mythos 5, Claude Opus 4.8; not on Claude Sonnet 5",
+        "System message must immediately follow a user or tool-result turn; other placements return 400 error",
+        "Cache prefix stays intact when system message is appended mid-conversation",
+        "Documented use cases: permission changes, token-budget updates, mode switches, agentic loop mid-session input"
+      ],
+      "caveats": [
+        "Primary Anthropic release notes at support.claude.com do not list this update in Jul 14-17 range",
+        "July 15 date is from Releasebot (T3) only; exact date of beta-to-GA transition lacks primary Anthropic announcement",
+        "Feature confirmed available without beta header by Anthropic's official documentation"
+      ]
+    },
+    {
+      "title": "Claude Code Ships Broad Agentic Session and Stability Update",
+      "date": "2026-07-16",
+      "category": "dev-tools",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "GitHub release notes",
+      "source_url": "https://github.com/anthropics/claude-code/releases",
+      "source_org": "Anthropic",
+      "bd_actionability": "high",
+      "key_facts": [
+        "Subagent session fix: returning to agent no longer silently drops subagents and re-runs prompt from scratch",
+        "Context-usage indicator CPU and memory regression fixed",
+        "Background agent PATH inheritance fix on Windows",
+        "macOS 15-20 second stall fix on background agent session open/switch",
+        "--forward-subagent-text flag added for stream-json subagent output; CLAUDE_CODE_FORWARD_SUBAGENT_TEXT env var"
+      ]
+    },
+    {
+      "title": "Gemini 3.5 Pro Misses Third Target Date; Stopgap 3.6 Flash Reported",
+      "date": "2026-07-17",
+      "category": "model-release",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "third-party reporting + API changelog absence",
+      "source_url": "https://www.geeky-gadgets.com/gemini-3-5-pro-delayed-again/",
+      "source_org": "Geeky Gadgets",
+      "bd_actionability": "medium",
+      "key_facts": [
+        "No gemini-3.5-pro model ID in Gemini API changelog; most recent entry July 6, 2026",
+        "Third target date (July 17) missed; original target June 2026, prior delay to earlier July",
+        "Issues cited: hallucinations and inconsistent outputs",
+        "Potential stopgap gemini-3.6-flash and gemini-3.5-flash-light model IDs registered",
+        "Unconfirmed pre-release specs: 2M context, $1.25/$10.00 per million tokens, Deep Think on Ultra tier"
+      ],
+      "caveats": [
+        "Primary source for delay is Geeky Gadgets (T3); Google has published no official communication",
+        "API changelog absence (last entry July 6) is most reliable signal, but there may be lag between launch and update",
+        "If Gemini 3.5 Pro launched later on July 17 after this run, item will require correction"
+      ]
+    },
+    {
+      "title": "Xi Jinping Opens WAIC 2026; China Advances WAICO as Rival AI Governance Body",
+      "date": "2026-07-17",
+      "category": "policy-regulation",
+      "tier": "T2-T3",
+      "verification": "secondary",
+      "methodology": "Chinese state official + SCMP + CGTN",
+      "source_url": "https://english.www.gov.cn/news/202607/13/content_WS6a5494bcc6d00ca5f9a0c27c.html",
+      "source_org": "State Council of China",
+      "bd_actionability": "low",
+      "key_facts": [
+        "Xi Jinping delivered opening keynote at WAIC 2026 in Shanghai July 17; first in-person head-of-state appearance",
+        "State Council described speech as elaborating China's policies and positions on AI development and governance",
+        "Proposed deliverables: 'China Wisdom for the World' Case Collection (20+ countries), Action Plan on AI Cooperation",
+        "WAICO (World AI Cooperation Organization) advanced as multilateral governance body headquartered in Shanghai",
+        "WAICO first proposed by Premier Li Qiang at WAIC 2025",
+        "Xi keynote is highest-profile head-of-state engagement at a dedicated AI governance summit to date"
+      ],
+      "caveats": [
+        "Speech content described from pre-speech state media briefings (July 13-16); actual transcript not yet indexed",
+        "WAICO remains a Chinese diplomatic proposal; no participating countries or charter published",
+        "Xi's specific framing on chip sanctions and US tech restrictions based on analyst previews, not confirmed speech text"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Grok Build open-sourced after silent repo upload incident (Jul 15)", "reason": "Published in Jul 16 bulletin", "source": "GitHub/xAI"},
+    {"title": "ChatGPT returns to WhatsApp EEA via EU antitrust order (Jul 13)", "reason": "Published in Jul 16 bulletin", "source": "European Commission"},
+    {"title": "Anthropic HIPAA self-serve configuration + Admin API Beta (Jul 14)", "reason": "Published in Jul 16 bulletin", "source": "support.claude.com"},
+    {"title": "16 Nobel Laureates and 200+ economists AI statement (Jul 13)", "reason": "Published in Jul 16 bulletin", "source": "PRNewswire"},
+    {"title": "Fable 5 free access extended to July 19 — third extension (Jul 13)", "reason": "Published in Jul 16 bulletin", "source": "Multiple T3"},
+    {"title": "Claude for Teachers — free K-12 educator access (Jul 14)", "reason": "Published in Jul 15 bulletin", "source": "Anthropic"},
+    {"title": "South Korea $880B chip and AI infrastructure plan", "reason": "Outside strict 72h window (Jun 29)", "source": "Bloomberg"},
+    {"title": "Acrab $350M SEA agentic AI compute platform funding", "reason": "Outside strict 72h window (Jul 13)", "source": "TNGlobal"},
+    {"title": "Anthropic Claude memory update — individual categorized entries (Jul 10)", "reason": "Outside strict 72h window", "source": "Releasebot"},
+    {"title": "Anthropic Dreams Research Preview expanded to Fable 5 and Sonnet 5 (Jul 10)", "reason": "Outside strict 72h window", "source": "Releasebot"},
+    {"title": "DeepSeek V4 launch", "reason": "Not yet shipped; target date is July 24", "source": "Multiple T3"},
+    {"title": "Gemini 3.6 Flash stopgap (unconfirmed)", "reason": "Speculative; no model card, API registration, or Google primary", "source": "Geeky Gadgets (T3)"},
+    {"title": "WAIC 2026 product debuts: Huawei Atlas 950, ZTE AI Agent Phone, MiniMax M3", "reason": "Individual product specs not from primary sources; absorbed into WAIC/Xi item", "source": "Multiple outlets (Jul 17)"},
+    {"title": "Claude Code v2.1.210 — live elapsed-time counter (Jul 15)", "reason": "Minor UX improvement; insufficient standalone significance", "source": "Releasebot (T3)"},
+    {"title": "Microsoft Agent Framework 1.11.0", "reason": "Cannot confirm in-window date from primary source", "source": "GitHub (date unconfirmed)"},
+    {"title": "MCP Enterprise-Managed Authorization stable", "reason": "Outside strict 72h window (Jun 18)", "source": "MCP blog"},
+    {"title": "MCP 2026-07-28 Release Candidate", "reason": "RC published for July 28 final spec; no July 14-17 MCP update in window", "source": "blog.modelcontextprotocol.io"},
+    {"title": "Anthropic J-Space / global workspace interpretability research", "reason": "Outside strict 72h window (Jul 6)", "source": "anthropic.com/research/global-workspace"},
+    {"title": "PulseMCP new MCP servers Jul 14-17", "reason": "No new MCP server additions confirmed in-window via fetch", "source": "pulsemcp.com"},
+    {"title": "Hugging Face Daily Papers Jul 14-17", "reason": "No in-window papers with near-term BD application identified", "source": "huggingface.co/papers"},
+    {"title": "OpenAI Flex Processing", "reason": "Outside window (launched April 2025); not a new announcement", "source": "OpenAI"},
+    {"title": "WAIC High-Level Meeting on AI Governance Day 1 specific outcomes", "reason": "Content not yet publicly indexed as of run time", "source": "WAIC official (Jul 17)"},
+    {"title": "Inkling vs benchmark comparisons (Arena.ai, Artificial Analysis)", "reason": "No scores published at launch; item included without benchmark data", "source": "Pending"},
+    {"title": "Kimi K3 Swarm Max parallel processing variant — detailed specs", "reason": "Subsumed into main Kimi K3 item; no primary spec sheet found", "source": "Multiple (Jul 16)"}
+  ],
+  "search_log_summary": {
+    "total_searches": 35,
+    "exploratory_adversarial_geo": 15,
+    "exploration_pct": 43,
+    "sources_returning_403": ["x.ai/news", "venturebeat.com (Kimi K3 article)"],
+    "sources_returning_empty": ["pulsemcp.com (in-window additions)", "huggingface.co/papers (in-window BD-applicable)"],
+    "geo_diversity_searches": [
+      "AI Indonesia SEA startup announcement July 14-17 2026",
+      "Acrab Singapore funding 350 million July 2026 date",
+      "South Korea AI 880 billion plan July 2026 date"
+    ],
+    "adversarial_searches": [
+      "Kimi K3 concerns criticism hallucination July 2026",
+      "Gemini 3.5 Pro launched confirmed July 17 2026 API available",
+      "Xi Jinping WAIC speech content July 17 2026 actual what he said",
+      "Anthropic Claude interpretability hidden workspace July 2026"
+    ],
+    "social_searches": [
+      "site:x.com AI announcement July 17 2026 Kimi K3 WAIC Gemini"
+    ]
+  }
+}
