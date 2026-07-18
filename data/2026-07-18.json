@@ -1,0 +1,349 @@
+{
+  "run_date": "2026-07-18",
+  "period_start": "2026-07-15",
+  "period_end": "2026-07-18",
+  "window_hours": 72,
+  "window_expanded": false,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 28,
+  "items_published": 7,
+  "items_dropped": 21,
+  "verification_summary": {
+    "verified": 4,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "exploration_pct": 50,
+  "sources_count": 20,
+  "total_searches": 35,
+  "exploratory_searches": 17,
+  "items": [
+    {
+      "id": 1,
+      "title": "Hugging Face Discloses Autonomous AI-Agent-Driven Production Breach",
+      "date": "2026-07-16",
+      "category": "ai-for-business",
+      "verification": "verified",
+      "tier": "T2",
+      "primary_source": "https://huggingface.co/blog/security-incident-july-2026",
+      "source_org": "Hugging Face",
+      "methodology": "vendor-disclosure",
+      "claims": [
+        {
+          "claim": "Breach driven end-to-end by autonomous AI agent framework; detected July 16",
+          "source": "https://huggingface.co/blog/security-incident-july-2026",
+          "tier": "T2"
+        },
+        {
+          "claim": "Attack vector: remote-code dataset loader and template injection in dataset configuration",
+          "source": "https://huggingface.co/blog/security-incident-july-2026",
+          "tier": "T2"
+        },
+        {
+          "claim": "Campaign executed 17,000+ automated actions via short-lived sandboxes over a weekend",
+          "source": "https://huggingface.co/blog/security-incident-july-2026",
+          "tier": "T2"
+        },
+        {
+          "claim": "Impact: limited internal datasets and service credentials; public models/supply chain clean",
+          "source": "https://huggingface.co/blog/security-incident-july-2026",
+          "tier": "T2"
+        }
+      ],
+      "caveats": [
+        "Partner/customer data exposure assessment ongoing; final scope not published",
+        "Attack attribution not published",
+        "17,000+ events figure from Hugging Face's own LLM-triage pipeline; methodology not independently verified"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Claude Code v2.1.212 Adds /fork, Session Resource Caps, and MCP Auto-Background",
+      "date": "2026-07-17",
+      "category": "dev-tools",
+      "verification": "verified",
+      "tier": "T2",
+      "primary_source": "https://github.com/anthropics/claude-code/releases",
+      "source_org": "Anthropic / GitHub",
+      "methodology": "changelog",
+      "claims": [
+        {
+          "claim": "/fork copies conversation to new background session; /subtask replaces in-session fork",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "WebSearch per-session cap: 200 default; CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION env var",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "Subagent spawn cap: 200 default; CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION; resets on /clear",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "MCP tool auto-background after 2 minutes; configurable via CLAUDE_CODE_MCP_AUTO_BACKGROUND_MS",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "/resume opens past-session picker including deleted sessions",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "48 total changes including Windows PowerShell 7 preference, /ultrareview PR-ref fix, prompt caching fixes",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        }
+      ],
+      "caveats": []
+    },
+    {
+      "id": 3,
+      "title": "Google Renames NotebookLM to Gemini Notebook, Adds Code Execution for 30M Users",
+      "date": "2026-07-16",
+      "category": "productivity-ai",
+      "verification": "verified",
+      "tier": "T2",
+      "primary_source": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      "source_org": "Google",
+      "methodology": "announcement",
+      "claims": [
+        {
+          "claim": "Renamed to Gemini Notebook July 16; serves 30M+ users and 600,000+ orgs",
+          "source": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Code execution (secure cloud computer) live for AI Ultra and Workspace AI Ultra/Expanded Access users",
+          "source": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Pro user code execution rollout: coming weeks, no specific date",
+          "source": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+          "tier": "T2"
+        },
+        {
+          "claim": "Gemini 3.5 + Antigravity upgrade expanding from Ultra to all AI Pro users on the web",
+          "source": "https://9to5google.com/2026/07/16/notebooklm-gemini-notebook/",
+          "tier": "T2-T3"
+        },
+        {
+          "claim": "Notebook sync across Gemini app; Google Search AI Mode integration soon",
+          "source": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+          "tier": "T2"
+        }
+      ],
+      "cross_references": [
+        "https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html",
+        "https://techcrunch.com/2026/07/16/google-continues-its-renaming-streak-by-turning-notebooklm-to-gemini-notebook/"
+      ],
+      "caveats": [
+        "Pro code execution rollout timing unspecified",
+        "Gemini Search AI Mode integration is forward-looking, not yet shipped",
+        "Antigravity upgrade detail from 9to5Google, not directly in primary blog post"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "China's Dual AI Regulation Enforcement: Agent Governance and Companion Rules Take Effect",
+      "date": "2026-07-15",
+      "category": "policy-regulation",
+      "verification": "secondary",
+      "tier": "T2-T3",
+      "primary_source": "https://iapp.org/news/a/chinas-regulation-on-ai-companions-takes-force",
+      "secondary_source": "https://aigovernance.com/news/chinas-agent-rules-take-effect-july-15-and-illinois-mandates-third-party-safety-audits",
+      "source_org": "IAPP; AI Governance Institute",
+      "methodology": "regulatory-enforcement",
+      "claims": [
+        {
+          "claim": "Implementation Opinions on Intelligent Agent Governance enforceable July 15; world's first dedicated AI agent regulatory framework",
+          "source": "https://aigovernance.com/news/chinas-agent-rules-take-effect-july-15-and-illinois-mandates-third-party-safety-audits",
+          "tier": "T3"
+        },
+        {
+          "claim": "Three-tier decision authorization: agent actions classified by consequence level; sensitive sectors require filing",
+          "source": "https://aigovernance.com/news/chinas-agent-rules-take-effect-july-15-and-illinois-mandates-third-party-safety-audits",
+          "tier": "T3"
+        },
+        {
+          "claim": "Interim Measures for AI Anthropomorphic Interactive Services enforceable July 15; covers emotional AI companions",
+          "source": "https://iapp.org/news/a/chinas-regulation-on-ai-companions-takes-force",
+          "tier": "T2"
+        },
+        {
+          "claim": "Companion rules: mandates distress detection, crisis intervention, bans addictive design; data-use restrictions",
+          "source": "https://iapp.org/news/a/chinas-regulation-on-ai-companions-takes-force",
+          "tier": "T2"
+        },
+        {
+          "claim": "ByteDance and Alibaba disabled companion AI features ahead of deadline",
+          "source": "https://qz.com/bytedance-alibaba-ai-companion-chatbot-china-rules-070626",
+          "tier": "T2-T3"
+        },
+        {
+          "claim": "Penalties: CNY 100,000 basic; CNY 200,000 for citizen health/safety harm",
+          "source": "https://iapp.org/news/a/chinas-regulation-on-ai-companions-takes-force",
+          "tier": "T2"
+        }
+      ],
+      "caveats": [
+        "Chinese-language primary government texts not fetched; English sources used",
+        "No enforcement actions reported as of July 15; this reflects rules taking effect"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Altman, Amodei, Hassabis Converge on Mandatory Pre-Release Model Scrutiny",
+      "date": "2026-07-16",
+      "category": "policy-regulation",
+      "verification": "secondary",
+      "tier": "T2",
+      "primary_source": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
+      "source_org": "Axios",
+      "methodology": "original-reporting",
+      "claims": [
+        {
+          "claim": "Altman, Amodei, Hassabis all endorse mandatory pre-release scrutiny for frontier models",
+          "source": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
+          "tier": "T2"
+        },
+        {
+          "claim": "Amodei: FAA-model federal agency with day-1 release-blocking power",
+          "source": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
+          "tier": "T2"
+        },
+        {
+          "claim": "Hassabis: FINRA-model industry-funded body, voluntary to mandatory escalation",
+          "source": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
+          "tier": "T2"
+        },
+        {
+          "claim": "Altman: IAEA-model U.S.-led international forum using market access as compliance leverage",
+          "source": "https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google",
+          "tier": "T2"
+        }
+      ],
+      "caveats": [
+        "Based on public statements; no primary legislative proposals or formal agreements published",
+        "Three proposals are mutually incompatible on enforcement mechanism"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Anthropic Posts 32 Enforcement Analyst Roles in Largest Safety Hiring Push",
+      "date": "2026-07-15",
+      "category": "ai-for-business",
+      "verification": "secondary",
+      "tier": "T2",
+      "primary_source": "https://www.axios.com/2026/07/15/anthropic-hiring-catastrophe-amodei",
+      "source_org": "Axios",
+      "methodology": "original-reporting",
+      "claims": [
+        {
+          "claim": "32 concurrent enforcement analyst job postings; specializations: radiological/nuclear, chemical/explosives, financial scams, cybercrime",
+          "source": "https://www.axios.com/2026/07/15/anthropic-hiring-catastrophe-amodei",
+          "tier": "T2"
+        },
+        {
+          "claim": "Pay range: mid-to-upper $200Ks",
+          "source": "https://www.axios.com/2026/07/15/anthropic-hiring-catastrophe-amodei",
+          "tier": "T2"
+        },
+        {
+          "claim": "Spokesperson: stress-test systems and bolster defenses before a model ever goes live",
+          "source": "https://www.axios.com/2026/07/15/anthropic-hiring-catastrophe-amodei",
+          "tier": "T2"
+        }
+      ],
+      "caveats": [
+        "Job postings not independently fetched; Axios reporting with spokesperson confirmation",
+        "Hiring signal, not confirmed hires; no policy change to Claude's existing constraints implied"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "WAICO Founded: 29 Countries Sign Agreement in Shanghai",
+      "date": "2026-07-16",
+      "category": "policy-regulation",
+      "verification": "verified",
+      "tier": "T2",
+      "primary_source": "https://english.news.cn/20260716/b0449aa2133542868e310fdc45ef2969/c.html",
+      "source_org": "Xinhua",
+      "methodology": "news-report",
+      "claims": [
+        {
+          "claim": "29 countries signed WAICO founding agreement in Shanghai on July 16",
+          "source": "https://english.news.cn/20260716/b0449aa2133542868e310fdc45ef2969/c.html",
+          "tier": "T2"
+        },
+        {
+          "claim": "Chinese FM Wang Yi signed for China; UN SG Guterres attended",
+          "source": "https://english.news.cn/20260716/b0449aa2133542868e310fdc45ef2969/c.html",
+          "tier": "T2"
+        },
+        {
+          "claim": "Named founding members include Russia, Kazakhstan, Pakistan, Indonesia, Laos",
+          "source": "https://english.news.cn/20260716/b0449aa2133542868e310fdc45ef2969/c.html",
+          "tier": "T2"
+        },
+        {
+          "claim": "Xi Jinping keynote July 17: called WAICO an important milestone; pledged 5,000 AI training opportunities to developing nations",
+          "source": "https://newsaf.cgtn.com/news/2026-07-17/29-countries-sign-agreement-on-establishing-WAICO-1OPKUEx6JPi/p.html",
+          "tier": "T3"
+        }
+      ],
+      "update_note": "July 17 bulletin treated WAICO as unconfirmed proposal; signing confirmed by Xinhua T2 source",
+      "caveats": [
+        "Full list of 29 countries not published in English-language primary sources",
+        "WAICO charter and operational details not yet published"
+      ]
+    }
+  ],
+  "search_log": {
+    "total_searches": 35,
+    "exploratory_or_adversarial": 17,
+    "exploration_pct": 49,
+    "searches": [
+      {"query": "AI announcement model release July 18 2026", "type": "exploratory", "results": 9, "high_relevance": 1},
+      {"query": "Anthropic Claude news July 18 2026", "type": "registry", "results": 10, "high_relevance": 4},
+      {"query": "OpenAI announcement July 18 2026", "type": "registry", "results": 7, "high_relevance": 0},
+      {"query": "Google DeepMind Gemini news July 18 2026", "type": "registry", "results": 8, "high_relevance": 2},
+      {"query": "releasebot.io/updates/anthropic (fetch)", "type": "registry", "results": null, "high_relevance": 1},
+      {"query": "anthropic.com/news (fetch)", "type": "registry", "results": null, "high_relevance": 0},
+      {"query": "agent framework AI launch July 2026 release", "type": "exploratory", "results": 9, "high_relevance": 2},
+      {"query": "MCP Model Context Protocol news July 2026", "type": "registry", "results": 9, "high_relevance": 0},
+      {"query": "AI startup funding launch July 18 2026", "type": "exploratory", "results": 10, "high_relevance": 0},
+      {"query": "site:x.com AI announcement July 18 2026", "type": "social-stage3", "results": 10, "high_relevance": 2},
+      {"query": "WAICO founding agreement 29 countries July 17-18 2026", "type": "exploratory", "results": 10, "high_relevance": 8},
+      {"query": "releasebot.io/updates/anthropic/claude-code (fetch)", "type": "registry", "results": null, "high_relevance": 1},
+      {"query": "Hugging Face new model release July 17-18 2026", "type": "exploratory", "results": 10, "high_relevance": 3},
+      {"query": "github.com/anthropics/claude-code/releases (fetch)", "type": "registry", "results": null, "high_relevance": 3},
+      {"query": "blog.modelcontextprotocol.io (fetch)", "type": "registry", "results": null, "high_relevance": 0},
+      {"query": "Meta AI Llama xAI Grok Mistral July 18 2026", "type": "registry", "results": 8, "high_relevance": 0},
+      {"query": "blog.google Gemini Notebook NotebookLM July 16 2026 (search + fetch)", "type": "registry", "results": 9, "high_relevance": 5},
+      {"query": "Hugging Face AI-agent intrusion breach July 2026", "type": "exploratory", "results": 9, "high_relevance": 8},
+      {"query": "huggingface.co/blog/security-incident-july-2026 (fetch)", "type": "exploratory", "results": null, "high_relevance": 1},
+      {"query": "China AI agent regulations enforceable July 15 2026", "type": "exploratory", "results": 10, "high_relevance": 7},
+      {"query": "iapp.org China companion rules (fetch)", "type": "exploratory", "results": null, "high_relevance": 1},
+      {"query": "Altman Amodei Hassabis AI regulatory July 16 2026", "type": "exploratory", "results": 10, "high_relevance": 8},
+      {"query": "Anthropic hires misuse prevention analysts July 15 2026", "type": "exploratory", "results": 9, "high_relevance": 7},
+      {"query": "Gemini Notebook NotebookLM criticism concerns July 2026", "type": "adversarial", "results": 9, "high_relevance": 3},
+      {"query": "langchain-ai/langchain GitHub releases (fetch)", "type": "registry", "results": null, "high_relevance": 0},
+      {"query": "LangChain LlamaIndex browser-use OpenHands July 2026", "type": "registry", "results": 9, "high_relevance": 0},
+      {"query": "AI Indonesia SEA startup July 2026", "type": "geo-diversity-stage35", "results": 9, "high_relevance": 0},
+      {"query": "GitHub trending AI repositories July 18 2026", "type": "stage35", "results": 9, "high_relevance": 0},
+      {"query": "PulseMCP new MCP servers July 2026", "type": "registry", "results": 9, "high_relevance": 0},
+      {"query": "huggingface.co/papers (fetch)", "type": "stage35", "results": null, "high_relevance": 0},
+      {"query": "site:x.com AI model release announcement July 17-18 2026", "type": "social-stage3", "results": 10, "high_relevance": 2},
+      {"query": "GuardFall shell injection Claude Code GitHub Action supply chain date", "type": "adversarial", "results": 9, "high_relevance": 0},
+      {"query": "JadePuffer ransomware LLM agent July 2026 date", "type": "adversarial", "results": 9, "high_relevance": 0},
+      {"query": "CrewAI AutoGen LlamaIndex new release July 15-18 2026", "type": "registry", "results": 9, "high_relevance": 0},
+      {"query": "xAI Grok announcement July 15-18 2026 new feature", "type": "registry", "results": 9, "high_relevance": 0}
+    ]
+  }
+}
