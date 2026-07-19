@@ -1,0 +1,280 @@
+{
+  "run_date": "2026-07-19",
+  "period_start": "2026-07-16",
+  "period_end": "2026-07-19",
+  "window_hours": 72,
+  "window_expanded": false,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 28,
+  "items_published": 5,
+  "items_dropped": 23,
+  "verification_summary": {
+    "verified": 1,
+    "secondary": 4,
+    "rumor": 0
+  },
+  "exploration_pct": 40,
+  "sources_count": 18,
+  "total_searches": 35,
+  "exploratory_searches": 14,
+  "items": [
+    {
+      "id": 1,
+      "title": "Claude Code v2.1.214 ships safety and reliability update",
+      "date": "2026-07-18",
+      "category": "dev-tools",
+      "verification": "verified",
+      "tier": "T2",
+      "primary_source": "https://github.com/anthropics/claude-code/releases",
+      "source_org": "Anthropic / GitHub",
+      "methodology": "changelog",
+      "claims": [
+        {
+          "claim": "EndConversation tool added for explicit session termination",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "Progress heartbeats emitted for extended operations to prevent silent timeouts",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "Tighter permission checks; hardened Bash and PowerShell handling against injection patterns",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        },
+        {
+          "claim": "Improved background session cleanup; remote and plugin connectivity reliability fixes",
+          "source": "https://github.com/anthropics/claude-code/releases",
+          "tier": "T2"
+        }
+      ],
+      "caveats": []
+    },
+    {
+      "id": 2,
+      "title": "Fable 5 access tiers take effect July 20",
+      "date": "2026-07-18",
+      "category": "ai-for-business",
+      "verification": "secondary",
+      "tier": "T3",
+      "primary_source": "https://www.techtimes.com/articles/ai/fable-5-access-tiers-july-2026",
+      "secondary_sources": [
+        "https://fable5.app"
+      ],
+      "source_org": "TechTimes; fable5.app",
+      "methodology": "trade-press",
+      "claims": [
+        {
+          "claim": "July 19 11:59 PM PT: last hour of promotional all-subscriber Fable 5 access",
+          "source": "https://www.techtimes.com/articles/ai/fable-5-access-tiers-july-2026",
+          "tier": "T3"
+        },
+        {
+          "claim": "Max and Team Premium: retain Fable 5 at 50% of standard weekly token limits (capacity-permitting)",
+          "source": "https://www.techtimes.com/articles/ai/fable-5-access-tiers-july-2026",
+          "tier": "T3"
+        },
+        {
+          "claim": "Pro and Team Standard: $100 one-time usage credit, then API billing at $10/M input, $50/M output",
+          "source": "https://www.techtimes.com/articles/ai/fable-5-access-tiers-july-2026",
+          "tier": "T3"
+        },
+        {
+          "claim": "Anthropic cited capacity constraints; no date set for restoring Fable 5 as standard plan inclusion",
+          "source": "https://fable5.app",
+          "tier": "T3"
+        }
+      ],
+      "caveats": [
+        "No directly accessible official Anthropic pricing page found during this run",
+        "Figures from T3 secondary trade press corroborated by fable5.app info page"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Anthropic in preliminary talks to lease Meta compute",
+      "date": "2026-07-17",
+      "category": "ai-for-business",
+      "verification": "secondary",
+      "tier": "T2",
+      "primary_source": "https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html",
+      "cross_references": [
+        "https://qz.com/anthropic-meta-compute-lease-2026",
+        "https://www.datacenterdynamics.com/en/news/anthropic-meta-compute-2026",
+        "https://finance.yahoo.com/news/anthropic-meta-compute-deal-2026"
+      ],
+      "source_org": "CNBC",
+      "methodology": "original-reporting",
+      "claims": [
+        {
+          "claim": "Preliminary talks for Anthropic to lease Meta compute at approximately $10B over 2 years",
+          "source": "https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html",
+          "tier": "T2"
+        },
+        {
+          "claim": "Structure: monthly increments, early-exit option",
+          "source": "https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html",
+          "tier": "T2"
+        },
+        {
+          "claim": "Follows Anthropic-SpaceX/Colossus arrangement reported at approximately $45B over 3 years",
+          "source": "https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html",
+          "tier": "T2"
+        },
+        {
+          "claim": "Meta signaled openness to external compute sales in May 2026; projected 2026 CapEx approximately $145B",
+          "source": "https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html",
+          "tier": "T2"
+        }
+      ],
+      "caveats": [
+        "Single unnamed-source report; both companies declined to comment",
+        "Explicitly characterized as very preliminary with no guarantee of a signed agreement"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Gemini 3.5 Pro misses third launch deadline",
+      "date": "2026-07-16",
+      "category": "model-release",
+      "verification": "secondary",
+      "tier": "T2",
+      "primary_source": "https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals",
+      "cross_references": [
+        "https://www.cnbc.com/2026/07/16/alphabet-stock-gemini-3-5-pro-ai.html",
+        "https://polymarket.com/event/gemini-3-5-pro-launch-date"
+      ],
+      "source_org": "Bloomberg; CNBC",
+      "methodology": "original-reporting",
+      "claims": [
+        {
+          "claim": "Third missed external deadline (June, then targeting July 17, missed again)",
+          "source": "https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals",
+          "tier": "T2"
+        },
+        {
+          "claim": "Cause: late-June training-data update failed to close gaps in coding performance and complex reasoning",
+          "source": "https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals",
+          "tier": "T2"
+        },
+        {
+          "claim": "Alphabet market cap fell approximately $225B in the July 16 session",
+          "source": "https://www.cnbc.com/2026/07/16/alphabet-stock-gemini-3-5-pro-ai.html",
+          "tier": "T2"
+        },
+        {
+          "claim": "Polymarket August 7 target at 73% probability as of run date",
+          "source": "https://polymarket.com/event/gemini-3-5-pro-launch-date",
+          "tier": "T3"
+        }
+      ],
+      "caveats": [
+        "No official Google announcement; all deadline and failure-mode details from T2 trade press only",
+        "Capability specifications (2M context, deep reasoning layer) appear only in T3-T4 sources; excluded from item"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Huawei Atlas 950 SuperPoD unveiled at WAIC 2026",
+      "date": "2026-07-17",
+      "category": "ai-for-business",
+      "verification": "secondary",
+      "tier": "T3",
+      "primary_source": "https://en.sedaily.com/international/2026/07/17/huawei-unveils-atlas-950-superpod-linking-thousands-of-ai",
+      "source_org": "Seoul Economic Daily",
+      "methodology": "trade-press",
+      "claims": [
+        {
+          "claim": "Atlas 950 SuperPoD links 8,192 Ascend 950DT NPU chips via UnifiedBus 2.0 all-optical interconnect",
+          "source": "https://en.sedaily.com/international/2026/07/17/huawei-unveils-atlas-950-superpod-linking-thousands-of-ai",
+          "tier": "T3"
+        },
+        {
+          "claim": "Targets ultra-large-scale training and inference workloads",
+          "source": "https://en.sedaily.com/international/2026/07/17/huawei-unveils-atlas-950-superpod-linking-thousands-of-ai",
+          "tier": "T3"
+        },
+        {
+          "claim": "Vendor claims 6.7x performance advantage over NVIDIA NVL144 (vendor-claimed, unverified)",
+          "source": "https://en.sedaily.com/international/2026/07/17/huawei-unveils-atlas-950-superpod-linking-thousands-of-ai",
+          "tier": "T4",
+          "is_vendor_benchmark": true
+        }
+      ],
+      "caveats": [
+        "All performance comparisons are vendor-claimed; no independent benchmark or third-party validation found",
+        "Huawei Chinese-language primary announcements not accessed; English proxy via Seoul Economic Daily"
+      ]
+    }
+  ],
+  "dropped_items": [
+    {"title": "Anthropic IPO / S-1 filing", "reason": "Outside window — June 1, 2026"},
+    {"title": "Claude Reflect dashboard", "reason": "Outside window — July 9, 2026"},
+    {"title": "Claude M365 write tools", "reason": "Outside window — July 7, 2026"},
+    {"title": "SWE-Bench Pro audit — OpenAI GPT-5.6", "reason": "Outside window — July 8, 2026"},
+    {"title": "Berkeley BenchJack benchmark paper", "reason": "Outside window — April 12, 2026"},
+    {"title": "Mistral Robostral Navigate", "reason": "Outside window — July 8, 2026"},
+    {"title": "Meta Muse Spark 1.1", "reason": "Outside window — July 9, 2026"},
+    {"title": "OpenAI GPT-Live launch", "reason": "Outside window — July 8, 2026"},
+    {"title": "OpenAI GPT-5.6 general availability", "reason": "Outside window — July 9, 2026"},
+    {"title": "SpaceXAI rebrand / Grok 4.5", "reason": "Outside window — July 6-8, 2026"},
+    {"title": "StepX Neo smartphone AI features", "reason": "Outside window — July 13 launch; July 17 WAIC appearance is marketing event only"},
+    {"title": "MCP 2026-07-28 release candidate", "reason": "Announcement outside window (May 21); RC not yet released"},
+    {"title": "Qualcomm-Tenstorrent acquisition talks", "reason": "Outside window — June 15, 2026"},
+    {"title": "NVIDIA Nemotron 51B/70B releases", "reason": "Outside window — June-July 1, 2026"},
+    {"title": "Anthropic-Blackstone Ode joint venture", "reason": "Outside window — May 2026"},
+    {"title": "Gemini Omni Flash", "reason": "Outside window — June 30-July 1, 2026"},
+    {"title": "GitHub Copilot + Kimi K2.7 Code integration", "reason": "Outside window — July 1, 2026"},
+    {"title": "Mistral new open-weight flagship", "reason": "Insufficient primary; partner early access date unclear; outside window"},
+    {"title": "WAICO governance charter details", "reason": "Charter not yet published; no new material this window"},
+    {"title": "Gemini 3.5 Pro capability specs (2M context, deep reasoning)", "reason": "T3-T4 sources only; no official Google announcement; excluded from published item"},
+    {"title": "MCP protocol specification v1.1 update", "reason": "No in-window update found"},
+    {"title": "SEA AI startup announcements", "reason": "No T1-T3 sources found for in-window SEA-region AI news across three geo-diversity searches"},
+    {"title": "StepX Neo / AI mobile standalone item", "reason": "Overlaps with WAIC event; insufficient primary for independent launch claims"}
+  ],
+  "search_log": {
+    "total_searches": 35,
+    "exploratory_or_adversarial": 14,
+    "exploration_pct": 40,
+    "searches": [
+      {"query": "AI news July 2026", "type": "exploratory", "results": 12, "high_relevance": 4},
+      {"query": "Claude Code release July 2026", "type": "registry", "results": 8, "high_relevance": 3},
+      {"query": "Anthropic news July 17 2026", "type": "registry", "results": 10, "high_relevance": 4},
+      {"query": "Anthropic Meta compute deal July 2026", "type": "registry", "results": 9, "high_relevance": 4},
+      {"query": "Fable 5 access changes July 2026", "type": "registry", "results": 7, "high_relevance": 3},
+      {"query": "Gemini 3.5 Pro delay July 2026", "type": "registry", "results": 11, "high_relevance": 5},
+      {"query": "Alphabet stock market cap drop July 16 2026", "type": "registry", "results": 9, "high_relevance": 5},
+      {"query": "WAIC 2026 AI announcements July 17", "type": "exploratory", "results": 9, "high_relevance": 3},
+      {"query": "Huawei Atlas 950 SuperPoD NPU", "type": "exploratory", "results": 6, "high_relevance": 3},
+      {"query": "OpenAI news July 16-19 2026", "type": "registry", "results": 8, "high_relevance": 2},
+      {"query": "Mistral model release July 16-19 2026", "type": "registry", "results": 6, "high_relevance": 1},
+      {"query": "MCP protocol update July 2026", "type": "registry", "results": 5, "high_relevance": 0},
+      {"query": "agent framework launch July 2026", "type": "exploratory", "results": 7, "high_relevance": 1},
+      {"query": "AI dev tools release July 16-19 2026", "type": "exploratory", "results": 8, "high_relevance": 2},
+      {"query": "AI startup funding July 16-19 2026", "type": "exploratory", "results": 6, "high_relevance": 1},
+      {"query": "Fable 5 API pricing anthropic tokens", "type": "registry", "results": 5, "high_relevance": 3},
+      {"query": "AI Indonesia startup Juli 2026", "type": "geo-diversity", "results": 4, "high_relevance": 0},
+      {"query": "startup AI Asia Tenggara 2026", "type": "geo-diversity", "results": 3, "high_relevance": 0},
+      {"query": "model AI lokal Asia July 2026", "type": "geo-diversity", "results": 3, "high_relevance": 0},
+      {"query": "GitHub trending AI repositories July 2026", "type": "stage35", "results": 6, "high_relevance": 1},
+      {"query": "Hugging Face papers July 16-19 2026", "type": "stage35", "results": 7, "high_relevance": 2},
+      {"query": "benchmark AI model independent July 2026", "type": "adversarial", "results": 5, "high_relevance": 1},
+      {"query": "Gemini 3.5 Pro delay criticism controversy", "type": "adversarial", "results": 4, "high_relevance": 0},
+      {"query": "Anthropic Meta compute accuracy disputed", "type": "adversarial", "results": 5, "high_relevance": 1},
+      {"query": "Claude Code safety issue injection July 2026", "type": "adversarial", "results": 4, "high_relevance": 1},
+      {"query": "AI policy regulation July 16-19 2026", "type": "registry", "results": 6, "high_relevance": 1},
+      {"query": "StepX Neo AI smartphone launch", "type": "exploratory", "results": 5, "high_relevance": 1},
+      {"query": "WAICO AI governance charter published", "type": "registry", "results": 3, "high_relevance": 0},
+      {"query": "Meta compute cloud business Zuckerberg", "type": "registry", "results": 6, "high_relevance": 2},
+      {"query": "new LLM released July 16-19 2026", "type": "exploratory", "results": 8, "high_relevance": 2},
+      {"query": "AI workflow automation tool July 2026", "type": "exploratory", "results": 5, "high_relevance": 0},
+      {"query": "Atlas 950 Huawei NPU comparison NVIDIA independent", "type": "adversarial", "results": 4, "high_relevance": 1},
+      {"query": "Qualcomm Tenstorrent deal update July 2026", "type": "registry", "results": 4, "high_relevance": 0},
+      {"query": "MCP new tools servers July 2026", "type": "registry", "results": 5, "high_relevance": 0},
+      {"query": "CrewAI AutoGen LlamaIndex release July 16-19 2026", "type": "registry", "results": 6, "high_relevance": 0}
+    ]
+  }
+}
