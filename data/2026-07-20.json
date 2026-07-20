@@ -1,0 +1,272 @@
+{
+  "run": {
+    "date": "2026-07-20",
+    "period_start": "2026-07-17",
+    "period_end": "2026-07-20",
+    "timeframe": "72h",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 23,
+    "items_published": 4,
+    "items_dropped": 19,
+    "verification_summary": {
+      "verified": 2,
+      "secondary": 2,
+      "rumor": 0
+    },
+    "exploration_pct": 41,
+    "sources_count": 14,
+    "searches_total": 29,
+    "searches_exploratory": 12,
+    "fetches_total": 9
+  },
+  "items": [
+    {
+      "id": "claude-code-v2121-v2125-cluster",
+      "title": "Claude Code ships three releases across July 17–19",
+      "date": "2026-07-17 to 2026-07-19",
+      "category": "dev-tools",
+      "tier": "T2",
+      "verification": "verified",
+      "bd_actionability": "high",
+      "primary_source": {
+        "url": "https://code.claude.com/docs/en/changelog",
+        "org": "Anthropic",
+        "date": "2026-07-17 to 2026-07-19",
+        "methodology": "changelog"
+      },
+      "versions_covered": ["v2.1.212", "v2.1.214 (covered 2026-07-19)", "v2.1.215"],
+      "key_changes": {
+        "v2.1.212": [
+          "/fork creates background session instead of in-session subagent",
+          "/subtask replaces prior subagent launch",
+          "Session-wide WebSearch cap: 200 per session (CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION)",
+          "Session-wide subagent spawn cap: 200 per session (CLAUDE_CODE_MAX_SUBAGENTS_PER_SESSION)",
+          "MCP tool calls >2 min auto-backgrounded (CLAUDE_CODE_MCP_AUTO_BACKGROUND_MS)",
+          "/resume now shows past sessions including deleted ones",
+          "Fixed plan mode auto-running file-modifying Bash without permission prompts"
+        ],
+        "v2.1.215": [
+          "/verify and /code-review no longer auto-run; must be explicitly invoked"
+        ]
+      },
+      "conflict_of_interest": null
+    },
+    {
+      "id": "kimi-k3-moonshot-ai",
+      "title": "Kimi K3 — Moonshot AI releases 2.8T MoE model with 1M context",
+      "date": "2026-07-16",
+      "category": "model-release",
+      "tier": "T2",
+      "verification": "secondary",
+      "bd_actionability": "medium-high",
+      "primary_source": {
+        "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+        "author": "Simon Willison",
+        "date": "2026-07-16",
+        "methodology": "hands-on"
+      },
+      "cross_references": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals",
+          "org": "Bloomberg",
+          "date": "2026-07-17",
+          "tier": "T2",
+          "note": "Paywall — cross-referenced via secondary coverage"
+        },
+        {
+          "url": "https://www.gizmochina.com/2026/07/19/kimi-k3-moonshot-ai-unleashes-2-8-trillion-parameter-model-for-free/",
+          "org": "Gizmochina",
+          "date": "2026-07-19",
+          "tier": "T3"
+        }
+      ],
+      "specs": {
+        "total_parameters": "2.8T",
+        "architecture": "sparse MoE",
+        "experts_total": 896,
+        "experts_active_per_token": 16,
+        "context_window": "1M tokens",
+        "modalities": ["text", "vision"],
+        "reasoning": "always-on",
+        "variants": ["K3 Max", "K3 Swarm Max"]
+      },
+      "pricing": {
+        "input_per_million_tokens": 3.0,
+        "output_per_million_tokens": 15.0,
+        "currency": "USD",
+        "per_task_cost_estimate": 0.94,
+        "source": "Simon Willison hands-on estimate"
+      },
+      "benchmark_position": {
+        "artificial_analysis_intelligence_index_v4_1": 4,
+        "source": "Artificial Analysis",
+        "ahead_of": ["Claude Opus 4.8", "GPT-5.5"],
+        "behind": ["Claude Fable 5", "GPT-5.6 Sol"],
+        "caveat": "Mixed proprietary and independent harnesses; potential benchmark optimization"
+      },
+      "open_weight_status": "Weights promised July 27, 2026; not yet downloadable at publication",
+      "conflict_of_interest": null
+    },
+    {
+      "id": "china-waico-ai-governance",
+      "title": "China founds WAICO — 29 countries sign AI governance agreement at WAIC",
+      "date": "2026-07-17",
+      "category": "policy-regulation",
+      "tier": "T2",
+      "verification": "verified",
+      "bd_actionability": "low-medium",
+      "primary_source": {
+        "url": "https://english.news.cn/20260717/ce32e833ab5d47f883ad44e1f73cb634/c.html",
+        "org": "Xinhua (Chinese state media)",
+        "date": "2026-07-17",
+        "methodology": "official announcement"
+      },
+      "cross_references": [
+        {
+          "url": "https://english.www.gov.cn/news/202607/18/content_WS6a5c27e1c6d00ca5f9a0c4d8.html",
+          "org": "Chinese government official",
+          "date": "2026-07-18",
+          "tier": "T2"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it",
+          "org": "Al Jazeera",
+          "date": "2026-07-17",
+          "tier": "T2-T3"
+        }
+      ],
+      "waico_details": {
+        "full_name": "World Artificial Intelligence Cooperation Organization",
+        "founding_members_count": 29,
+        "sample_members": ["Indonesia", "Brazil", "Pakistan", "Russia", "Venezuela", "Kazakhstan", "Cuba"],
+        "western_democracies_joined": false,
+        "hq": "Shanghai",
+        "announced_by": "Xi Jinping",
+        "venue": "World AI Conference (WAIC) 2026",
+        "commitments": [
+          "5,000 training and seminar opportunities for developing nations over 5 years",
+          "Connect 30 countries to MAZU meteorological warning system",
+          "AI application cooperation centers with ASEAN, Arab League, African Union, BRICS"
+        ]
+      },
+      "sourcing_caveat": "Primary sources are Chinese state and government media. Western independent reporting corroborates key facts.",
+      "conflict_of_interest": null
+    },
+    {
+      "id": "gemini-35-pro-delay-august",
+      "title": "Gemini 3.5 Pro — July 17 deadline passes; model pushed to August",
+      "date": "2026-07-16 to 2026-07-18",
+      "category": "model-release",
+      "tier": "T3",
+      "verification": "secondary",
+      "bd_actionability": "medium",
+      "primary_source": {
+        "url": "https://9to5google.com/2026/07/16/gemini-3-5-pro-delays/",
+        "org": "9to5Google",
+        "date": "2026-07-16",
+        "methodology": "press reporting"
+      },
+      "cross_references": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals",
+          "org": "Bloomberg",
+          "date": "2026-07-16",
+          "tier": "T2",
+          "note": "Paywall"
+        },
+        {
+          "url": "https://windowsforum.com/threads/gemini-3-5-pro-remains-unshipped-july-18-use-flash-now.439120/",
+          "org": "Windows Forum",
+          "date": "2026-07-18",
+          "tier": "T3",
+          "note": "Confirms unshipped status July 18"
+        },
+        {
+          "url": "https://www.techtimes.com/articles/320736/20260716/rebuilt-gemini-35-pro-misses-third-deadline-google-eyes-stopgap-release.htm",
+          "org": "TechTimes",
+          "date": "2026-07-16",
+          "tier": "T3"
+        }
+      ],
+      "model_status": {
+        "announced": "2026-05-19 (Google I/O)",
+        "original_target": "June 2026",
+        "latest_missed_target": "July 17, 2026",
+        "next_reported_window": "August 2026 (unconfirmed)",
+        "official_google_statement": null,
+        "available_in": "Limited Vertex AI preview only"
+      },
+      "delay_cause": "Shortfalls in coding performance and recursive tool-calling; original base model discarded for full retraining (per Bloomberg)",
+      "speculated_features": {
+        "context_window": "2M tokens (unconfirmed)",
+        "reasoning_mode": "Deep Think (unconfirmed)",
+        "note": "No model card or pricing published as of 2026-07-18"
+      },
+      "conflict_of_interest": null
+    }
+  ],
+  "dropped": [
+    {"title": "Claude Code v2.1.214 (EndConversation, progress heartbeats)", "reason": "Covered in 2026-07-19 bulletin; v2.1.212 and v2.1.215 are the new items"},
+    {"title": "Fable 5 access tiers take effect July 20", "reason": "Covered in 2026-07-19 bulletin; no material update"},
+    {"title": "Anthropic in talks to lease Meta compute", "reason": "Covered in 2026-07-19 bulletin; no new developments"},
+    {"title": "Huawei Atlas 950 SuperPoD at WAIC 2026", "reason": "Covered in 2026-07-19 bulletin"},
+    {"title": "OpenAI Atlas browser discontinued", "date": "2026-07-09", "reason": "Outside 72h window"},
+    {"title": "Apple v OpenAI trade-secret lawsuit", "date": "2026-07-10", "reason": "Outside 72h window"},
+    {"title": "GPT-5.6 Sol/Terra/Luna launch", "date": "2026-07-09", "reason": "Outside 72h window"},
+    {"title": "ChatGPT Work agent launch", "date": "2026-07-09", "reason": "Outside 72h window"},
+    {"title": "GPT-Live voice models", "date": "2026-07-08", "reason": "Outside 72h window"},
+    {"title": "Anthropic confidential S-1 filing", "date": "2026-06-01", "reason": "Outside 72h window"},
+    {"title": "NAVER/NVIDIA sovereign AI infrastructure", "date": "2026-06-07", "reason": "Outside 72h window"},
+    {"title": "Zoom AI Productivity Suite", "date": "2026-06-01", "reason": "Outside 72h window"},
+    {"title": "Affinity MCP server launch", "date": "2026-04-28", "reason": "Outside 72h window"},
+    {"title": "MCP 2026-07-28 Release Candidate", "date": "2026-05-21", "reason": "RC announced May 21; final ships July 28 — outside window; flagged for 2026-07-28 bulletin"},
+    {"title": "TSMC Q2 results: $22B profit 77% YoY", "date": "2026-07-17", "reason": "Low BD-actionability; semiconductor supply result"},
+    {"title": "Apple overtakes Nvidia in market cap", "date": "2026-07-17", "reason": "Market-only event; no tooling or deployment impact"},
+    {"title": "EU AI Act transparency rules (August effective)", "reason": "Effective date is August; not a July 17-20 event"},
+    {"title": "Harvey AI $200M Series C at $2.1B valuation", "reason": "Funding news, low BD-actionability for workflow deployment"},
+    {"title": "wigolo / agentglass / codebase-memory-mcp (GitHub Trending)", "date": "2026-07-17", "reason": "T3 discovery only; insufficient date confirmation and adoption signals"}
+  ],
+  "search_log": [
+    {"query": "AI news July 2026 model release announcement", "results": 8, "high_relevance": 3, "type": "registry"},
+    {"query": "OpenAI announcement July 2026", "results": 7, "high_relevance": 5, "type": "registry"},
+    {"query": "Anthropic Claude news July 2026", "results": 10, "high_relevance": 4, "type": "registry"},
+    {"query": "Google Gemini AI news July 2026", "results": 7, "high_relevance": 4, "type": "registry"},
+    {"query": "AI announcements July 17 18 19 20 2026", "results": 10, "high_relevance": 6, "type": "registry"},
+    {"query": "agent framework MCP server release July 2026", "results": 10, "high_relevance": 3, "type": "registry"},
+    {"query": "Gemini 3.5 Pro launch July 17 2026", "results": 8, "high_relevance": 5, "type": "exploratory"},
+    {"query": "AI startup funding launch July 2026", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "Anthropic IPO S-1 filing July 2026", "results": 6, "high_relevance": 4, "type": "registry"},
+    {"query": "Kimi K3 Moonshot AI July 2026 release specs", "results": 10, "high_relevance": 6, "type": "registry"},
+    {"query": "site:x.com AI agent framework MCP July 2026", "results": 10, "high_relevance": 3, "type": "social"},
+    {"query": "China WAICO World AI Conference July 17 2026 governance", "results": 10, "high_relevance": 5, "type": "registry"},
+    {"query": "\"AI Indonesia\" OR \"startup AI\" Asia 2026 July", "results": 10, "high_relevance": 2, "type": "cross-language"},
+    {"query": "OpenAI Atlas browser discontinued July 17 2026", "results": 8, "high_relevance": 4, "type": "registry"},
+    {"query": "Apple OpenAI lawsuit trade secrets July 2026", "results": 8, "high_relevance": 5, "type": "lateral"},
+    {"query": "Claude Code release July 18 19 20 2026", "results": 10, "high_relevance": 4, "type": "registry"},
+    {"query": "AI developer tools productivity launch July 18 19 2026", "results": 10, "high_relevance": 3, "type": "exploratory"},
+    {"query": "Gemini 3.5 Pro delayed again July 18 2026 missed deadline", "results": 7, "high_relevance": 5, "type": "adversarial"},
+    {"query": "AI policy regulation EU July 17 18 19 2026", "results": 8, "high_relevance": 3, "type": "exploratory"},
+    {"query": "Claude Code v2.1.215 v2.1.212 July 2026 changes", "results": 10, "high_relevance": 4, "type": "registry"},
+    {"query": "productivity AI tool launch July 18 19 20 2026", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "Affinity CRM MCP server launch date July 2026", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "GitHub trending AI July 17 18 19 2026 new repos", "results": 10, "high_relevance": 2, "type": "exploratory"},
+    {"query": "NAVER NVIDIA sovereign AI infrastructure July 2026", "results": 7, "high_relevance": 3, "type": "lateral"},
+    {"query": "Kimi K3 benchmark comparison adversarial criticism July 2026", "results": 7, "high_relevance": 4, "type": "adversarial"},
+    {"query": "workflow automation AI agent July 19 20 2026", "results": 9, "high_relevance": 2, "type": "registry"},
+    {"query": "new MCP server launch July 2026 productivity integration", "results": 9, "high_relevance": 3, "type": "exploratory"},
+    {"query": "Gemini 3.5 Pro launched released July 20 2026", "results": 7, "high_relevance": 3, "type": "adversarial"},
+    {"query": "AI news today July 20 2026", "results": 7, "high_relevance": 2, "type": "exploratory"}
+  ],
+  "fetches": [
+    {"url": "https://www.anthropic.com/news", "result": "no items July 17-20 found in newsroom"},
+    {"url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/", "result": "RC announced May 21; final July 28 — outside window"},
+    {"url": "https://english.news.cn/20260717/ce32e833ab5d47f883ad44e1f73cb634/c.html", "result": "WAICO facts confirmed: 29 countries, Shanghai HQ, 5000 training slots"},
+    {"url": "https://english.www.gov.cn/news/202607/18/content_WS6a5c27e1c6d00ca5f9a0c4d8.html", "result": "WAICO secondary confirmation with ASEAN/BRICS commitments"},
+    {"url": "https://simonwillison.net/2026/Jul/16/kimi-k3/", "result": "Kimi K3 specs, pricing ~$0.94/task, benchmark context, benchmark caveats"},
+    {"url": "https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals", "result": "HTTP 403 paywall — claims cross-referenced via secondary"},
+    {"url": "https://news.zoom.com/zoom-launches-ai-productivity-suite/", "result": "June 1 — outside window"},
+    {"url": "https://code.claude.com/docs/en/changelog", "result": "v2.1.212 (Jul 17), v2.1.214 (Jul 18), v2.1.215 (Jul 19) confirmed"},
+    {"url": "https://github.com/anthropics/claude-code/releases", "result": "Confirmed release dates and changelogs for v2.1.212, v2.1.214, v2.1.215"}
+  ]
+}
