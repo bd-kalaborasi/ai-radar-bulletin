@@ -1,0 +1,280 @@
+{
+  "run": {
+    "date": "2026-07-21",
+    "period_start": "2026-07-16",
+    "period_end": "2026-07-21",
+    "timeframe": "5d",
+    "window_note": "Expanded from strict 72h to 5 days — strict window yielded 4 verified items, below the 5-item threshold.",
+    "depth": "standard",
+    "audience": "public-digest",
+    "items_reviewed": 22,
+    "items_published": 7,
+    "items_dropped": 15,
+    "verification_summary": {
+      "verified": 5,
+      "secondary": 2,
+      "rumor": 0
+    },
+    "exploration_pct": 63,
+    "sources_count": 24,
+    "searches_total": 35,
+    "searches_exploratory": 22,
+    "fetches_total": 11
+  },
+  "items": [
+    {
+      "id": "1password-for-claude-2026-07-16",
+      "title": "1Password for Claude Lets Agents Authenticate Without Exposing Credentials",
+      "date": "2026-07-16",
+      "tier": "T2",
+      "verification": "verified",
+      "category": "workflow-automation",
+      "bd_actionability": "high",
+      "sources": [
+        {
+          "url": "https://blog.1password.com/1password-for-claude/",
+          "publisher": "1Password",
+          "date": "2026-07-16",
+          "type": "vendor-primary"
+        }
+      ],
+      "key_claims": [
+        "Credential injection via local MCP server — secrets never exposed in prompt or environment",
+        "Mac-only at launch; Windows and Linux on public roadmap",
+        "Requires 1Password Teams or Business subscription"
+      ],
+      "caveats": [
+        "Mac-only restriction limits deployment to Mac-based development environments"
+      ]
+    },
+    {
+      "id": "hugging-face-ai-agent-intrusion-2026-07-16",
+      "title": "Hugging Face Discloses First Confirmed Autonomous AI Agent Intrusion of Major AI Platform",
+      "date": "2026-07-16",
+      "date_press_coverage": "2026-07-20",
+      "tier": "T2",
+      "verification": "verified",
+      "category": "ai-for-business",
+      "bd_actionability": "high",
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ai-agent-intrusion-disclosure",
+          "publisher": "Hugging Face",
+          "date": "2026-07-16",
+          "type": "vendor-primary"
+        }
+      ],
+      "key_claims": [
+        "Autonomous AI agent executed 17,000+ actions over approximately 11 days before detection",
+        "Datasets and API credentials exfiltrated from private repositories",
+        "No public model weights were modified or injected with malicious code",
+        "First publicly confirmed autonomous AI agent sustained attack on a major AI infrastructure platform"
+      ],
+      "caveats": [
+        "Investigation ongoing at disclosure — full scope and attacker attribution unconfirmed at publication time"
+      ]
+    },
+    {
+      "id": "eu-dma-google-android-ai-2026-07-16",
+      "title": "EU Issues Binding DMA Orders Requiring Google to Open Android AI and Share Search Data",
+      "date": "2026-07-16",
+      "tier": "T1",
+      "verification": "verified",
+      "category": "policy-regulation",
+      "bd_actionability": "high",
+      "sources": [
+        {
+          "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
+          "publisher": "European Commission",
+          "date": "2026-07-16",
+          "type": "government-primary"
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2026/jul/16/eu-dma-google-android-ai",
+          "publisher": "The Guardian",
+          "date": "2026-07-16",
+          "type": "trade-press"
+        }
+      ],
+      "key_claims": [
+        "11 Android AI features must be opened to third-party interoperability",
+        "Google must share search index data with competing search engines",
+        "August 2026 deadline for Android AI interoperability; January 2027 for search data sharing",
+        "Non-compliance fines can reach 10% of global annual turnover under DMA",
+        "Google is appealing and issued warning about privacy and security risks"
+      ],
+      "caveats": [
+        "Google is appealing — implementation deadlines may slip depending on court proceedings"
+      ]
+    },
+    {
+      "id": "claude-code-v2-1-216-2026-07-20",
+      "title": "Claude Code v2.1.216 Patches PowerShell Security Bypass and Long-Session Slowdown",
+      "date": "2026-07-20",
+      "tier": "T2",
+      "verification": "verified",
+      "category": "dev-tools",
+      "bd_actionability": "high",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/changelog",
+          "publisher": "Anthropic",
+          "date": "2026-07-20",
+          "type": "vendor-primary"
+        }
+      ],
+      "key_claims": [
+        "PowerShell security bypass allowed crafted commands to circumvent operator trust-level checks from v2.1.212 — severity rated high",
+        "Quadratic token-cost regression in long sessions resolved — sessions over ~2 hours most affected",
+        "Immediate upgrade recommended for Windows PowerShell environments"
+      ],
+      "caveats": []
+    },
+    {
+      "id": "fable-5-max-team-inclusion-2026-07-20",
+      "title": "Claude Fable 5 Permanently Included in Max and Team Premium from July 20",
+      "date": "2026-07-20",
+      "tier": "T2",
+      "verification": "verified",
+      "category": "model-release",
+      "bd_actionability": "medium",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/fable-5-plan-inclusion",
+          "publisher": "Anthropic",
+          "date": "2026-07-20",
+          "type": "vendor-primary"
+        }
+      ],
+      "key_claims": [
+        "Fable 5 permanently included in Claude Max and Team Premium plans",
+        "50% usage limits apply relative to full Fable 5 API allocation",
+        "$100 platform credit issued to existing Pro and Team Standard subscribers"
+      ],
+      "caveats": [
+        "No sunset date announced for lower-tier Fable 5 access or change to Sonnet 5 availability"
+      ]
+    },
+    {
+      "id": "alibaba-qwen3-8-max-preview-2026-07-19",
+      "title": "Alibaba Previews Qwen3.8-Max at WAIC — 2.4T Model, No Benchmark Data Published",
+      "date": "2026-07-19",
+      "tier": "T3",
+      "verification": "secondary",
+      "category": "model-release",
+      "bd_actionability": "low",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/19/alibaba-qwen3-8-max-preview/",
+          "publisher": "TechCrunch",
+          "date": "2026-07-19",
+          "type": "trade-press"
+        },
+        {
+          "url": "https://www.marktechpost.com/2026/07/19/alibaba-qwen3-8-max-waic/",
+          "publisher": "MarkTechPost",
+          "date": "2026-07-19",
+          "type": "aggregator"
+        }
+      ],
+      "key_claims": [
+        "Sparse MoE architecture with 2.4T total parameters",
+        "Claimed 1M-token context window",
+        "Preview API with unspecified pricing",
+        "No model card, active expert count, or independent benchmark published"
+      ],
+      "caveats": [
+        "All performance claims are from Alibaba WAIC keynote — no independent evaluation exists",
+        "Alibaba primary product page returned empty content on fetch — secondary sources only"
+      ]
+    },
+    {
+      "id": "current-ai-400m-language-infrastructure-2026-07-19",
+      "title": "Current AI Secures $400M to Build Public AI Infrastructure for Underserved Languages",
+      "date": "2026-07-19",
+      "tier": "T2-T3",
+      "verification": "secondary",
+      "category": "ai-for-business",
+      "bd_actionability": "low",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/19/current-ai-400m-language-infrastructure/",
+          "publisher": "TechCrunch",
+          "date": "2026-07-19",
+          "type": "trade-press"
+        },
+        {
+          "url": "https://www.reuters.com/technology/current-ai-funding-2026-07-20/",
+          "publisher": "Reuters",
+          "date": "2026-07-20",
+          "type": "trade-press"
+        }
+      ],
+      "key_claims": [
+        "$400M committed funding; $2.5B five-year target",
+        "Backers include French government, Ford Foundation, MacArthur Foundation, DeepMind, Salesforce",
+        "22 Indian languages in initial scope",
+        "Open-weight models and freely licensed datasets planned",
+        "Nonprofit governance structure to prevent single-vendor lock-in"
+      ],
+      "caveats": [
+        "$2.5B is a stated aspiration; only $400M is committed funding",
+        "Language coverage claims and timeline are from the organization's own materials"
+      ]
+    }
+  ],
+  "dropped": [
+    { "title": "Kimi K3 open weights (July 27)", "reason": "Not yet shipped as of July 21; flagged for July 27–28 bulletin" },
+    { "title": "WAICO founding / China 29-country AI bloc", "reason": "Covered in 2026-07-20 bulletin" },
+    { "title": "Gemini 3.5 Pro July 17 deadline missed", "reason": "Covered in 2026-07-20 bulletin; no new developments" },
+    { "title": "Claude Code v2.1.214 (EndConversation, heartbeats)", "reason": "Covered in 2026-07-19 bulletin" },
+    { "title": "Claude Code v2.1.215 (/verify explicit invocation)", "reason": "Covered in 2026-07-20 bulletin" },
+    { "title": "Fable 5 access tiers take effect July 20", "reason": "Plan announcement covered in 2026-07-19 bulletin; today's item covers permanent inclusion update" },
+    { "title": "NVIDIA Cosmos 3 Edge", "reason": "Outside 5-day window" },
+    { "title": "X hosted MCP server launch", "reason": "Outside 5-day window" },
+    { "title": "Pinecone Nexus vector search", "reason": "Outside 5-day window" },
+    { "title": "DeepSeek V4", "reason": "Not yet shipped as of July 21; no confirmed release date" },
+    { "title": "MCP 2026-07-28 specification final", "reason": "Ships July 28; flagged for July 28–29 bulletin" },
+    { "title": "Microsoft Agent Framework 1.11.0", "reason": "Release date unconfirmed within 5-day window" },
+    { "title": "Qwen3.8 open weights", "reason": "No timeline announced; separate from preview" },
+    { "title": "Inkling (Thinking Machines) benchmark results", "reason": "Benchmarks not yet published; covered in 2026-07-17 bulletin" },
+    { "title": "Claude for Teachers (Anthropic x ISTE)", "reason": "Outside 5-day window" }
+  ],
+  "search_log": [
+    { "q": "AI news July 2026 model release announcement", "results": 8, "high_relevance": 3 },
+    { "q": "Claude Code changelog July 20 21 2026", "results": 9, "high_relevance": 5 },
+    { "q": "Anthropic Claude news July 21 2026", "results": 8, "high_relevance": 4 },
+    { "q": "Google AI news July 2026", "results": 8, "high_relevance": 3 },
+    { "q": "AI announcements July 18 19 20 21 2026", "results": 10, "high_relevance": 5 },
+    { "q": "1Password Claude MCP integration July 2026", "results": 9, "high_relevance": 6 },
+    { "q": "Hugging Face security breach AI agent July 2026", "results": 10, "high_relevance": 7, "type": "exploratory" },
+    { "q": "EU DMA Google Android AI order July 2026", "results": 9, "high_relevance": 6 },
+    { "q": "Qwen3.8 Alibaba WAIC July 2026 preview", "results": 10, "high_relevance": 5 },
+    { "q": "AI startup funding July 19 20 2026", "results": 10, "high_relevance": 3, "type": "exploratory" },
+    { "q": "Claude Code v2.1.216 patch July 20 2026", "results": 8, "high_relevance": 5 },
+    { "q": "Fable 5 Claude Max Team inclusion July 20 2026", "results": 8, "high_relevance": 5 },
+    { "q": "Current AI nonprofit funding French language July 2026", "results": 9, "high_relevance": 4, "type": "exploratory" },
+    { "q": "site:x.com AI security breach autonomous agent July 2026", "results": 8, "high_relevance": 3, "type": "social" },
+    { "q": "OpenAI announcement July 19 20 21 2026", "results": 8, "high_relevance": 3 },
+    { "q": "agent framework MCP server release July 19 20 2026", "results": 9, "high_relevance": 2, "type": "exploratory" },
+    { "q": "Gemini 3.5 Pro August 2026 launch update", "results": 7, "high_relevance": 3 },
+    { "q": "AI governance policy regulation July 2026", "results": 8, "high_relevance": 4, "type": "exploratory" },
+    { "q": "Hugging Face breach scope investigation update July 20 2026", "results": 8, "high_relevance": 4, "type": "adversarial" },
+    { "q": "\"AI Indonesia\" OR \"startup AI\" Southeast Asia July 2026", "results": 9, "high_relevance": 2, "type": "geo-diversity" },
+    { "q": "DeepSeek V4 release date July 2026", "results": 7, "high_relevance": 3, "type": "exploratory" },
+    { "q": "1Password Claude credential management adversarial criticism July 2026", "results": 8, "high_relevance": 2, "type": "adversarial" },
+    { "q": "Qwen3.8-Max benchmark independent evaluation July 2026", "results": 8, "high_relevance": 2, "type": "adversarial" },
+    { "q": "EU DMA Google appeal timeline July 2026", "results": 8, "high_relevance": 4, "type": "adversarial" },
+    { "q": "AI research paper arxiv July 19 20 21 2026", "results": 8, "high_relevance": 2, "type": "exploratory" },
+    { "q": "MCP ecosystem server launch July 19 20 2026", "results": 8, "high_relevance": 2, "type": "exploratory" },
+    { "q": "workflow automation AI tool launch July 2026", "results": 9, "high_relevance": 2, "type": "exploratory" },
+    { "q": "productivity AI assistant update July 20 21 2026", "results": 8, "high_relevance": 2, "type": "exploratory" },
+    { "q": "HuggingFace intrusion autonomous agent adversarial security implications", "results": 9, "high_relevance": 5, "type": "adversarial" },
+    { "q": "Current AI language infrastructure open weights timeline", "results": 7, "high_relevance": 3, "type": "exploratory" },
+    { "q": "Claude Code PowerShell bypass CVE security July 2026", "results": 8, "high_relevance": 4, "type": "adversarial" },
+    { "q": "AI news Africa Global South language model July 2026", "results": 8, "high_relevance": 2, "type": "geo-diversity" },
+    { "q": "Kimi K3 open weights July 27 delayed confirmation 2026", "results": 7, "high_relevance": 2 },
+    { "q": "Anthropic model release July 19 20 21 2026", "results": 8, "high_relevance": 3 },
+    { "q": "AI developer tools security audit best practices 2026", "results": 7, "high_relevance": 2, "type": "exploratory" }
+  ]
+}
