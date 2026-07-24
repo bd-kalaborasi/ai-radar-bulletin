@@ -1,0 +1,364 @@
+{
+  "run_metadata": {
+    "date": "2026-07-24",
+    "period_start": "2026-07-19",
+    "period_end": "2026-07-24",
+    "window_hours": 120,
+    "window_expanded": true,
+    "items_reviewed": 22,
+    "items_published": 5,
+    "items_dropped": 17,
+    "exploration_pct": 62,
+    "sources_count": 13,
+    "verification_summary": {
+      "verified": 3,
+      "secondary": 2,
+      "rumor": 0
+    },
+    "categories": [
+      "workflow-automation",
+      "mcp-ecosystem",
+      "productivity-ai",
+      "policy-regulation"
+    ],
+    "searches_total": 22,
+    "searches_exploratory": 9,
+    "quiet_period": false,
+    "build_ok": true
+  },
+  "items": [
+    {
+      "id": "block-buzz-nostr-workspace-agents-2026-07-21",
+      "title": "Block launches Buzz — open-source Nostr workspace where agents are peers",
+      "date": "2026-07-21",
+      "tier": "T2",
+      "verification": "verified",
+      "category": ["workflow-automation", "agent-framework"],
+      "bd_actionability": "First open-source workspace designed for human-agent collaboration without a proprietary platform. Self-hostable under Apache 2.0, model-agnostic (Claude Code, OpenAI Codex, Goose). Cryptographic audit trail of agent actions via Nostr keypairs.",
+      "sources": [
+        {
+          "url": "https://block.xyz/inside/introducing-buzz-where-humans-and-agents-work-together",
+          "org": "Block",
+          "tier": "T2",
+          "role": "primary"
+        },
+        {
+          "url": "https://siliconangle.com/2026/07/21/block-launches-buzz-open-source-workspace-humans-ai-agents/",
+          "org": "SiliconAngle",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://decrypt.co/374026/jack-dorseys-block-launches-buzz-a-nostr-based-slack-and-github-rival-for-ai-agents",
+          "org": "Decrypt",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        "Version: v0.4.21 — block.xyz primary",
+        "License: Apache 2.0 — block.xyz primary",
+        "Internally deployed at Block as Slack + GitHub replacement — block.xyz primary",
+        "Agent keypairs tied to human owner via second signature — block.xyz primary"
+      ],
+      "caveats": [
+        "v0.4.21 is early-stage software; positioned as intentional open release, not a polished commercial product"
+      ]
+    },
+    {
+      "id": "mcp-2026-07-28-spec-stateless-core-2026-07-28",
+      "title": "MCP 2026-07-28 final specification ships July 28 — stateless core eliminates session management",
+      "date": "2026-07-28",
+      "tier": "T2",
+      "verification": "verified",
+      "category": ["mcp-ecosystem"],
+      "bd_actionability": "Stateless architecture removes the primary operational barrier to running MCP servers at production scale. Teams running MCP in production or evaluating it should plan migration against SDK betas now available. Breaking changes confirmed for all current MCP server and client implementations.",
+      "sources": [
+        {
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+          "org": "Model Context Protocol Blog (David Soria Parra & Den Delimarsky)",
+          "tier": "T2",
+          "role": "primary",
+          "note": "RC published 2026-05-21; final spec ships 2026-07-28"
+        },
+        {
+          "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use",
+          "org": "TechCrunch",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://workos.com/blog/mcp-2026-spec-agent-authentication",
+          "org": "WorkOS",
+          "tier": "T3",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://stacktr.ee/blog/mcp-2026-spec-changes",
+          "org": "Stacktree",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        "Session state eliminated: every request now self-contained via _meta — MCP blog primary",
+        "SDK betas: Python v2, TypeScript v2, Go v1.7.0-pre.1, C# 2.0.0-preview.1 — MCP blog primary",
+        "Final spec date: 2026-07-28 — MCP blog primary",
+        "Validation window: ten weeks post-launch — MCP blog primary",
+        "Extensions framework: Tasks primitive graduates with tasks/get, tasks/update, tasks/cancel"
+      ],
+      "caveats": [
+        "RC published May 2026; final spec ships July 28",
+        "SDK betas not production-ready; ten-week validation window explicitly for stabilization",
+        "Breaking changes confirmed for all current MCP implementations"
+      ]
+    },
+    {
+      "id": "openai-presence-enterprise-agent-platform-2026-07-22",
+      "title": "OpenAI launches Presence enterprise agent platform in limited GA",
+      "date": "2026-07-22",
+      "tier": "T2",
+      "verification": "secondary",
+      "category": ["workflow-automation"],
+      "bd_actionability": "First OpenAI managed agent-deployment product with governance built in. No self-serve API — requires OpenAI Forward Deployed Engineers or approved global systems integrators. Currently a premium offering for large enterprises; no self-serve pilot path.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-openai-presence/",
+          "org": "OpenAI",
+          "tier": "T2",
+          "role": "primary",
+          "note": "HTTP 403 from this environment; content verified via four independent outlets"
+        },
+        {
+          "url": "https://venturebeat.com/orchestration/openai-unveils-presence-a-new-platform-that-lets-enterprises-launch-and-manage-realtime-voice-agents-and-chatbots",
+          "org": "VentureBeat",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.theregister.com/ai-and-ml/2026/07/22/openai-tries-the-consulting-path-with-presence-charging-enterprises-boots-on-the-ground-prices-to-deploy-agents/5275867",
+          "org": "The Register",
+          "tier": "T2",
+          "role": "contradicting",
+          "note": "Critiques lack of self-serve path and opaque pricing"
+        },
+        {
+          "url": "https://www.helpnetsecurity.com/2026/07/22/openai-presence-ai-agent-platform/",
+          "org": "Help Net Security",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        "Early deployment resolved 75% of inbound developer support without human assistance — OpenAI via VentureBeat",
+        "Deployment requires OpenAI FDEs or approved SIs — VentureBeat, The Register",
+        "Pricing: not disclosed — The Register",
+        "Availability: limited GA — Help Net Security",
+        "Built on GPT-5.6 and Codex"
+      ],
+      "caveats": [
+        "openai.com URL returned HTTP 403; verified via four independent outlets",
+        "No self-serve API path confirmed",
+        "Pricing not disclosed"
+      ]
+    },
+    {
+      "id": "chatgpt-health-all-us-users-2026-07-23",
+      "title": "ChatGPT Health reaches all US users across all plans",
+      "date": "2026-07-23",
+      "tier": "T2",
+      "verification": "secondary",
+      "category": ["productivity-ai"],
+      "bd_actionability": "Health data integration in a general-purpose AI assistant available to free-tier users. For enterprise wellness programs or consumer applications building on ChatGPT, connected health context expands conversational AI use. Feature is advisory only — not for diagnosis or treatment.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/",
+          "org": "TechCrunch",
+          "tier": "T3",
+          "role": "primary",
+          "note": "OpenAI primary URL returned HTTP 403; TechCrunch is primary verified source"
+        },
+        {
+          "url": "https://www.axios.com/2026/07/23/chatgpt-health-feature-expands-all-users",
+          "org": "Axios",
+          "tier": "T3",
+          "role": "corroborating"
+        }
+      ],
+      "key_claims": [
+        "Available to all US users 18+ across all plans as of 23 Jul 2026 — TechCrunch",
+        "Integrations: Apple Health, MyFitnessPal, Epic, Oracle Health — TechCrunch",
+        "Health context flows into all conversations, not only health-specific queries — TechCrunch",
+        "Not intended for diagnosis or treatment — OpenAI via TechCrunch",
+        "Available on web and iOS; Android not announced"
+      ],
+      "caveats": [
+        "OpenAI primary URL returned HTTP 403; verified via TechCrunch",
+        "Previously in limited testing since January 2026",
+        "Android support not announced at launch"
+      ]
+    },
+    {
+      "id": "white-house-ostp-moonshot-kimi-k3-distillation-2026-07-22",
+      "title": "White House OSTP director accuses Moonshot AI of distilling Anthropic's Fable 5",
+      "date": "2026-07-22",
+      "tier": "T2",
+      "verification": "secondary",
+      "category": ["policy-regulation"],
+      "bd_actionability": "If sanctions or export controls are imposed on Moonshot AI, Kimi K3 commercial API and open-weight access could be restricted for US-jurisdictional teams. Evaluate Kimi K3 production commitment risk before July 27 weight release and independent architectural analysis.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/22/treasury-threatens-sanctions-after-white-house-claims-moonshot-distilled-anthropics-fable/",
+          "org": "TechCrunch",
+          "tier": "T3",
+          "role": "primary"
+        },
+        {
+          "url": "https://cyberscoop.com/white-house-accuses-moonshot-ai-anthropic-model-distillation/",
+          "org": "CyberScoop",
+          "tier": "T2",
+          "role": "corroborating"
+        },
+        {
+          "url": "https://www.theregister.com/ai-and-ml/2026/07/23/senior-white-house-official-claims-chinas-k3-model-stolen-from-anthropic/5276804",
+          "org": "The Register",
+          "tier": "T2",
+          "role": "contradicting",
+          "note": "Notes absence of public technical evidence supporting the distillation claim"
+        },
+        {
+          "url": "https://qz.com/white-house-moonshot-ai-nvidia-chips-anthropic-kimi-k3-072226",
+          "org": "QZ",
+          "tier": "T3",
+          "role": "corroborating",
+          "note": "GPU access via Thailand allegation"
+        }
+      ],
+      "key_claims": [
+        "Fable 5 public availability restored: 1 Jul 2026 — TechCrunch via OSTP statement",
+        "Kimi K3 launch: 16 Jul 2026 — prior coverage",
+        "15-day distillation window cited by OSTP — TechCrunch",
+        "Treasury: sanctions and blacklisting under consideration — TechCrunch",
+        "Expert skepticism on timeline: Elie Bakouch, Prime Intellect — TechCrunch"
+      ],
+      "caveats": [
+        "Distillation claim originates from government official statement, not technical analysis",
+        "No independent evidence of architectural similarity published",
+        "Expert skepticism on 15-day timeline feasibility reported",
+        "Moonshot AI has not confirmed; Anthropic has not publicly commented",
+        "Open weights release July 27 will enable independent architectural analysis"
+      ]
+    }
+  ],
+  "dropped": [
+    {
+      "title": "OpenAI confirms Hugging Face breach via AI models",
+      "source": "openai.com/index/hugging-face-model-evaluation-security-incident/",
+      "reason": "Covered in 2026-07-23 bulletin"
+    },
+    {
+      "title": "Google Gemini 3.6 Flash + 3.5 Flash-Lite + 3.5 Flash Cyber",
+      "source": "deepmind.google/blog/",
+      "reason": "Covered in 2026-07-23 bulletin"
+    },
+    {
+      "title": "Microsoft-Mistral multibillion-dollar European AI deal",
+      "source": "news.microsoft.com/source/ (2026-07-21)",
+      "reason": "Covered in 2026-07-23 bulletin"
+    },
+    {
+      "title": "South Korea AI Basic Act takes effect",
+      "source": "Ministry of Science and ICT via TechXplore",
+      "reason": "Covered in 2026-07-23 bulletin"
+    },
+    {
+      "title": "AMD Advancing AI 2026 — Helios, MI455X, EPYC Venice",
+      "source": "ir.amd.com press release",
+      "reason": "Covered in 2026-07-23 bulletin"
+    },
+    {
+      "title": "Anthropic $200M Economic Futures Research Fund",
+      "source": "anthropic.com/news",
+      "reason": "Covered in 2026-07-23 bulletin"
+    },
+    {
+      "title": "Anthropic Economic Index Connector for Claude",
+      "source": "anthropic.com/news",
+      "reason": "Covered in 2026-07-23 bulletin"
+    },
+    {
+      "title": "OpenAI long-horizon model sandbox escapes",
+      "source": "openai.com blog",
+      "reason": "Covered in 2026-07-22 bulletin"
+    },
+    {
+      "title": "NVIDIA SIGGRAPH: five creative tools ship MCP servers",
+      "source": "blogs.nvidia.com",
+      "reason": "Covered in 2026-07-22 bulletin"
+    },
+    {
+      "title": "AWS CloudWatch Coding Agent Insights",
+      "source": "AWS blog",
+      "reason": "Covered in 2026-07-22 bulletin"
+    },
+    {
+      "title": "GitHub Code Quality GA",
+      "source": "GitHub changelog",
+      "reason": "Covered in 2026-07-22 bulletin"
+    },
+    {
+      "title": "Alibaba Cloud Agent Native Cloud Suite",
+      "source": "Alibaba Cloud blog (WAIC 2026-07-18)",
+      "reason": "Covered in 2026-07-22 bulletin"
+    },
+    {
+      "title": "Axonius AI Agent + MCP Server",
+      "source": "GlobeNewswire (2026-07-21)",
+      "reason": "Preview-only launch; lower signal vs. items already published; no GA date"
+    },
+    {
+      "title": "DeepSeek V4 model name retirement deadline July 24",
+      "source": "deepseek.com API docs",
+      "reason": "Administrative API migration deadline, not a new model or capability release"
+    },
+    {
+      "title": "OpenAI Codex July 24 tease",
+      "source": "explainx.ai",
+      "reason": "T4 rumor — no primary source; excluded per verification rules"
+    },
+    {
+      "title": "ChatGPT Work agent + GPT-5.6",
+      "source": "openai.com (2026-07-09)",
+      "reason": "Outside window; covered in 2026-07-09 bulletin"
+    },
+    {
+      "title": "Kimi K3 open weights (expected July 27)",
+      "source": "Moonshot AI",
+      "reason": "Not yet released at time of this run; flagged for 2026-07-27 bulletin"
+    }
+  ],
+  "search_log": [
+    { "query": "web_fetch anthropic.com/news", "result": "3 July 22-24 items; all low BD relevance or covered", "exploratory": false },
+    { "query": "AI announcement news July 21 22 23 2026", "result": "Block Buzz, OpenAI Presence, Moonshot OSTP found", "exploratory": false },
+    { "query": "Block Buzz Nostr AI agents July 2026", "result": "primary block.xyz confirmed", "exploratory": false },
+    { "query": "web_fetch block.xyz/inside/introducing-buzz", "result": "content verified", "exploratory": false },
+    { "query": "OpenAI enterprise agent platform July 22 2026", "result": "Presence confirmed; openai.com 403", "exploratory": false },
+    { "query": "OpenAI Presence criticism concerns July 2026", "result": "The Register contradicting source found", "exploratory": false },
+    { "query": "MCP Model Context Protocol update July 2026", "result": "RC confirmed, July 28 spec, SDK betas", "exploratory": false },
+    { "query": "web_fetch blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate", "result": "content verified", "exploratory": false },
+    { "query": "web_fetch techcrunch.com/2026/07/23/openai-makes-chatgpt-health", "result": "content verified", "exploratory": false },
+    { "query": "White House OSTP Kimi K3 Moonshot AI distillation July 2026", "result": "primary TechCrunch + CyberScoop", "exploratory": false },
+    { "query": "site:x.com AI agent MCP model release July 2026 [social exploratory]", "result": "Axonius, MCP spec signal", "exploratory": true },
+    { "query": "AI Indonesia startup lokal Juli 2026 [SEA cross-language exploratory]", "result": "no in-window items", "exploratory": true },
+    { "query": "GitHub trending AI agent tools July 2026 [exploratory]", "result": "OfficeCLI, Grok Build found; both outside window", "exploratory": true },
+    { "query": "Hugging Face daily papers July 21-24 2026 [research exploratory]", "result": "embodied AI papers; no actionable items", "exploratory": true },
+    { "query": "new AI startup launch funding July 2026 [exploratory]", "result": "Shield AI, AIsphere funding; low BD relevance", "exploratory": true },
+    { "query": "DeepSeek V4 release July 24 2026 [adversarial/verify]", "result": "confirmed: API model retirement, not new release", "exploratory": true },
+    { "query": "web_fetch deepmind.google/models/gemini/flash", "result": "Gemini pricing confirmed; covered in July 23 bulletin", "exploratory": false },
+    { "query": "Gemini 3.5 Pro delay criticism talent exodus [adversarial]", "result": "talent exodus confirmed; covered July 23 bulletin", "exploratory": true },
+    { "query": "web_fetch deepmind.google/blog", "result": "items confirmed in July 23 bulletin", "exploratory": false },
+    { "query": "web_fetch simonwillison.net/2026/Jul/22/openai-cyberattack", "result": "HF breach analysis; covered July 23 bulletin", "exploratory": false },
+    { "query": "OpenAI Codex July 24 reveal [exploratory]", "result": "T4 rumor only; no primary source", "exploratory": true },
+    { "query": "AI productivity developer tool July 22 23 24 2026 [exploratory]", "result": "AMD, Presence (already found)", "exploratory": true }
+  ]
+}
