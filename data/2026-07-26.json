@@ -1,0 +1,241 @@
+{
+  "bulletin_date": "2026-07-26",
+  "period_start": "2026-07-23",
+  "period_end": "2026-07-26",
+  "items_reviewed": 30,
+  "items_published": 8,
+  "items_dropped": 22,
+  "sources_count": 16,
+  "exploration_pct": 38,
+  "verification_summary": {
+    "verified": 7,
+    "secondary": 1,
+    "rumor": 0
+  },
+  "categories": [
+    "policy-regulation",
+    "model-release",
+    "ai-for-business",
+    "mcp-ecosystem",
+    "dev-tools",
+    "productivity-ai",
+    "workflow-automation"
+  ],
+  "items": [
+    {
+      "rank": 1,
+      "title": "Industry letter urges Washington against open-weights restrictions — 25 signatories, OpenAI/Anthropic/Google absent",
+      "category": "policy-regulation",
+      "verification": "verified",
+      "tier": "T2",
+      "date": "2026-07-24",
+      "primary_source": "https://images.nvidia.com/pdf/Open-Weights-and-American-AI-Leadership.pdf",
+      "secondary_sources": [
+        "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/"
+      ],
+      "key_facts": [
+        "25 co-signatories including NVIDIA, Microsoft, Meta, IBM, Dell, Palantir, Hugging Face, Mozilla, Linux Foundation, Mistral, a16z, Y Combinator, Replit, CrowdStrike, ServiceNow, Perplexity",
+        "OpenAI, Anthropic, Google did not sign",
+        "Jensen Huang X post drew 11M+ views",
+        "Letter argues distillation is natural development, not misappropriation"
+      ],
+      "caveats": [
+        "PDF binary unreadable via WebFetch; signatory list verified through TechCrunch and The Next Web",
+        "Jensen Huang X view count sourced from secondary social aggregators"
+      ]
+    },
+    {
+      "rank": 2,
+      "title": "Claude Opus 5 ships with 1M context, mid-conversation tool changes beta",
+      "category": "model-release",
+      "verification": "verified",
+      "tier": "T2",
+      "date": "2026-07-24",
+      "primary_source": "https://platform.claude.com/docs/en/release-notes/overview",
+      "secondary_sources": [],
+      "key_facts": [
+        "Pricing: $5 input / $25 output per million tokens",
+        "1M token context; 128k output",
+        "Extended thinking on by default",
+        "Beta: mid-conversation-tool-changes-2026-07-01 header",
+        "Beta: fallbacks default mode",
+        "Opus 4.7 fast mode removed",
+        "Available: API, Bedrock, Vertex, Azure AI Foundry"
+      ],
+      "caveats": [
+        "Benchmarks vs GPT-5 or Gemini 2.5 Ultra not independently verified; treated as T4"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "HubSpot Agent Hub and Agent Builder enter public beta",
+      "category": "ai-for-business",
+      "verification": "verified",
+      "tier": "T2",
+      "date": "2026-07-23",
+      "primary_source": "https://www.hubspot.com/company-news/meet-agent-hub-and-agent-builder",
+      "secondary_sources": [],
+      "key_facts": [
+        "Agent Hub: centralized multi-agent management with shared CRM context",
+        "Agent Builder: natural language agent creation, no-code",
+        "Available: Professional and Enterprise tiers",
+        "Shared context includes deal history, contacts, call transcripts"
+      ],
+      "caveats": [
+        "API/MCP integration depth not confirmed",
+        "Agent execution limits per tier not disclosed"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Kimi K3 open weights: 2.8T MoE, July 27 release commitment",
+      "category": "model-release",
+      "verification": "verified",
+      "tier": "T2",
+      "date": "2026-07-24",
+      "primary_source": "https://platform.kimi.ai",
+      "secondary_sources": [
+        "https://www.techi.com/kimi-k3-open-weights-inference-economics/"
+      ],
+      "key_facts": [
+        "2.8 trillion total parameters, mixture-of-experts",
+        "~1.4TB full-precision weight file",
+        "50B parameters active per token",
+        "API available since July 16",
+        "Weights committed for July 27",
+        "Requires NVIDIA Blackwell or AMD MI400",
+        "License: TBD"
+      ],
+      "caveats": [
+        "July 27 is a commitment date, not a completed release at bulletin time",
+        "License terms unknown"
+      ]
+    },
+    {
+      "rank": 5,
+      "title": "MCP 2026-07-28 spec: stateless core, three deprecations, Extensions",
+      "category": "mcp-ecosystem",
+      "verification": "verified",
+      "tier": "T2",
+      "date": "2026-07-23",
+      "primary_source": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+      "secondary_sources": [],
+      "key_facts": [
+        "Stateless core: removes session handshake and Mcp-Session-Id header",
+        "Deprecations (12-month window): Roots, Sampling, Logging",
+        "New extensions: MCP Apps, MCP Tasks",
+        "Six OAuth 2.0/OIDC security enhancements",
+        "10-week SDK validation window"
+      ],
+      "caveats": [
+        "Spec ships July 28 — two days after bulletin",
+        "Breaking changes possible for servers depending on Mcp-Session-Id"
+      ]
+    },
+    {
+      "rank": 6,
+      "title": "Claude Code v2.1.219: Opus 5 default, /fork backgrounds sessions",
+      "category": "dev-tools",
+      "verification": "verified",
+      "tier": "T2",
+      "date": "2026-07-24",
+      "primary_source": "https://code.claude.com/docs/en/changelog",
+      "secondary_sources": [],
+      "key_facts": [
+        "v2.1.219",
+        "Default model: Opus 5 with 1M context",
+        "/fork now creates background session (own row in claude agents)",
+        "/subtask new command for inline blocking subagent",
+        "Dynamic workflows: medium size guideline default"
+      ],
+      "caveats": [
+        "/fork behavior change may affect scripts depending on inline subagent execution"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Anthropic expands Claude voice mode with model choice and 10-language beta",
+      "category": "productivity-ai",
+      "verification": "secondary",
+      "tier": "T3",
+      "date": "2026-07-23",
+      "primary_source": null,
+      "secondary_sources": [
+        "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/"
+      ],
+      "key_facts": [
+        "Model choice: Opus, Sonnet, Haiku in voice mode",
+        "New integrations: Gmail, Google Calendar, Slack, Canva, Notion",
+        "Multilingual beta: 10 languages including Bahasa Indonesia",
+        "Free tier: Haiku voice + 1 connected app"
+      ],
+      "caveats": [
+        "No dedicated Anthropic blog post found; T3 secondary classification",
+        "Integration availability by geography not confirmed"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Etched raises $300M Series C at $10.3B valuation",
+      "category": "workflow-automation",
+      "verification": "verified",
+      "tier": "T2",
+      "date": "2026-07-23",
+      "primary_source": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+      "secondary_sources": [],
+      "key_facts": [
+        "$300M Series C",
+        "$10.3B valuation",
+        "Lead: Sequoia Capital",
+        "Co-investors: a16z, SK Hynix, Jane Street, Diffusion Capital",
+        "Angels: Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad"
+      ],
+      "caveats": [
+        "Product availability timeline not disclosed"
+      ]
+    }
+  ],
+  "dropped_items": [
+    { "title": "OpenAI Presence enterprise voice/chat agent", "reason": "July 22 — outside 72h window" },
+    { "title": "Jack Dorsey BUZZ open-source AI workspace", "reason": "July 21 — outside window" },
+    { "title": "Qwen 3.8-Max preview", "reason": "July 19 — outside window" },
+    { "title": "China AI model export restrictions (MOFCOM)", "reason": "July 22 — outside window by 1 day" },
+    { "title": "NVIDIA Nemotron-Labs-TwoTower diffusion LLM", "reason": "July 2 — outside window" },
+    { "title": "Apple AFM 3 + Google collaboration", "reason": "June 8 — outside window" },
+    { "title": "Google Gemma 4 July update", "reason": "July 15 — outside window" },
+    { "title": "Alteryx Agent Studio + MCP Server", "reason": "May/June — outside window" },
+    { "title": "Notion 3.6 External Agents GA", "reason": "July 1 — outside window" },
+    { "title": "Cursor Router update", "reason": "July 17 — outside window" },
+    { "title": "Slack AI model-routing update", "reason": "July 22 — outside window" },
+    { "title": "AREX self-improving research agent paper", "reason": "In-window but insufficient primary depth" }
+  ],
+  "search_log": {
+    "total_searches": 30,
+    "registry_searches": 19,
+    "exploratory_searches": 11,
+    "exploratory_topics": [
+      "Jensen Huang X post volume (social aggregators)",
+      "AI Indonesia Bahasa July 2026 (SEA localization)",
+      "China AI model export restriction MOFCOM July 2026 (policy context)",
+      "GitHub trending AI agent July 2026",
+      "Hugging Face daily papers July 24-25 2026",
+      "AI bulletin criticism hype July 2026 (adversarial critique)",
+      "SEA AI startup funding July 2026",
+      "Open weights letter OpenAI signed conflicting claim verification",
+      "Kimi K3 hardware requirements cross-reference",
+      "MCP Tasks extension use cases",
+      "Etched investor cross-reference"
+    ]
+  },
+  "quality_gate": {
+    "semantic_checks": [
+      { "check": "no_hype_language", "pass": true },
+      { "check": "limitations_section_present", "pass": true },
+      { "check": "dropped_section_present", "pass": true },
+      { "check": "quote_ceiling_14_words", "pass": true },
+      { "check": "one_quote_per_source", "pass": true },
+      { "check": "exploration_pct_gte_30", "pass": true, "value": 38 },
+      { "check": "verification_summary_sum_equals_published", "pass": true, "sum": 8, "published": 8 }
+    ]
+  }
+}
