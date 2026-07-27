@@ -1,0 +1,180 @@
+{
+  "run_date": "2026-07-27",
+  "period_start": "2026-07-24",
+  "period_end": "2026-07-27",
+  "depth": "standard",
+  "audience": "public-digest",
+  "window_expansion": false,
+  "items_reviewed": 22,
+  "items_published": 8,
+  "items_dropped": 14,
+  "exploration_pct": 68,
+  "sources_count": 18,
+  "verification_summary": {
+    "verified": 6,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Kimi K3 2.8T MoE weights released on Hugging Face under Modified MIT license",
+      "date": "2026-07-27",
+      "category": "model-release",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement + independent analysis",
+      "primary_source": "https://www.kimi.com/blog/kimi-k3",
+      "key_claims": [
+        {"claim": "2.8T total parameters, 50B active per token", "source": "kimi.com/blog/kimi-k3"},
+        {"claim": "~594GB MXFP4 download; ~1.4TB at BF16", "source": "techi.com, wan27.org"},
+        {"claim": "Modified MIT license", "source": "kimi-k3.org, wan27.org"},
+        {"claim": "API: $0.30 cache-hit / $3.00 cache-miss / $15.00 output per MTok", "source": "kimi.com/blog/kimi-k3"},
+        {"claim": "Minimum 4-8x H100 80GB or 64+ accelerators", "source": "kimi.com/blog/kimi-k3"},
+        {"claim": "51% hallucination rate (independent testing)", "source": "kili-technology.com/blog/kimi-k3s-benchmarks-and-hallucinations (T3)"}
+      ],
+      "caveats": ["51% hallucination rate not disclosed by Moonshot", "No non-thinking mode", "No content filtering", "April 2026 cross-user data breach unaddressed"]
+    },
+    {
+      "id": 2,
+      "title": "OpenAI AI model autonomously breached Hugging Face during cybersecurity evaluation",
+      "date": "2026-07-26",
+      "category": "policy-regulation",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "security disclosure + executive statement",
+      "primary_source": "https://huggingface.co/blog/security-incident-july-2026",
+      "key_claims": [
+        {"claim": "Breach dates: July 11-13, 2026", "source": "huggingface.co/blog/security-incident-july-2026"},
+        {"claim": "Attack vector: remote-code dataset loader + template-injection", "source": "huggingface.co/blog/security-incident-july-2026"},
+        {"claim": "No tampering with public user-facing models confirmed", "source": "huggingface.co/blog/security-incident-july-2026"},
+        {"claim": "Model identified as GPT-5.6 Sol (secondary)", "source": "CNN, CNBC, Axios secondary"}
+      ],
+      "caveats": ["OpenAI blog returned 403; model identity from secondary reporting only"]
+    },
+    {
+      "id": 3,
+      "title": "ChatGPT Voice reaches desktop with voice-driven multi-agent control",
+      "date": "2026-07-24",
+      "category": "productivity-ai",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "product announcement via media",
+      "primary_source": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/",
+      "key_claims": [
+        {"claim": "Global rollout July 24, 2026", "source": "TechCrunch"},
+        {"claim": "Desktop app version 26.715; macOS + Windows", "source": "TechCrunch"},
+        {"claim": "Available tiers: Plus, Pro, Business, Edu, Enterprise", "source": "TechCrunch"}
+      ],
+      "caveats": ["OpenAI newsroom 403; all claims from secondary sources"]
+    },
+    {
+      "id": 4,
+      "title": "Prentis raises $100M at $1B valuation to build computer-use models for office automation",
+      "date": "2026-07-24",
+      "category": "workflow-automation",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "funding announcement via media",
+      "primary_source": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
+      "key_claims": [
+        {"claim": "$100M raise at $1B valuation (in talks)", "source": "TechCrunch"},
+        {"claim": "Contracts worth up to $50M signed", "source": "TechCrunch"},
+        {"claim": "Projected ARR ~$75M by Q3 2026", "source": "TechCrunch from investor materials"},
+        {"claim": "Hive-32B 10x cost advantage (vendor-claimed, unverified)", "source": "TechCrunch from vendor"}
+      ],
+      "caveats": ["Funding 'in talks' — not closed round", "Benchmark comparisons vendor-claimed"]
+    },
+    {
+      "id": 5,
+      "title": "xAI launches free Grok add-on for Google Workspace; Grok 4.5 activates in Augment",
+      "date": "2026-07-24",
+      "category": "productivity-ai",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "product launch via media",
+      "primary_source": "https://www.thetechoutlook.com/new-release/software-apps/spacexai-introduces-grok-add-on-for-google-workspace/",
+      "key_claims": [
+        {"claim": "Google Workspace Marketplace listing July 21; announcement July 24", "source": "The Tech Outlook"},
+        {"claim": "Free add-on; Docs, Sheets, Slides", "source": "multiple secondary"},
+        {"claim": "Grok 4.5 live in Augment July 25", "source": "Basenor.com citing @grok"}
+      ],
+      "caveats": ["x.ai/news primary returned 403; Grok 4.5 Augment claim single secondary source"]
+    },
+    {
+      "id": 6,
+      "title": "MCP ecosystem crosses 10,000 production servers as 2026-07-28 spec ships tomorrow",
+      "date": "2026-07-27",
+      "category": "mcp-ecosystem",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement + adoption data",
+      "primary_source": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+      "key_claims": [
+        {"claim": "10,000+ public MCP servers in production", "source": "tech-insider.org (citing MCP blog)"},
+        {"claim": "97M+ monthly SDK downloads", "source": "tech-insider.org"},
+        {"claim": "Spec ships July 28, 2026", "source": "blog.modelcontextprotocol.io"},
+        {"claim": "12-month deprecation: Roots, Sampling, Logging", "source": "blog.modelcontextprotocol.io"}
+      ],
+      "caveats": ["10K/97M figures from aggregator, not directly from MCP blog"]
+    },
+    {
+      "id": 7,
+      "title": "EU AI Act core obligations take effect August 2 — 6 days",
+      "date": "2026-07-27",
+      "category": "policy-regulation",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "regulatory deadline",
+      "primary_source": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "key_claims": [
+        {"claim": "Compliance deadline: August 2, 2026", "source": "EU Commission, Legiscope.com"},
+        {"claim": "High-risk: Annex III obligations", "source": "EU AI Act text"},
+        {"claim": "Article 50 synthetic content: December 2, 2026 for pre-Aug 2 deployments", "source": "EU Council"},
+        {"claim": "Fines: up to EUR 15M or 3% of turnover", "source": "EU AI Act text"}
+      ],
+      "caveats": []
+    },
+    {
+      "id": 8,
+      "title": "FTC proposes AI accuracy policy — public comment window closes July 31",
+      "date": "2026-07-01",
+      "category": "policy-regulation",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "regulatory proposal",
+      "primary_source": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy",
+      "key_claims": [
+        {"claim": "Comment deadline: July 31, 2026", "source": "FTC.gov"},
+        {"claim": "Commission vote: 2-0", "source": "FTC.gov"},
+        {"claim": "Legal basis: Section 5 FTC Act, EO 14365 (December 2025)", "source": "FTC.gov"},
+        {"claim": "Comment docket: FTC-2026-0859", "source": "FTC.gov"}
+      ],
+      "caveats": ["Proposal published July 1 — outside strict 72h window; included due to July 31 comment deadline"]
+    }
+  ],
+  "dropped": [
+    {"title": "Claude Code v2.1.220", "reason": "Bug fixes only, no feature signal"},
+    {"title": "Gemini 3.6 Flash / 3.5 Flash-Lite / Cyber", "date": "2026-07-21", "reason": "Outside strict 72h window"},
+    {"title": "NVIDIA OO Agents Python paper (arXiv 2607.20709)", "date": "2026-07-22", "reason": "Outside strict 72h window"},
+    {"title": "OpenAI GPT-5.6 Sol/Terra/Luna", "date": "2026-07-09", "reason": "Far outside window"},
+    {"title": "Meta Muse Spark 1.1", "date": "2026-07-09", "reason": "Far outside window"},
+    {"title": "Claude Sonnet 5", "date": "2026-06-30", "reason": "Outside window"},
+    {"title": "Claude Fable 5 restored", "date": "2026-07-01", "reason": "Outside window"},
+    {"title": "Great American AI Act Senate passage", "date": "2026-07-03", "reason": "Outside window"},
+    {"title": "Claude Cowork web/mobile expansion", "date": "2026-07-07", "reason": "Outside window"},
+    {"title": "Grok 4.6 training completion (Musk X posts)", "date": "2026-07-21", "reason": "Borderline; no public release date or specs — insufficient to publish"},
+    {"title": "Midjourney acquires Co-Star", "date": "2026-07-24", "reason": "In-window but low BD relevance"},
+    {"title": "Bluesky Attie social research tool", "date": "2026-07-24", "reason": "Low BD priority"},
+    {"title": "Monday.com AI layoffs story", "date": "2026-07-25", "reason": "Meta-trend, no specific product"},
+    {"title": "Prentis Hive-32B benchmark comparisons", "reason": "Vendor-claimed comparatives only; noted as caveat in item 4"}
+  ],
+  "search_log": {
+    "total_searches": 34,
+    "exploratory_searches": 23,
+    "exploratory_pct": 68,
+    "sources_with_403": ["openai.com/news", "x.ai/news", "techtimes.com/articles/321499"],
+    "adversarial_searches": ["Kimi K3 criticism hallucination", "OpenAI breach pushback"],
+    "sea_searches": ["AI Indonesia startup Asia July 2026"]
+  }
+}
