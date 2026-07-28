@@ -1,0 +1,167 @@
+{
+  "run_date": "2026-07-28",
+  "period_start": "2026-07-25",
+  "period_end": "2026-07-28",
+  "depth": "standard",
+  "audience": "public-digest",
+  "window_expansion": false,
+  "items_reviewed": 20,
+  "items_published": 7,
+  "items_dropped": 13,
+  "exploration_pct": 67,
+  "sources_count": 18,
+  "verification_summary": {
+    "verified": 5,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "MCP 2026-07-28 specification ships: stateless core, Tasks, and MCP Apps now live",
+      "date": "2026-07-28",
+      "category": "mcp-ecosystem",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "specification release",
+      "primary_source": "https://blog.modelcontextprotocol.io/posts/sdk-betas-2026-07-28/",
+      "key_claims": [
+        {"claim": "Stateless spec removes Mcp-Session-Id and initialize handshake", "source": "blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/"},
+        {"claim": "Deprecation grace period: minimum 12 months between Deprecated and Removed", "source": "same source"},
+        {"claim": "MCP Apps: sandboxed iframe delivery via server-rendered HTML", "source": "same source"},
+        {"claim": "GitHub MCP Server pre-emptive support: July 23, 2026", "source": "github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification"}
+      ],
+      "caveats": ["Primary SDK blog returned HTTP 503; spec confirmed through release candidate post, GitHub Changelog, and developer migration guides"]
+    },
+    {
+      "id": 2,
+      "title": "EU AI Act Digital Omnibus enters into force July 27: high-risk deadline moves to December 2027",
+      "date": "2026-07-27",
+      "category": "policy-regulation",
+      "tier": "T1",
+      "verification": "verified",
+      "methodology": "regulatory deadline update",
+      "primary_source": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "key_claims": [
+        {"claim": "High-risk Annex III deadline: August 2, 2026 → December 2, 2027", "source": "gibsondunn.com; aiactblog.nl"},
+        {"claim": "Annex I embedded products: August 2, 2026 → August 2, 2028", "source": "same sources"},
+        {"claim": "Article 50 still applies August 2, 2026", "source": "compliancehub.wiki"},
+        {"claim": "Fines for Article 50 violations: up to €15M or 3% of global turnover", "source": "EU AI Act text (Articles 99-101)"}
+      ],
+      "caveats": ["EU EUR-Lex direct URL not confirmed; compliance picture verified through Gibson Dunn, aiactblog.nl, ComplianceHub.Wiki"]
+    },
+    {
+      "id": 3,
+      "title": "Open-weights debate crystallizes: 50-signatory letter and Anthropic's dissent",
+      "date": "2026-07-27",
+      "category": "policy-regulation",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "industry letter + policy position",
+      "primary_source": "https://www.anthropic.com/news/position-open-weights-models",
+      "key_claims": [
+        {"claim": "50+ signatories as of July 25, 2026", "source": "Forbes (sandycarter)"},
+        {"claim": "Jensen Huang's X post: 11M views", "source": "Forbes; webnewswire.com"},
+        {"claim": "Anthropic position: supports open weights without dangerous capabilities", "source": "anthropic.com/news/position-open-weights-models"},
+        {"claim": "Anthropic proposals: chip export controls, anti-distillation policy, universal safety testing", "source": "same primary"}
+      ],
+      "caveats": []
+    },
+    {
+      "id": 4,
+      "title": "Cognizant joins Anthropic Claude Premier Partner Network, embeds Claude in enterprise industry platforms",
+      "date": "2026-07-27",
+      "category": "ai-for-business",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "partnership announcement",
+      "primary_source": "https://news.cognizant.com/2026-07-27-Cognizant-and-Anthropic-expand-partnership-to-embed-Claude-in-Cognizants-industry-platforms,-helping-clients-close-the-gap-between-AI-promise-and-business-outcomes",
+      "key_claims": [
+        {"claim": "30,000+ Claude-certified employees in Frontier Certified program", "source": "news.cognizant.com"},
+        {"claim": "Sectors targeted: manufacturing, life sciences, insurance", "source": "same source"},
+        {"claim": "Premier Partner designation: small number of global companies hold this tier", "source": "anthropic.com/news/cognizant-anthropic"}
+      ],
+      "caveats": []
+    },
+    {
+      "id": 5,
+      "title": "Molt: NVIDIA ships PyTorch-native agentic reinforcement learning framework at 1T-class scale",
+      "date": "2026-07-27",
+      "category": "agent-framework",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "research preprint",
+      "primary_source": "https://arxiv.org/abs/2607.21653",
+      "key_claims": [
+        {"claim": "~9,200 lines of RL code", "source": "arXiv abstract (2607.21653)"},
+        {"claim": "Scales to 1T-class MoE on vLLM", "source": "same source"},
+        {"claim": "Statistically comparable to Megatron-based stack on matched async protocol", "source": "arXiv paper"},
+        {"claim": "Apache 2.0 license", "source": "github.com/NVIDIA-NeMo/labs-molt"}
+      ],
+      "caveats": ["Preprint, not yet peer-reviewed", "Performance comparison vs Megatron is on a matched fully-asynchronous protocol — not independently verified"]
+    },
+    {
+      "id": 6,
+      "title": "NVIDIA and OpenAI in talks for $250B data center financing backstop",
+      "date": "2026-07-26",
+      "category": "ai-for-business",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "deal talks (unsigned) via secondary reporting",
+      "primary_source": "https://www.bloomberg.com/news/articles/2026-07-26/nvidia-in-talks-on-250-billion-backing-for-openai-hub-wsj-says",
+      "key_claims": [
+        {"claim": "Nvidia backstop: ~$250B for lease and construction debt", "source": "Bloomberg citing WSJ"},
+        {"claim": "Accelerator purchase talks: up to $350B separately", "source": "CNBC citing WSJ"},
+        {"claim": "Facility: 10 GW, southern Ohio, SB Energy (SoftBank subsidiary)", "source": "multiple secondary"},
+        {"claim": "Project total: >$500B", "source": "same sources"}
+      ],
+      "caveats": ["No signed agreement", "Figures sourced from WSJ via Bloomberg/CNBC secondary — not from Nvidia or OpenAI official communications", "Terms still moving; deal may not close"]
+    },
+    {
+      "id": 7,
+      "title": "Sam Altman: \"We are now, like, in the singularity\"",
+      "date": "2026-07-27",
+      "category": "ai-for-business",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "CEO on-record statement",
+      "primary_source": "https://fortune.com/2026/07/27/sam-altman-ai-singularity-elon-musk-openai-hugging-face-breach/",
+      "key_claims": [
+        {"claim": "Quote: \"We are now, like, in the singularity\"", "source": "Fortune (citing Relentless podcast, July 25 episode)"},
+        {"claim": "Expert dissent: singularity claim disputed by Brian Jackson, Info-Tech Research Group", "source": "Fortune"}
+      ],
+      "caveats": ["\"Singularity\" as used by Altman is a loosely-defined term, not a technical milestone", "No independent expert consensus supports the capability claim — T2 for attribution only, T4 for the underlying claim"]
+    }
+  ],
+  "dropped": [
+    {"title": "Grok STT 1.0 by xAI", "date": "2026-07-23", "reason": "Outside strict 72h window"},
+    {"title": "Gemini 3.6 Flash / 3.5 Flash-Lite", "date": "2026-07-21", "reason": "Outside window"},
+    {"title": "Gemini 4 pre-training confirmation", "date": "2026-07-23", "reason": "Outside window; no release date or specs"},
+    {"title": "MAS Singapore SAFR framework", "date": "2026-07-03", "reason": "Outside window"},
+    {"title": "GitHub MCP Server spec pre-support", "date": "2026-07-23", "reason": "Outside strict window; referenced as cross-ref in MCP item"},
+    {"title": "Netzilo agent governance platform", "date": "2026-07-01", "reason": "Outside window"},
+    {"title": "AWS Bedrock AgentCore four-region expansion", "date": "2026-07-01", "reason": "Outside window"},
+    {"title": "Strix AI pentest tool (GitHub trending)", "date": "2026-07-03", "reason": "Peak activity July 3 — outside window"},
+    {"title": "OpenAI small business ChatGPT program", "date": "2026-07-21", "reason": "Outside window"},
+    {"title": "Claude Code Opus 5 default + nested subagents depth 3", "date": "2026-07-24", "reason": "Outside strict window; covered in July 24 bulletin"},
+    {"title": "FTC AI accuracy policy (July 31 comment deadline)", "date": "2026-07-01", "reason": "Already covered in July 27 bulletin; not duplicating"},
+    {"title": "Kimi K3 LM Arena early community rankings", "date": "2026-07-17", "reason": "Minor update to July 27 bulletin item; no new finding that changes the picture"},
+    {"title": "NVIDIA Open Secure AI Alliance", "reason": "Insufficient date verification to confirm in-window"}
+  ],
+  "search_log": {
+    "total_searches": 42,
+    "exploratory_searches": 28,
+    "exploratory_pct": 67,
+    "sources_with_403": ["blog.modelcontextprotocol.io/posts/sdk-betas-2026-07-28/ (503)", "cnbc.com (403)", "bloomberg.com (403)"],
+    "adversarial_searches": [
+      "MCP spec criticism concerns July 28 2026 breaking changes migration",
+      "Kimi K3 hallucination benchmark independent review",
+      "Claude Opus 5 criticism benchmark controversy independent review",
+      "open weight AI security risk government regulation July 27 28 2026"
+    ],
+    "sea_searches": [
+      "AI Indonesia startup Asia July 2026",
+      "AI Indonesia startup tech launch July 25 26 27 28 2026"
+    ]
+  }
+}
