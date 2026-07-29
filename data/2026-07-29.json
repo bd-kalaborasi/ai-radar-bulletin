@@ -1,0 +1,225 @@
+{
+  "run_date": "2026-07-29",
+  "period_start": "2026-07-24",
+  "period_end": "2026-07-29",
+  "depth": "standard",
+  "audience": "public-digest",
+  "window_expansion": true,
+  "window_expansion_note": "Strict 72h window (Jul 26-29) yielded 2 items; expanded to 5-day window per skill protocol",
+  "items_reviewed": 21,
+  "items_published": 7,
+  "items_dropped": 14,
+  "exploration_pct": 41,
+  "sources_count": 14,
+  "verification_summary": {
+    "verified": 5,
+    "secondary": 2,
+    "rumor": 0
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Google Gemini API Managed Agents ships scheduled triggers, budget controls, and free tier",
+      "date": "2026-07-28",
+      "category": "workflow-automation",
+      "secondary_category": "agent-framework",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "product update",
+      "primary_source": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+      "key_claims": [
+        {"claim": "Cron-scheduled triggers bind agents to recurring tasks without external orchestration", "source": "blog.google (primary)"},
+        {"claim": "max_total_tokens cap pauses execution gracefully if budget reached", "source": "same source"},
+        {"claim": "Environment hooks target specific tools via regex in .agents/hooks.json", "source": "same source"},
+        {"claim": "Free tier now available without active billing", "source": "same source"},
+        {"claim": "Default model: Gemini 3.6 Flash (antigravity-preview-05-2026 agent)", "source": "same source"}
+      ],
+      "cross_references": [
+        {"url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-enterprise-agent-platform", "tier": "T2", "role": "corroborating"},
+        {"url": "https://cryptobriefing.com/gemini-api-managed-agents-expansion/", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": []
+    },
+    {
+      "id": 2,
+      "title": "NVIDIA founds Open Secure AI Alliance with 37 organizations; open-sources NOOA agent-tracing framework",
+      "date": "2026-07-27",
+      "category": "ai-for-business",
+      "secondary_category": "policy-regulation",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "primary_source": "https://blogs.nvidia.com/blog/open-secure-ai-alliance/",
+      "key_claims": [
+        {"claim": "37 founding organizations (The Hacker News count from announcement day)", "source": "thehackernews.com"},
+        {"claim": "NVIDIA blog lists 60+ current members (likely reflects post-announcement joiners)", "source": "blogs.nvidia.com (T2)"},
+        {"claim": "OpenAI, Google, Anthropic absent from founding members", "source": "NVIDIA blog; SecurityWeek"},
+        {"claim": "NOOA (NVIDIA Labs Object-Oriented Agent): Apache 2.0 research framework for agent traceability and governance", "source": "blogs.nvidia.com"},
+        {"claim": "IBM/Red Hat Lightwell, Microsoft MDASH, Hugging Face Safetensors among day-one contributions", "source": "same source"},
+        {"claim": "Formation triggered by July 22 OpenAI/HuggingFace breach incident", "source": "SecurityWeek (T2)"}
+      ],
+      "cross_references": [
+        {"url": "https://www.securityweek.com/nvidia-and-tech-giants-launch-ai-security-alliance/", "tier": "T2", "role": "corroborating"},
+        {"url": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html", "tier": "T3", "role": "corroborating — primary count source"},
+        {"url": "https://betanews.com/article/nvidia-open-secure-ai-alliance/", "tier": "T3", "role": "conflicting — reports 52 members"}
+      ],
+      "caveats": ["Founding member count conflicts across sources (37 vs 52 vs 60+; see conflicts field)", "NOOA is labeled a research framework; production maturity unconfirmed"],
+      "conflicts": "Member count: NVIDIA blog says 60+, THN says 37, betanews says 52. Reconciliation: 37 used as founding count (announcement day); NVIDIA blog likely reflects later joiners."
+    },
+    {
+      "id": 3,
+      "title": "ChatGPT Voice reaches desktop: voice-directed concurrent agents on Mac and Windows",
+      "date": "2026-07-24",
+      "category": "productivity-ai",
+      "secondary_category": "workflow-automation",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "product release",
+      "primary_source": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/",
+      "tier_nuance": "TechCrunch is primary discovery; OpenAI release notes (help.openai.com) used for feature details. OpenAI direct blog URL not accessible during this run.",
+      "key_claims": [
+        {"claim": "Available July 23–24, 2026 on macOS and Windows", "source": "TechCrunch; 9to5Mac"},
+        {"claim": "Plans: Plus, Pro, Business, Edu, Enterprise", "source": "TechCrunch; CryptoRank"},
+        {"claim": "Controls both ChatGPT Work and Codex agents via voice simultaneously", "source": "XenoSpectrum (T3)"},
+        {"claim": "Appshots (macOS): agent references current app window in focus", "source": "voiceos.com (T3)"}
+      ],
+      "cross_references": [
+        {"url": "https://9to5mac.com/2026/07/23/openai-updating-chatgpt-desktop-app-with-gpt-voice-for-talking-through-work/", "tier": "T2-T3", "role": "corroborating"},
+        {"url": "https://xenospectrum.com/en/chatgpt-voice-work-codex-desktop/", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": ["Appeared in July 27 bulletin; included here as within the 5-day expansion window and absent from July 28 bulletin"]
+    },
+    {
+      "id": 4,
+      "title": "xAI launches free Grok 4.5 add-on for Google Workspace: Docs, Sheets, and Slides",
+      "date": "2026-07-24",
+      "category": "productivity-ai",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "announcement",
+      "primary_source": "https://x.ai/news/introducing-google-workspace-addon",
+      "key_claims": [
+        {"claim": "Listed on Google Workspace Marketplace July 21; announced July 24, 2026", "source": "x.ai primary"},
+        {"claim": "Free to install", "source": "x.ai/news/introducing-google-workspace-addon"},
+        {"claim": "Available in Docs, Sheets, and Slides", "source": "same source"},
+        {"claim": "Sheets: writes and fills formulas, inserts charts, reruns scenarios", "source": "same source"},
+        {"claim": "Slides: converts outline to presentation in existing theme", "source": "same source"}
+      ],
+      "cross_references": [
+        {"url": "https://www.basenor.com/blogs/news/grok-in-google-workspace-5-details-that-matter", "tier": "T3", "role": "corroborating"},
+        {"url": "https://techgenyz.com/grok-google-workspace-addon/", "tier": "T3", "role": "corroborating — notes data-handling risk caveat"}
+      ],
+      "caveats": ["Third-party review flags data-handling risks for sensitive Workspace documents; users should review SpaceXAI data terms before connecting business documents", "Appeared in July 27 bulletin; included here as within the 5-day expansion window and absent from July 28 bulletin"]
+    },
+    {
+      "id": 5,
+      "title": "Prentis, co-founded by Reid Hoffman and Mark Pincus, seeks $100M at $1B to build vertical computer-use models",
+      "date": "2026-07-24",
+      "category": "workflow-automation",
+      "secondary_category": "ai-for-business",
+      "tier": "T3",
+      "verification": "secondary",
+      "methodology": "funding-talks report",
+      "primary_source": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
+      "tier_nuance": "TechCrunch reports ongoing talks; no official company announcement. Benchmark claims are vendor-reported.",
+      "key_claims": [
+        {"claim": "$100M raise talks at $1B valuation", "source": "TechCrunch (secondary; round not confirmed closed)"},
+        {"claim": "Up to $50M in signed contracts with healthcare, manufacturing, retail customers", "source": "TechCrunch"},
+        {"claim": "Hive-32B outperforms GPT-5.4 and Claude Opus 4.6 on 2 computer-use benchmarks", "source": "Vendor-claimed (TechCrunch citing Prentis), no independent verification"},
+        {"claim": "25+ employees from OpenAI, Google DeepMind, Meta, Tencent, Alibaba", "source": "TechCrunch"},
+        {"claim": "Founded April 2026 by Ritankar Das, Reid Hoffman, Mark Pincus", "source": "TechCrunch"}
+      ],
+      "cross_references": [
+        {"url": "https://app.dealroom.co/news/note/prentis-launches-ai-lab-for-computer-use-agents-in-talks-to-raise-100m", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": ["'In talks to raise' — round not confirmed closed", "Benchmark comparisons are vendor-reported; no independent replication", "$50M contracts cited but no named customers disclosed", "Appeared in July 27 bulletin; included here as within the 5-day expansion window and absent from July 28 bulletin"]
+    },
+    {
+      "id": 6,
+      "title": "AI Kill Switch Act: bipartisan US bill requires shutdown capability for frontier AI systems",
+      "date": "2026-07-23",
+      "category": "policy-regulation",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "legislative introduction",
+      "primary_source": "https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can",
+      "key_claims": [
+        {"claim": "Introduced by Rep. Ted Lieu (D-CA) and Rep. Nathaniel Moran (R-TX)", "source": "lieu.house.gov (primary)"},
+        {"claim": "Compute threshold: systems developed with >$100M compute", "source": "lieu.house.gov"},
+        {"claim": "Revenue threshold: companies earning >$500M annually from covered systems", "source": "lieu.house.gov"},
+        {"claim": "DHS authority: throttle, suspend, or shut down covered systems", "source": "lieu.house.gov"},
+        {"claim": "Penalties: $2M–$20M per day non-compliance", "source": "CNBC; Semafor (corroborating)"},
+        {"claim": "Supporting orgs: AI Policy Network, Americans for Responsible Innovation, ControlAI, Future of Life Institute, Alliance for Secure AI", "source": "lieu.house.gov"}
+      ],
+      "cross_references": [
+        {"url": "https://www.cnbc.com/2026/07/23/open-ai-hugging-face-hack-kill-switch-bill-congress.html", "tier": "T2-T3", "role": "corroborating"},
+        {"url": "https://www.semafor.com/article/07/24/2026/us-lawmakers-propose-ai-kill-switch-bill", "tier": "T2", "role": "corroborating"},
+        {"url": "https://rollcall.com/2026/07/23/ai-companies-would-need-kill-switch-under-new-bipartisan-bill/", "tier": "T2-T3", "role": "corroborating"}
+      ],
+      "caveats": ["Bill introduced in committee; no committee vote or floor vote scheduled as of July 29, 2026", "Primary source date July 23 is one day outside the 5-day expansion window; included because absent from all prior bulletins in this period and verifiable"]
+    },
+    {
+      "id": 7,
+      "title": "Midjourney V8.2 ships with bolder aesthetics and improved personalization",
+      "date": "2026-07-24",
+      "category": "productivity-ai",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "product release",
+      "primary_source": "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version",
+      "tier_nuance": "Midjourney docs returned HTTP 403; release confirmed through multiple T3 secondary sources all citing July 24, 2026",
+      "key_claims": [
+        {"claim": "V8.2 set as default model July 24, 2026", "source": "Releasebot (T3); quasa.io (T3); 5+ secondary sources consistent"},
+        {"claim": "Focus areas: bolder aesthetics, improved personalization, fewer low-quality outputs", "source": "multiple secondaries"},
+        {"claim": "Expanded image pool for personalization profiles", "source": "kie.ai (T3)"}
+      ],
+      "cross_references": [
+        {"url": "https://releasebot.io/updates/midjourney", "tier": "T3", "role": "corroborating"},
+        {"url": "https://quasa.io/media/midjourney-v8-2-what-changed-and-how-creators-should-use-it", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": ["Primary Midjourney docs URL returned HTTP 403; all features sourced from T3 secondary sources only", "No independent benchmark comparison for V8.2 vs V8.1"]
+    }
+  ],
+  "dropped": [
+    {"title": "MCP 2026-07-28 specification ships", "source": "blog.modelcontextprotocol.io", "reason": "Covered in July 28 bulletin"},
+    {"title": "EU AI Act Digital Omnibus enters into force", "source": "European Commission", "reason": "Covered in July 28 bulletin"},
+    {"title": "Open-weights debate: 50-signatory letter and Anthropic dissent", "source": "Anthropic / CNBC", "reason": "Covered in July 28 bulletin"},
+    {"title": "Cognizant joins Claude Premier Partner Network", "source": "Cognizant / Anthropic", "reason": "Covered in July 28 bulletin"},
+    {"title": "Molt: NVIDIA PyTorch-native agentic RL framework", "source": "arXiv (NVIDIA NeMo)", "reason": "Covered in July 28 bulletin"},
+    {"title": "NVIDIA-OpenAI $250B data center backstop talks", "source": "Bloomberg", "reason": "Covered in July 28 bulletin"},
+    {"title": "Sam Altman: AI singularity arrived (Relentless podcast)", "source": "Fortune", "reason": "Covered in July 28 bulletin"},
+    {"title": "Kimi K3 weights released on Hugging Face (July 26)", "source": "Moonshot AI / HuggingFace", "reason": "Covered in July 27 bulletin"},
+    {"title": "Claude Opus 5 ships at Opus 4.8 price", "source": "Anthropic", "reason": "Covered in July 25 bulletin"},
+    {"title": "ChatGPT Health expands to all US adult users", "source": "OpenAI", "reason": "July 23 primary; outside 5-day expansion window"},
+    {"title": "Google Gemini 3.6 Flash model release", "source": "Google / 9to5Google", "reason": "July 21 primary; outside 5-day expansion window"},
+    {"title": "OpenAI/Hugging Face breach incident (core story)", "source": "OpenAI / HuggingFace", "reason": "Core story covered in July 27 bulletin; Open Secure AI Alliance item covers industry response angle"},
+    {"title": "StateAct: Salesforce computer-use agent research paper", "source": "arXiv (Salesforce)", "reason": "No verifiable primary source URL found; paper title from HuggingFace papers aggregator only"},
+    {"title": "FTC AI Accuracy Policy Statement", "source": "FTC (July 1)", "reason": "Covered in July 27 bulletin; July 31 comment deadline is tomorrow but no new development in window"}
+  ],
+  "search_log": {
+    "total_searches": 33,
+    "exploratory_searches": 10,
+    "exploratory_pct": 30,
+    "web_fetches": 8,
+    "sources_with_403_or_error": [
+      "docs.midjourney.com (403)",
+      "hn.algolia.com (400)"
+    ],
+    "adversarial_searches": [
+      "Hugging Face CEO transparency radical OpenAI attack July 26 2026",
+      "AI security industry response OpenAI Hugging Face breach July 28 2026",
+      "Hugging Face hack OpenAI cyberattack security July 2026"
+    ],
+    "sea_searches": [
+      "AI Indonesia OR startup AI Asia July 2026"
+    ],
+    "exploratory_searches_list": [
+      "GitHub trending AI July 2026 new repository stars",
+      "AI news today July 29 2026 model release dev tools",
+      "White House AI executive order rules July 2026",
+      "AI new startup funding announcement July 28 2026",
+      "PulseMCP new MCP servers July 2026 popular trending",
+      "StateAct Salesforce AI research computer use agents program state arxiv 2026"
+    ]
+  }
+}
