@@ -1,0 +1,176 @@
+{
+  "run_date": "2026-07-30",
+  "period_start": "2026-07-27",
+  "period_end": "2026-07-30",
+  "depth": "standard",
+  "audience": "public-digest",
+  "window_expansion": false,
+  "window_expansion_note": "Strict 72h window (Jul 27-30) yielded 5 verified items; no expansion required",
+  "items_reviewed": 16,
+  "items_published": 5,
+  "items_dropped": 11,
+  "exploration_pct": 59,
+  "sources_count": 12,
+  "verification_summary": {
+    "verified": 5,
+    "secondary": 0,
+    "rumor": 0
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Freehand raises $75M Series B to scale supply-chain AI agents at Fortune 500",
+      "date": "2026-07-29",
+      "category": "workflow-automation",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "funding announcement",
+      "primary_source": "https://www.freehand.ai/press-release/freehand-debuts-ai-supply-chain-spend-management",
+      "key_claims": [
+        {"claim": "$75M Series B co-led by Battery Ventures and NewRoad Capital Partners; $100M total raised", "source": "freehand.ai (primary)"},
+        {"claim": "Active clients: Meta, Unilever, J&J, Pfizer, Dunkin', Cardinal Health", "source": "freehand.ai (primary)"},
+        {"claim": "5–10% spend recovered; 5–7× faster workflows; 70%+ procure-to-pay reduction", "source": "freehand.ai (primary — vendor-reported, no independent audit cited)"}
+      ],
+      "cross_references": [
+        {"url": "https://www.forbes.com/sites/davidprosser/2026/07/29/freehand-raises-75-million-as-its-ai-agents-target-the-supply-chain/", "tier": "T2-T3", "role": "corroborating"},
+        {"url": "https://thenextweb.com/news/freehand-75m-supply-chain-ai-agents", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": ["Performance figures are vendor-reported with no independent audit or named methodology cited"]
+    },
+    {
+      "id": 2,
+      "title": "Hush Security raises $30M Series A to govern enterprise AI agent identities",
+      "date": "2026-07-28",
+      "category": "ai-for-business",
+      "secondary_category": "agent-framework",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "funding announcement",
+      "primary_source": "https://www.prnewswire.com/news-releases/hush-security-raises-30m-to-close-the-ai-agent-governance-gap-with-akamai-joining-as-strategic-investor-302836307.html",
+      "key_claims": [
+        {"claim": "$30M Series A; $41M total raised; Akamai as strategic investor", "source": "PR Newswire primary"},
+        {"claim": "JIT permissions at runtime, credential elimination, centralized kill switch, agent registry", "source": "PR Newswire primary"},
+        {"claim": "Gartner: Fortune 500 will run 150,000+ agents by 2028, up from <15 today", "source": "PR Newswire (Gartner cited in release; original Gartner report not independently retrieved)"}
+      ],
+      "cross_references": [
+        {"url": "https://www.securityweek.com/hush-security-raises-30-million-for-ai-agent-governance/", "tier": "T2-T3", "role": "corroborating"}
+      ],
+      "caveats": ["Gartner forecast cited via press release only; original Gartner research not independently verified in this run"]
+    },
+    {
+      "id": 3,
+      "title": "Claude Mythos Preview discovers two cryptographic attack improvements at ~$100k per finding",
+      "date": "2026-07-28",
+      "category": "research-papers",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "research publication",
+      "coi": "Anthropic reports on its own unreleased model; no independent reproduction of findings confirmed in this run",
+      "primary_source": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+      "key_claims": [
+        {"claim": "HAWK attack cost reduced from 2^64 to 2^38 key recovery operations", "source": "Anthropic primary"},
+        {"claim": "AES 7-round attack: 200–800× faster than prior best via Möbius Bridge fingerprinting", "source": "Anthropic primary"},
+        {"claim": "API compute cost: ~$100,000 per attack finding", "source": "Anthropic primary"},
+        {"claim": "HAWK discovery time: 60 hours of semi-autonomous work", "source": "Anthropic primary"},
+        {"claim": "Methodology: multi-worker AI agents using Python, Sage, literature review, experimental validation", "source": "Anthropic primary"}
+      ],
+      "cross_references": [
+        {"url": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/", "tier": "T2", "role": "corroborating — hands-on commentary"},
+        {"url": "https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html", "tier": "T3", "role": "corroborating"}
+      ],
+      "caveats": ["Vendor-conducted research using an unreleased model; no independent team has reproduced findings", "Both attacks target non-production systems (HAWK undeployed; AES attack on 7-round research variant only)"]
+    },
+    {
+      "id": 4,
+      "title": "Recursive Superintelligence signs $410M multi-year AWS compute deal",
+      "date": "2026-07-28",
+      "category": "ai-for-business",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "partnership announcement",
+      "primary_source": "https://press.aboutamazon.com/aws/2026/7/recursive-signs-410-million-multi-year-collaboration-with-aws-to-scale-self-improving-ai",
+      "key_claims": [
+        {"claim": "$410M multi-year AWS collaboration", "source": "AWS Press Center primary"},
+        {"claim": "$650M raised; $4.65B valuation (May 2026 emergence from stealth)", "source": "TechCrunch (corroborating)"},
+        {"claim": "Beat two-year human leaderboard record; SOTA across 3 benchmarks", "source": "AWS primary (vendor-claimed; specific benchmarks not named)"},
+        {"claim": "First products by October 2026", "source": "TechCrunch citing CEO Socher (intent, not formal commitment)"}
+      ],
+      "cross_references": [
+        {"url": "https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/", "tier": "T2-T3", "role": "corroborating — reports $400M; see conflicts field"}
+      ],
+      "caveats": ["Benchmark claims (leaderboard record, SOTA on 3 benchmarks) are vendor-reported; specific benchmarks and baselines not disclosed", "October 2026 product timeline is a CEO statement, not a company commitment"],
+      "conflicts": "Deal value: AWS primary reports $410M; TechCrunch headline rounds to $400M. Reconciliation: AWS is the signing party and authoritative source. $410M used throughout."
+    },
+    {
+      "id": 5,
+      "title": "\"Pacing the Frontier\": 1,273 frontier AI workers request US-backed development pacing tools",
+      "date": "2026-07-28",
+      "category": "policy-regulation",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "open letter",
+      "primary_source": "https://www.pacingthefrontier.com/",
+      "key_claims": [
+        {"claim": "1,273 signatories from OpenAI, Anthropic, Google DeepMind, Meta AI and others", "source": "pacingthefrontier.com (count ongoing; sources at publication day reported 1,134–1,178)"},
+        {"claim": "Named signatories: Dario Amodei, Jakub Pachocki, Mark Chen, Shengjia Zhao, Anca Dragan", "source": "pacingthefrontier.com"},
+        {"claim": "OpenAI and Anthropic endorsed as companies", "source": "TechTimes (July 29); The Next Web"},
+        {"claim": "Letter organizers: Guidelight AI Standards, Encode AI", "source": "pacingthefrontier.com"}
+      ],
+      "cross_references": [
+        {"url": "https://thenextweb.com/news/pacing-the-frontier-ai-employees-letter-us-government", "tier": "T2-T3", "role": "corroborating"},
+        {"url": "https://www.techtimes.com/articles/322125/20260729/openai-anthropic-formally-back-plan-slow-ai-that-writes-its-own-code.htm", "tier": "T3", "role": "corroborating — corporate endorsement detail"},
+        {"url": "https://www.forbes.com/sites/christiancatalini/2026/07/29/dont-pace-the-frontier-look-inside-the-trojan-horse/", "tier": "T2", "role": "contradicting — frames letter as incumbent competitive positioning"}
+      ],
+      "caveats": ["Signatory count varies across sources due to ongoing accumulation; primary source shows 1,273 as of run fetch on 30 July", "Forbes analysis of incumbent self-interest is noted but unresolved"]
+    }
+  ],
+  "dropped": [
+    {"title": "MCP 2026-07-28 specification (stateless, 10,000+ servers milestone)", "source": "blog.modelcontextprotocol.io", "reason": "Covered in July 28 bulletin"},
+    {"title": "AMD + Cerebras disaggregated AI inference partnership (July 23)", "source": "ir.amd.com / cerebras.ai", "reason": "Outside 72h window and 5-day expansion window"},
+    {"title": "Microsoft Agent Framework Harness release (July 22)", "source": "devblogs.microsoft.com/agent-framework", "reason": "Outside 5-day expansion window"},
+    {"title": "OpenAI Presence enterprise agent platform (July 22)", "source": "openai.com", "reason": "Outside 5-day expansion window"},
+    {"title": "Claude Code v2.1.220 (subagents depth-3, screen reader — July 24)", "source": "releasebot.io", "reason": "Outside 72h window; no post-July-27 release confirmed"},
+    {"title": "FCC ban on foreign humanoid robots and power inverters (July 28)", "source": "fcc.gov", "reason": "Physical hardware import policy; no impact on AI software or model deployment"},
+    {"title": "Claude Opus 5 release (July 24)", "source": "anthropic.com", "reason": "Covered in July 25 bulletin"},
+    {"title": "ChatGPT Health expansion to all US adults (July 23)", "source": "openai.com", "reason": "Outside 5-day expansion window"},
+    {"title": "Google Gemini 3.6 Flash and two companion model releases (July 21)", "source": "blog.google", "reason": "Outside 5-day expansion window; covered in prior bulletins"},
+    {"title": "DataPrep-Bench paper (arXiv, Hugging Face #1 trending, July 28)", "source": "arxiv.org", "reason": "Low-priority research; no directly deployable finding for BD; aggregator-only discovery, no primary source retrieved"},
+    {"title": "OpenAI blog 'How AI is expanding what people do at work' (July 28)", "source": "openai.com", "reason": "Analysis blog on ChatGPT usage data; no new product or capability announcement"}
+  ],
+  "search_log": {
+    "total_searches": 27,
+    "web_fetches": 4,
+    "exploratory_searches": 16,
+    "exploratory_pct": 59,
+    "adversarial_searches": [
+      "Pacing the Frontier letter criticism skeptics response July 2026"
+    ],
+    "sea_searches": [
+      "AI Indonesia startup AI Asia Tenggara July 2026"
+    ],
+    "web_fetches_detail": [
+      "anthropic.com/research/discovering-cryptographic-weaknesses (200)",
+      "pacingthefrontier.com (200)",
+      "press.aboutamazon.com/aws (200)",
+      "releasebot.io/updates/anthropic/claude-code (200 — no post-July-27 releases found)"
+    ],
+    "exploratory_searches_list": [
+      "OpenAI Presence launch announcement July 2026",
+      "AI news July 28 29 30 2026 new releases announcements",
+      "Microsoft Agent Framework harness released July 2026",
+      "AI startup funding announcement July 28 29 30 2026",
+      "AI employees letter government slowdown pacing mechanism July 28 2026",
+      "Freehand AI supply chain autonomous agents $75 million Series B July 2026",
+      "Recursive Superintelligence AWS $400 million compute deal July 2026",
+      "AMD Cerebras partnership AI inference July 2026 tokens per watt",
+      "GitHub trending AI agent repositories July 2026 stars new",
+      "FCC ban Chinese humanoid robots July 2026 grid inverters",
+      "AI announcement news July 30 2026",
+      "Freehand supply chain AI agents Series B July 29 2026 Forbes details",
+      "Hugging Face daily papers AI research July 29 30 2026",
+      "Hush Security AI agent identity governance July 2026 funding",
+      "OpenAI Anthropic back plan slow AI writes own code July 29 2026",
+      "AI Indonesia startup AI Asia Tenggara July 2026"
+    ]
+  }
+}
