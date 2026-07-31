@@ -1,0 +1,305 @@
+{
+  "run_date": "2026-07-31",
+  "period_start": "2026-07-28",
+  "period_end": "2026-07-31",
+  "window_hours": 72,
+  "window_expanded": false,
+  "depth": "standard",
+  "audience": "public-digest",
+  "items_reviewed": 20,
+  "items_published": 9,
+  "items_dropped": 11,
+  "verification_summary": {
+    "verified": 6,
+    "secondary": 3,
+    "rumor": 0
+  },
+  "sources_count": 23,
+  "exploration_pct": 55,
+  "search_operations": {
+    "total_queries": 33,
+    "total_fetches": 13,
+    "exploratory_or_adversarial": 18,
+    "fetch_successes": 10,
+    "fetch_failures_403": 3,
+    "fetch_failures_503": 1
+  },
+  "published_items": [
+    {
+      "id": "openai-gpt56-price-cuts",
+      "title": "OpenAI GPT-5.6 price cuts and Sol Fast mode",
+      "date": "2026-07-30",
+      "primary_source": "https://developers.openai.com/api/docs/changelog",
+      "primary_source_org": "OpenAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "pricing update",
+      "category": "model-release",
+      "bd_actionability": "high",
+      "key_facts": {
+        "luna_input_old": "$1.00/M tokens",
+        "luna_input_new": "$0.20/M tokens",
+        "luna_reduction_pct": 80,
+        "luna_output_old": "$6.00/M tokens",
+        "luna_output_new": "$1.20/M tokens",
+        "terra_input_old": "$2.50/M tokens",
+        "terra_input_new": "$2.00/M tokens",
+        "terra_reduction_pct": 20,
+        "terra_output_old": "$15.00/M tokens",
+        "terra_output_new": "$12.00/M tokens",
+        "sol_changed": false,
+        "sol_fast_throughput": "2.5x faster than standard",
+        "sol_fast_price": "2x standard Sol price",
+        "sol_fast_replaces": "Priority Processing"
+      },
+      "caveats": ["Primary blog URL returned 403; figures from API changelog cross-confirmed by 6+ outlets"]
+    },
+    {
+      "id": "openai-gpt-transcribe",
+      "title": "OpenAI releases GPT Transcribe and GPT Live Transcribe",
+      "date": "2026-07-28",
+      "primary_source": "https://developers.openai.com/api/docs/changelog",
+      "primary_source_org": "OpenAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "model release",
+      "category": "dev-tools",
+      "bd_actionability": "medium-high",
+      "key_facts": {
+        "gpt_transcribe_use_case": "async batch transcription",
+        "gpt_transcribe_price_per_min": "$0.0045",
+        "gpt_transcribe_prior_model": "gpt-4o-transcribe at $0.006/min",
+        "gpt_live_transcribe_use_case": "low-latency streaming transcription",
+        "gpt_live_transcribe_price_per_min": "$0.017",
+        "wer_reduction_pct": "~53% relative on Common Voice 22 languages (whisper-1 baseline)",
+        "benchmark_wer_before": "~40%",
+        "benchmark_wer_after": "~19%",
+        "replaces": ["whisper-1", "gpt-4o-transcribe"],
+        "features": ["free-form transcription context", "keyword hints", "multiple input languages"]
+      },
+      "caveats": ["WER figures from OpenAI benchmark data reported by third parties; independent replication not confirmed"]
+    },
+    {
+      "id": "xai-grok45-copilot",
+      "title": "Grok 4.5 added to GitHub Copilot across all subscription tiers",
+      "date": "2026-07-28",
+      "primary_source": "https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot/",
+      "primary_source_org": "GitHub",
+      "secondary_source": "https://x.ai/news/grok-github-copilot",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "product integration",
+      "category": "dev-tools",
+      "bd_actionability": "high",
+      "key_facts": {
+        "context_window_tokens": 500000,
+        "input_types": ["text", "image"],
+        "reasoning_effort_levels": ["low", "medium", "high"],
+        "available_tiers": ["Free", "Pro", "Pro+", "Max", "Business", "Enterprise"],
+        "enterprise_default": "disabled (must enable policy)",
+        "api_price_input_per_m": "$2.00",
+        "api_price_output_per_m": "$6.00",
+        "platforms": ["VS Code", "Visual Studio", "Copilot CLI", "cloud agent", "GitHub Copilot app", "JetBrains", "Xcode", "Eclipse"]
+      }
+    },
+    {
+      "id": "xai-grok-voice-2",
+      "title": "Grok Voice Think Fast 2.0 brings speech-to-speech API with tool use",
+      "date": "2026-07-29",
+      "primary_source": "https://docs.x.ai/developers/release-notes",
+      "primary_source_org": "xAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "model release",
+      "category": "dev-tools",
+      "bd_actionability": "medium",
+      "key_facts": {
+        "wer_improvement": "1.5-2x vs competitors across 24 languages (vendor benchmark)",
+        "token_reduction_vs_v1": "~60%",
+        "price_per_minute": "$0.08",
+        "protocol": "WebSocket speech-to-speech",
+        "tool_use": true,
+        "grok_voice_latest_routing_date": "2026-08-05",
+        "use_cases": ["phone agents", "voice assistants", "interactive voice response"]
+      },
+      "caveats": ["WER benchmark is xAI's own internal 24-language evaluation; competitor names not disclosed"]
+    },
+    {
+      "id": "xai-grok-build-mode",
+      "title": "Grok Build Mode enters early beta for SuperGrok Heavy subscribers",
+      "date": "2026-07-28",
+      "primary_source": "https://x.ai/news",
+      "primary_source_org": "xAI",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "product launch",
+      "category": "productivity-ai",
+      "bd_actionability": "medium",
+      "key_facts": {
+        "access_tier": "SuperGrok Heavy ($300/month)",
+        "output_types": ["landing pages", "portfolios", "productivity tools", "arcade/3D games", "interactive dashboards"],
+        "hosting": "grok.me or custom domain",
+        "platforms": ["grok.com", "iOS", "Android"],
+        "status": "early beta",
+        "distinct_from": "Grok Build (CLI coding agent)"
+      },
+      "caveats": ["Not intended for maintained production codebases; no coding-agent replacement"]
+    },
+    {
+      "id": "openai-academic-researchers",
+      "title": "OpenAI opens ChatGPT for Academic Researchers to 10,000 scientists",
+      "date": "2026-07-29",
+      "primary_source": "https://openai.com/index/chatgpt-for-academic-researchers/",
+      "primary_source_org": "OpenAI",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "program announcement",
+      "category": "productivity-ai",
+      "bd_actionability": "medium",
+      "note": "Primary URL returned 403; confirmed by SiliconANGLE, Engadget, HPC Wire, The Next Web, Axios",
+      "key_facts": {
+        "initial_researcher_count": 10000,
+        "target_researcher_count": 100000,
+        "target_year": 2027,
+        "access_equivalent": "ChatGPT Pro ($200/month)",
+        "model_access": "GPT-5.6 Sol Pro",
+        "collaborators_per_researcher": 4,
+        "total_commitment_usd": "$250M+ through 2027",
+        "launch_institutions": ["Institute for Advanced Study", "École normale supérieure"],
+        "model_weights_provided": false
+      }
+    },
+    {
+      "id": "gemini-robotics-2",
+      "title": "Google DeepMind Gemini Robotics 2 ships with whole-body humanoid control",
+      "date": "2026-07-30",
+      "primary_source": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "primary_source_org": "Google DeepMind",
+      "tier": "T2",
+      "verification": "verified",
+      "methodology": "research publication + product release",
+      "category": "research-papers",
+      "bd_actionability": "low-medium",
+      "key_facts": {
+        "models": [
+          {
+            "name": "Gemini Robotics 2 VLA",
+            "function": "vision-language-action motor control for full humanoids and bi-arm robots",
+            "availability": "Trusted Tester Program (gated)"
+          },
+          {
+            "name": "Gemini Robotics ER 2",
+            "function": "embodied reasoning, multi-step task planning, multi-robot collaboration",
+            "availability": "public preview on Google AI Studio; private preview on Gemini Enterprise Agent Platform"
+          },
+          {
+            "name": "Gemini Robotics On-Device 2",
+            "function": "on-device VLA adapting to new robot embodiments",
+            "availability": "Trusted Tester Program (gated)",
+            "embodiment_transfer_examples": "<200",
+            "embodiment_transfer_time": "hours"
+          }
+        ],
+        "dexterity_success_rates": {
+          "range": "32-92%",
+          "light_bulb_unscrew": "92%",
+          "trash_bag_tie": "44%",
+          "ziplock_seal": "40%"
+        }
+      },
+      "caveats": [
+        "Dexterity benchmarks are vendor-evaluated; no independent replication confirmed",
+        "VLA and On-Device models are not publicly accessible",
+        "System trained on task-specific demonstrations, not a general-purpose manipulation dataset"
+      ]
+    },
+    {
+      "id": "eu-ai-gigafactories",
+      "title": "EU opens €30B AI Gigafactory tender: seven hubs, deadline November 12",
+      "date": "2026-07-30",
+      "primary_source": "https://commission.europa.eu (European Commission, official call for tenders)",
+      "primary_source_org": "European Commission",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "policy announcement",
+      "category": "policy-regulation",
+      "bd_actionability": "low",
+      "note": "EU Commission primary tender document not directly fetched; confirmed by Bloomberg, Washington Post, EU News, Mobile World Live",
+      "key_facts": {
+        "facilities": 7,
+        "public_funding_eur": "€10B",
+        "private_investment_target_eur": "€20B",
+        "total_target_eur": "€30B",
+        "chips_per_factory_min": 100000,
+        "application_deadline": "2026-11-12",
+        "award_decisions": "early 2027",
+        "construction_start": "early 2027",
+        "hardware_partners": ["AMD", "NVIDIA", "Qualcomm"],
+        "eligibility": "Consortia of companies, public bodies, investors (single or multiple member states)"
+      }
+    },
+    {
+      "id": "meta-q2-2026",
+      "title": "Meta Q2 2026: $60.8B revenue, $31.1B AI capex in one quarter",
+      "date": "2026-07-29",
+      "primary_source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx",
+      "primary_source_org": "Meta Investor Relations",
+      "tier": "T2",
+      "verification": "secondary",
+      "methodology": "earnings disclosure",
+      "category": "ai-for-business",
+      "bd_actionability": "low",
+      "note": "Primary IR page confirmed to exist; PRNewswire release returned 503; figures confirmed by Yahoo Finance, InfotechLead, TechTimes, Variety, Investing.com",
+      "key_facts": {
+        "q2_revenue_usd": "$60.8B",
+        "q2_revenue_yoy_growth_pct": 28,
+        "q2_capex_usd": "$31.1B",
+        "q2_capex_prior_year_usd": "$17.0B",
+        "q2_free_cash_flow_usd": "$784M",
+        "q2_free_cash_flow_prior_year_usd": "$10.9B",
+        "q2_fcf_change_pct": -91,
+        "fy_capex_guidance_floor_usd": "$130B",
+        "fy_capex_guidance_ceiling_usd": "$145B",
+        "fy_capex_prior_floor_usd": "$125B",
+        "after_hours_share_change_pct": -9.64,
+        "legal_charges_usd": "$2.4B",
+        "severance_charges_usd": "$1.18B"
+      }
+    }
+  ],
+  "dropped_items": [
+    {"title": "Freehand $75M Series B", "date": "2026-07-29", "reason": "Covered in July 30 bulletin"},
+    {"title": "Hush Security $30M Series A", "date": "2026-07-28", "reason": "Covered in July 30 bulletin"},
+    {"title": "Claude Mythos cryptographic research", "date": "2026-07-28", "reason": "Covered in July 30 bulletin"},
+    {"title": "Recursive Superintelligence $410M AWS", "date": "2026-07-28", "reason": "Covered in July 30 bulletin"},
+    {"title": "Pacing the Frontier open letter", "date": "2026-07-28", "reason": "Covered in July 30 bulletin"},
+    {"title": "MCP 2026-07-28 specification", "date": "2026-07-28", "reason": "Covered in July 28 bulletin"},
+    {"title": "Nvidia Open Secure AI Alliance + NOOA framework", "date": "2026-07-27", "reason": "Outside strict 72h window (July 27 < July 28 floor)"},
+    {"title": "Meituan LongCat-2.0 1.6T MoE model", "date": "2026-07-05", "reason": "Published July 5 — well outside window"},
+    {"title": "Qwen3.7 Flash (Alibaba)", "date": "2026-07-27", "reason": "Outside strict 72h window"},
+    {"title": "OpenAI Terraform provider for API platform", "date": "2026-07-29", "reason": "Low BD actionability — infrastructure tooling for OpenAI API platform management"},
+    {"title": "DataPrep-Bench paper (Hugging Face trending)", "date": "2026-07-28", "reason": "Low BD actionability; benchmarks LLMs as training-data preparators; no deployable workflow automation finding"}
+  ],
+  "search_log_summary": {
+    "total_searches": 33,
+    "exploratory_adversarial": 18,
+    "registry_primary": 15,
+    "primary_source_fetches": 13,
+    "fetch_success": 10,
+    "fetch_failure_403": 3,
+    "fetch_failure_503": 1
+  },
+  "limitations": [
+    "OpenAI primary blog pages returned HTTP 403 (gpt-5-6 pricing, chatgpt-for-academic-researchers); API changelog fetched successfully as fallback",
+    "Meta Q2 PRNewswire press release returned HTTP 503; figures confirmed by 5+ independent financial outlets",
+    "No frontier model release in strict July 28-31 window",
+    "Agent framework category (LangChain, CrewAI, LlamaIndex, AutoGen) had no in-window releases",
+    "MCP ecosystem: no new servers with adoption signal confirmed in window",
+    "Gemini Robotics 2 VLA and On-Device models remain gated (Trusted Tester only)",
+    "Grok Build Mode limited to SuperGrok Heavy ($300/mo)",
+    "xAI Grok Voice 2.0 WER claim is vendor's own internal benchmark; no independent replication",
+    "OpenAI GPT Transcribe WER reduction from OpenAI data reported by third parties; independent replication not confirmed",
+    "SEA/Indonesia: no in-window product launches found; gap confirmed via explicit search",
+    "X timelines, LinkedIn private, Instagram, Discord not accessed directly"
+  ]
+}
